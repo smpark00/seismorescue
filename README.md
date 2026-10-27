@@ -14,10 +14,17 @@
 <p align="center"><sub>Fresh holdout: an earthquake the models never saw (IU.MAJO, 2009-10-07 M7.7), swing of 4 line spacings.<br>SAM keeps the earthquake line through every crossing; the classical tracker loses it as soon as the crossings start.</sub></p>
 
 > [!IMPORTANT]
-> **What the Modal credits unlock: two Meta open-weight models move into the critical path.**
-> - **SAM 3 / 3.1, fine-tuned with LoRA**, becomes the core trace extractor. Our fine-tuned SAM 2.1 already cuts quake-line failures from 55% to 12% in simulation.
-> - **Muse Glimmer (30B), fine-tuned with QLoRA**, becomes the trace-identity verifier at every crossing and the film-chip label reader. It is trained on unlimited auto-labelled examples from our benchmark.
-> - Neither model fits our local GPUs (M5 Pro 24 GB, RTX 5070 Ti 16 GB). The plan uses **about $99 of the $100 credit** on A100 and H100 hours. See the **[full plan and budget](#what-the-modal-credits-unlock)**.
+> **All training so far ran on one laptop GPU (Apple M5 Pro), with no cloud GPUs. The Modal credits are for the two Meta models that do not fit there.**
+>
+> **Done so far, on a laptop:**
+> - We fine-tuned Meta's **SAM 2.1** (tiny) in 45 minutes. On earthquakes it never saw, quake-line failure fell from 55% (best classical tracker) to **12%** (r 0.89).
+> - A lightweight row-anchor model (0.88 M parameters, 52 minutes) reached r 0.96 and now serves as SAM's second opinion.
+> - On real 1970s film the quake line is **not solved yet** (r ≤ 0.23). Closing that gap needs more realistic training data, which we are building locally, and stronger models, which need the credits.
+>
+> **With the Modal credits:**
+> - **SAM 3 / 3.1** (SAM 3 alone has 848 M parameters), fine-tuned with LoRA, becomes the core trace extractor.
+> - **Muse Glimmer** (30 B), fine-tuned with QLoRA, becomes the trace-identity verifier at every crossing and the film-chip label reader. It is trained on unlimited auto-labelled examples from our benchmark.
+> - Neither fits our GPUs (24 GB laptop, 16 GB RTX 5070 Ti). The plan uses **about $99 of the $100** on A100 and H100 hours. See the **[full plan and budget](#what-the-modal-credits-unlock)**.
 
 ## TL;DR
 
@@ -111,6 +118,7 @@ What we believe limits real-film performance. These are hypotheses and are being
 
 | | **SAM 3 / 3.1 fine-tune** | **Muse Glimmer fine-tune** |
 |---|---|---|
+| **Today, without credits** | Meta SAM 2.1 tiny, fine-tuned by us on a laptop in 45 min: quake-line failure 55% → 12% (r 0.89). Zero-shot SAM 3.1 (API) finds nothing where lines touch | Zero-shot Muse Spark did not help as a crossing judge (fixed 34, broke 60), so judging needs training on exact labels |
 | **Role in the pipeline** | Core trace extractor for every line; the lightweight row-anchor model stays as the independent second opinion | (1) **Identity verifier**: at each crossing where the extractors disagree, picks the true continuation or flags the segment for human review. (2) **Film-chip reader**: station, date, start time and clock corrections, to seed the time alignment |
 | **How** | LoRA at full resolution on SAM 3's single-image point-prompt path (code ready, tested with random weights); SAM 3.1, whose change is video multi-object tracking, is compared once its official training path is set up. Same frozen-holdout protocol as our SAM 2.1 run | QLoRA on unlimited crossing crops rendered from our benchmark and labelled by its exact ground truth |
 | **Why it needs Modal** | Full-resolution LoRA needs A100/H100-class memory | 4-bit weights are about 18 GB, more than our 16 GB GPU. QLoRA is documented for one H100 |
