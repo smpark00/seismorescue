@@ -1,0 +1,323 @@
+{
+ "item": "20180928_M7.5_IU.TIXI_active_g2",
+ "record": "20180928_M7.5_IU.TIXI",
+ "answer": {
+  "event_id": "ev4_20180928T100245_M7.5",
+  "p_arrival_s": 1122.0,
+  "surface_peak_s": 2862,
+  "suspect_spans": [
+   [
+    2530,
+    2580
+   ],
+   [
+    3599,
+    3820
+   ]
+  ],
+  "notes": "M7.5 is largest with P in 0-7200. Predicted P 908.3 S1470.1 R1 2281.5. Digitized series flat near 908; closest AIC pick in 658-1158 is 1122.0, then spike 1427 near predicted S, then big onset 2310 near predicted R1 2281.5, so P<S<R order holds. Surface onset ~2310 via onsets/aic 2310 snr27.5. Max absolute in 2250-3500 is 2563 amp -5.04 but shape is rectangular V line-jump artifact, so true dispersed Rayleigh max is next find_peak 2650-3000 =2862 amp2.2. Box drop at onset 3599 to -3 flat to ~3770 then return near peak 3812 is +900 duplicate of ~2700 onset, and V at ~2563 is non-seismic rectangular jump. Both show 900s helicorder jump signature."
+ },
+ "turns": 37,
+ "out_tokens": 29181,
+ "in_tokens": 91321,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20180928T105025_M5.6\", \"time\": \"2018-09-28T10:50:25.030000Z\", \"mag\": 5.6, \"dist_deg\": 72.65, \"depth_km\": 10.0, \"P_s\": 3772.8, \"S_s\": 4338.6, \"R1_s\": 5156.2}, {\"id\": \"ev1_20180928T102504_M5.8\", \"time\": \"2018-09-28T10:25:04.730000Z\", \"mag\": 5.8, \"dist_deg\": 72.91, \"depth_km\": 10.0, \"P_s\": 2254.1, \"S_s\": 2821.3, \"R1_s\": 3643.4}, {\"id\": \"ev2_20180928T101648_M5.7\", \"time\": \"2018-09-28T10:16:48.730000Z\", \"mag\": 5.7, \"dist_deg\": 72.73, \"depth_km\": 10.0, \"P_s\": 1757.0, \"S_s\": 2323.3, \"R1_s\": 3142.4}, {\"id\": \"ev3_20180928T101420_M5.8\", \"time\": \"2018-09-28T10:14:20.120000Z\", \"mag\": 5.8, \"dist_deg\": 71.89, \"depth_km\": 10.0, \"P_s\": 1603.4, \"S_s\": 2165.0, \"R1_s\": 2969.8}, {\"id\": \"ev4_20180928T100245_M7.5\", \"time\": \"2018-09-28T10:02:45.250000Z\", \"mag\": 7.5, \"dist_deg\": 72.12, \"depth_km\": 20.0, \"P_s\": 908.3, \"S_s\": 1470.1, \"R1_s\": 2281.5}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 50,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 1892, \"peak_ratio\": 4.38, \"duration_s\": 5}, {\"onset_s\": 2310, \"peak_ratio\": 416.03, \"duration_s\": 19}, {\"onset_s\": 2413, \"peak_ratio\": 13.0, \"duration_s\": 34}, {\"onset_s\": 2552, \"peak_ratio\": 4.11, \"duration_s\": 12}, {\"onset_s\": 2714, \"peak_ratio\": 4.89, \"duration_s\": 11}, {\"onset_s\": 2734, \"peak_ratio\": 3.53, \"duration_s\": 4}, {\"onset_s\": 2790, \"peak_ratio\": 3.15, \"duration_s\": 4}, {\"onset_s\": 2862, \"peak_ratio\": 4.08, \"duration_s\": 4}, {\"onset_s\": 3060, \"peak_ratio\": 51.9, \"duration_s\": 9}, {\"onset_s\": 3121, \"peak_ratio\": 20.35, \"duration_s\": 8}, {\"onset_s\": 3300, \"peak_ratio\": 138.89, \"duration_s\": 9}, {\"onset_s\": 3599, \"peak_ratio\": 39600.0, \"duration_s\": 22}]"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.099, \"spans\": [[2828, 2842], [3798, 4500]]}"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 50,
+    "sta_s": 5,
+    "threshold": 2.0
+   },
+   "result": "[{\"onset_s\": 1892, \"peak_ratio\": 4.38, \"duration_s\": 5}, {\"onset_s\": 2310, \"peak_ratio\": 416.03, \"duration_s\": 21}, {\"onset_s\": 2406, \"peak_ratio\": 2.13, \"duration_s\": 5}, {\"onset_s\": 2412, \"peak_ratio\": 13.0, \"duration_s\": 38}, {\"onset_s\": 2496, \"peak_ratio\": 2.08, \"duration_s\": 3}, {\"onset_s\": 2522, \"peak_ratio\": 2.93, \"duration_s\": 18}, {\"onset_s\": 2550, \"peak_ratio\": 4.11, \"duration_s\": 15}, {\"onset_s\": 2712, \"peak_ratio\": 4.89, \"duration_s\": 14}, {\"onset_s\": 2732, \"peak_ratio\": 3.53, \"duration_s\": 8}, {\"onset_s\": 2768, \"peak_ratio\": 2.65, \"duration_s\": 5}, {\"onset_s\": 2788, \"peak_ratio\": 3.15, \"duration_s\": 8}, {\"onset_s\": 2839, \"peak_ratio\": 2.14, \"duration_s\": 2}, {\"onset_s\": 2861, \"peak_ratio\": 4.08, \"duration_s\": 7}, {\"onset_s\": 3060, \"peak_ratio\": 51.9, \"duration_s\": 9}, {\"onset_s\": 3121, \"peak_ratio\": 20.35, \"duration_s\": 8}, {\"onset_s\": 3300, \"peak_ratio\": 138.89, \"duration_s\": 9}, {\"onset_s\": 3599, \"peak_ratio\": 39600.0, \"duration_s\": 30}]"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1500.0,
+    "start_s": 700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2600.0,
+    "start_s": 2000.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 4000.0,
+    "start_s": 3000.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 900.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 3200.0,
+    "start_s": 2300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 908.3,
+    "window_s": 100.0
+   },
+   "result": "{\"pick_s\": 812.0, \"snr_after_before\": 0.0}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1470.1,
+    "window_s": 100.0
+   },
+   "result": "{\"pick_s\": 1428.0, \"snr_after_before\": 0.0}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1808.3,
+    "window_s": 100.0
+   },
+   "result": "{\"pick_s\": 1891.0, \"snr_after_before\": 2.14}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 2310.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 2310.0, \"snr_after_before\": 27.52}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1000.0,
+    "start_s": 800.0
+   },
+   "result": "{\"peak_s\": 800, \"amplitude\": 0.0}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1570.0,
+    "start_s": 1370.0
+   },
+   "result": "{\"peak_s\": 1427, \"amplitude\": 0.01}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2600.0,
+    "start_s": 2250.0
+   },
+   "result": "{\"peak_s\": 2563, \"amplitude\": -5.042}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2900.0,
+    "start_s": 2300.0
+   },
+   "result": "{\"-900\": -0.086, \"900\": -0.686}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 4500.0,
+    "start_s": 3500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 5500.0,
+    "start_s": 4500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2600.0,
+    "start_s": 1400.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2580.0,
+    "start_s": 2520.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.01}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2880.0,
+    "start_s": 2700.0
+   },
+   "result": "{\"-900\": -0.196, \"900\": -0.146}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 3820.0,
+    "start_s": 3595.0
+   },
+   "result": "{\"-900\": -0.476, \"900\": -0.033}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2420.0,
+    "start_s": 2300.0
+   },
+   "result": "{\"-900\": 0.109, \"900\": 0.095}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1150.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1600.0,
+    "start_s": 1300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 1750.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2450.0,
+    "start_s": 2250.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 3500.0,
+    "start_s": 2250.0
+   },
+   "result": "{\"peak_s\": 2563, \"amplitude\": -5.042}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 3000.0,
+    "start_s": 2650.0
+   },
+   "result": "{\"peak_s\": 2862, \"amplitude\": 2.219}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 3900.0,
+    "start_s": 3550.0
+   },
+   "result": "{\"peak_s\": 3812, \"amplitude\": -3.177}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1000.0,
+    "start_s": 850.0
+   },
+   "result": "{\"peak_s\": 850, \"amplitude\": 0.0}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1122.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1122.0, \"snr_after_before\": 0.99}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1427.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1427.0, \"snr_after_before\": 0.37}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1892.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1891.0, \"snr_after_before\": 1.65}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 908.0,
+    "window_s": 250.0
+   },
+   "result": "{\"pick_s\": 1122.0, \"snr_after_before\": 0.99}"
+  },
+  {
+   "final": "{\"event_id\": \"ev4_20180928T100245_M7.5\", \"p_arrival_s\": 1122.0, \"surface_peak_s\": 2862, \"suspect_spans\": [[2530, 2580], [3599, 3820]], \"notes\": \"M7.5 is largest with P in 0-7200. Predicted P 908.3 S1470.1 R1 2281.5. Digitized series flat near 908; closest AIC pick in 658-1158 is 1122.0, then spike 1427 near predicted S, then big onset 2310 near predicted R1 2281.5, so P<S<R order holds. Surface onset ~2310 via onsets/aic 2310 snr27.5. Max absolute in 2250-3500 is 2563 amp -5.04 but shape is rectangular V line-jump artifact, so true dispersed Rayleigh max is next find_peak 2650-3000 =2862 amp2.2. Box drop at onset 3599 to -3 flat to ~3770 then return near peak 3812 is +900 duplicate of ~2700 onset, and V at ~2563 is non-seismic rectangular jump. Both show 900s helicorder jump signature.\"}"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+# generated outputs and environments
+out/
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.DS_Store
+# real scans and paired digital records are fetched by the user (see data/README.md)
+data/real_scans/
+data_local/
+# local tool state
+.omc/
+.claude/

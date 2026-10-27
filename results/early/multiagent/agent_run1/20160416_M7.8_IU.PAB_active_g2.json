@@ -1,0 +1,202 @@
+{
+ "item": "20160416_M7.8_IU.PAB_active_g2",
+ "record": "20160416_M7.8_IU.PAB",
+ "answer": {
+  "event_id": "ev1_20160416T235836_M7.8",
+  "p_arrival_s": 1698.0,
+  "surface_peak_s": 2551.0,
+  "suspect_spans": [
+   [
+    1700,
+    1730
+   ],
+   [
+    1791,
+    1800
+   ]
+  ],
+  "notes": "M7.8 is largest with P in 0-7200s. Predicted P 937.6 S 1534.2 R1 2460.0. Digitized is flat 800-1690 (find_peak 0.0), so true P/S missing. Apparent onset aic_pick 1698.0 snr 126.8 with peak -1.656 at 1715. Surface max find_peak 2551 amp -2.0 near predicted R1. Early span [1690,1730] correlation 0.945 with +900s ([2590,2630] surface waves) indicating 900s line-jump duplication, and digitizer low-confidence [1700,1730] [1791,1800]. Order apparent P 1698 < onsets 1801-2484 (S/coda) < surface peak 2551 holds."
+ },
+ "turns": 22,
+ "out_tokens": 29547,
+ "in_tokens": 62280,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20160417T002931_M5.5\", \"time\": \"2016-04-17T00:29:31.380000Z\", \"mag\": 5.5, \"dist_deg\": 79.51, \"depth_km\": 15.5, \"P_s\": 2797.4, \"S_s\": 3398.9, \"R1_s\": 4338.1}, {\"id\": \"ev1_20160416T235836_M7.8\", \"time\": \"2016-04-16T23:58:36.980000Z\", \"mag\": 7.8, \"dist_deg\": 78.67, \"depth_km\": 20.6, \"P_s\": 937.6, \"S_s\": 1534.2, \"R1_s\": 2460.0}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 60,
+    "sta_s": 5,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 1699, \"peak_ratio\": 313.66, \"duration_s\": 24}, {\"onset_s\": 1801, \"peak_ratio\": 58.11, \"duration_s\": 19}, {\"onset_s\": 1823, \"peak_ratio\": 19.47, \"duration_s\": 9}, {\"onset_s\": 1858, \"peak_ratio\": 4.7, \"duration_s\": 5}, {\"onset_s\": 1881, \"peak_ratio\": 5.58, \"duration_s\": 5}, {\"onset_s\": 1914, \"peak_ratio\": 6.92, \"duration_s\": 8}, {\"onset_s\": 2051, \"peak_ratio\": 3.42, \"duration_s\": 2}, {\"onset_s\": 2121, \"peak_ratio\": 9.88, \"duration_s\": 7}, {\"onset_s\": 2230, \"peak_ratio\": 3.01, \"duration_s\": 1}, {\"onset_s\": 2287, \"peak_ratio\": 10.35, \"duration_s\": 7}, {\"onset_s\": 2311, \"peak_ratio\": 3.36, \"duration_s\": 2}, {\"onset_s\": 2319, \"peak_ratio\": 5.52, \"duration_s\": 6}, {\"onset_s\": 2391, \"peak_ratio\": 5.03, \"duration_s\": 5}, {\"onset_s\": 2402, \"peak_ratio\": 7.93, \"duration_s\": 7}, {\"onset_s\": 2413, \"peak_ratio\": 5.39, \"duration_s\": 4}, {\"onset_s\": 2484, \"peak_ratio\": 7.96, \"duration_s\": 17}, {\"onset_s\": 2518, \"peak_ratio\": 8.25, \"duration_s\": 13}, {\"onset_s\": 2548, \"peak_ratio\": 7.87, \"duration_s\": 10}, {\"onset_s\": 2644, \"peak_ratio\": 4.73, \"duration_s\": 5}]"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2900.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.005, \"spans\": [[1700, 1730], [1791, 1800]]}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1100.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1699.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 1698.0, \"snr_after_before\": 126.82}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 937.6,
+    "window_s": 100.0
+   },
+   "result": "{\"pick_s\": 841.0, \"snr_after_before\": 0.0}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2750.0,
+    "start_s": 2300.0
+   },
+   "result": "{\"peak_s\": 2551, \"amplitude\": -2.0}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1730.0,
+    "start_s": 1690.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.945}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1850.0,
+    "start_s": 1650.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 1780.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1050.0,
+    "start_s": 850.0
+   },
+   "result": "{\"peak_s\": 850, \"amplitude\": 0.0}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1650.0,
+    "start_s": 1450.0
+   },
+   "result": "{\"peak_s\": 1465, \"amplitude\": 0.01}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2630.0,
+    "start_s": 2590.0
+   },
+   "result": "{\"-900\": 0.945, \"900\": null}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2570.0,
+    "start_s": 2530.0
+   },
+   "result": "{\"-900\": -0.187, \"900\": -0.041}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1700.0,
+    "start_s": 1300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2730.0,
+    "start_s": 2480.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1730.0,
+    "start_s": 1690.0
+   },
+   "result": "{\"peak_s\": 1715, \"amplitude\": -1.656}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2660.0,
+    "start_s": 2500.0
+   },
+   "result": "{\"peak_s\": 2551, \"amplitude\": -2.0}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1801.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1787.0, \"snr_after_before\": 14.04}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1850.0,
+    "start_s": 1800.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.058}"
+  },
+  {
+   "final": "{\"event_id\": \"ev1_20160416T235836_M7.8\", \"p_arrival_s\": 1698.0, \"surface_peak_s\": 2551.0, \"suspect_spans\": [[1700, 1730], [1791, 1800]], \"notes\": \"M7.8 is largest with P in 0-7200s. Predicted P 937.6 S 1534.2 R1 2460.0. Digitized is flat 800-1690 (find_peak 0.0), so true P/S missing. Apparent onset aic_pick 1698.0 snr 126.8 with peak -1.656 at 1715. Surface max find_peak 2551 amp -2.0 near predicted R1. Early span [1690,1730] correlation 0.945 with +900s ([2590,2630] surface waves) indicating 900s line-jump duplication, and digitizer low-confidence [1700,1730] [1791,1800]. Order apparent P 1698 < onsets 1801-2484 (S/coda) < surface peak 2551 holds.\"}"
+  }
+ ]
+}

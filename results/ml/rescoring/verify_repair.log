@@ -1,0 +1,7 @@
+g1 n=19 mine: rB +0.082 failB  28.4 failFlat   3.5 rOracle +0.760 | agent: rB +0.082 failB  28.4 failFlat   3.5 rOracle +0.760
+g2 n=19 mine: rB +0.019 failB  39.0 failFlat  11.0 rOracle +0.847 | agent: rB +0.019 failB  39.0 failFlat  11.0 rOracle +0.847
+g4 n=19 mine: rB +0.004 failB  64.6 failFlat  23.9 rOracle +0.842 | agent: rB +0.004 failB  64.6 failFlat  23.9 rOracle +0.842
+g6 n=19 mine: rB +0.008 failB  73.0 failFlat  33.3 rOracle +0.758 | agent: rB +0.008 failB  73.0 failFlat  33.3 rOracle +0.758
+g8 n=19 mine: rB +0.001 failB  70.2 failFlat  40.7 rOracle +0.677 | agent: rB +0.001 failB  70.2 failFlat  40.7 rOracle +0.677
+all n=95 mine: rB +0.023 failB  55.0 failFlat  22.5 rOracle +0.777 | agent: rB +0.023 failB  55.0 failFlat  22.5 rOracle +0.777
+agent models (all): {'B': (0.023, 55.028), 'flat': (0.0, 22.46), 'oracle': (0.777, 4.872), 'seq': (0.097, 22.542), 'seqp': (0.064, 23.053), 'seq1': (0.072, 22.73), 'spec': (0.082, 22.473)}

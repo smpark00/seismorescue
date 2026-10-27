@@ -1,0 +1,744 @@
+{
+ "summary": {
+  "cross": {
+   "n": 20,
+   "spark_acc": 1.0,
+   "rule_acc": 1.0,
+   "spark_unanswered": 0
+  },
+  "kiss": {
+   "n": 20,
+   "spark_acc": 0.85,
+   "rule_acc": 0.8,
+   "spark_unanswered": 0
+  },
+  "all": {
+   "n": 40,
+   "spark_acc": 0.925,
+   "rule_acc": 0.9,
+   "spark_unanswered": 0
+  }
+ },
+ "cases": [
+  {
+   "case": 0,
+   "src": "synth/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 890,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 9.09,
+   "spark": "A",
+   "conf": 0.97,
+   "reason": "A keeps slope continuous: flat stays flat, steep stays steep; B would kink both at junction.",
+   "secs": 33.9,
+   "spark_ok": true
+  },
+  {
+   "case": 1,
+   "src": "synth_active/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 927,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 9.54,
+   "spark": "B",
+   "conf": 0.98,
+   "reason": "B keeps sine smooth and flat flat; A kinks both slopes at centre",
+   "secs": 51.1,
+   "spark_ok": true
+  },
+  {
+   "case": 2,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 3158,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 6.98,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "B makes a V-cusp at centre contact; A keeps slope/curvature continuous through crossing",
+   "secs": 28.4,
+   "spark_ok": true
+  },
+  {
+   "case": 3,
+   "src": "synth_active/g1.5",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1154,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 4.57,
+   "spark": "A",
+   "conf": 0.98,
+   "reason": "B needs slope jump from steep to flat at crossing; A keeps wavy and straight smooth",
+   "secs": 45.9,
+   "spark_ok": true
+  },
+  {
+   "case": 4,
+   "src": "synth_active/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 1018,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 5.78,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B continues sine smoothly and flat flat; A makes both kink at right junction",
+   "secs": 59.6,
+   "spark_ok": true
+  },
+  {
+   "case": 5,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 1309,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 8.85,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "straight-through X keeps steep-to-steep and flat-to-flat smooth; swap would kink slope of both",
+   "secs": 54.2,
+   "spark_ok": true
+  },
+  {
+   "case": 6,
+   "src": "synth_active/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1219,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 7.48,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A preserves continuous slope; B forces 90-deg kink from steep to flat at crossing",
+   "secs": 81.5,
+   "spark_ok": true
+  },
+  {
+   "case": 7,
+   "src": "synth_active/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 836,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 6.97,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps both traces smooth through middle crossing; B needs slope jumps",
+   "secs": 45.4,
+   "spark_ok": true
+  },
+  {
+   "case": 8,
+   "src": "synth/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 926,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 9.47,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B continues steep-to-steep and flat-to-flat; A would force slope-curvature jumps in both traces.",
+   "secs": 52.7,
+   "spark_ok": true
+  },
+  {
+   "case": 9,
+   "src": "synth_active/g1.5",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1129,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 4.83,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps steep descent and flat line continuous; B needs abrupt slope kink at meet",
+   "secs": 55.2,
+   "spark_ok": true
+  },
+  {
+   "case": 10,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1162,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 6.12,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "steep red ascent matches steep tall peak, gentle blue matches mid hump; A swaps slopes causing kink",
+   "secs": 48.7,
+   "spark_ok": true
+  },
+  {
+   "case": 11,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 875,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 11.69,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A continues slope through central X; B requires sharp V reversal",
+   "secs": 30.5,
+   "spark_ok": true
+  },
+  {
+   "case": 12,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1343,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 8.89,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps NE ascent to NE and SE to SE smooth; B forces sharp up-down reversal at centre",
+   "secs": 48.7,
+   "spark_ok": true
+  },
+  {
+   "case": 13,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 3235,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 7.43,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B continues smooth slopes through central X; A makes sharp kinks",
+   "secs": 27.2,
+   "spark_ok": true
+  },
+  {
+   "case": 14,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 1285,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 8.16,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps steep-to-steep and flat-to-flat; B forces slope jumps at centre",
+   "secs": 34.6,
+   "spark_ok": true
+  },
+  {
+   "case": 15,
+   "src": "synth_active/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1158,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 8.39,
+   "spark": "B",
+   "conf": 0.97,
+   "reason": "B keeps steep crossing smooth; A requires slope kink to flat",
+   "secs": 37.1,
+   "spark_ok": true
+  },
+  {
+   "case": 16,
+   "src": "synth_active/g1.5",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1223,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 3.05,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B keeps steep wave through-steep and flat through-flat; A forces ~90deg slope jumps at left crossing",
+   "secs": 50.4,
+   "spark_ok": true
+  },
+  {
+   "case": 17,
+   "src": "synth_active/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1253,
+   "kind": "cross",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 6.88,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps steep-steep and flat-flat continuity; B would require abrupt slope jumps at junction",
+   "secs": 38.2,
+   "spark_ok": true
+  },
+  {
+   "case": 18,
+   "src": "synth_active/g1.5",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1249,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 3.92,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B keeps red as one smooth wave and blue as flat-with-blip; A requires sharp V kinks at junction",
+   "secs": 33.6,
+   "spark_ok": true
+  },
+  {
+   "case": 19,
+   "src": "synth_active/g1.5",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 924,
+   "kind": "cross",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 6.15,
+   "spark": "B",
+   "conf": 0.98,
+   "reason": "B keeps steep sine and flat line continuous; A requires abrupt slope swap at crossing",
+   "secs": 23.0,
+   "spark_ok": true
+  },
+  {
+   "case": 20,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1586,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 3.17,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps slope/curvature continuous; B forces kink at second crossing",
+   "secs": 47.2,
+   "spark_ok": true
+  },
+  {
+   "case": 21,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 355,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 0.51,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B keeps red flat-gentle and blue peak-valley smooth; A makes slope kink at centre",
+   "secs": 17.6,
+   "spark_ok": true
+  },
+  {
+   "case": 22,
+   "src": "synth/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 3191,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 1.57,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B keeps slope/curvature continuous at crossing; A forces sharp kinks",
+   "secs": 29.5,
+   "spark_ok": true
+  },
+  {
+   "case": 23,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 311,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 0.73,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A continues slopes through the X; B would force sharp V reversal",
+   "secs": 48.1,
+   "spark_ok": false
+  },
+  {
+   "case": 24,
+   "src": "synth_active/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1570,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 0.39,
+   "spark": "B",
+   "conf": 0.98,
+   "reason": "Only B keeps slope and curvature continuous; A creates kinks at touch",
+   "secs": 14.2,
+   "spark_ok": true
+  },
+  {
+   "case": 25,
+   "src": "synth_active/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 3270,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 0.51,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B keeps both traces smooth; A swaps at tangent touch causing curvature jumps",
+   "secs": 27.3,
+   "spark_ok": true
+  },
+  {
+   "case": 26,
+   "src": "synth_active/g2",
+   "lines": [
+    1,
+    3
+   ],
+   "col": 908,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 1.05,
+   "spark": "B",
+   "conf": 0.98,
+   "reason": "Tangent touch keeps slope 0 for both; only B keeps curvature continuous - straight stays straight, sine stays curved",
+   "secs": 27.6,
+   "spark_ok": true
+  },
+  {
+   "case": 27,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1568,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 3.11,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A continues smooth slope/curvature with consistent wavelength; B needs abrupt kink at crossing",
+   "secs": 27.6,
+   "spark_ok": true
+  },
+  {
+   "case": 28,
+   "src": "synth/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 1818,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": false,
+   "rule_margin_px": 2.22,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B continues slope through center; A forces sharp V reversal",
+   "secs": 56.5,
+   "spark_ok": false
+  },
+  {
+   "case": 29,
+   "src": "synth_active/g1.5",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 1190,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 1.14,
+   "spark": "B",
+   "conf": 0.96,
+   "reason": "B keeps sine peaked smooth and baseline straight; time bumps stay on baselines",
+   "secs": 78.6,
+   "spark_ok": true
+  },
+  {
+   "case": 30,
+   "src": "synth_active/g2",
+   "lines": [
+    3,
+    4
+   ],
+   "col": 3228,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 0.87,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A keeps red as smooth V and blue flat; B requires slope jumps at valley",
+   "secs": 31.1,
+   "spark_ok": true
+  },
+  {
+   "case": 31,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 319,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 1.34,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "Crossing preserves slope direction; bounce would need sharp V reversal at center",
+   "secs": 39.3,
+   "spark_ok": false
+  },
+  {
+   "case": 32,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 1378,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 0.39,
+   "spark": "B",
+   "conf": 0.9,
+   "reason": "B gives smooth rounded min/max kiss; A forces sharp V kink with slope jump in red",
+   "secs": 45.4,
+   "spark_ok": true
+  },
+  {
+   "case": 33,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 1216,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": false,
+   "rule_margin_px": 0.11,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "Steep-down red continues steep-up to peak, shallow blue continues flat; A would kink slope at touch.",
+   "secs": 20.7,
+   "spark_ok": true
+  },
+  {
+   "case": 34,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 392,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": false,
+   "rule_margin_px": 1.04,
+   "spark": "A",
+   "conf": 0.92,
+   "reason": "A keeps valley-valley and hill-hill with continuous slope-curvature; B flips curvature sign and kinks",
+   "secs": 104.3,
+   "spark_ok": true
+  },
+  {
+   "case": 35,
+   "src": "synth/g2",
+   "lines": [
+    4,
+    5
+   ],
+   "col": 902,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": false,
+   "rule_margin_px": 0.27,
+   "spark": "A",
+   "conf": 0.9,
+   "reason": "central contact is horizontal tangent; A keeps zero slope and same concavity, B flips curvature and mismatches steepness",
+   "secs": 127.0,
+   "spark_ok": true
+  },
+  {
+   "case": 36,
+   "src": "synth/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 3175,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 1.63,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B pairs shallow-shallow and steep-steep for smooth tangents; A forces abrupt kinks at crossing",
+   "secs": 32.1,
+   "spark_ok": true
+  },
+  {
+   "case": 37,
+   "src": "synth/g2",
+   "lines": [
+    1,
+    3
+   ],
+   "col": 908,
+   "kind": "kiss",
+   "correct": "B",
+   "rule_correct": true,
+   "rule_margin_px": 1.05,
+   "spark": "B",
+   "conf": 0.95,
+   "reason": "B keeps flat zero-curvature and peaked turnaround continuous; A swaps causing curvature jump",
+   "secs": 21.5,
+   "spark_ok": true
+  },
+  {
+   "case": 38,
+   "src": "synth_active/g1.5",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 667,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 0.19,
+   "spark": "A",
+   "conf": 0.97,
+   "reason": "tangential kiss: A keeps straight straight and hump smooth; B would kink curvature at junction",
+   "secs": 24.7,
+   "spark_ok": true
+  },
+  {
+   "case": 39,
+   "src": "synth/g2",
+   "lines": [
+    2,
+    3
+   ],
+   "col": 1519,
+   "kind": "kiss",
+   "correct": "A",
+   "rule_correct": true,
+   "rule_margin_px": 0.05,
+   "spark": "A",
+   "conf": 0.95,
+   "reason": "A pairs shallow-to-shallow and steep-to-steep for smooth continuity; B would jump slope at touch",
+   "secs": 23.4,
+   "spark_ok": true
+  }
+ ]
+}

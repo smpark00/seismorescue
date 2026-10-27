@@ -1,0 +1,258 @@
+{
+ "item": "20070815_M8.0_IU.TSUM_all_g2",
+ "record": "20070815_M8.0_IU.TSUM",
+ "answer": {
+  "event_id": "ev3_20070815T234057_M8.0",
+  "p_arrival_s": 953.0,
+  "surface_peak_s": 2946.0,
+  "suspect_spans": [
+   [
+    1700,
+    1742
+   ],
+   [
+    2967,
+    3197
+   ]
+  ],
+  "notes": "M8.0 is largest with P in record. AIC pick near onset 956 gives P 953, consistent with predicted 950.8. S predicted 1598.5, R1 2729.0. Large Rayleigh 2700-2965 peaks at 2946 via find_peak. Low-conf ramp 1700-1742 is linear rise then drop, unphysical coda, low line-shift correlation. Low-conf 2967-3197 is flat -0.8 with spike, unphysical continuation of Rayleigh, +900 correlation 0.524 suggests line-jump/duplication. 5000 signal timing matches ev1 R1 but amplitude exceeds M8, yet shape continuous and low duplicate correlation so not flagged; 1560-1620 flat hides S but not flagged as no tool bounds."
+ },
+ "turns": 29,
+ "out_tokens": 27754,
+ "in_tokens": 57319,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20070816T010223_M5.8\", \"time\": \"2007-08-16T01:02:23.380000Z\", \"mag\": 5.8, \"dist_deg\": 89.49, \"depth_km\": 34.4, \"P_s\": 5836.9, \"S_s\": 6485.1, \"R1_s\": 7614.7}, {\"id\": \"ev1_20070816T001913_M5.8\", \"time\": \"2007-08-16T00:19:13.890000Z\", \"mag\": 5.8, \"dist_deg\": 88.6, \"depth_km\": 35.0, \"P_s\": 3243.1, \"S_s\": 3887.1, \"R1_s\": 4999.8}, {\"id\": \"ev2_20070816T000241_M5.6\", \"time\": \"2007-08-16T00:02:41.210000Z\", \"mag\": 5.6, \"dist_deg\": 89.42, \"depth_km\": 39.6, \"P_s\": 2253.7, \"S_s\": 2901.1, \"R1_s\": 4030.6}, {\"id\": \"ev3_20070815T234057_M8.0\", \"time\": \"2007-08-15T23:40:57.890000Z\", \"mag\": 8.0, \"dist_deg\": 89.48, \"depth_km\": 39.0, \"P_s\": 950.8, \"S_s\": 1598.5, \"R1_s\": 2729.0}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 50,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 956, \"peak_ratio\": 45.0, \"duration_s\": 16}, {\"onset_s\": 982, \"peak_ratio\": 4.6, \"duration_s\": 4}, {\"onset_s\": 1026, \"peak_ratio\": 17.06, \"duration_s\": 8}, {\"onset_s\": 1160, \"peak_ratio\": 3.2, \"duration_s\": 3}, {\"onset_s\": 1170, \"peak_ratio\": 4.72, \"duration_s\": 6}, {\"onset_s\": 1181, \"peak_ratio\": 8.39, \"duration_s\": 6}, {\"onset_s\": 1228, \"peak_ratio\": 10.01, \"duration_s\": 7}, {\"onset_s\": 1240, \"peak_ratio\": 3.73, \"duration_s\": 3}, {\"onset_s\": 1265, \"peak_ratio\": 3.11, \"duration_s\": 1}, {\"onset_s\": 1374, \"peak_ratio\": 9.1, \"duration_s\": 6}, {\"onset_s\": 1469, \"peak_ratio\": 4.59, \"duration_s\": 4}, {\"onset_s\": 1560, \"peak_ratio\": 135.09, \"duration_s\": 22}, {\"onset_s\": 1673, \"peak_ratio\": 3.06, \"duration_s\": 3}, {\"onset_s\": 1679, \"peak_ratio\": 20.08, \"duration_s\": 11}, {\"onset_s\": 1694, \"peak_ratio\": 17.71, \"duration_s\": 14}, {\"onset_s\": 1714, \"peak_ratio\": 24.15, \"duration_s\": 26}, {\"onset_s\": 1900, \"peak_ratio\": 7.25, \"duration_s\": 7}, {\"onset_s\": 1923, \"peak_ratio\": 4.71, \"duration_s\": 4}, {\"onset_s\": 1950, \"peak_ratio\": 3.68, \"duration_s\": 3}, {\"onset_s\": 1956, \"peak_ratio\": 5.89, \"duration_s\": 7}, {\"onset_s\": 1989, \"peak_ratio\": 8.6, \"duration_s\": 9}, {\"onset_s\": 2033, \"peak_ratio\": 3.18, \"duration_s\": 2}, {\"onset_s\": 2050, \"peak_ratio\": 3.65, \"duration_s\": 5}, {\"onset_s\": 2161, \"peak_ratio\": 23.08, \"duration_s\": 7}, {\"onset_s\": 2254, \"peak_ratio\": 3.13, \"duration_s\": 1}, {\"onset_s\": 2283, \"peak_ratio\": 4.04, \"duration_s\": 4}, {\"onset_s\": 2313, \"peak_ratio\": 4.51, \"duration_s\": 6}, {\"onset_s\": 2337, \"peak_ratio\": 3.77, \"duration_s\": 3}, {\"onset_s\": 2389, \"peak_ratio\": 5.38, \"duration_s\": 9}, {\"onset_s\": 2404, \"peak_ratio\": 5.7, \"duration_s\": 8}, {\"onset_s\": 2453, \"peak_ratio\": 3.99, \"duration_s\": 4}, {\"onset_s\": 2464, \"peak_ratio\": 5.39, \"duration_s\": 7}, {\"onset_s\": 2612, \"peak_ratio\": 5.89, \"duration_s\": 8}, {\"onset_s\": 2700, \"peak_ratio\": 108.03, \"duration_s\": 24}, {\"onset_s\": 3003, \"peak_ratio\": 8.77, \"duration_s\": 15}, {\"onset_s\": 3053, \"peak_ratio"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"fraction\": 0.056, \"spans\": [[1141, 1143], [1681, 1682], [1700, 1742], [1981, 1983], [2967, 3197], [3298, 3303], [4202, 4211], [4561, 4563], [5040, 5151]]}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 956.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 953.0, \"snr_after_before\": 11.03}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 2500.0,
+    "end_s": 3100.0
+   },
+   "result": "{\"peak_s\": 3055, \"amplitude\": -2.863}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 800.0,
+    "end_s": 3000.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1680.0,
+    "end_s": 1745.0
+   },
+   "result": "{\"-900\": 0.017, \"900\": -0.151}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 2700.0,
+    "end_s": 3000.0
+   },
+   "result": "{\"-900\": 0.207, \"900\": -0.394}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 1500.0,
+    "end_s": 1850.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 2650.0,
+    "end_s": 3300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 2700.0,
+    "end_s": 2965.0
+   },
+   "result": "{\"peak_s\": 2946, \"amplitude\": 2.133}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 2967.0,
+    "end_s": 3197.0
+   },
+   "result": "{\"-900\": -0.404, \"900\": 0.524}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1560.0,
+    "window_s": 40.0
+   },
+   "result": "{\"pick_s\": 1572.0, \"snr_after_before\": 0.0}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 3350.0,
+    "end_s": 4350.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 4150.0,
+    "end_s": 5400.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 3350.0,
+    "end_s": 4300.0
+   },
+   "result": "{\"peak_s\": 4290, \"amplitude\": -1.104}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 4950.0,
+    "end_s": 5300.0
+   },
+   "result": "{\"peak_s\": 5008, \"amplitude\": 3.639}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1560.0,
+    "end_s": 1620.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.212}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 5040.0,
+    "end_s": 5151.0
+   },
+   "result": "{\"-900\": -0.014, \"900\": 0.439}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 900.0,
+    "end_s": 1100.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 5000.0,
+    "end_s": 5280.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 4195.0,
+    "end_s": 4500.0
+   },
+   "result": "{\"-900\": 0.005, \"900\": 0.006}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 3350.0,
+    "end_s": 3600.0
+   },
+   "result": "{\"-900\": -0.171, \"900\": 0.011}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 2700.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 2700.0, \"snr_after_before\": 4.46}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 2700.0,
+    "end_s": 2950.0
+   },
+   "result": "{\"-900\": 0.132, \"900\": -0.048}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 3550.0,
+    "end_s": 3950.0
+   },
+   "result": "{\"-900\": -0.197, \"900\": 0.18}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 4995.0,
+    "end_s": 5260.0
+   },
+   "result": "{\"-900\": -0.038, \"900\": 0.177}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1555.0,
+    "end_s": 1625.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.114}"
+  },
+  {
+   "final": "{\"event_id\": \"ev3_20070815T234057_M8.0\", \"p_arrival_s\": 953.0, \"surface_peak_s\": 2946.0, \"suspect_spans\": [[1700, 1742], [2967, 3197]], \"notes\": \"M8.0 is largest with P in record. AIC pick near onset 956 gives P 953, consistent with predicted 950.8. S predicted 1598.5, R1 2729.0. Large Rayleigh 2700-2965 peaks at 2946 via find_peak. Low-conf ramp 1700-1742 is linear rise then drop, unphysical coda, low line-shift correlation. Low-conf 2967-3197 is flat -0.8 with spike, unphysical continuation of Rayleigh, +900 correlation 0.524 suggests line-jump/duplication. 5000 signal timing matches ev1 R1 but amplitude exceeds M8, yet shape continuous and low duplicate correlation so not flagged; 1560-1620 flat hides S but not flagged as no tool bounds.\"}"
+  }
+ ]
+}

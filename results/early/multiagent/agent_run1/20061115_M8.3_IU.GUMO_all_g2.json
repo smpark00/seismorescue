@@ -1,0 +1,246 @@
+{
+ "item": "20061115_M8.3_IU.GUMO_all_g2",
+ "record": "20061115_M8.3_IU.GUMO",
+ "answer": {
+  "event_id": "ev14_20061115T111413_M8.3",
+  "p_arrival_s": 957.0,
+  "surface_peak_s": 1633,
+  "suspect_spans": [
+   [
+    779,
+    805
+   ],
+   [
+    1433,
+    1767
+   ],
+   [
+    2015,
+    2045
+   ]
+  ],
+  "notes": "M8.3 is largest with P in record. Predicted P 955.2 S 1279.6 R1 1515.8. AIC pick near P gives 957.0, near S gives 1292. Onset at 779 is 226s after origin, too early for 33.7deg P (~400s travel) and amplitude ~3 spacings too large for P, interpreted as surface energy misplaced ~900s early; onset duration 779+26s. R1 window peak 1400-1650s is 1633, ~117s after predicted, plausible dispersed peak; intervals 979-1275 and 1433-1767 are low-confidence flat where S/R1 should be, 1433-1767 listed as suspect missing true surface. 2015-2045 correlates 0.706 with +900s, duplicated with 2915-2945, one is line-jump duplicate."
+ },
+ "turns": 27,
+ "out_tokens": 27037,
+ "in_tokens": 80032,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20061115T122821_M5.5\", \"time\": \"2006-11-15T12:28:21.330000Z\", \"mag\": 5.5, \"dist_deg\": 34.63, \"depth_km\": 10.0, \"P_s\": 5410.6, \"S_s\": 5741.0, \"R1_s\": 5988.8}, {\"id\": \"ev1_20061115T122615_M5.7\", \"time\": \"2006-11-15T12:26:15.760000Z\", \"mag\": 5.7, \"dist_deg\": 34.65, \"depth_km\": 10.0, \"P_s\": 5285.2, \"S_s\": 5615.7, \"R1_s\": 5863.8}, {\"id\": \"ev2_20061115T121644_M5.9\", \"time\": \"2006-11-15T12:16:44.150000Z\", \"mag\": 5.9, \"dist_deg\": 33.64, \"depth_km\": 10.0, \"P_s\": 4704.8, \"S_s\": 5028.4, \"R1_s\": 5263.1}, {\"id\": \"ev3_20061115T121605_M5.7\", \"time\": \"2006-11-15T12:16:05.540000Z\", \"mag\": 5.7, \"dist_deg\": 34.46, \"depth_km\": 10.0, \"P_s\": 4673.3, \"S_s\": 5002.5, \"R1_s\": 5248.0}, {\"id\": \"ev4_20061115T114804_M5.5\", \"time\": \"2006-11-15T11:48:04.230000Z\", \"mag\": 5.5, \"dist_deg\": 31.65, \"depth_km\": 10.0, \"P_s\": 2967.5, \"S_s\": 3277.7, \"R1_s\": 3486.6}, {\"id\": \"ev5_20061115T114055_M6.7\", \"time\": \"2006-11-15T11:40:55.050000Z\", \"mag\": 6.7, \"dist_deg\": 33.92, \"depth_km\": 10.0, \"P_s\": 2558.2, \"S_s\": 2883.7, \"R1_s\": 3122.2}, {\"id\": \"ev6_20061115T113458_M6.4\", \"time\": \"2006-11-15T11:34:58.130000Z\", \"mag\": 6.4, \"dist_deg\": 34.2, \"depth_km\": 10.0, \"P_s\": 2203.7, \"S_s\": 2531.2, \"R1_s\": 2773.3}, {\"id\": \"ev7_20061115T113323_M5.5\", \"time\": \"2006-11-15T11:33:23.800000Z\", \"mag\": 5.5, \"dist_deg\": 34.09, \"depth_km\": 10.0, \"P_s\": 2108.4, \"S_s\": 2435.1, \"R1_s\": 2675.8}, {\"id\": \"ev8_20061115T112922_M6.2\", \"time\": \"2006-11-15T11:29:22.790000Z\", \"mag\": 6.2, \"dist_deg\": 33.76, \"depth_km\": 10.0, \"P_s\": 1864.5, \"S_s\": 2189.0, \"R1_s\": 2425.4}, {\"id\": \"ev9_20061115T112838_M6.0\", \"time\": \"2006-11-15T11:28:38.460000Z\", \"mag\": 6.0, \"dist_deg\": 33.42, \"depth_km\": 10.0, \"P_s\": 1817.2, \"S_s\": 2139.3, \"R1_s\": 2371.2}, {\"id\": \"ev10_20061115T112509_M6.0\", \"time\": \"2006-11-15T11:25:09.000000Z\", \"mag\": 6.0, \"dist_deg\": 34.54, \"depth_km\": 10.0, \"P_s\": 1617.5, \"S_s\": 1947.3, \"R1_s\": 2193.9}, {\"id\": \"ev11_20061115T112457_M5.5\", \"time\": \"2006-11-15T11:24:57.490000Z\", \"mag\": 5.5, \"dist_deg\": 34.87, \"depth_km\": 10.0, \"P_s\""
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 60,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 732, \"peak_ratio\": 3.98, \"duration_s\": 5}, {\"onset_s\": 779, \"peak_ratio\": 284.49, \"duration_s\": 26}, {\"onset_s\": 810, \"peak_ratio\": 15.9, \"duration_s\": 11}, {\"onset_s\": 835, \"peak_ratio\": 7.58, \"duration_s\": 6}, {\"onset_s\": 1005, \"peak_ratio\": 5.86, \"duration_s\": 7}, {\"onset_s\": 1119, \"peak_ratio\": 152.43, \"duration_s\": 8}, {\"onset_s\": 1212, \"peak_ratio\": 3.62, \"duration_s\": 3}, {\"onset_s\": 1320, \"peak_ratio\": 3.05, \"duration_s\": 1}, {\"onset_s\": 1339, \"peak_ratio\": 6.85, \"duration_s\": 5}, {\"onset_s\": 1362, \"peak_ratio\": 12.51, \"duration_s\": 8}, {\"onset_s\": 1420, \"peak_ratio\": 5.46, \"duration_s\": 7}, {\"onset_s\": 1428, \"peak_ratio\": 12.81, \"duration_s\": 11}, {\"onset_s\": 1472, \"peak_ratio\": 3.38, \"duration_s\": 6}, {\"onset_s\": 1588, \"peak_ratio\": 8.66, \"duration_s\": 19}, {\"onset_s\": 1617, \"peak_ratio\": 4.84, \"duration_s\": 10}, {\"onset_s\": 1932, \"peak_ratio\": 5.14, \"duration_s\": 4}, {\"onset_s\": 1976, \"peak_ratio\": 4.4, \"duration_s\": 5}, {\"onset_s\": 1992, \"peak_ratio\": 5.88, \"duration_s\": 5}, {\"onset_s\": 2014, \"peak_ratio\": 4.09, \"duration_s\": 3}, {\"onset_s\": 2021, \"peak_ratio\": 18.74, \"duration_s\": 8}, {\"onset_s\": 2109, \"peak_ratio\": 5.32, \"duration_s\": 5}, {\"onset_s\": 2134, \"peak_ratio\": 3.55, \"duration_s\": 5}, {\"onset_s\": 2151, \"peak_ratio\": 3.21, \"duration_s\": 2}, {\"onset_s\": 2177, \"peak_ratio\": 3.79, \"duration_s\": 9}, {\"onset_s\": 2315, \"peak_ratio\": 3.24, \"duration_s\": 1}, {\"onset_s\": 2346, \"peak_ratio\": 3.74, \"duration_s\": 3}, {\"onset_s\": 2380, \"peak_ratio\": 3.44, \"duration_s\": 2}, {\"onset_s\": 2449, \"peak_ratio\": 8.05, \"duration_s\": 6}, {\"onset_s\": 2611, \"peak_ratio\": 7.02, \"duration_s\": 8}, {\"onset_s\": 2707, \"peak_ratio\": 5.44, \"duration_s\": 6}, {\"onset_s\": 2773, \"peak_ratio\": 4.7, \"duration_s\": 4}, {\"onset_s\": 2832, \"peak_ratio\": 5.17, \"duration_s\": 4}, {\"onset_s\": 2876, \"peak_ratio\": 4.61, \"duration_s\": 5}, {\"onset_s\": 2892, \"peak_ratio\": 5.96, \"duration_s\": 5}, {\"onset_s\": 2914, \"peak_ratio\": 4.03, \"duration_s\": 3}, {\"onset_s\": 2920, \"peak_ratio\": 2"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"fraction\": 0.143, \"spans\": [[848, 900], [979, 1275], [1433, 1767], [2069, 2103], [2105, 2114], [2166, 2217], [2278, 2280], [2319, 2337], [2342, 2352], [2769, 2777], [2785, 2794], [2827, 2834], [2873, 2875], [3002, 3057], [3071, 3185], [3221, 3249]]}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"peak_s\": 3546, \"amplitude\": 3.688}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 700.0,
+    "end_s": 1800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 770.0,
+    "end_s": 850.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.044}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1100.0,
+    "end_s": 1140.0
+   },
+   "result": "{\"-900\": 0.267, \"900\": 0.273}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1430.0,
+    "end_s": 1700.0
+   },
+   "result": "{\"-900\": 0.235, \"900\": -0.065}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 779.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 779.0, \"snr_after_before\": 68.97}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 955.2,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 957.0, \"snr_after_before\": 3.2}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1119.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1119.0, \"snr_after_before\": 97.43}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1279.6,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 1292.0, \"snr_after_before\": 2.51}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 900.0,
+    "end_s": 2700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 900.0,
+    "end_s": 1800.0
+   },
+   "result": "{\"peak_s\": 1122, \"amplitude\": 1.401}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 1800.0,
+    "end_s": 2700.0
+   },
+   "result": "{\"peak_s\": 2195, \"amplitude\": 2.094}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 2700.0,
+    "end_s": 3600.0
+   },
+   "result": "{\"peak_s\": 3546, \"amplitude\": 3.688}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 3600.0,
+    "end_s": 4500.0
+   },
+   "result": "{\"peak_s\": 3616, \"amplitude\": 0.573}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 1650.0,
+    "end_s": 2700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 2700.0,
+    "end_s": 3700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 930.0,
+    "end_s": 980.0
+   },
+   "result": "{\"peak_s\": 977, \"amplitude\": -0.108}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 1250.0,
+    "end_s": 1350.0
+   },
+   "result": "{\"peak_s\": 1339, \"amplitude\": -0.271}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 1400.0,
+    "end_s": 1650.0
+   },
+   "result": "{\"peak_s\": 1633, \"amplitude\": 1.256}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 3490.0,
+    "end_s": 3570.0
+   },
+   "result": "{\"-900\": 0.009, \"900\": 0.252}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 2015.0,
+    "end_s": 2045.0
+   },
+   "result": "{\"-900\": 0.279, \"900\": 0.706}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 2175.0,
+    "end_s": 2215.0
+   },
+   "result": "{\"-900\": -0.201, \"900\": 0.266}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 3495.0,
+    "end_s": 3565.0
+   },
+   "result": "{\"-900\": -0.0, \"900\": 0.285}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 900.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "final": "{\"event_id\": \"ev14_20061115T111413_M8.3\", \"p_arrival_s\": 957.0, \"surface_peak_s\": 1633, \"suspect_spans\": [[779, 805], [1433, 1767], [2015, 2045]], \"notes\": \"M8.3 is largest with P in record. Predicted P 955.2 S 1279.6 R1 1515.8. AIC pick near P gives 957.0, near S gives 1292. Onset at 779 is 226s after origin, too early for 33.7deg P (~400s travel) and amplitude ~3 spacings too large for P, interpreted as surface energy misplaced ~900s early; onset duration 779+26s. R1 window peak 1400-1650s is 1633, ~117s after predicted, plausible dispersed peak; intervals 979-1275 and 1433-1767 are low-confidence flat where S/R1 should be, 1433-1767 listed as suspect missing true surface. 2015-2045 correlates 0.706 with +900s, duplicated with 2915-2945, one is line-jump duplicate.\"}"
+  }
+ ]
+}

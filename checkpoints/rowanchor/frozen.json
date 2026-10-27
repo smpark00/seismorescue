@@ -1,0 +1,17 @@
+{
+ "method": "RA_viterbi",
+ "config": "viterbi_a4",
+ "alpha": 4.0,
+ "eps": 0.0,
+ "checkpoint_step": 3368,
+ "rule": "Viterbi variant with the lowest mean(quake fail, whole fail) on the validation groups; argmax kept as ablation",
+ "val_crit": {
+  "viterbi_a0.5": 6.7,
+  "viterbi_a1": 2.3,
+  "viterbi_a2": 0.9500000000000001,
+  "viterbi_a4": 0.7,
+  "viterbi_a1_eps0.1": 1.85,
+  "viterbi_a2_eps0.1": 0.85
+ },
+ "val_argmax_crit": 0.85
+}

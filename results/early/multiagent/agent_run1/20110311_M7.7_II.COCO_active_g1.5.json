@@ -1,0 +1,130 @@
+{
+ "item": "20110311_M7.7_II.COCO_active_g1.5",
+ "record": "20110311_M7.7_II.COCO",
+ "answer": {
+  "event_id": "ev51_20110311T061540_M7.9",
+  "p_arrival_s": 291.0,
+  "surface_peak_s": 1591,
+  "suspect_spans": [
+   [
+    600,
+    900
+   ],
+   [
+    950,
+    1250
+   ]
+  ],
+  "notes": "Largest P in 0-7200 is ev51 M7.9 P pred 308.9. AIC pick near 311 gives 291.0, S pred 822.3, R1 pred 1503.4, find_peak 1400-1650 gives 1591 surface max. Series repeats every 900s with corr 0.999: 50-350 vs 950-1250, 600-900 vs 1500-1800, 950-1250 vs 1850-2150. Large at ~320 cannot be P (larger than surface) and duplicate at ~1220 occurs before S1477 of ev46 M7.7 while real surface ~2120 is after S, so 950-1250 is 900s-early spurious surface. Similarly real surface ~1591 duplicates at ~691 before S822, so 600-900 is 900s-late/early spurious copy. P duplicate at ~1191 would appear after S, impossible."
+ },
+ "turns": 13,
+ "out_tokens": 42001,
+ "in_tokens": 134245,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20110311T081924_M6.5\", \"time\": \"2011-03-11T08:19:24.380000Z\", \"mag\": 6.5, \"dist_deg\": 64.15, \"depth_km\": 6.8, \"P_s\": 7739.5, \"S_s\": 8257.7, \"R1_s\": 8933.3}, {\"id\": \"ev1_20110311T081541_M6.1\", \"time\": \"2011-03-11T08:15:41.850000Z\", \"mag\": 6.1, \"dist_deg\": 66.56, \"depth_km\": 41.0, \"P_s\": 7527.6, \"S_s\": 8056.2, \"R1_s\": 8779.5}, {\"id\": \"ev2_20110311T081207_M6.2\", \"time\": \"2011-03-11T08:12:07.260000Z\", \"mag\": 6.2, \"dist_deg\": 64.36, \"depth_km\": 39.6, \"P_s\": 7299.0, \"S_s\": 7815.0, \"R1_s\": 8502.3}, {\"id\": \"ev3_20110311T081029_M5.6\", \"time\": \"2011-03-11T08:10:29.340000Z\", \"mag\": 5.6, \"dist_deg\": 63.79, \"depth_km\": 19.5, \"P_s\": 7200.0, \"S_s\": 7714.7, \"R1_s\": 8388.1}, {\"id\": \"ev4_20110311T080458_M5.7\", \"time\": \"2011-03-11T08:04:58.780000Z\", \"mag\": 5.7, \"dist_deg\": 65.46, \"depth_km\": 48.9, \"P_s\": 6876.6, \"S_s\": 7398.3, \"R1_s\": 8105.2}, {\"id\": \"ev5_20110311T080157_M5.9\", \"time\": \"2011-03-11T08:01:57.000000Z\", \"mag\": 5.9, \"dist_deg\": 65.34, \"depth_km\": 19.3, \"P_s\": 6697.9, \"S_s\": 7221.6, \"R1_s\": 7920.0}, {\"id\": \"ev6_20110311T075948_M5.7\", \"time\": \"2011-03-11T07:59:48.970000Z\", \"mag\": 5.7, \"dist_deg\": 65.44, \"depth_km\": 0.7, \"P_s\": 6573.5, \"S_s\": 7099.9, \"R1_s\": 7794.7}, {\"id\": \"ev7_20110311T075615_M5.6\", \"time\": \"2011-03-11T07:56:15.410000Z\", \"mag\": 5.6, \"dist_deg\": 65.16, \"depth_km\": 38.0, \"P_s\": 6352.5, \"S_s\": 6873.3, \"R1_s\": 7573.2}, {\"id\": \"ev8_20110311T075445_M5.7\", \"time\": \"2011-03-11T07:54:45.420000Z\", \"mag\": 5.7, \"dist_deg\": 65.18, \"depth_km\": 50.8, \"P_s\": 6261.2, \"S_s\": 6781.1, \"R1_s\": 7483.7}, {\"id\": \"ev9_20110311T074427_M5.8\", \"time\": \"2011-03-11T07:44:27.990000Z\", \"mag\": 5.8, \"dist_deg\": 64.32, \"depth_km\": 13.8, \"P_s\": 5643.1, \"S_s\": 6161.5, \"R1_s\": 6841.9}, {\"id\": \"ev10_20110311T074255_M5.7\", \"time\": \"2011-03-11T07:42:55.650000Z\", \"mag\": 5.7, \"dist_deg\": 64.51, \"depth_km\": 35.0, \"P_s\": 5548.8, \"S_s\": 6066.1, \"R1_s\": 6754.7}, {\"id\": \"ev11_20110311T073827_M5.8\", \"time\": \"2011-03-11T07:38:27.600000Z\", \"mag\": 5.8, \"dist_deg\": 66.85, \"depth_km\": 38.5, \"P_s\":"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 60,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 60, \"peak_ratio\": 6.66, \"duration_s\": 6}, {\"onset_s\": 73, \"peak_ratio\": 9.74, \"duration_s\": 10}, {\"onset_s\": 88, \"peak_ratio\": 7.43, \"duration_s\": 8}, {\"onset_s\": 104, \"peak_ratio\": 3.93, \"duration_s\": 4}, {\"onset_s\": 113, \"peak_ratio\": 6.49, \"duration_s\": 7}, {\"onset_s\": 207, \"peak_ratio\": 3.11, \"duration_s\": 1}, {\"onset_s\": 216, \"peak_ratio\": 3.59, \"duration_s\": 3}, {\"onset_s\": 225, \"peak_ratio\": 5.67, \"duration_s\": 6}, {\"onset_s\": 237, \"peak_ratio\": 4.68, \"duration_s\": 5}, {\"onset_s\": 249, \"peak_ratio\": 3.68, \"duration_s\": 3}, {\"onset_s\": 311, \"peak_ratio\": 3.48, \"duration_s\": 2}, {\"onset_s\": 320, \"peak_ratio\": 6.59, \"duration_s\": 6}, {\"onset_s\": 332, \"peak_ratio\": 5.5, \"duration_s\": 5}, {\"onset_s\": 483, \"peak_ratio\": 3.26, \"duration_s\": 2}, {\"onset_s\": 492, \"peak_ratio\": 3.67, \"duration_s\": 3}, {\"onset_s\": 570, \"peak_ratio\": 4.54, \"duration_s\": 5}, {\"onset_s\": 582, \"peak_ratio\": 3.59, \"duration_s\": 2}, {\"onset_s\": 650, \"peak_ratio\": 3.38, \"duration_s\": 2}, {\"onset_s\": 658, \"peak_ratio\": 4.12, \"duration_s\": 3}, {\"onset_s\": 763, \"peak_ratio\": 3.02, \"duration_s\": 1}, {\"onset_s\": 772, \"peak_ratio\": 3.01, \"duration_s\": 1}, {\"onset_s\": 849, \"peak_ratio\": 4.43, \"duration_s\": 3}, {\"onset_s\": 856, \"peak_ratio\": 6.73, \"duration_s\": 6}, {\"onset_s\": 866, \"peak_ratio\": 3.89, \"duration_s\": 3}, {\"onset_s\": 959, \"peak_ratio\": 6.22, \"duration_s\": 7}, {\"onset_s\": 973, \"peak_ratio\": 9.45, \"duration_s\": 10}, {\"onset_s\": 988, \"peak_ratio\": 7.32, \"duration_s\": 8}, {\"onset_s\": 1004, \"peak_ratio\": 3.94, \"duration_s\": 4}, {\"onset_s\": 1013, \"peak_ratio\": 6.55, \"duration_s\": 7}, {\"onset_s\": 1107, \"peak_ratio\": 3.02, \"duration_s\": 1}, {\"onset_s\": 1117, \"peak_ratio\": 3.57, \"duration_s\": 2}, {\"onset_s\": 1126, \"peak_ratio\": 5.46, \"duration_s\": 6}, {\"onset_s\": 1137, \"peak_ratio\": 4.85, \"duration_s\": 5}, {\"onset_s\": 1148, \"peak_ratio\": 4.06, \"duration_s\": 4}, {\"onset_s\": 1210, \"peak_ratio\": 3.57, \"duration_s\": 3}, {\"onset_s\": 1220, \"peak_ratio\": 6.99, \"duration_s\": 6}, {\"onset_s\": "
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 2200.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"fraction\": 0.001, \"spans\": [[1861, 1863], [2761, 2763], [4561, 4563], [6361, 6363]]}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 50.0,
+    "end_s": 350.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.999}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 950.0,
+    "end_s": 1250.0
+   },
+   "result": "{\"-900\": 0.999, \"900\": 0.999}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 311.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 291.0, \"snr_after_before\": 15.07}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 600.0,
+    "end_s": 900.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.993}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 950.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 900.0,
+    "end_s": 2700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 1400.0,
+    "end_s": 1650.0
+   },
+   "result": "{\"peak_s\": 1591, \"amplitude\": -0.76}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1850.0,
+    "end_s": 2150.0
+   },
+   "result": "{\"-900\": 0.999, \"900\": 0.999}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 2700.0,
+    "end_s": 4500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "final": "{\"event_id\": \"ev51_20110311T061540_M7.9\", \"p_arrival_s\": 291.0, \"surface_peak_s\": 1591, \"suspect_spans\": [[600, 900], [950, 1250]], \"notes\": \"Largest P in 0-7200 is ev51 M7.9 P pred 308.9. AIC pick near 311 gives 291.0, S pred 822.3, R1 pred 1503.4, find_peak 1400-1650 gives 1591 surface max. Series repeats every 900s with corr 0.999: 50-350 vs 950-1250, 600-900 vs 1500-1800, 950-1250 vs 1850-2150. Large at ~320 cannot be P (larger than surface) and duplicate at ~1220 occurs before S1477 of ev46 M7.7 while real surface ~2120 is after S, so 950-1250 is 900s-early spurious surface. Similarly real surface ~1591 duplicates at ~691 before S822, so 600-900 is 900s-late/early spurious copy. P duplicate at ~1191 would appear after S, impossible.\"}"
+  }
+ ]
+}

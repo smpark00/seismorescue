@@ -1,0 +1,7 @@
+g1 n=19 SAM: r_q +0.947 fail_q   0.0 fail_w  0.0 in01 0.87 lost05 0.00 r_nb +0.445 | min r_q +0.80
+g2 n=19 SAM: r_q +0.953 fail_q   1.5 fail_w  0.2 in01 0.72 lost05 0.02 r_nb +0.576 | min r_q +0.82
+g4 n=19 SAM: r_q +0.949 fail_q   7.8 fail_w  1.1 in01 0.55 lost05 0.08 r_nb +0.651 | min r_q +0.83
+g6 n=19 SAM: r_q +0.801 fail_q  24.0 fail_w  4.0 in01 0.41 lost05 0.24 r_nb +0.626 | min r_q +0.01
+g8 n=19 SAM: r_q +0.802 fail_q  26.6 fail_w  4.6 in01 0.37 lost05 0.27 r_nb +0.618 | min r_q -0.07
+gall n=95 SAM: r_q +0.890 fail_q  12.0 fail_w  2.0 in01 0.58 lost05 0.12 r_nb +0.583 | min r_q -0.07
+mismatches vs agent (quake or whole fail): 0 []

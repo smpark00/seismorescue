@@ -1,0 +1,84 @@
+[
+ {
+  "step": 399,
+  "minutes": 5.01,
+  "train_loss": 1.9398,
+  "lr": 0.0019546179005951914,
+  "val_quake_fail_argmax": 2.6,
+  "val_whole_fail_argmax": 0.5,
+  "crit": 1.55
+ },
+ {
+  "step": 849,
+  "minutes": 11.01,
+  "train_loss": 1.81,
+  "lr": 0.001786809452787048,
+  "val_quake_fail_argmax": 2.0,
+  "val_whole_fail_argmax": 0.5,
+  "crit": 1.25
+ },
+ {
+  "step": 1314,
+  "minutes": 17.01,
+  "train_loss": 1.7822,
+  "lr": 0.0015169436884308587,
+  "val_quake_fail_argmax": 1.8,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 1.05
+ },
+ {
+  "step": 1890,
+  "minutes": 23.01,
+  "train_loss": 1.7671,
+  "lr": 0.0011798076184195696,
+  "val_quake_fail_argmax": 1.8,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 1.05
+ },
+ {
+  "step": 2255,
+  "minutes": 29.0,
+  "train_loss": 1.7606,
+  "lr": 0.0008197050749053894,
+  "val_quake_fail_argmax": 1.6,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 0.9500000000000001
+ },
+ {
+  "step": 2579,
+  "minutes": 35.0,
+  "train_loss": 1.7545,
+  "lr": 0.0004824772893180587,
+  "val_quake_fail_argmax": 1.6,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 0.9500000000000001
+ },
+ {
+  "step": 2918,
+  "minutes": 41.0,
+  "train_loss": 1.7254,
+  "lr": 0.00021280172212838566,
+  "val_quake_fail_argmax": 1.6,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 0.9500000000000001
+ },
+ {
+  "step": 3368,
+  "minutes": 47.01,
+  "train_loss": 1.744,
+  "lr": 4.514489679361788e-05,
+  "val_quake_fail_argmax": 1.4,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 0.85
+ },
+ {
+  "step": 3962,
+  "minutes": 52.22,
+  "train_loss": 1.7368,
+  "lr": 0.0,
+  "val_quake_fail_argmax": 1.4,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 0.85,
+  "final": true
+ }
+]

@@ -1,0 +1,21 @@
+{
+ "n_lines": 8,
+ "line_sec": 900,
+ "px_per_sec": 4,
+ "spacing": 48,
+ "margin_x": 40,
+ "margin_y": 70,
+ "start_utc": "2011-03-11T05:40:00.069538Z",
+ "fs": 1.0,
+ "p_arrival_utc": "2011-03-11T05:58:46.195082Z",
+ "p_arrival_line": 2,
+ "dist_deg": 82.95379348239094,
+ "gains": [
+  0.25,
+  0.8,
+  2.0,
+  5.0
+ ],
+ "mode": "all",
+ "active_line": 3
+}

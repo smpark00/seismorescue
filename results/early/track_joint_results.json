@@ -1,0 +1,134 @@
+[
+ {
+  "src": "synth",
+  "gain": 0.8,
+  "method": "greedy (Otsu ink)",
+  "whole_image_fail": 8.1
+ },
+ {
+  "src": "synth",
+  "gain": 0.8,
+  "method": "greedy (new ink)",
+  "whole_image_fail": 8.1
+ },
+ {
+  "src": "synth",
+  "gain": 0.8,
+  "method": "joint (new ink)",
+  "whole_image_fail": 9.6
+ },
+ {
+  "src": "synth",
+  "gain": 2.0,
+  "method": "greedy (Otsu ink)",
+  "whole_image_fail": 38.3,
+  "window": "touch_g2",
+  "window_fail": 52.4,
+  "window_touch_zone_fail": 51.5
+ },
+ {
+  "src": "synth",
+  "gain": 2.0,
+  "method": "greedy (new ink)",
+  "whole_image_fail": 53.5,
+  "window": "touch_g2",
+  "window_fail": 56.6,
+  "window_touch_zone_fail": 55.3
+ },
+ {
+  "src": "synth",
+  "gain": 2.0,
+  "method": "joint (new ink)",
+  "whole_image_fail": 35.2,
+  "window": "touch_g2",
+  "window_fail": 31.3,
+  "window_touch_zone_fail": 31.6
+ },
+ {
+  "src": "synth",
+  "gain": 5.0,
+  "method": "greedy (Otsu ink)",
+  "whole_image_fail": 88.7,
+  "window": "touch_g5",
+  "window_fail": 87.6,
+  "window_touch_zone_fail": 87.2
+ },
+ {
+  "src": "synth",
+  "gain": 5.0,
+  "method": "greedy (new ink)",
+  "whole_image_fail": 88.9,
+  "window": "touch_g5",
+  "window_fail": 88.8,
+  "window_touch_zone_fail": 88.2
+ },
+ {
+  "src": "synth",
+  "gain": 5.0,
+  "method": "joint (new ink)",
+  "whole_image_fail": 52.7,
+  "window": "touch_g5",
+  "window_fail": 71.5,
+  "window_touch_zone_fail": 71.0
+ },
+ {
+  "src": "synth_active",
+  "gain": 1.5,
+  "method": "greedy (Otsu ink)",
+  "whole_image_fail": 19.8,
+  "window": "active_g1.5",
+  "window_fail": 33.1,
+  "window_touch_zone_fail": 40.9,
+  "active_line_fail": 6.5
+ },
+ {
+  "src": "synth_active",
+  "gain": 1.5,
+  "method": "greedy (new ink)",
+  "whole_image_fail": 19.8,
+  "window": "active_g1.5",
+  "window_fail": 33.2,
+  "window_touch_zone_fail": 39.7,
+  "active_line_fail": 11.2
+ },
+ {
+  "src": "synth_active",
+  "gain": 1.5,
+  "method": "joint (new ink)",
+  "whole_image_fail": 13.2,
+  "window": "active_g1.5",
+  "window_fail": 28.3,
+  "window_touch_zone_fail": 53.4,
+  "active_line_fail": 41.3
+ },
+ {
+  "src": "synth_active",
+  "gain": 2.0,
+  "method": "greedy (Otsu ink)",
+  "whole_image_fail": 46.0,
+  "window": "active_g2",
+  "window_fail": 58.5,
+  "window_touch_zone_fail": 47.0,
+  "active_line_fail": 50.7
+ },
+ {
+  "src": "synth_active",
+  "gain": 2.0,
+  "method": "greedy (new ink)",
+  "whole_image_fail": 46.0,
+  "window": "active_g2",
+  "window_fail": 58.5,
+  "window_touch_zone_fail": 46.9,
+  "active_line_fail": 50.7
+ },
+ {
+  "src": "synth_active",
+  "gain": 2.0,
+  "method": "joint (new ink)",
+  "whole_image_fail": 6.1,
+  "window": "active_g2",
+  "window_fail": 11.5,
+  "window_touch_zone_fail": 16.7,
+  "active_line_fail": 57.5
+ }
+]

@@ -1,0 +1,166 @@
+{
+ "item": "20160416_M7.8_IU.PAB_all_g5",
+ "record": "20160416_M7.8_IU.PAB",
+ "answer": {
+  "event_id": "ev1_20160416T235836_M7.8",
+  "p_arrival_s": 939.0,
+  "surface_peak_s": 3630.0,
+  "suspect_spans": [
+   [
+    3601,
+    3694
+   ],
+   [
+    4574,
+    5141
+   ],
+   [
+    6400,
+    6850
+   ]
+  ],
+  "notes": "M7.8 is largest with P in 0-7200. AIC 939 matches catalog P937.6 and onset 940. S ~1450-1550 then surface. Predicted R1 2460 but large LP wavetrain appears at 3600-3680 with peak 3630 amp 5.3 via find_peak. +900 correlation 0.63 for 3550-3800 shows duplication at 4500-4700, and large signals repeat at 4574-5141 and 6400-6850 (peak 6564 amp 7). 3630 chosen as physical R (P939<S<R, ~2700s after P plausible) while later repeats are 900/1800s duplicates. Low-confidence spans 2701-3600, 3697-4500 muted baseline -2.5 indicate jumper lost true 2400-3400 coda."
+ },
+ "turns": 17,
+ "out_tokens": 19880,
+ "in_tokens": 65275,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20160417T002931_M5.5\", \"time\": \"2016-04-17T00:29:31.380000Z\", \"mag\": 5.5, \"dist_deg\": 79.51, \"depth_km\": 15.5, \"P_s\": 2797.4, \"S_s\": 3398.9, \"R1_s\": 4338.1}, {\"id\": \"ev1_20160416T235836_M7.8\", \"time\": \"2016-04-16T23:58:36.980000Z\", \"mag\": 7.8, \"dist_deg\": 78.67, \"depth_km\": 20.6, \"P_s\": 937.6, \"S_s\": 1534.2, \"R1_s\": 2460.0}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 60,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 479, \"peak_ratio\": 813.26, \"duration_s\": 10}, {\"onset_s\": 833, \"peak_ratio\": 3.74, \"duration_s\": 3}, {\"onset_s\": 940, \"peak_ratio\": 87.53, \"duration_s\": 21}, {\"onset_s\": 965, \"peak_ratio\": 3.27, \"duration_s\": 3}, {\"onset_s\": 977, \"peak_ratio\": 17.7, \"duration_s\": 8}, {\"onset_s\": 1029, \"peak_ratio\": 5.59, \"duration_s\": 16}, {\"onset_s\": 1125, \"peak_ratio\": 3.48, \"duration_s\": 3}, {\"onset_s\": 1145, \"peak_ratio\": 10.85, \"duration_s\": 28}, {\"onset_s\": 1181, \"peak_ratio\": 3.67, \"duration_s\": 3}, {\"onset_s\": 1334, \"peak_ratio\": 5.28, \"duration_s\": 6}, {\"onset_s\": 1451, \"peak_ratio\": 10.75, \"duration_s\": 10}, {\"onset_s\": 1551, \"peak_ratio\": 5.9, \"duration_s\": 10}, {\"onset_s\": 1661, \"peak_ratio\": 4.35, \"duration_s\": 10}, {\"onset_s\": 1678, \"peak_ratio\": 3.66, \"duration_s\": 4}, {\"onset_s\": 1796, \"peak_ratio\": 6.47, \"duration_s\": 6}, {\"onset_s\": 1805, \"peak_ratio\": 5.12, \"duration_s\": 6}, {\"onset_s\": 1893, \"peak_ratio\": 13.61, \"duration_s\": 8}, {\"onset_s\": 1923, \"peak_ratio\": 3.66, \"duration_s\": 5}, {\"onset_s\": 1938, \"peak_ratio\": 3.36, \"duration_s\": 3}, {\"onset_s\": 2027, \"peak_ratio\": 6.45, \"duration_s\": 12}, {\"onset_s\": 2164, \"peak_ratio\": 5.04, \"duration_s\": 5}, {\"onset_s\": 2189, \"peak_ratio\": 9.66, \"duration_s\": 20}, {\"onset_s\": 2334, \"peak_ratio\": 12.12, \"duration_s\": 8}, {\"onset_s\": 2376, \"peak_ratio\": 4.33, \"duration_s\": 7}, {\"onset_s\": 2403, \"peak_ratio\": 8.63, \"duration_s\": 13}, {\"onset_s\": 2502, \"peak_ratio\": 5.47, \"duration_s\": 7}, {\"onset_s\": 2558, \"peak_ratio\": 3.12, \"duration_s\": 1}, {\"onset_s\": 2603, \"peak_ratio\": 4.4, \"duration_s\": 10}, {\"onset_s\": 2680, \"peak_ratio\": 7.99, \"duration_s\": 22}, {\"onset_s\": 2736, \"peak_ratio\": 9.03, \"duration_s\": 7}, {\"onset_s\": 2907, \"peak_ratio\": 19.42, \"duration_s\": 5}, {\"onset_s\": 2949, \"peak_ratio\": 14.54, \"duration_s\": 21}, {\"onset_s\": 3034, \"peak_ratio\": 4.74, \"duration_s\": 20}, {\"onset_s\": 3388, \"peak_ratio\": 3.09, \"duration_s\": 1}, {\"onset_s\": 3396, \"peak_ratio\": 6.56, \"duration_s\": 29}, {\"onset_s\": 3631, \"pea"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.359, \"spans\": [[2422, 2646], [2701, 3600], [3601, 3694], [3697, 4500], [4574, 5141], [5718, 5719]]}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1300.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 600.0,
+    "start_s": 350.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 940.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 939.0, \"snr_after_before\": 25.94}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2800.0,
+    "start_s": 1400.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 3500.0,
+    "start_s": 1500.0
+   },
+   "result": "{\"peak_s\": 3443, \"amplitude\": -2.962}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 5500.0,
+    "start_s": 3500.0
+   },
+   "result": "{\"peak_s\": 3630, \"amplitude\": 5.301}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 5500.0
+   },
+   "result": "{\"peak_s\": 6564, \"amplitude\": 7.0}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2800.0,
+    "start_s": 2400.0
+   },
+   "result": "{\"-900\": -0.256, \"900\": -0.525}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 3800.0,
+    "start_s": 3550.0
+   },
+   "result": "{\"-900\": -0.387, \"900\": 0.63}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 3800.0,
+    "start_s": 2300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 6850.0,
+    "start_s": 6400.0
+   },
+   "result": "{\"-900\": 0.369, \"900\": null}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 5400.0,
+    "start_s": 3500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 3700.0,
+    "start_s": 3550.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "final": "{\"event_id\": \"ev1_20160416T235836_M7.8\", \"p_arrival_s\": 939.0, \"surface_peak_s\": 3630.0, \"suspect_spans\": [[3601, 3694], [4574, 5141], [6400, 6850]], \"notes\": \"M7.8 is largest with P in 0-7200. AIC 939 matches catalog P937.6 and onset 940. S ~1450-1550 then surface. Predicted R1 2460 but large LP wavetrain appears at 3600-3680 with peak 3630 amp 5.3 via find_peak. +900 correlation 0.63 for 3550-3800 shows duplication at 4500-4700, and large signals repeat at 4574-5141 and 6400-6850 (peak 6564 amp 7). 3630 chosen as physical R (P939<S<R, ~2700s after P plausible) while later repeats are 900/1800s duplicates. Low-confidence spans 2701-3600, 3697-4500 muted baseline -2.5 indicate jumper lost true 2400-3400 coda.\"}"
+  }
+ ]
+}

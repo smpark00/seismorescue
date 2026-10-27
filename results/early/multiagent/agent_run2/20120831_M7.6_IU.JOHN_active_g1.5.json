@@ -1,0 +1,171 @@
+{
+ "item": "20120831_M7.6_IU.JOHN_active_g1.5",
+ "record": "20120831_M7.6_IU.JOHN",
+ "answer": {
+  "event_id": "ev0_20120831T124733_M7.6",
+  "p_arrival_s": 1799.0,
+  "surface_peak_s": 3198.0,
+  "suspect_spans": [
+   [
+    2110,
+    2270
+   ],
+   [
+    3190,
+    3605
+   ]
+  ],
+  "notes": "Single M7.6 catalogue event P pred 951.2 S 1454.7 R1 2102.2. Digitized series quiet 0-1790s, first AIC onset 1799s SNR14.9 interpreted as P jumped ~+850-900s onto next helicorder line. P before S before surface preserved with +900 shift: S exp ~2354 seen 2425-2446, R1 exp ~3002 seen 3198 huge onset SNR82. Correlation 0.79 for [3190,3605] vs -900s and 0.66 for [2270,2700] vs +900s proves duplication of surface train 900s late. Flat clipped interval ~2113-2270 and late duplicate ~3190-3605 cover low-confidence spans 3200-3500. Surface peak taken at onset of late duplicate due to tool budget; true R1 onset ~+900s late."
+ },
+ "turns": 18,
+ "out_tokens": 24108,
+ "in_tokens": 56225,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20120831T124733_M7.6\", \"time\": \"2012-08-31T12:47:33.380000Z\", \"mag\": 7.6, \"dist_deg\": 62.04, \"depth_km\": 28.0, \"P_s\": 951.2, \"S_s\": 1454.7, \"R1_s\": 2102.2}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 60,
+    "sta_s": 5,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 1805, \"peak_ratio\": 3.47, \"duration_s\": 5}, {\"onset_s\": 1811, \"peak_ratio\": 69.88, \"duration_s\": 18}, {\"onset_s\": 1891, \"peak_ratio\": 21.51, \"duration_s\": 11}, {\"onset_s\": 1911, \"peak_ratio\": 3.89, \"duration_s\": 4}, {\"onset_s\": 2055, \"peak_ratio\": 6.29, \"duration_s\": 6}, {\"onset_s\": 2068, \"peak_ratio\": 21.42, \"duration_s\": 13}, {\"onset_s\": 2086, \"peak_ratio\": 7.01, \"duration_s\": 7}, {\"onset_s\": 2425, \"peak_ratio\": 4.12, \"duration_s\": 4}, {\"onset_s\": 2446, \"peak_ratio\": 3.9, \"duration_s\": 4}, {\"onset_s\": 2537, \"peak_ratio\": 4.2, \"duration_s\": 4}, {\"onset_s\": 2558, \"peak_ratio\": 3.01, \"duration_s\": 1}, {\"onset_s\": 2682, \"peak_ratio\": 3.48, \"duration_s\": 3}, {\"onset_s\": 3198, \"peak_ratio\": 6254.49, \"duration_s\": 16}, {\"onset_s\": 3249, \"peak_ratio\": 3.32, \"duration_s\": 3}]"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.008, \"spans\": [[3200, 3217], [3220, 3235], [3240, 3241], [3332, 3339], [3350, 3368], [3420, 3421], [3426, 3427], [3499, 3500]]}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2500.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 4000.0,
+    "start_s": 2500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2700.0,
+    "start_s": 2270.0
+   },
+   "result": "{\"-900\": -0.224, \"900\": 0.666}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 3605.0,
+    "start_s": 3190.0
+   },
+   "result": "{\"-900\": 0.79, \"900\": 0.084}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2100.0,
+    "start_s": 1790.0
+   },
+   "result": "{\"-900\": 0.116, \"900\": -0.004}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2270.0,
+    "start_s": 2050.0
+   },
+   "result": "{\"-900\": -0.032, \"900\": 0.131}"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 30,
+    "sta_s": 3,
+    "threshold": 2.5
+   },
+   "result": "[{\"onset_s\": 1320, \"peak_ratio\": 2.89, \"duration_s\": 1}, {\"onset_s\": 1408, \"peak_ratio\": 4.09, \"duration_s\": 2}, {\"onset_s\": 1803, \"peak_ratio\": 35.4, \"duration_s\": 24}, {\"onset_s\": 1870, \"peak_ratio\": 4.19, \"duration_s\": 5}, {\"onset_s\": 1890, \"peak_ratio\": 15.37, \"duration_s\": 10}, {\"onset_s\": 1961, \"peak_ratio\": 5.84, \"duration_s\": 7}, {\"onset_s\": 2010, \"peak_ratio\": 2.68, \"duration_s\": 1}, {\"onset_s\": 2019, \"peak_ratio\": 2.55, \"duration_s\": 1}, {\"onset_s\": 2053, \"peak_ratio\": 8.56, \"duration_s\": 8}, {\"onset_s\": 2068, \"peak_ratio\": 12.55, \"duration_s\": 11}, {\"onset_s\": 2086, \"peak_ratio\": 3.59, \"duration_s\": 5}, {\"onset_s\": 2296, \"peak_ratio\": 2.73, \"duration_s\": 2}, {\"onset_s\": 2405, \"peak_ratio\": 3.76, \"duration_s\": 3}, {\"onset_s\": 2424, \"peak_ratio\": 3.38, \"duration_s\": 4}, {\"onset_s\": 2445, \"peak_ratio\": 3.24, \"duration_s\": 3}, {\"onset_s\": 2519, \"peak_ratio\": 2.69, \"duration_s\": 1}, {\"onset_s\": 2528, \"peak_ratio\": 2.87, \"duration_s\": 2}, {\"onset_s\": 2536, \"peak_ratio\": 4.43, \"duration_s\": 4}, {\"onset_s\": 2557, \"peak_ratio\": 2.52, \"duration_s\": 1}, {\"onset_s\": 2630, \"peak_ratio\": 2.55, \"duration_s\": 1}, {\"onset_s\": 2662, \"peak_ratio\": 3.61, \"duration_s\": 3}, {\"onset_s\": 2680, \"peak_ratio\": 4.57, \"duration_s\": 5}, {\"onset_s\": 3175, \"peak_ratio\": 3.5, \"duration_s\": 2}, {\"onset_s\": 3198, \"peak_ratio\": 1823.89, \"duration_s\": 13}, {\"onset_s\": 3242, \"peak_ratio\": 9.67, \"duration_s\": 12}]"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1100.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 951.2,
+    "window_s": 100.0
+   },
+   "result": "{\"pick_s\": 855.0, \"snr_after_before\": 0.0}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1808.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 1799.0, \"snr_after_before\": 14.92}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 2055.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 2067.0, \"snr_after_before\": 5.66}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 3198.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 3198.0, \"snr_after_before\": 82.14}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2200.0,
+    "start_s": 1750.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 800.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "final": "{\"event_id\": \"ev0_20120831T124733_M7.6\", \"p_arrival_s\": 1799.0, \"surface_peak_s\": 3198.0, \"suspect_spans\": [[2110, 2270], [3190, 3605]], \"notes\": \"Single M7.6 catalogue event P pred 951.2 S 1454.7 R1 2102.2. Digitized series quiet 0-1790s, first AIC onset 1799s SNR14.9 interpreted as P jumped ~+850-900s onto next helicorder line. P before S before surface preserved with +900 shift: S exp ~2354 seen 2425-2446, R1 exp ~3002 seen 3198 huge onset SNR82. Correlation 0.79 for [3190,3605] vs -900s and 0.66 for [2270,2700] vs +900s proves duplication of surface train 900s late. Flat clipped interval ~2113-2270 and late duplicate ~3190-3605 cover low-confidence spans 3200-3500. Surface peak taken at onset of late duplicate due to tool budget; true R1 onset ~+900s late.\"}"
+  }
+ ]
+}

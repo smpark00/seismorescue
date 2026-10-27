@@ -1,0 +1,5808 @@
+{
+ "summary": [
+  {
+   "mode": "all",
+   "gain": 2.0,
+   "metric": "fail",
+   "rule": 26.3,
+   "learned": 18.7
+  },
+  {
+   "mode": "all",
+   "gain": 5.0,
+   "metric": "fail",
+   "rule": 49.6,
+   "learned": 46.8
+  },
+  {
+   "mode": "active",
+   "gain": 1.5,
+   "metric": "fail",
+   "rule": 10.2,
+   "learned": 7.3
+  },
+  {
+   "mode": "active",
+   "gain": 1.5,
+   "metric": "active_line_fail",
+   "rule": 29.0,
+   "learned": 21.8
+  },
+  {
+   "mode": "active",
+   "gain": 2.0,
+   "metric": "fail",
+   "rule": 11.3,
+   "learned": 7.9
+  },
+  {
+   "mode": "active",
+   "gain": 2.0,
+   "metric": "active_line_fail",
+   "rule": 31.7,
+   "learned": 26.6
+  }
+ ],
+ "cv": [
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 11.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 54.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 57.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 3.1,
+   "active_line_fail": 2.4
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.0,
+   "active_line_fail": 38.6
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.4,
+   "active_line_fail": 38.6
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 21.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 28.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 2.8,
+   "active_line_fail": 22.0
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 2.8,
+   "active_line_fail": 22.0
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.6,
+   "active_line_fail": 15.1
+  },
+  {
+   "repeat": 0,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.3,
+   "active_line_fail": 13.8
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 6.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 28.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 23.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 12.4,
+   "active_line_fail": 55.1
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 6.7,
+   "active_line_fail": 12.7
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 3.9,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.1,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 35.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 27.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.1,
+   "active_line_fail": 1.0
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.6,
+   "active_line_fail": 5.0
+  },
+  {
+   "repeat": 0,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.6,
+   "active_line_fail": 5.0
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 36.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 33.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 53.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 52.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": 8.4
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.5,
+   "active_line_fail": 10.2
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.7,
+   "active_line_fail": 13.4
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.2,
+   "active_line_fail": 17.5
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 37.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 28.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 77.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 64.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 4.8,
+   "active_line_fail": 21.9
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 2.7,
+   "active_line_fail": 21.9
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.3,
+   "active_line_fail": 40.1
+  },
+  {
+   "repeat": 0,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 11.2,
+   "active_line_fail": 40.1
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 23.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 6.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 19.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 12.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.5,
+   "active_line_fail": 4.1
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.5,
+   "active_line_fail": 4.1
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.9,
+   "active_line_fail": 14.4
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.9,
+   "active_line_fail": 14.4
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 26.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 44.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 45.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 28.1,
+   "active_line_fail": 76.1
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 18.6,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 23.9,
+   "active_line_fail": 19.6
+  },
+  {
+   "repeat": 0,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 22.8,
+   "active_line_fail": 20.8
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 54.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 52.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 66.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 64.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.1,
+   "active_line_fail": 8.7
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.3,
+   "active_line_fail": 10.5
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.0,
+   "active_line_fail": 30.7
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.6,
+   "active_line_fail": 20.7
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 5.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 57.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 66.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 16.0,
+   "active_line_fail": 79.2
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 11.4,
+   "active_line_fail": 85.7
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 12.6,
+   "active_line_fail": 58.3
+  },
+  {
+   "repeat": 0,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 7.0,
+   "active_line_fail": 41.4
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 37.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 47.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 43.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.6,
+   "active_line_fail": 12.9
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 13.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 4.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 62.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 63.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 18.6,
+   "active_line_fail": 73.6
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 19.4,
+   "active_line_fail": 82.9
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.6,
+   "active_line_fail": 43.2
+  },
+  {
+   "repeat": 0,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.1,
+   "active_line_fail": 58.8
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 55.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 30.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 77.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 74.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 20.2,
+   "active_line_fail": 74.4
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 20.1,
+   "active_line_fail": 74.4
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.9,
+   "active_line_fail": 68.0
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.2,
+   "active_line_fail": 59.4
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 36.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 15.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 58.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 54.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 2.8,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.8,
+   "active_line_fail": 4.4
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 3.4,
+   "active_line_fail": 16.7
+  },
+  {
+   "repeat": 0,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.4,
+   "active_line_fail": 16.7
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 5.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 4.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 27.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 27.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.2,
+   "active_line_fail": 0.2
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.2,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.4,
+   "active_line_fail": 9.3
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.2,
+   "active_line_fail": 8.1
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 29.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 24.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 58.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 50.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.3,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.9,
+   "active_line_fail": 3.0
+  },
+  {
+   "repeat": 0,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.6,
+   "active_line_fail": 2.3
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 24.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 22.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.7,
+   "active_line_fail": 13.0
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.3,
+   "active_line_fail": 2.4
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 61.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 51.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 65.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 72.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 24.0,
+   "active_line_fail": 51.0
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 23.2,
+   "active_line_fail": 46.8
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 21.6,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 0,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 20.9,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 22.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 19.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 44.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 42.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 10.8,
+   "active_line_fail": 37.8
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 9.5,
+   "active_line_fail": 23.9
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 19.8,
+   "active_line_fail": 58.0
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.8,
+   "active_line_fail": 31.5
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 26.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 40.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 40.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 16.8,
+   "active_line_fail": 24.9
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 7.2,
+   "active_line_fail": 10.5
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.5,
+   "active_line_fail": 57.2
+  },
+  {
+   "repeat": 0,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 7.3,
+   "active_line_fail": 18.5
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 40.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 30.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 49.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 50.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 12.9,
+   "active_line_fail": 2.8
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 35.4,
+   "active_line_fail": 52.7
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.6,
+   "active_line_fail": 37.6
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 19.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 14.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 78.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 60.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 54.5,
+   "active_line_fail": 76.2
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 41.6,
+   "active_line_fail": 76.2
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 35.9,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 18.5,
+   "active_line_fail": 64.0
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 29.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 31.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 47.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 45.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 3.5,
+   "active_line_fail": 23.5
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 7.3,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.8,
+   "active_line_fail": 14.3
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 20.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 43.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 43.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 6.8,
+   "active_line_fail": 34.1
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 4.9,
+   "active_line_fail": 21.1
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 10.0,
+   "active_line_fail": 32.6
+  },
+  {
+   "repeat": 0,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 9.3,
+   "active_line_fail": 26.6
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 55.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 30.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 77.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 74.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 20.2,
+   "active_line_fail": 74.4
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 20.1,
+   "active_line_fail": 74.4
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.9,
+   "active_line_fail": 68.0
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.2,
+   "active_line_fail": 59.4
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 36.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 15.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 58.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 54.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 2.8,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.8,
+   "active_line_fail": 4.4
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 3.4,
+   "active_line_fail": 16.7
+  },
+  {
+   "repeat": 1,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.4,
+   "active_line_fail": 16.7
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 6.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 28.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 23.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 12.4,
+   "active_line_fail": 55.1
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 6.9,
+   "active_line_fail": 12.7
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 3.9,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.1,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 35.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 27.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.6,
+   "active_line_fail": 5.0
+  },
+  {
+   "repeat": 1,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.6,
+   "active_line_fail": 5.0
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 5.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 4.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 27.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 27.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.2,
+   "active_line_fail": 0.2
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.2,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.4,
+   "active_line_fail": 9.3
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.2,
+   "active_line_fail": 8.1
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 29.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 24.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 58.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 47.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.3,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.9,
+   "active_line_fail": 3.0
+  },
+  {
+   "repeat": 1,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.7,
+   "active_line_fail": 2.3
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 23.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 6.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 19.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 12.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.5,
+   "active_line_fail": 4.1
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.5,
+   "active_line_fail": 4.1
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.9,
+   "active_line_fail": 14.4
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.9,
+   "active_line_fail": 14.4
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 26.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 44.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 45.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 28.1,
+   "active_line_fail": 76.1
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 23.9,
+   "active_line_fail": 19.6
+  },
+  {
+   "repeat": 1,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 22.8,
+   "active_line_fail": 20.8
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 36.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 33.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 53.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 51.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": 8.4
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.5,
+   "active_line_fail": 10.2
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.7,
+   "active_line_fail": 13.4
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.2,
+   "active_line_fail": 17.5
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 37.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 28.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 77.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 64.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 4.8,
+   "active_line_fail": 21.9
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 2.7,
+   "active_line_fail": 21.9
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.3,
+   "active_line_fail": 40.1
+  },
+  {
+   "repeat": 1,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 11.2,
+   "active_line_fail": 40.1
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 54.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 53.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 66.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 64.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.1,
+   "active_line_fail": 8.7
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.3,
+   "active_line_fail": 10.5
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.0,
+   "active_line_fail": 30.7
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.6,
+   "active_line_fail": 20.7
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 5.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 57.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 66.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 16.0,
+   "active_line_fail": 79.2
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 11.4,
+   "active_line_fail": 85.7
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 12.6,
+   "active_line_fail": 58.3
+  },
+  {
+   "repeat": 1,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 7.1,
+   "active_line_fail": 42.6
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 11.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 54.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 57.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 3.1,
+   "active_line_fail": 2.4
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.2,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.0,
+   "active_line_fail": 38.6
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.4,
+   "active_line_fail": 38.6
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 21.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 21.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 28.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 2.8,
+   "active_line_fail": 22.0
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 2.8,
+   "active_line_fail": 22.0
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.6,
+   "active_line_fail": 15.1
+  },
+  {
+   "repeat": 1,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 5.5,
+   "active_line_fail": 25.4
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 22.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 19.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 44.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 42.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 10.8,
+   "active_line_fail": 37.8
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 9.5,
+   "active_line_fail": 23.9
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 19.8,
+   "active_line_fail": 58.0
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 9.2,
+   "active_line_fail": 31.5
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 26.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 40.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 40.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 16.8,
+   "active_line_fail": 24.9
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 7.0,
+   "active_line_fail": 8.8
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.5,
+   "active_line_fail": 57.2
+  },
+  {
+   "repeat": 1,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 7.3,
+   "active_line_fail": 18.5
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 37.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 47.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 43.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.1,
+   "active_line_fail": 1.2
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.6,
+   "active_line_fail": 12.9
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 13.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 6.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 62.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 63.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 18.6,
+   "active_line_fail": 73.6
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 19.4,
+   "active_line_fail": 82.9
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.6,
+   "active_line_fail": 43.2
+  },
+  {
+   "repeat": 1,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.1,
+   "active_line_fail": 58.8
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 40.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 31.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 49.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 50.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 12.9,
+   "active_line_fail": 2.8
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 35.4,
+   "active_line_fail": 52.7
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.6,
+   "active_line_fail": 37.6
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 19.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 15.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 78.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 60.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 54.5,
+   "active_line_fail": 76.2
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 41.5,
+   "active_line_fail": 76.2
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 35.9,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 18.5,
+   "active_line_fail": 62.2
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 29.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 31.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 47.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 45.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 3.5,
+   "active_line_fail": 23.5
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 7.3,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.8,
+   "active_line_fail": 14.3
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 20.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 43.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 42.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 6.8,
+   "active_line_fail": 34.1
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 4.2,
+   "active_line_fail": 21.1
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 10.0,
+   "active_line_fail": 32.6
+  },
+  {
+   "repeat": 1,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.8,
+   "active_line_fail": 26.6
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 24.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 22.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.7,
+   "active_line_fail": 13.0
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.3,
+   "active_line_fail": 2.4
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 61.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 52.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 65.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 73.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 24.0,
+   "active_line_fail": 51.0
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 25.2,
+   "active_line_fail": 63.1
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 21.6,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 1,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 20.6,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 22.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 22.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 44.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 42.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 10.8,
+   "active_line_fail": 37.8
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 9.1,
+   "active_line_fail": 23.9
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 19.8,
+   "active_line_fail": 58.0
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.BBSR",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.6,
+   "active_line_fail": 31.5
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 26.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 14.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 40.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 40.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 16.8,
+   "active_line_fail": 24.9
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 7.2,
+   "active_line_fail": 10.5
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.5,
+   "active_line_fail": 57.2
+  },
+  {
+   "repeat": 2,
+   "group": "20070815",
+   "record": "20070815_M8.0_IU.TSUM",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 7.3,
+   "active_line_fail": 18.5
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 24.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 22.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.7,
+   "active_line_fail": 13.0
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.NWAO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.3,
+   "active_line_fail": 2.4
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 61.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 52.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 65.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 72.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 24.0,
+   "active_line_fail": 51.0
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 23.2,
+   "active_line_fail": 46.8
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 21.6,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 2,
+   "group": "20180928",
+   "record": "20180928_M7.5_IU.TIXI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 30.2,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 54.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 52.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 66.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 64.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.1,
+   "active_line_fail": 8.7
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.3,
+   "active_line_fail": 10.5
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.0,
+   "active_line_fail": 30.7
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_II.KAPI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.1,
+   "active_line_fail": 25.1
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 5.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 57.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 66.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 16.0,
+   "active_line_fail": 79.2
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 11.4,
+   "active_line_fail": 85.7
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 12.6,
+   "active_line_fail": 58.3
+  },
+  {
+   "repeat": 2,
+   "group": "20201019",
+   "record": "20201019_M7.6_IU.XMAS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.2,
+   "active_line_fail": 51.0
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 55.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 30.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 77.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 74.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 20.2,
+   "active_line_fail": 74.4
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 20.1,
+   "active_line_fail": 74.4
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.9,
+   "active_line_fail": 68.0
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.DAV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.2,
+   "active_line_fail": 59.4
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 36.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 15.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 58.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 54.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 2.8,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.8,
+   "active_line_fail": 4.4
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 3.4,
+   "active_line_fail": 16.7
+  },
+  {
+   "repeat": 2,
+   "group": "20061115",
+   "record": "20061115_M8.3_IU.GUMO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.4,
+   "active_line_fail": 16.7
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 36.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 33.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 53.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 51.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": 8.4
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.5,
+   "active_line_fail": 10.2
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.7,
+   "active_line_fail": 13.4
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.2,
+   "active_line_fail": 17.5
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 37.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 28.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 77.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 64.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 4.8,
+   "active_line_fail": 21.9
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 2.7,
+   "active_line_fail": 21.9
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.3,
+   "active_line_fail": 40.1
+  },
+  {
+   "repeat": 2,
+   "group": "20200128",
+   "record": "20200128_M7.7_II.SHEL",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 11.2,
+   "active_line_fail": 40.1
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 37.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 8.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 47.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 43.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.1,
+   "active_line_fail": 1.2
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.6,
+   "active_line_fail": 12.9
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_II.SACV",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.8,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 13.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 4.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 62.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 63.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 18.6,
+   "active_line_fail": 73.6
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 19.4,
+   "active_line_fail": 82.9
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.6,
+   "active_line_fail": 43.2
+  },
+  {
+   "repeat": 2,
+   "group": "20250822",
+   "record": "20250822_M7.5_IU.SBA",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.7,
+   "active_line_fail": 58.8
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 11.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 54.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 57.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 3.1,
+   "active_line_fail": 2.4
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.3,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 14.0,
+   "active_line_fail": 38.6
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.MAJO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 12.4,
+   "active_line_fail": 38.6
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 21.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 28.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 2.8,
+   "active_line_fail": 22.0
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 2.8,
+   "active_line_fail": 22.0
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 4.6,
+   "active_line_fail": 15.1
+  },
+  {
+   "repeat": 2,
+   "group": "20050328",
+   "record": "20050328_M8.6_IU.YSS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.3,
+   "active_line_fail": 13.8
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 23.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 14.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 19.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 12.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.5,
+   "active_line_fail": 4.1
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.5,
+   "active_line_fail": 4.1
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.9,
+   "active_line_fail": 14.4
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_II.EFI",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.9,
+   "active_line_fail": 14.4
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 26.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 44.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 45.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 28.1,
+   "active_line_fail": 76.1
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 18.9,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 23.9,
+   "active_line_fail": 19.6
+  },
+  {
+   "repeat": 2,
+   "group": "20071114",
+   "record": "20071114_M7.7_IU.TRIS",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 22.7,
+   "active_line_fail": 19.9
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 5.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 4.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 27.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 27.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.2,
+   "active_line_fail": 0.2
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.2,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 1.4,
+   "active_line_fail": 9.3
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_II.RPN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 1.2,
+   "active_line_fail": 8.1
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 29.5,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 24.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 58.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 50.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 1.5,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 1.3,
+   "active_line_fail": 10.4
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.9,
+   "active_line_fail": 3.0
+  },
+  {
+   "repeat": 2,
+   "group": "20160416",
+   "record": "20160416_M7.8_IU.PAB",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.7,
+   "active_line_fail": 2.3
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 40.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 31.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 49.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 50.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 12.9,
+   "active_line_fail": 2.8
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 35.4,
+   "active_line_fail": 52.7
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_II.COCO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 13.6,
+   "active_line_fail": 37.6
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 19.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 14.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 78.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 60.7,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 54.5,
+   "active_line_fail": 76.2
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 41.6,
+   "active_line_fail": 76.2
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 35.9,
+   "active_line_fail": 63.9
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.7_IU.MAKZ",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 18.7,
+   "active_line_fail": 64.0
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 29.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 31.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 47.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 45.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 3.5,
+   "active_line_fail": 23.5
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 7.3,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_II.ARU",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 3.8,
+   "active_line_fail": 14.3
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 20.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 16.4,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 43.6,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 43.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 6.8,
+   "active_line_fail": 34.1
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 4.9,
+   "active_line_fail": 21.1
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 10.0,
+   "active_line_fail": 32.6
+  },
+  {
+   "repeat": 2,
+   "group": "20110311",
+   "record": "20110311_M7.9_IU.KONO",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 9.3,
+   "active_line_fail": 26.6
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 16.2,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 6.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 28.8,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 23.9,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 12.4,
+   "active_line_fail": 55.1
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 6.9,
+   "active_line_fail": 12.7
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 3.9,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.JOHN",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 2.1,
+   "active_line_fail": 15.0
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "rule",
+   "fail": 35.3,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "all",
+   "gain": 5.0,
+   "method": "learned",
+   "fail": 27.1,
+   "active_line_fail": null
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "rule",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 1.5,
+   "method": "learned",
+   "fail": 0.0,
+   "active_line_fail": 0.0
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "rule",
+   "fail": 0.6,
+   "active_line_fail": 5.0
+  },
+  {
+   "repeat": 2,
+   "group": "20120831",
+   "record": "20120831_M7.6_IU.WAKE",
+   "mode": "active",
+   "gain": 2.0,
+   "method": "learned",
+   "fail": 0.6,
+   "active_line_fail": 5.0
+  }
+ ]
+}

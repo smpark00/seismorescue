@@ -1,0 +1,207 @@
+{
+ "item": "20160416_M7.8_II.RPN_active_g1.5",
+ "record": "20160416_M7.8_II.RPN",
+ "answer": {
+  "event_id": "ev1_20160416T235836_M7.8",
+  "p_arrival_s": 911.0,
+  "surface_peak_s": 1591,
+  "suspect_spans": [
+   [
+    2532,
+    2546
+   ]
+  ],
+  "notes": "P 911 matches catalog 905.5, S ~1266, R1 ~1591. Isolated large pulse at ~2539 correlates 0.87 with 1639 surface wave (-900s), i.e. 900s late duplicate of M7.8 surface wave, unphysical for R1 and too large for M5.5 P at 2753. Onset tool gives 2532 duration 14s."
+ },
+ "turns": 23,
+ "out_tokens": 12524,
+ "in_tokens": 48700,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20160417T002931_M5.5\", \"time\": \"2016-04-17T00:29:31.380000Z\", \"mag\": 5.5, \"dist_deg\": 38.6, \"depth_km\": 15.5, \"P_s\": 2753.6, \"S_s\": 3110.1, \"R1_s\": 3412.0}, {\"id\": \"ev1_20160416T235836_M7.8\", \"time\": \"2016-04-16T23:58:36.980000Z\", \"mag\": 7.8, \"dist_deg\": 39.45, \"depth_km\": 20.6, \"P_s\": 905.5, \"S_s\": 1267.0, \"R1_s\": 1581.6}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 50,
+    "sta_s": 5,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 924, \"peak_ratio\": 13.24, \"duration_s\": 10}, {\"onset_s\": 1041, \"peak_ratio\": 4.08, \"duration_s\": 4}, {\"onset_s\": 1107, \"peak_ratio\": 3.3, \"duration_s\": 2}, {\"onset_s\": 1269, \"peak_ratio\": 6.94, \"duration_s\": 5}, {\"onset_s\": 1275, \"peak_ratio\": 19.56, \"duration_s\": 8}, {\"onset_s\": 1291, \"peak_ratio\": 38.41, \"duration_s\": 10}, {\"onset_s\": 1465, \"peak_ratio\": 21.51, \"duration_s\": 10}, {\"onset_s\": 1479, \"peak_ratio\": 9.1, \"duration_s\": 11}, {\"onset_s\": 1548, \"peak_ratio\": 16.88, \"duration_s\": 10}, {\"onset_s\": 1561, \"peak_ratio\": 30.36, \"duration_s\": 10}, {\"onset_s\": 1574, \"peak_ratio\": 11.96, \"duration_s\": 10}, {\"onset_s\": 1590, \"peak_ratio\": 7.12, \"duration_s\": 7}, {\"onset_s\": 1782, \"peak_ratio\": 3.24, \"duration_s\": 2}, {\"onset_s\": 1788, \"peak_ratio\": 3.63, \"duration_s\": 3}, {\"onset_s\": 1795, \"peak_ratio\": 3.4, \"duration_s\": 2}, {\"onset_s\": 2532, \"peak_ratio\": 6139.97, \"duration_s\": 14}]"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 924.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 911.0, \"snr_after_before\": 3.9}"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.001, \"spans\": [[1769, 1779]]}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 1300.0
+   },
+   "result": "{\"peak_s\": 1591, \"amplitude\": -1.49}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1400.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2100.0,
+    "start_s": 1400.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2900.0,
+    "start_s": 2300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2545.0,
+    "start_s": 2525.0
+   },
+   "result": "{\"-900\": 0.868, \"900\": null}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2560.0,
+    "start_s": 2500.0
+   },
+   "result": "{\"peak_s\": 2539, \"amplitude\": 1.823}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2570.0,
+    "start_s": 2480.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1290.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1266.0, \"snr_after_before\": 13.05}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1400.0
+   },
+   "result": "{\"peak_s\": 1591, \"amplitude\": -1.49}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1600.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2600.0,
+    "start_s": 1600.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 900.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 3600.0,
+    "start_s": 2800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 3400.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 911.0,
+    "window_s": 20.0
+   },
+   "result": "{\"pick_s\": 911.0, \"snr_after_before\": 4.13}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1400.0
+   },
+   "result": "{\"-900\": 0.221, \"900\": 0.143}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1400.0,
+    "start_s": 1200.0
+   },
+   "result": "{\"-900\": -0.043, \"900\": 0.0}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1650.0,
+    "start_s": 1625.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.884}"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 20,
+    "sta_s": 2,
+    "threshold": 5.0
+   },
+   "result": "[{\"onset_s\": 927, \"peak_ratio\": 9.6, \"duration_s\": 3}, {\"onset_s\": 1041, \"peak_ratio\": 5.29, \"duration_s\": 1}, {\"onset_s\": 1269, \"peak_ratio\": 10.85, \"duration_s\": 2}, {\"onset_s\": 1276, \"peak_ratio\": 10.29, \"duration_s\": 3}, {\"onset_s\": 1291, \"peak_ratio\": 12.75, \"duration_s\": 5}, {\"onset_s\": 1337, \"peak_ratio\": 5.16, \"duration_s\": 1}, {\"onset_s\": 1434, \"peak_ratio\": 5.23, \"duration_s\": 1}, {\"onset_s\": 1464, \"peak_ratio\": 17.36, \"duration_s\": 7}, {\"onset_s\": 1547, \"peak_ratio\": 10.33, \"duration_s\": 7}, {\"onset_s\": 1561, \"peak_ratio\": 9.64, \"duration_s\": 5}, {\"onset_s\": 2532, \"peak_ratio\": 959.2, \"duration_s\": 9}]"
+  },
+  {
+   "final": "{\"event_id\": \"ev1_20160416T235836_M7.8\", \"p_arrival_s\": 911.0, \"surface_peak_s\": 1591, \"suspect_spans\": [[2532, 2546]], \"notes\": \"P 911 matches catalog 905.5, S ~1266, R1 ~1591. Isolated large pulse at ~2539 correlates 0.87 with 1639 surface wave (-900s), i.e. 900s late duplicate of M7.8 surface wave, unphysical for R1 and too large for M5.5 P at 2753. Onset tool gives 2532 duration 14s.\"}"
+  }
+ ]
+}

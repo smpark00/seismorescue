@@ -1,0 +1,350 @@
+{
+ "item": "20110311_M7.9_II.ARU_all_g2",
+ "record": "20110311_M7.9_II.ARU",
+ "answer": {
+  "event_id": "ev47_20110311T061540_M7.9",
+  "p_arrival_s": 912.0,
+  "surface_peak_s": 1951,
+  "suspect_spans": [
+   [
+    926,
+    1800
+   ]
+  ],
+  "notes": "Largest P in 0-7200s is M7.9 ev47 P pred 918.5s; M9.1 excluded P -842s. First onset ~896-900 is ev48 M6.3 P pred 903.3s, ev47 P arrives ~15s later in coda, AIC 912s, onset detector 914s. R1 pred 1953.2s matches find_peak 1951. Large low-confidence 926-1800s amplitude ~1.9 exceeds later surface and is ~900s early surface duplication (1951-900=1051); flat stuck segment ~1844-1985 follows, so 926-1800 marked suspect."
+ },
+ "turns": 41,
+ "out_tokens": 42338,
+ "in_tokens": 169689,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20110311T080458_M5.7\", \"time\": \"2011-03-11T08:04:58.780000Z\", \"mag\": 5.7, \"dist_deg\": 56.17, \"depth_km\": 48.9, \"P_s\": 7473.4, \"S_s\": 7939.7, \"R1_s\": 8500.1}, {\"id\": \"ev1_20110311T080157_M5.9\", \"time\": \"2011-03-11T08:01:57.000000Z\", \"mag\": 5.9, \"dist_deg\": 56.92, \"depth_km\": 19.3, \"P_s\": 7300.7, \"S_s\": 7774.3, \"R1_s\": 8339.8}, {\"id\": \"ev2_20110311T075948_M5.7\", \"time\": \"2011-03-11T07:59:48.970000Z\", \"mag\": 5.7, \"dist_deg\": 56.9, \"depth_km\": 0.7, \"P_s\": 7175.5, \"S_s\": 7651.1, \"R1_s\": 8211.3}, {\"id\": \"ev3_20110311T075615_M5.6\", \"time\": \"2011-03-11T07:56:15.410000Z\", \"mag\": 5.6, \"dist_deg\": 56.54, \"depth_km\": 38.0, \"P_s\": 6953.9, \"S_s\": 7423.4, \"R1_s\": 7987.4}, {\"id\": \"ev4_20110311T075445_M5.7\", \"time\": \"2011-03-11T07:54:45.420000Z\", \"mag\": 5.7, \"dist_deg\": 55.72, \"depth_km\": 50.8, \"P_s\": 6856.6, \"S_s\": 7320.1, \"R1_s\": 7874.0}, {\"id\": \"ev5_20110311T074427_M5.8\", \"time\": \"2011-03-11T07:44:27.990000Z\", \"mag\": 5.8, \"dist_deg\": 57.01, \"depth_km\": 13.8, \"P_s\": 6253.2, \"S_s\": 6728.0, \"R1_s\": 7293.4}, {\"id\": \"ev6_20110311T074255_M5.7\", \"time\": \"2011-03-11T07:42:55.650000Z\", \"mag\": 5.7, \"dist_deg\": 56.9, \"depth_km\": 35.0, \"P_s\": 6156.9, \"S_s\": 6628.9, \"R1_s\": 7197.8}, {\"id\": \"ev7_20110311T073827_M5.8\", \"time\": \"2011-03-11T07:38:27.600000Z\", \"mag\": 5.8, \"dist_deg\": 55.27, \"depth_km\": 38.5, \"P_s\": 5876.9, \"S_s\": 6338.5, \"R1_s\": 6883.3}, {\"id\": \"ev8_20110311T073552_M5.7\", \"time\": \"2011-03-11T07:35:52.220000Z\", \"mag\": 5.7, \"dist_deg\": 56.71, \"depth_km\": 21.9, \"P_s\": 5734.0, \"S_s\": 6206.1, \"R1_s\": 6769.0}, {\"id\": \"ev9_20110311T073333_M5.7\", \"time\": \"2011-03-11T07:33:33.660000Z\", \"mag\": 5.7, \"dist_deg\": 57.39, \"depth_km\": 35.0, \"P_s\": 5598.4, \"S_s\": 6073.3, \"R1_s\": 6649.8}, {\"id\": \"ev10_20110311T073018_M6.0\", \"time\": \"2011-03-11T07:30:18.450000Z\", \"mag\": 6.0, \"dist_deg\": 55.75, \"depth_km\": 49.2, \"P_s\": 5390.0, \"S_s\": 5853.8, \"R1_s\": 6407.8}, {\"id\": \"ev11_20110311T072901_M6.3\", \"time\": \"2011-03-11T07:29:01.830000Z\", \"mag\": 6.3, \"dist_deg\": 55.17, \"depth_km\": 45.4, \"P_s\": "
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 60,
+    "sta_s": 5,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 104, \"peak_ratio\": 6.35, \"duration_s\": 5}, {\"onset_s\": 237, \"peak_ratio\": 14.27, \"duration_s\": 11}, {\"onset_s\": 254, \"peak_ratio\": 6.53, \"duration_s\": 16}, {\"onset_s\": 402, \"peak_ratio\": 4.62, \"duration_s\": 5}, {\"onset_s\": 438, \"peak_ratio\": 3.08, \"duration_s\": 1}, {\"onset_s\": 502, \"peak_ratio\": 7.38, \"duration_s\": 6}, {\"onset_s\": 580, \"peak_ratio\": 5.26, \"duration_s\": 5}, {\"onset_s\": 693, \"peak_ratio\": 9.83, \"duration_s\": 7}, {\"onset_s\": 703, \"peak_ratio\": 5.46, \"duration_s\": 6}, {\"onset_s\": 797, \"peak_ratio\": 4.03, \"duration_s\": 3}, {\"onset_s\": 808, \"peak_ratio\": 9.17, \"duration_s\": 6}, {\"onset_s\": 816, \"peak_ratio\": 4.7, \"duration_s\": 5}, {\"onset_s\": 883, \"peak_ratio\": 4.16, \"duration_s\": 4}, {\"onset_s\": 892, \"peak_ratio\": 4.51, \"duration_s\": 5}, {\"onset_s\": 900, \"peak_ratio\": 36.65, \"duration_s\": 9}, {\"onset_s\": 914, \"peak_ratio\": 10.48, \"duration_s\": 7}, {\"onset_s\": 941, \"peak_ratio\": 3.04, \"duration_s\": 2}, {\"onset_s\": 948, \"peak_ratio\": 3.65, \"duration_s\": 8}, {\"onset_s\": 1091, \"peak_ratio\": 9.71, \"duration_s\": 17}, {\"onset_s\": 1194, \"peak_ratio\": 7.65, \"duration_s\": 18}, {\"onset_s\": 1289, \"peak_ratio\": 8.51, \"duration_s\": 12}, {\"onset_s\": 1439, \"peak_ratio\": 3.45, \"duration_s\": 4}, {\"onset_s\": 1466, \"peak_ratio\": 4.54, \"duration_s\": 5}, {\"onset_s\": 1491, \"peak_ratio\": 3.88, \"duration_s\": 7}, {\"onset_s\": 1570, \"peak_ratio\": 3.41, \"duration_s\": 5}, {\"onset_s\": 1588, \"peak_ratio\": 3.38, \"duration_s\": 5}, {\"onset_s\": 1759, \"peak_ratio\": 3.4, \"duration_s\": 9}, {\"onset_s\": 2090, \"peak_ratio\": 5.53, \"duration_s\": 6}, {\"onset_s\": 2112, \"peak_ratio\": 3.02, \"duration_s\": 1}, {\"onset_s\": 2129, \"peak_ratio\": 3.36, \"duration_s\": 2}, {\"onset_s\": 2142, \"peak_ratio\": 3.16, \"duration_s\": 1}, {\"onset_s\": 2270, \"peak_ratio\": 3.36, \"duration_s\": 2}, {\"onset_s\": 2337, \"peak_ratio\": 3.76, \"duration_s\": 4}, {\"onset_s\": 2359, \"peak_ratio\": 3.18, \"duration_s\": 2}, {\"onset_s\": 2486, \"peak_ratio\": 7.61, \"duration_s\": 17}, {\"onset_s\": 2504, \"peak_ratio\": 3.45, \"duration_s\""
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 918.5,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 913.0, \"snr_after_before\": 0.5}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2200.0,
+    "start_s": 1700.0
+   },
+   "result": "{\"peak_s\": 1779, \"amplitude\": -1.929}"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.129, \"spans\": [[302, 303], [315, 316], [362, 363], [420, 423], [540, 543], [600, 603], [660, 663], [720, 721], [842, 843], [926, 1060], [1064, 1083], [1086, 1800], [1921, 1923], [1981, 1998], [2002, 2018], [2023, 2031]]}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2300.0,
+    "start_s": 600.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1100.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2100.0,
+    "start_s": 1700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 900.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 926.0
+   },
+   "result": "{\"-900\": -0.414, \"900\": -0.454}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 900.0,
+    "window_s": 20.0
+   },
+   "result": "{\"pick_s\": 887.0, \"snr_after_before\": 8.2}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2100.0,
+    "start_s": 1850.0
+   },
+   "result": "{\"peak_s\": 1951, \"amplitude\": 1.115}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 3200.0,
+    "start_s": 1800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 5000.0,
+    "start_s": 3000.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 5000.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 903.3,
+    "window_s": 15.0
+   },
+   "result": "{\"pick_s\": 900.0, \"snr_after_before\": 6.15}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 918.5,
+    "window_s": 15.0
+   },
+   "result": "{\"pick_s\": 927.0, \"snr_after_before\": 0.01}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 1900.0
+   },
+   "result": "{\"peak_s\": 1951, \"amplitude\": 1.115}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2600.0,
+    "start_s": 2000.0
+   },
+   "result": "{\"-900\": -0.556, \"900\": -0.029}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 914.0,
+    "window_s": 10.0
+   },
+   "result": "{\"pick_s\": 918.0, \"snr_after_before\": 0.1}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 900.0,
+    "window_s": 10.0
+   },
+   "result": "{\"pick_s\": 896.0, \"snr_after_before\": 17.48}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 903.3,
+    "window_s": 10.0
+   },
+   "result": "{\"pick_s\": 900.0, \"snr_after_before\": 5.36}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1985.0,
+    "start_s": 1844.0
+   },
+   "result": "{\"-900\": -0.028, \"900\": -0.034}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1100.0,
+    "start_s": 926.0
+   },
+   "result": "{\"-900\": -0.51, \"900\": -0.113}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1700.0
+   },
+   "result": "{\"-900\": 0.182, \"900\": 0.509}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2200.0,
+    "start_s": 1700.0
+   },
+   "result": "{\"peak_s\": 1779, \"amplitude\": -1.929}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 914.0,
+    "window_s": 5.0
+   },
+   "result": "{\"pick_s\": 912.0, \"snr_after_before\": 1.11}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 903.0,
+    "window_s": 5.0
+   },
+   "result": "{\"pick_s\": 900.0, \"snr_after_before\": 3.33}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 960.0,
+    "start_s": 880.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1985.0,
+    "start_s": 1844.0
+   },
+   "result": "{\"-900\": -0.028, \"900\": -0.034}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1840.0,
+    "start_s": 1540.0
+   },
+   "result": "{\"-900\": 0.414, \"900\": 0.118}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1300.0
+   },
+   "result": "{\"peak_s\": 1779, \"amplitude\": -1.929}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1600.0,
+    "start_s": 900.0
+   },
+   "result": "{\"peak_s\": 951, \"amplitude\": -1.906}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1100.0
+   },
+   "result": "{\"-900\": 0.135, \"900\": -0.445}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 926.0
+   },
+   "result": "{\"-900\": -0.414, \"900\": -0.454}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2700.0,
+    "start_s": 1800.0
+   },
+   "result": "{\"peak_s\": 1838, \"amplitude\": -1.406}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2500.0,
+    "start_s": 1800.0
+   },
+   "result": "{\"peak_s\": 1838, \"amplitude\": -1.406}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1060.0,
+    "start_s": 926.0
+   },
+   "result": "{\"-900\": -0.34, \"900\": -0.022}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1400.0,
+    "start_s": 1100.0
+   },
+   "result": "{\"-900\": 0.004, \"900\": -0.115}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1700.0,
+    "start_s": 1400.0
+   },
+   "result": "{\"-900\": 0.053, \"900\": -0.759}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 912.0,
+    "window_s": 8.0
+   },
+   "result": "{\"pick_s\": 913.0, \"snr_after_before\": 0.46}"
+  },
+  {
+   "final": "{\"event_id\": \"ev47_20110311T061540_M7.9\", \"p_arrival_s\": 912.0, \"surface_peak_s\": 1951, \"suspect_spans\": [[926, 1800]], \"notes\": \"Largest P in 0-7200s is M7.9 ev47 P pred 918.5s; M9.1 excluded P -842s. First onset ~896-900 is ev48 M6.3 P pred 903.3s, ev47 P arrives ~15s later in coda, AIC 912s, onset detector 914s. R1 pred 1953.2s matches find_peak 1951. Large low-confidence 926-1800s amplitude ~1.9 exceeds later surface and is ~900s early surface duplication (1951-900=1051); flat stuck segment ~1844-1985 follows, so 926-1800 marked suspect.\"}"
+  }
+ ]
+}

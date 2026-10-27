@@ -1,0 +1,5923 @@
+{
+ "summary": [
+  {
+   "mode": "all",
+   "gain": 2.0,
+   "metric": "fail",
+   "A": [
+    27.9,
+    23.7,
+    31.5
+   ],
+   "B": [
+    27.4,
+    22.0,
+    32.5
+   ],
+   "oracle": [
+    15.2,
+    11.5,
+    18.9
+   ],
+   "rule_arbiter_cv": [
+    26.5,
+    20.6,
+    32.0
+   ]
+  },
+  {
+   "mode": "all",
+   "gain": 5.0,
+   "metric": "fail",
+   "A": [
+    69.2,
+    63.1,
+    75.2
+   ],
+   "B": [
+    48.2,
+    41.2,
+    54.2
+   ],
+   "oracle": [
+    42.8,
+    35.7,
+    48.8
+   ],
+   "rule_arbiter_cv": [
+    49.5,
+    42.6,
+    55.9
+   ]
+  },
+  {
+   "mode": "active",
+   "gain": 1.5,
+   "metric": "fail",
+   "A": [
+    12.8,
+    10.5,
+    15.1
+   ],
+   "B": [
+    14.4,
+    7.2,
+    23.4
+   ],
+   "oracle": [
+    5.5,
+    3.4,
+    7.6
+   ],
+   "rule_arbiter_cv": [
+    10.2,
+    6.2,
+    13.8
+   ]
+  },
+  {
+   "mode": "active",
+   "gain": 1.5,
+   "metric": "active_line_fail",
+   "A": [
+    18.9,
+    9.5,
+    30.9
+   ],
+   "B": [
+    42.5,
+    34.8,
+    48.0
+   ],
+   "oracle": [
+    14.9,
+    8.4,
+    22.2
+   ],
+   "rule_arbiter_cv": [
+    30.0,
+    22.5,
+    36.5
+   ]
+  },
+  {
+   "mode": "active",
+   "gain": 2.0,
+   "metric": "fail",
+   "A": [
+    20.0,
+    16.3,
+    23.8
+   ],
+   "B": [
+    14.8,
+    7.7,
+    24.0
+   ],
+   "oracle": [
+    6.2,
+    4.1,
+    8.2
+   ],
+   "rule_arbiter_cv": [
+    11.5,
+    7.2,
+    15.5
+   ]
+  },
+  {
+   "mode": "active",
+   "gain": 2.0,
+   "metric": "active_line_fail",
+   "A": [
+    27.5,
+    18.0,
+    36.5
+   ],
+   "B": [
+    44.1,
+    36.2,
+    50.4
+   ],
+   "oracle": [
+    21.4,
+    15.1,
+    26.9
+   ],
+   "rule_arbiter_cv": [
+    32.4,
+    23.5,
+    40.1
+   ]
+  }
+ ],
+ "test_scores": [
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 10.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 54.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 3.1,
+   "active_line_fail": 2.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.0,
+   "active_line_fail": 38.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 20.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 25.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 2.8,
+   "active_line_fail": 22.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 5.8,
+   "active_line_fail": 26.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 16.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 27.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 12.4,
+   "active_line_fail": 55.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 2.1,
+   "active_line_fail": 15.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 0.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 32.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.0,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 0.6,
+   "active_line_fail": 5.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 44.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 53.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.5,
+   "active_line_fail": 8.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.7,
+   "active_line_fail": 13.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 37.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 77.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 4.6,
+   "active_line_fail": 21.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.3,
+   "active_line_fail": 40.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 23.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 19.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.5,
+   "active_line_fail": 4.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.9,
+   "active_line_fail": 14.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 26.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 44.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 28.1,
+   "active_line_fail": 76.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 23.9,
+   "active_line_fail": 19.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 54.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 66.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.1,
+   "active_line_fail": 8.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 4.0,
+   "active_line_fail": 30.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 5.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 57.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 16.0,
+   "active_line_fail": 79.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 12.6,
+   "active_line_fail": 58.3,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 37.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 47.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.0,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 4.6,
+   "active_line_fail": 12.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 13.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 62.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 18.6,
+   "active_line_fail": 73.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.6,
+   "active_line_fail": 43.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 55.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 77.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 20.2,
+   "active_line_fail": 74.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 16.9,
+   "active_line_fail": 68.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 36.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 58.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 2.8,
+   "active_line_fail": 10.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 3.4,
+   "active_line_fail": 16.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 5.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 27.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.2,
+   "active_line_fail": 0.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.4,
+   "active_line_fail": 9.3,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 29.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 58.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.5,
+   "active_line_fail": 10.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 0.9,
+   "active_line_fail": 3.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 1.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 24.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.8,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.7,
+   "active_line_fail": 13.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 61.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 65.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 24.0,
+   "active_line_fail": 51.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 21.6,
+   "active_line_fail": 63.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 22.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 44.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 10.8,
+   "active_line_fail": 37.8,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 19.8,
+   "active_line_fail": 58.0,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 25.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 40.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 20.4,
+   "active_line_fail": 53.7,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 21.4,
+   "active_line_fail": 57.2,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 40.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 49.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 12.1,
+   "active_line_fail": 2.8,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 34.0,
+   "active_line_fail": 52.7,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 19.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 78.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 54.5,
+   "active_line_fail": 76.2,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 35.9,
+   "active_line_fail": 63.9,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 29.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 47.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 3.5,
+   "active_line_fail": 23.5,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 7.3,
+   "active_line_fail": 15.0,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 20.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 43.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 6.8,
+   "active_line_fail": 34.1,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 0,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 10.0,
+   "active_line_fail": 32.6,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 55.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 77.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 20.2,
+   "active_line_fail": 74.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 16.9,
+   "active_line_fail": 68.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 36.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 58.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 2.8,
+   "active_line_fail": 10.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 3.4,
+   "active_line_fail": 16.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 16.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 28.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 12.4,
+   "active_line_fail": 55.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 3.9,
+   "active_line_fail": 15.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 0.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 35.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.0,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 0.6,
+   "active_line_fail": 5.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 5.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 27.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.2,
+   "active_line_fail": 0.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.4,
+   "active_line_fail": 9.3,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 29.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 58.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.5,
+   "active_line_fail": 10.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 0.9,
+   "active_line_fail": 3.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 23.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 19.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.5,
+   "active_line_fail": 4.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.9,
+   "active_line_fail": 14.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 26.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 44.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 28.1,
+   "active_line_fail": 76.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 23.9,
+   "active_line_fail": 19.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 36.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 53.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.5,
+   "active_line_fail": 8.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.7,
+   "active_line_fail": 13.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 37.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 77.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 4.8,
+   "active_line_fail": 21.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.3,
+   "active_line_fail": 40.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 54.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 66.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.1,
+   "active_line_fail": 8.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 4.0,
+   "active_line_fail": 30.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 5.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 57.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 16.0,
+   "active_line_fail": 79.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 12.6,
+   "active_line_fail": 58.3,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 10.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 54.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 3.1,
+   "active_line_fail": 2.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.0,
+   "active_line_fail": 38.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 20.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 25.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 2.8,
+   "active_line_fail": 22.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 5.8,
+   "active_line_fail": 26.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 20.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 44.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 10.8,
+   "active_line_fail": 37.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 19.6,
+   "active_line_fail": 58.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 22.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 40.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 17.5,
+   "active_line_fail": 30.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 16.5,
+   "active_line_fail": 57.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 39.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 47.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.0,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 4.6,
+   "active_line_fail": 12.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 12.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 62.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 18.6,
+   "active_line_fail": 73.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 16.6,
+   "active_line_fail": 58.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 40.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 49.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 12.9,
+   "active_line_fail": 2.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 35.4,
+   "active_line_fail": 52.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 19.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 78.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 54.5,
+   "active_line_fail": 76.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 35.9,
+   "active_line_fail": 63.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 29.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 47.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 3.5,
+   "active_line_fail": 23.5,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 7.3,
+   "active_line_fail": 15.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 20.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 43.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 6.8,
+   "active_line_fail": 34.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 10.0,
+   "active_line_fail": 32.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 1.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 24.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.8,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.7,
+   "active_line_fail": 13.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 61.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 65.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 24.0,
+   "active_line_fail": 51.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 1,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 21.6,
+   "active_line_fail": 63.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 22.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 44.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 10.8,
+   "active_line_fail": 37.8,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.BBSR",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 19.8,
+   "active_line_fail": 58.0,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 25.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 40.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 20.4,
+   "active_line_fail": 53.7,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20070815_M8.0_IU.TSUM",
+   "group": "20070815",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 21.4,
+   "active_line_fail": 57.2,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 1.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 24.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.8,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.NWAO",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.7,
+   "active_line_fail": 13.0,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 61.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 65.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 24.2,
+   "active_line_fail": 52.7,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20180928_M7.5_IU.TIXI",
+   "group": "20180928",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 21.6,
+   "active_line_fail": 63.9,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 54.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 66.4,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.1,
+   "active_line_fail": 8.7,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_II.KAPI",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 3.8,
+   "active_line_fail": 30.7,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 5.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 57.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 16.0,
+   "active_line_fail": 79.2,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20201019_M7.6_IU.XMAS",
+   "group": "20201019",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 12.6,
+   "active_line_fail": 58.3,
+   "tau": 6.0,
+   "w": [
+    2,
+    20,
+    5
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 55.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 78.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 20.0,
+   "active_line_fail": 74.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.DAV",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 16.9,
+   "active_line_fail": 68.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 36.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 58.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 2.8,
+   "active_line_fail": 10.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20061115_M8.3_IU.GUMO",
+   "group": "20061115",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 3.4,
+   "active_line_fail": 16.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 44.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 53.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.5,
+   "active_line_fail": 8.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.EFI",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.7,
+   "active_line_fail": 13.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 37.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 77.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 4.6,
+   "active_line_fail": 21.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20200128_M7.7_II.SHEL",
+   "group": "20200128",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.3,
+   "active_line_fail": 40.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 39.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 47.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.0,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_II.SACV",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 4.6,
+   "active_line_fail": 12.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 12.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 62.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 18.6,
+   "active_line_fail": 73.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20250822_M7.5_IU.SBA",
+   "group": "20250822",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 16.6,
+   "active_line_fail": 58.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    10.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 11.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 54.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 3.1,
+   "active_line_fail": 2.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.MAJO",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 14.0,
+   "active_line_fail": 38.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 21.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 28.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 2.8,
+   "active_line_fail": 22.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20050328_M8.6_IU.YSS",
+   "group": "20050328",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 4.6,
+   "active_line_fail": 15.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 23.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 19.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.5,
+   "active_line_fail": 4.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_II.EFI",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.9,
+   "active_line_fail": 14.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 26.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 44.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 28.1,
+   "active_line_fail": 76.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20071114_M7.7_IU.TRIS",
+   "group": "20071114",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 23.9,
+   "active_line_fail": 19.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 5.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 27.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.2,
+   "active_line_fail": 0.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_II.RPN",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 1.4,
+   "active_line_fail": 9.3,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 29.5,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 58.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 1.5,
+   "active_line_fail": 10.4,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20160416_M7.8_IU.PAB",
+   "group": "20160416",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 0.9,
+   "active_line_fail": 3.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 40.7,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 49.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 12.9,
+   "active_line_fail": 2.8,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_II.COCO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 35.4,
+   "active_line_fail": 52.7,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 19.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 78.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 54.5,
+   "active_line_fail": 76.2,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.7_IU.MAKZ",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 35.9,
+   "active_line_fail": 63.9,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 29.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 47.1,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 3.5,
+   "active_line_fail": 23.5,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_II.ARU",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 7.3,
+   "active_line_fail": 15.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 20.9,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 43.6,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 6.8,
+   "active_line_fail": 34.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20110311_M7.9_IU.KONO",
+   "group": "20110311",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 10.0,
+   "active_line_fail": 32.6,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 16.2,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 28.8,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 12.4,
+   "active_line_fail": 55.1,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.JOHN",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 3.9,
+   "active_line_fail": 15.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 2.0,
+   "fail": 0.0,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "all",
+   "gain": 5.0,
+   "fail": 35.3,
+   "active_line_fail": null,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 1.5,
+   "fail": 0.0,
+   "active_line_fail": 0.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  },
+  {
+   "repeat": 2,
+   "record": "20120831_M7.6_IU.WAKE",
+   "group": "20120831",
+   "mode": "active",
+   "gain": 2.0,
+   "fail": 0.6,
+   "active_line_fail": 5.0,
+   "tau": 6.0,
+   "w": [
+    0.5,
+    20.0,
+    5.0
+   ]
+  }
+ ],
+ "chosen": {
+  "tau=6.0 w=[0.5, 20.0, 10.0]": 72,
+  "tau=6.0 w=[0.5, 20.0, 5.0]": 168,
+  "tau=6.0 w=[2, 20, 5]": 48
+ },
+ "ref": {
+  "20050328_M8.6_IU.MAJO|all|2.0": {
+   "A": [
+    42.9,
+    null
+   ],
+   "B": [
+    13.0,
+    null
+   ],
+   "oracle": [
+    10.1,
+    null
+   ],
+   "n_events": 50
+  },
+  "20050328_M8.6_IU.MAJO|all|5.0": {
+   "A": [
+    80.8,
+    null
+   ],
+   "B": [
+    56.8,
+    null
+   ],
+   "oracle": [
+    52.8,
+    null
+   ],
+   "n_events": 23
+  },
+  "20050328_M8.6_IU.MAJO|active|1.5": {
+   "A": [
+    15.7,
+    0.0
+   ],
+   "B": [
+    5.5,
+    43.5
+   ],
+   "oracle": [
+    0.0,
+    0.0
+   ],
+   "n_events": 53
+  },
+  "20050328_M8.6_IU.MAJO|active|2.0": {
+   "A": [
+    35.1,
+    46.0
+   ],
+   "B": [
+    15.1,
+    62.6
+   ],
+   "oracle": [
+    11.9,
+    38.6
+   ],
+   "n_events": 32
+  },
+  "20050328_M8.6_IU.YSS|all|2.0": {
+   "A": [
+    29.2,
+    null
+   ],
+   "B": [
+    19.8,
+    null
+   ],
+   "oracle": [
+    17.6,
+    null
+   ],
+   "n_events": 59
+  },
+  "20050328_M8.6_IU.YSS|all|5.0": {
+   "A": [
+    71.9,
+    null
+   ],
+   "B": [
+    20.9,
+    null
+   ],
+   "oracle": [
+    17.4,
+    null
+   ],
+   "n_events": 45
+  },
+  "20050328_M8.6_IU.YSS|active|1.5": {
+   "A": [
+    6.6,
+    22.0
+   ],
+   "B": [
+    3.5,
+    28.3
+   ],
+   "oracle": [
+    2.7,
+    21.8
+   ],
+   "n_events": 33
+  },
+  "20050328_M8.6_IU.YSS|active|2.0": {
+   "A": [
+    13.1,
+    13.8
+   ],
+   "B": [
+    5.8,
+    31.0
+   ],
+   "oracle": [
+    3.3,
+    13.8
+   ],
+   "n_events": 35
+  },
+  "20061115_M8.3_IU.DAV|all|2.0": {
+   "A": [
+    44.9,
+    null
+   ],
+   "B": [
+    49.8,
+    null
+   ],
+   "oracle": [
+    30.2,
+    null
+   ],
+   "n_events": 54
+  },
+  "20061115_M8.3_IU.DAV|all|5.0": {
+   "A": [
+    80.2,
+    null
+   ],
+   "B": [
+    78.3,
+    null
+   ],
+   "oracle": [
+    68.8,
+    null
+   ],
+   "n_events": 54
+  },
+  "20061115_M8.3_IU.DAV|active|1.5": {
+   "A": [
+    20.8,
+    45.2
+   ],
+   "B": [
+    14.1,
+    80.0
+   ],
+   "oracle": [
+    9.0,
+    45.2
+   ],
+   "n_events": 40
+  },
+  "20061115_M8.3_IU.DAV|active|2.0": {
+   "A": [
+    22.4,
+    9.5
+   ],
+   "B": [
+    16.6,
+    77.4
+   ],
+   "oracle": [
+    6.4,
+    9.5
+   ],
+   "n_events": 51
+  },
+  "20061115_M8.3_IU.GUMO|all|2.0": {
+   "A": [
+    24.2,
+    null
+   ],
+   "B": [
+    33.8,
+    null
+   ],
+   "oracle": [
+    13.1,
+    null
+   ],
+   "n_events": 104
+  },
+  "20061115_M8.3_IU.GUMO|all|5.0": {
+   "A": [
+    70.1,
+    null
+   ],
+   "B": [
+    55.7,
+    null
+   ],
+   "oracle": [
+    48.9,
+    null
+   ],
+   "n_events": 65
+  },
+  "20061115_M8.3_IU.GUMO|active|1.5": {
+   "A": [
+    6.2,
+    5.1
+   ],
+   "B": [
+    2.7,
+    21.6
+   ],
+   "oracle": [
+    0.6,
+    4.4
+   ],
+   "n_events": 41
+  },
+  "20061115_M8.3_IU.GUMO|active|2.0": {
+   "A": [
+    8.6,
+    14.3
+   ],
+   "B": [
+    4.5,
+    25.0
+   ],
+   "oracle": [
+    3.1,
+    14.3
+   ],
+   "n_events": 37
+  },
+  "20070815_M8.0_IU.BBSR|all|2.0": {
+   "A": [
+    33.1,
+    null
+   ],
+   "B": [
+    20.9,
+    null
+   ],
+   "oracle": [
+    14.4,
+    null
+   ],
+   "n_events": 63
+  },
+  "20070815_M8.0_IU.BBSR|all|5.0": {
+   "A": [
+    77.3,
+    null
+   ],
+   "B": [
+    43.6,
+    null
+   ],
+   "oracle": [
+    40.8,
+    null
+   ],
+   "n_events": 34
+  },
+  "20070815_M8.0_IU.BBSR|active|1.5": {
+   "A": [
+    13.5,
+    10.7
+   ],
+   "B": [
+    13.5,
+    55.2
+   ],
+   "oracle": [
+    7.0,
+    10.7
+   ],
+   "n_events": 47
+  },
+  "20070815_M8.0_IU.BBSR|active|2.0": {
+   "A": [
+    24.0,
+    23.5
+   ],
+   "B": [
+    14.8,
+    61.9
+   ],
+   "oracle": [
+    4.1,
+    23.5
+   ],
+   "n_events": 36
+  },
+  "20070815_M8.0_IU.TSUM|all|2.0": {
+   "A": [
+    33.0,
+    null
+   ],
+   "B": [
+    22.5,
+    null
+   ],
+   "oracle": [
+    14.8,
+    null
+   ],
+   "n_events": 64
+  },
+  "20070815_M8.0_IU.TSUM|all|5.0": {
+   "A": [
+    76.9,
+    null
+   ],
+   "B": [
+    42.3,
+    null
+   ],
+   "oracle": [
+    39.3,
+    null
+   ],
+   "n_events": 37
+  },
+  "20070815_M8.0_IU.TSUM|active|1.5": {
+   "A": [
+    13.8,
+    8.8
+   ],
+   "B": [
+    16.4,
+    56.7
+   ],
+   "oracle": [
+    7.0,
+    8.8
+   ],
+   "n_events": 40
+  },
+  "20070815_M8.0_IU.TSUM|active|2.0": {
+   "A": [
+    31.7,
+    18.5
+   ],
+   "B": [
+    11.9,
+    57.2
+   ],
+   "oracle": [
+    6.4,
+    18.5
+   ],
+   "n_events": 25
+  },
+  "20071114_M7.7_II.EFI|all|2.0": {
+   "A": [
+    9.3,
+    null
+   ],
+   "B": [
+    24.6,
+    null
+   ],
+   "oracle": [
+    6.3,
+    null
+   ],
+   "n_events": 50
+  },
+  "20071114_M7.7_II.EFI|all|5.0": {
+   "A": [
+    35.6,
+    null
+   ],
+   "B": [
+    20.3,
+    null
+   ],
+   "oracle": [
+    11.6,
+    null
+   ],
+   "n_events": 53
+  },
+  "20071114_M7.7_II.EFI|active|1.5": {
+   "A": [
+    3.8,
+    9.8
+   ],
+   "B": [
+    1.7,
+    13.7
+   ],
+   "oracle": [
+    0.5,
+    4.1
+   ],
+   "n_events": 28
+  },
+  "20071114_M7.7_II.EFI|active|2.0": {
+   "A": [
+    9.5,
+    16.5
+   ],
+   "B": [
+    2.2,
+    16.3
+   ],
+   "oracle": [
+    1.9,
+    14.4
+   ],
+   "n_events": 31
+  },
+  "20071114_M7.7_IU.TRIS|all|2.0": {
+   "A": [
+    28.8,
+    null
+   ],
+   "B": [
+    28.8,
+    null
+   ],
+   "oracle": [
+    9.5,
+    null
+   ],
+   "n_events": 71
+  },
+  "20071114_M7.7_IU.TRIS|all|5.0": {
+   "A": [
+    77.4,
+    null
+   ],
+   "B": [
+    45.1,
+    null
+   ],
+   "oracle": [
+    44.5,
+    null
+   ],
+   "n_events": 30
+  },
+  "20071114_M7.7_IU.TRIS|active|1.5": {
+   "A": [
+    18.9,
+    0.0
+   ],
+   "B": [
+    25.5,
+    76.1
+   ],
+   "oracle": [
+    14.7,
+    0.0
+   ],
+   "n_events": 64
+  },
+  "20071114_M7.7_IU.TRIS|active|2.0": {
+   "A": [
+    29.0,
+    20.5
+   ],
+   "B": [
+    24.0,
+    43.8
+   ],
+   "oracle": [
+    19.6,
+    19.6
+   ],
+   "n_events": 66
+  },
+  "20110311_M7.7_II.COCO|all|2.0": {
+   "A": [
+    38.7,
+    null
+   ],
+   "B": [
+    42.7,
+    null
+   ],
+   "oracle": [
+    28.2,
+    null
+   ],
+   "n_events": 58
+  },
+  "20110311_M7.7_II.COCO|all|5.0": {
+   "A": [
+    61.3,
+    null
+   ],
+   "B": [
+    50.6,
+    null
+   ],
+   "oracle": [
+    48.2,
+    null
+   ],
+   "n_events": 41
+  },
+  "20110311_M7.7_II.COCO|active|1.5": {
+   "A": [
+    0.0,
+    0.0
+   ],
+   "B": [
+    65.6,
+    49.2
+   ],
+   "oracle": [
+    0.0,
+    0.0
+   ],
+   "n_events": 135
+  },
+  "20110311_M7.7_II.COCO|active|2.0": {
+   "A": [
+    16.0,
+    63.3
+   ],
+   "B": [
+    65.2,
+    43.1
+   ],
+   "oracle": [
+    12.2,
+    32.9
+   ],
+   "n_events": 140
+  },
+  "20110311_M7.7_IU.MAKZ|all|2.0": {
+   "A": [
+    31.8,
+    null
+   ],
+   "B": [
+    17.7,
+    null
+   ],
+   "oracle": [
+    10.4,
+    null
+   ],
+   "n_events": 92
+  },
+  "20110311_M7.7_IU.MAKZ|all|5.0": {
+   "A": [
+    68.5,
+    null
+   ],
+   "B": [
+    78.6,
+    null
+   ],
+   "oracle": [
+    60.7,
+    null
+   ],
+   "n_events": 26
+  },
+  "20110311_M7.7_IU.MAKZ|active|1.5": {
+   "A": [
+    44.4,
+    88.3
+   ],
+   "B": [
+    70.0,
+    80.3
+   ],
+   "oracle": [
+    38.6,
+    76.2
+   ],
+   "n_events": 135
+  },
+  "20110311_M7.7_IU.MAKZ|active|2.0": {
+   "A": [
+    28.1,
+    63.9
+   ],
+   "B": [
+    63.4,
+    75.0
+   ],
+   "oracle": [
+    18.1,
+    62.1
+   ],
+   "n_events": 148
+  },
+  "20110311_M7.9_II.ARU|all|2.0": {
+   "A": [
+    23.2,
+    null
+   ],
+   "B": [
+    30.7,
+    null
+   ],
+   "oracle": [
+    19.8,
+    null
+   ],
+   "n_events": 70
+  },
+  "20110311_M7.9_II.ARU|all|5.0": {
+   "A": [
+    59.7,
+    null
+   ],
+   "B": [
+    45.6,
+    null
+   ],
+   "oracle": [
+    45.3,
+    null
+   ],
+   "n_events": 40
+  },
+  "20110311_M7.9_II.ARU|active|1.5": {
+   "A": [
+    0.0,
+    0.0
+   ],
+   "B": [
+    18.1,
+    23.5
+   ],
+   "oracle": [
+    0.0,
+    0.0
+   ],
+   "n_events": 106
+  },
+  "20110311_M7.9_II.ARU|active|2.0": {
+   "A": [
+    3.9,
+    15.0
+   ],
+   "B": [
+    27.9,
+    18.0
+   ],
+   "oracle": [
+    3.2,
+    13.5
+   ],
+   "n_events": 117
+  },
+  "20110311_M7.9_IU.KONO|all|2.0": {
+   "A": [
+    23.6,
+    null
+   ],
+   "B": [
+    19.9,
+    null
+   ],
+   "oracle": [
+    12.4,
+    null
+   ],
+   "n_events": 71
+  },
+  "20110311_M7.9_IU.KONO|all|5.0": {
+   "A": [
+    62.5,
+    null
+   ],
+   "B": [
+    45.5,
+    null
+   ],
+   "oracle": [
+    42.0,
+    null
+   ],
+   "n_events": 45
+  },
+  "20110311_M7.9_IU.KONO|active|1.5": {
+   "A": [
+    13.1,
+    29.3
+   ],
+   "B": [
+    7.2,
+    45.8
+   ],
+   "oracle": [
+    3.7,
+    21.1
+   ],
+   "n_events": 69
+  },
+  "20110311_M7.9_IU.KONO|active|2.0": {
+   "A": [
+    21.3,
+    30.8
+   ],
+   "B": [
+    10.5,
+    55.5
+   ],
+   "oracle": [
+    6.8,
+    26.6
+   ],
+   "n_events": 74
+  },
+  "20120831_M7.6_IU.JOHN|all|2.0": {
+   "A": [
+    22.6,
+    null
+   ],
+   "B": [
+    13.4,
+    null
+   ],
+   "oracle": [
+    6.6,
+    null
+   ],
+   "n_events": 72
+  },
+  "20120831_M7.6_IU.JOHN|all|5.0": {
+   "A": [
+    59.9,
+    null
+   ],
+   "B": [
+    25.5,
+    null
+   ],
+   "oracle": [
+    23.8,
+    null
+   ],
+   "n_events": 46
+  },
+  "20120831_M7.6_IU.JOHN|active|1.5": {
+   "A": [
+    15.5,
+    12.7
+   ],
+   "B": [
+    11.9,
+    55.1
+   ],
+   "oracle": [
+    6.5,
+    12.7
+   ],
+   "n_events": 46
+  },
+  "20120831_M7.6_IU.JOHN|active|2.0": {
+   "A": [
+    23.1,
+    36.4
+   ],
+   "B": [
+    4.4,
+    33.2
+   ],
+   "oracle": [
+    2.1,
+    15.0
+   ],
+   "n_events": 29
+  },
+  "20120831_M7.6_IU.WAKE|all|2.0": {
+   "A": [
+    5.3,
+    null
+   ],
+   "B": [
+    3.6,
+    null
+   ],
+   "oracle": [
+    0.0,
+    null
+   ],
+   "n_events": 93
+  },
+  "20120831_M7.6_IU.WAKE|all|5.0": {
+   "A": [
+    49.8,
+    null
+   ],
+   "B": [
+    32.3,
+    null
+   ],
+   "oracle": [
+    26.3,
+    null
+   ],
+   "n_events": 60
+  },
+  "20120831_M7.6_IU.WAKE|active|1.5": {
+   "A": [
+    5.4,
+    0.0
+   ],
+   "B": [
+    1.7,
+    13.3
+   ],
+   "oracle": [
+    0.0,
+    0.0
+   ],
+   "n_events": 37
+  },
+  "20120831_M7.6_IU.WAKE|active|2.0": {
+   "A": [
+    5.5,
+    10.5
+   ],
+   "B": [
+    2.2,
+    17.3
+   ],
+   "oracle": [
+    0.6,
+    5.0
+   ],
+   "n_events": 36
+  },
+  "20160416_M7.8_II.RPN|all|2.0": {
+   "A": [
+    16.5,
+    null
+   ],
+   "B": [
+    13.6,
+    null
+   ],
+   "oracle": [
+    3.7,
+    null
+   ],
+   "n_events": 60
+  },
+  "20160416_M7.8_II.RPN|all|5.0": {
+   "A": [
+    55.0,
+    null
+   ],
+   "B": [
+    26.9,
+    null
+   ],
+   "oracle": [
+    18.0,
+    null
+   ],
+   "n_events": 35
+  },
+  "20160416_M7.8_II.RPN|active|1.5": {
+   "A": [
+    4.8,
+    0.0
+   ],
+   "B": [
+    1.7,
+    13.4
+   ],
+   "oracle": [
+    0.0,
+    0.0
+   ],
+   "n_events": 36
+  },
+  "20160416_M7.8_II.RPN|active|2.0": {
+   "A": [
+    7.5,
+    7.7
+   ],
+   "B": [
+    2.6,
+    19.1
+   ],
+   "oracle": [
+    1.2,
+    7.7
+   ],
+   "n_events": 34
+  },
+  "20160416_M7.8_IU.PAB|all|2.0": {
+   "A": [
+    43.5,
+    null
+   ],
+   "B": [
+    32.2,
+    null
+   ],
+   "oracle": [
+    22.7,
+    null
+   ],
+   "n_events": 75
+  },
+  "20160416_M7.8_IU.PAB|all|5.0": {
+   "A": [
+    78.2,
+    null
+   ],
+   "B": [
+    50.4,
+    null
+   ],
+   "oracle": [
+    42.2,
+    null
+   ],
+   "n_events": 30
+  },
+  "20160416_M7.8_IU.PAB|active|1.5": {
+   "A": [
+    3.7,
+    12.4
+   ],
+   "B": [
+    1.3,
+    10.4
+   ],
+   "oracle": [
+    1.3,
+    10.4
+   ],
+   "n_events": 30
+  },
+  "20160416_M7.8_IU.PAB|active|2.0": {
+   "A": [
+    5.4,
+    2.3
+   ],
+   "B": [
+    2.0,
+    15.8
+   ],
+   "oracle": [
+    0.3,
+    2.3
+   ],
+   "n_events": 39
+  },
+  "20180928_M7.5_IU.NWAO|all|2.0": {
+   "A": [
+    7.3,
+    null
+   ],
+   "B": [
+    4.2,
+    null
+   ],
+   "oracle": [
+    0.1,
+    null
+   ],
+   "n_events": 73
+  },
+  "20180928_M7.5_IU.NWAO|all|5.0": {
+   "A": [
+    35.3,
+    null
+   ],
+   "B": [
+    22.9,
+    null
+   ],
+   "oracle": [
+    17.0,
+    null
+   ],
+   "n_events": 71
+  },
+  "20180928_M7.5_IU.NWAO|active|1.5": {
+   "A": [
+    5.1,
+    0.0
+   ],
+   "B": [
+    2.6,
+    14.2
+   ],
+   "oracle": [
+    0.8,
+    0.0
+   ],
+   "n_events": 32
+  },
+  "20180928_M7.5_IU.NWAO|active|2.0": {
+   "A": [
+    7.3,
+    2.4
+   ],
+   "B": [
+    3.2,
+    25.3
+   ],
+   "oracle": [
+    0.3,
+    2.4
+   ],
+   "n_events": 29
+  },
+  "20180928_M7.5_IU.TIXI|all|2.0": {
+   "A": [
+    39.9,
+    null
+   ],
+   "B": [
+    62.4,
+    null
+   ],
+   "oracle": [
+    36.6,
+    null
+   ],
+   "n_events": 53
+  },
+  "20180928_M7.5_IU.TIXI|all|5.0": {
+   "A": [
+    77.6,
+    null
+   ],
+   "B": [
+    73.4,
+    null
+   ],
+   "oracle": [
+    58.5,
+    null
+   ],
+   "n_events": 40
+  },
+  "20180928_M7.5_IU.TIXI|active|1.5": {
+   "A": [
+    17.1,
+    22.2
+   ],
+   "B": [
+    29.6,
+    70.3
+   ],
+   "oracle": [
+    15.9,
+    12.8
+   ],
+   "n_events": 42
+  },
+  "20180928_M7.5_IU.TIXI|active|2.0": {
+   "A": [
+    41.6,
+    74.4
+   ],
+   "B": [
+    22.1,
+    75.8
+   ],
+   "oracle": [
+    20.6,
+    63.9
+   ],
+   "n_events": 20
+  },
+  "20200128_M7.7_II.EFI|all|2.0": {
+   "A": [
+    30.8,
+    null
+   ],
+   "B": [
+    49.0,
+    null
+   ],
+   "oracle": [
+    29.1,
+    null
+   ],
+   "n_events": 61
+  },
+  "20200128_M7.7_II.EFI|all|5.0": {
+   "A": [
+    74.4,
+    null
+   ],
+   "B": [
+    49.6,
+    null
+   ],
+   "oracle": [
+    46.1,
+    null
+   ],
+   "n_events": 41
+  },
+  "20200128_M7.7_II.EFI|active|1.5": {
+   "A": [
+    17.3,
+    8.4
+   ],
+   "B": [
+    4.5,
+    33.9
+   ],
+   "oracle": [
+    1.3,
+    8.4
+   ],
+   "n_events": 72
+  },
+  "20200128_M7.7_II.EFI|active|2.0": {
+   "A": [
+    25.2,
+    13.4
+   ],
+   "B": [
+    5.4,
+    43.1
+   ],
+   "oracle": [
+    1.5,
+    12.0
+   ],
+   "n_events": 61
+  },
+  "20200128_M7.7_II.SHEL|all|2.0": {
+   "A": [
+    35.3,
+    null
+   ],
+   "B": [
+    33.8,
+    null
+   ],
+   "oracle": [
+    23.1,
+    null
+   ],
+   "n_events": 94
+  },
+  "20200128_M7.7_II.SHEL|all|5.0": {
+   "A": [
+    84.4,
+    null
+   ],
+   "B": [
+    62.7,
+    null
+   ],
+   "oracle": [
+    59.5,
+    null
+   ],
+   "n_events": 27
+  },
+  "20200128_M7.7_II.SHEL|active|1.5": {
+   "A": [
+    11.5,
+    21.9
+   ],
+   "B": [
+    6.0,
+    39.3
+   ],
+   "oracle": [
+    2.7,
+    21.9
+   ],
+   "n_events": 65
+  },
+  "20200128_M7.7_II.SHEL|active|2.0": {
+   "A": [
+    19.3,
+    30.7
+   ],
+   "B": [
+    14.4,
+    50.8
+   ],
+   "oracle": [
+    8.6,
+    30.7
+   ],
+   "n_events": 63
+  },
+  "20201019_M7.6_II.KAPI|all|2.0": {
+   "A": [
+    45.6,
+    null
+   ],
+   "B": [
+    60.1,
+    null
+   ],
+   "oracle": [
+    42.1,
+    null
+   ],
+   "n_events": 84
+  },
+  "20201019_M7.6_II.KAPI|all|5.0": {
+   "A": [
+    78.8,
+    null
+   ],
+   "B": [
+    66.2,
+    null
+   ],
+   "oracle": [
+    59.7,
+    null
+   ],
+   "n_events": 38
+  },
+  "20201019_M7.6_II.KAPI|active|1.5": {
+   "A": [
+    22.3,
+    68.4
+   ],
+   "B": [
+    1.7,
+    13.6
+   ],
+   "oracle": [
+    1.1,
+    8.7
+   ],
+   "n_events": 25
+  },
+  "20201019_M7.6_II.KAPI|active|2.0": {
+   "A": [
+    33.5,
+    78.9
+   ],
+   "B": [
+    3.1,
+    25.1
+   ],
+   "oracle": [
+    2.6,
+    20.7
+   ],
+   "n_events": 16
+  },
+  "20201019_M7.6_IU.XMAS|all|2.0": {
+   "A": [
+    19.4,
+    null
+   ],
+   "B": [
+    9.4,
+    null
+   ],
+   "oracle": [
+    2.3,
+    null
+   ],
+   "n_events": 98
+  },
+  "20201019_M7.6_IU.XMAS|all|5.0": {
+   "A": [
+    91.9,
+    null
+   ],
+   "B": [
+    54.7,
+    null
+   ],
+   "oracle": [
+    54.2,
+    null
+   ],
+   "n_events": 55
+  },
+  "20201019_M7.6_IU.XMAS|active|1.5": {
+   "A": [
+    21.7,
+    77.6
+   ],
+   "B": [
+    20.4,
+    85.7
+   ],
+   "oracle": [
+    9.9,
+    77.5
+   ],
+   "n_events": 42
+  },
+  "20201019_M7.6_IU.XMAS|active|2.0": {
+   "A": [
+    31.1,
+    41.4
+   ],
+   "B": [
+    11.0,
+    77.7
+   ],
+   "oracle": [
+    6.5,
+    41.4
+   ],
+   "n_events": 49
+  },
+  "20250822_M7.5_II.SACV|all|2.0": {
+   "A": [
+    8.2,
+    null
+   ],
+   "B": [
+    42.3,
+    null
+   ],
+   "oracle": [
+    7.9,
+    null
+   ],
+   "n_events": 83
+  },
+  "20250822_M7.5_II.SACV|all|5.0": {
+   "A": [
+    61.1,
+    null
+   ],
+   "B": [
+    46.8,
+    null
+   ],
+   "oracle": [
+    39.7,
+    null
+   ],
+   "n_events": 50
+  },
+  "20250822_M7.5_II.SACV|active|1.5": {
+   "A": [
+    5.3,
+    0.0
+   ],
+   "B": [
+    1.4,
+    11.6
+   ],
+   "oracle": [
+    0.0,
+    0.0
+   ],
+   "n_events": 50
+  },
+  "20250822_M7.5_II.SACV|active|2.0": {
+   "A": [
+    8.2,
+    0.0
+   ],
+   "B": [
+    6.7,
+    34.5
+   ],
+   "oracle": [
+    1.8,
+    0.0
+   ],
+   "n_events": 46
+  },
+  "20250822_M7.5_IU.SBA|all|2.0": {
+   "A": [
+    32.6,
+    null
+   ],
+   "B": [
+    10.0,
+    null
+   ],
+   "oracle": [
+    4.2,
+    null
+   ],
+   "n_events": 77
+  },
+  "20250822_M7.5_IU.SBA|all|5.0": {
+   "A": [
+    92.0,
+    null
+   ],
+   "B": [
+    62.8,
+    null
+   ],
+   "oracle": [
+    61.9,
+    null
+   ],
+   "n_events": 18
+  },
+  "20250822_M7.5_IU.SBA|active|1.5": {
+   "A": [
+    21.1,
+    11.9
+   ],
+   "B": [
+    18.2,
+    84.3
+   ],
+   "oracle": [
+    8.6,
+    11.9
+   ],
+   "n_events": 48
+  },
+  "20250822_M7.5_IU.SBA|active|2.0": {
+   "A": [
+    30.4,
+    26.9
+   ],
+   "B": [
+    15.9,
+    74.2
+   ],
+   "oracle": [
+    6.9,
+    26.2
+   ],
+   "n_events": 46
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "T1_label": {
+  "answer": "IU ANMO LP-Z 11 MAR 2011 START 05:40 GMT 15 MIN/LINE",
+  "usage": {
+   "input_tokens": 143,
+   "input_tokens_details": {
+    "cached_tokens": 0
+   },
+   "output_tokens": 446,
+   "output_tokens_details": {
+    "reasoning_tokens": 415
+   },
+   "total_tokens": 589
+  },
+  "secs": 4.9,
+  "char_similarity": 1.0
+ },
+ "T2_structure": {
+  "answer": "{\"lines\": 8, \"minute_marks_per_line\": 14}",
+  "usage": {
+   "input_tokens": 2304,
+   "input_tokens_details": {
+    "cached_tokens": 0
+   },
+   "output_tokens": 7127,
+   "output_tokens_details": {
+    "reasoning_tokens": 7102
+   },
+   "total_tokens": 9431
+  },
+  "secs": 69.6
+ },
+ "T3_p_arrival": {
+  "answer": "{\"line\": 2, \"time_gmt\": \"05:59:10\", \"confidence\": \"medium\", \"reason\": \"Line1 is flat except minute ticks. Line2 is flat for ~4 min then emergent long-period oscillation starts just after the 4th minute tick. Line2 starts 05:55, so 4th tick is 05:59, plus ~10s. Signal persists and grows on lines 3-4, consistent with P coda from 05:46 Tohoku origin at ~83 deg to ANMO, later huge amplitudes are S/surface.\"}",
+  "usage": {
+   "input_tokens": 2356,
+   "input_tokens_details": {
+    "cached_tokens": 0
+   },
+   "output_tokens": 6528,
+   "output_tokens_details": {
+    "reasoning_tokens": 6395
+   },
+   "total_tokens": 8884
+  },
+  "secs": 67.0
+ },
+ "T4_amplitudes": {
+  "answer": "[0.35, 0.2, -0.25, -0.1, 0.25, -0.1, -0.25, 0.15, -0.2, -0.15]",
+  "usage": {
+   "input_tokens": 322,
+   "input_tokens_details": {
+    "cached_tokens": 0
+   },
+   "output_tokens": 6482,
+   "output_tokens_details": {
+    "reasoning_tokens": 6423
+   },
+   "total_tokens": 6804
+  },
+  "secs": 64.3,
+  "gt": [
+   0.31,
+   0.17,
+   0.08,
+   0.15,
+   0.33,
+   0.07,
+   0.13,
+   -0.16,
+   0.22,
+   -0.2
+  ],
+  "pred": [
+   0.35,
+   0.2,
+   -0.25,
+   -0.1,
+   0.25,
+   -0.1,
+   -0.25,
+   0.15,
+   -0.2,
+   -0.15
+  ],
+  "mae_line_units": 0.206,
+  "mae_px": 9.9,
+  "corr": 0.348,
+  "sign_agreement": 0.4
+ },
+ "GT": {
+  "label": "IU ANMO  LP-Z  11 MAR 2011  START 05:40 GMT  15 MIN/LINE",
+  "lines": 8,
+  "minute_marks_per_line": 15,
+  "p_arrival_utc": "2011-03-11T05:58:46.195082Z",
+  "p_arrival_line": 2
+ }
+}

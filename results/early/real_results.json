@@ -1,0 +1,90 @@
+{
+ "quiet/negative/wavy line": {
+  "n_objects": 7,
+  "conf": [
+   0.75,
+   0.75,
+   0.76,
+   0.75,
+   0.73,
+   0.77,
+   0.74
+  ],
+  "box_heights_px": [
+   18,
+   18,
+   23,
+   14,
+   16,
+   26,
+   18
+  ]
+ },
+ "quiet/negative/line": {
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": []
+ },
+ "quiet/inverted/wavy line": {
+  "n_objects": 7,
+  "conf": [
+   0.84,
+   0.85,
+   0.84,
+   0.85,
+   0.83,
+   0.85,
+   0.84
+  ],
+  "box_heights_px": [
+   17,
+   18,
+   23,
+   14,
+   15,
+   25,
+   17
+  ]
+ },
+ "quiet/inverted/line": {
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": []
+ },
+ "quake/negative/wavy line": {
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": []
+ },
+ "quake/negative/line": {
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": []
+ },
+ "quake/inverted/wavy line": {
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": []
+ },
+ "quake/inverted/line": {
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": []
+ },
+ "spark_header": {
+  "answer": "{\"digits\": \"051574 0615 0124 04\", \"label\": \"NATIONAL TERRESTR BOULDE\"}",
+  "secs": 18.9,
+  "tokens": {
+   "input_tokens": 663,
+   "output_tokens": 1975
+  }
+ },
+ "spark_structure": {
+  "answer": "{\"n_trace_lines\": 24, \"earthquake_lines\": [14, 15, 16], \"calibration_pulses\": \"top-left at start of line 1 with large downward excursion crossing lines 2-4; bottom-center near middle of record with sharp vertical spike/step offset between lines 22-23\", \"digitization_hazards\": [\"large-amplitude earthquake signal in middle lines exceeds inter-trace spacing and overlaps/crosses adjacent traces\", \"calibration pulses create near-vertical excursions that cross multiple neighboring lines, causing intersection and line-identity ambiguity\", \"several background traces are very faint/low-contrast and risk dropout during thresholding\", \"minute time-mark dots/gaps superimposed on traces create breaks that fragment the vectorization\", \"header ID strip, fiducial marks and handwritten annotations obscure leftmost portion of top traces\", \"slight skew, varying background density and film grain/dust require dewarping and adaptive thresholding\"]}",
+  "secs": 41.6,
+  "tokens": {
+   "input_tokens": 1876,
+   "output_tokens": 3890
+  }
+ }
+}

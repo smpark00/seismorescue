@@ -1,0 +1,16 @@
+{
+ "event_time": "2013-04-16T10:44:20.180000Z",
+ "event_lat": 28.033,
+ "event_lon": 61.996,
+ "event_depth_km": 80.0,
+ "mag": 7.7,
+ "net": "IU",
+ "sta": "MBWA",
+ "loc": "00",
+ "sta_lat": -21.159,
+ "sta_lon": 119.7313,
+ "dist_deg": 74.3481808550393,
+ "p_arrival_utc": "2013-04-16T10:55:49.119057Z",
+ "start_utc": "2013-04-16T07:00:00.000000Z",
+ "hours": 8.0
+}

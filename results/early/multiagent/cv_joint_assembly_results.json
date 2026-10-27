@@ -1,0 +1,2882 @@
+[
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 16.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 56.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.9,
+  "active_line_fail": 2.4
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 14.5,
+  "active_line_fail": 56.0
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 22.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 20.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.8,
+  "active_line_fail": 22.0
+ },
+ {
+  "repeat": 0,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.2,
+  "active_line_fail": 15.1
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 25.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 6.9,
+  "active_line_fail": 12.7
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.8,
+  "active_line_fail": 36.4
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 30.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 0,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 1.3,
+  "active_line_fail": 10.5
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 36.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 50.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.5,
+  "active_line_fail": 8.4
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 1.7,
+  "active_line_fail": 13.4
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 31.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 64.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 3.3,
+  "active_line_fail": 21.9
+ },
+ {
+  "repeat": 0,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 11.0,
+  "active_line_fail": 40.1
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 23.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 12.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.2,
+  "active_line_fail": 9.7
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.7,
+  "active_line_fail": 16.3
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 21.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 44.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 27.2,
+  "active_line_fail": 76.1
+ },
+ {
+  "repeat": 0,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 24.0,
+  "active_line_fail": 20.5
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 55.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 64.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 8.5,
+  "active_line_fail": 68.4
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 9.9,
+  "active_line_fail": 78.9
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 66.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 11.4,
+  "active_line_fail": 85.7
+ },
+ {
+  "repeat": 0,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 8.7,
+  "active_line_fail": 43.1
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 29.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 46.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 5.1,
+  "active_line_fail": 26.0
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 10.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 62.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 28.5,
+  "active_line_fail": 73.6
+ },
+ {
+  "repeat": 0,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 16.6,
+  "active_line_fail": 58.8
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 49.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 78.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 12.7,
+  "active_line_fail": 74.4
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 18.5,
+  "active_line_fail": 77.4
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 30.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 54.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 1.7,
+  "active_line_fail": 11.3
+ },
+ {
+  "repeat": 0,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 3.7,
+  "active_line_fail": 19.0
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 5.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 32.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 0.3,
+  "active_line_fail": 1.3
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 1.5,
+  "active_line_fail": 10.5
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 28.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 50.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 1.3,
+  "active_line_fail": 10.4
+ },
+ {
+  "repeat": 0,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 1.6,
+  "active_line_fail": 8.7
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 0.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 22.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 0.8,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 0.5,
+  "active_line_fail": 3.4
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 62.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 72.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 28.1,
+  "active_line_fail": 63.1
+ },
+ {
+  "repeat": 0,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 20.6,
+  "active_line_fail": 63.9
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 22.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 44.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 11.7,
+  "active_line_fail": 37.8
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.6,
+  "active_line_fail": 58.0
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 40.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 12.6,
+  "active_line_fail": 53.7
+ },
+ {
+  "repeat": 0,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 15.5,
+  "active_line_fail": 57.2
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 39.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 49.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 45.5,
+  "active_line_fail": 21.3
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 43.6,
+  "active_line_fail": 63.4
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 78.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 60.0,
+  "active_line_fail": 88.3
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 48.7,
+  "active_line_fail": 66.1
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 9.7,
+  "active_line_fail": 23.5
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 14.9,
+  "active_line_fail": 15.0
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 8.6,
+  "active_line_fail": 50.2
+ },
+ {
+  "repeat": 0,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 10.0,
+  "active_line_fail": 41.7
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 53.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 77.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 19.9,
+  "active_line_fail": 74.4
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 15.0,
+  "active_line_fail": 59.4
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 24.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 52.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.2,
+  "active_line_fail": 5.1
+ },
+ {
+  "repeat": 1,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 3.5,
+  "active_line_fail": 16.7
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 19.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 25.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 6.9,
+  "active_line_fail": 12.7
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.8,
+  "active_line_fail": 36.4
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 30.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 1,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 1.3,
+  "active_line_fail": 10.5
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 5.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 28.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.2,
+  "active_line_fail": 1.3
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 3.7,
+  "active_line_fail": 10.5
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 30.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 53.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.8,
+  "active_line_fail": 12.4
+ },
+ {
+  "repeat": 1,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.8,
+  "active_line_fail": 2.3
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 23.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 12.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.2,
+  "active_line_fail": 9.7
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.7,
+  "active_line_fail": 16.3
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 21.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 44.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 27.5,
+  "active_line_fail": 76.1
+ },
+ {
+  "repeat": 1,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 24.0,
+  "active_line_fail": 20.5
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 36.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 49.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.5,
+  "active_line_fail": 8.4
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 1.7,
+  "active_line_fail": 13.4
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 28.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 63.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 3.3,
+  "active_line_fail": 21.9
+ },
+ {
+  "repeat": 1,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 11.0,
+  "active_line_fail": 40.1
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 55.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 64.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 8.5,
+  "active_line_fail": 68.4
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 9.9,
+  "active_line_fail": 78.9
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 66.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 10.6,
+  "active_line_fail": 79.2
+ },
+ {
+  "repeat": 1,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 9.4,
+  "active_line_fail": 43.1
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 16.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 56.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.9,
+  "active_line_fail": 2.4
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 14.5,
+  "active_line_fail": 56.0
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 22.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 20.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.8,
+  "active_line_fail": 22.0
+ },
+ {
+  "repeat": 1,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 5.7,
+  "active_line_fail": 26.8
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 21.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 44.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 11.7,
+  "active_line_fail": 37.8
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.6,
+  "active_line_fail": 58.0
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 23.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 40.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 12.6,
+  "active_line_fail": 53.7
+ },
+ {
+  "repeat": 1,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 15.5,
+  "active_line_fail": 57.2
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 27.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 5.1,
+  "active_line_fail": 26.0
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 10.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 62.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 28.5,
+  "active_line_fail": 73.6
+ },
+ {
+  "repeat": 1,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 16.6,
+  "active_line_fail": 58.8
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 39.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 49.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 48.6,
+  "active_line_fail": 21.3
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 45.4,
+  "active_line_fail": 66.5
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 78.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 61.0,
+  "active_line_fail": 88.3
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 48.7,
+  "active_line_fail": 66.1
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 29.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 10.7,
+  "active_line_fail": 23.5
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 15.2,
+  "active_line_fail": 16.2
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 8.6,
+  "active_line_fail": 50.2
+ },
+ {
+  "repeat": 1,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 10.0,
+  "active_line_fail": 41.7
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 21.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.8,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.3,
+  "active_line_fail": 2.4
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 51.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 72.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 25.5,
+  "active_line_fail": 63.1
+ },
+ {
+  "repeat": 1,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.6,
+  "active_line_fail": 63.9
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 21.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 44.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 11.7,
+  "active_line_fail": 37.8
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.BBSR",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.6,
+  "active_line_fail": 58.0
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 22.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 40.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 18.7,
+  "active_line_fail": 53.7
+ },
+ {
+  "repeat": 2,
+  "group": "20070815",
+  "record": "20070815_M8.0_IU.TSUM",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 10.6,
+  "active_line_fail": 18.5
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 21.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.1,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.NWAO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.3,
+  "active_line_fail": 2.4
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 54.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 72.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 24.2,
+  "active_line_fail": 52.7
+ },
+ {
+  "repeat": 2,
+  "group": "20180928",
+  "record": "20180928_M7.5_IU.TIXI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 28.6,
+  "active_line_fail": 63.9
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 55.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 63.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 8.5,
+  "active_line_fail": 68.4
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_II.KAPI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 21.4,
+  "active_line_fail": 78.9
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 65.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 11.4,
+  "active_line_fail": 85.7
+ },
+ {
+  "repeat": 2,
+  "group": "20201019",
+  "record": "20201019_M7.6_IU.XMAS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 9.4,
+  "active_line_fail": 43.1
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 49.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 78.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 12.7,
+  "active_line_fail": 74.4
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.DAV",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 18.5,
+  "active_line_fail": 77.4
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 30.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 54.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 1.7,
+  "active_line_fail": 11.3
+ },
+ {
+  "repeat": 2,
+  "group": "20061115",
+  "record": "20061115_M8.3_IU.GUMO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 3.7,
+  "active_line_fail": 19.0
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 43.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 49.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 3.0,
+  "active_line_fail": 20.5
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 2.2,
+  "active_line_fail": 17.5
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 32.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 62.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 3.9,
+  "active_line_fail": 21.9
+ },
+ {
+  "repeat": 2,
+  "group": "20200128",
+  "record": "20200128_M7.7_II.SHEL",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 14.6,
+  "active_line_fail": 42.9
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 39.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 46.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 0.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_II.SACV",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 5.1,
+  "active_line_fail": 26.0
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 4.5,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.02,
+  "fail": 62.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.02,
+  "fail": 19.4,
+  "active_line_fail": 82.9
+ },
+ {
+  "repeat": 2,
+  "group": "20250822",
+  "record": "20250822_M7.5_IU.SBA",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.02,
+  "fail": 16.6,
+  "active_line_fail": 58.8
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 16.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 56.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.9,
+  "active_line_fail": 2.4
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.MAJO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 14.0,
+  "active_line_fail": 51.4
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 22.6,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 20.7,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 2.8,
+  "active_line_fail": 22.0
+ },
+ {
+  "repeat": 2,
+  "group": "20050328",
+  "record": "20050328_M8.6_IU.YSS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 5.7,
+  "active_line_fail": 26.8
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 23.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 12.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.2,
+  "active_line_fail": 9.7
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_II.EFI",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.7,
+  "active_line_fail": 16.3
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 21.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 44.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 28.1,
+  "active_line_fail": 76.1
+ },
+ {
+  "repeat": 2,
+  "group": "20071114",
+  "record": "20071114_M7.7_IU.TRIS",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 24.0,
+  "active_line_fail": 20.5
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 5.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 28.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.2,
+  "active_line_fail": 1.3
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_II.RPN",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 3.7,
+  "active_line_fail": 10.5
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 30.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 53.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 1.5,
+  "active_line_fail": 12.4
+ },
+ {
+  "repeat": 2,
+  "group": "20160416",
+  "record": "20160416_M7.8_IU.PAB",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.8,
+  "active_line_fail": 2.3
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 39.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 49.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 45.0,
+  "active_line_fail": 21.3
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_II.COCO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 43.0,
+  "active_line_fail": 64.6
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.3,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 78.2,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 59.9,
+  "active_line_fail": 88.3
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.7_IU.MAKZ",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 48.3,
+  "active_line_fail": 66.1
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 29.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.4,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 9.7,
+  "active_line_fail": 23.5
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_II.ARU",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 13.9,
+  "active_line_fail": 15.0
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 20.1,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 45.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 8.6,
+  "active_line_fail": 50.2
+ },
+ {
+  "repeat": 2,
+  "group": "20110311",
+  "record": "20110311_M7.9_IU.KONO",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 11.2,
+  "active_line_fail": 41.7
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 19.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 24.8,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 12.2,
+  "active_line_fail": 55.1
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.JOHN",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 4.8,
+  "active_line_fail": 36.4
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "all",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "all",
+  "gain": 5.0,
+  "lambda": 0.0,
+  "fail": 31.9,
+  "active_line_fail": null
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "active",
+  "gain": 1.5,
+  "lambda": 0.0,
+  "fail": 0.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "repeat": 2,
+  "group": "20120831",
+  "record": "20120831_M7.6_IU.WAKE",
+  "mode": "active",
+  "gain": 2.0,
+  "lambda": 0.0,
+  "fail": 1.3,
+  "active_line_fail": 10.5
+ }
+]

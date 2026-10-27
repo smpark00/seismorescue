@@ -1,0 +1,246 @@
+{
+ "item": "20120831_M7.6_IU.WAKE_active_g2",
+ "record": "20120831_M7.6_IU.WAKE",
+ "answer": {
+  "event_id": "ev0_20120831T124733_M7.6",
+  "p_arrival_s": 899.0,
+  "surface_peak_s": 1594,
+  "suspect_spans": [
+   [
+    1667,
+    1800
+   ]
+  ],
+  "notes": "Single M7.6 catalog event. AIC P 899s matches predicted P 901s, AIC S 1264s matches predicted S 1262s, surface peak 1594s matches predicted R1 1578.5s with P<S<surface order. 1667-1800 low-confidence shows unphysical flat-topped 0.7 level then steps vs expected decaying sinusoid, no 900s correlation, so digitization failure not line-jump. No high +-900 correlation found for P/S/surface, so no line-jump duplication. Small 660s spike isolated on flat zero with low correlation to surface, not counted as suspect."
+ },
+ "turns": 28,
+ "out_tokens": 15990,
+ "in_tokens": 45023,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20120831T124733_M7.6\", \"time\": \"2012-08-31T12:47:33.380000Z\", \"mag\": 7.6, \"dist_deg\": 39.46, \"depth_km\": 28.0, \"P_s\": 901.0, \"S_s\": 1262.0, \"R1_s\": 1578.5}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 50,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 660, \"peak_ratio\": 63.55, \"duration_s\": 8}, {\"onset_s\": 910, \"peak_ratio\": 185.08, \"duration_s\": 11}, {\"onset_s\": 923, \"peak_ratio\": 10.42, \"duration_s\": 7}, {\"onset_s\": 1000, \"peak_ratio\": 3.07, \"duration_s\": 1}, {\"onset_s\": 1038, \"peak_ratio\": 3.18, \"duration_s\": 1}, {\"onset_s\": 1045, \"peak_ratio\": 5.73, \"duration_s\": 5}, {\"onset_s\": 1170, \"peak_ratio\": 3.37, \"duration_s\": 2}, {\"onset_s\": 1209, \"peak_ratio\": 4.48, \"duration_s\": 4}, {\"onset_s\": 1264, \"peak_ratio\": 27.81, \"duration_s\": 20}, {\"onset_s\": 1290, \"peak_ratio\": 5.89, \"duration_s\": 6}, {\"onset_s\": 1358, \"peak_ratio\": 3.19, \"duration_s\": 1}, {\"onset_s\": 1416, \"peak_ratio\": 12.11, \"duration_s\": 7}, {\"onset_s\": 1431, \"peak_ratio\": 3.09, \"duration_s\": 2}, {\"onset_s\": 1466, \"peak_ratio\": 20.06, \"duration_s\": 10}, {\"onset_s\": 1531, \"peak_ratio\": 3.43, \"duration_s\": 4}, {\"onset_s\": 1540, \"peak_ratio\": 12.41, \"duration_s\": 9}, {\"onset_s\": 1556, \"peak_ratio\": 4.45, \"duration_s\": 6}, {\"onset_s\": 1594, \"peak_ratio\": 3.98, \"duration_s\": 4}]"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 910.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 899.0, \"snr_after_before\": 21.25}"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.019, \"spans\": [[1667, 1800], [2642, 2643]]}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 750.0,
+    "start_s": 550.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.188}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1667.0,
+    "start_s": 1450.0
+   },
+   "result": "{\"peak_s\": 1594, \"amplitude\": 1.969}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1264.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 1264.0, \"snr_after_before\": 8.39}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 680.0,
+    "start_s": 650.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.377}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 750.0,
+    "start_s": 600.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1660.0,
+    "start_s": 1540.0
+   },
+   "result": "{\"-900\": 0.203, \"900\": -0.051}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 680.0,
+    "start_s": 650.0
+   },
+   "result": "{\"peak_s\": 663, \"amplitude\": 0.12}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 930.0,
+    "start_s": 890.0
+   },
+   "result": "{\"peak_s\": 924, \"amplitude\": 0.24}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 950.0,
+    "start_s": 850.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1900.0,
+    "start_s": 1450.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2800.0,
+    "start_s": 2300.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 668.0,
+    "start_s": 658.0
+   },
+   "result": "{\"-900\": null, \"900\": null}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1600.0,
+    "start_s": 1550.0
+   },
+   "result": "{\"-900\": 0.219, \"900\": -0.072}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 899.0,
+    "start_s": 0.0
+   },
+   "result": "{\"peak_s\": 663, \"amplitude\": 0.12}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 1800.0
+   },
+   "result": "{\"peak_s\": 1800, \"amplitude\": 0.1}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1660.0,
+    "start_s": 1460.0
+   },
+   "result": "{\"-900\": 0.19, \"900\": -0.05}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2560.0,
+    "start_s": 2360.0
+   },
+   "result": "{\"-900\": -0.05, \"900\": 0.0}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1620.0,
+    "start_s": 1560.0
+   },
+   "result": "{\"peak_s\": 1594, \"amplitude\": 1.969}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 899.0,
+    "window_s": 15.0
+   },
+   "result": "{\"pick_s\": 899.0, \"snr_after_before\": 8.02}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 700.0,
+    "start_s": 600.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.236}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1610.0,
+    "start_s": 1580.0
+   },
+   "result": "{\"-900\": 0.163, \"900\": -0.291}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 700.0,
+    "start_s": 630.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2500.0,
+    "start_s": 1650.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "final": "{\"event_id\": \"ev0_20120831T124733_M7.6\", \"p_arrival_s\": 899.0, \"surface_peak_s\": 1594, \"suspect_spans\": [[1667, 1800]], \"notes\": \"Single M7.6 catalog event. AIC P 899s matches predicted P 901s, AIC S 1264s matches predicted S 1262s, surface peak 1594s matches predicted R1 1578.5s with P<S<surface order. 1667-1800 low-confidence shows unphysical flat-topped 0.7 level then steps vs expected decaying sinusoid, no 900s correlation, so digitization failure not line-jump. No high +-900 correlation found for P/S/surface, so no line-jump duplication. Small 660s spike isolated on flat zero with low correlation to surface, not counted as suspect.\"}"
+  }
+ ]
+}

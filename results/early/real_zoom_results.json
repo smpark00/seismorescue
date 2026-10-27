@@ -1,0 +1,155 @@
+[
+ {
+  "name": "band3_A_z1_inv_wavy-line",
+  "size": [
+   120,
+   600
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_B_z1_inv_wavy-line",
+  "size": [
+   120,
+   600
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_A_z2_inv_wavy-line",
+  "size": [
+   240,
+   1200
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_B_z2_inv_wavy-line",
+  "size": [
+   240,
+   1200
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band1_A_z2_inv_wavy-line",
+  "size": [
+   140,
+   1200
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band1_B_z2_inv_wavy-line",
+  "size": [
+   140,
+   1200
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band1_C_z3_inv_wavy-line",
+  "size": [
+   210,
+   900
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_C_z3_inv_wavy-line",
+  "size": [
+   360,
+   900
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_A_z2_neg_wavy-line",
+  "size": [
+   240,
+   1200
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_A_z2_inv_wavy-line_med5",
+  "size": [
+   240,
+   1200
+  ],
+  "n_objects": 3,
+  "conf": [
+   0.56,
+   0.62,
+   0.62
+  ],
+  "box_heights_px": [
+   133,
+   39,
+   37
+  ],
+  "box_widths_px": [
+   1200,
+   1200,
+   1200
+  ]
+ },
+ {
+  "name": "band3_C_z3_inv_squiggly-line",
+  "size": [
+   360,
+   900
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "name": "band3_C_z3_inv_line",
+  "size": [
+   360,
+   900
+  ],
+  "n_objects": 0,
+  "conf": [],
+  "box_heights_px": [],
+  "box_widths_px": []
+ },
+ {
+  "followup_median_filter": {
+   "B_med5_z2": 0,
+   "A_med3_z2": 1,
+   "A_med7_z2": 0,
+   "wide5lines_med5_z1": 0
+  },
+  "note": "n_objects; only band3_A_z2_inv_med5 separated the quake line (3 instances), not reproduced"
+ }
+]

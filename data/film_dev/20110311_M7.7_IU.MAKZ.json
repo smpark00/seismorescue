@@ -1,0 +1,16 @@
+{
+ "event_time": "2011-03-11T06:25:50.300000Z",
+ "event_lat": 38.058,
+ "event_lon": 144.59,
+ "event_depth_km": 18.6,
+ "mag": 7.7,
+ "net": "IU",
+ "sta": "MAKZ",
+ "loc": "00",
+ "sta_lat": 46.808,
+ "sta_lon": 81.977,
+ "dist_deg": 45.785863653755825,
+ "p_arrival_utc": "2011-03-11T06:34:10.581524Z",
+ "start_utc": "2011-03-11T05:00:00.000000Z",
+ "hours": 8.0
+}

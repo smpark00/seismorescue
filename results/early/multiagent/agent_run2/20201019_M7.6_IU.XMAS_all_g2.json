@@ -1,0 +1,210 @@
+{
+ "item": "20201019_M7.6_IU.XMAS_all_g2",
+ "record": "20201019_M7.6_IU.XMAS",
+ "answer": {
+  "event_id": "ev5_20201019T205438_M7.6",
+  "p_arrival_s": 955.0,
+  "surface_peak_s": 1878,
+  "suspect_spans": [
+   [
+    1080,
+    1090
+   ],
+   [
+    1260,
+    1277
+   ]
+  ],
+  "notes": "M7.6 largest with P in record, pred P 949.9 S 1395.8 R1 1898.2. AIC 955 for P first break vs onset 965. Peak 1878 max before R1. Early onsets 1080 and 1260 have no predicted phase, correlate with +900s surface train (1060-1100 vs +900 corr 0.45), i.e. 900s-early duplicates of ~1980 and ~2160 surface waves."
+ },
+ "turns": 23,
+ "out_tokens": 17973,
+ "in_tokens": 66032,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20201019T214525_M5.9\", \"time\": \"2020-10-19T21:45:25.327000Z\", \"mag\": 5.9, \"dist_deg\": 52.33, \"depth_km\": 20.8, \"P_s\": 3995.4, \"S_s\": 4440.5, \"R1_s\": 4937.2}, {\"id\": \"ev1_20201019T214523_M5.9\", \"time\": \"2020-10-19T21:45:23.823000Z\", \"mag\": 5.9, \"dist_deg\": 52.14, \"depth_km\": 30.6, \"P_s\": 3991.1, \"S_s\": 4434.0, \"R1_s\": 4930.3}, {\"id\": \"ev2_20201019T213221_M5.5\", \"time\": \"2020-10-19T21:32:21.891000Z\", \"mag\": 5.5, \"dist_deg\": 52.38, \"depth_km\": 26.6, \"P_s\": 3211.6, \"S_s\": 3656.4, \"R1_s\": 4155.3}, {\"id\": \"ev3_20201019T210620_M5.7\", \"time\": \"2020-10-19T21:06:20.397000Z\", \"mag\": 5.7, \"dist_deg\": 52.5, \"depth_km\": 26.2, \"P_s\": 1651.0, \"S_s\": 2096.5, \"R1_s\": 2597.1}, {\"id\": \"ev4_20201019T210557_M5.7\", \"time\": \"2020-10-19T21:05:57.335000Z\", \"mag\": 5.7, \"dist_deg\": 52.42, \"depth_km\": 22.7, \"P_s\": 1627.9, \"S_s\": 2073.3, \"R1_s\": 2572.0}, {\"id\": \"ev5_20201019T205438_M7.6\", \"time\": \"2020-10-19T20:54:38.950000Z\", \"mag\": 7.6, \"dist_deg\": 52.59, \"depth_km\": 28.4, \"P_s\": 949.9, \"S_s\": 1395.8, \"R1_s\": 1898.2}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 60,
+    "sta_s": 5,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 965, \"peak_ratio\": 83.36, \"duration_s\": 14}, {\"onset_s\": 1080, \"peak_ratio\": 34.72, \"duration_s\": 10}, {\"onset_s\": 1201, \"peak_ratio\": 36.4, \"duration_s\": 9}, {\"onset_s\": 1260, \"peak_ratio\": 144.4, \"duration_s\": 17}, {\"onset_s\": 1411, \"peak_ratio\": 10.67, \"duration_s\": 7}, {\"onset_s\": 1425, \"peak_ratio\": 7.98, \"duration_s\": 9}, {\"onset_s\": 1435, \"peak_ratio\": 40.88, \"duration_s\": 13}, {\"onset_s\": 1454, \"peak_ratio\": 3.55, \"duration_s\": 3}, {\"onset_s\": 1590, \"peak_ratio\": 5.74, \"duration_s\": 5}, {\"onset_s\": 1601, \"peak_ratio\": 3.83, \"duration_s\": 4}, {\"onset_s\": 1644, \"peak_ratio\": 10.11, \"duration_s\": 8}, {\"onset_s\": 1654, \"peak_ratio\": 10.24, \"duration_s\": 8}, {\"onset_s\": 1719, \"peak_ratio\": 35.95, \"duration_s\": 10}, {\"onset_s\": 1824, \"peak_ratio\": 9.75, \"duration_s\": 9}, {\"onset_s\": 1844, \"peak_ratio\": 11.1, \"duration_s\": 8}, {\"onset_s\": 1858, \"peak_ratio\": 14.26, \"duration_s\": 11}, {\"onset_s\": 1877, \"peak_ratio\": 6.0, \"duration_s\": 6}, {\"onset_s\": 1894, \"peak_ratio\": 3.58, \"duration_s\": 3}, {\"onset_s\": 2553, \"peak_ratio\": 3.44, \"duration_s\": 2}, {\"onset_s\": 2601, \"peak_ratio\": 3.48, \"duration_s\": 3}, {\"onset_s\": 2618, \"peak_ratio\": 3.49, \"duration_s\": 3}, {\"onset_s\": 2682, \"peak_ratio\": 3.62, \"duration_s\": 3}, {\"onset_s\": 2792, \"peak_ratio\": 3.56, \"duration_s\": 2}, {\"onset_s\": 2931, \"peak_ratio\": 3.17, \"duration_s\": 2}, {\"onset_s\": 2946, \"peak_ratio\": 3.16, \"duration_s\": 2}, {\"onset_s\": 3016, \"peak_ratio\": 60.36, \"duration_s\": 13}, {\"onset_s\": 3206, \"peak_ratio\": 12.55, \"duration_s\": 8}, {\"onset_s\": 3216, \"peak_ratio\": 3.23, \"duration_s\": 1}, {\"onset_s\": 3284, \"peak_ratio\": 12.5, \"duration_s\": 9}, {\"onset_s\": 3452, \"peak_ratio\": 5.65, \"duration_s\": 6}, {\"onset_s\": 3511, \"peak_ratio\": 9.63, \"duration_s\": 11}, {\"onset_s\": 3528, \"peak_ratio\": 5.1, \"duration_s\": 4}, {\"onset_s\": 3573, \"peak_ratio\": 5.35, \"duration_s\": 5}, {\"onset_s\": 3593, \"peak_ratio\": 3.13, \"duration_s\": 2}, {\"onset_s\": 3649, \"peak_ratio\": 3.05, \"duration_s\": 1}, {\"onset_s\": 3679, \"peak"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.028, \"spans\": [[1979, 1991], [2001, 2057], [2102, 2112], [2115, 2135], [2150, 2162], [2432, 2441], [2450, 2457], [2484, 2485], [2515, 2523], [2642, 2647], [2677, 2685], [2956, 2963], [3060, 3108]]}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2500.0,
+    "start_s": 800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 965.0,
+    "window_s": 30.0
+   },
+   "result": "{\"pick_s\": 955.0, \"snr_after_before\": 13.9}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1300.0,
+    "start_s": 950.0
+   },
+   "result": "{\"-900\": 0.018, \"900\": 0.182}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1450.0,
+    "start_s": 1250.0
+   },
+   "result": "{\"-900\": 0.025, \"900\": 0.353}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2100.0,
+    "start_s": 1830.0
+   },
+   "result": "{\"-900\": -0.034, \"900\": -0.027}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1150.0,
+    "start_s": 900.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1500.0,
+    "start_s": 1200.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 968.0,
+    "window_s": 10.0
+   },
+   "result": "{\"pick_s\": 968.0, \"snr_after_before\": 9.75}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1950.0,
+    "start_s": 1380.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2500.0,
+    "start_s": 1800.0
+   },
+   "result": "{\"peak_s\": 1878, \"amplitude\": -1.823}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 958.0,
+    "window_s": 15.0
+   },
+   "result": "{\"pick_s\": 955.0, \"snr_after_before\": 7.63}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1092.0,
+    "start_s": 1072.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.745}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1090.0,
+    "start_s": 1075.0
+   },
+   "result": "{\"-900\": null, \"900\": null}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1210.0,
+    "start_s": 1195.0
+   },
+   "result": "{\"-900\": null, \"900\": null}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1282.0,
+    "start_s": 1260.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.567}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1992.0,
+    "start_s": 1975.0
+   },
+   "result": "{\"-900\": null, \"900\": null}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1100.0,
+    "start_s": 1060.0
+   },
+   "result": "{\"-900\": -0.241, \"900\": 0.45}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1220.0,
+    "start_s": 1190.0
+   },
+   "result": "{\"-900\": 0.04, \"900\": -0.457}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1290.0,
+    "start_s": 1255.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.216}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 1960.0
+   },
+   "result": "{\"-900\": 0.45, \"900\": 0.169}"
+  },
+  {
+   "final": "{\"event_id\": \"ev5_20201019T205438_M7.6\", \"p_arrival_s\": 955.0, \"surface_peak_s\": 1878, \"suspect_spans\": [[1080, 1090], [1260, 1277]], \"notes\": \"M7.6 largest with P in record, pred P 949.9 S 1395.8 R1 1898.2. AIC 955 for P first break vs onset 965. Peak 1878 max before R1. Early onsets 1080 and 1260 have no predicted phase, correlate with +900s surface train (1060-1100 vs +900 corr 0.45), i.e. 900s-early duplicates of ~1980 and ~2160 surface waves.\"}"
+  }
+ ]
+}

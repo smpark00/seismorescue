@@ -1,0 +1,1826 @@
+[
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 42.9,
+  "touch_zone_fail": 61.7
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 13.0,
+  "touch_zone_fail": 29.3
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 81.4,
+  "touch_zone_fail": 83.2
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 56.8,
+  "touch_zone_fail": 55.2
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 15.7,
+  "touch_zone_fail": 40.1,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 5.5,
+  "touch_zone_fail": 20.9,
+  "active_line_fail": 43.5
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 35.1,
+  "touch_zone_fail": 56.3,
+  "active_line_fail": 46.0
+ },
+ {
+  "record": "20050328_M8.6_IU.MAJO",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 15.1,
+  "touch_zone_fail": 28.4,
+  "active_line_fail": 62.6
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 29.2,
+  "touch_zone_fail": 58.4
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 19.8,
+  "touch_zone_fail": 35.3
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 72.1,
+  "touch_zone_fail": 73.3
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 20.9,
+  "touch_zone_fail": 21.1
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 6.6,
+  "touch_zone_fail": 41.3,
+  "active_line_fail": 22.0
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 3.5,
+  "touch_zone_fail": 23.3,
+  "active_line_fail": 28.3
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 13.1,
+  "touch_zone_fail": 41.2,
+  "active_line_fail": 13.8
+ },
+ {
+  "record": "20050328_M8.6_IU.YSS",
+  "group": "20050328",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 5.8,
+  "touch_zone_fail": 20.4,
+  "active_line_fail": 31.0
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 44.9,
+  "touch_zone_fail": 71.6
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 49.8,
+  "touch_zone_fail": 45.1
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 80.2,
+  "touch_zone_fail": 79.6
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 78.3,
+  "touch_zone_fail": 73.2
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 20.8,
+  "touch_zone_fail": 48.9,
+  "active_line_fail": 45.2
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 14.1,
+  "touch_zone_fail": 41.2,
+  "active_line_fail": 80.0
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 22.4,
+  "touch_zone_fail": 47.7,
+  "active_line_fail": 9.5
+ },
+ {
+  "record": "20061115_M8.3_IU.DAV",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 16.6,
+  "touch_zone_fail": 30.9,
+  "active_line_fail": 77.4
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 24.2,
+  "touch_zone_fail": 63.6
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 33.8,
+  "touch_zone_fail": 53.6
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 70.5,
+  "touch_zone_fail": 83.4
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 55.7,
+  "touch_zone_fail": 68.6
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 6.2,
+  "touch_zone_fail": 44.7,
+  "active_line_fail": 5.1
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 2.7,
+  "touch_zone_fail": 21.0,
+  "active_line_fail": 21.6
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 8.6,
+  "touch_zone_fail": 56.4,
+  "active_line_fail": 14.3
+ },
+ {
+  "record": "20061115_M8.3_IU.GUMO",
+  "group": "20061115",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 4.5,
+  "touch_zone_fail": 26.3,
+  "active_line_fail": 25.0
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 33.1,
+  "touch_zone_fail": 54.0
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 20.9,
+  "touch_zone_fail": 41.1
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 77.7,
+  "touch_zone_fail": 76.5
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 43.6,
+  "touch_zone_fail": 44.7
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 13.5,
+  "touch_zone_fail": 43.4,
+  "active_line_fail": 10.7
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 13.5,
+  "touch_zone_fail": 52.8,
+  "active_line_fail": 55.2
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 24.0,
+  "touch_zone_fail": 46.6,
+  "active_line_fail": 23.5
+ },
+ {
+  "record": "20070815_M8.0_IU.BBSR",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 14.8,
+  "touch_zone_fail": 21.0,
+  "active_line_fail": 61.9
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 33.0,
+  "touch_zone_fail": 72.7
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 22.5,
+  "touch_zone_fail": 44.9
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 77.1,
+  "touch_zone_fail": 89.3
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 42.3,
+  "touch_zone_fail": 44.3
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 13.8,
+  "touch_zone_fail": 46.2,
+  "active_line_fail": 8.8
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 16.4,
+  "touch_zone_fail": 46.1,
+  "active_line_fail": 56.7
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 31.7,
+  "touch_zone_fail": 64.9,
+  "active_line_fail": 18.5
+ },
+ {
+  "record": "20070815_M8.0_IU.TSUM",
+  "group": "20070815",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 11.9,
+  "touch_zone_fail": 20.2,
+  "active_line_fail": 57.2
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 9.3,
+  "touch_zone_fail": 56.1
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 24.6,
+  "touch_zone_fail": 66.7
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 35.9,
+  "touch_zone_fail": 75.1
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 20.3,
+  "touch_zone_fail": 35.3
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 3.8,
+  "touch_zone_fail": 39.1,
+  "active_line_fail": 9.8
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 1.7,
+  "touch_zone_fail": 22.0,
+  "active_line_fail": 13.7
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 9.5,
+  "touch_zone_fail": 60.9,
+  "active_line_fail": 16.5
+ },
+ {
+  "record": "20071114_M7.7_II.EFI",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 2.2,
+  "touch_zone_fail": 18.4,
+  "active_line_fail": 16.3
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 28.8,
+  "touch_zone_fail": 40.6
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 28.8,
+  "touch_zone_fail": 35.4
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 77.7,
+  "touch_zone_fail": 87.3
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 45.1,
+  "touch_zone_fail": 50.2
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 18.9,
+  "touch_zone_fail": 34.7,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 25.5,
+  "touch_zone_fail": 56.9,
+  "active_line_fail": 76.1
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 29.0,
+  "touch_zone_fail": 39.4,
+  "active_line_fail": 20.5
+ },
+ {
+  "record": "20071114_M7.7_IU.TRIS",
+  "group": "20071114",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 24.0,
+  "touch_zone_fail": 23.9,
+  "active_line_fail": 43.8
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 38.7,
+  "touch_zone_fail": 79.0
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 42.7,
+  "touch_zone_fail": 75.3
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 63.3,
+  "touch_zone_fail": 91.6
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 50.6,
+  "touch_zone_fail": 55.7
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 0.0,
+  "touch_zone_fail": null,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 65.6,
+  "touch_zone_fail": null,
+  "active_line_fail": 49.2
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 16.0,
+  "touch_zone_fail": null,
+  "active_line_fail": 63.3
+ },
+ {
+  "record": "20110311_M7.7_II.COCO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 65.2,
+  "touch_zone_fail": null,
+  "active_line_fail": 43.1
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 31.8,
+  "touch_zone_fail": 48.3
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 17.7,
+  "touch_zone_fail": 38.1
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 70.9,
+  "touch_zone_fail": 93.4
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 78.6,
+  "touch_zone_fail": 78.9
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 44.4,
+  "touch_zone_fail": 76.0,
+  "active_line_fail": 88.3
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 70.0,
+  "touch_zone_fail": 68.8,
+  "active_line_fail": 80.3
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 28.1,
+  "touch_zone_fail": 52.5,
+  "active_line_fail": 63.9
+ },
+ {
+  "record": "20110311_M7.7_IU.MAKZ",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 63.4,
+  "touch_zone_fail": 65.0,
+  "active_line_fail": 75.0
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 23.2,
+  "touch_zone_fail": 66.8
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 30.7,
+  "touch_zone_fail": 57.2
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 61.0,
+  "touch_zone_fail": 95.7
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 45.6,
+  "touch_zone_fail": 71.9
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 0.0,
+  "touch_zone_fail": null,
+  "active_line_fail": 0.1
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 18.1,
+  "touch_zone_fail": null,
+  "active_line_fail": 23.5
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 3.9,
+  "touch_zone_fail": null,
+  "active_line_fail": 15.0
+ },
+ {
+  "record": "20110311_M7.9_II.ARU",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 27.9,
+  "touch_zone_fail": null,
+  "active_line_fail": 18.0
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 23.6,
+  "touch_zone_fail": 54.5
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 19.9,
+  "touch_zone_fail": 51.9
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 63.9,
+  "touch_zone_fail": 78.2
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 45.5,
+  "touch_zone_fail": 57.7
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 13.1,
+  "touch_zone_fail": 39.4,
+  "active_line_fail": 29.3
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 7.2,
+  "touch_zone_fail": 23.2,
+  "active_line_fail": 45.8
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 21.3,
+  "touch_zone_fail": 53.1,
+  "active_line_fail": 30.8
+ },
+ {
+  "record": "20110311_M7.9_IU.KONO",
+  "group": "20110311",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 10.5,
+  "touch_zone_fail": 20.6,
+  "active_line_fail": 55.5
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 22.6,
+  "touch_zone_fail": 39.5
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 13.4,
+  "touch_zone_fail": 21.9
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 60.1,
+  "touch_zone_fail": 90.5
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 25.5,
+  "touch_zone_fail": 38.8
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 15.5,
+  "touch_zone_fail": 38.6,
+  "active_line_fail": 12.7
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 11.9,
+  "touch_zone_fail": 20.9,
+  "active_line_fail": 55.1
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 23.1,
+  "touch_zone_fail": 39.3,
+  "active_line_fail": 36.4
+ },
+ {
+  "record": "20120831_M7.6_IU.JOHN",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 4.4,
+  "touch_zone_fail": 19.4,
+  "active_line_fail": 33.2
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 5.3,
+  "touch_zone_fail": 40.3
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 3.6,
+  "touch_zone_fail": 22.6
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 50.2,
+  "touch_zone_fail": 69.9
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 32.3,
+  "touch_zone_fail": 42.5
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 5.4,
+  "touch_zone_fail": 33.8,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 1.7,
+  "touch_zone_fail": 23.1,
+  "active_line_fail": 13.3
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 5.5,
+  "touch_zone_fail": 40.1,
+  "active_line_fail": 10.5
+ },
+ {
+  "record": "20120831_M7.6_IU.WAKE",
+  "group": "20120831",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 2.2,
+  "touch_zone_fail": 22.8,
+  "active_line_fail": 17.3
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 16.5,
+  "touch_zone_fail": 44.9
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 13.6,
+  "touch_zone_fail": 40.2
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 55.3,
+  "touch_zone_fail": 67.9
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 26.9,
+  "touch_zone_fail": 31.3
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 4.8,
+  "touch_zone_fail": 35.8,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 1.7,
+  "touch_zone_fail": 22.2,
+  "active_line_fail": 13.4
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 7.5,
+  "touch_zone_fail": 40.5,
+  "active_line_fail": 7.7
+ },
+ {
+  "record": "20160416_M7.8_II.RPN",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 2.6,
+  "touch_zone_fail": 17.0,
+  "active_line_fail": 19.1
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 43.5,
+  "touch_zone_fail": 54.4
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 32.2,
+  "touch_zone_fail": 43.8
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 78.2,
+  "touch_zone_fail": 78.2
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 50.4,
+  "touch_zone_fail": 50.5
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 3.7,
+  "touch_zone_fail": 52.8,
+  "active_line_fail": 12.4
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 1.3,
+  "touch_zone_fail": 20.8,
+  "active_line_fail": 10.4
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 5.4,
+  "touch_zone_fail": 36.8,
+  "active_line_fail": 2.3
+ },
+ {
+  "record": "20160416_M7.8_IU.PAB",
+  "group": "20160416",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 2.0,
+  "touch_zone_fail": 15.5,
+  "active_line_fail": 15.8
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 7.3,
+  "touch_zone_fail": 43.0
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 4.2,
+  "touch_zone_fail": 18.9
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 35.5,
+  "touch_zone_fail": 64.2
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 22.9,
+  "touch_zone_fail": 25.7
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 5.1,
+  "touch_zone_fail": 38.3,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 2.6,
+  "touch_zone_fail": 31.0,
+  "active_line_fail": 14.2
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 7.3,
+  "touch_zone_fail": 43.2,
+  "active_line_fail": 2.4
+ },
+ {
+  "record": "20180928_M7.5_IU.NWAO",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 3.2,
+  "touch_zone_fail": 18.0,
+  "active_line_fail": 25.3
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 39.9,
+  "touch_zone_fail": 45.4
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 62.4,
+  "touch_zone_fail": 78.1
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 77.6,
+  "touch_zone_fail": 77.0
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 73.4,
+  "touch_zone_fail": 73.0
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 17.1,
+  "touch_zone_fail": 41.2,
+  "active_line_fail": 22.2
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 29.6,
+  "touch_zone_fail": 87.5,
+  "active_line_fail": 70.3
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 41.6,
+  "touch_zone_fail": 74.1,
+  "active_line_fail": 74.4
+ },
+ {
+  "record": "20180928_M7.5_IU.TIXI",
+  "group": "20180928",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 22.1,
+  "touch_zone_fail": 40.6,
+  "active_line_fail": 75.8
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 30.8,
+  "touch_zone_fail": 56.8
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 49.0,
+  "touch_zone_fail": 61.4
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 74.4,
+  "touch_zone_fail": 82.8
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 49.6,
+  "touch_zone_fail": 45.1
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 17.3,
+  "touch_zone_fail": 42.8,
+  "active_line_fail": 8.4
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 4.5,
+  "touch_zone_fail": 25.4,
+  "active_line_fail": 33.9
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 25.2,
+  "touch_zone_fail": 45.3,
+  "active_line_fail": 13.4
+ },
+ {
+  "record": "20200128_M7.7_II.EFI",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 5.4,
+  "touch_zone_fail": 17.5,
+  "active_line_fail": 43.1
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 35.3,
+  "touch_zone_fail": 48.9
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 33.8,
+  "touch_zone_fail": 64.6
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 84.6,
+  "touch_zone_fail": 80.5
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 62.7,
+  "touch_zone_fail": 61.3
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 11.5,
+  "touch_zone_fail": 45.4,
+  "active_line_fail": 21.9
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 6.0,
+  "touch_zone_fail": 22.0,
+  "active_line_fail": 39.3
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 19.3,
+  "touch_zone_fail": 56.6,
+  "active_line_fail": 30.7
+ },
+ {
+  "record": "20200128_M7.7_II.SHEL",
+  "group": "20200128",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 14.4,
+  "touch_zone_fail": 29.7,
+  "active_line_fail": 50.8
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 45.6,
+  "touch_zone_fail": 66.2
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 60.1,
+  "touch_zone_fail": 80.2
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 78.8,
+  "touch_zone_fail": 77.1
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 66.2,
+  "touch_zone_fail": 66.1
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 22.3,
+  "touch_zone_fail": 27.8,
+  "active_line_fail": 68.4
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 1.7,
+  "touch_zone_fail": 21.2,
+  "active_line_fail": 13.6
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 33.5,
+  "touch_zone_fail": 43.8,
+  "active_line_fail": 78.9
+ },
+ {
+  "record": "20201019_M7.6_II.KAPI",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 3.1,
+  "touch_zone_fail": 16.7,
+  "active_line_fail": 25.1
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 19.4,
+  "touch_zone_fail": 44.6
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 9.4,
+  "touch_zone_fail": 30.1
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 91.9,
+  "touch_zone_fail": 77.9
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 54.7,
+  "touch_zone_fail": 53.3
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 21.7,
+  "touch_zone_fail": 32.3,
+  "active_line_fail": 77.6
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 20.4,
+  "touch_zone_fail": 24.6,
+  "active_line_fail": 85.7
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 31.1,
+  "touch_zone_fail": 40.1,
+  "active_line_fail": 41.4
+ },
+ {
+  "record": "20201019_M7.6_IU.XMAS",
+  "group": "20201019",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 11.0,
+  "touch_zone_fail": 16.7,
+  "active_line_fail": 77.7
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 8.2,
+  "touch_zone_fail": 37.1
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 42.3,
+  "touch_zone_fail": 82.7
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 61.1,
+  "touch_zone_fail": 84.4
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 46.8,
+  "touch_zone_fail": 55.1
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 5.3,
+  "touch_zone_fail": 29.4,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 1.4,
+  "touch_zone_fail": 23.1,
+  "active_line_fail": 11.6
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 8.2,
+  "touch_zone_fail": 36.0,
+  "active_line_fail": 0.0
+ },
+ {
+  "record": "20250822_M7.5_II.SACV",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 6.7,
+  "touch_zone_fail": 31.5,
+  "active_line_fail": 34.5
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 32.6,
+  "touch_zone_fail": 46.9
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 10.0,
+  "touch_zone_fail": 16.7
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "greedy",
+  "fail": 92.3,
+  "touch_zone_fail": 84.8
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "all",
+  "gain": 5.0,
+  "method": "joint",
+  "fail": 62.8,
+  "touch_zone_fail": 63.3
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "greedy",
+  "fail": 21.1,
+  "touch_zone_fail": 49.0,
+  "active_line_fail": 11.9
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 1.5,
+  "method": "joint",
+  "fail": 18.2,
+  "touch_zone_fail": 35.0,
+  "active_line_fail": 84.3
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "greedy",
+  "fail": 30.4,
+  "touch_zone_fail": 46.2,
+  "active_line_fail": 26.9
+ },
+ {
+  "record": "20250822_M7.5_IU.SBA",
+  "group": "20250822",
+  "mode": "active",
+  "gain": 2.0,
+  "method": "joint",
+  "fail": 15.9,
+  "touch_zone_fail": 19.6,
+  "active_line_fail": 74.2
+ }
+]

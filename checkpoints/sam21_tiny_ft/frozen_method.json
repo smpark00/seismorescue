@@ -1,0 +1,1 @@
+{"frozen_at": "2026-10-27 21:42:54 KST", "ckpt": "out/ml/sam/ckpt_tiny_best.pt", "lam_final": 1e-5, "lam_chain": 3e-4, "window": [406, 256], "step": 192, "prompt_cols": [0, 16, 32, 48], "lam_choice": "val grid {0,3e-6,1e-5,3e-5,1e-4,3e-4,1e-3,3e-3}: 3e-6 and 1e-5 tie (1.4/7.8 vs 1.4/7.9 whole/quake), 0 is worse (2.1/12.8); took the more regularised 1e-5"}

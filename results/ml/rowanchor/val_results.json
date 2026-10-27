@@ -1,0 +1,10821 @@
+{
+ "checkpoint": {
+  "step": 3368,
+  "minutes": 47.01,
+  "train_loss": 1.744,
+  "lr": 4.514489679361788e-05,
+  "val_quake_fail_argmax": 1.4,
+  "val_whole_fail_argmax": 0.3,
+  "crit": 0.85
+ },
+ "split": {
+  "seed": 20261027,
+  "val_groups": [
+   "20090103",
+   "20110311",
+   "20120831",
+   "20230510"
+  ],
+  "train": [
+   "20050328_M8.6_IU.MAJO",
+   "20050328_M8.6_IU.YSS",
+   "20060127_M7.6_IU.HNR",
+   "20060127_M7.6_IU.YSS",
+   "20061115_M8.3_IU.DAV",
+   "20061115_M8.3_IU.GUMO",
+   "20070121_M7.5_II.ABKT",
+   "20070121_M7.5_IU.ADK",
+   "20070815_M8.0_IU.BBSR",
+   "20070815_M8.0_IU.TSUM",
+   "20071114_M7.7_II.EFI",
+   "20071114_M7.7_IU.TRIS",
+   "20090929_M8.1_IU.INCN",
+   "20090929_M8.1_IU.MIDW",
+   "20100612_M7.5_II.TLY",
+   "20100612_M7.5_IU.HNR",
+   "20120814_M7.7_II.COCO",
+   "20120814_M7.7_IU.PMG",
+   "20160416_M7.8_II.RPN",
+   "20160416_M7.8_IU.PAB",
+   "20180225_M7.5_IU.BILL",
+   "20180225_M7.5_IU.TATO",
+   "20180928_M7.5_IU.NWAO",
+   "20180928_M7.5_IU.TIXI",
+   "20200128_M7.7_II.EFI",
+   "20200128_M7.7_II.SHEL",
+   "20201019_M7.6_II.KAPI",
+   "20201019_M7.6_IU.XMAS",
+   "20230519_M7.7_IU.ADK",
+   "20230519_M7.7_IU.KIP",
+   "20250729_M8.8_IU.ANMO",
+   "20250729_M8.8_IU.PAB",
+   "20250822_M7.5_II.SACV",
+   "20250822_M7.5_IU.SBA"
+  ],
+  "val": [
+   "20090103_M7.7_IU.BILL",
+   "20090103_M7.7_IU.YAK",
+   "20110311_M7.7_II.COCO",
+   "20110311_M7.7_IU.MAKZ",
+   "20110311_M7.9_IU.KONO",
+   "20120831_M7.6_IU.JOHN",
+   "20120831_M7.6_IU.WAKE",
+   "20230510_M7.6_IU.COLA",
+   "20230510_M7.6_IU.KIP"
+  ]
+ },
+ "rows": [
+  {
+   "name": "20090103_M7.7_IU.BILL",
+   "gain": 1,
+   "act": 4,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 98.3,
+    "whole": 66.4,
+    "per_line": [
+     93.4,
+     64.9,
+     28.4,
+     55.0,
+     98.3,
+     33.3,
+     59.9,
+     98.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3539,
+     "n_drawn": 3600,
+     "long_run_frac": 0.893,
+     "steep_frac": 0.0,
+     "max_run": 2005
+    }
+   },
+   "B": {
+    "quake": 7.0,
+    "whole": 1.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     7.0,
+     0.0,
+     0.3,
+     3.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 251,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 20
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.BILL",
+   "gain": 2,
+   "act": 4,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 3.4,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     3.4,
+     0.0,
+     0.3,
+     2.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 122,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.426,
+     "max_run": 17
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 96.4,
+    "whole": 59.3,
+    "per_line": [
+     95.0,
+     0.0,
+     58.4,
+     28.2,
+     96.4,
+     32.6,
+     66.9,
+     96.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3470,
+     "n_drawn": 3600,
+     "long_run_frac": 0.788,
+     "steep_frac": 0.025,
+     "max_run": 1398
+    }
+   },
+   "B": {
+    "quake": 76.5,
+    "whole": 22.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     5.8,
+     76.5,
+     54.2,
+     31.5,
+     11.8
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2755,
+     "n_drawn": 3600,
+     "long_run_frac": 0.727,
+     "steep_frac": 0.025,
+     "max_run": 1398
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.BILL",
+   "gain": 3,
+   "act": 4,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 7.6,
+    "whole": 1.7,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     7.6,
+     0.0,
+     0.8,
+     5.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 273,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.498,
+     "max_run": 17
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.6,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.6,
+     0.0,
+     0.2,
+     0.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 22,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 10
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 3
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 3
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.8,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.8,
+     0.0,
+     0.2,
+     0.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 27,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.593,
+     "max_run": 10
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 3
+    }
+   },
+   "A": {
+    "quake": 93.9,
+    "whole": 51.3,
+    "per_line": [
+     0.0,
+     55.0,
+     0.0,
+     7.8,
+     93.9,
+     92.7,
+     64.6,
+     96.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3381,
+     "n_drawn": 3600,
+     "long_run_frac": 0.711,
+     "steep_frac": 0.064,
+     "max_run": 1201
+    }
+   },
+   "B": {
+    "quake": 82.4,
+    "whole": 57.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     89.9,
+     82.4,
+     92.4,
+     96.7,
+     97.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2966,
+     "n_drawn": 3600,
+     "long_run_frac": 0.561,
+     "steep_frac": 0.077,
+     "max_run": 481
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.BILL",
+   "gain": 4,
+   "act": 4,
+   "argmax": {
+    "quake": 0.5,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.8
+    ],
+    "quake_fail_anal": {
+     "n_fail": 17,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.294,
+     "max_run": 4
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 12.9,
+    "whole": 2.8,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     12.9,
+     0.0,
+     1.3,
+     8.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 463,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.516,
+     "max_run": 30
+    }
+   },
+   "viterbi_a1": {
+    "quake": 1.9,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     1.9,
+     0.0,
+     0.1,
+     1.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 68,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.824,
+     "max_run": 14
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.2,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.1,
+     0.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 8,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.75,
+     "max_run": 7
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.2,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.1,
+     0.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 7
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.8,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.8,
+     0.0,
+     0.1,
+     1.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 66,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.879,
+     "max_run": 9
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.1,
+     0.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 7
+    }
+   },
+   "A": {
+    "quake": 93.2,
+    "whole": 62.1,
+    "per_line": [
+     20.0,
+     68.3,
+     76.6,
+     6.5,
+     93.2,
+     99.9,
+     39.0,
+     93.5
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3356,
+     "n_drawn": 3600,
+     "long_run_frac": 0.713,
+     "steep_frac": 0.084,
+     "max_run": 868
+    }
+   },
+   "B": {
+    "quake": 68.6,
+    "whole": 38.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     8.1,
+     68.6,
+     72.7,
+     66.9,
+     89.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2469,
+     "n_drawn": 3600,
+     "long_run_frac": 0.348,
+     "steep_frac": 0.143,
+     "max_run": 420
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.BILL",
+   "gain": 6,
+   "act": 4,
+   "argmax": {
+    "quake": 2.6,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     2.6,
+     0.1,
+     0.7,
+     3.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 92,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.391,
+     "max_run": 9
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 25.1,
+    "whole": 5.7,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     25.1,
+     1.3,
+     2.3,
+     16.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 905,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.577,
+     "max_run": 29
+    }
+   },
+   "viterbi_a1": {
+    "quake": 7.8,
+    "whole": 2.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     7.8,
+     0.4,
+     0.6,
+     7.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 279,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.713,
+     "max_run": 18
+    }
+   },
+   "viterbi_a2": {
+    "quake": 1.7,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.7,
+     0.2,
+     0.1,
+     3.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 60,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.617,
+     "max_run": 10
+    }
+   },
+   "viterbi_a4": {
+    "quake": 1.1,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.1,
+     0.2,
+     0.2,
+     3.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 39,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 9
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 6.2,
+    "whole": 1.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     6.2,
+     0.3,
+     0.5,
+     6.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 222,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.743,
+     "max_run": 11
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 2.0,
+    "whole": 0.8,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     2.0,
+     0.2,
+     0.1,
+     3.8
+    ],
+    "quake_fail_anal": {
+     "n_fail": 71,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.662,
+     "max_run": 10
+    }
+   },
+   "A": {
+    "quake": 80.7,
+    "whole": 65.2,
+    "per_line": [
+     0.0,
+     88.3,
+     60.0,
+     24.3,
+     80.7,
+     77.7,
+     92.5,
+     97.8
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2905,
+     "n_drawn": 3600,
+     "long_run_frac": 0.121,
+     "steep_frac": 0.264,
+     "max_run": 226
+    }
+   },
+   "B": {
+    "quake": 73.5,
+    "whole": 47.6,
+    "per_line": [
+     64.9,
+     0.0,
+     0.1,
+     16.4,
+     73.5,
+     90.6,
+     60.2,
+     74.8
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2646,
+     "n_drawn": 3600,
+     "long_run_frac": 0.094,
+     "steep_frac": 0.269,
+     "max_run": 131
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.BILL",
+   "gain": 8,
+   "act": 4,
+   "argmax": {
+    "quake": 7.4,
+    "whole": 2.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     7.4,
+     0.5,
+     2.0,
+     7.1
+    ],
+    "quake_fail_anal": {
+     "n_fail": 267,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.479,
+     "max_run": 13
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 38.5,
+    "whole": 9.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.8,
+     38.5,
+     3.8,
+     7.4,
+     24.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1385,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.6,
+     "max_run": 29
+    }
+   },
+   "viterbi_a1": {
+    "quake": 14.2,
+    "whole": 3.9,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.6,
+     14.2,
+     1.1,
+     2.9,
+     12.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 513,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.733,
+     "max_run": 31
+    }
+   },
+   "viterbi_a2": {
+    "quake": 5.6,
+    "whole": 2.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     5.6,
+     0.6,
+     1.5,
+     8.7
+    ],
+    "quake_fail_anal": {
+     "n_fail": 203,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.685,
+     "max_run": 25
+    }
+   },
+   "viterbi_a4": {
+    "quake": 4.8,
+    "whole": 1.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     4.8,
+     0.6,
+     1.2,
+     6.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 173,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.613,
+     "max_run": 13
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 11.0,
+    "whole": 3.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.6,
+     11.0,
+     1.1,
+     2.7,
+     11.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 396,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.758,
+     "max_run": 24
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 5.8,
+    "whole": 1.9,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     5.8,
+     0.7,
+     1.4,
+     7.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 210,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.652,
+     "max_run": 14
+    }
+   },
+   "A": {
+    "quake": 88.1,
+    "whole": 65.7,
+    "per_line": [
+     0.0,
+     53.3,
+     48.4,
+     37.6,
+     88.1,
+     99.1,
+     99.7,
+     99.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3171,
+     "n_drawn": 3600,
+     "long_run_frac": 0.425,
+     "steep_frac": 0.267,
+     "max_run": 816
+    }
+   },
+   "B": {
+    "quake": 87.2,
+    "whole": 52.1,
+    "per_line": [
+     0.0,
+     0.0,
+     41.5,
+     41.9,
+     87.2,
+     93.2,
+     80.0,
+     73.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3138,
+     "n_drawn": 3600,
+     "long_run_frac": 0.563,
+     "steep_frac": 0.219,
+     "max_run": 1037
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.YAK",
+   "gain": 1,
+   "act": 2,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.9,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 32,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.125,
+     "max_run": 8
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 89.4,
+    "whole": 50.8,
+    "per_line": [
+     95.0,
+     9.2,
+     89.4,
+     0.0,
+     28.3,
+     94.6,
+     56.9,
+     33.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3220,
+     "n_drawn": 3600,
+     "long_run_frac": 0.926,
+     "steep_frac": 0.005,
+     "max_run": 1950
+    }
+   },
+   "B": {
+    "quake": 76.4,
+    "whole": 12.8,
+    "per_line": [
+     0.0,
+     0.0,
+     76.4,
+     0.0,
+     8.6,
+     17.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2752,
+     "n_drawn": 3600,
+     "long_run_frac": 0.976,
+     "steep_frac": 0.0,
+     "max_run": 2686
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.YAK",
+   "gain": 2,
+   "act": 2,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 3.6,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.1,
+     3.6,
+     0.0,
+     0.4,
+     1.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 129,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.364,
+     "max_run": 11
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.1,
+     0.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 94.2,
+    "whole": 45.4,
+    "per_line": [
+     0.0,
+     9.2,
+     94.2,
+     80.8,
+     26.2,
+     96.3,
+     0.0,
+     56.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3390,
+     "n_drawn": 3600,
+     "long_run_frac": 0.785,
+     "steep_frac": 0.037,
+     "max_run": 1167
+    }
+   },
+   "B": {
+    "quake": 74.8,
+    "whole": 50.0,
+    "per_line": [
+     0.0,
+     0.9,
+     74.8,
+     65.6,
+     83.1,
+     90.4,
+     85.1,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2691,
+     "n_drawn": 3600,
+     "long_run_frac": 0.724,
+     "steep_frac": 0.048,
+     "max_run": 1456
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.YAK",
+   "gain": 3,
+   "act": 2,
+   "argmax": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 15,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.333,
+     "max_run": 8
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 8.0,
+    "whole": 1.6,
+    "per_line": [
+     0.0,
+     0.2,
+     8.0,
+     0.0,
+     0.4,
+     4.4,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 289,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.567,
+     "max_run": 14
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.9,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.2,
+     0.9,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 31,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.645,
+     "max_run": 9
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.1,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.9,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.1,
+     0.9,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 31,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.677,
+     "max_run": 10
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.3,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.1,
+     0.3,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 12,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.583,
+     "max_run": 10
+    }
+   },
+   "A": {
+    "quake": 91.6,
+    "whole": 52.4,
+    "per_line": [
+     0.0,
+     9.0,
+     91.6,
+     88.8,
+     38.0,
+     93.5,
+     41.8,
+     56.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3296,
+     "n_drawn": 3600,
+     "long_run_frac": 0.568,
+     "steep_frac": 0.088,
+     "max_run": 435
+    }
+   },
+   "B": {
+    "quake": 68.0,
+    "whole": 57.8,
+    "per_line": [
+     0.0,
+     57.2,
+     68.0,
+     58.1,
+     89.4,
+     91.3,
+     98.1,
+     0.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2448,
+     "n_drawn": 3600,
+     "long_run_frac": 0.44,
+     "steep_frac": 0.103,
+     "max_run": 420
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.YAK",
+   "gain": 4,
+   "act": 2,
+   "argmax": {
+    "quake": 0.8,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.8,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 28,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.143,
+     "max_run": 6
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 13.1,
+    "whole": 2.8,
+    "per_line": [
+     0.0,
+     0.2,
+     13.1,
+     0.0,
+     0.9,
+     8.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 472,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.555,
+     "max_run": 20
+    }
+   },
+   "viterbi_a1": {
+    "quake": 2.8,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     0.2,
+     2.8,
+     0.0,
+     0.3,
+     1.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 99,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.707,
+     "max_run": 14
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.3,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.3,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 12,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 3
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.1,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 4,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.75,
+     "max_run": 2
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.9,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.2,
+     1.9,
+     0.0,
+     0.3,
+     0.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 68,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.765,
+     "max_run": 7
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 15,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.6,
+     "max_run": 3
+    }
+   },
+   "A": {
+    "quake": 87.6,
+    "whole": 50.4,
+    "per_line": [
+     0.0,
+     9.1,
+     87.6,
+     91.1,
+     25.2,
+     90.7,
+     27.9,
+     71.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3155,
+     "n_drawn": 3600,
+     "long_run_frac": 0.4,
+     "steep_frac": 0.136,
+     "max_run": 286
+    }
+   },
+   "B": {
+    "quake": 80.6,
+    "whole": 59.1,
+    "per_line": [
+     35.7,
+     34.7,
+     80.6,
+     89.2,
+     47.2,
+     97.2,
+     72.9,
+     15.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2901,
+     "n_drawn": 3600,
+     "long_run_frac": 0.241,
+     "steep_frac": 0.143,
+     "max_run": 227
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.YAK",
+   "gain": 6,
+   "act": 2,
+   "argmax": {
+    "quake": 4.8,
+    "whole": 1.2,
+    "per_line": [
+     0.0,
+     0.2,
+     4.8,
+     0.0,
+     1.2,
+     3.5,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 171,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.538,
+     "max_run": 12
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 25.9,
+    "whole": 6.3,
+    "per_line": [
+     0.0,
+     0.9,
+     25.9,
+     0.3,
+     2.5,
+     20.6,
+     0.0,
+     0.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 934,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.589,
+     "max_run": 34
+    }
+   },
+   "viterbi_a1": {
+    "quake": 10.2,
+    "whole": 2.4,
+    "per_line": [
+     0.0,
+     0.8,
+     10.2,
+     0.2,
+     1.1,
+     6.7,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 367,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.736,
+     "max_run": 26
+    }
+   },
+   "viterbi_a2": {
+    "quake": 4.3,
+    "whole": 1.0,
+    "per_line": [
+     0.0,
+     0.3,
+     4.3,
+     0.0,
+     0.3,
+     3.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 154,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.753,
+     "max_run": 17
+    }
+   },
+   "viterbi_a4": {
+    "quake": 3.2,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.2,
+     3.2,
+     0.0,
+     0.4,
+     1.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 114,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.693,
+     "max_run": 12
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 8.1,
+    "whole": 2.0,
+    "per_line": [
+     0.0,
+     0.8,
+     8.1,
+     0.2,
+     1.1,
+     6.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 290,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.752,
+     "max_run": 18
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 3.9,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     0.2,
+     3.9,
+     0.0,
+     0.3,
+     3.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 139,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.748,
+     "max_run": 16
+    }
+   },
+   "A": {
+    "quake": 82.9,
+    "whole": 57.3,
+    "per_line": [
+     0.0,
+     9.1,
+     82.9,
+     89.1,
+     74.1,
+     93.8,
+     70.3,
+     39.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2985,
+     "n_drawn": 3600,
+     "long_run_frac": 0.043,
+     "steep_frac": 0.285,
+     "max_run": 128
+    }
+   },
+   "B": {
+    "quake": 74.4,
+    "whole": 54.9,
+    "per_line": [
+     0.6,
+     4.3,
+     74.4,
+     74.2,
+     56.4,
+     86.4,
+     98.1,
+     44.7
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2679,
+     "n_drawn": 3600,
+     "long_run_frac": 0.116,
+     "steep_frac": 0.308,
+     "max_run": 312
+    }
+   }
+  },
+  {
+   "name": "20090103_M7.7_IU.YAK",
+   "gain": 8,
+   "act": 2,
+   "argmax": {
+    "quake": 9.2,
+    "whole": 2.4,
+    "per_line": [
+     0.0,
+     0.8,
+     9.2,
+     0.6,
+     2.4,
+     6.6,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 331,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.647,
+     "max_run": 17
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 39.4,
+    "whole": 9.7,
+    "per_line": [
+     0.0,
+     2.0,
+     39.4,
+     1.8,
+     4.6,
+     28.7,
+     0.2,
+     0.7
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1420,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.623,
+     "max_run": 53
+    }
+   },
+   "viterbi_a1": {
+    "quake": 18.1,
+    "whole": 5.0,
+    "per_line": [
+     0.0,
+     1.5,
+     18.1,
+     1.2,
+     2.6,
+     16.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 653,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.744,
+     "max_run": 37
+    }
+   },
+   "viterbi_a2": {
+    "quake": 8.9,
+    "whole": 2.4,
+    "per_line": [
+     0.0,
+     1.1,
+     8.9,
+     0.8,
+     1.5,
+     6.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 319,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.768,
+     "max_run": 37
+    }
+   },
+   "viterbi_a4": {
+    "quake": 7.0,
+    "whole": 1.9,
+    "per_line": [
+     0.0,
+     0.8,
+     7.0,
+     0.6,
+     1.4,
+     5.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 253,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.735,
+     "max_run": 21
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 14.9,
+    "whole": 4.2,
+    "per_line": [
+     0.0,
+     1.4,
+     14.9,
+     1.2,
+     2.5,
+     13.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 538,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.757,
+     "max_run": 26
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 8.2,
+    "whole": 2.3,
+    "per_line": [
+     0.0,
+     1.0,
+     8.2,
+     0.8,
+     1.6,
+     6.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 295,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.773,
+     "max_run": 30
+    }
+   },
+   "A": {
+    "quake": 80.6,
+    "whole": 58.2,
+    "per_line": [
+     0.0,
+     9.2,
+     80.6,
+     90.8,
+     88.9,
+     97.5,
+     72.4,
+     25.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2903,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.407,
+     "max_run": 69
+    }
+   },
+   "B": {
+    "quake": 91.9,
+    "whole": 67.4,
+    "per_line": [
+     0.3,
+     14.1,
+     91.9,
+     93.8,
+     76.7,
+     87.7,
+     79.9,
+     95.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3310,
+     "n_drawn": 3600,
+     "long_run_frac": 0.672,
+     "steep_frac": 0.169,
+     "max_run": 2224
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_II.COCO",
+   "gain": 1,
+   "act": 1,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.3,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 10,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.1,
+     "max_run": 9
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 94.4,
+    "whole": 68.3,
+    "per_line": [
+     18.6,
+     94.4,
+     91.8,
+     75.0,
+     84.9,
+     91.7,
+     75.0,
+     15.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3399,
+     "n_drawn": 3600,
+     "long_run_frac": 0.847,
+     "steep_frac": 0.001,
+     "max_run": 1135
+    }
+   },
+   "B": {
+    "quake": 10.4,
+    "whole": 1.8,
+    "per_line": [
+     2.0,
+     10.4,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 376,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.003,
+     "max_run": 23
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_II.COCO",
+   "gain": 2,
+   "act": 1,
+   "argmax": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 4,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 4.4,
+    "whole": 0.7,
+    "per_line": [
+     0.2,
+     4.4,
+     1.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 159,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.365,
+     "max_run": 16
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.2,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.2,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 9,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 9
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 91.7,
+    "whole": 51.5,
+    "per_line": [
+     3.7,
+     91.7,
+     95.0,
+     3.3,
+     75.0,
+     53.3,
+     81.7,
+     8.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3300,
+     "n_drawn": 3600,
+     "long_run_frac": 0.622,
+     "steep_frac": 0.047,
+     "max_run": 455
+    }
+   },
+   "B": {
+    "quake": 56.0,
+    "whole": 9.0,
+    "per_line": [
+     2.2,
+     56.0,
+     14.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2017,
+     "n_drawn": 3600,
+     "long_run_frac": 0.321,
+     "steep_frac": 0.069,
+     "max_run": 316
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_II.COCO",
+   "gain": 3,
+   "act": 1,
+   "argmax": {
+    "quake": 0.3,
+    "whole": 0.1,
+    "per_line": [
+     0.1,
+     0.3,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 11,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 6
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 13.9,
+    "whole": 2.0,
+    "per_line": [
+     0.6,
+     13.9,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 501,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.459,
+     "max_run": 24
+    }
+   },
+   "viterbi_a1": {
+    "quake": 2.1,
+    "whole": 0.4,
+    "per_line": [
+     0.5,
+     2.1,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 74,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.338,
+     "max_run": 12
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.3,
+    "whole": 0.1,
+    "per_line": [
+     0.2,
+     0.3,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 11,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.091,
+     "max_run": 6
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.2,
+    "whole": 0.1,
+    "per_line": [
+     0.1,
+     0.2,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 9,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 6
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.3,
+    "whole": 0.3,
+    "per_line": [
+     0.5,
+     1.3,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 48,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.208,
+     "max_run": 12
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.2,
+     0.4,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 13,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.154,
+     "max_run": 6
+    }
+   },
+   "A": {
+    "quake": 86.0,
+    "whole": 57.5,
+    "per_line": [
+     2.4,
+     86.0,
+     98.3,
+     10.1,
+     81.6,
+     91.7,
+     80.1,
+     9.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3096,
+     "n_drawn": 3600,
+     "long_run_frac": 0.269,
+     "steep_frac": 0.119,
+     "max_run": 365
+    }
+   },
+   "B": {
+    "quake": 63.1,
+    "whole": 29.8,
+    "per_line": [
+     43.8,
+     63.1,
+     81.6,
+     50.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2273,
+     "n_drawn": 3600,
+     "long_run_frac": 0.305,
+     "steep_frac": 0.157,
+     "max_run": 188
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_II.COCO",
+   "gain": 4,
+   "act": 1,
+   "argmax": {
+    "quake": 1.3,
+    "whole": 0.3,
+    "per_line": [
+     0.4,
+     1.3,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 48,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.125,
+     "max_run": 6
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 24.2,
+    "whole": 3.8,
+    "per_line": [
+     1.4,
+     24.2,
+     4.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 871,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.507,
+     "max_run": 25
+    }
+   },
+   "viterbi_a1": {
+    "quake": 6.0,
+    "whole": 1.1,
+    "per_line": [
+     1.0,
+     6.0,
+     2.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 216,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.458,
+     "max_run": 16
+    }
+   },
+   "viterbi_a2": {
+    "quake": 1.2,
+    "whole": 0.4,
+    "per_line": [
+     0.9,
+     1.2,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 44,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.182,
+     "max_run": 9
+    }
+   },
+   "viterbi_a4": {
+    "quake": 1.1,
+    "whole": 0.4,
+    "per_line": [
+     0.8,
+     1.1,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 40,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.125,
+     "max_run": 6
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 5.0,
+    "whole": 1.0,
+    "per_line": [
+     1.0,
+     5.0,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 180,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.489,
+     "max_run": 16
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.2,
+    "whole": 0.4,
+    "per_line": [
+     0.9,
+     1.2,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 45,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.222,
+     "max_run": 9
+    }
+   },
+   "A": {
+    "quake": 84.7,
+    "whole": 51.6,
+    "per_line": [
+     3.4,
+     84.7,
+     99.7,
+     98.1,
+     31.7,
+     58.3,
+     36.7,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3050,
+     "n_drawn": 3600,
+     "long_run_frac": 0.174,
+     "steep_frac": 0.202,
+     "max_run": 199
+    }
+   },
+   "B": {
+    "quake": 84.2,
+    "whole": 36.3,
+    "per_line": [
+     34.2,
+     84.2,
+     85.8,
+     86.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3030,
+     "n_drawn": 3600,
+     "long_run_frac": 0.601,
+     "steep_frac": 0.122,
+     "max_run": 1332
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_II.COCO",
+   "gain": 6,
+   "act": 1,
+   "argmax": {
+    "quake": 5.5,
+    "whole": 1.2,
+    "per_line": [
+     1.0,
+     5.5,
+     2.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 198,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.359,
+     "max_run": 10
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 39.1,
+    "whole": 6.3,
+    "per_line": [
+     2.1,
+     39.1,
+     9.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1406,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.584,
+     "max_run": 26
+    }
+   },
+   "viterbi_a1": {
+    "quake": 16.7,
+    "whole": 2.9,
+    "per_line": [
+     1.8,
+     16.7,
+     4.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 602,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.645,
+     "max_run": 27
+    }
+   },
+   "viterbi_a2": {
+    "quake": 5.8,
+    "whole": 1.3,
+    "per_line": [
+     1.3,
+     5.8,
+     3.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 209,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.478,
+     "max_run": 19
+    }
+   },
+   "viterbi_a4": {
+    "quake": 4.9,
+    "whole": 1.0,
+    "per_line": [
+     0.9,
+     4.9,
+     2.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 177,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.418,
+     "max_run": 11
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 11.9,
+    "whole": 2.2,
+    "per_line": [
+     1.7,
+     11.9,
+     4.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 428,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.645,
+     "max_run": 21
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 5.5,
+    "whole": 1.2,
+    "per_line": [
+     1.2,
+     5.5,
+     2.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 199,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.452,
+     "max_run": 11
+    }
+   },
+   "A": {
+    "quake": 80.1,
+    "whole": 61.6,
+    "per_line": [
+     3.7,
+     80.1,
+     95.5,
+     77.0,
+     99.9,
+     81.7,
+     38.3,
+     16.7
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2884,
+     "n_drawn": 3600,
+     "long_run_frac": 0.043,
+     "steep_frac": 0.378,
+     "max_run": 123
+    }
+   },
+   "B": {
+    "quake": 71.9,
+    "whole": 30.2,
+    "per_line": [
+     8.1,
+     71.9,
+     70.0,
+     91.8,
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2587,
+     "n_drawn": 3600,
+     "long_run_frac": 0.29,
+     "steep_frac": 0.357,
+     "max_run": 375
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_II.COCO",
+   "gain": 8,
+   "act": 1,
+   "argmax": {
+    "quake": 12.5,
+    "whole": 2.5,
+    "per_line": [
+     1.4,
+     12.5,
+     5.6,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 450,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.531,
+     "max_run": 14
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 50.7,
+    "whole": 8.5,
+    "per_line": [
+     2.5,
+     50.7,
+     14.8,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1827,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.648,
+     "max_run": 31
+    }
+   },
+   "viterbi_a1": {
+    "quake": 28.5,
+    "whole": 4.9,
+    "per_line": [
+     2.3,
+     28.5,
+     8.3,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1025,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 26
+    }
+   },
+   "viterbi_a2": {
+    "quake": 14.1,
+    "whole": 2.8,
+    "per_line": [
+     1.7,
+     14.1,
+     6.3,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 506,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.664,
+     "max_run": 25
+    }
+   },
+   "viterbi_a4": {
+    "quake": 11.1,
+    "whole": 2.3,
+    "per_line": [
+     1.6,
+     11.1,
+     5.3,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 401,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.581,
+     "max_run": 17
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 23.8,
+    "whole": 4.3,
+    "per_line": [
+     2.2,
+     23.8,
+     8.2,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 856,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.701,
+     "max_run": 23
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 12.1,
+    "whole": 2.5,
+    "per_line": [
+     1.8,
+     12.1,
+     6.1,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 436,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.619,
+     "max_run": 17
+    }
+   },
+   "A": {
+    "quake": 81.1,
+    "whole": 68.2,
+    "per_line": [
+     3.9,
+     81.1,
+     97.3,
+     95.4,
+     99.9,
+     76.7,
+     70.0,
+     21.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2919,
+     "n_drawn": 3600,
+     "long_run_frac": 0.037,
+     "steep_frac": 0.504,
+     "max_run": 107
+    }
+   },
+   "B": {
+    "quake": 88.2,
+    "whole": 31.9,
+    "per_line": [
+     3.8,
+     88.2,
+     70.8,
+     91.9,
+     0.5,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3174,
+     "n_drawn": 3600,
+     "long_run_frac": 0.318,
+     "steep_frac": 0.41,
+     "max_run": 591
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_IU.MAKZ",
+   "gain": 1,
+   "act": 1,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 15,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 5
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 72.0,
+    "whole": 76.3,
+    "per_line": [
+     86.9,
+     72.0,
+     96.7,
+     86.7,
+     83.3,
+     90.0,
+     75.0,
+     20.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2593,
+     "n_drawn": 3600,
+     "long_run_frac": 0.953,
+     "steep_frac": 0.003,
+     "max_run": 1980
+    }
+   },
+   "B": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 64,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.047,
+     "max_run": 13
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_IU.MAKZ",
+   "gain": 2,
+   "act": 1,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.6,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 20,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.7,
+     "max_run": 12
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 96.2,
+    "whole": 71.2,
+    "per_line": [
+     56.7,
+     96.2,
+     88.6,
+     78.3,
+     68.3,
+     91.7,
+     90.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3464,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 3464
+    }
+   },
+   "B": {
+    "quake": 9.7,
+    "whole": 11.4,
+    "per_line": [
+     0.0,
+     9.7,
+     81.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 348,
+     "n_drawn": 3600,
+     "long_run_frac": 0.302,
+     "steep_frac": 0.115,
+     "max_run": 105
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_IU.MAKZ",
+   "gain": 3,
+   "act": 1,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 2.7,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     2.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 98,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.429,
+     "max_run": 15
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 7
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 91.0,
+    "whole": 67.6,
+    "per_line": [
+     50.3,
+     91.0,
+     66.3,
+     96.7,
+     55.0,
+     91.7,
+     68.4,
+     21.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3275,
+     "n_drawn": 3600,
+     "long_run_frac": 0.863,
+     "steep_frac": 0.02,
+     "max_run": 1568
+    }
+   },
+   "B": {
+    "quake": 81.6,
+    "whole": 28.5,
+    "per_line": [
+     0.0,
+     81.6,
+     79.3,
+     21.0,
+     45.7,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2938,
+     "n_drawn": 3600,
+     "long_run_frac": 0.921,
+     "steep_frac": 0.019,
+     "max_run": 2431
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_IU.MAKZ",
+   "gain": 4,
+   "act": 1,
+   "argmax": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 8,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.375,
+     "max_run": 4
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 4.6,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     4.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 164,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.372,
+     "max_run": 19
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.7,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 26,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.846,
+     "max_run": 7
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 4
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 4
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.4,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 13,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.846,
+     "max_run": 3
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 4
+    }
+   },
+   "A": {
+    "quake": 93.7,
+    "whole": 67.2,
+    "per_line": [
+     55.0,
+     93.7,
+     98.9,
+     78.3,
+     75.0,
+     46.7,
+     66.7,
+     23.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3373,
+     "n_drawn": 3600,
+     "long_run_frac": 0.78,
+     "steep_frac": 0.031,
+     "max_run": 1953
+    }
+   },
+   "B": {
+    "quake": 87.5,
+    "whole": 22.6,
+    "per_line": [
+     8.0,
+     87.5,
+     84.6,
+     0.0,
+     0.0,
+     0.6,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3149,
+     "n_drawn": 3600,
+     "long_run_frac": 0.819,
+     "steep_frac": 0.034,
+     "max_run": 1447
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_IU.MAKZ",
+   "gain": 6,
+   "act": 1,
+   "argmax": {
+    "quake": 0.9,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 31,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.71,
+     "max_run": 7
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 6.4,
+    "whole": 0.8,
+    "per_line": [
+     0.2,
+     6.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 231,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.563,
+     "max_run": 21
+    }
+   },
+   "viterbi_a1": {
+    "quake": 2.1,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     2.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 75,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.867,
+     "max_run": 18
+    }
+   },
+   "viterbi_a2": {
+    "quake": 1.1,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 40,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.9,
+     "max_run": 17
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.8,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 27,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.852,
+     "max_run": 8
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.6,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 58,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.862,
+     "max_run": 20
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.9,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 31,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.871,
+     "max_run": 9
+    }
+   },
+   "A": {
+    "quake": 90.6,
+    "whole": 63.8,
+    "per_line": [
+     6.6,
+     90.6,
+     98.3,
+     86.6,
+     68.3,
+     91.7,
+     1.7,
+     66.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3263,
+     "n_drawn": 3600,
+     "long_run_frac": 0.686,
+     "steep_frac": 0.064,
+     "max_run": 429
+    }
+   },
+   "B": {
+    "quake": 85.0,
+    "whole": 24.7,
+    "per_line": [
+     24.3,
+     85.0,
+     75.1,
+     13.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3061,
+     "n_drawn": 3600,
+     "long_run_frac": 0.674,
+     "steep_frac": 0.07,
+     "max_run": 1006
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.7_IU.MAKZ",
+   "gain": 8,
+   "act": 1,
+   "argmax": {
+    "quake": 1.2,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 45,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.778,
+     "max_run": 8
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 8.9,
+    "whole": 1.2,
+    "per_line": [
+     0.5,
+     8.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 321,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.542,
+     "max_run": 30
+    }
+   },
+   "viterbi_a1": {
+    "quake": 2.8,
+    "whole": 0.4,
+    "per_line": [
+     0.3,
+     2.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 101,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.772,
+     "max_run": 30
+    }
+   },
+   "viterbi_a2": {
+    "quake": 1.6,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 58,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.879,
+     "max_run": 30
+    }
+   },
+   "viterbi_a4": {
+    "quake": 1.2,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 45,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.844,
+     "max_run": 17
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 2.6,
+    "whole": 0.4,
+    "per_line": [
+     0.3,
+     2.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 94,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.819,
+     "max_run": 30
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.5,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 53,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.868,
+     "max_run": 28
+    }
+   },
+   "A": {
+    "quake": 88.9,
+    "whole": 47.1,
+    "per_line": [
+     7.8,
+     88.9,
+     46.7,
+     53.3,
+     53.3,
+     36.6,
+     53.4,
+     36.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3202,
+     "n_drawn": 3600,
+     "long_run_frac": 0.493,
+     "steep_frac": 0.108,
+     "max_run": 532
+    }
+   },
+   "B": {
+    "quake": 70.6,
+    "whole": 15.3,
+    "per_line": [
+     7.2,
+     70.6,
+     44.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2542,
+     "n_drawn": 3600,
+     "long_run_frac": 0.471,
+     "steep_frac": 0.123,
+     "max_run": 611
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.9_IU.KONO",
+   "gain": 1,
+   "act": 1,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 5,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 5
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 93.3,
+    "whole": 80.6,
+    "per_line": [
+     96.7,
+     93.3,
+     95.0,
+     86.7,
+     88.3,
+     91.7,
+     93.3,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3360,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 3360
+    }
+   },
+   "B": {
+    "quake": 7.1,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     7.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 257,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.004,
+     "max_run": 16
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.9_IU.KONO",
+   "gain": 2,
+   "act": 1,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 64,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.562,
+     "max_run": 13
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 75.9,
+    "whole": 65.1,
+    "per_line": [
+     23.2,
+     75.9,
+     92.1,
+     96.6,
+     75.0,
+     68.3,
+     90.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2733,
+     "n_drawn": 3600,
+     "long_run_frac": 0.793,
+     "steep_frac": 0.042,
+     "max_run": 615
+    }
+   },
+   "B": {
+    "quake": 16.9,
+    "whole": 12.8,
+    "per_line": [
+     46.2,
+     16.9,
+     39.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 609,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.151,
+     "max_run": 19
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.9_IU.KONO",
+   "gain": 3,
+   "act": 1,
+   "argmax": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 7.3,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     7.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 263,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.593,
+     "max_run": 14
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 9,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 5
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 5,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.8,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 85.9,
+    "whole": 64.3,
+    "per_line": [
+     6.2,
+     85.9,
+     98.8,
+     86.7,
+     55.0,
+     90.0,
+     73.3,
+     18.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3094,
+     "n_drawn": 3600,
+     "long_run_frac": 0.605,
+     "steep_frac": 0.073,
+     "max_run": 740
+    }
+   },
+   "B": {
+    "quake": 51.1,
+    "whole": 32.1,
+    "per_line": [
+     12.9,
+     51.1,
+     97.4,
+     95.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1839,
+     "n_drawn": 3600,
+     "long_run_frac": 0.461,
+     "steep_frac": 0.123,
+     "max_run": 553
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.9_IU.KONO",
+   "gain": 4,
+   "act": 1,
+   "argmax": {
+    "quake": 0.6,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 23,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.435,
+     "max_run": 6
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 11.1,
+    "whole": 1.5,
+    "per_line": [
+     0.0,
+     11.1,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 400,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.625,
+     "max_run": 15
+    }
+   },
+   "viterbi_a1": {
+    "quake": 1.9,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 69,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.797,
+     "max_run": 13
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 17,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.471,
+     "max_run": 5
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 16,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.625,
+     "max_run": 6
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.1,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 38,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.763,
+     "max_run": 9
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.6,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 20,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.55,
+     "max_run": 6
+    }
+   },
+   "A": {
+    "quake": 84.7,
+    "whole": 53.4,
+    "per_line": [
+     5.3,
+     84.7,
+     98.8,
+     6.8,
+     89.9,
+     46.7,
+     48.4,
+     46.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3049,
+     "n_drawn": 3600,
+     "long_run_frac": 0.484,
+     "steep_frac": 0.113,
+     "max_run": 737
+    }
+   },
+   "B": {
+    "quake": 68.4,
+    "whole": 9.9,
+    "per_line": [
+     1.1,
+     68.4,
+     6.5,
+     3.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2463,
+     "n_drawn": 3600,
+     "long_run_frac": 0.88,
+     "steep_frac": 0.014,
+     "max_run": 1360
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.9_IU.KONO",
+   "gain": 6,
+   "act": 1,
+   "argmax": {
+    "quake": 1.9,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     1.9,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 69,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.58,
+     "max_run": 8
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 21.8,
+    "whole": 2.9,
+    "per_line": [
+     0.2,
+     21.8,
+     1.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 785,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.581,
+     "max_run": 33
+    }
+   },
+   "viterbi_a1": {
+    "quake": 6.1,
+    "whole": 0.8,
+    "per_line": [
+     0.1,
+     6.1,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 220,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.741,
+     "max_run": 33
+    }
+   },
+   "viterbi_a2": {
+    "quake": 2.1,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     2.1,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 74,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.622,
+     "max_run": 13
+    }
+   },
+   "viterbi_a4": {
+    "quake": 2.0,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     2.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 71,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.563,
+     "max_run": 9
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 4.4,
+    "whole": 0.6,
+    "per_line": [
+     0.1,
+     4.4,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 158,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.728,
+     "max_run": 33
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     1.8,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 65,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.585,
+     "max_run": 9
+    }
+   },
+   "A": {
+    "quake": 81.9,
+    "whole": 55.4,
+    "per_line": [
+     0.9,
+     81.9,
+     98.9,
+     76.7,
+     75.0,
+     46.7,
+     36.7,
+     26.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2949,
+     "n_drawn": 3600,
+     "long_run_frac": 0.327,
+     "steep_frac": 0.196,
+     "max_run": 315
+    }
+   },
+   "B": {
+    "quake": 94.9,
+    "whole": 41.2,
+    "per_line": [
+     29.8,
+     94.9,
+     33.2,
+     86.4,
+     0.0,
+     40.2,
+     0.0,
+     44.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3418,
+     "n_drawn": 3600,
+     "long_run_frac": 0.764,
+     "steep_frac": 0.139,
+     "max_run": 1199
+    }
+   }
+  },
+  {
+   "name": "20110311_M7.9_IU.KONO",
+   "gain": 8,
+   "act": 1,
+   "argmax": {
+    "quake": 5.0,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     5.0,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 180,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.606,
+     "max_run": 13
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 31.1,
+    "whole": 4.4,
+    "per_line": [
+     0.5,
+     31.1,
+     3.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1120,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.588,
+     "max_run": 33
+    }
+   },
+   "viterbi_a1": {
+    "quake": 11.6,
+    "whole": 1.6,
+    "per_line": [
+     0.3,
+     11.6,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 419,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.757,
+     "max_run": 33
+    }
+   },
+   "viterbi_a2": {
+    "quake": 5.1,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     5.1,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 182,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.659,
+     "max_run": 22
+    }
+   },
+   "viterbi_a4": {
+    "quake": 4.6,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     4.6,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 165,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 13
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 7.8,
+    "whole": 1.1,
+    "per_line": [
+     0.3,
+     7.8,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 280,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.704,
+     "max_run": 22
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 4.5,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     4.5,
+     0.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 162,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.611,
+     "max_run": 20
+    }
+   },
+   "A": {
+    "quake": 85.3,
+    "whole": 53.9,
+    "per_line": [
+     1.2,
+     85.3,
+     99.9,
+     46.6,
+     45.0,
+     46.7,
+     75.0,
+     31.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3071,
+     "n_drawn": 3600,
+     "long_run_frac": 0.307,
+     "steep_frac": 0.255,
+     "max_run": 299
+    }
+   },
+   "B": {
+    "quake": 80.7,
+    "whole": 28.3,
+    "per_line": [
+     32.7,
+     80.7,
+     82.3,
+     30.8,
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2904,
+     "n_drawn": 3600,
+     "long_run_frac": 0.463,
+     "steep_frac": 0.212,
+     "max_run": 554
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.JOHN",
+   "gain": 1,
+   "act": 3,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 95.0,
+    "whole": 79.2,
+    "per_line": [
+     96.7,
+     95.0,
+     96.7,
+     95.0,
+     83.3,
+     76.7,
+     73.4,
+     16.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3420,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 3420
+    }
+   },
+   "B": {
+    "quake": 7.3,
+    "whole": 1.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.6,
+     7.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 264,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.008,
+     "max_run": 21
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.JOHN",
+   "gain": 2,
+   "act": 3,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 63,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.556,
+     "max_run": 13
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 98.8,
+    "whole": 76.7,
+    "per_line": [
+     63.4,
+     95.0,
+     85.0,
+     98.8,
+     90.0,
+     91.7,
+     71.7,
+     18.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3556,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 3059
+    }
+   },
+   "B": {
+    "quake": 68.2,
+    "whole": 15.8,
+    "per_line": [
+     0.0,
+     0.0,
+     58.2,
+     68.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2455,
+     "n_drawn": 3600,
+     "long_run_frac": 0.811,
+     "steep_frac": 0.023,
+     "max_run": 1710
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.JOHN",
+   "gain": 3,
+   "act": 3,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 4.2,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     4.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 150,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.6,
+     "max_run": 15
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 1
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 99.3,
+    "whole": 78.2,
+    "per_line": [
+     93.3,
+     95.0,
+     85.0,
+     99.3,
+     78.3,
+     75.0,
+     35.0,
+     64.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3575,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 2953
+    }
+   },
+   "B": {
+    "quake": 68.7,
+    "whole": 9.4,
+    "per_line": [
+     0.0,
+     0.1,
+     0.1,
+     68.7,
+     5.9,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2473,
+     "n_drawn": 3600,
+     "long_run_frac": 0.759,
+     "steep_frac": 0.066,
+     "max_run": 1876
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.JOHN",
+   "gain": 4,
+   "act": 3,
+   "argmax": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 8.2,
+    "whole": 1.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.2,
+     8.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 296,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.608,
+     "max_run": 17
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 16,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.812,
+     "max_run": 10
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 9,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.889,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 97.9,
+    "whole": 66.2,
+    "per_line": [
+     61.7,
+     31.6,
+     86.6,
+     97.9,
+     76.7,
+     70.0,
+     28.3,
+     76.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3524,
+     "n_drawn": 3600,
+     "long_run_frac": 0.915,
+     "steep_frac": 0.037,
+     "max_run": 2383
+    }
+   },
+   "B": {
+    "quake": 71.5,
+    "whole": 17.8,
+    "per_line": [
+     0.0,
+     0.0,
+     0.5,
+     71.5,
+     70.7,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2575,
+     "n_drawn": 3600,
+     "long_run_frac": 0.634,
+     "steep_frac": 0.131,
+     "max_run": 1632
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.JOHN",
+   "gain": 6,
+   "act": 3,
+   "argmax": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.714,
+     "max_run": 7
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 15.4,
+    "whole": 2.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.3,
+     15.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 553,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.716,
+     "max_run": 29
+    }
+   },
+   "viterbi_a1": {
+    "quake": 4.4,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.2,
+     4.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 158,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.766,
+     "max_run": 29
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 17,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.588,
+     "max_run": 12
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 9,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.556,
+     "max_run": 7
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 2.4,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.2,
+     2.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 85,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.812,
+     "max_run": 12
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.3,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 12,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.417,
+     "max_run": 7
+    }
+   },
+   "A": {
+    "quake": 93.0,
+    "whole": 68.3,
+    "per_line": [
+     76.7,
+     33.4,
+     61.6,
+     93.0,
+     97.0,
+     91.7,
+     70.1,
+     23.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3347,
+     "n_drawn": 3600,
+     "long_run_frac": 0.676,
+     "steep_frac": 0.157,
+     "max_run": 1625
+    }
+   },
+   "B": {
+    "quake": 82.0,
+    "whole": 28.0,
+    "per_line": [
+     0.0,
+     60.0,
+     78.6,
+     82.0,
+     3.7,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2952,
+     "n_drawn": 3600,
+     "long_run_frac": 0.616,
+     "steep_frac": 0.187,
+     "max_run": 898
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.JOHN",
+   "gain": 8,
+   "act": 3,
+   "argmax": {
+    "quake": 1.6,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     1.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 56,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.732,
+     "max_run": 11
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 23.1,
+    "whole": 3.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.6,
+     23.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 831,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.676,
+     "max_run": 43
+    }
+   },
+   "viterbi_a1": {
+    "quake": 7.5,
+    "whole": 1.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     7.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 270,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.781,
+     "max_run": 28
+    }
+   },
+   "viterbi_a2": {
+    "quake": 3.0,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     3.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 107,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.757,
+     "max_run": 28
+    }
+   },
+   "viterbi_a4": {
+    "quake": 1.4,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     1.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 51,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.725,
+     "max_run": 11
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 6.1,
+    "whole": 0.8,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     6.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 219,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.776,
+     "max_run": 30
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 64,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.719,
+     "max_run": 13
+    }
+   },
+   "A": {
+    "quake": 94.0,
+    "whole": 66.8,
+    "per_line": [
+     25.0,
+     70.0,
+     85.0,
+     94.0,
+     89.1,
+     41.5,
+     53.3,
+     76.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3385,
+     "n_drawn": 3600,
+     "long_run_frac": 0.601,
+     "steep_frac": 0.215,
+     "max_run": 1700
+    }
+   },
+   "B": {
+    "quake": 56.7,
+    "whole": 22.2,
+    "per_line": [
+     0.0,
+     0.0,
+     2.7,
+     56.7,
+     59.4,
+     58.6,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2040,
+     "n_drawn": 3600,
+     "long_run_frac": 0.076,
+     "steep_frac": 0.395,
+     "max_run": 155
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.WAKE",
+   "gain": 1,
+   "act": 5,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 99.4,
+    "whole": 76.0,
+    "per_line": [
+     75.0,
+     53.3,
+     96.7,
+     98.3,
+     91.6,
+     99.4,
+     93.3,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3579,
+     "n_drawn": 3600,
+     "long_run_frac": 0.992,
+     "steep_frac": 0.0,
+     "max_run": 3256
+    }
+   },
+   "B": {
+    "quake": 4.2,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     4.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 152,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.007,
+     "max_run": 21
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.WAKE",
+   "gain": 2,
+   "act": 5,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 1.1,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 40,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.575,
+     "max_run": 15
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 97.3,
+    "whole": 61.9,
+    "per_line": [
+     23.3,
+     20.0,
+     83.3,
+     98.3,
+     75.0,
+     97.3,
+     80.0,
+     18.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3502,
+     "n_drawn": 3600,
+     "long_run_frac": 0.899,
+     "steep_frac": 0.017,
+     "max_run": 2698
+    }
+   },
+   "B": {
+    "quake": 90.9,
+    "whole": 29.8,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     88.3,
+     0.0,
+     90.9,
+     39.6,
+     19.4
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3274,
+     "n_drawn": 3600,
+     "long_run_frac": 0.968,
+     "steep_frac": 0.01,
+     "max_run": 3168
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.WAKE",
+   "gain": 3,
+   "act": 5,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 3.9,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     3.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 140,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.507,
+     "max_run": 19
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 5,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 4,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 93.8,
+    "whole": 71.8,
+    "per_line": [
+     93.3,
+     95.0,
+     88.4,
+     88.3,
+     28.9,
+     93.8,
+     78.3,
+     8.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3378,
+     "n_drawn": 3600,
+     "long_run_frac": 0.793,
+     "steep_frac": 0.042,
+     "max_run": 961
+    }
+   },
+   "B": {
+    "quake": 81.8,
+    "whole": 14.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     31.5,
+     81.8,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2945,
+     "n_drawn": 3600,
+     "long_run_frac": 0.832,
+     "steep_frac": 0.038,
+     "max_run": 2449
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.WAKE",
+   "gain": 4,
+   "act": 5,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 7.1,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     7.1,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 257,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.537,
+     "max_run": 19
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.4,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 14,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.857,
+     "max_run": 10
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.3,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 10,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 1.0,
+     "max_run": 2
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "A": {
+    "quake": 90.0,
+    "whole": 70.0,
+    "per_line": [
+     83.4,
+     95.0,
+     85.0,
+     96.9,
+     9.3,
+     90.0,
+     96.7,
+     3.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3241,
+     "n_drawn": 3600,
+     "long_run_frac": 0.765,
+     "steep_frac": 0.064,
+     "max_run": 657
+    }
+   },
+   "B": {
+    "quake": 92.7,
+    "whole": 32.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     86.4,
+     81.9,
+     92.7,
+     0.1,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3337,
+     "n_drawn": 3600,
+     "long_run_frac": 0.926,
+     "steep_frac": 0.034,
+     "max_run": 2929
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.WAKE",
+   "gain": 6,
+   "act": 5,
+   "argmax": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 18,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.611,
+     "max_run": 8
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 11.3,
+    "whole": 1.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.5,
+     11.3,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 408,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.657,
+     "max_run": 24
+    }
+   },
+   "viterbi_a1": {
+    "quake": 2.7,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     2.7,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 98,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.806,
+     "max_run": 18
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.7,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.7,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 25,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.88,
+     "max_run": 13
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 8,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.875,
+     "max_run": 8
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.7,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     1.7,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 61,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.885,
+     "max_run": 12
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.6,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.6,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 21,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.857,
+     "max_run": 9
+    }
+   },
+   "A": {
+    "quake": 93.5,
+    "whole": 70.6,
+    "per_line": [
+     93.3,
+     95.0,
+     85.0,
+     63.6,
+     34.3,
+     93.5,
+     98.4,
+     1.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3367,
+     "n_drawn": 3600,
+     "long_run_frac": 0.648,
+     "steep_frac": 0.113,
+     "max_run": 1138
+    }
+   },
+   "B": {
+    "quake": 95.5,
+    "whole": 15.8,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     4.5,
+     1.4,
+     95.5,
+     24.7,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3438,
+     "n_drawn": 3600,
+     "long_run_frac": 0.847,
+     "steep_frac": 0.086,
+     "max_run": 2796
+    }
+   }
+  },
+  {
+   "name": "20120831_M7.6_IU.WAKE",
+   "gain": 8,
+   "act": 5,
+   "argmax": {
+    "quake": 1.4,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     1.4,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 52,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.75,
+     "max_run": 9
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 15.6,
+    "whole": 2.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     1.1,
+     15.6,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 562,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.669,
+     "max_run": 37
+    }
+   },
+   "viterbi_a1": {
+    "quake": 6.0,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.9,
+     6.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 215,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.8,
+     "max_run": 37
+    }
+   },
+   "viterbi_a2": {
+    "quake": 2.9,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     2.9,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 103,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.825,
+     "max_run": 36
+    }
+   },
+   "viterbi_a4": {
+    "quake": 1.4,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     1.4,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 51,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.725,
+     "max_run": 9
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 4.4,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.9,
+     4.4,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 160,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.806,
+     "max_run": 36
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 2.2,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     2.2,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 80,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.8,
+     "max_run": 22
+    }
+   },
+   "A": {
+    "quake": 91.4,
+    "whole": 69.6,
+    "per_line": [
+     51.7,
+     95.0,
+     85.0,
+     91.6,
+     16.8,
+     91.4,
+     79.0,
+     46.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3292,
+     "n_drawn": 3600,
+     "long_run_frac": 0.512,
+     "steep_frac": 0.176,
+     "max_run": 599
+    }
+   },
+   "B": {
+    "quake": 81.6,
+    "whole": 18.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     65.9,
+     81.6,
+     1.3,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2939,
+     "n_drawn": 3600,
+     "long_run_frac": 0.516,
+     "steep_frac": 0.181,
+     "max_run": 677
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.COLA",
+   "gain": 1,
+   "act": 2,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.286,
+     "max_run": 3
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 3
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 3
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 2
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 3
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 3
+    }
+   },
+   "A": {
+    "quake": 89.4,
+    "whole": 72.0,
+    "per_line": [
+     75.0,
+     45.0,
+     89.4,
+     98.4,
+     83.3,
+     91.7,
+     70.0,
+     23.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3220,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 1718
+    }
+   },
+   "B": {
+    "quake": 3.2,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     3.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 117,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.06,
+     "max_run": 24
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.COLA",
+   "gain": 2,
+   "act": 2,
+   "argmax": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 1
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 1.5,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     1.5,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 53,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.302,
+     "max_run": 8
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 18,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.556,
+     "max_run": 4
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.333,
+     "max_run": 2
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 5,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.4,
+     "max_run": 2
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 19,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.579,
+     "max_run": 4
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.333,
+     "max_run": 2
+    }
+   },
+   "A": {
+    "quake": 81.9,
+    "whole": 62.7,
+    "per_line": [
+     95.0,
+     0.0,
+     81.9,
+     99.7,
+     83.3,
+     58.3,
+     83.3,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2950,
+     "n_drawn": 3600,
+     "long_run_frac": 0.807,
+     "steep_frac": 0.017,
+     "max_run": 707
+    }
+   },
+   "B": {
+    "quake": 41.6,
+    "whole": 10.4,
+    "per_line": [
+     5.1,
+     0.0,
+     41.6,
+     36.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1496,
+     "n_drawn": 3600,
+     "long_run_frac": 0.544,
+     "steep_frac": 0.024,
+     "max_run": 814
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.COLA",
+   "gain": 3,
+   "act": 2,
+   "argmax": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 17,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.647,
+     "max_run": 3
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 5.1,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.0,
+     5.1,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 183,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.404,
+     "max_run": 15
+    }
+   },
+   "viterbi_a1": {
+    "quake": 1.0,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     1.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 35,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.657,
+     "max_run": 5
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.5,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 19,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.632,
+     "max_run": 5
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 15,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 3
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.6,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.6,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 23,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.652,
+     "max_run": 5
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.4,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 14,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.571,
+     "max_run": 3
+    }
+   },
+   "A": {
+    "quake": 90.0,
+    "whole": 73.9,
+    "per_line": [
+     78.4,
+     95.0,
+     90.0,
+     99.7,
+     83.3,
+     90.0,
+     45.1,
+     9.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3239,
+     "n_drawn": 3600,
+     "long_run_frac": 1.0,
+     "steep_frac": 0.0,
+     "max_run": 3239
+    }
+   },
+   "B": {
+    "quake": 62.8,
+    "whole": 18.5,
+    "per_line": [
+     58.3,
+     0.0,
+     62.8,
+     26.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2261,
+     "n_drawn": 3600,
+     "long_run_frac": 0.921,
+     "steep_frac": 0.017,
+     "max_run": 1053
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.COLA",
+   "gain": 4,
+   "act": 2,
+   "argmax": {
+    "quake": 0.9,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 31,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.71,
+     "max_run": 4
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 8.0,
+    "whole": 1.1,
+    "per_line": [
+     0.0,
+     0.0,
+     8.0,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 288,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.448,
+     "max_run": 13
+    }
+   },
+   "viterbi_a1": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     1.8,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 63,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.651,
+     "max_run": 8
+    }
+   },
+   "viterbi_a2": {
+    "quake": 1.2,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     1.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 43,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.721,
+     "max_run": 6
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.8,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 28,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.75,
+     "max_run": 6
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.8,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     1.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 63,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.651,
+     "max_run": 6
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.0,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 37,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.757,
+     "max_run": 6
+    }
+   },
+   "A": {
+    "quake": 72.4,
+    "whole": 54.0,
+    "per_line": [
+     43.4,
+     35.8,
+     72.4,
+     99.1,
+     50.0,
+     66.7,
+     53.4,
+     11.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2608,
+     "n_drawn": 3600,
+     "long_run_frac": 0.627,
+     "steep_frac": 0.09,
+     "max_run": 652
+    }
+   },
+   "B": {
+    "quake": 47.8,
+    "whole": 13.2,
+    "per_line": [
+     0.0,
+     41.2,
+     47.8,
+     16.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1722,
+     "n_drawn": 3600,
+     "long_run_frac": 0.251,
+     "steep_frac": 0.159,
+     "max_run": 310
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.COLA",
+   "gain": 6,
+   "act": 2,
+   "argmax": {
+    "quake": 1.7,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     1.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 62,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.645,
+     "max_run": 5
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 20.2,
+    "whole": 2.9,
+    "per_line": [
+     0.0,
+     0.0,
+     20.2,
+     2.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 729,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.534,
+     "max_run": 25
+    }
+   },
+   "viterbi_a1": {
+    "quake": 5.3,
+    "whole": 0.7,
+    "per_line": [
+     0.0,
+     0.0,
+     5.3,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 190,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.611,
+     "max_run": 10
+    }
+   },
+   "viterbi_a2": {
+    "quake": 2.2,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     0.0,
+     2.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 81,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.728,
+     "max_run": 7
+    }
+   },
+   "viterbi_a4": {
+    "quake": 1.7,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     1.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 60,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.767,
+     "max_run": 7
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 4.3,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     0.0,
+     4.3,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 156,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.603,
+     "max_run": 11
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.7,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     1.7,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 60,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.767,
+     "max_run": 7
+    }
+   },
+   "A": {
+    "quake": 67.2,
+    "whole": 68.0,
+    "per_line": [
+     76.7,
+     15.4,
+     67.2,
+     99.5,
+     97.1,
+     91.7,
+     68.3,
+     28.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2419,
+     "n_drawn": 3600,
+     "long_run_frac": 0.181,
+     "steep_frac": 0.265,
+     "max_run": 155
+    }
+   },
+   "B": {
+    "quake": 62.6,
+    "whole": 27.2,
+    "per_line": [
+     1.9,
+     55.0,
+     62.6,
+     97.8,
+     0.6,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2253,
+     "n_drawn": 3600,
+     "long_run_frac": 0.069,
+     "steep_frac": 0.276,
+     "max_run": 155
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.COLA",
+   "gain": 8,
+   "act": 2,
+   "argmax": {
+    "quake": 3.1,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     3.1,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 111,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.694,
+     "max_run": 8
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 27.9,
+    "whole": 4.2,
+    "per_line": [
+     0.0,
+     0.0,
+     27.9,
+     5.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1006,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.615,
+     "max_run": 25
+    }
+   },
+   "viterbi_a1": {
+    "quake": 9.6,
+    "whole": 1.3,
+    "per_line": [
+     0.0,
+     0.0,
+     9.6,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 344,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.674,
+     "max_run": 17
+    }
+   },
+   "viterbi_a2": {
+    "quake": 4.0,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     0.0,
+     4.0,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 144,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.688,
+     "max_run": 17
+    }
+   },
+   "viterbi_a4": {
+    "quake": 2.8,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     2.8,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 100,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.8,
+     "max_run": 8
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 8.2,
+    "whole": 1.1,
+    "per_line": [
+     0.0,
+     0.0,
+     8.2,
+     0.6,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 294,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.677,
+     "max_run": 17
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 3.7,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     3.7,
+     0.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 133,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.669,
+     "max_run": 17
+    }
+   },
+   "A": {
+    "quake": 61.9,
+    "whole": 65.7,
+    "per_line": [
+     76.7,
+     5.4,
+     61.9,
+     99.2,
+     97.2,
+     90.0,
+     95.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2228,
+     "n_drawn": 3600,
+     "long_run_frac": 0.056,
+     "steep_frac": 0.408,
+     "max_run": 125
+    }
+   },
+   "B": {
+    "quake": 54.9,
+    "whole": 59.9,
+    "per_line": [
+     56.6,
+     66.9,
+     54.9,
+     98.1,
+     68.4,
+     0.7,
+     75.0,
+     58.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1975,
+     "n_drawn": 3600,
+     "long_run_frac": 0.085,
+     "steep_frac": 0.416,
+     "max_run": 168
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.KIP",
+   "gain": 1,
+   "act": 3,
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 0.3,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 10,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.2,
+     "max_run": 4
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.333,
+     "max_run": 4
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 2
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 0,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.0,
+     "max_run": 0
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.333,
+     "max_run": 4
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 2
+    }
+   },
+   "A": {
+    "quake": 82.5,
+    "whole": 76.3,
+    "per_line": [
+     95.0,
+     78.3,
+     86.6,
+     82.5,
+     88.4,
+     88.3,
+     56.7,
+     34.9
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2969,
+     "n_drawn": 3600,
+     "long_run_frac": 0.962,
+     "steep_frac": 0.0,
+     "max_run": 2219
+    }
+   },
+   "B": {
+    "quake": 1.3,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 48,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.062,
+     "max_run": 10
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.KIP",
+   "gain": 2,
+   "act": 3,
+   "argmax": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 7,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.571,
+     "max_run": 3
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 1.4,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 52,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.365,
+     "max_run": 7
+    }
+   },
+   "viterbi_a1": {
+    "quake": 0.4,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 14,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.429,
+     "max_run": 3
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 8,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 3
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 6,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 2
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.4,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 14,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.429,
+     "max_run": 3
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 8,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.5,
+     "max_run": 3
+    }
+   },
+   "A": {
+    "quake": 82.9,
+    "whole": 65.1,
+    "per_line": [
+     75.0,
+     83.3,
+     23.3,
+     82.9,
+     90.9,
+     93.3,
+     30.1,
+     41.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2985,
+     "n_drawn": 3600,
+     "long_run_frac": 0.943,
+     "steep_frac": 0.003,
+     "max_run": 1561
+    }
+   },
+   "B": {
+    "quake": 7.1,
+    "whole": 0.9,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     7.1,
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 257,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.214,
+     "max_run": 14
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.KIP",
+   "gain": 3,
+   "act": 3,
+   "argmax": {
+    "quake": 0.4,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 13,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.846,
+     "max_run": 3
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 4.4,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     4.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 157,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.471,
+     "max_run": 11
+    }
+   },
+   "viterbi_a1": {
+    "quake": 1.5,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.5,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 53,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.547,
+     "max_run": 5
+    }
+   },
+   "viterbi_a2": {
+    "quake": 0.4,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 15,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.667,
+     "max_run": 3
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.3,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.3,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 10,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.9,
+     "max_run": 3
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.2,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 42,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.548,
+     "max_run": 4
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.4,
+    "whole": 0.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 14,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.786,
+     "max_run": 6
+    }
+   },
+   "A": {
+    "quake": 92.2,
+    "whole": 57.5,
+    "per_line": [
+     21.7,
+     78.3,
+     4.2,
+     92.2,
+     98.9,
+     93.3,
+     35.1,
+     36.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3318,
+     "n_drawn": 3600,
+     "long_run_frac": 0.77,
+     "steep_frac": 0.066,
+     "max_run": 1126
+    }
+   },
+   "B": {
+    "quake": 70.1,
+    "whole": 15.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.1,
+     70.1,
+     21.9,
+     0.0,
+     30.2,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2523,
+     "n_drawn": 3600,
+     "long_run_frac": 0.859,
+     "steep_frac": 0.064,
+     "max_run": 2167
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.KIP",
+   "gain": 4,
+   "act": 3,
+   "argmax": {
+    "quake": 1.0,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 35,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.771,
+     "max_run": 4
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 7.9,
+    "whole": 1.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     7.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 285,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.575,
+     "max_run": 16
+    }
+   },
+   "viterbi_a1": {
+    "quake": 3.8,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     3.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 138,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.645,
+     "max_run": 9
+    }
+   },
+   "viterbi_a2": {
+    "quake": 1.2,
+    "whole": 0.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.2,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 44,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.75,
+     "max_run": 7
+    }
+   },
+   "viterbi_a4": {
+    "quake": 0.9,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     0.9,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 32,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.844,
+     "max_run": 6
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 2.8,
+    "whole": 0.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     2.8,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 99,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.636,
+     "max_run": 7
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.1,
+    "whole": 0.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     1.1,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 41,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.805,
+     "max_run": 7
+    }
+   },
+   "A": {
+    "quake": 95.4,
+    "whole": 75.4,
+    "per_line": [
+     75.0,
+     78.3,
+     88.3,
+     95.4,
+     97.0,
+     76.4,
+     31.6,
+     60.8
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3435,
+     "n_drawn": 3600,
+     "long_run_frac": 0.978,
+     "steep_frac": 0.011,
+     "max_run": 2299
+    }
+   },
+   "B": {
+    "quake": 66.9,
+    "whole": 38.9,
+    "per_line": [
+     0.0,
+     0.0,
+     60.9,
+     66.9,
+     60.3,
+     0.0,
+     49.2,
+     74.2
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2410,
+     "n_drawn": 3600,
+     "long_run_frac": 0.39,
+     "steep_frac": 0.15,
+     "max_run": 323
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.KIP",
+   "gain": 6,
+   "act": 3,
+   "argmax": {
+    "quake": 3.0,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     3.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 109,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.826,
+     "max_run": 7
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 17.4,
+    "whole": 2.2,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     17.4,
+     0.2,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 628,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.58,
+     "max_run": 25
+    }
+   },
+   "viterbi_a1": {
+    "quake": 10.0,
+    "whole": 1.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     10.0,
+     0.2,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 361,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.687,
+     "max_run": 17
+    }
+   },
+   "viterbi_a2": {
+    "quake": 4.7,
+    "whole": 0.6,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     4.7,
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 170,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.741,
+     "max_run": 6
+    }
+   },
+   "viterbi_a4": {
+    "quake": 3.4,
+    "whole": 0.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     3.4,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 124,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.782,
+     "max_run": 10
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 8.4,
+    "whole": 1.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     8.4,
+     0.2,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 302,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.692,
+     "max_run": 9
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 4.1,
+    "whole": 0.5,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     4.1,
+     0.1,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 147,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.762,
+     "max_run": 8
+    }
+   },
+   "A": {
+    "quake": 95.8,
+    "whole": 75.7,
+    "per_line": [
+     71.7,
+     78.3,
+     88.3,
+     95.8,
+     99.3,
+     93.4,
+     44.4,
+     34.3
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3448,
+     "n_drawn": 3600,
+     "long_run_frac": 0.982,
+     "steep_frac": 0.009,
+     "max_run": 2657
+    }
+   },
+   "B": {
+    "quake": 61.4,
+    "whole": 41.2,
+    "per_line": [
+     0.0,
+     0.1,
+     16.3,
+     61.4,
+     90.9,
+     81.2,
+     80.1,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2209,
+     "n_drawn": 3600,
+     "long_run_frac": 0.197,
+     "steep_frac": 0.319,
+     "max_run": 239
+    }
+   }
+  },
+  {
+   "name": "20230510_M7.6_IU.KIP",
+   "gain": 8,
+   "act": 3,
+   "argmax": {
+    "quake": 7.5,
+    "whole": 1.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     7.5,
+     0.2,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 271,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.779,
+     "max_run": 13
+    }
+   },
+   "viterbi_a0.5": {
+    "quake": 28.0,
+    "whole": 3.7,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     28.0,
+     1.5,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 1009,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.646,
+     "max_run": 27
+    }
+   },
+   "viterbi_a1": {
+    "quake": 17.2,
+    "whole": 2.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     17.2,
+     1.4,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 619,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.712,
+     "max_run": 19
+    }
+   },
+   "viterbi_a2": {
+    "quake": 10.5,
+    "whole": 1.4,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     10.5,
+     0.9,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 377,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.764,
+     "max_run": 27
+    }
+   },
+   "viterbi_a4": {
+    "quake": 7.5,
+    "whole": 1.0,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     7.5,
+     0.3,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 270,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.793,
+     "max_run": 12
+    }
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 15.6,
+    "whole": 2.1,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     15.6,
+     1.4,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 561,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.706,
+     "max_run": 17
+    }
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 9.6,
+    "whole": 1.3,
+    "per_line": [
+     0.0,
+     0.0,
+     0.0,
+     9.6,
+     0.8,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 344,
+     "n_drawn": 3600,
+     "long_run_frac": 0.0,
+     "steep_frac": 0.765,
+     "max_run": 12
+    }
+   },
+   "A": {
+    "quake": 87.0,
+    "whole": 72.4,
+    "per_line": [
+     75.0,
+     92.3,
+     10.0,
+     87.0,
+     97.2,
+     92.2,
+     88.1,
+     37.6
+    ],
+    "quake_fail_anal": {
+     "n_fail": 3131,
+     "n_drawn": 3600,
+     "long_run_frac": 0.219,
+     "steep_frac": 0.361,
+     "max_run": 687
+    }
+   },
+   "B": {
+    "quake": 77.9,
+    "whole": 65.5,
+    "per_line": [
+     62.9,
+     60.9,
+     78.1,
+     77.9,
+     87.8,
+     90.2,
+     65.9,
+     0.0
+    ],
+    "quake_fail_anal": {
+     "n_fail": 2804,
+     "n_drawn": 3600,
+     "long_run_frac": 0.541,
+     "steep_frac": 0.223,
+     "max_run": 733
+    }
+   }
+  }
+ ],
+ "summary": {
+  "1": {
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a0.5": {
+    "quake": 0.2,
+    "whole": 0.0
+   },
+   "viterbi_a1": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "A": {
+    "quake": 90.4,
+    "whole": 71.8
+   },
+   "B": {
+    "quake": 13.2,
+    "whole": 2.1
+   },
+   "n_images": 9
+  },
+  "2": {
+   "argmax": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a0.5": {
+    "quake": 2.2,
+    "whole": 0.3
+   },
+   "viterbi_a1": {
+    "quake": 0.1,
+    "whole": 0.0
+   },
+   "viterbi_a2": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a4": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.1,
+    "whole": 0.0
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.0,
+    "whole": 0.0
+   },
+   "A": {
+    "quake": 90.6,
+    "whole": 62.1
+   },
+   "B": {
+    "quake": 49.1,
+    "whole": 18.1
+   },
+   "n_images": 9
+  },
+  "3": {
+   "argmax": {
+    "quake": 0.2,
+    "whole": 0.0
+   },
+   "viterbi_a0.5": {
+    "quake": 6.3,
+    "whole": 1.0
+   },
+   "viterbi_a1": {
+    "quake": 0.7,
+    "whole": 0.1
+   },
+   "viterbi_a2": {
+    "quake": 0.2,
+    "whole": 0.0
+   },
+   "viterbi_a4": {
+    "quake": 0.1,
+    "whole": 0.0
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 0.6,
+    "whole": 0.1
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.2,
+    "whole": 0.0
+   },
+   "A": {
+    "quake": 91.5,
+    "whole": 63.8
+   },
+   "B": {
+    "quake": 70.0,
+    "whole": 29.2
+   },
+   "n_images": 9
+  },
+  "4": {
+   "argmax": {
+    "quake": 0.6,
+    "whole": 0.1
+   },
+   "viterbi_a0.5": {
+    "quake": 10.8,
+    "whole": 1.7
+   },
+   "viterbi_a1": {
+    "quake": 2.2,
+    "whole": 0.4
+   },
+   "viterbi_a2": {
+    "quake": 0.5,
+    "whole": 0.1
+   },
+   "viterbi_a4": {
+    "quake": 0.4,
+    "whole": 0.1
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 1.7,
+    "whole": 0.3
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 0.5,
+    "whole": 0.1
+   },
+   "A": {
+    "quake": 88.8,
+    "whole": 61.1
+   },
+   "B": {
+    "quake": 74.2,
+    "whole": 29.8
+   },
+   "n_images": 9
+  },
+  "6": {
+   "argmax": {
+    "quake": 2.3,
+    "whole": 0.5
+   },
+   "viterbi_a0.5": {
+    "quake": 20.3,
+    "whole": 3.4
+   },
+   "viterbi_a1": {
+    "quake": 7.3,
+    "whole": 1.3
+   },
+   "viterbi_a2": {
+    "quake": 2.6,
+    "whole": 0.5
+   },
+   "viterbi_a4": {
+    "quake": 1.9,
+    "whole": 0.4
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 5.4,
+    "whole": 1.0
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 2.3,
+    "whole": 0.4
+   },
+   "A": {
+    "quake": 85.1,
+    "whole": 65.1
+   },
+   "B": {
+    "quake": 77.9,
+    "whole": 34.5
+   },
+   "n_images": 9
+  },
+  "8": {
+   "argmax": {
+    "quake": 5.4,
+    "whole": 1.1
+   },
+   "viterbi_a0.5": {
+    "quake": 29.2,
+    "whole": 5.1
+   },
+   "viterbi_a1": {
+    "quake": 12.8,
+    "whole": 2.4
+   },
+   "viterbi_a2": {
+    "quake": 6.2,
+    "whole": 1.2
+   },
+   "viterbi_a4": {
+    "quake": 4.6,
+    "whole": 0.9
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 10.5,
+    "whole": 2.0
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 5.5,
+    "whole": 1.1
+   },
+   "A": {
+    "quake": 84.3,
+    "whole": 63.1
+   },
+   "B": {
+    "quake": 76.6,
+    "whole": 40.1
+   },
+   "n_images": 9
+  },
+  "all": {
+   "argmax": {
+    "quake": 1.4,
+    "whole": 0.3
+   },
+   "viterbi_a0.5": {
+    "quake": 11.5,
+    "whole": 1.9
+   },
+   "viterbi_a1": {
+    "quake": 3.9,
+    "whole": 0.7
+   },
+   "viterbi_a2": {
+    "quake": 1.6,
+    "whole": 0.3
+   },
+   "viterbi_a4": {
+    "quake": 1.2,
+    "whole": 0.2
+   },
+   "viterbi_a1_eps0.1": {
+    "quake": 3.1,
+    "whole": 0.6
+   },
+   "viterbi_a2_eps0.1": {
+    "quake": 1.4,
+    "whole": 0.3
+   },
+   "A": {
+    "quake": 88.4,
+    "whole": 64.5
+   },
+   "B": {
+    "quake": 60.2,
+    "whole": 25.7
+   },
+   "n_images": 54
+  }
+ },
+ "runtime_s": 89.9
+}

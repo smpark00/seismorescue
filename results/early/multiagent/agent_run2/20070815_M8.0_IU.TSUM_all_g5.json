@@ -1,0 +1,322 @@
+{
+ "item": "20070815_M8.0_IU.TSUM_all_g5",
+ "record": "20070815_M8.0_IU.TSUM",
+ "answer": {
+  "event_id": "ev3_20070815T234057_M8.0",
+  "p_arrival_s": 953,
+  "surface_peak_s": 2780,
+  "suspect_spans": [
+   [
+    1739,
+    1803
+   ],
+   [
+    2281,
+    2304
+   ]
+  ],
+  "notes": "M8 is largest with P in 0-7200. AIC 953 matches pred P 950.8, SNR high; S AIC 1627 matches pred 1598.5; R1 pred 2729, onset 2700 peak 2780 by find_peak. Span 1739-1803 correlates +900s 0.77-0.88 with 2639-2703 surface onset, shape duplicate appearing 900s early, physically impossible between S and R1. Spike 2281-2304 flat with 3.1 spikes is digitizer artifact, not surface max."
+ },
+ "turns": 37,
+ "out_tokens": 27370,
+ "in_tokens": 81422,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20070816T010223_M5.8\", \"time\": \"2007-08-16T01:02:23.380000Z\", \"mag\": 5.8, \"dist_deg\": 89.49, \"depth_km\": 34.4, \"P_s\": 5836.9, \"S_s\": 6485.1, \"R1_s\": 7614.7}, {\"id\": \"ev1_20070816T001913_M5.8\", \"time\": \"2007-08-16T00:19:13.890000Z\", \"mag\": 5.8, \"dist_deg\": 88.6, \"depth_km\": 35.0, \"P_s\": 3243.1, \"S_s\": 3887.1, \"R1_s\": 4999.8}, {\"id\": \"ev2_20070816T000241_M5.6\", \"time\": \"2007-08-16T00:02:41.210000Z\", \"mag\": 5.6, \"dist_deg\": 89.42, \"depth_km\": 39.6, \"P_s\": 2253.7, \"S_s\": 2901.1, \"R1_s\": 4030.6}, {\"id\": \"ev3_20070815T234057_M8.0\", \"time\": \"2007-08-15T23:40:57.890000Z\", \"mag\": 8.0, \"dist_deg\": 89.48, \"depth_km\": 39.0, \"P_s\": 950.8, \"S_s\": 1598.5, \"R1_s\": 2729.0}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "lta_s": 60,
+    "sta_s": 5,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 359, \"peak_ratio\": 231.08, \"duration_s\": 9}, {\"onset_s\": 484, \"peak_ratio\": 18.86, \"duration_s\": 5}, {\"onset_s\": 839, \"peak_ratio\": 5364.41, \"duration_s\": 25}, {\"onset_s\": 961, \"peak_ratio\": 63.91, \"duration_s\": 12}, {\"onset_s\": 982, \"peak_ratio\": 4.33, \"duration_s\": 4}, {\"onset_s\": 1026, \"peak_ratio\": 19.64, \"duration_s\": 8}, {\"onset_s\": 1159, \"peak_ratio\": 4.14, \"duration_s\": 4}, {\"onset_s\": 1180, \"peak_ratio\": 14.13, \"duration_s\": 7}, {\"onset_s\": 1229, \"peak_ratio\": 5.91, \"duration_s\": 5}, {\"onset_s\": 1239, \"peak_ratio\": 4.86, \"duration_s\": 6}, {\"onset_s\": 1364, \"peak_ratio\": 3.62, \"duration_s\": 2}, {\"onset_s\": 1374, \"peak_ratio\": 14.65, \"duration_s\": 6}, {\"onset_s\": 1469, \"peak_ratio\": 4.19, \"duration_s\": 4}, {\"onset_s\": 1544, \"peak_ratio\": 5.29, \"duration_s\": 4}, {\"onset_s\": 1587, \"peak_ratio\": 6.43, \"duration_s\": 5}, {\"onset_s\": 1613, \"peak_ratio\": 10.33, \"duration_s\": 8}, {\"onset_s\": 1629, \"peak_ratio\": 14.1, \"duration_s\": 13}, {\"onset_s\": 1645, \"peak_ratio\": 15.87, \"duration_s\": 20}, {\"onset_s\": 1677, \"peak_ratio\": 6.29, \"duration_s\": 12}, {\"onset_s\": 1902, \"peak_ratio\": 5.38, \"duration_s\": 5}, {\"onset_s\": 1923, \"peak_ratio\": 5.09, \"duration_s\": 4}, {\"onset_s\": 1943, \"peak_ratio\": 38.67, \"duration_s\": 21}, {\"onset_s\": 2032, \"peak_ratio\": 3.7, \"duration_s\": 4}, {\"onset_s\": 2050, \"peak_ratio\": 3.52, \"duration_s\": 7}, {\"onset_s\": 2281, \"peak_ratio\": 24.1, \"duration_s\": 19}, {\"onset_s\": 2304, \"peak_ratio\": 13.22, \"duration_s\": 5}, {\"onset_s\": 2390, \"peak_ratio\": 4.44, \"duration_s\": 8}, {\"onset_s\": 2405, \"peak_ratio\": 5.52, \"duration_s\": 7}, {\"onset_s\": 2453, \"peak_ratio\": 3.77, \"duration_s\": 4}, {\"onset_s\": 2465, \"peak_ratio\": 4.92, \"duration_s\": 6}, {\"onset_s\": 2610, \"peak_ratio\": 6.86, \"duration_s\": 10}, {\"onset_s\": 2700, \"peak_ratio\": 54.53, \"duration_s\": 15}, {\"onset_s\": 2892, \"peak_ratio\": 10.61, \"duration_s\": 9}, {\"onset_s\": 3013, \"peak_ratio\": 3.53, \"duration_s\": 3}, {\"onset_s\": 3031, \"peak_ratio\": 4.1, \"duration_s\": 4}, {\"onset_s\": 3037, \"pe"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "end_s": 7200.0,
+    "start_s": 0.0
+   },
+   "result": "{\"fraction\": 0.015, \"spans\": [[1080, 1083], [1141, 1143], [1860, 1863], [1898, 1905], [3601, 3682], [4653, 4662], [4665, 4666], [4740, 4741], [6360, 6363]]}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 950.0,
+    "window_s": 80.0
+   },
+   "result": "{\"pick_s\": 900.0, \"snr_after_before\": 0.46}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 839.0,
+    "window_s": 50.0
+   },
+   "result": "{\"pick_s\": 839.0, \"snr_after_before\": 77.91}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1598.0,
+    "window_s": 80.0
+   },
+   "result": "{\"pick_s\": 1627.0, \"snr_after_before\": 4.14}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 3500.0,
+    "start_s": 2000.0
+   },
+   "result": "{\"peak_s\": 2304, \"amplitude\": 3.101}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2000.0,
+    "start_s": 0.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 3600.0,
+    "start_s": 1800.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 900.0,
+    "start_s": 780.0
+   },
+   "result": "{\"-900\": null, \"900\": 0.912}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1800.0,
+    "start_s": 1660.0
+   },
+   "result": "{\"-900\": 0.136, \"900\": 0.006}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2850.0,
+    "start_s": 2680.0
+   },
+   "result": "{\"-900\": 0.521, \"900\": 0.52}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2500.0,
+    "start_s": 2200.0
+   },
+   "result": "{\"-900\": 0.005, \"900\": 0.284}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1100.0,
+    "start_s": 700.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1850.0,
+    "start_s": 1550.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2950.0,
+    "start_s": 2500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1615.0,
+    "window_s": 40.0
+   },
+   "result": "{\"pick_s\": 1627.0, \"snr_after_before\": 3.92}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 960.0,
+    "window_s": 40.0
+   },
+   "result": "{\"pick_s\": 953.0, \"snr_after_before\": 27.32}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2950.0,
+    "start_s": 2650.0
+   },
+   "result": "{\"peak_s\": 2780, \"amplitude\": -2.073}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 960.0,
+    "start_s": 830.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.698}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 955.0,
+    "window_s": 20.0
+   },
+   "result": "{\"pick_s\": 953.0, \"snr_after_before\": 22.81}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 910.0,
+    "start_s": 835.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.482}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1820.0,
+    "start_s": 1735.0
+   },
+   "result": "{\"-900\": -0.655, \"900\": 0.882}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 920.0,
+    "start_s": 830.0
+   },
+   "result": "{\"peak_s\": 856, \"amplitude\": -2.049}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 1830.0,
+    "start_s": 1670.0
+   },
+   "result": "{\"peak_s\": 1678, \"amplitude\": 1.275}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 910.0,
+    "start_s": 838.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.621}"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 953.0,
+    "window_s": 10.0
+   },
+   "result": "{\"pick_s\": 953.0, \"snr_after_before\": 8.77}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1050.0,
+    "start_s": 940.0
+   },
+   "result": "{\"-900\": 0.178, \"900\": -0.234}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 1750.0,
+    "start_s": 1600.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2850.0,
+    "start_s": 2650.0
+   },
+   "result": "{\"peak_s\": 2780, \"amplitude\": -2.073}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "end_s": 2320.0,
+    "start_s": 2270.0
+   },
+   "result": "{\"peak_s\": 2304, \"amplitude\": 3.101}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2320.0,
+    "start_s": 2270.0
+   },
+   "result": "{\"-900\": 0.416, \"900\": 0.338}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "end_s": 2350.0,
+    "start_s": 2250.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 903.0,
+    "start_s": 839.0
+   },
+   "result": "{\"-900\": null, \"900\": -0.314}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1803.0,
+    "start_s": 1739.0
+   },
+   "result": "{\"-900\": -0.314, \"900\": 0.771}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 1030.0,
+    "start_s": 953.0
+   },
+   "result": "{\"-900\": 0.144, \"900\": 0.019}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "end_s": 2830.0,
+    "start_s": 2695.0
+   },
+   "result": "{\"-900\": 0.34, \"900\": 0.325}"
+  },
+  {
+   "final": "{\"event_id\": \"ev3_20070815T234057_M8.0\", \"p_arrival_s\": 953, \"surface_peak_s\": 2780, \"suspect_spans\": [[1739, 1803], [2281, 2304]], \"notes\": \"M8 is largest with P in 0-7200. AIC 953 matches pred P 950.8, SNR high; S AIC 1627 matches pred 1598.5; R1 pred 2729, onset 2700 peak 2780 by find_peak. Span 1739-1803 correlates +900s 0.77-0.88 with 2639-2703 surface onset, shape duplicate appearing 900s early, physically impossible between S and R1. Spike 2281-2304 flat with 3.1 spikes is digitizer artifact, not surface max.\"}"
+  }
+ ]
+}

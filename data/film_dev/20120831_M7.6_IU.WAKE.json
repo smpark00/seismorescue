@@ -1,0 +1,16 @@
+{
+ "event_time": "2012-08-31T12:47:33.380000Z",
+ "event_lat": 10.811,
+ "event_lon": 126.638,
+ "event_depth_km": 28.0,
+ "mag": 7.6,
+ "net": "IU",
+ "sta": "WAKE",
+ "loc": "00",
+ "sta_lat": 19.2834,
+ "sta_lon": 166.652,
+ "dist_deg": 39.4633870347334,
+ "p_arrival_utc": "2012-08-31T12:55:01.031276Z",
+ "start_utc": "2012-08-31T08:00:00.000000Z",
+ "hours": 8.0
+}

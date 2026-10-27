@@ -1,0 +1,56 @@
+[
+ {
+  "gain": 0.8,
+  "method": "SAM3.1 'wavy line'",
+  "n_sam_instances": 5,
+  "coverage": 100.0,
+  "mae_px": 0.8,
+  "within_1px_pct": 69.3,
+  "wrong_trace_pct": 0.0
+ },
+ {
+  "gain": 0.8,
+  "method": "classical tracker",
+  "n_sam_instances": null,
+  "coverage": 100.0,
+  "mae_px": 0.5,
+  "within_1px_pct": 96.6,
+  "wrong_trace_pct": 0.0
+ },
+ {
+  "gain": 2.0,
+  "method": "SAM3.1 'wavy line'",
+  "n_sam_instances": 5,
+  "coverage": 100.0,
+  "mae_px": 1.2,
+  "within_1px_pct": 52.4,
+  "wrong_trace_pct": 0.0
+ },
+ {
+  "gain": 2.0,
+  "method": "classical tracker",
+  "n_sam_instances": null,
+  "coverage": 100.0,
+  "mae_px": 16.1,
+  "within_1px_pct": 64.5,
+  "wrong_trace_pct": 23.8
+ },
+ {
+  "gain": 5.0,
+  "method": "SAM3.1 'wavy line'",
+  "n_sam_instances": 0,
+  "coverage": 0.0,
+  "mae_px": null,
+  "within_1px_pct": null,
+  "wrong_trace_pct": null
+ },
+ {
+  "gain": 5.0,
+  "method": "classical tracker",
+  "n_sam_instances": null,
+  "coverage": 99.0,
+  "mae_px": 67.8,
+  "within_1px_pct": 13.6,
+  "wrong_trace_pct": 65.4
+ }
+]

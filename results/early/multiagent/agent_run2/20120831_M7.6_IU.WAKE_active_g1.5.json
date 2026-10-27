@@ -1,0 +1,178 @@
+{
+ "item": "20120831_M7.6_IU.WAKE_active_g1.5",
+ "record": "20120831_M7.6_IU.WAKE",
+ "answer": {
+  "event_id": "ev0_20120831T124733_M7.6",
+  "p_arrival_s": 899.0,
+  "surface_peak_s": 1594,
+  "suspect_spans": [],
+  "notes": "Single M7.6 catalogue event. P AIC 899s matches predicted 901s; S onset ~1264-1265s matches predicted 1262s; R1 predicted 1578.5s with measured envelope max 1594s via find_peak P<S<R1. Line-shift correlations for P, S and surface windows all |r|<0.17, no 900s duplication. Low-confidence spans 1554-1659 cover large surface cycle but waveform is continuous dispersed wavetrain with plausible growth/decay and no jump, so not flagged."
+ },
+ "turns": 20,
+ "out_tokens": 7336,
+ "in_tokens": 27600,
+ "log": [
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": "[{\"id\": \"ev0_20120831T124733_M7.6\", \"time\": \"2012-08-31T12:47:33.380000Z\", \"mag\": 7.6, \"dist_deg\": 39.46, \"depth_km\": 28.0, \"P_s\": 901.0, \"S_s\": 1262.0, \"R1_s\": 1578.5}]"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 5,
+    "lta_s": 50,
+    "threshold": 3.0
+   },
+   "result": "[{\"onset_s\": 905, \"peak_ratio\": 3.47, \"duration_s\": 3}, {\"onset_s\": 912, \"peak_ratio\": 103.73, \"duration_s\": 9}, {\"onset_s\": 923, \"peak_ratio\": 18.07, \"duration_s\": 7}, {\"onset_s\": 1008, \"peak_ratio\": 4.01, \"duration_s\": 4}, {\"onset_s\": 1046, \"peak_ratio\": 4.69, \"duration_s\": 4}, {\"onset_s\": 1209, \"peak_ratio\": 4.35, \"duration_s\": 5}, {\"onset_s\": 1264, \"peak_ratio\": 36.34, \"duration_s\": 20}, {\"onset_s\": 1291, \"peak_ratio\": 5.45, \"duration_s\": 5}, {\"onset_s\": 1357, \"peak_ratio\": 4.46, \"duration_s\": 3}, {\"onset_s\": 1416, \"peak_ratio\": 11.64, \"duration_s\": 7}, {\"onset_s\": 1428, \"peak_ratio\": 5.52, \"duration_s\": 6}, {\"onset_s\": 1458, \"peak_ratio\": 3.81, \"duration_s\": 3}, {\"onset_s\": 1467, \"peak_ratio\": 16.91, \"duration_s\": 9}, {\"onset_s\": 1485, \"peak_ratio\": 3.26, \"duration_s\": 3}, {\"onset_s\": 1531, \"peak_ratio\": 3.67, \"duration_s\": 4}, {\"onset_s\": 1540, \"peak_ratio\": 11.97, \"duration_s\": 9}, {\"onset_s\": 1578, \"peak_ratio\": 3.77, \"duration_s\": 5}, {\"onset_s\": 1593, \"peak_ratio\": 5.99, \"duration_s\": 6}, {\"onset_s\": 2482, \"peak_ratio\": 3.51, \"duration_s\": 4}]"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 910.0,
+    "window_s": 20.0
+   },
+   "result": "{\"pick_s\": 899.0, \"snr_after_before\": 15.7}"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"fraction\": 0.014, \"spans\": [[1554, 1563], [1569, 1659], [1732, 1734], [1740, 1742]]}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 1500.0,
+    "end_s": 2500.0
+   },
+   "result": "{\"peak_s\": 1594, \"amplitude\": 1.49}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 900.0,
+    "end_s": 1100.0
+   },
+   "result": "{\"-900\": -0.112, \"900\": 0.019}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1250.0,
+    "end_s": 1450.0
+   },
+   "result": "{\"-900\": 0.017, \"900\": null}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1550.0,
+    "end_s": 1750.0
+   },
+   "result": "{\"-900\": 0.08, \"900\": -0.151}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 2450.0,
+    "end_s": 2600.0
+   },
+   "result": "{\"-900\": -0.156, \"900\": -0.01}"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 850.0,
+    "end_s": 1350.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 1350.0,
+    "end_s": 2000.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 2000.0,
+    "end_s": 2900.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "aic_pick",
+   "args": {
+    "t_approx_s": 1264.0,
+    "window_s": 20.0
+   },
+   "result": "{\"pick_s\": 1273.0, \"snr_after_before\": 1.69}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 1550.0,
+    "end_s": 1650.0
+   },
+   "result": "{\"peak_s\": 1594, \"amplitude\": 1.49}"
+  },
+  {
+   "tool": "find_peak",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"peak_s\": 1594, \"amplitude\": 1.49}"
+  },
+  {
+   "tool": "onsets",
+   "args": {
+    "sta_s": 10,
+    "lta_s": 100,
+    "threshold": 2.5
+   },
+   "result": "[{\"onset_s\": 912, \"peak_ratio\": 63.82, \"duration_s\": 23}, {\"onset_s\": 1044, \"peak_ratio\": 4.4, \"duration_s\": 13}, {\"onset_s\": 1061, \"peak_ratio\": 2.74, \"duration_s\": 3}, {\"onset_s\": 1265, \"peak_ratio\": 56.34, \"duration_s\": 36}, {\"onset_s\": 1420, \"peak_ratio\": 2.57, \"duration_s\": 5}, {\"onset_s\": 1432, \"peak_ratio\": 3.0, \"duration_s\": 6}, {\"onset_s\": 1458, \"peak_ratio\": 21.91, \"duration_s\": 38}, {\"onset_s\": 1532, \"peak_ratio\": 11.63, \"duration_s\": 22}, {\"onset_s\": 1576, \"peak_ratio\": 5.85, \"duration_s\": 13}, {\"onset_s\": 1593, \"peak_ratio\": 6.06, \"duration_s\": 12}, {\"onset_s\": 1609, \"peak_ratio\": 2.78, \"duration_s\": 4}]"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 0.0,
+    "end_s": 900.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "plot",
+   "args": {
+    "start_s": 1750.0,
+    "end_s": 2500.0
+   },
+   "result": "picture attached in the next message"
+  },
+  {
+   "tool": "low_confidence",
+   "args": {
+    "start_s": 1800.0,
+    "end_s": 7200.0
+   },
+   "result": "{\"fraction\": 0.0, \"spans\": []}"
+  },
+  {
+   "tool": "line_shift_similarity",
+   "args": {
+    "start_s": 1554.0,
+    "end_s": 1659.0
+   },
+   "result": "{\"-900\": 0.106, \"900\": -0.167}"
+  },
+  {
+   "final": "{\"event_id\": \"ev0_20120831T124733_M7.6\", \"p_arrival_s\": 899.0, \"surface_peak_s\": 1594, \"suspect_spans\": [], \"notes\": \"Single M7.6 catalogue event. P AIC 899s matches predicted 901s; S onset ~1264-1265s matches predicted 1262s; R1 predicted 1578.5s with measured envelope max 1594s via find_peak P<S<R1. Line-shift correlations for P, S and surface windows all |r|<0.17, no 900s duplication. Low-confidence spans 1554-1659 cover large surface cycle but waveform is continuous dispersed wavetrain with plausible growth/decay and no jump, so not flagged.\"}"
+  }
+ ]
+}

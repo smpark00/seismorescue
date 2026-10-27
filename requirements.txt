@@ -1,0 +1,10 @@
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+opencv-python-headless==5.0.0.93
+scikit-image==0.26.0
+obspy==1.5.1
+requests==2.34.2
+pillow==13.0.0
+meta-sam-parser==0.1.0
+torch==2.14.1

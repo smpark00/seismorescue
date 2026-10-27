@@ -1,0 +1,278 @@
+[
+ {
+  "gain": 0.8,
+  "test": "A_concept",
+  "prompt": "line",
+  "n_objects": 5,
+  "conf": [
+   0.54,
+   0.55,
+   0.55,
+   0.53,
+   0.55
+  ],
+  "per_gt_line_best_iou": [
+   0.783,
+   0.735,
+   0.695,
+   0.747,
+   0.749
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.912
+ },
+ {
+  "gain": 0.8,
+  "test": "A_concept",
+  "prompt": "wavy line",
+  "n_objects": 5,
+  "conf": [
+   0.87,
+   0.89,
+   0.88,
+   0.88,
+   0.88
+  ],
+  "per_gt_line_best_iou": [
+   0.787,
+   0.74,
+   0.704,
+   0.752,
+   0.754
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.906
+ },
+ {
+  "gain": 0.8,
+  "test": "A_concept",
+  "prompt": "curve",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 0.8,
+  "test": "A_concept",
+  "prompt": "seismogram trace",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 0.8,
+  "test": "B_box_target_line",
+  "px": 6938,
+  "best_iou": 0.642,
+  "lines_covered_gt30pct": 1,
+  "iou_target": 0.642,
+  "recall_target": 0.902,
+  "leak_to_other_lines": 0.0
+ },
+ {
+  "gain": 0.8,
+  "test": "C_box+points",
+  "n_pos": 8,
+  "n_neg": 6,
+  "px": 6489,
+  "best_iou": 0.547,
+  "lines_covered_gt30pct": 1,
+  "iou_target": 0.547,
+  "recall_target": 0.785,
+  "leak_to_other_lines": 0.0
+ },
+ {
+  "gain": 2.0,
+  "test": "A_concept",
+  "prompt": "line",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 2.0,
+  "test": "A_concept",
+  "prompt": "wavy line",
+  "n_objects": 5,
+  "conf": [
+   0.74,
+   0.75,
+   0.73,
+   0.71,
+   0.76
+  ],
+  "per_gt_line_best_iou": [
+   0.742,
+   0.711,
+   0.667,
+   0.68,
+   0.677
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.919
+ },
+ {
+  "gain": 2.0,
+  "test": "A_concept",
+  "prompt": "curve",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 2.0,
+  "test": "A_concept",
+  "prompt": "seismogram trace",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 2.0,
+  "test": "B_box_target_line",
+  "px": 7807,
+  "best_iou": 0.646,
+  "lines_covered_gt30pct": 1,
+  "iou_target": 0.646,
+  "recall_target": 0.85,
+  "leak_to_other_lines": 0.0
+ },
+ {
+  "gain": 2.0,
+  "test": "C_box+points",
+  "n_pos": 8,
+  "n_neg": 6,
+  "px": 21364,
+  "best_iou": 0.212,
+  "lines_covered_gt30pct": 1,
+  "iou_target": 0.212,
+  "recall_target": 0.735,
+  "leak_to_other_lines": 0.002
+ },
+ {
+  "gain": 5.0,
+  "test": "A_concept",
+  "prompt": "line",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 5.0,
+  "test": "A_concept",
+  "prompt": "wavy line",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 5.0,
+  "test": "A_concept",
+  "prompt": "curve",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 5.0,
+  "test": "A_concept",
+  "prompt": "seismogram trace",
+  "n_objects": 0,
+  "conf": [],
+  "per_gt_line_best_iou": [
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "masks_spanning_2plus_lines": 0,
+  "union_recall_all_ink": 0.0
+ },
+ {
+  "gain": 5.0,
+  "test": "B_box_target_line",
+  "px": 13438,
+  "best_iou": 0.397,
+  "lines_covered_gt30pct": 1,
+  "iou_target": 0.081,
+  "recall_target": 0.167,
+  "leak_to_other_lines": 0.411
+ },
+ {
+  "gain": 5.0,
+  "test": "C_box+points",
+  "n_pos": 8,
+  "n_neg": 6,
+  "px": 18583,
+  "best_iou": 0.086,
+  "lines_covered_gt30pct": 0,
+  "iou_target": 0.086,
+  "recall_target": 0.214,
+  "leak_to_other_lines": 0.111
+ }
+]
