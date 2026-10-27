@@ -101,7 +101,7 @@ The agent's tools are catalog + TauP, STA/LTA, the AIC picker, peak finding and 
 
 Quake-line r / failure % by amplitude:
 
-| Gain | Row-anchor + Viterbi | SAM 2.1 fine-tuned | Classical B |
+| Gain | Row-anchor + Viterbi | SAM 2.1 (our fine-tune) | Classical B |
 |---|---|---|---|
 | 1 | 0.98 / 0.0 | 0.95 / 0.0 | 0.08 / 28.4 |
 | 2 | 0.99 / 0.0 | 0.95 / 1.5 | 0.02 / 39.0 |
@@ -153,7 +153,7 @@ Every model converged to the flat line's failure rate. The models learned to shr
 
 r_band / in / lost for each method:
 
-| Scan, lines | Row-anchor | SAM 2.1 ft | Classical B | DP alignment tool | Flat line |
+| Scan, lines | Row-anchor | SAM 2.1 (our fine-tune) | Classical B | DP alignment tool | Flat line |
 |---|---|---|---|---|---|
 | KIP quake (16) | 0.19 / 0.39 / 0.42 | **0.23** / 0.13 / 0.43 | −0.00 / 0.09 / 0.53 | 0.09 / 0.47 / 0.37 | – / 0.48 / 0.37 |
 | KIP neighbours | **0.17** / 0.40 / 0.38 | 0.12 / 0.41 / 0.38 | 0.02 / 0.18 / 0.40 | 0.14 / 0.42 / 0.38 | – / 0.41 / 0.38 |

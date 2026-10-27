@@ -22,7 +22,7 @@ THEMES = {
     "dark": {"surface": "#1a1a19", "text": "#f0efec", "text2": "#c3c2b7", "muted": "#898781", "grid": "#2c2c2a",
              "axis": "#383835", "ra": "#3987e5", "sam": "#d95926", "glim": "#199e70", "band": "#262624"},
 }
-METHODS = [("sam21", "SAM 2.1 fine-tuned (Meta)", "sam"), ("row_anchor", "Row-anchor, lightweight (ours)", "ra"),
+METHODS = [("sam21", "Meta SAM 2.1, fine-tuned by us", "sam"), ("row_anchor", "Row-anchor, lightweight (ours)", "ra"),
            ("repair_seq", "Pointer Transformer (repair)", "muted"), ("repair_spec", "Spectrogram U-Net (repair)", "muted"),
            ("B", "Classical joint tracker (B)", "muted")]
 
@@ -86,7 +86,7 @@ def chart_amplitude(S, mode):
     t = THEMES[mode]
     syn = S["synthetic_holdout_quake_line"]
     gains = [1, 2, 4, 6, 8]
-    series = [("sam21", "SAM 2.1 fine-tuned (Meta)", "sam", "s"), ("row_anchor", "Row-anchor, lightweight (ours)", "ra", "o"),
+    series = [("sam21", "Meta SAM 2.1, fine-tuned by us", "sam", "s"), ("row_anchor", "Row-anchor, lightweight (ours)", "ra", "o"),
               ("B", "Classical joint tracker (B)", "muted", "D")]
     fig, axes = plt.subplots(1, 2, figsize=(12, 3.9), facecolor=t["surface"])
     for ax, key, ylab, lim in ((axes[0], "r", "quake-line correlation r", (-0.05, 1.05)),

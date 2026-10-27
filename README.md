@@ -8,9 +8,9 @@
 **Turning tangled analog seismograms back into earthquake waveforms, with learned trace extraction and Meta's SAM.**
 
 <p align="center">
-  <img src="docs/img/sam21_holdout_example.png" width="920" alt="Fine-tuned Meta SAM 2.1 following the earthquake line through crossings on a synthetic WWSSN film; the classical tracker goes flat">
+  <img src="docs/img/sam21_holdout_example.png" width="920" alt="Meta's SAM 2.1, fine-tuned by us, following the earthquake line through crossings on a synthetic WWSSN film; the classical tracker goes flat">
 </p>
-<p align="center">🟩 <b>Ground truth</b>&nbsp;&nbsp;&nbsp;🟥 <b>SAM 2.1, fine-tuned (Meta)</b>&nbsp;&nbsp;&nbsp;🟦 <b>Best classical tracker</b></p>
+<p align="center">🟩 <b>Ground truth</b>&nbsp;&nbsp;&nbsp;🟥 <b>Meta SAM 2.1, fine-tuned by us</b>&nbsp;&nbsp;&nbsp;🟦 <b>Best classical tracker</b></p>
 <p align="center"><sub>Fresh holdout: an earthquake the models never saw (IU.MAJO, 2009-10-07 M7.7), swing of 4 line spacings.<br>SAM keeps the earthquake line through every crossing; the classical tracker loses it as soon as the crossings start.</sub></p>
 
 > [!IMPORTANT]
@@ -24,7 +24,7 @@
 - **Problem.** From 1962 to 1978 the World-Wide Standardized Seismograph Network (WWSSN) recorded the world's large earthquakes on photographic film. The USGS released the film-chip scans under CC0 in 2025. Automatic digitization breaks exactly where the signal matters most: the earthquake trace swings across many neighbouring lines, crosses them hundreds of times, and its steep strokes fade on the film.
 - **Benchmark.** We built synthetic WWSSN long-period films with exact per-line ground truth, from real recordings of 32 large earthquakes (M7.5–8.8). The geometry is calibrated to real film: 1 px/s, 1 h per line, 38 s of record per line spacing (real film: 40–47 s). We also found two real film scans with a digital station at the same site, which gives real ground truth.
 - **Result in simulation.** On a fresh holdout (95 images, 10 unseen earthquakes; each method tested once after freezing), learned extractors recover the earthquake line, measured as quake-line correlation r and failure rate:
-  - **Fine-tuned Meta SAM 2.1**: r **0.89**, failure **12.0%** (classical tracker: 55%).
+  - **Meta SAM 2.1, fine-tuned by us**: r **0.89**, failure **12.0%** (classical tracker: 55%).
   - Our lightweight **row-anchor model** (0.88 M parameters), the independent second opinion for SAM: r 0.96, failure 2.0%.
   - Best classical tracker: r 0.02, 55% failure.
   - Repairing the classical output afterwards, including with a spectrogram U-Net, does not work (r ≈ 0.1).
@@ -47,7 +47,7 @@
 
 | Method (quake line) | Synthetic holdout r | Synthetic failure % | Real KIP r | Real MAT r |
 |---|---|---|---|---|
-| **SAM 2.1 hiera-tiny, fine-tuned** (Meta open weights) | 0.89 | 12.0 | **0.23** | 0.03 |
+| **Meta SAM 2.1 hiera-tiny, fine-tuned by us** (open weights) | 0.89 | 12.0 | **0.23** | 0.03 |
 | **Row-anchor + Viterbi** (our lightweight second-opinion model, 0.88 M params) | **0.96** | **2.0** | 0.19 | **0.10** |
 | Pointer Transformer that repairs B's paths | 0.10 | 22.5 | −0.01 | 0.03 |
 | Spectrogram U-Net that repairs B's paths | 0.08 | 22.5 | −0.12 | 0.03 |
@@ -88,7 +88,7 @@ Both learned models stay at r ≥ 0.80 up to an 8-line-spacing swing. The classi
 <p align="center">🟥 <b>Row-anchor</b>&nbsp;&nbsp;&nbsp;🟦 <b>Classical B</b>&nbsp;&nbsp;&nbsp;🟧 <b>DP alignment tool</b>&nbsp;&nbsp;&nbsp;⬛ <b>Digital ground truth</b> (bottom plot)</p>
 <p align="center"><sub>Real film at Matsushiro (MAT), 1973-12-28 M7.5 Vanuatu earthquake. Top: scan with extracted paths. Bottom: truth from the co-located HGLP digital station.<br>The true swing is 4–6 line spacings; the model follows only part of it.<br>Scan: EarthScope film-chip product of the USGS WWSSN pilot scanning project, documented as part of the USGS CC0 release (not verified file by file). Reference: HG.MAT via EarthScope FDSN.</sub></p>
 
-| Real scan, r by line category | SAM 2.1 ft | Row-anchor | Classical B | DP alignment tool |
+| Real scan, r by line category | SAM 2.1 (our fine-tune) | Row-anchor | Classical B | DP alignment tool |
 |---|---|---|---|---|
 | MAT quake line (14) | 0.03 | **0.10** | 0.02 | −0.04 |
 | MAT neighbours (13, 15) | −0.04 | 0.04 | 0.02 | **0.08** |
@@ -114,7 +114,7 @@ What we believe limits real-film performance. These are hypotheses and are being
 | **Role in the pipeline** | Core trace extractor for every line; the lightweight row-anchor model stays as the independent second opinion | (1) **Identity verifier**: at each crossing where the extractors disagree, picks the true continuation or flags the segment for human review. (2) **Film-chip reader**: station, date, start time and clock corrections, to seed the time alignment |
 | **How** | LoRA at full resolution on SAM 3's single-image point-prompt path (code ready, tested with random weights); SAM 3.1, whose change is video multi-object tracking, is compared once its official training path is set up. Same frozen-holdout protocol as our SAM 2.1 run | QLoRA on unlimited crossing crops rendered from our benchmark and labelled by its exact ground truth |
 | **Why it needs Modal** | Full-resolution LoRA needs A100/H100-class memory | 4-bit weights are about 18 GB, more than our 16 GB GPU. QLoRA is documented for one H100 |
-| **Success criterion** | Beats fine-tuned SAM 2.1 (r 0.89) on a fresh holdout of unseen earthquakes; real-scan r reported | Verifier: higher record-level accuracy than our learned logistic judge on unseen earthquakes. Reader: field accuracy on hand-checked labels |
+| **Success criterion** | Beats our fine-tuned SAM 2.1 (r 0.89) on a fresh holdout of unseen earthquakes; real-scan r reported | Verifier: higher record-level accuracy than our learned logistic judge on unseen earthquakes. Reader: field accuracy on hand-checked labels |
 | **Budget (est.)** | ~$27: A100 80 GB, ~9 GPU-hours, 3 runs + evaluation | ~$48: H100 80 GB, ~11 GPU-hours, 2–3 runs + evaluation |
 
 The target pipeline puts Meta models in the critical path:
@@ -144,7 +144,7 @@ flowchart LR
   W["Real broadband records<br/>IRIS/EarthScope, IU + II<br/>32 earthquakes M7.5–8.8"] --> R["Film renderer<br/>1 h/line, 1 px/s, 38 px spacing,<br/>minute marks, fading, paper texture<br/><b>exact per-line ground truth</b>"]
   R --> T["Train / validate<br/>split by earthquake"]
   T --> RA["Row-anchor model (second opinion)<br/>CNN + Transformer over time,<br/>200 row bins/column + Viterbi"]
-  T --> S["SAM 2.1 fine-tune<br/>LoRA, point prompts,<br/>stitched windows + Viterbi"]
+  T --> S["SAM 2.1 fine-tune (ours)<br/>LoRA, point prompts,<br/>stitched windows + Viterbi"]
   RA --> H["Fresh holdout<br/>frozen, run once"]
   S --> H
   RA --> P["Real scans paired with<br/>co-located digital stations"]
@@ -155,7 +155,7 @@ flowchart LR
   P --> SP["Muse Spark seismologist agent<br/>(catalog, TauP, picks, report)"]
 ```
 
-- **SAM 2.1 fine-tune** ([`scripts/ml_sam.py`](scripts/ml_sam.py)).
+- **SAM 2.1 fine-tune** (our fine-tune of Meta's open weights; [`scripts/ml_sam.py`](scripts/ml_sam.py)).
   - The single-image path of SAM 2.1 hiera-tiny is re-implemented in plain PyTorch, and the official weights load with strict key and shape checks.
   - LoRA is applied to the trunk, and the mask decoder is trained.
   - Each window is the full height × 256 columns, resized to 1024². The first window is prompted with the start point; later windows get 4 points from the path decoded so far. A Viterbi pass stitches the windows.
@@ -178,7 +178,7 @@ flowchart LR
 |---|---|---|
 | **Muse Spark 1.3** (Meta Model API, `muse-spark-1.3-contributor`) | Tool-using seismologist agent over digitized traces: event catalog + TauP travel times, STA/LTA, AIC picker, plots. Also tested as an A/B judge at trace crossings. | Two independent runs agree on 93–94% of records; about $1.7 per 96-run pass. It **did not beat simple rules**: P-arrival within 10 s 0.67 vs 0.71 for theoretical travel times. As a crossing judge it fixed 34 and broke 60 events on the strongest judge (not significant at the record level, trend toward harm). Spark therefore orchestrates and reports; measurement is done by tools. |
 | **SAM 3.1** (Meta Model API) | Zero-shot trace segmentation | Fine on isolated lines. Returns **0 instances** in crops where lines touch 56–212 times. With one active line and 28–40 contacts it follows that line (≤ 0.2% failure) but drops the quiet lines (40–69% failure over all lines). |
-| **SAM 2.1 hiera-tiny** (open weights, Apache-2.0) | Fine-tuned promptable trace segmenter | Synthetic holdout r 0.89. Quake-line failure 55% → 12%. Real KIP r 0.23. |
+| **SAM 2.1 hiera-tiny** (open weights, Apache-2.0) | Promptable trace segmenter, fine-tuned by us | Synthetic holdout r 0.89. Quake-line failure 55% → 12%. Real KIP r 0.23. |
 | **SAM 3 / 3.1** (open weights, gated) | **Next (Modal): the core trace extractor.** LoRA fine-tune of SAM 3's single-image point-prompt path (code ready, tested with random weights); SAM 3.1 compared once its official training path is set up. Same frozen-holdout protocol as SAM 2.1 | Planned |
 | **Muse Glimmer** (open weights, 30B, image + text input, Apache-2.0) | **Next (Modal), two key roles.** (1) **Trace-identity verifier**: at every crossing where extractors disagree, Glimmer sees the candidate continuations drawn on the crop and picks the true one, or flags the segment for human review. It is QLoRA-trained on unlimited auto-labelled crossing crops from our benchmark, which has exact ground truth. (2) **Film-chip reader**: reads the station, date, start time and clock-correction labels to seed each scan's time alignment (in our real-scan evaluation the label times alone were not enough, so they initialise the fitted alignment), self-hosted for bulk digitization | Planned and untested. Zero-shot Spark did not help as a judge (fixed 34, broke 60), so we will train on exact labels instead. Glimmer is 18 GB even in 4-bit, so it needs an H100 |
 
@@ -203,7 +203,7 @@ flowchart LR
 | [`scripts/`](scripts) | All code: renderer, classical trackers and judges, learned models, real paired evaluation, Spark agent tools |
 | [`data/`](data) | Benchmark waveforms (miniSEED, IU/II) and event catalogue. See [data/README.md](data/README.md) for sources, licences and how to fetch the real scans |
 | [`results/`](results) | Result files: `early/` (first experiments), `early/multiagent/` (CV, holdouts, Spark runs), `ml/` (learned models, real paired eval, re-scoring) |
-| [`checkpoints/`](checkpoints) | Frozen row-anchor model (3.5 MB) and fine-tuned SAM 2.1 tiny (19 MB) with their frozen decode settings |
+| [`checkpoints/`](checkpoints) | Frozen row-anchor model (3.5 MB) and our fine-tuned SAM 2.1 tiny (19 MB) with their frozen decode settings |
 | [`docs/`](docs) | [RESULTS.md](docs/RESULTS.md) (all experiments, conditions and numbers), [METHODS.md](docs/METHODS.md), figures |
 | [`tools/`](tools) | Rebuild the README summary and charts from the result files |
 
@@ -236,7 +236,7 @@ python tools/collect_summary.py && python tools/make_figures.py   # rebuild READ
 ## Data and licences
 
 - Code: MIT ([LICENSE](LICENSE)).
-- The fine-tuned SAM 2.1 checkpoint is a derivative of Meta's SAM 2.1 (Apache-2.0).
+- Our fine-tuned SAM 2.1 checkpoint is a derivative of Meta's SAM 2.1 (Apache-2.0).
 - Waveforms: IRIS/EarthScope FDSN, networks IU ([doi:10.7914/SN/IU](https://doi.org/10.7914/SN/IU)) and II ([doi:10.7914/SN/II](https://doi.org/10.7914/SN/II)).
 - WWSSN film chip scans: USGS ([doi:10.5066/P13PHZMA](https://doi.org/10.5066/P13PHZMA), CC0 1.0) and the EarthScope film chip product ([doi:10.17611/DP/FC.1](https://doi.org/10.17611/DP/FC.1)); the MAT scan comes from the latter, which is documented as part of the CC0 release (not verified file by file). The KIP scan is a local copy from a mirror. Until we fetch it from the USGS CC0 release itself, this repository contains **no KIP image**, only metrics.
 - See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
