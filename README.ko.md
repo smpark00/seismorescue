@@ -10,8 +10,8 @@
 <p align="center">
   <img src="docs/img/sam21_holdout_example.png" width="920" alt="합성 WWSSN 필름에서 교차점을 지나며 지진 줄을 따라가는 미세조정 Meta SAM 2.1. 고전 추적기는 평평해진다">
 </p>
-<p align="center"><sub>새 홀드아웃 예시입니다. <b>미세조정한 Meta SAM 2.1</b>을, 모델이 한 번도 보지 못한 지진(2009-10-07, M7.7)의 실제 IU.MAJO 기록으로 렌더링한 합성 WWSSN 장주기 필름에 적용했습니다. 최대 흔들림은 줄 간격 4개입니다.
-<b>초록</b>: 정답. <b>빨강</b>: SAM 2.1. 교차점을 지나도 줄을 잃지 않고, 남은 오류는 가장 가파른 획의 꼭대기가 잘리는 것입니다. <b>파랑</b>: 가장 좋은 고전 추적기. 지진 줄이 이웃 줄과 교차하기 시작하면 바로 줄을 잃습니다.</sub></p>
+<p align="center">🟩 <b>정답</b>&nbsp;&nbsp;&nbsp;🟥 <b>SAM 2.1 미세조정 (Meta)</b>&nbsp;&nbsp;&nbsp;🟦 <b>가장 좋은 고전 추적기</b></p>
+<p align="center"><sub>새 홀드아웃: 모델이 본 적 없는 지진(IU.MAJO, 2009-10-07 M7.7), 흔들림은 줄 간격 4개.<br>SAM은 모든 교차점에서 지진 줄을 지키고, 고전 추적기는 교차가 시작되자마자 줄을 잃습니다.</sub></p>
 
 > [!IMPORTANT]
 > **Modal 크레딧으로 할 수 있게 되는 것: Meta 오픈 웨이트 모델 두 개가 파이프라인의 핵심 경로로 들어옵니다.**
@@ -76,7 +76,8 @@
 <p align="center">
   <img src="docs/img/hero_rowanchor_vs_classical.png" width="760" alt="홀드아웃 기록에서 줄 간격 8개 흔들림을 따라가는 가벼운 행 기준점 모델">
 </p>
-<p align="center"><sub>독립적인 두 번째 의견인 가벼운 행 기준점 모델이 줄 간격 8개 흔들림을 따라가는 모습입니다(2010-04-06 M7.8, II.RAYN). 초록: 정답, 빨강: 행 기준점, 파랑: 고전 추적기. SAM과 행 기준점 모델이 엇갈리는 곳이 바로 Glimmer 검증기가 판정할 곳입니다.</sub></p>
+<p align="center">🟩 <b>정답</b>&nbsp;&nbsp;&nbsp;🟥 <b>행 기준점 (가벼운 두 번째 의견)</b>&nbsp;&nbsp;&nbsp;🟦 <b>고전 추적기</b></p>
+<p align="center"><sub>흔들림 줄 간격 8개(II.RAYN, 2010-04-06 M7.8).<br>SAM과 행 기준점 모델이 엇갈리는 곳을 Glimmer 검증기가 판정합니다.</sub></p>
 
 ## 왜 어려운가: 그림 한 장
 
@@ -91,8 +92,8 @@
   <img src="docs/img/real_MAT_overlay.png" width="560" alt="추출 경로를 겹친 실제 WWSSN MAT 필름 스캔">
   <img src="docs/img/real_MAT_timeseries.png" width="900" alt="MAT 지진 줄: 디지털 정답과 추출 결과">
 </p>
-<p align="center"><sub>마쓰시로(MAT) 관측소의 실제 WWSSN 장주기 수직 성분 필름입니다. 1973-12-28 M7.5 바누아투 지진이며, USGS WWSSN 시범 스캔 사업의 EarthScope 필름칩 제품입니다. 이 제품은 USGS CC0 공개본의 일부로 문서화되어 있지만, 파일 단위로 대조하지는 않았습니다. 정답은 EarthScope FDSN의 HG.MAT 자료입니다. 위: 추출 경로를 겹친 스캔(빨강: 행 기준점, 파랑: 고전 B, 주황: DP 정렬 도구). 아래: 같은 자리 HGLP 디지털 관측소의 대역 통과 정답(검정)과 추출 결과.
-본진 줄의 참 흔들림은 줄 간격 4–6개이고, 모델은 그 일부만 따라갑니다.</sub></p>
+<p align="center">🟥 <b>행 기준점</b>&nbsp;&nbsp;&nbsp;🟦 <b>고전 B</b>&nbsp;&nbsp;&nbsp;🟧 <b>DP 정렬 도구</b>&nbsp;&nbsp;&nbsp;⬛ <b>디지털 정답</b> (아래 그래프)</p>
+<p align="center"><sub>마쓰시로(MAT)의 실제 필름, 1973-12-28 M7.5 바누아투 지진. 위: 추출 경로를 겹친 스캔. 아래: 같은 자리 HGLP 디지털 관측소의 정답.<br>참 흔들림은 줄 간격 4–6개이고, 모델은 그 일부만 따라갑니다.<br>스캔: USGS WWSSN 시범 스캔 사업의 EarthScope 필름칩 제품(USGS CC0 공개본의 일부로 문서화, 파일 단위 대조는 안 함). 정답: EarthScope FDSN의 HG.MAT.</sub></p>
 
 | 실제 스캔, 줄 종류별 r | SAM 2.1 미세조정 | 행 기준점 | 고전 B | DP 정렬 도구 |
 |---|---|---|---|---|

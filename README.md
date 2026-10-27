@@ -10,8 +10,8 @@
 <p align="center">
   <img src="docs/img/sam21_holdout_example.png" width="920" alt="Fine-tuned Meta SAM 2.1 following the earthquake line through crossings on a synthetic WWSSN film; the classical tracker goes flat">
 </p>
-<p align="center"><sub>Fresh-holdout example: <b>fine-tuned Meta SAM 2.1</b> on a synthetic WWSSN long-period film rendered from the real IU.MAJO recording of an earthquake the models never saw (2009-10-07, M7.7), peak swing 4 line spacings.
-<b>Green</b>: ground truth. <b>Red</b>: SAM 2.1, which keeps the line's identity through the crossings; its remaining errors are clipped peaks on the steepest strokes. <b>Blue</b>: the best classical tracker, which loses the earthquake line as soon as it starts crossing its neighbours.</sub></p>
+<p align="center">🟩 <b>Ground truth</b>&nbsp;&nbsp;&nbsp;🟥 <b>SAM 2.1, fine-tuned (Meta)</b>&nbsp;&nbsp;&nbsp;🟦 <b>Best classical tracker</b></p>
+<p align="center"><sub>Fresh holdout: an earthquake the models never saw (IU.MAJO, 2009-10-07 M7.7), swing of 4 line spacings.<br>SAM keeps the earthquake line through every crossing; the classical tracker loses it as soon as the crossings start.</sub></p>
 
 > [!IMPORTANT]
 > **What the Modal credits unlock: two Meta open-weight models move into the critical path.**
@@ -69,7 +69,8 @@ Both learned models stay at r ≥ 0.80 up to an 8-line-spacing swing. The classi
 <p align="center">
   <img src="docs/img/hero_rowanchor_vs_classical.png" width="760" alt="Lightweight row-anchor model following an 8-line-spacing swing on a holdout record">
 </p>
-<p align="center"><sub>The lightweight row-anchor model, our independent second opinion, on an 8-line-spacing swing (2010-04-06 M7.8 at II.RAYN). Green: truth, red: row-anchor, blue: classical tracker. Where SAM and the row-anchor model disagree is exactly where the Glimmer verifier will be asked to decide.</sub></p>
+<p align="center">🟩 <b>Ground truth</b>&nbsp;&nbsp;&nbsp;🟥 <b>Row-anchor (lightweight second opinion)</b>&nbsp;&nbsp;&nbsp;🟦 <b>Classical tracker</b></p>
+<p align="center"><sub>Swing of 8 line spacings (II.RAYN, 2010-04-06 M7.8).<br>Where SAM and the row-anchor model disagree is where the Glimmer verifier will decide.</sub></p>
 
 ## Why it is hard: one picture
 
@@ -84,8 +85,8 @@ Both learned models stay at r ≥ 0.80 up to an 8-line-spacing swing. The classi
   <img src="docs/img/real_MAT_overlay.png" width="560" alt="Real WWSSN MAT film scan with extracted paths overlaid">
   <img src="docs/img/real_MAT_timeseries.png" width="900" alt="MAT quake line: digital reference vs extractions">
 </p>
-<p align="center"><sub>Real WWSSN LP-Z film at Matsushiro (MAT), 1973-12-28 M7.5 Vanuatu earthquake (EarthScope film-chip product from the USGS WWSSN pilot scanning project, which is documented as part of the USGS CC0 release; not verified file by file). Reference: HG.MAT data via EarthScope FDSN. Top: scan with paths overlaid (red: row-anchor, blue: classical B, orange: DP alignment tool). Bottom: band-passed truth from the co-located HGLP digital station (black) against the extractions.
-On the main-shock line the true swing is 4–6 line spacings and the model follows only part of it.</sub></p>
+<p align="center">🟥 <b>Row-anchor</b>&nbsp;&nbsp;&nbsp;🟦 <b>Classical B</b>&nbsp;&nbsp;&nbsp;🟧 <b>DP alignment tool</b>&nbsp;&nbsp;&nbsp;⬛ <b>Digital ground truth</b> (bottom plot)</p>
+<p align="center"><sub>Real film at Matsushiro (MAT), 1973-12-28 M7.5 Vanuatu earthquake. Top: scan with extracted paths. Bottom: truth from the co-located HGLP digital station.<br>The true swing is 4–6 line spacings; the model follows only part of it.<br>Scan: EarthScope film-chip product of the USGS WWSSN pilot scanning project, documented as part of the USGS CC0 release (not verified file by file). Reference: HG.MAT via EarthScope FDSN.</sub></p>
 
 | Real scan, r by line category | SAM 2.1 ft | Row-anchor | Classical B | DP alignment tool |
 |---|---|---|---|---|
