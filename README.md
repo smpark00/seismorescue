@@ -8,14 +8,14 @@
 **Turning tangled analog seismograms back into earthquake waveforms, with learned trace extraction and Meta's SAM.**
 
 <p align="center">
-  <img src="docs/img/hero_rowanchor_vs_classical.png" width="920" alt="Synthetic WWSSN film with the earthquake line crossing its neighbours; the learned model follows it, the classical tracker goes flat">
+  <img src="docs/img/sam21_holdout_example.png" width="920" alt="Fine-tuned Meta SAM 2.1 following the earthquake line through crossings on a synthetic WWSSN film; the classical tracker goes flat">
 </p>
-<p align="center"><sub>Fresh-holdout example. A synthetic WWSSN long-period film rendered from the real II.RAYN recording of an earthquake the models never saw (2010-04-06, M7.8), peak swing 8 line spacings.
-<b>Green</b>: ground truth. <b>Red</b>: our row-anchor model. <b>Blue</b>: the best classical tracker, which loses the earthquake line as soon as it starts crossing its neighbours.</sub></p>
+<p align="center"><sub>Fresh-holdout example: <b>fine-tuned Meta SAM 2.1</b> on a synthetic WWSSN long-period film rendered from the real IU.MAJO recording of an earthquake the models never saw (2009-10-07, M7.7), peak swing 4 line spacings.
+<b>Green</b>: ground truth. <b>Red</b>: SAM 2.1, which keeps the line's identity through the crossings; its remaining errors are clipped peaks on the steepest strokes. <b>Blue</b>: the best classical tracker, which loses the earthquake line as soon as it starts crossing its neighbours.</sub></p>
 
 > [!IMPORTANT]
 > **What the Modal credits unlock: two Meta open-weight models move into the critical path.**
-> - **SAM 3.1, fine-tuned with LoRA**, becomes the core trace extractor. Our fine-tuned SAM 2.1 already cuts quake-line failures from 55% to 12% in simulation.
+> - **SAM 3 / 3.1, fine-tuned with LoRA**, becomes the core trace extractor. Our fine-tuned SAM 2.1 already cuts quake-line failures from 55% to 12% in simulation.
 > - **Muse Glimmer (30B), fine-tuned with QLoRA**, becomes the trace-identity verifier at every crossing and the film-chip label reader. It is trained on unlimited auto-labelled examples from our benchmark.
 > - Neither model fits our local GPUs (M5 Pro 24 GB, RTX 5070 Ti 16 GB). The plan uses **about $99 of the $100 credit** on A100 and H100 hours. See the **[full plan and budget](#what-the-modal-credits-unlock)**.
 
@@ -23,18 +23,18 @@
 
 - **Problem.** From 1962 to 1978 the World-Wide Standardized Seismograph Network (WWSSN) recorded the world's large earthquakes on photographic film. The USGS released the film-chip scans under CC0 in 2025. Automatic digitization breaks exactly where the signal matters most: the earthquake trace swings across many neighbouring lines, crosses them hundreds of times, and its steep strokes fade on the film.
 - **Benchmark.** We built synthetic WWSSN long-period films with exact per-line ground truth, from real recordings of 32 large earthquakes (M7.5–8.8). The geometry is calibrated to real film: 1 px/s, 1 h per line, 38 s of record per line spacing (real film: 40–47 s). We also found two real film scans with a digital station at the same site, which gives real ground truth.
-- **Result in simulation.** On a fresh holdout (95 images, 10 unseen earthquakes; each method tested once after freezing), two learned extractors recover the earthquake line, measured as quake-line correlation r and failure rate:
-  - Our **row-anchor model**: r **0.96**, 2.0% failure.
-  - **Fine-tuned Meta SAM 2.1**: r **0.89**, 12.0% failure.
+- **Result in simulation.** On a fresh holdout (95 images, 10 unseen earthquakes; each method tested once after freezing), learned extractors recover the earthquake line, measured as quake-line correlation r and failure rate:
+  - **Fine-tuned Meta SAM 2.1**: r **0.89**, failure **12.0%** (classical tracker: 55%).
+  - Our lightweight **row-anchor model** (0.88 M parameters), the independent second opinion for SAM: r 0.96, failure 2.0%.
   - Best classical tracker: r 0.02, 55% failure.
   - Repairing the classical output afterwards, including with a spectrogram U-Net, does not work (r ≈ 0.1).
 - **Honest status on real film.** The real earthquake line is **not solved yet**: r 0.19–0.23 on KIP and 0.03–0.10 on MAT, against a chance level of about 0.06. On lines with moderate amplitude the learned models already beat the classical tracker on MAT: r 0.57–0.63 vs 0.01. We think the remaining gap is sim-to-real appearance, and closing it is the next step (see [What the Modal credits unlock](#what-the-modal-credits-unlock)).
 - **Meta models.**
   - Muse Spark 1.3 (Meta Model API) runs as a tool-using seismologist agent and crossing judge. We report that it did not beat simple rules.
   - SAM 3.1 (Meta Model API) was tested zero-shot. It returns no instances in contact-dense crops, which is why we fine-tune.
-  - SAM 2.1 open weights, fine-tuned, are one of the two learned extractors above.
+  - SAM 2.1 open weights, fine-tuned, are the main learned extractor above.
   - **Next, with Modal credits:**
-    - Fine-tune **SAM 3.1** as the core promptable trace extractor.
+    - Fine-tune **SAM 3 / 3.1** as the core promptable trace extractor.
     - Fine-tune **Muse Glimmer** (30B, open weights) with QLoRA as the trace-identity verifier at crossings and as the film-chip label reader.
     - Both roles are central to the pipeline (see [What the Modal credits unlock](#what-the-modal-credits-unlock)).
 
@@ -47,8 +47,8 @@
 
 | Method (quake line) | Synthetic holdout r | Synthetic failure % | Real KIP r | Real MAT r |
 |---|---|---|---|---|
-| **Row-anchor + Viterbi** (ours, 0.88 M params) | **0.96** | **2.0** | 0.19 | **0.10** |
 | **SAM 2.1 hiera-tiny, fine-tuned** (Meta open weights) | 0.89 | 12.0 | **0.23** | 0.03 |
+| **Row-anchor + Viterbi** (our lightweight second-opinion model, 0.88 M params) | **0.96** | **2.0** | 0.19 | **0.10** |
 | Pointer Transformer that repairs B's paths | 0.10 | 22.5 | −0.01 | 0.03 |
 | Spectrogram U-Net that repairs B's paths | 0.08 | 22.5 | −0.12 | 0.03 |
 | Classical joint tracker (B, our strongest non-learned method) | 0.02 | 55.0 | −0.00 | 0.02 |
@@ -67,9 +67,9 @@
 Both learned models stay at r ≥ 0.80 up to an 8-line-spacing swing. The classical tracker never recovers the waveform at any amplitude (r ≤ 0.08).
 
 <p align="center">
-  <img src="docs/img/sam21_holdout_example.png" width="760" alt="Fine-tuned SAM 2.1 following the earthquake line on a holdout record">
+  <img src="docs/img/hero_rowanchor_vs_classical.png" width="760" alt="Lightweight row-anchor model following an 8-line-spacing swing on a holdout record">
 </p>
-<p align="center"><sub>Fine-tuned SAM 2.1 on a holdout record (2009-10-07 M7.7 at IU.MAJO, 4 line spacings). Green: truth, red: SAM 2.1, blue: classical tracker. SAM keeps the line's identity through the crossings; its remaining errors are clipped peaks on the steepest strokes.</sub></p>
+<p align="center"><sub>The lightweight row-anchor model, our independent second opinion, on an 8-line-spacing swing (2010-04-06 M7.8 at II.RAYN). Green: truth, red: row-anchor, blue: classical tracker. Where SAM and the row-anchor model disagree is exactly where the Glimmer verifier will be asked to decide.</sub></p>
 
 ## Why it is hard: one picture
 
@@ -87,14 +87,14 @@ Both learned models stay at r ≥ 0.80 up to an 8-line-spacing swing. The classi
 <p align="center"><sub>Real WWSSN LP-Z film at Matsushiro (MAT), 1973-12-28 M7.5 Vanuatu earthquake (EarthScope film-chip product from the USGS WWSSN pilot scanning project, which is documented as part of the USGS CC0 release; not verified file by file). Reference: HG.MAT data via EarthScope FDSN. Top: scan with paths overlaid (red: row-anchor, blue: classical B, orange: DP alignment tool). Bottom: band-passed truth from the co-located HGLP digital station (black) against the extractions.
 On the main-shock line the true swing is 4–6 line spacings and the model follows only part of it.</sub></p>
 
-| Real scan, r by line category | Row-anchor | SAM 2.1 ft | Classical B | DP alignment tool |
+| Real scan, r by line category | SAM 2.1 ft | Row-anchor | Classical B | DP alignment tool |
 |---|---|---|---|---|
-| MAT quake line (14) | **0.10** | 0.03 | 0.02 | −0.04 |
-| MAT neighbours (13, 15) | 0.04 | −0.04 | 0.02 | **0.08** |
-| MAT other active lines (7 lines) | **0.63** | 0.57 | 0.01 | 0.49 |
-| KIP quake line (16) | 0.19 | **0.23** | −0.00 | 0.09 |
-| KIP neighbours (15, 17) | **0.17** | 0.12 | 0.02 | 0.14 |
-| KIP other active lines (5 lines) | 0.18 | 0.15 | 0.10 | **0.32** |
+| MAT quake line (14) | 0.03 | **0.10** | 0.02 | −0.04 |
+| MAT neighbours (13, 15) | −0.04 | 0.04 | 0.02 | **0.08** |
+| MAT other active lines (7 lines) | 0.57 | **0.63** | 0.01 | 0.49 |
+| KIP quake line (16) | **0.23** | 0.19 | −0.00 | 0.09 |
+| KIP neighbours (15, 17) | 0.12 | **0.17** | 0.02 | 0.14 |
+| KIP other active lines (5 lines) | 0.15 | 0.18 | 0.10 | **0.32** |
 
 What we believe limits real-film performance. These are hypotheses and are being tested now:
 1. Steep strokes are nearly invisible on real film, fainter than our renderer draws them.
@@ -105,19 +105,19 @@ What we believe limits real-film performance. These are hypotheses and are being
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/img/chart_modal_budget_dark.png">
-  <img src="docs/img/chart_modal_budget_light.png" alt="Planned use of the $100 Modal credit: SAM 3.1 $27, Glimmer $48, evaluation $24, local sweeps $0">
+  <img src="docs/img/chart_modal_budget_light.png" alt="Planned use of the $100 Modal credit: SAM 3 / 3.1 $27, Glimmer $48, evaluation $24, local sweeps $0">
 </picture>
 
-| | **SAM 3.1 fine-tune** | **Muse Glimmer fine-tune** |
+| | **SAM 3 / 3.1 fine-tune** | **Muse Glimmer fine-tune** |
 |---|---|---|
-| **Role in the pipeline** | Core trace extractor for every line, ensembled with the row-anchor model | (1) **Identity verifier**: at each crossing where the extractors disagree, picks the true continuation or flags the segment for human review. (2) **Film-chip reader**: station, date, start time and clock corrections, to seed the time alignment |
-| **How** | LoRA at full resolution, with the same frozen-holdout protocol as our SAM 2.1 run | QLoRA on unlimited crossing crops rendered from our benchmark and labelled by its exact ground truth |
+| **Role in the pipeline** | Core trace extractor for every line; the lightweight row-anchor model stays as the independent second opinion | (1) **Identity verifier**: at each crossing where the extractors disagree, picks the true continuation or flags the segment for human review. (2) **Film-chip reader**: station, date, start time and clock corrections, to seed the time alignment |
+| **How** | LoRA at full resolution on SAM 3's single-image point-prompt path (code ready, tested with random weights); SAM 3.1, whose change is video multi-object tracking, is compared once its official training path is set up. Same frozen-holdout protocol as our SAM 2.1 run | QLoRA on unlimited crossing crops rendered from our benchmark and labelled by its exact ground truth |
 | **Why it needs Modal** | Full-resolution LoRA needs A100/H100-class memory | 4-bit weights are about 18 GB, more than our 16 GB GPU. QLoRA is documented for one H100 |
 | **Success criterion** | Beats fine-tuned SAM 2.1 (r 0.89) on a fresh holdout of unseen earthquakes; real-scan r reported | Verifier: higher record-level accuracy than our learned logistic judge on unseen earthquakes. Reader: field accuracy on hand-checked labels |
 | **Budget (est.)** | ~$27: A100 80 GB, ~9 GPU-hours, 3 runs + evaluation | ~$48: H100 80 GB, ~11 GPU-hours, 2–3 runs + evaluation |
 
 The target pipeline puts Meta models in the critical path:
-- **SAM 3.1** and the row-anchor model extract every line.
+- **SAM 3 / 3.1** extracts every line, and the lightweight row-anchor model gives an independent second opinion.
 - **Glimmer** verifies line identity where they disagree and reads the film labels.
 - **Muse Spark** orchestrates the run and writes the seismological report.
 
@@ -129,7 +129,7 @@ Alongside the Modal work:
   - Randomize the renderer over those ranges and retrain the small row-anchor model locally.
   - Test on a new fresh holdout, then once on the real pairs.
 - **More real ground truth.** More WWSSN ↔ HGLP/SRO pairs (ALQ, CTA, CHG, …).
-- **Release.** A digitize CLI, the benchmark generator, and the fine-tuned SAM 3.1 and Glimmer adapters. Glimmer runs self-hosted, so the 189k-scan USGS archive can be processed without per-call API cost.
+- **Release.** A digitize CLI, the benchmark generator, and the fine-tuned SAM 3 / 3.1 and Glimmer adapters. Glimmer runs self-hosted, so the 189k-scan USGS archive can be processed without per-call API cost.
 
 **How the budget was computed.**
 - Modal list prices, checked 2026-10-27: A100 80 GB $2.50/h, H100 $3.95/h, plus about $0.44/h for 4 CPU cores and 32 GB of memory.
@@ -142,29 +142,29 @@ Alongside the Modal work:
 flowchart LR
   W["Real broadband records<br/>IRIS/EarthScope, IU + II<br/>32 earthquakes M7.5–8.8"] --> R["Film renderer<br/>1 h/line, 1 px/s, 38 px spacing,<br/>minute marks, fading, paper texture<br/><b>exact per-line ground truth</b>"]
   R --> T["Train / validate<br/>split by earthquake"]
-  T --> RA["Row-anchor model<br/>CNN + Transformer over time,<br/>200 row bins/column + Viterbi"]
+  T --> RA["Row-anchor model (second opinion)<br/>CNN + Transformer over time,<br/>200 row bins/column + Viterbi"]
   T --> S["SAM 2.1 fine-tune<br/>LoRA, point prompts,<br/>stitched windows + Viterbi"]
   RA --> H["Fresh holdout<br/>frozen, run once"]
   S --> H
   RA --> P["Real scans paired with<br/>co-located digital stations"]
   S --> P
-  T -.-> S3["SAM 3.1 LoRA<br/>(next, Modal)"]
+  T -.-> S3["SAM 3 / 3.1 LoRA<br/>(next, Modal)"]
   RA -.-> GL["Muse Glimmer QLoRA<br/>identity verifier + film-chip reader<br/>(next, Modal)"]
   S3 -.-> GL
   P --> SP["Muse Spark seismologist agent<br/>(catalog, TauP, picks, report)"]
 ```
 
-- **Row-anchor model** (ours; [`scripts/ml_rowanchor.py`](scripts/ml_rowanchor.py)).
-  - Input: a crop of ±10.5 line spacings centred on the target line's baseline at half resolution, plus a start-hint channel (the line's position in its first column, the same start information the classical trackers get).
-  - A small CNN pools the rows; a 4-layer Transformer runs along time.
-  - Every column is classified into 200 row bins of 4 px. Viterbi decoding uses a step prior learned from training data.
-  - Training composites stack other records above and below the target, so crops look like a full 24-line film.
-  - 0.88 M parameters; 52 min of training on an Apple M5 Pro (MPS).
 - **SAM 2.1 fine-tune** ([`scripts/ml_sam.py`](scripts/ml_sam.py)).
   - The single-image path of SAM 2.1 hiera-tiny is re-implemented in plain PyTorch, and the official weights load with strict key and shape checks.
   - LoRA is applied to the trunk, and the mask decoder is trained.
   - Each window is the full height × 256 columns, resized to 1024². The first window is prompted with the start point; later windows get 4 points from the path decoded so far. A Viterbi pass stitches the windows.
   - 45 min of training on MPS.
+- **Row-anchor model** (ours, the lightweight second opinion; [`scripts/ml_rowanchor.py`](scripts/ml_rowanchor.py)).
+  - Input: a crop of ±10.5 line spacings centred on the target line's baseline at half resolution, plus a start-hint channel (the line's position in its first column, the same start information the classical trackers get).
+  - A small CNN pools the rows; a 4-layer Transformer runs along time.
+  - Every column is classified into 200 row bins of 4 px. Viterbi decoding uses a step prior learned from training data.
+  - Training composites stack other records above and below the target, so crops look like a full 24-line film.
+  - 0.88 M parameters; 52 min of training on an Apple M5 Pro (MPS).
 - **Classical baselines** ([`scripts/track_joint.py`](scripts/track_joint.py), [`scripts/arbiter.py`](scripts/arbiter.py)).
   - A is a greedy tracker. B is a joint multi-line tracker with physics-based coasting.
   - A learned judge picks between A and B where they disagree.
@@ -178,7 +178,7 @@ flowchart LR
 | **Muse Spark 1.3** (Meta Model API, `muse-spark-1.3-contributor`) | Tool-using seismologist agent over digitized traces: event catalog + TauP travel times, STA/LTA, AIC picker, plots. Also tested as an A/B judge at trace crossings. | Two independent runs agree on 93–94% of records; about $1.7 per 96-run pass. It **did not beat simple rules**: P-arrival within 10 s 0.67 vs 0.71 for theoretical travel times. As a crossing judge it fixed 34 and broke 60 events on the strongest judge (not significant at the record level, trend toward harm). Spark therefore orchestrates and reports; measurement is done by tools. |
 | **SAM 3.1** (Meta Model API) | Zero-shot trace segmentation | Fine on isolated lines. Returns **0 instances** in crops where lines touch 56–212 times. With one active line and 28–40 contacts it follows that line (≤ 0.2% failure) but drops the quiet lines (40–69% failure over all lines). |
 | **SAM 2.1 hiera-tiny** (open weights, Apache-2.0) | Fine-tuned promptable trace segmenter | Synthetic holdout r 0.89. Quake-line failure 55% → 12%. Real KIP r 0.23. |
-| **SAM 3.1** (open weights, gated) | **Next (Modal): the core trace extractor.** LoRA fine-tune with the same frozen-holdout protocol as SAM 2.1, then ensemble with the row-anchor model | Planned |
+| **SAM 3 / 3.1** (open weights, gated) | **Next (Modal): the core trace extractor.** LoRA fine-tune of SAM 3's single-image point-prompt path (code ready, tested with random weights); SAM 3.1 compared once its official training path is set up. Same frozen-holdout protocol as SAM 2.1 | Planned |
 | **Muse Glimmer** (open weights, 30B, image + text input, Apache-2.0) | **Next (Modal), two key roles.** (1) **Trace-identity verifier**: at every crossing where extractors disagree, Glimmer sees the candidate continuations drawn on the crop and picks the true one, or flags the segment for human review. It is QLoRA-trained on unlimited auto-labelled crossing crops from our benchmark, which has exact ground truth. (2) **Film-chip reader**: reads the station, date, start time and clock-correction labels to seed each scan's time alignment (in our real-scan evaluation the label times alone were not enough, so they initialise the fitted alignment), self-hosted for bulk digitization | Planned and untested. Zero-shot Spark did not help as a judge (fixed 34, broke 60), so we will train on exact labels instead. Glimmer is 18 GB even in 4-bit, so it needs an H100 |
 
 ## Evaluation protocol

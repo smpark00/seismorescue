@@ -22,7 +22,7 @@ THEMES = {
     "dark": {"surface": "#1a1a19", "text": "#f0efec", "text2": "#c3c2b7", "muted": "#898781", "grid": "#2c2c2a",
              "axis": "#383835", "ra": "#3987e5", "sam": "#d95926", "glim": "#199e70", "band": "#262624"},
 }
-METHODS = [("row_anchor", "Row-anchor + Viterbi (ours)", "ra"), ("sam21", "SAM 2.1 fine-tuned (Meta)", "sam"),
+METHODS = [("sam21", "SAM 2.1 fine-tuned (Meta)", "sam"), ("row_anchor", "Row-anchor, lightweight (ours)", "ra"),
            ("repair_seq", "Pointer Transformer (repair)", "muted"), ("repair_spec", "Spectrogram U-Net (repair)", "muted"),
            ("B", "Classical joint tracker (B)", "muted")]
 
@@ -86,7 +86,7 @@ def chart_amplitude(S, mode):
     t = THEMES[mode]
     syn = S["synthetic_holdout_quake_line"]
     gains = [1, 2, 4, 6, 8]
-    series = [("row_anchor", "Row-anchor + Viterbi", "ra", "o"), ("sam21", "SAM 2.1 fine-tuned", "sam", "s"),
+    series = [("sam21", "SAM 2.1 fine-tuned (Meta)", "sam", "s"), ("row_anchor", "Row-anchor, lightweight (ours)", "ra", "o"),
               ("B", "Classical joint tracker (B)", "muted", "D")]
     fig, axes = plt.subplots(1, 2, figsize=(12, 3.9), facecolor=t["surface"])
     for ax, key, ylab, lim in ((axes[0], "r", "quake-line correlation r", (-0.05, 1.05)),
@@ -114,7 +114,7 @@ def chart_amplitude(S, mode):
     plt.close(fig)
 
 
-BUDGET = [("SAM 3.1 LoRA fine-tunes x3 + evaluation", "A100 80 GB, ~9 GPU-h", 27, "sam"),
+BUDGET = [("SAM 3 / 3.1 LoRA fine-tunes x3 + evaluation", "A100 80 GB, ~9 GPU-h", 27, "sam"),
           ("Muse Glimmer QLoRA: identity verifier + film-chip reader", "H100 80 GB, ~11 GPU-h", 48, "glim"),
           ("Ablations and final evaluation", "A100 80 GB, ~8 GPU-h", 24, "muted"),
           ("Row-anchor sim-to-real sweeps", "our local GPUs", 0, "muted")]
@@ -137,7 +137,7 @@ def chart_budget(mode):
     ax.set_yticks([])
     ax.set_xticks([0, 25, 50, 75, 100], ["$0", "$25", "$50", "$75", "$100"])
     total = sum(b[2] for b in BUDGET)
-    ax.set_title(f"Planned use of a \\$100 Modal credit (about \\${total}): fine-tuning Meta's SAM 3.1 and Muse Glimmer", fontsize=12.5,
+    ax.set_title(f"Planned use of a \\$100 Modal credit (about \\${total}): fine-tuning Meta's SAM 3 / 3.1 and Muse Glimmer", fontsize=12.5,
                  color=t["text"], loc="left", pad=10, fontweight="bold", x=-0.62)
     fig.tight_layout()
     fig.savefig(IMG / f"chart_modal_budget_{mode}.png", dpi=150, bbox_inches="tight", facecolor=t["surface"])
