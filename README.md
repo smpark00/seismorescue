@@ -13,6 +13,12 @@
 <p align="center"><sub>Fresh-holdout example. A synthetic WWSSN long-period film rendered from the real II.RAYN recording of an earthquake the models never saw (2010-04-06, M7.8), peak swing 8 line spacings.
 <b>Green</b>: ground truth. <b>Red</b>: our row-anchor model. <b>Blue</b>: the best classical tracker, which loses the earthquake line as soon as it starts crossing its neighbours.</sub></p>
 
+> [!IMPORTANT]
+> **What the Modal credits unlock: two Meta open-weight models move into the critical path.**
+> - **SAM 3.1, fine-tuned with LoRA**, becomes the core trace extractor. Our fine-tuned SAM 2.1 already cuts quake-line failures from 55% to 12% in simulation.
+> - **Muse Glimmer (30B), fine-tuned with QLoRA**, becomes the trace-identity verifier at every crossing and the film-chip label reader. It is trained on unlimited auto-labelled examples from our benchmark.
+> - Neither model fits our local GPUs (M5 Pro 24 GB, RTX 5070 Ti 16 GB). The plan uses **about $99 of the $100 credit** on A100 and H100 hours. See the **[full plan and budget](#what-the-modal-credits-unlock)**.
+
 ## TL;DR
 
 - **Problem.** From 1962 to 1978 the World-Wide Standardized Seismograph Network (WWSSN) recorded the world's large earthquakes on photographic film. The USGS released the film-chip scans under CC0 in 2025. Automatic digitization breaks exactly where the signal matters most: the earthquake trace swings across many neighbouring lines, crosses them hundreds of times, and its steep strokes fade on the film.
@@ -22,7 +28,7 @@
   - **Fine-tuned Meta SAM 2.1**: r **0.89**, 12.0% failure.
   - Best classical tracker: r 0.02, 55% failure.
   - Repairing the classical output afterwards, including with a spectrogram U-Net, does not work (r ≈ 0.1).
-- **Honest status on real film.** The real earthquake line is **not solved yet**: r 0.19–0.23 on KIP and 0.03–0.10 on MAT, against a chance level of about 0.06. On lines with moderate amplitude the learned models already beat the classical tracker on MAT: r 0.57–0.63 vs 0.01. We think the remaining gap is sim-to-real appearance, and closing it is the next step (see [Roadmap](#roadmap-what-the-modal-credits-are-for)).
+- **Honest status on real film.** The real earthquake line is **not solved yet**: r 0.19–0.23 on KIP and 0.03–0.10 on MAT, against a chance level of about 0.06. On lines with moderate amplitude the learned models already beat the classical tracker on MAT: r 0.57–0.63 vs 0.01. We think the remaining gap is sim-to-real appearance, and closing it is the next step (see [What the Modal credits unlock](#what-the-modal-credits-unlock)).
 - **Meta models.**
   - Muse Spark 1.3 (Meta Model API) runs as a tool-using seismologist agent and crossing judge. We report that it did not beat simple rules.
   - SAM 3.1 (Meta Model API) was tested zero-shot. It returns no instances in contact-dense crops, which is why we fine-tune.
@@ -30,7 +36,7 @@
   - **Next, with Modal credits:**
     - Fine-tune **SAM 3.1** as the core promptable trace extractor.
     - Fine-tune **Muse Glimmer** (30B, open weights) with QLoRA as the trace-identity verifier at crossings and as the film-chip label reader.
-    - Both roles are central to the pipeline (see [Roadmap](#roadmap-what-the-modal-credits-are-for)).
+    - Both roles are central to the pipeline (see [What the Modal credits unlock](#what-the-modal-credits-unlock)).
 
 ## Results at a glance
 
@@ -95,6 +101,41 @@ What we believe limits real-film performance. These are hypotheses and are being
 2. Several neighbouring lines swing hard at the same time (MAT), which is rare in our training data.
 3. Scan artefacts that our synthetic films lack.
 
+## What the Modal credits unlock
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/chart_modal_budget_dark.png">
+  <img src="docs/img/chart_modal_budget_light.png" alt="Planned use of the $100 Modal credit: SAM 3.1 $27, Glimmer $48, evaluation $24, local sweeps $0">
+</picture>
+
+| | **SAM 3.1 fine-tune** | **Muse Glimmer fine-tune** |
+|---|---|---|
+| **Role in the pipeline** | Core trace extractor for every line, ensembled with the row-anchor model | (1) **Identity verifier**: at each crossing where the extractors disagree, picks the true continuation or flags the segment for human review. (2) **Film-chip reader**: station, date, start time and clock corrections, to seed the time alignment |
+| **How** | LoRA at full resolution, with the same frozen-holdout protocol as our SAM 2.1 run | QLoRA on unlimited crossing crops rendered from our benchmark and labelled by its exact ground truth |
+| **Why it needs Modal** | Full-resolution LoRA needs A100/H100-class memory | 4-bit weights are about 18 GB, more than our 16 GB GPU. QLoRA is documented for one H100 |
+| **Success criterion** | Beats fine-tuned SAM 2.1 (r 0.89) on a fresh holdout of unseen earthquakes; real-scan r reported | Verifier: higher record-level accuracy than our learned logistic judge on unseen earthquakes. Reader: field accuracy on hand-checked labels |
+| **Budget (est.)** | ~$27: A100 80 GB, ~9 GPU-hours, 3 runs + evaluation | ~$48: H100 80 GB, ~11 GPU-hours, 2–3 runs + evaluation |
+
+The target pipeline puts Meta models in the critical path:
+- **SAM 3.1** and the row-anchor model extract every line.
+- **Glimmer** verifies line identity where they disagree and reads the film labels.
+- **Muse Spark** orchestrates the run and writes the seismological report.
+
+This is why fine-tuning matters: zero-shot Spark did not help as a crossing judge (fixed 34, broke 60), and zero-shot SAM 3.1 finds nothing where lines touch. Our benchmark provides exact labels in unlimited supply, which is what both models need.
+
+Alongside the Modal work:
+- **Sim-to-real, in progress on our own GPUs.**
+  - Measure stroke visibility, width, blur and multi-line activity on CC0 film scans that are not used for testing.
+  - Randomize the renderer over those ranges and retrain the small row-anchor model locally.
+  - Test on a new fresh holdout, then once on the real pairs.
+- **More real ground truth.** More WWSSN ↔ HGLP/SRO pairs (ALQ, CTA, CHG, …).
+- **Release.** A digitize CLI, the benchmark generator, and the fine-tuned SAM 3.1 and Glimmer adapters. Glimmer runs self-hosted, so the 189k-scan USGS archive can be processed without per-call API cost.
+
+**How the budget was computed.**
+- Modal list prices, checked 2026-10-27: A100 80 GB $2.50/h, H100 $3.95/h, plus about $0.44/h for 4 CPU cores and 32 GB of memory.
+- The remaining ~$24 covers ablations and final evaluation on A100s.
+- Small models stay on local GPUs at $0.
+
 ## How it works
 
 ```mermaid
@@ -153,41 +194,6 @@ flowchart LR
   - MAT: 1973-12-28 M7.5.
   - KIP: 1975-02-02 M7.6.
   - The digital record is converted to the WWSSN LP response. The scan-to-time alignment was fitted once and stored before any method was scored. The real line period is 3588–3589 s, not 3600 s.
-
-## Roadmap: what the Modal credits are for
-
-The target pipeline puts Meta models in the critical path:
-- **SAM 3.1** and the row-anchor model extract every line.
-- **Glimmer** verifies line identity where they disagree and reads the film labels.
-- **Muse Spark** orchestrates the run and writes the seismological report.
-
-1. **Fine-tune SAM 3.1 as the core extractor.**
-   - LoRA at full resolution on A100/H100.
-   - Compared with SAM 2.1 and the row-anchor model under the same frozen-holdout protocol, then ensembled.
-2. **Fine-tune Muse Glimmer with QLoRA for two roles.**
-   - **Trace-identity verifier.**
-     - Training crops come from the benchmark: two or more candidate continuations drawn at each crossing, labelled by the exact ground truth, in unlimited supply.
-     - Success criterion: higher record-level accuracy than the learned logistic judge, on a fresh holdout of unseen earthquakes.
-   - **Film-chip reader.** Station, date, start time and clock corrections from the scan labels, to seed the fitted time alignment.
-   - Glimmer runs self-hosted, so it can process the 189k-scan USGS archive without per-call API cost.
-   - Its 4-bit weights (about 18 GB) do not fit our local GPUs, so this needs Modal H100s.
-3. **Sim-to-real (in progress, runs locally).**
-   - Measure stroke visibility against pen speed, stroke width, blur and multi-line activity on CC0 film scans that are not used for testing.
-   - Randomize the renderer over those ranges and retrain the small row-anchor model on our own GPUs.
-   - Test on a new fresh holdout, then once on the real pairs.
-4. **More real ground truth.** Add more WWSSN ↔ HGLP/SRO pairs (ALQ, CTA, CHG, …), so real performance is measured on more than two scans.
-5. **Release.** A digitize CLI, the benchmark generator, and the fine-tuned SAM 3.1 and Glimmer adapters.
-
-Estimated use of a $100 Modal credit:
-- Modal list prices, checked 2026-10-27: A100 80 GB $2.50/h, H100 $3.95/h. CPU and memory are billed separately, adding about $0.44/h for 4 cores and 32 GB.
-- Small models stay on our local GPUs, so the credit goes only to work that does not fit there.
-
-| Work item | GPU | GPU-hours (est.) | Cost (est.) |
-|---|---|---|---|
-| SAM 3.1 LoRA fine-tunes (3 runs) + holdout/real evaluation | A100 80 GB | ~9 | ~$27 |
-| Glimmer QLoRA: identity verifier + film-chip reader (2–3 runs) + evaluation | H100 80 GB | ~11 | ~$48 |
-| Ablations and final evaluation | A100 80 GB | ~8 | ~$24 |
-| Row-anchor sim-to-real sweeps | local M5 Pro / RTX 5070 Ti | – | $0 |
 
 ## Repository layout
 

@@ -18,9 +18,9 @@ ROOT = Path(__file__).resolve().parents[1]
 IMG = ROOT / "docs" / "img"
 THEMES = {
     "light": {"surface": "#fcfcfb", "text": "#0b0b0b", "text2": "#52514e", "muted": "#898781", "grid": "#e1e0d9",
-              "axis": "#c3c2b7", "ra": "#2a78d6", "sam": "#eb6834", "band": "#ecebe6"},
+              "axis": "#c3c2b7", "ra": "#2a78d6", "sam": "#eb6834", "glim": "#1baf7a", "band": "#ecebe6"},
     "dark": {"surface": "#1a1a19", "text": "#f0efec", "text2": "#c3c2b7", "muted": "#898781", "grid": "#2c2c2a",
-             "axis": "#383835", "ra": "#3987e5", "sam": "#d95926", "band": "#262624"},
+             "axis": "#383835", "ra": "#3987e5", "sam": "#d95926", "glim": "#199e70", "band": "#262624"},
 }
 METHODS = [("row_anchor", "Row-anchor + Viterbi (ours)", "ra"), ("sam21", "SAM 2.1 fine-tuned (Meta)", "sam"),
            ("repair_seq", "Pointer Transformer (repair)", "muted"), ("repair_spec", "Spectrogram U-Net (repair)", "muted"),
@@ -114,10 +114,41 @@ def chart_amplitude(S, mode):
     plt.close(fig)
 
 
+BUDGET = [("SAM 3.1 LoRA fine-tunes x3 + evaluation", "A100 80 GB, ~9 GPU-h", 27, "sam"),
+          ("Muse Glimmer QLoRA: identity verifier + film-chip reader", "H100 80 GB, ~11 GPU-h", 48, "glim"),
+          ("Ablations and final evaluation", "A100 80 GB, ~8 GPU-h", 24, "muted"),
+          ("Row-anchor sim-to-real sweeps", "our local GPUs", 0, "muted")]
+
+
+def chart_budget(mode):
+    """planned use of the $100 Modal credit (estimates from Modal list prices incl. CPU and memory)"""
+    t = THEMES[mode]
+    fig, ax = plt.subplots(figsize=(11, 3.3), facecolor=t["surface"])
+    style(ax, t)
+    ys = list(range(len(BUDGET)))[::-1]
+    for y, (name, gpu, cost, c) in zip(ys, BUDGET):
+        ax.barh(y, cost, height=0.6, color=t[c], lw=0)
+        ax.text(cost + 1, y, f"${cost}" if cost else "$0 (runs locally)", va="center", ha="left", fontsize=10.5,
+                color=t["text"], fontweight="bold")
+        ax.text(-1.5, y + 0.13, name, va="center", ha="right", fontsize=10, color=t["text"])
+        ax.text(-1.5, y - 0.2, gpu, va="center", ha="right", fontsize=8.5, color=t["text2"])
+    ax.axvline(0, color=t["axis"], lw=1)
+    ax.set_xlim(0, 100)
+    ax.set_yticks([])
+    ax.set_xticks([0, 25, 50, 75, 100], ["$0", "$25", "$50", "$75", "$100"])
+    total = sum(b[2] for b in BUDGET)
+    ax.set_title(f"Planned use of a \\$100 Modal credit (about \\${total}): fine-tuning Meta's SAM 3.1 and Muse Glimmer", fontsize=12.5,
+                 color=t["text"], loc="left", pad=10, fontweight="bold", x=-0.62)
+    fig.tight_layout()
+    fig.savefig(IMG / f"chart_modal_budget_{mode}.png", dpi=150, bbox_inches="tight", facecolor=t["surface"])
+    plt.close(fig)
+
+
 if __name__ == "__main__":
     IMG.mkdir(parents=True, exist_ok=True)
     S = json.loads((ROOT / "results" / "ml" / "summary.json").read_text())
     for mode in THEMES:
         chart_quake_r(S, mode)
         chart_amplitude(S, mode)
+        chart_budget(mode)
     print("wrote", sorted(p.name for p in IMG.glob("chart_*.png")))
