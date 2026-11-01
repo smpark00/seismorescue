@@ -6,7 +6,8 @@ renders are not modified.
   holdout4  test split (research/37 §6): out/ml/sim2real/render/holdout4/<rec>/film/heli_g<g>.png (fixed gains
             1, 2, 4, 6, 8 with P = g) -> out/film2_holdout4/<rec>/film/, same file names; meta.json gets "gains".
   holdout6  the same for the E3 test split (research/41).
-usage: .venv/bin/python -I scripts/make_film2_train.py [holdout4|holdout6]"""
+  holdout7  the same for the both-directions test split (research/55).
+usage: .venv/bin/python -I scripts/make_film2_train.py [holdout4|holdout6|holdout7]"""
 import json
 import os
 import sys
@@ -14,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RENDER = ROOT / "out" / "ml" / "sim2real" / "render"
-HOLD = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in ("holdout4", "holdout6") else None
+HOLD = sys.argv[1] if len(sys.argv) > 1 and sys.argv[1] in ("holdout4", "holdout6", "holdout7") else None
 SRC, DST = (RENDER / HOLD, ROOT / "out" / f"film2_{HOLD}") if HOLD else (RENDER / "train", ROOT / "out" / "film2_train")
 
 n = 0

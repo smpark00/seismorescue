@@ -1,5 +1,5 @@
-"""E8 click effect (research/47): on the synthetic development set holdout4 a simulated reviewer clicks once per review
-window on the true trace where the red part starts; SAM 3 film2 re-tracks from that point exactly as the review page
+"""E8 click effect (research/47, again on the both-directions rule, research/55): on the synthetic development set holdout4 a
+simulated reviewer clicks once per review window on the true trace where the red part starts; SAM 3 film2 re-tracks from that point exactly as the review page
 does (research/45: 480-column window opened 40 columns before the first disputed column, track to the window end + 128,
 at least one 256-column SAM window, click snapped to the darkest row within +-5); every re-track is accepted, and the
 re-tracked path is scored against the ground truth on the window's disputed columns.
@@ -21,11 +21,12 @@ import numpy as np                                               # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+DOC55 = ROOT.parent / "55-sam3-both-directions.md"               # internal notes, not published; hashed only if present
 sys.path.insert(0, str(HERE))
 import ml_consensus as mc                                        # noqa: E402
+import ml_fb as fb                                               # noqa: E402
 
-OUT = ROOT / "out" / "ml" / "click"
-DOC47 = ROOT.parent / "47-click-effect.md"                       # internal notes, not published; hashed only if present
+OUT = ROOT / "out" / "ml" / "click_fb"
 SAM3_CKPT = ROOT / "out" / "ml" / "sam3_film2_modal" / "ckpt_sam3_film2_best.pt"
 SAM3_FROZEN = ROOT / "out" / "ml" / "sam3_film2" / "frozen_method.json"
 SPLIT = "holdout4"
@@ -125,14 +126,14 @@ def simulate(m3, model, dev, fz, it, rule, variant, rng):
                 max_dev = float(np.max(np.abs(new[held] - cur[j][held])) / S) if held.any() else None
                 e_new = np.abs(new[score_cols - c] - pen[score_cols]) / S
                 e_old = np.abs(P1[score_cols] - pen[score_cols]) / S
-                e_ra2 = np.abs(P2[score_cols] - pen[score_cols]) / S
+                e_back = np.abs(P2[score_cols] - pen[score_cols]) / S
                 with np.errstate(invalid="ignore"):
                     row.update({
                         "unreached": False, "y_true": float(pen[c]), "y_click": y_click, "y_snapped": ys, "x_end": int(x_end),
                         "warn": max_dev is not None and max_dev > WARN, "max_dev_S": max_dev, "secs": round(time.time() - t, 3),
                         "new4": int((e_new <= 0.25).sum()), "new2": int((e_new <= 0.5).sum()),
                         "old4": int((e_old <= 0.25).sum()), "old2": int((e_old <= 0.5).sum()),
-                        "ra4": int((e_ra2 <= 0.25).sum()), "ra2": int((e_ra2 <= 0.5).sum()),
+                        "back4": int((e_back <= 0.25).sum()), "back2": int((e_back <= 0.5).sum()),
                         "fixed": int(((e_old > 0.25) & (e_new <= 0.25)).sum()), "broken": int(((e_old <= 0.25) & (e_new > 0.25)).sum())})
                 m = stat[c:w1] == DISPUTED                        # accept: the window's disputed columns take the re-track
                 seg = cur[c:w1]
@@ -147,17 +148,17 @@ def cmd_run():
     OUT.mkdir(parents=True, exist_ok=True)
     marker = OUT / "run_started.json"
     if marker.exists():
-        raise SystemExit(f"E8 already started at {json.loads(marker.read_text())['started']}: one run only (research/47 §5)")
-    fz, rule_file = json.loads(SAM3_FROZEN.read_text()), mc.OUT / "frozen_rule.json"
+        raise SystemExit(f"E8 already started at {json.loads(marker.read_text())['started']}: one run only (research/55)")
+    fz, rule_file = json.loads(SAM3_FROZEN.read_text()), fb.RULE
     marker.write_text(json.dumps({"started": time.strftime("%Y-%m-%d %H:%M:%S %Z"), "split": SPLIT,
-                                  "code_sha256": sha_file(__file__), "doc_sha256": sha_file(DOC47) if DOC47.exists() else None,
+                                  "code_sha256": sha_file(__file__), "doc_sha256": sha_file(DOC55) if DOC55.exists() else None,
                                   "rule_sha256": sha_file(rule_file), "ckpt_sha256": fz["ckpt_sha256"]}, indent=1))
     import ml_sam3 as m3
     assert m3.sha256(SAM3_CKPT) == fz["ckpt_sha256"], "SAM 3 checkpoint is not the frozen file"
     dev = m3.get_device("auto")
     model, _ = m3.load_finetuned(SAM3_CKPT, dev)
     rule = json.loads(rule_file.read_text())
-    items = mc.load_pairs(SPLIT)
+    items = fb.pairs(SPLIT)
     for variant in VARIANTS:
         rng = np.random.default_rng(SEED)
         t0 = time.time()
@@ -172,7 +173,7 @@ def cmd_run():
 
 
 def tally(rows):
-    keys = ("n", "new4", "new2", "old4", "old2", "ra4", "ra2", "fixed", "broken")
+    keys = ("n", "new4", "new2", "old4", "old2", "back4", "back2", "fixed", "broken")
     done = [r for r in rows if not r["unreached"]]
     t = {k: sum(r[k] for r in done) for k in keys}
     f = lambda a, b: round(a / b, 4) if b else None              # noqa: E731
@@ -182,7 +183,7 @@ def tally(rows):
             "unreached_line_end_cols": sum(r["n"] for r in un if r.get("reason") == "line_end"),
             "unreached_off_image_cols": sum(r["n"] for r in un if r.get("reason") == "off_image"), "cols_scored": t["n"],
             "precision_S4_retrack": f(t["new4"], t["n"]), "precision_S4_sam3_before": f(t["old4"], t["n"]),
-            "precision_S4_ra2": f(t["ra4"], t["n"]), "precision_S2_retrack": f(t["new2"], t["n"]),
+            "precision_S4_backward": f(t["back4"], t["n"]), "precision_S2_retrack": f(t["new2"], t["n"]),
             "precision_S2_sam3_before": f(t["old2"], t["n"]), "fixed": t["fixed"], "broken": t["broken"],
             "cols_per_click": f(t["n"], len(done)),
             "warn_share": f(sum(r["warn"] for r in done), len(done)),
@@ -202,9 +203,9 @@ def boot(rows, reps=10000, seed=0):
 
 
 def after_review(rows):
-    """auto-accepted columns (E2 rule) plus the reviewed columns: coverage of ok columns and precision at S/4"""
-    rule = json.loads((mc.OUT / "frozen_rule.json").read_text())
-    items = mc.load_pairs(SPLIT)
+    """auto-accepted columns (frozen rule) plus the reviewed columns: coverage of ok columns and precision at S/4"""
+    rule = json.loads(fb.RULE.read_text())
+    items = fb.pairs(SPLIT)
     C, _ = mc.table(items, rule["tau_S"], rule["min_run_cols"])
     out = {}
     for cat in ("quake", "all"):
@@ -221,7 +222,7 @@ def after_review(rows):
 
 
 def cmd_score():
-    res = {"split": SPLIT, "what": "research/47 E8: one simulated click per review window, SAM 3 film2 re-track, scored on the window's disputed columns"}
+    res = {"split": SPLIT, "what": "research/47 E8 on the research/55 rule: one simulated click per review window, SAM 3 film2 re-track, scored on the window's disputed columns"}
     for variant in VARIANTS:
         f = OUT / f"rows_{variant}.jsonl"
         if not f.exists():
@@ -240,7 +241,7 @@ def cmd_score():
             for cat in ("quake", "all"):
                 t = res[variant][cat]
                 print(f"[{variant} {cat}] windows {t['windows']} cols {t['cols_scored']}: re-track {t['precision_S4_retrack']} "
-                      f"{res[variant]['ci95_precision_S4'][cat]} vs SAM 3 before {t['precision_S4_sam3_before']}, RA2 {t['precision_S4_ra2']} | "
+                      f"{res[variant]['ci95_precision_S4'][cat]} vs SAM 3 before {t['precision_S4_sam3_before']}, backward {t['precision_S4_backward']} | "
                       f"fixed {t['fixed']} broken {t['broken']} | warn {t['warn_share']} (prec {t['precision_S4_warn']} vs "
                       f"{t['precision_S4_no_warn']}) | unreached {t['unreached_cols']}", flush=True)
             print(f"[{variant}] after review: {res[variant]['after_review']}", flush=True)

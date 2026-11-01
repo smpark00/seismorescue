@@ -5,7 +5,7 @@ usage: python -I scripts/export_mseed.py export <rescue folder> [--net XX] [--lo
                                                                               # record (local only, numbers only)
 Input: the rescue folder (paths.npz, l0/geometry.json, l1/record.json if present) and its review state (research/45:
 review/decisions.json replayed through review_server.Review, which refuses decisions made for another paths.npz).
-Exported samples: only columns that are auto-accepted (SAM 3 = RA2) or accepted after a human-guided SAM 3 re-track;
+Exported samples: only columns that are auto-accepted (both SAM 3 passes agree) or accepted after a human-guided SAM 3 re-track;
 disputed, held and no-record columns become gaps. The path is resampled at 1 Hz on L0's time model
 t(x, k) = ON + T0 + P k + (x - xa) / pps_r; each time lies on exactly one line (line k holds [x0, x0 + P pps_r)).
 Amplitude: line spacings, up on the film positive, per-line median removed; no instrument correction (research/36 §2).
@@ -138,7 +138,7 @@ def export(folder, net="XX", loc=""):
         "station": rec.get("station"), "component": rec.get("component"),
         "main_event": None if not me else {k: me.get(k) for k in ("id", "origin_utc", "mag", "mag_type", "place", "dist_deg", "P_utc", "surface_utc")},
         "inputs": {"paths_npz_sha256": rv.paths_sha, "review_decisions": len(rv.decisions),
-                   "consensus_rule": (rv.prov.get("L3") or {}).get("rule_sha256"),
+                   "agreement_rule": (rv.prov.get("L3") or {}).get("rule_sha256"),
                    "sam3_ckpt_sha256": ((rv.prov.get("L2") or {}).get("SAM3_film2") or {}).get("ckpt_sha256")},
         "readback": {"traces": len(back), "samples": int(sum(tr.stats.npts for tr in back)), "max_abs_diff": diff,
                      "same_start_times_and_lengths": same_times},

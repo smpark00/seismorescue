@@ -12,16 +12,12 @@ copy() {  # copy <source file or folder> <destination folder>
 
 copy checkpoints/sam3_film2/ckpt_sam3_film2_best.pt out/ml/sam3_film2_modal
 copy checkpoints/sam3_film2/frozen_method.json      out/ml/sam3_film2
-for f in best.pt frozen.json logT.npy; do
-  copy "checkpoints/ra2/$f"       out/ml/sim2real/ra2
-  copy "checkpoints/rowanchor/$f" out/ml/rowanchor
-done
-copy checkpoints/consensus/frozen_rule.json out/ml/consensus
+copy checkpoints/both_directions/frozen_rule.json out/ml/fb
 copy results/e4/e4_results.json             out/e4
 copy examples/MAT_73_12_28_0020_LHZ         out/rescue
 
-for f in out/ml/sam3_film2_modal/ckpt_sam3_film2_best.pt out/ml/sim2real/ra2/best.pt out/ml/rowanchor/best.pt \
-         out/ml/consensus/frozen_rule.json out/e4/e4_results.json out/rescue/MAT_73_12_28_0020_LHZ/paths.npz; do
+for f in out/ml/sam3_film2_modal/ckpt_sam3_film2_best.pt out/ml/fb/frozen_rule.json out/e4/e4_results.json \
+         out/rescue/MAT_73_12_28_0020_LHZ/paths.npz; do
   [ -f "$f" ] || { echo "missing after copy: $f"; exit 1; }
 done
 echo "bootstrap ok: checkpoints, results and the MAT example are in out/"

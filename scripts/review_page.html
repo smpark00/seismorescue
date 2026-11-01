@@ -7,7 +7,7 @@
 <style>
   :root {
     --bg: #0f1115; --panel: #161a22; --panel2: #1c212b; --line: #2a303c; --text: #e6e8eb; --muted: #9aa3ae;
-    --auto: #2fbf4a; --disputed: #e5484d; --human: #f5b700; --held: #8a8f98; --cand: #22d3ee; --ra2: #7aa2ff;
+    --auto: #2fbf4a; --disputed: #e5484d; --human: #f5b700; --held: #8a8f98; --cand: #22d3ee; --back: #7aa2ff;
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
@@ -68,12 +68,12 @@
       <h2>Whole record</h2>
       <div class="ov" id="ov"><img id="ovimg" alt="whole record with the traced lines"><div class="box" id="ovbox"></div></div>
       <div class="legend" style="margin-top:8px">
-        <span><i style="background:var(--auto)"></i>auto-accepted (SAM 3 = RA2)</span>
+        <span><i style="background:var(--auto)"></i>auto-accepted (both SAM 3 passes agree)</span>
         <span><i style="background:var(--disputed)"></i>needs review</span>
         <span><i style="background:var(--human)"></i>accepted after your click</span>
         <span><i style="background:var(--held)"></i>held</span>
         <span><i style="background:var(--cand)"></i>SAM 3 re-track</span>
-        <span><i style="background:var(--ra2)"></i>RA2 (second opinion)</span>
+        <span><i style="background:var(--back)"></i>SAM 3, right-to-left pass</span>
       </div>
     </div>
     <div class="card">
@@ -190,7 +190,7 @@ function drawView() {
   svg.setAttribute('viewBox', `${a} ${r0} ${b - a} ${r1 - r0}`);
   let g = '';
   const xs = view.sam3.map((_, i) => a + i);
-  g += poly(xs, view.ra2, 'var(--ra2)', 1.4, '5 4');
+  g += poly(xs, view.back, 'var(--back)', 1.4, '5 4');
   let i = 0;
   while (i < xs.length) {                                   // SAM 3 path, one polyline per status run
     let j = i; while (j < xs.length && view.status[j] === view.status[i]) j++;

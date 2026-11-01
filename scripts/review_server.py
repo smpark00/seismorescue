@@ -1,12 +1,12 @@
 """L4 human review (research/45): a local page for one rescue output folder (scripts/rescue.py). It lists the spans the
-consensus rule left for review, shows them zoomed with the SAM 3 and RA2 paths, and when a person clicks on the right
+agreement rule left for review, shows them zoomed with the two SAM 3 passes, and when a person clicks on the right
 stroke, SAM 3 film2 (frozen checkpoint, lambda and decoding, research/37) re-tracks the line from that point. The person
 then accepts the re-tracked span or holds it.
 
 usage: python -I scripts/review_server.py out/rescue/<chip> [--port 8791] [--host 127.0.0.1] [--allow-host HOST:PORT]
                                                              [--record | --replay | --record-spans [--lines 6,23]]
 --record        also store every re-track in <folder>/review/recorded_retracks.json
---record-spans  no page: place one scripted click per review window on the second model's path, store the re-tracks, stop
+--record-spans  no page: place one scripted click per review window on the backward pass, store the re-tracks, stop
 --replay        no model, no GPU, no Hugging Face account: a click shows the stored re-track of that window, labelled as
                 recorded. It is not SAM 3 reacting to your click; run without --replay for that.
 
@@ -14,7 +14,7 @@ The product stays files (research/36 §2): every decision is appended to <folder
 sha256 of paths.npz), and <folder>/review/paths_reviewed.npz is rewritten (the SAM 3 path with the accepted re-tracks,
 a per-column status: 0 no record, 1 auto-accepted, 2 disputed, 3 accepted after a human-guided SAM 3 re-track,
 4 held). Starting again replays decisions.json without the model. An accepted re-track only replaces disputed columns;
-auto-accepted columns keep the consensus path, and the accepted path is the server's own re-track (the page only names
+auto-accepted columns keep the forward path, and the accepted path is the server's own re-track (the page only names
 it). Served to this machine only by default (Host and Origin are checked, POST bodies must be JSON); the model runs
 offline and nothing is sent to any API.
 """
@@ -67,7 +67,7 @@ class Review:
         self.dir = Path(folder).resolve()
         z = np.load(self.dir / "paths.npz")
         self.paths_sha = hashlib.sha256((self.dir / "paths.npz").read_bytes()).hexdigest()
-        self.sam3, self.ra2 = z["SAM3"].astype(float), z["RA2"].astype(float)
+        self.sam3, self.back = z["SAM3"].astype(float), z["SAM3_back"].astype(float)
         self.bases, self.x0, self.x1 = z["bases"].astype(float), int(z["x0"]), int(z["x1"])
         self.geo = json.loads((self.dir / "l0" / "geometry.json").read_text())
         self.img = cv2.imread(str(self.dir / "l0" / f"{self.geo['name']}_rescaled.png"), 0)
@@ -94,7 +94,7 @@ class Review:
         self.decisions = saved["decisions"]
         self.lock, self.model, self.fz = threading.Lock(), None, json.loads(SAM3_FROZEN.read_text())
         self.cands, self._cid, self.version, self._overview = {}, itertools.count(1), 0, None
-        self.record, self.recorded = record, None
+        self.record_retracks, self.recorded = record, None
         if replay_recorded:
             self.recorded = self.load_recorded()
         self.replay()
@@ -123,7 +123,7 @@ class Review:
         tmpz = self.out / "paths_reviewed.tmp.npz"
         np.savez_compressed(tmpz, SAM3_reviewed=self.path.astype(np.float32), status=self.status, bases=self.bases,
                             x0=self.x0, x1=self.x1, paths_sha256=self.paths_sha,
-                            status_codes=json.dumps({"0": "no record", "1": "auto-accepted (SAM 3 = RA2)", "2": "disputed",
+                            status_codes=json.dumps({"0": "no record", "1": "auto-accepted (both SAM 3 passes agree)", "2": "disputed",
                                                      "3": "accepted after a human-guided SAM 3 re-track", "4": "held"}))
         os.replace(tmpz, self.out / "paths_reviewed.npz")
         self.version += 1
@@ -212,7 +212,7 @@ class Review:
         png = cv2.imencode(".png", self.img[r0:r1, a:b])[1].tobytes()
         rnd = lambda v: [None if not np.isfinite(y) else round(float(y), 2) for y in v]   # noqa: E731
         return {"line": k, "x": [a, b], "rows": [r0, r1], "png": base64.b64encode(png).decode(),
-                "sam3": rnd(self.path[k, a:b]), "ra2": rnd(self.ra2[k, a:b]), "status": self.status[k, a:b].tolist(),
+                "sam3": rnd(self.path[k, a:b]), "back": rnd(self.back[k, a:b]), "status": self.status[k, a:b].tolist(),
                 "utc": [self.utc(k, a), self.utc(k, b)], "base": round(float(self.bases[k]), 1)}
 
     # ---------- SAM 3 ----------
@@ -265,14 +265,14 @@ class Review:
                 "cand": cid, "recorded": True}
 
     def record_spans(self, lines=None):
-        """one scripted click per review window: at the left of each window, on the second model's path (the path the
-        reviewer would be comparing against). These clicks are not a person's and nobody checked they sit on the right stroke"""
-        who = "script: one click per review window, on the second model's (RA2) path; not a person, not checked by eye"
+        """one scripted click per review window: at the left of each window, on the backward pass (the path the reviewer
+        would be comparing against). These clicks are not a person's and nobody checked they sit on the right stroke"""
+        who = "script: one click per review window, on the backward SAM 3 pass; not a person, not checked by eye"
         m3, n, skipped = sam3(), 0, 0
         for k in (range(len(self.bases)) if lines is None else lines):
             for sp in self.spans(k):
                 for x in range(sp["x"][0], sp["x"][1], VIEW_W - 40):
-                    y = self.ra2[k, x] if np.isfinite(self.ra2[k, x]) else self.sam3[k, x]
+                    y = self.back[k, x] if np.isfinite(self.back[k, x]) else self.sam3[k, x]
                     if not np.isfinite(y) or self.x1 - x < m3.S.WIN_W:
                         skipped += 1
                         continue
@@ -319,7 +319,7 @@ class Review:
         res = {"cand": cid, "line": k, "x": x, "x_end": x_end, "y_click": float(y), "y_snapped": ys,
                "secs": round(time.time() - t, 2), "path": [None if not np.isfinite(v) else round(float(v), 2) for v in path],
                "max_dev_from_accepted_S": None if dev_auto is None else round(dev_auto, 3)}
-        if self.record:
+        if self.record_retracks:
             self.store(res, "person, in the review page")
         return res
 

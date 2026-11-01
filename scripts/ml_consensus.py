@@ -1,4 +1,7 @@
-"""E2 (research/39): two-model consensus rule, chosen on holdout4 (development) and frozen for E3 (holdout6).
+"""Scoring tables and helpers used by ml_fb.py and rescue.py. No model runs through this file in the product.
+Its dump, e3 and real commands belong to the earlier offline baseline (archive/offline_baselines) and need that folder on the path.
+
+E2 (research/39): two-model consensus rule, chosen on holdout4 (development) and frozen for E3 (holdout6).
 
 usage: python -I scripts/ml_consensus.py dump | select | describe | e3 | real
 

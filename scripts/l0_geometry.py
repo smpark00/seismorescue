@@ -277,6 +277,24 @@ def parse_name(name):
 
 
 def run(path, on=None, off=None, area=None, negative=None, out=None, verbose=True):
+    """_run, with a crash on a strange chip reported like a failed layout: the caller gets (geometry with "failed", None)"""
+    t_start = time.time()
+    try:
+        return _run(path, on, off, area, negative, out, verbose)
+    except Exception as e:                                        # noqa: BLE001 (any chip must end in a result)
+        name = Path(path).stem
+        geo = {"image": str(path), "name": name, "from_name": parse_name(name), "on": on, "off": off, "how": None, "negative": negative,
+               "area_full": None if area is None else list(area), "failed": f"crash: {type(e).__name__}: {e}",
+               "seconds": round(time.time() - t_start, 1)}
+        if out is not None:
+            Path(out).mkdir(parents=True, exist_ok=True)
+            (Path(out) / "geometry.json").write_text(json.dumps(geo, indent=1, default=float))
+        if verbose:
+            print(f"[{name}] FAILED {geo['failed']}", flush=True)
+        return geo, None
+
+
+def _run(path, on, off, area, negative, out, verbose):
     t_start = time.time()
     path = Path(path)
     name = path.stem

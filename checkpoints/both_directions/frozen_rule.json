@@ -1,0 +1,19 @@
+{
+ "tau_S": 0.25,
+ "min_run_cols": 20,
+ "feasible": true,
+ "accept": "both passes present, |forward - backward| / S < tau_S, inside a run of >= min_run_cols such columns (per line)",
+ "export": "the forward path on accepted columns, missing elsewhere",
+ "passes": "SAM 3 film2 (out/ml/sam3_film2/frozen_method.json): forward, and backward on the mirrored image",
+ "selected_on": "holdout4 (development), research/55 \u00a74.1 with its amendment",
+ "constraints": {
+  "quake_precision": 0.95,
+  "all_precision": 0.99,
+  "scored_without_minute_marks": "|pen - sig| > 0.1 S"
+ },
+ "frozen_at": "2026-11-01 22:41:54 KST",
+ "inputs_sha256": {
+  "paths": "79a738c33bb8e0985bb406de2a90839d7864443248e630bfa5173aea22ef1e21"
+ },
+ "code_sha256": "e716b7d28eca44b51c68c4c677e6457bbe504b97264099fcf130b6a96b06ea2a"
+}

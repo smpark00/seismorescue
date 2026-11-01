@@ -19,7 +19,7 @@ import cv2
 import numpy as np
 from PIL import Image
 
-VAL_GROUPS = ("20090103", "20110311", "20120831", "20230510")   # = SAM 3 film2 / RA2 validation dates (research/31, 37)
+VAL_GROUPS = ("20090103", "20110311", "20120831", "20230510")   # = SAM 3 film2 validation dates (research/31, 37)
 WIN = 192                      # crop width in columns (1 px/s on film2: 192 s)
 SCALE = 2                      # crop is upscaled 2x so 1-2 px strokes cover more of a 14 px vision patch
 HEADER, GAP = 28, 12           # label strip height, gap between panels (px, after scaling): 1176 x 840 = 84 x 60 14-px patches

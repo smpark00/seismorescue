@@ -56,7 +56,7 @@ app = modal.App("seismo-sam3-finetune", image=image)
 PREC = {"tf32": ["--tf32"], "bf16": ["--amp"]}   # train-step precision; eval is always fp32 (ml_sam3 eval/real)
 DATA = {"film": {},                              # training renders -> ml_sam / ml_sam3 environment (research/35)
         "film2": {"SEISMO_FILM_TRAIN": "film2_train", "SEISMO_SAM3_OUT": "sam3_film2",
-                  "SEISMO_VAL_GROUPS": "20090103,20110311,20120831,20230510"}}   # = RA2's validation dates (research/31)
+                  "SEISMO_VAL_GROUPS": "20090103,20110311,20120831,20230510"}}   # = the film2 validation dates (research/31)
 
 
 def _out(data):

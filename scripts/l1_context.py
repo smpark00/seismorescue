@@ -16,6 +16,7 @@ import datetime
 import hashlib
 import json
 import math
+import os
 import re
 import statistics
 import sys
@@ -514,9 +515,11 @@ def l1(chip, out):
         st = {"requests": 0, "tool_calls": 0, "repairs": 0, "usage": [], "answer": None,
               "errors": [f"agent error {type(ex).__name__}: {str(ex)[:300]}"]}
     rec = record(chip, st, time.time() - t)
-    (out / "record.json").write_text(json.dumps(rec, indent=1, default=str))
     (out / "l1_transcript.json").write_text(json.dumps({"instructions": INSTRUCTIONS, "tools": TOOLS,
                                                         "user": USER, "log": log}, indent=1, default=str))
+    tmp = out / "record.json.tmp"                                 # last and atomic: a record.json is always whole
+    tmp.write_text(json.dumps(rec, indent=1, default=str))
+    os.replace(tmp, out / "record.json")
     me = rec["main_event"] or {}
     print(f"[{chip.stem}] {rec['status']} | border {rec['border_digits']} -> {(rec['station'] or {}).get('code')} "
           f"{rec['on_utc']} {(rec['component'] or {}).get('name')} | main {me.get('id')} M{me.get('mag')} "
