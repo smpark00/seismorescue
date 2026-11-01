@@ -1,0 +1,230 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 5.9,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "040263 0900 0065 04"
+   },
+   "result": {
+    "groups": [
+     "040263",
+     "0900",
+     "0065",
+     "04"
+    ],
+    "on_utc": "1963-04-02T09:00:00",
+    "station_number": "0065",
+    "station": {
+     "code": "MAL",
+     "number": "0065",
+     "lat": 36.73,
+     "lon": -4.41,
+     "elev_m": 60.0,
+     "place": "Malaga, Spain"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 13.5,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "null",
+    "off_time": "null"
+   },
+   "result": {
+    "lines": 25,
+    "off_used": null,
+    "off_note": "OFF not read: L0 counted the lines without it",
+    "time_model": "measured",
+    "line_period_s": 3577.2,
+    "record_utc": [
+     "1963-04-02T09:00:00",
+     "1963-04-03T09:21:44"
+    ],
+    "on_minute_ambiguous": false
+   }
+  },
+  {
+   "request": 2,
+   "secs": 9.9,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "MAL",
+    "record_utc": [
+     "1963-04-02T09:00:00",
+     "1963-04-03T09:21:44"
+    ],
+    "time_model": "measured",
+    "lines": 25,
+    "line_period_s": 3577.2,
+    "on_minute_ambiguous": false,
+    "events": []
+   }
+  },
+  {
+   "request": 3,
+   "secs": 15.2,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {
+    "min_magnitude": 4.5
+   },
+   "result": {
+    "station": "MAL",
+    "record_utc": [
+     "1963-04-02T09:00:00",
+     "1963-04-03T09:21:44"
+    ],
+    "time_model": "measured",
+    "lines": 25,
+    "line_period_s": 3577.2,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "iscgem872097",
+      "origin_utc": "1963-04-02T16:18:58.39",
+      "mag": 5.4,
+      "mag_type": "mw",
+      "place": "187 km W of Nikolski, Alaska",
+      "depth_km": 157.8,
+      "dist_deg": 89.6,
+      "P_phase": "P",
+      "P_utc": "1963-04-02T16:31:37",
+      "P_inside_record": true,
+      "P_line": 8,
+      "P_column": 269,
+      "P_lines_pm1": [
+       7,
+       9
+      ],
+      "surface_utc": [
+       "1963-04-02T17:00:27",
+       "1963-04-02T17:14:17"
+      ],
+      "surface_lines": [
+       8,
+       8
+      ],
+      "surface_lines_pm1": [
+       7,
+       9
+      ],
+      "amp_score": 2.16,
+      "amp_rank": 1
+     }
+    ]
+   }
+  },
+  {
+   "request": 4,
+   "secs": 15.7,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"040263 0900 0065 04\", \"label_station\": null, \"label_component\": null, \"magnification\": null, \"off_date\": null, \"off_time\": null, \"main_event_id\": \"iscgem872097\", \"notes\": \"Border 040263 0900 0065 04 = MAL LPZ ON 1963-04-02T09:00Z. Label form illegible in provided scans; OFF not read. Default M>=5.5 catalog empty; M>=4.5 gives one event iscgem872097 M5.4 with P and surface inside record on line 8.\"}",
+   "validation_errors": [
+    "main_event_id must be one of the catalog ids for the final station and ON time: []"
+   ]
+  },
+  {
+   "request": 5,
+   "secs": 11.9,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"040263 0900 0065 04\", \"label_station\": null, \"label_component\": null, \"magnification\": null, \"off_date\": null, \"off_time\": null, \"main_event_id\": null, \"notes\": \"Border 040263 0900 0065 04 = MAL LPZ ON 1963-04-02T09:00Z. Label form illegible; OFF not read. Default M>=5.5 catalog empty, so no main event.\"}",
+   "validation_errors": []
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "chip": "BAG_63_02_17_0026_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1963-02-17\",\n  \"on_time\": \"0026\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"021763 0026 0014 04\",\n  \"notes\": \"Left margin shows FEB 17 1963; station label form and component/period/magnification details are illegible.\"\n}",
+ "reasoning_chars": 6168,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1963-02-17",
+  "on_time": "0026",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "021763 0026 0014 04",
+  "notes": "Left margin shows FEB 17 1963; station label form and component/period/magnification details are illegible."
+ },
+ "usage": {
+  "completion_tokens": 1938,
+  "prompt_tokens": 4531,
+  "total_tokens": 6469,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4482,
+  "prompt_ms": 6922.505,
+  "prompt_per_token_ms": 1.544512494422133,
+  "prompt_per_second": 647.4534868519416,
+  "predicted_n": 1938,
+  "predicted_ms": 166139.207,
+  "predicted_per_token_ms": 85.77140268456375,
+  "predicted_per_second": 11.65889758941729
+ },
+ "secs": 173.2,
+ "error": null
+}

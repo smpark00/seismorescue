@@ -1,0 +1,293 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 9.1,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "021276 1306 0040 04"
+   },
+   "result": {
+    "groups": [
+     "021276",
+     "1306",
+     "0040",
+     "04"
+    ],
+    "on_utc": "1976-02-12T13:06:00",
+    "station_number": "0040",
+    "station": {
+     "code": "GDH",
+     "number": "0040",
+     "lat": 69.25,
+     "lon": -53.53,
+     "elev_m": 23.0,
+     "place": "Godhavn, Greenland"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 9.8,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1976-02-13",
+    "off_time": "1244"
+   },
+   "result": {
+    "lines": 25,
+    "off_used": "1976-02-13T12:44:00",
+    "off_note": null,
+    "time_model": "measured",
+    "line_period_s": 3587.9,
+    "record_utc": [
+     "1976-02-12T13:06:00",
+     "1976-02-13T12:18:52"
+    ],
+    "on_minute_ambiguous": false,
+    "line_period_implied_by_off_s": 3650.7
+   }
+  },
+  {
+   "request": 2,
+   "secs": 9.8,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "GDH",
+    "record_utc": [
+     "1976-02-12T13:06:00",
+     "1976-02-13T12:18:52"
+    ],
+    "time_model": "measured",
+    "lines": 25,
+    "line_period_s": 3587.9,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "usp0000f1b",
+      "origin_utc": "1976-02-12T14:45:00.20",
+      "mag": 6.3,
+      "mag_type": "mb",
+      "place": "46 km NNE of Beatty, Nevada",
+      "depth_km": 0.0,
+      "dist_deg": 46.0,
+      "P_phase": "P",
+      "P_utc": "1976-02-12T14:53:25",
+      "P_inside_record": true,
+      "P_line": 2,
+      "P_column": 1744,
+      "P_lines_pm1": [
+       1,
+       3
+      ],
+      "surface_utc": [
+       "1976-02-12T15:06:19",
+       "1976-02-12T15:13:25"
+      ],
+      "surface_lines": [
+       2,
+       2
+      ],
+      "surface_lines_pm1": [
+       1,
+       3
+      ],
+      "amp_score": 3.54,
+      "amp_rank": 1
+     },
+     {
+      "id": "usp0000f1m",
+      "origin_utc": "1976-02-13T10:33:42.70",
+      "mag": 5.8,
+      "mag_type": "ms",
+      "place": "6 km N of Lubang, Philippines",
+      "depth_km": 29.0,
+      "dist_deg": 96.7,
+      "P_phase": "P",
+      "P_utc": "1976-02-13T10:47:10",
+      "P_inside_record": true,
+      "P_line": 22,
+      "P_column": 1621,
+      "P_lines_pm1": [
+       21,
+       23
+      ],
+      "surface_utc": [
+       "1976-02-13T11:18:31",
+       "1976-02-13T11:33:27"
+      ],
+      "surface_lines": [
+       23,
+       23
+      ],
+      "surface_lines_pm1": [
+       22,
+       24
+      ],
+      "amp_score": 2.5,
+      "amp_rank": 2
+     },
+     {
+      "id": "usp0000f1k",
+      "origin_utc": "1976-02-13T08:07:32.60",
+      "mag": 5.5,
+      "mag_type": "ms",
+      "place": "Luzon, Philippines",
+      "depth_km": 47.0,
+      "dist_deg": 95.0,
+      "P_phase": "P",
+      "P_utc": "1976-02-13T08:20:50",
+      "P_inside_record": true,
+      "P_line": 20,
+      "P_column": 124,
+      "P_lines_pm1": [
+       19,
+       21
+      ],
+      "surface_utc": [
+       "1976-02-13T08:51:33",
+       "1976-02-13T09:06:14"
+      ],
+      "surface_lines": [
+       20,
+       20
+      ],
+      "surface_lines_pm1": [
+       19,
+       21
+      ],
+      "amp_score": 2.22,
+      "amp_rank": 3
+     },
+     {
+      "id": "usp0000f1d",
+      "origin_utc": "1976-02-12T17:54:18.60",
+      "mag": 5.6,
+      "mag_type": "ms",
+      "place": "198 km SSE of Lata, Solomon Islands",
+      "depth_km": 39.0,
+      "dist_deg": 117.8,
+      "P_phase": "Pdiff",
+      "P_utc": "1976-02-12T18:09:18",
+      "P_inside_record": true,
+      "P_line": 5,
+      "P_column": 2667,
+      "P_lines_pm1": [
+       4,
+       6
+      ],
+      "surface_utc": [
+       "1976-02-12T18:48:53",
+       "1976-02-12T19:07:05"
+      ],
+      "surface_lines": [
+       6,
+       6
+      ],
+      "surface_lines_pm1": [
+       5,
+       7
+      ],
+      "amp_score": 2.16,
+      "amp_rank": 4
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 21.3,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"021276 1306 0040 04\", \"label_station\": \"GDH\", \"label_component\": \"Z\", \"magnification\": 1500, \"off_date\": \"1976-02-13\", \"off_time\": \"1244\", \"main_event_id\": \"usp0000f1b\", \"notes\": \"\"}",
+   "validation_errors": []
+  }
+ ]
+}

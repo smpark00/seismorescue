@@ -1,0 +1,1114 @@
+{
+ "what": "research/44 \u00a74 replay: E4 stored border reads -> decode_border + WWSSN table (no API)",
+ "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+ "code_sha256": "6a5ef0253d9aa1cd4618f7beb808245ccce5533e1e0305fa96f7fe6db4c3e8f4",
+ "filename_truth": {
+  "station": {
+   "correct": 27,
+   "n": 30,
+   "rate": 0.9,
+   "wilson95": [
+    0.744,
+    0.965
+   ]
+  },
+  "on_date": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "component": {
+   "correct": 29,
+   "n": 30,
+   "rate": 0.967,
+   "wilson95": [
+    0.833,
+    0.994
+   ]
+  },
+  "all4": {
+   "correct": 25,
+   "n": 30,
+   "rate": 0.833,
+   "wilson95": [
+    0.664,
+    0.927
+   ]
+  }
+ },
+ "chip_truth": {
+  "station": {
+   "correct": 27,
+   "n": 30,
+   "rate": 0.9,
+   "wilson95": [
+    0.744,
+    0.965
+   ]
+  },
+  "on_date": {
+   "correct": 29,
+   "n": 30,
+   "rate": 0.967,
+   "wilson95": [
+    0.833,
+    0.994
+   ]
+  },
+  "on_time": {
+   "correct": 29,
+   "n": 30,
+   "rate": 0.967,
+   "wilson95": [
+    0.833,
+    0.994
+   ]
+  },
+  "component": {
+   "correct": 29,
+   "n": 30,
+   "rate": 0.967,
+   "wilson95": [
+    0.833,
+    0.994
+   ]
+  },
+  "all4": {
+   "correct": 27,
+   "n": 30,
+   "rate": 0.9,
+   "wilson95": [
+    0.744,
+    0.965
+   ]
+  }
+ },
+ "e4_spark_alone": {
+  "station": {
+   "correct": 15,
+   "n": 30,
+   "rate": 0.5,
+   "wilson95": [
+    0.332,
+    0.668
+   ]
+  },
+  "on_date": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "component": {
+   "correct": 21,
+   "n": 30,
+   "rate": 0.7,
+   "wilson95": [
+    0.521,
+    0.833
+   ]
+  },
+  "all4": {
+   "correct": 12,
+   "n": 30,
+   "rate": 0.4,
+   "wilson95": [
+    0.246,
+    0.577
+   ]
+  }
+ },
+ "rows": [
+  {
+   "chip": "ANP_69_09_21_0022_LHZ",
+   "border_digits": "092169 0022 0112 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "ANP",
+    "on_date": "1969-09-21",
+    "on_time": "0022",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "ANP",
+    "on_date": "1969-09-21",
+    "on_time": "0022",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "ANP_71_11_06_0011_LHZ",
+   "border_digits": "110671 0011 0112 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "ANP",
+    "on_date": "1971-11-06",
+    "on_time": "0011",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "ANP",
+    "on_date": "1971-11-06",
+    "on_time": "0011",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "AQU_63_02_08_0634_LHZ",
+   "border_digits": "020863 0634 0010 04",
+   "station_source": "label read (E4)",
+   "problems": [
+    "station number 0010 is not in the WWSSN table"
+   ],
+   "got": {
+    "station": null,
+    "on_date": "1963-02-08",
+    "on_time": "0634",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "AQU",
+    "on_date": "1963-02-08",
+    "on_time": "0634",
+    "component": "Z"
+   },
+   "ok": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "ok_chip": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   }
+  },
+  {
+   "chip": "BAG_63_02_17_0026_LHZ",
+   "border_digits": "021763 0026 0014 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "BAG",
+    "on_date": "1963-02-17",
+    "on_time": "0026",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "BAG",
+    "on_date": "1963-02-17",
+    "on_time": "0026",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "BHP_66_06_30_1229_LHZ",
+   "border_digits": "063066 1229 0017 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "BHP",
+    "on_date": "1966-06-30",
+    "on_time": "1229",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "BHP",
+    "on_date": "1966-06-30",
+    "on_time": "1229",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "CMC_63_05_28_0438_LHZ",
+   "border_digits": "052863 0438 0027 04",
+   "station_source": "label read (E4)",
+   "problems": [
+    "station number 0027 is not in the WWSSN table"
+   ],
+   "got": {
+    "station": null,
+    "on_date": "1963-05-28",
+    "on_time": "0438",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "CMC",
+    "on_date": "1963-05-28",
+    "on_time": "0438",
+    "component": "Z"
+   },
+   "ok": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "ok_chip": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   }
+  },
+  {
+   "chip": "COL_66_06_01_1910_LHZ",
+   "border_digits": "060166 1910 0028 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "COL",
+    "on_date": "1966-06-01",
+    "on_time": "1910",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "COL",
+    "on_date": "1966-06-01",
+    "on_time": "1910",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "COL_75_06_30_1706_LHZ",
+   "border_digits": "063075 1706 0028 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "COL",
+    "on_date": "1975-06-30",
+    "on_time": "1706",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "COL",
+    "on_date": "1975-06-30",
+    "on_time": "1706",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "COR_71_11_06_0129_LHZ",
+   "border_digits": "110671 0129 0030 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "COR",
+    "on_date": "1971-11-06",
+    "on_time": "0129",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "COR",
+    "on_date": "1971-11-06",
+    "on_time": "0129",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "ESK_70_03_26_0839_LHZ",
+   "border_digits": "032670 0839 0038 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "ESK",
+    "on_date": "1970-03-26",
+    "on_time": "0839",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "ESK",
+    "on_date": "1970-03-26",
+    "on_time": "0839",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "GOL_75_10_26_1713_LHZ",
+   "border_digits": "102675 1713 0043 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "GOL",
+    "on_date": "1975-10-26",
+    "on_time": "1713",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "GOL",
+    "on_date": "1975-10-26",
+    "on_time": "1713",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "GSC_66_06_01_1549_LHZ",
+   "border_digits": "060166 1549 0085 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "GSC",
+    "on_date": "1966-06-01",
+    "on_time": "1549",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "GSC",
+    "on_date": "1966-06-01",
+    "on_time": "1549",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "IST_64_02_11_0750_LHZ",
+   "border_digits": "5 0 4",
+   "station_source": "label read (E4)",
+   "problems": [
+    "no 'MMDDYY HHMM' at the start of the border digits"
+   ],
+   "got": {
+    "station": "QUI",
+    "on_date": null,
+    "on_time": null,
+    "component": null
+   },
+   "truth": {
+    "station": "IST",
+    "on_date": "1964-02-11",
+    "on_time": "0750",
+    "component": "Z"
+   },
+   "ok": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "component": false,
+    "all4": false
+   },
+   "ok_chip": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "component": false,
+    "all4": false
+   }
+  },
+  {
+   "chip": "JER_75_10_28_0815_LHZ",
+   "border_digits": "102875 0815 0051 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "JER",
+    "on_date": "1975-10-28",
+    "on_time": "0815",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "JER",
+    "on_date": "1975-10-28",
+    "on_time": "0815",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "KEV_73_06_06_0805_LHZ",
+   "border_digits": "060673 0805 0052 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "KEV",
+    "on_date": "1973-06-06",
+    "on_time": "0805",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "KEV",
+    "on_date": "1973-06-06",
+    "on_time": "0805",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "KON_71_01_29_2033_LHZ",
+   "border_digits": "012971 2033 0055 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "KON",
+    "on_date": "1971-01-29",
+    "on_time": "2033",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "KON",
+    "on_date": "1971-01-29",
+    "on_time": "2033",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "LON_68_03_22_1616_LHZ",
+   "border_digits": "032168 1616 0058 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "LON",
+    "on_date": "1968-03-21",
+    "on_time": "1616",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "LON",
+    "on_date": "1968-03-22",
+    "on_time": "1616",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": false,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "LON_76_02_06_1556_LHZ",
+   "border_digits": "020676 1556 0058 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "LON",
+    "on_date": "1976-02-06",
+    "on_time": "1556",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "LON",
+    "on_date": "1976-02-06",
+    "on_time": "1556",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "LPB_66_06_30_1907_LHZ",
+   "border_digits": "063066 1907 0060 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "LPB",
+    "on_date": "1966-06-30",
+    "on_time": "1907",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "LPB",
+    "on_date": "1966-06-30",
+    "on_time": "1907",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "LPB_67_06_02_1912_LHZ",
+   "border_digits": "060267 1912 0060 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "LPB",
+    "on_date": "1967-06-02",
+    "on_time": "1912",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "LPB",
+    "on_date": "1967-06-02",
+    "on_time": "1912",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "LUB_73_06_05_1342_LHZ",
+   "border_digits": "06 05 73 1342 0063 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "LUB",
+    "on_date": "1973-06-05",
+    "on_time": "1342",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "LUB",
+    "on_date": "1973-06-05",
+    "on_time": "1342",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "MAL_66_06_30_0831_LHZ",
+   "border_digits": "063066 0831 0065 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "MAL",
+    "on_date": "1966-06-30",
+    "on_time": "0831",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "MAL",
+    "on_date": "1966-06-30",
+    "on_time": "0831",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "OGD_67_06_01_1347_LHZ",
+   "border_digits": "060167 1347 0082 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "OGD",
+    "on_date": "1967-06-01",
+    "on_time": "1347",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "OGD",
+    "on_date": "1967-06-01",
+    "on_time": "1347",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "POO_75_10_28_0159_LHZ",
+   "border_digits": "102875 0159 0087 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "POO",
+    "on_date": "1975-10-28",
+    "on_time": "0159",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "POO",
+    "on_date": "1975-10-28",
+    "on_time": "0159",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "SHL_69_05_07_0219_LHZ",
+   "border_digits": "050769 0219 0105 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "SHL",
+    "on_date": "1969-05-07",
+    "on_time": "0219",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "SHL",
+    "on_date": "1969-05-07",
+    "on_time": "0219",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "SPA_69_05_07_0031_LHZ",
+   "border_digits": "050769 0031 0108 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "SPA",
+    "on_date": "1969-05-07",
+    "on_time": "0031",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "SPA",
+    "on_date": "1969-05-07",
+    "on_time": "0031",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "TOL_75_10_26_0658_LHZ",
+   "border_digits": "102675 0658 0115 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "TOL",
+    "on_date": "1975-10-26",
+    "on_time": "0658",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "TOL",
+    "on_date": "1975-10-26",
+    "on_time": "0658",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "WEL_69_09_15_2038_LHZ",
+   "border_digits": "091569 2038 0122 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "WEL",
+    "on_date": "1969-09-15",
+    "on_time": "2038",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "WEL",
+    "on_date": "1969-09-15",
+    "on_time": "2038",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "WES_63_02_20_1914_LHZ",
+   "border_digits": "022063 1914 0123 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "WES",
+    "on_date": "1963-02-20",
+    "on_time": "1914",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "WES",
+    "on_date": "1963-02-20",
+    "on_time": "1914",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  },
+  {
+   "chip": "WIN_71_01_29_0124_LHZ",
+   "border_digits": "012971 0623 0124 04",
+   "station_source": "border number + table",
+   "problems": [],
+   "got": {
+    "station": "WIN",
+    "on_date": "1971-01-29",
+    "on_time": "0623",
+    "component": "Z"
+   },
+   "truth": {
+    "station": "WIN",
+    "on_date": "1971-01-29",
+    "on_time": "0124",
+    "component": "Z"
+   },
+   "ok": {
+    "station": true,
+    "on_date": true,
+    "on_time": false,
+    "component": true,
+    "all4": false
+   },
+   "ok_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SeismoRescue Review</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #161a22; --panel2: #1c212b; --line: #2a303c; --text: #e6e8eb; --muted: #9aa3ae;
+    --auto: #2fbf4a; --disputed: #e5484d; --human: #f5b700; --held: #8a8f98; --cand: #22d3ee; --ra2: #7aa2ff;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  header { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline; padding: 12px 18px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  header h1 { font-size: 16px; margin: 0; letter-spacing: .02em; }
+  header .meta { color: var(--muted); }
+  header .meta b { color: var(--text); font-weight: 600; }
+  header .recorded { font-weight: 600; color: #fff; background: #a3401a; padding: 2px 8px; border-radius: 4px; }
+  .num { font-variant-numeric: tabular-nums; }
+  main { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 50px); }
+  aside { border-right: 1px solid var(--line); background: var(--panel); overflow-y: auto; max-height: calc(100vh - 50px); }
+  aside .line { padding: 8px 14px; border-bottom: 1px solid var(--line); cursor: pointer; }
+  aside .line:hover { background: var(--panel2); }
+  aside .line.cur { background: #232a36; }
+  aside .row { display: flex; justify-content: space-between; gap: 8px; }
+  aside .bar { display: flex; height: 5px; border-radius: 3px; overflow: hidden; margin-top: 5px; background: #0b0d11; }
+  aside .bar span { display: block; height: 100%; }
+  aside .span { margin: 4px 0 0 10px; color: var(--muted); font-size: 12px; cursor: pointer; }
+  aside .span:hover, aside .span.cur { color: var(--text); }
+  aside .quake { color: var(--human); font-size: 11px; margin-left: 6px; }
+  section { padding: 14px 18px; min-width: 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+  .card h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  .ov { position: relative; cursor: crosshair; }
+  .ov img { width: 100%; display: block; border-radius: 4px; }
+  .ov { margin: 0 auto; }
+  .ov .box { position: absolute; border: 2px solid var(--cand); border-radius: 2px; pointer-events: none; }
+  .zoom { position: relative; background: #fff; border-radius: 4px; overflow: hidden; cursor: crosshair; margin: 0 auto; }
+  .zoom img { width: 100%; display: block; }
+  .zoom svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 10px; }
+  button { background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 7px 12px; font: inherit; cursor: pointer; }
+  button:hover:not(:disabled) { border-color: var(--muted); }
+  button:disabled { opacity: .4; cursor: default; }
+  button.accept { border-color: #3b6d2f; background: #1d3320; }
+  button.hold { border-color: #555b66; }
+  kbd { font: 11px ui-monospace, monospace; color: var(--muted); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; margin-left: 4px; }
+  .status { color: var(--muted); margin-left: auto; min-height: 20px; }
+  .status.err { color: var(--disputed); }
+  .legend { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 12px; }
+  .legend i { display: inline-block; width: 18px; height: 3px; vertical-align: middle; margin-right: 5px; border-radius: 2px; }
+  .times { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; margin-top: 4px; }
+  .hint { color: var(--muted); font-size: 12px; margin-top: 6px; }
+  @media (max-width: 800px) { main { grid-template-columns: 1fr; } aside { max-height: 240px; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>SeismoRescue · Review</h1>
+  <div class="meta" id="meta">loading…</div>
+  <div class="meta num" id="totals"></div>
+  <div class="recorded" id="recorded" hidden>RECORDED RUN · SAM 3 is not running here: a click shows a stored re-track</div>
+</header>
+<main>
+  <aside id="lines"></aside>
+  <section>
+    <div class="card">
+      <h2>Whole record</h2>
+      <div class="ov" id="ov"><img id="ovimg" alt="whole record with the traced lines"><div class="box" id="ovbox"></div></div>
+      <div class="legend" style="margin-top:8px">
+        <span><i style="background:var(--auto)"></i>auto-accepted (SAM 3 = RA2)</span>
+        <span><i style="background:var(--disputed)"></i>needs review</span>
+        <span><i style="background:var(--human)"></i>accepted after your click</span>
+        <span><i style="background:var(--held)"></i>held</span>
+        <span><i style="background:var(--cand)"></i>SAM 3 re-track</span>
+        <span><i style="background:var(--ra2)"></i>RA2 (second opinion)</span>
+      </div>
+    </div>
+    <div class="card">
+      <h2 id="vtitle">Zoom</h2>
+      <div class="controls" style="margin:0 0 10px">
+        <button id="prev">◀ Prev<kbd>←</kbd></button>
+        <button id="next">Next ▶<kbd>→</kbd></button>
+        <button id="accept" class="accept" disabled>Accept re-track<kbd>A</kbd></button>
+        <button id="hold" class="hold">Hold window<kbd>H</kbd></button>
+        <button id="undo">Undo<kbd>U</kbd></button>
+        <button id="nspan">Next span<kbd>N</kbd></button>
+        <span class="status" id="status"></span>
+      </div>
+      <div class="zoom" id="zoom"><img id="zimg" alt="zoomed film"><svg id="zsvg" preserveAspectRatio="none"></svg></div>
+      <div class="times num"><span id="t0"></span><span id="t1"></span></div>
+      <div class="hint">Click on the correct trace where the red part starts. SAM 3 tracks the line from your point to the right; accept it if it follows the stroke.</div>
+    </div>
+  </section>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+const C = { 1: 'var(--auto)', 2: 'var(--disputed)', 3: 'var(--human)', 4: 'var(--held)' };
+let ST = null, cur = null, view = null, cand = null, busy = false, nav = 0;   // nav: newest navigation wins
+
+async function api(path, body) {
+  const r = await fetch(path, body ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : {});
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || r.status);
+  return j;
+}
+function say(msg, err) { const s = $('status'); s.textContent = msg; s.className = 'status' + (err ? ' err' : ''); }
+const pct = v => v == null ? '–' : (100 * v).toFixed(v > 0 && v < 0.01 ? 1 : 0) + '%';
+const hhmmss = u => u ? u.slice(11, 19) : '';
+
+async function loadState() {
+  ST = await api('/api/state');
+  const s = ST.station || {}, m = ST.main_event, c = ST.component || {};
+  $('meta').innerHTML = `<b>${s.code || ST.chip}</b> ${s.place ? '· ' + s.place : ''} · ${c.name || ''} · ON <b class="num">${(ST.on_utc || '').replace('T', ' ').slice(0, 16)} UTC</b>`
+    + (m ? ` · main event <b>M${m.mag} ${m.place || ''}</b> <span class="num">(${m.dist_deg}°), TauP P ${hhmmss(m.P_utc)} on line ${m.P_line}</span>` : '');
+  const t = ST.totals;
+  $('totals').innerHTML = `auto ${pct(t.auto)} · after review ${pct(t.human)} · held ${pct(t.held)} · open ${pct(t.disputed)} · ${ST.decisions} decisions`;
+  renderLines();
+  $('ovimg').src = '/api/overview.jpg?t=' + Date.now();
+}
+
+function renderLines() {
+  const m = ST.main_event;
+  $('lines').innerHTML = ST.lines.filter(l => l.record_cols > 0).map(l => {
+    const bar = [['auto', 'var(--auto)'], ['human', 'var(--human)'], ['held', 'var(--held)'], ['disputed', 'var(--disputed)']]
+      .map(([k, col]) => `<span style="width:${100 * (l[k] || 0)}%;background:${col}"></span>`).join('');
+    const isCur = cur && cur.line === l.line;
+    const spans = l.spans.map((sp, i) => `<div class="span num${isCur && cur.x0 < sp.x[1] && cur.x1 > sp.x[0] ? ' cur' : ''}" data-line="${l.line}" data-x="${sp.x[0]}">▸ ${hhmmss(sp.utc[0])}–${hhmmss(sp.utc[1])} · ${sp.x[1] - sp.x[0]} cols</div>`).join('');
+    return `<div class="line${isCur ? ' cur' : ''}" data-line="${l.line}">
+      <div class="row"><span>Line ${l.line}${m && m.P_line === l.line ? '<span class="quake">P (TauP)</span>' : ''}</span><span class="num" style="color:var(--muted)">${pct(l.auto + (l.human || 0))} ok</span></div>
+      <div class="bar">${bar}</div>${spans}</div>`;
+  }).join('');
+}
+$('lines').addEventListener('click', e => {
+  if (busy) return;
+  const sp = e.target.closest('.span'), ln = e.target.closest('.line');
+  if (sp) openWindow(+sp.dataset.line, +sp.dataset.x - 40);
+  else if (ln) { const l = ST.lines[+ln.dataset.line]; openWindow(l.line, l.spans.length ? l.spans[0].x[0] - 40 : ST.x0); }
+});
+
+function fit(el, aspect, maxH) {                           // width that keeps the box within maxH of the window height
+  const avail = el.parentElement.clientWidth;
+  el.style.width = Math.min(avail, maxH * window.innerHeight * aspect) + 'px';
+}
+function drawOvBox() {
+  const img = $('ovimg'), box = $('ovbox');
+  if (img.naturalWidth) fit($('ov'), img.naturalWidth / img.naturalHeight, 0.22);
+  if (!cur || !img.naturalWidth) { box.style.display = 'none'; return; }
+  const f = img.clientWidth / ST.width, S = ST.S, b = ST.bases[cur.line];
+  Object.assign(box.style, { display: 'block', left: cur.x0 * f + 'px', width: (cur.x1 - cur.x0) * f + 'px',
+    top: (b - 3.5 * S) * f + 'px', height: 7 * S * f + 'px' });
+}
+$('ovimg').addEventListener('load', drawOvBox);
+window.addEventListener('resize', () => { drawOvBox(); if (view) drawView(); });
+$('ov').addEventListener('click', e => {
+  if (busy) return;
+  const r = $('ovimg').getBoundingClientRect(), f = r.width / ST.width;
+  const x = (e.clientX - r.left) / f, y = (e.clientY - r.top) / f;
+  let k = 0, best = 1e9;
+  ST.bases.forEach((b, i) => { if (Math.abs(b - y) < best) { best = Math.abs(b - y); k = i; } });
+  openWindow(k, x - ST.view_w / 2);
+});
+
+async function openWindow(line, x0) {
+  const my = ++nav;
+  x0 = Math.max(ST.x0, Math.min(Math.round(x0), ST.x1 - ST.view_w));
+  const next = { line, x0, x1: Math.min(ST.x1, x0 + ST.view_w) };
+  cand = null; $('accept').disabled = true;
+  const v = await api(`/api/view?line=${line}&x0=${next.x0}&x1=${next.x1}`);
+  if (my !== nav) return;                                   // a newer navigation already replaced this one
+  cur = next; view = v;
+  $('zimg').src = 'data:image/png;base64,' + view.png;
+  $('vtitle').textContent = `Line ${line} · columns ${cur.x0}–${cur.x1}`;
+  $('t0').textContent = (view.utc[0] || '').replace('T', ' ') + ' UTC';
+  $('t1').textContent = (view.utc[1] || '').replace('T', ' ') + ' UTC';
+  drawView(); renderLines(); drawOvBox();
+}
+
+function poly(xs, ys, color, width, dash) {
+  let out = '', pts = [];
+  const flush = () => { if (pts.length > 1) out += `<polyline points="${pts.join(' ')}" fill="none" stroke="${color}" stroke-width="${width}" ${dash ? `stroke-dasharray="${dash}"` : ''} vector-effect="non-scaling-stroke" stroke-linejoin="round"/>`; pts = []; };
+  xs.forEach((x, i) => { if (ys[i] == null) flush(); else pts.push(`${x + 0.5},${ys[i]}`); });
+  flush();
+  return out;
+}
+function drawView() {
+  const [a, b] = view.x, [r0, r1] = view.rows, svg = $('zsvg');
+  fit($('zoom'), (b - a) / (r1 - r0), 0.52);
+  const u = (b - a) / $('zoom').clientWidth;                 // user units per screen pixel
+  svg.setAttribute('viewBox', `${a} ${r0} ${b - a} ${r1 - r0}`);
+  let g = '';
+  const xs = view.sam3.map((_, i) => a + i);
+  g += poly(xs, view.ra2, 'var(--ra2)', 1.4, '5 4');
+  let i = 0;
+  while (i < xs.length) {                                   // SAM 3 path, one polyline per status run
+    let j = i; while (j < xs.length && view.status[j] === view.status[i]) j++;
+    if (view.status[i]) g += poly(xs.slice(i, Math.min(j + 1, xs.length)), view.sam3.slice(i, Math.min(j + 1, xs.length)), C[view.status[i]], 2.4);
+    i = j;
+  }
+  const m = ST.main_event;
+  if (m && m.P_line === view.line && m.P_x >= a && m.P_x < b)
+    g += `<line x1="${m.P_x}" x2="${m.P_x}" y1="${r0}" y2="${r1}" stroke="var(--human)" stroke-width="1.5" stroke-dasharray="6 5" vector-effect="non-scaling-stroke"/>`
+       + `<text x="${m.P_x + 4 * u}" y="${r0 + 14 * u}" fill="#9a6b00" font-size="${12 * u}" font-weight="600" font-family="system-ui">P (TauP)</text>`;
+  if (cand) {
+    const cx = cand.path.map((_, k) => cand.x + k);
+    g += poly(cx, cand.path, 'var(--cand)', 3.2);
+    g += `<circle cx="${cand.x + 0.5}" cy="${cand.y_snapped}" r="${6 * u}" fill="none" stroke="var(--cand)" stroke-width="2" vector-effect="non-scaling-stroke"/>`;
+    g += `<line x1="${b}" x2="${b}" y1="${r0}" y2="${r1}" stroke="var(--cand)" stroke-width="1" stroke-dasharray="3 4" vector-effect="non-scaling-stroke"/>`;
+  }
+  svg.innerHTML = g;
+}
+
+$('zsvg').addEventListener('click', async e => {
+  if (!view || busy) return;
+  const svg = $('zsvg'), p = svg.createSVGPoint();
+  p.x = e.clientX; p.y = e.clientY;
+  const q = p.matrixTransform(svg.getScreenCTM().inverse());
+  const my = nav, at = { line: cur.line, x0: cur.x0, x1: cur.x1 };
+  const rec = !!ST.model.recorded_run;
+  busy = true; say(rec ? 'looking up the stored re-track of this window…' : 'SAM 3 is re-tracking from your click…');
+  try {
+    const c = await api('/api/retrack', { line: at.line, x: q.x, y: q.y, x_end: at.x1 + ST.margin });
+    if (my !== nav) { busy = false; return say('you moved on: that re-track was dropped'); }
+    cand = { ...c, wline: at.line, wx0: at.x0, wx1: at.x1 };
+    drawView();
+    const ok = cand.x < at.x1;
+    $('accept').disabled = !ok;
+    const dev = cand.max_dev_from_accepted_S;
+    const head = rec ? `RECORDED: SAM 3 took ${cand.secs} s on the stored click at column ${cand.x}, not on your click` : `SAM 3 re-tracked from your click in ${cand.secs} s`;
+    if (dev == null) say(head);
+    else if (dev <= 0.25) say(`${head} · agrees with the auto-accepted columns here (≤ ${dev.toFixed(2)} line spacing)`);
+    else say(`${head} · check it: it leaves the auto-accepted columns here by up to ${dev.toFixed(1)} line spacings`, true);
+  } catch (err) { say(err.message, true); }
+  busy = false;
+});
+
+async function accept() {
+  if (!cand || busy) return;
+  if (cand.wline !== cur.line || cand.wx0 !== cur.x0) { cand = null; $('accept').disabled = true; return say('that re-track belongs to another window: click again', true); }
+  const a = cand.x, b = cand.wx1;
+  if (b <= a) return say('nothing to accept in this window', true);
+  busy = true;
+  try {
+    const d = await api('/api/decide', { line: cand.wline, x: [a, b], action: 'accept', cand: cand.cand });
+    say(`accepted ${d.disputed_cols} reviewed columns (${hhmmss(d.utc[0])}–${hhmmss(d.utc[1])} UTC)`);
+    await loadState(); await openWindow(cur.line, cur.x0);
+  } catch (err) { say(err.message, true); }
+  busy = false;
+}
+async function hold() {
+  if (!cur || busy) return;
+  busy = true;
+  try {
+    const d = await api('/api/decide', { line: cur.line, x: [cur.x0, cur.x1], action: 'hold' });
+    say(`held ${d.disputed_cols} columns`);
+    await loadState(); await openWindow(cur.line, cur.x0);
+  } catch (err) { say(err.message, true); }
+  busy = false;
+}
+async function undo() {
+  if (busy) return;
+  busy = true;
+  try { await api('/api/undo', {}); say('undone'); await loadState(); if (cur) await openWindow(cur.line, cur.x0); }
+  catch (err) { say(err.message, true); }
+  busy = false;
+}
+function step(dir) { if (cur && !busy) openWindow(cur.line, cur.x0 + dir * (ST.view_w - 60)); }
+function nextSpan() {                                       // the next open columns after this window, then later lines
+  if (busy) return;
+  const all = ST.lines.flatMap(l => l.spans.map(s => ({ line: l.line, x: s.x[0], end: s.x[1] })));
+  const after = all.find(s => !cur || s.line > cur.line || (s.line === cur.line && s.end > cur.x1));
+  const t = after || all[0];
+  if (!t) return say('no open spans left');
+  const x = cur && t.line === cur.line && t.x < cur.x1 ? cur.x1 : t.x;
+  openWindow(t.line, x - 40);
+}
+$('accept').onclick = accept; $('hold').onclick = hold; $('undo').onclick = undo;
+$('prev').onclick = () => step(-1); $('next').onclick = () => step(1); $('nspan').onclick = nextSpan;
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+  const k = e.key.toLowerCase();
+  if (k === 'arrowleft') step(-1); else if (k === 'arrowright') step(1);
+  else if (k === 'a') accept(); else if (k === 'h') hold(); else if (k === 'u') undo(); else if (k === 'n') nextSpan();
+  else if (k === 'escape') { cand = null; $('accept').disabled = true; if (view) drawView(); }
+});
+
+(async () => {
+  try {
+    await loadState();
+    const m = ST.main_event;
+    const l = m && m.P_line != null ? ST.lines[m.P_line] : ST.lines.find(x => x.spans.length);
+    if (l) await openWindow(l.line, l.spans.length ? l.spans[0].x[0] - 40 : ST.x0);
+    const rr = ST.model.recorded_run;
+    if (rr) { $('recorded').hidden = false; say(`recorded run: ${rr.n} stored re-tracks, made ${rr.made} on ${rr.device}`); }
+    else say(ST.model.ready ? `SAM 3 film2 ready (checkpoint ${ST.model.ckpt_sha256}…)` : 'loading SAM 3…');
+  } catch (err) { say(err.message, true); }
+})();
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-"""Active-line guard: find the large-amplitude line without GT and trust proposer A on it (docs/RESULTS.md).
+"""Active-line guard: find the large-amplitude line without GT and trust proposer A on it (research/21).
 
 usage: python -I active_guard.py <train_bench> <train_cache> <train_event_predictions.json> <dev2_bench> <dev2_cache> <out.json>
 

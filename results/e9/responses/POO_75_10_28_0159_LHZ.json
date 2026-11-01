@@ -1,0 +1,39 @@
+{
+ "chip": "POO_75_10_28_0159_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"POO\",\n  \"component\": \"Z\",\n  \"period\": null,\n  \"on_date\": \"1975-10-28\",\n  \"on_time\": \"0159\",\n  \"off_date\": \"1975-10-29\",\n  \"off_time\": \"0151\",\n  \"magnification\": 1500,\n  \"border_digits\": \"1028750159008704\",\n  \"notes\": \"Station label shows MAG 1500, calibration at 0137 GMT and 0140 GMT with no remarks.\"\n}",
+ "reasoning_chars": 2388,
+ "parsed": {
+  "station": "POO",
+  "component": "Z",
+  "period": null,
+  "on_date": "1975-10-28",
+  "on_time": "0159",
+  "off_date": "1975-10-29",
+  "off_time": "0151",
+  "magnification": 1500,
+  "border_digits": "1028750159008704",
+  "notes": "Station label shows MAG 1500, calibration at 0137 GMT and 0140 GMT with no remarks."
+ },
+ "usage": {
+  "completion_tokens": 880,
+  "prompt_tokens": 4074,
+  "total_tokens": 4954,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4025,
+  "prompt_ms": 6210.587,
+  "prompt_per_token_ms": 1.5430029813664596,
+  "prompt_per_second": 648.0868877611729,
+  "predicted_n": 880,
+  "predicted_ms": 75142.955,
+  "predicted_per_token_ms": 85.48686575654153,
+  "predicted_per_second": 11.697703397477515
+ },
+ "secs": 81.5,
+ "error": null
+}

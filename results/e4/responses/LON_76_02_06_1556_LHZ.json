@@ -1,0 +1,30 @@
+{
+ "chip": "LON_76_02_06_1556_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": null, \"period\": null, \"on_date\": \"1976-02-06\", \"on_time\": \"1556\", \"off_date\": \"1976-02-07\", \"off_time\": null, \"magnification\": null, \"border_digits\": \"020676 1556 0058 04\", \"notes\": \"Large dark stains obscure traces on right side.\"}",
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1976-02-06",
+  "on_time": "1556",
+  "off_date": "1976-02-07",
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "020676 1556 0058 04",
+  "notes": "Large dark stains obscure traces on right side."
+ },
+ "usage": {
+  "input_tokens": 4283,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 6377,
+  "output_tokens_details": {
+   "reasoning_tokens": 6278
+  },
+  "total_tokens": 10660
+ },
+ "secs": 69.1,
+ "error": null
+}

@@ -1,0 +1,30 @@
+{
+ "chip": "COR_71_11_06_0129_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"GSC\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1971-11-06\", \"on_time\": \"0129\", \"off_date\": \"1971-11-07\", \"off_time\": \"0128\", \"magnification\": 1500, \"border_digits\": \"110671 0129 0030 04\", \"notes\": \"Large long-period surface-wave train is visible on the lower traces.\"}",
+ "parsed": {
+  "station": "GSC",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1971-11-06",
+  "on_time": "0129",
+  "off_date": "1971-11-07",
+  "off_time": "0128",
+  "magnification": 1500,
+  "border_digits": "110671 0129 0030 04",
+  "notes": "Large long-period surface-wave train is visible on the lower traces."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 4549,
+  "output_tokens_details": {
+   "reasoning_tokens": 4438
+  },
+  "total_tokens": 8801
+ },
+ "secs": 53.2,
+ "error": null
+}

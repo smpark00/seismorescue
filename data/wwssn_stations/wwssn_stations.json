@@ -1,0 +1,1994 @@
+{
+ "what": "WWSSN station number (film border group 3) -> station code, coordinates; component code (group 4)",
+ "source": "IRIS Seismo-Archives earthquake seismogram pages (USGS/ICSU WWSSN scanning project, 2004), Wayback Machine copies; parsed by scripts/build_station_table.py",
+ "made": "2026-10-29 10:44:55 KST",
+ "pages": [
+  {
+   "page": "1962qazvin",
+   "url": "http://www.iris.edu/seismo/quakes/1962qazvin/pdf/",
+   "wayback": "https://web.archive.org/web/20060908043227id_/http://www.iris.edu/seismo/quakes/1962qazvin/pdf/",
+   "stations": 4,
+   "seismogram_links": 6,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1963skopje",
+   "url": "http://www.iris.edu/seismo/quakes/1963skopje/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042402id_/http://www.iris.edu/seismo/quakes/1963skopje/pdf/",
+   "stations": 21,
+   "seismogram_links": 60,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1964alaska",
+   "url": "http://www.iris.edu/seismo/quakes/1964alaska/pdf/",
+   "wayback": "https://web.archive.org/web/20060908075529id_/http://www.iris.edu/seismo/quakes/1964alaska/pdf/",
+   "stations": 23,
+   "seismogram_links": 66,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1964niigata",
+   "url": "http://www.iris.edu/seismo/quakes/1964niigata/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042415id_/http://www.iris.edu/seismo/quakes/1964niigata/pdf/",
+   "stations": 30,
+   "seismogram_links": 83,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1965puget_sound",
+   "url": "http://www.iris.edu/seismo/quakes/1965puget_sound/pdf/",
+   "wayback": "https://web.archive.org/web/20060908043233id_/http://www.iris.edu/seismo/quakes/1965puget_sound/pdf/",
+   "stations": 26,
+   "seismogram_links": 74,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1966gisborne",
+   "url": "http://www.iris.edu/seismo/quakes/1966gisborne/pdf/",
+   "wayback": "https://web.archive.org/web/20060908073833id_/http://www.iris.edu/seismo/quakes/1966gisborne/pdf/",
+   "stations": 29,
+   "seismogram_links": 87,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1966parkfield",
+   "url": "http://www.iris.edu/seismo/quakes/1966parkfield/pdf/",
+   "wayback": "https://web.archive.org/web/20060908043854id_/http://www.iris.edu/seismo/quakes/1966parkfield/pdf/",
+   "stations": 90,
+   "seismogram_links": 261,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1966uganda-zaire",
+   "url": "http://www.iris.edu/seismo/quakes/1966uganda-zaire/pdf/",
+   "wayback": "https://web.archive.org/web/20060908073813id_/http://www.iris.edu/seismo/quakes/1966uganda-zaire/pdf/",
+   "stations": 36,
+   "seismogram_links": 100,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1966varto",
+   "url": "http://www.iris.edu/seismo/quakes/1966varto/pdf/",
+   "wayback": "https://web.archive.org/web/20060908073709id_/http://www.iris.edu/seismo/quakes/1966varto/pdf/",
+   "stations": 35,
+   "seismogram_links": 110,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1967caracas",
+   "url": "http://www.iris.edu/seismo/quakes/1967caracas/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042405id_/http://www.iris.edu/seismo/quakes/1967caracas/pdf/",
+   "stations": 28,
+   "seismogram_links": 81,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1967huila",
+   "url": "http://www.iris.edu/seismo/quakes/1967huila/pdf/",
+   "wayback": "https://web.archive.org/web/20060908043214id_/http://www.iris.edu/seismo/quakes/1967huila/pdf/",
+   "stations": 33,
+   "seismogram_links": 104,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1967koyna",
+   "url": "http://www.iris.edu/seismo/quakes/1967koyna/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042322id_/http://www.iris.edu/seismo/quakes/1967koyna/pdf/",
+   "stations": 31,
+   "seismogram_links": 90,
+   "unparsed_headers": 1
+  },
+  {
+   "page": "1968dasht-e-bayaz",
+   "url": "http://www.iris.edu/seismo/quakes/1968dasht-e-bayaz/pdf/",
+   "wayback": "https://web.archive.org/web/20050729090343id_/http://www.iris.edu/seismo/quakes/1968dasht-e-bayaz/pdf/",
+   "stations": 34,
+   "seismogram_links": 102,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1968inangahua",
+   "url": "http://www.iris.edu/seismo/quakes/1968inangahua/pdf/",
+   "wayback": "https://web.archive.org/web/20060908054710id_/http://www.iris.edu/seismo/quakes/1968inangahua/pdf/",
+   "stations": 34,
+   "seismogram_links": 99,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1968sanmartin",
+   "url": "http://www.iris.edu/seismo/quakes/1968sanmartin/pdf/",
+   "wayback": "https://web.archive.org/web/20060908044239id_/http://www.iris.edu/seismo/quakes/1968sanmartin/pdf/",
+   "stations": 9,
+   "seismogram_links": 26,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1968tokachi-oki",
+   "url": "http://www.iris.edu/seismo/quakes/1968tokachi-oki/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042213id_/http://www.iris.edu/seismo/quakes/1968tokachi-oki/pdf/",
+   "stations": 34,
+   "seismogram_links": 109,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1968valle_del_belice",
+   "url": "http://www.iris.edu/seismo/quakes/1968valle_del_belice/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042353id_/http://www.iris.edu/seismo/quakes/1968valle_del_belice/pdf/",
+   "stations": 34,
+   "seismogram_links": 96,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1969sardo",
+   "url": "http://www.iris.edu/seismo/quakes/1969sardo/pdf/",
+   "wayback": "https://web.archive.org/web/20060908073843id_/http://www.iris.edu/seismo/quakes/1969sardo/pdf/",
+   "stations": 30,
+   "seismogram_links": 83,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1970dagestan",
+   "url": "http://www.iris.edu/seismo/quakes/1970dagestan/pdf/",
+   "wayback": "https://web.archive.org/web/20060908073658id_/http://www.iris.edu/seismo/quakes/1970dagestan/pdf/",
+   "stations": 34,
+   "seismogram_links": 96,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1970peru-ecudador",
+   "url": "http://www.iris.edu/seismo/quakes/1970peru-ecudador/pdf/",
+   "wayback": "https://web.archive.org/web/20060908043221id_/http://www.iris.edu/seismo/quakes/1970peru-ecudador/pdf/",
+   "stations": 31,
+   "seismogram_links": 92,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1970peru",
+   "url": "http://www.iris.edu/seismo/quakes/1970peru/pdf/",
+   "wayback": "https://web.archive.org/web/20060908053954id_/http://www.iris.edu/seismo/quakes/1970peru/pdf/",
+   "stations": 30,
+   "seismogram_links": 85,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1971sanfernando",
+   "url": "http://www.iris.edu/seismo/quakes/1971sanfernando/pdf/",
+   "wayback": "https://web.archive.org/web/20060908042346id_/http://www.iris.edu/seismo/quakes/1971sanfernando/pdf/",
+   "stations": 28,
+   "seismogram_links": 82,
+   "unparsed_headers": 0
+  },
+  {
+   "page": "1972managua",
+   "url": "http://www.iris.edu/seismo/quakes/1972managua/pdf/",
+   "wayback": "https://web.archive.org/web/20060908074017id_/http://www.iris.edu/seismo/quakes/1972managua/pdf/",
+   "stations": 35,
+   "seismogram_links": 103,
+   "unparsed_headers": 0
+  }
+ ],
+ "component_codes": {
+  "04": {
+   "LPZ": 719,
+   "LPE": 1
+  },
+  "05": {
+   "LPN": 678,
+   "LPE": 1,
+   "LPZ": 1
+  },
+  "06": {
+   "LPE": 694,
+   "LPN": 1
+  }
+ },
+ "stations": {
+  "0001": {
+   "code": "AAE",
+   "lat": 9.03,
+   "lon": 38.77,
+   "elev_m": 2442.0,
+   "place": "Addis Ababa, Ethiopia",
+   "pages": [
+    "1963skopje",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0002": {
+   "code": "AAM",
+   "lat": 42.3,
+   "lon": -83.66,
+   "elev_m": 172.0,
+   "place": "Ann Arbor, Michigan (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0004": {
+   "code": "ADE",
+   "lat": -34.97,
+   "lon": 138.71,
+   "elev_m": 655.0,
+   "place": "Adelaide, Australia",
+   "pages": [
+    "1966parkfield",
+    "1968dasht-e-bayaz"
+   ],
+   "coord_variants": []
+  },
+  "0005": {
+   "code": "AFI",
+   "lat": -13.91,
+   "lon": -171.78,
+   "elev_m": 706.0,
+   "place": "Apia, Western Samoa",
+   "pages": [
+    "1963skopje",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0006": {
+   "code": "AKU",
+   "lat": 65.69,
+   "lon": -18.11,
+   "elev_m": 24.0,
+   "place": "Akureyri, Scotland",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0007": {
+   "code": "ALQ",
+   "lat": 34.94,
+   "lon": -106.46,
+   "elev_m": 1849.0,
+   "place": "Albuquerque, New Mexico (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0009": {
+   "code": "ANT",
+   "lat": -23.7,
+   "lon": -70.42,
+   "elev_m": 80.0,
+   "place": "Antofagusta, Chile",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando"
+   ],
+   "coord_variants": []
+  },
+  "0011": {
+   "code": "ARE",
+   "lat": -16.46,
+   "lon": -71.49,
+   "elev_m": 2452.0,
+   "place": "Arequipa, Peru",
+   "pages": [
+    "1962qazvin",
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0012": {
+   "code": "ATL",
+   "lat": 33.43,
+   "lon": -84.34,
+   "elev_m": 272.0,
+   "place": "Atlanta, Georgia (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0013": {
+   "code": "ATU",
+   "lat": 37.97,
+   "lon": 23.72,
+   "elev_m": 95.0,
+   "place": "Athens, Greece",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0014": {
+   "code": "BAG",
+   "lat": 16.41,
+   "lon": 120.58,
+   "elev_m": 1507.0,
+   "place": "Baguio, Philippines",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0015": {
+   "code": "BEC",
+   "lat": 32.38,
+   "lon": -64.68,
+   "elev_m": 41.0,
+   "place": "Bermuda",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0017": {
+   "code": "BHP",
+   "lat": 8.96,
+   "lon": -79.56,
+   "elev_m": 36.0,
+   "place": "Balboa Heights, Panama",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0018": {
+   "code": "BKS",
+   "lat": 37.88,
+   "lon": -122.24,
+   "elev_m": 276.0,
+   "place": "Berkeley, California (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0019": {
+   "code": "BLA",
+   "lat": 37.21,
+   "lon": -80.42,
+   "elev_m": 634.0,
+   "place": "Blacksburg, Virginia (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0021": {
+   "code": "BOG",
+   "lat": 4.62,
+   "lon": -74.07,
+   "elev_m": 2658.0,
+   "place": "Bogota, Columbia",
+   "pages": [
+    "1962qazvin",
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0023": {
+   "code": "BUL",
+   "lat": -20.14,
+   "lon": 28.61,
+   "elev_m": 1341.0,
+   "place": "Bulawayo, Zimbabwe",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0024": {
+   "code": "CAR",
+   "lat": 10.51,
+   "lon": -66.93,
+   "elev_m": 1035.0,
+   "place": "Caracas, Venezuela",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0026": {
+   "code": "CHG",
+   "lat": 18.79,
+   "lon": 98.98,
+   "elev_m": 416.0,
+   "place": "Chiengmai, Thailand",
+   "pages": [
+    "1964niigata",
+    "1965puget_sound",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0028": {
+   "code": "COL",
+   "lat": 64.9,
+   "lon": -147.79,
+   "elev_m": 320.0,
+   "place": "College, Alaska (USA)",
+   "pages": [
+    "1964niigata",
+    "1965puget_sound",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0029": {
+   "code": "COP",
+   "lat": 55.68,
+   "lon": 12.43,
+   "elev_m": 13.0,
+   "place": "Copenhagen, Denmark",
+   "pages": [
+    "1966parkfield",
+    "1968inangahua"
+   ],
+   "coord_variants": []
+  },
+  "0030": {
+   "code": "COR",
+   "lat": 44.59,
+   "lon": -123.3,
+   "elev_m": 121.0,
+   "place": "Corvallis, Oregon",
+   "pages": [
+    "1962qazvin",
+    "1963skopje",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0031": {
+   "code": "CTA",
+   "lat": -20.09,
+   "lon": 146.25,
+   "elev_m": 358.0,
+   "place": "Charters Towers, Australia",
+   "pages": [
+    "1963skopje",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0033": {
+   "code": "DAV",
+   "lat": 7.09,
+   "lon": 125.57,
+   "elev_m": 85.0,
+   "place": "Davao, Philippines",
+   "pages": [
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0035": {
+   "code": "JCT",
+   "lat": 30.48,
+   "lon": -99.8,
+   "elev_m": 591.0,
+   "place": "Junction, Texas (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0036": {
+   "code": "DUG",
+   "lat": 40.19,
+   "lon": -112.81,
+   "elev_m": 1477.0,
+   "place": "Dugway, Utah",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0038": {
+   "code": "ESK",
+   "lat": 55.32,
+   "lon": -3.2,
+   "elev_m": 242.0,
+   "place": "Eskdalemuir, Scotland",
+   "pages": [
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0040": {
+   "code": "GDH",
+   "lat": 69.25,
+   "lon": -53.53,
+   "elev_m": 23.0,
+   "place": "Godhavn, Greenland",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0042": {
+   "code": "GIE",
+   "lat": -0.73,
+   "lon": -90.3,
+   "elev_m": 30.0,
+   "place": "Galapagos Islands, Ecuador",
+   "pages": [
+    "1964niigata",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1968dasht-e-bayaz",
+    "1970dagestan",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0043": {
+   "code": "GOL",
+   "lat": 39.7,
+   "lon": -105.37,
+   "elev_m": 2359.0,
+   "place": "Golden, Colorado (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0044": {
+   "code": "GUA",
+   "lat": 13.54,
+   "lon": 144.91,
+   "elev_m": 230.0,
+   "place": "Guam, Marianas Islands",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1968dasht-e-bayaz",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0048": {
+   "code": "HNR",
+   "lat": -9.43,
+   "lon": 159.95,
+   "elev_m": 72.0,
+   "place": "Honiara, Solomon Islands",
+   "pages": [
+    "1962qazvin",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0050": {
+   "code": "IST",
+   "lat": 41.05,
+   "lon": 29.0,
+   "elev_m": 50.0,
+   "place": "Istanbul, Turkey",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0051": {
+   "code": "JER",
+   "lat": 31.77,
+   "lon": 35.2,
+   "elev_m": 770.0,
+   "place": "Jerusalem, Israel",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0052": {
+   "code": "KEV",
+   "lat": 69.76,
+   "lon": 27.01,
+   "elev_m": 81.0,
+   "place": "Kevo, Finland",
+   "pages": [
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0053": {
+   "code": "KIP",
+   "lat": 21.42,
+   "lon": -158.01,
+   "elev_m": 73.0,
+   "place": "Kipapa, Hawaii",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0054": {
+   "code": "KOD",
+   "lat": 10.23,
+   "lon": 77.47,
+   "elev_m": 2345.0,
+   "place": "Kodaikanal, India",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0055": {
+   "code": "KON",
+   "lat": 59.65,
+   "lon": 9.6,
+   "elev_m": 216.0,
+   "place": "Kongsberg, Norway",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0056": {
+   "code": "LAH",
+   "lat": 31.55,
+   "lon": 74.33,
+   "elev_m": 210.0,
+   "place": "Lahore, Pakistan",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0058": {
+   "code": "LON",
+   "lat": 46.75,
+   "lon": -121.81,
+   "elev_m": 854.0,
+   "place": "Longmire, Washington (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0059": {
+   "code": "LPA",
+   "lat": -34.91,
+   "lon": -57.93,
+   "elev_m": 14.0,
+   "place": "La Plata, Argentina",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0060": {
+   "code": "LPB",
+   "lat": -16.53,
+   "lon": -68.1,
+   "elev_m": 3292.0,
+   "place": "La Paz, Bolivia",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0061": {
+   "code": "LPS",
+   "lat": 14.29,
+   "lon": -89.16,
+   "elev_m": 1000.0,
+   "place": "La Palma, El Salvador",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0062": {
+   "code": "SDB",
+   "lat": -14.93,
+   "lon": 13.57,
+   "elev_m": 1781.0,
+   "place": "Sa Da Bandeira, Angola",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0063": {
+   "code": "LUB",
+   "lat": 33.58,
+   "lon": -101.87,
+   "elev_m": 979.0,
+   "place": "Lubbock, Texas (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0064": {
+   "code": "MAT",
+   "lat": 36.54,
+   "lon": 138.21,
+   "elev_m": 422.0,
+   "place": "Matsushiro, Japan",
+   "pages": [
+    "1966gisborne",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0065": {
+   "code": "MAL",
+   "lat": 36.73,
+   "lon": -4.41,
+   "elev_m": 60.0,
+   "place": "Malaga, Spain",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0066": {
+   "code": "MAN",
+   "lat": 14.66,
+   "lon": 121.08,
+   "elev_m": 70.0,
+   "place": "Manila, Philippines",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0068": {
+   "code": "SNG",
+   "lat": 7.18,
+   "lon": 100.62,
+   "elev_m": 4.0,
+   "place": "Songkhla, Thailand",
+   "pages": [
+    "1966parkfield",
+    "1966varto"
+   ],
+   "coord_variants": []
+  },
+  "0070": {
+   "code": "KBS",
+   "lat": 78.93,
+   "lon": 11.94,
+   "elev_m": 74.0,
+   "place": "Kingsbay, Spitsbergen",
+   "pages": [
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0071": {
+   "code": "MSH",
+   "lat": 36.31,
+   "lon": 59.59,
+   "elev_m": 987.0,
+   "place": "Mashad, Iran",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0072": {
+   "code": "MUN",
+   "lat": -31.98,
+   "lon": 116.21,
+   "elev_m": 253.0,
+   "place": "Mundaring, W. Australia",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0073": {
+   "code": "NAT",
+   "lat": -5.87,
+   "lon": -35.28,
+   "elev_m": 50.0,
+   "place": "Natal, Brazil",
+   "pages": [
+    "1966gisborne",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0074": {
+   "code": "NAI",
+   "lat": -1.27,
+   "lon": 36.8,
+   "elev_m": 1692.0,
+   "place": "Nairobi, Kenya",
+   "pages": [
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0075": {
+   "code": "NDI",
+   "lat": 28.68,
+   "lon": 77.22,
+   "elev_m": 230.0,
+   "place": "New Delhi, India",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0078": {
+   "code": "NNA",
+   "lat": -11.99,
+   "lon": -76.84,
+   "elev_m": 575.0,
+   "place": "Nana, Peru",
+   "pages": [
+    "1964alaska",
+    "1964niigata",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0079": {
+   "code": "NOR",
+   "lat": 81.6,
+   "lon": -16.68,
+   "elev_m": 36.0,
+   "place": "Nord, Greenland",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0081": {
+   "code": "NUR",
+   "lat": 60.51,
+   "lon": 24.65,
+   "elev_m": 102.0,
+   "place": "Nurmijarvi, Finland",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0082": {
+   "code": "OGD",
+   "lat": 41.09,
+   "lon": -74.6,
+   "elev_m": -367.0,
+   "place": "Ogdensburg, New Jersey (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0083": {
+   "code": "OXF",
+   "lat": 34.51,
+   "lon": -89.41,
+   "elev_m": 101.0,
+   "place": "Oxford, Mississippi (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0084": {
+   "code": "PDA",
+   "lat": 37.75,
+   "lon": -25.66,
+   "elev_m": 35.0,
+   "place": "Ponta Delgada, Azores",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0085": {
+   "code": "GSC",
+   "lat": 35.3,
+   "lon": -116.81,
+   "elev_m": 990.0,
+   "place": "Goldstone, California (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0086": {
+   "code": "PMG",
+   "lat": -9.41,
+   "lon": 147.16,
+   "elev_m": 65.0,
+   "place": "Port Moresby, New Guinea",
+   "pages": [
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0087": {
+   "code": "POO",
+   "lat": 18.53,
+   "lon": 73.85,
+   "elev_m": 560.0,
+   "place": "Poona, India",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0089": {
+   "code": "PRE",
+   "lat": -25.75,
+   "lon": 28.19,
+   "elev_m": 1333.0,
+   "place": "Pretoria, South Africa",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0091": {
+   "code": "PTO",
+   "lat": 41.14,
+   "lon": -8.6,
+   "elev_m": 88.0,
+   "place": "Porto, Portugal",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0092": {
+   "code": "QUE",
+   "lat": 30.19,
+   "lon": 66.95,
+   "elev_m": 1721.0,
+   "place": "Quetta, Pakistan",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0093": {
+   "code": "QUI",
+   "lat": -0.2,
+   "lon": -78.5,
+   "elev_m": 2837.0,
+   "place": "Quito, Ecuador",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0094": {
+   "code": "RAB",
+   "lat": -4.19,
+   "lon": 152.16,
+   "elev_m": 185.0,
+   "place": "Rabaul, Cook Islands",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0095": {
+   "code": "RAR",
+   "lat": -21.21,
+   "lon": -159.77,
+   "elev_m": 28.0,
+   "place": "Rarotonga, Cook Islands",
+   "pages": [
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0096": {
+   "code": "RCD",
+   "lat": 44.08,
+   "lon": -103.21,
+   "elev_m": 995.0,
+   "place": "Rapid City, S. Dakota (USA)",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1965puget_sound",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1970dagestan",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0097": {
+   "code": "RIV",
+   "lat": -33.83,
+   "lon": 151.16,
+   "elev_m": 25.0,
+   "place": "Riverview, Australia",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0098": {
+   "code": "PEL",
+   "lat": -33.14,
+   "lon": -70.69,
+   "elev_m": 690.0,
+   "place": "Peldehue, Chile",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0099": {
+   "code": "SBA",
+   "lat": -77.85,
+   "lon": 166.76,
+   "elev_m": 20.0,
+   "place": "Scott Base, Antarctica",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0100": {
+   "code": "KTG",
+   "lat": 70.42,
+   "lon": -21.98,
+   "elev_m": 6.0,
+   "place": "Kap Tobin, Greenland",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0101": {
+   "code": "SCP",
+   "lat": 40.79,
+   "lon": -77.86,
+   "elev_m": 352.0,
+   "place": "State College, Pennsylvania (USA)",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967huila",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador"
+   ],
+   "coord_variants": []
+  },
+  "0102": {
+   "code": "SEO",
+   "lat": 37.57,
+   "lon": 126.97,
+   "elev_m": 86.0,
+   "place": "Seoul, Korea",
+   "pages": [
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967huila",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1970dagestan",
+    "1970peru"
+   ],
+   "coord_variants": []
+  },
+  "0103": {
+   "code": "SHA",
+   "lat": 30.69,
+   "lon": -88.14,
+   "elev_m": 61.0,
+   "place": "Spring Hill, Alabama (USA)",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0104": {
+   "code": "SHI",
+   "lat": 29.64,
+   "lon": 52.53,
+   "elev_m": 1539.0,
+   "place": "Shiraz, Iran",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0105": {
+   "code": "SHL",
+   "lat": 25.57,
+   "lon": 91.88,
+   "elev_m": 1600.0,
+   "place": "Shillong, India",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0106": {
+   "code": "SJG",
+   "lat": 18.11,
+   "lon": -66.15,
+   "elev_m": 457.0,
+   "place": "San Juan, Puerto Rico",
+   "pages": [
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0108": {
+   "code": "SPA",
+   "lat": -90.0,
+   "lon": 115.0,
+   "elev_m": 2927.0,
+   "place": "South Pole, Antarctica",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1970dagestan",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0109": {
+   "code": "STU",
+   "lat": 48.77,
+   "lon": 9.19,
+   "elev_m": 360.0,
+   "place": "Stuttgart, Germany",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0110": {
+   "code": "TAB",
+   "lat": 38.07,
+   "lon": 46.33,
+   "elev_m": 1430.0,
+   "place": "Tabriz, Iran",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0112": {
+   "code": "ANP",
+   "lat": 25.19,
+   "lon": 121.52,
+   "elev_m": 825.0,
+   "place": "Anpu, Taiwan",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0113": {
+   "code": "TAU",
+   "lat": -42.91,
+   "lon": 147.32,
+   "elev_m": 132.0,
+   "place": "Hobart, Tasmania",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966varto",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0114": {
+   "code": "SHK",
+   "lat": 34.53,
+   "lon": 132.68,
+   "elev_m": 285.0,
+   "place": "Shiraki, Japan",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0115": {
+   "code": "TOL",
+   "lat": 39.88,
+   "lon": -4.05,
+   "elev_m": 480.0,
+   "place": "Toledo, Spain",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0117": {
+   "code": "TRI",
+   "lat": 45.71,
+   "lon": 13.76,
+   "elev_m": 161.0,
+   "place": "Trieste, Italy",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0118": {
+   "code": "TRN",
+   "lat": 10.65,
+   "lon": -61.4,
+   "elev_m": 24.0,
+   "place": "Trinidad, Port of Spain",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0119": {
+   "code": "TUC",
+   "lat": 32.31,
+   "lon": -110.78,
+   "elev_m": 906.0,
+   "place": "Tucson, Arizona (USA)",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0120": {
+   "code": "UME",
+   "lat": 63.81,
+   "lon": 20.24,
+   "elev_m": 16.0,
+   "place": "Umea, Sweden",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0121": {
+   "code": "VAL",
+   "lat": 51.94,
+   "lon": -10.24,
+   "elev_m": 14.0,
+   "place": "Valentia, Ireland",
+   "pages": [
+    "1966parkfield"
+   ],
+   "coord_variants": []
+  },
+  "0122": {
+   "code": "WEL",
+   "lat": -41.29,
+   "lon": 174.77,
+   "elev_m": 122.0,
+   "place": "Wellington, New Zealand",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1966gisborne",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968sanmartin",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0123": {
+   "code": "WES",
+   "lat": 42.38,
+   "lon": -71.32,
+   "elev_m": 60.0,
+   "place": "Weston, Massachusetts",
+   "pages": [
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1969sardo",
+    "1970dagestan",
+    "1970peru",
+    "1970peru-ecudador",
+    "1971sanfernando",
+    "1972managua"
+   ],
+   "coord_variants": []
+  },
+  "0124": {
+   "code": "WIN",
+   "lat": -22.57,
+   "lon": 17.1,
+   "elev_m": 1728.0,
+   "place": "Windhoek, Namibia",
+   "pages": [
+    "1963skopje",
+    "1964alaska",
+    "1964niigata",
+    "1965puget_sound",
+    "1966gisborne",
+    "1966parkfield",
+    "1966uganda-zaire",
+    "1966varto",
+    "1967caracas",
+    "1967huila",
+    "1967koyna",
+    "1968dasht-e-bayaz",
+    "1968inangahua",
+    "1968tokachi-oki",
+    "1968valle_del_belice",
+    "1970dagestan",
+    "1970peru",
+    "1972managua"
+   ],
+   "coord_variants": []
+  }
+ },
+ "problems": [
+  {
+   "kind": "link text vs header",
+   "page": "1965puget_sound",
+   "number": "0028",
+   "link_code": "GUA",
+   "header_code": "COL"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966parkfield",
+   "number": "0083",
+   "link_code": "BOG",
+   "header_code": "OXF"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966parkfield",
+   "number": "0083",
+   "link_code": "BOG",
+   "header_code": "OXF"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966parkfield",
+   "number": "0043",
+   "link_code": "COR",
+   "header_code": "GOL"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966parkfield",
+   "number": "0043",
+   "link_code": "COR",
+   "header_code": "GOL"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966parkfield",
+   "number": "0048",
+   "link_code": "NNA",
+   "header_code": "HNR"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966parkfield",
+   "number": "0048",
+   "link_code": "NNA",
+   "header_code": "HNR"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1966uganda-zaire",
+   "number": "0031",
+   "link_code": "SBA",
+   "header_code": "CTA"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1967huila",
+   "number": "0124",
+   "link_code": "KEV",
+   "header_code": "WIN"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1967huila",
+   "number": "0124",
+   "link_code": "KEV",
+   "header_code": "WIN"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1968dasht-e-bayaz",
+   "number": "0070",
+   "link_code": "NAT",
+   "header_code": "KBS"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1968inangahua",
+   "number": "0072",
+   "link_code": "AFI",
+   "header_code": "MUN"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1968inangahua",
+   "number": "0112",
+   "link_code": "ARE",
+   "header_code": "ANP"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1968inangahua",
+   "number": "0052",
+   "link_code": "ESK",
+   "header_code": "KEV"
+  },
+  {
+   "kind": "link text vs header",
+   "page": "1968valle_del_belice",
+   "number": "0072",
+   "link_code": "AFI",
+   "header_code": "MUN"
+  }
+ ]
+}

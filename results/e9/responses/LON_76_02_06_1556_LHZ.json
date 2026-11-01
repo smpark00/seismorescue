@@ -1,0 +1,39 @@
+{
+ "chip": "LON_76_02_06_1556_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1976-02-06\",\n  \"on_time\": \"1556\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"0206761556005804\",\n  \"notes\": \"Chip shows visible staining/smudge and a large transient spike near the start of the record; station label form at bottom left is illegible at this resolution.\"\n}",
+ "reasoning_chars": 4754,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1976-02-06",
+  "on_time": "1556",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "0206761556005804",
+  "notes": "Chip shows visible staining/smudge and a large transient spike near the start of the record; station label form at bottom left is illegible at this resolution."
+ },
+ "usage": {
+  "completion_tokens": 1516,
+  "prompt_tokens": 4331,
+  "total_tokens": 5847,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4282,
+  "prompt_ms": 6640.875,
+  "prompt_per_token_ms": 1.5508815973844,
+  "prompt_per_second": 644.7945489110998,
+  "predicted_n": 1516,
+  "predicted_ms": 129840.541,
+  "predicted_per_token_ms": 85.70332739273927,
+  "predicted_per_second": 11.668158406702881
+ },
+ "secs": 136.6,
+ "error": null
+}

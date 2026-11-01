@@ -1,0 +1,39 @@
+{
+ "chip": "COL_75_06_30_1706_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"COL\",\n  \"component\": \"Z\",\n  \"period\": null,\n  \"on_date\": \"1975-06-30\",\n  \"on_time\": \"1706\",\n  \"off_date\": \"1975-07-01\",\n  \"off_time\": \"1702\",\n  \"magnification\": 1500,\n  \"border_digits\": \"0630751706002804\",\n  \"notes\": \"Label shows MAG 1500, CAL CUR 200 G and a calibration pulse is visible on the trace.\"\n}",
+ "reasoning_chars": 2594,
+ "parsed": {
+  "station": "COL",
+  "component": "Z",
+  "period": null,
+  "on_date": "1975-06-30",
+  "on_time": "1706",
+  "off_date": "1975-07-01",
+  "off_time": "1702",
+  "magnification": 1500,
+  "border_digits": "0630751706002804",
+  "notes": "Label shows MAG 1500, CAL CUR 200 G and a calibration pulse is visible on the trace."
+ },
+ "usage": {
+  "completion_tokens": 933,
+  "prompt_tokens": 4588,
+  "total_tokens": 5521,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4539,
+  "prompt_ms": 7135.785,
+  "prompt_per_token_ms": 1.572105089226702,
+  "prompt_per_second": 636.0897925035578,
+  "predicted_n": 933,
+  "predicted_ms": 79891.033,
+  "predicted_per_token_ms": 85.71999248927038,
+  "predicted_per_second": 11.665889962894836
+ },
+ "secs": 87.1,
+ "error": null
+}

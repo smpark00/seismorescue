@@ -1,7 +1,7 @@
 """First quantitative evaluation of the digitizer on real analog records with co-located digital ground truth
-(docs/RESULTS.md).
+(research/25).
 
-usage: python -I scripts/real_paired_eval.py KIP|MAT [out_root=out/real_paired]
+usage: python -I scripts/real_paired_eval.py KIP|MAT|ALQ [out_root=out/real_paired]
 
 Reference: the co-located HGLP LHZ channel (1 sps). Instrument response removed to ground displacement (pre-filter
 0.003-0.005-0.4-0.45 Hz, water level 60 dB), then the WWSSN long-period instrument (To 15 s, Tg 100 s) simulated with
@@ -9,7 +9,7 @@ the critically damped approximation H(s) = s^3 / ((s + 2pi/15)^2 (s + 2pi/100)^2
 (seismometer-galvanometer coupling and the real damping are ignored). SEED dip -90: positive = ground up.
 Layout: invert a negative; track row-profile peaks across column windows to measure the line-position field (lines
 drift ~1 spacing per line = drum helix, plus a bow/fan); shear it out; baselines = row-profile peaks (gaps of the
-earthquake lines filled evenly); isotropic rescale to 38 px spacing (film-mode geometry, docs/RESULTS.md). If the scan's
+earthquake lines filled evenly); isotropic rescale to 38 px spacing (film-mode geometry, research/23). If the scan's
 traces are fainter than the film-mode renders, their darkness is scaled up to the renders' level (image statistics
 only, never the reference).
 Digitize every line with proposers A and B (arbiter.proposals) and the learned judge (fit_lr once on all film dev items).
@@ -71,6 +71,12 @@ SCANS = {
                           "operator wrote '20' where the first (partial) line starts",
             "pair": "data_local/real_scans/pairs/MAT_73_12_28_0020_LHZ__HG.MAT",
             "event": {"origin": "1973-12-28T13:41:45.8", "name": "Vanuatu Ms7.5", "dist_deg": 57.6}},
+    "ALQ": {"image": "data/real_scans_alq75/ALQ_75_10_27_1551_LHZ.TIFF", "negative": False,
+            "area": (850, 3080, 130, 7890), "px_per_s": 2.17,
+            "on": "1975-10-27T15:51:00", "off": "1975-10-28T15:35:00", "label_mag": 3000,
+            "label_note": "handwritten label: ALQ Z MAG 3K, CAL.CUR 0.1, ON 10-27-75 1551, OFF 10-28-75 1535, CORR +/-10 ms, To 15 Tg 100",
+            "pair": "data_local/real_scans/pairs/ALQ_75_10_27_1551_SHZ__HG.ALQ",
+            "event": {"origin": "1975-10-28T06:54:22.4", "name": "Chile Ms6.3", "dist_deg": 67.1}},
 }
 
 
@@ -210,7 +216,15 @@ def trace_darkness(img, bases, S):
     return float(np.median(vals))
 
 
+FILM_RENDER_DARKNESS = 146.0     # median trace darkness of the first six film_dev renders (measure_film_render_darkness)
+
+
 def film_render_darkness():
+    return FILM_RENDER_DARKNESS
+
+
+def measure_film_render_darkness():
+    """how FILM_RENDER_DARKNESS was measured; needs the rendered out/film_dev"""
     vals = []
     for rec in sorted((ROOT / "out" / "film_dev").iterdir())[:6]:
         meta = json.loads((rec / "film" / "meta.json").read_text())

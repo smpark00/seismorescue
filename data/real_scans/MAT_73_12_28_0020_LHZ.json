@@ -1,0 +1,109 @@
+{
+  "file": "MAT_73_12_28_0020_LHZ.TIFF",
+  "downloaded": "2026-10-27",
+  "source_url": "https://data.earthscope.org/archive/seismology/products/film_chip/data/MAT/MAT_73_12_28_0020_LHZ.TIFF",
+  "source_metadata_url": "https://data.earthscope.org/archive/seismology/products/film_chip/data/MAT/MAT_73_12_28_0020_LHZ.json",
+  "portal": "https://data.earthscope.org/app/products/portal/film_chip/ (old: http://ds.iris.edu/spud/filmchip), SPUD FilmChip id 5851",
+  "product_citation": "EarthScope DS (2011), Data Services Products: Film Chip, The USGS WWFC Pilot Scanning Project, doi:10.17611/DP/FC.1",
+  "licence": {
+    "status": "clear: CC0 1.0 / US public domain (with caveat)",
+    "basis": {
+      "title": "World-Wide Standardized Seismographic Network Film Chip Scans",
+      "authors": "Ringler, A.T., Holland, J.F., Lee, T., Kim, S. (2025), U.S. Geological Survey data release",
+      "doi": "https://doi.org/10.5066/P13PHZMA",
+      "licence_text_on_usgs_page": "This work is marked with CC0 1.0 Universal",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "usgs_page": "https://www.usgs.gov/data/world-wide-standardized-seismographic-network-film-chip-scans",
+      "coverage_note": "LSD/ASL docs list the release contents as 26,824 (3200 ppi, grayscale; = EarthScope pilot set) + ~1,000 (400 dpi bitonal) + ~150,000 (3200 ppi, grayscale; Retriever scans): https://lsd-sphinx.readthedocs.io/en/latest/_sources/find_data/organizations/wwssn.md"
+    },
+    "caveat": "EarthScope product page states no licence; this exact file was not checked file-by-file inside the USGS release. Scan made by the USGS WWFC Pilot Scanning Project (1999-)."
+  },
+  "sha256": "925695773bf9a715b3ee24006cc728842bac76848f6f5917dbc66a3b4dc470da",
+  "bytes": 26059190,
+  "station": {
+    "code": "MAT",
+    "name": "Matsushiro, Japan",
+    "network": "WWSSN",
+    "lat": 36.5431,
+    "lon": 138.2066
+  },
+  "instrument": "WWSSN long-period vertical (Press-Ewing seismometer + galvanometer, photographic drum, 15 mm/min, 1 line = 60 min)",
+  "label_on_record": "STATION MAT COMP Z MAG 3000 CAL.CUR 0.10 G 0.106; ON 12-28-73 0020, OFF 12-29-73 0013; CORR -5/0 ms @ 0000 GMT; To 15 Tg 100",
+  "record_window_utc": [
+    "1973-12-28T00:20",
+    "1973-12-29T00:13"
+  ],
+  "events": [
+    {
+      "origin_utc": "1973-12-28T13:41:45.8",
+      "mag": "Ms 7.5",
+      "place": "81 km NW of Port-Olry, Vanuatu",
+      "comcat_id": "usp00004p9",
+      "distance_deg": 57.6
+    }
+  ],
+  "image": {
+    "format": "TIFF, uncompressed",
+    "size_px": [
+      7956,
+      3275
+    ],
+    "mode": "8-bit grayscale",
+    "tiff_resolution_tag_dpi": 3200,
+    "polarity": "positive (dark trace on light)",
+    "scanner_tag": "Imacon Color Scanner"
+  },
+  "resolution": {
+    "minute_mark_spacing_px": 130,
+    "px_per_s": 2.17,
+    "px_per_mm_record_scale": 8.8,
+    "method": "12 minute marks over 1433 px on a full-res crop (x 3000-4600, y 1000-1400), by eye",
+    "meets_3px_per_s": false
+  },
+  "crossing_traces": "yes - M7.5 surface waves overlap about 6+ lines (visual check of 0.2x preview)",
+  "digital_pair": [
+    {
+      "dataselect_url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=HG&sta=MAT&cha=LH?&start=1973-12-28T00:00:00&end=1973-12-29T01:00:00",
+      "station_url": "https://service.earthscope.org/fdsnws/station/1/query?net=HG&sta=MAT&cha=LH?&level=response",
+      "network_doi": "https://doi.org/10.7914/SN/HG",
+      "operator": "Albuquerque Seismological Laboratory / USGS (per FDSN network page)",
+      "licence": "not stated on FDSN/EarthScope pages; USGS-operated network data (public domain presumed, UNVERIFIED) -> kept in data_local",
+      "channel_stats": [
+        {
+          "id": "HG.MAT..LHE",
+          "sps": 1.0,
+          "start": "1973-12-28T00:00:00",
+          "end": "1973-12-29T00:59:59",
+          "npts": 90000,
+          "gap_samples": 0,
+          "max_abs": 24816,
+          "clipped_samples": 0,
+          "t_of_max": "1973-12-28T14:06:08"
+        },
+        {
+          "id": "HG.MAT..LHN",
+          "sps": 1.0,
+          "start": "1973-12-28T00:00:00",
+          "end": "1973-12-29T00:59:59",
+          "npts": 90000,
+          "gap_samples": 0,
+          "max_abs": 20896,
+          "clipped_samples": 0,
+          "t_of_max": "1973-12-28T14:01:33"
+        },
+        {
+          "id": "HG.MAT..LHZ",
+          "sps": 1.0,
+          "start": "1973-12-28T00:00:00",
+          "end": "1973-12-29T00:59:59",
+          "npts": 90000,
+          "gap_samples": 0,
+          "max_abs": 27952,
+          "clipped_samples": 0,
+          "t_of_max": "1973-12-28T14:01:20"
+        }
+      ],
+      "note": "HGLP at the same WWSSN site (FDSN coords 36.5431N 138.2066E); unclipped (max |count| 27952 < 32767). Different sensor/gain: convolve with the WWSSN LP response before comparing; exact pier identity UNVERIFIED."
+    }
+  ]
+}

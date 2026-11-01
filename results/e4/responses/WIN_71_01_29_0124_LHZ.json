@@ -1,0 +1,30 @@
+{
+ "chip": "WIN_71_01_29_0124_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"WIN\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1971-01-29\", \"on_time\": \"0623\", \"off_date\": \"1971-01-30\", \"off_time\": \"0610\", \"magnification\": 3100, \"border_digits\": \"012971 0623 0124 04\", \"notes\": \"Large high-amplitude signal in middle with calibration steps at edges.\"}",
+ "parsed": {
+  "station": "WIN",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1971-01-29",
+  "on_time": "0623",
+  "off_date": "1971-01-30",
+  "off_time": "0610",
+  "magnification": 3100,
+  "border_digits": "012971 0623 0124 04",
+  "notes": "Large high-amplitude signal in middle with calibration steps at edges."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2830,
+  "output_tokens_details": {
+   "reasoning_tokens": 2720
+  },
+  "total_tokens": 7082
+ },
+ "secs": 30.8,
+ "error": null
+}

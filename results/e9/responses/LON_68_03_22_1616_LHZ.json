@@ -1,0 +1,39 @@
+{
+ "chip": "LON_68_03_22_1616_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"LON\",\n  \"component\": \"E\",\n  \"period\": \"LP\",\n  \"on_date\": \"1968-03-21\",\n  \"on_time\": \"1616\",\n  \"off_date\": \"1968-03-22\",\n  \"off_time\": \"1616\",\n  \"magnification\": 500,\n  \"border_digits\": \"0321681616005804\",\n  \"notes\": \"Station label form at bottom left is partially legible; off date and magnification inferred from handwritten label and typical 24-hour WWSSN chip.\"\n}",
+ "reasoning_chars": 3704,
+ "parsed": {
+  "station": "LON",
+  "component": "E",
+  "period": "LP",
+  "on_date": "1968-03-21",
+  "on_time": "1616",
+  "off_date": "1968-03-22",
+  "off_time": "1616",
+  "magnification": 500,
+  "border_digits": "0321681616005804",
+  "notes": "Station label form at bottom left is partially legible; off date and magnification inferred from handwritten label and typical 24-hour WWSSN chip."
+ },
+ "usage": {
+  "completion_tokens": 1284,
+  "prompt_tokens": 4499,
+  "total_tokens": 5783,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4450,
+  "prompt_ms": 6915.39,
+  "prompt_per_token_ms": 1.5540202247191013,
+  "prompt_per_second": 643.4922686934505,
+  "predicted_n": 1284,
+  "predicted_ms": 109977.25,
+  "predicted_per_token_ms": 85.71882307092751,
+  "predicted_per_second": 11.666049114703268
+ },
+ "secs": 117.0,
+ "error": null
+}

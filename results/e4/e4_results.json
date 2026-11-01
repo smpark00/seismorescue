@@ -1,0 +1,1366 @@
+{
+ "summary": {
+  "all4": {
+   "correct": 12,
+   "n": 30,
+   "rate": 0.4,
+   "wilson95": [
+    0.246,
+    0.577
+   ]
+  },
+  "station": {
+   "correct": 15,
+   "n": 30,
+   "rate": 0.5,
+   "wilson95": [
+    0.332,
+    0.668
+   ]
+  },
+  "on_date": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time_1min": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "component": {
+   "correct": 21,
+   "n": 30,
+   "rate": 0.7,
+   "wilson95": [
+    0.521,
+    0.833
+   ]
+  },
+  "period": {
+   "correct": 24,
+   "n": 30,
+   "rate": 0.8,
+   "wilson95": [
+    0.627,
+    0.905
+   ]
+  },
+  "json_failures": 0,
+  "tokens": {
+   "input": 128847,
+   "output": 104244,
+   "cost_usd": 0.0337
+  },
+  "secs_median": 34.2
+ },
+ "rows": [
+  {
+   "chip": "ANP_69_09_21_0022_LHZ",
+   "truth": {
+    "station": "ANP",
+    "on_date": "1969-09-21",
+    "on_time": "0022",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1969-09-21",
+    "on_time": "0022",
+    "off_date": "1969-09-22",
+    "off_time": "0022",
+    "magnification": 750,
+    "border_digits": "092169 0022 0112 04",
+    "notes": "24-hour record with calibration pulses and handwritten Sep 22 date."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 71.8,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 6024,
+    "output_tokens_details": {
+     "reasoning_tokens": 5916
+    },
+    "total_tokens": 10276
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "ANP_71_11_06_0011_LHZ",
+   "truth": {
+    "station": "ANP",
+    "on_date": "1971-11-06",
+    "on_time": "0011",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "ATP",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1971-11-06",
+    "on_time": "0011",
+    "off_date": "1971-11-07",
+    "off_time": "0002",
+    "magnification": 750,
+    "border_digits": "110671 0011 0112 04",
+    "notes": "Label shows T0 15-100 confirming long-period recording."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 31.9,
+   "usage": {
+    "input_tokens": 4195,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2626,
+    "output_tokens_details": {
+     "reasoning_tokens": 2517
+    },
+    "total_tokens": 6821
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "AQU_63_02_08_0634_LHZ",
+   "truth": {
+    "station": "AQU",
+    "on_date": "1963-02-08",
+    "on_time": "0634",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": null,
+    "period": null,
+    "on_date": "1963-02-08",
+    "on_time": "0634",
+    "off_date": null,
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "020863 0634 0010 04",
+    "notes": "Station label and off-time are illegible, on date matches FEB 8 1963 stamp."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 37.6,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 0
+    },
+    "output_tokens": 3107,
+    "output_tokens_details": {
+     "reasoning_tokens": 3003
+    },
+    "total_tokens": 7359
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": false,
+   "all4": false
+  },
+  {
+   "chip": "BAG_63_02_17_0026_LHZ",
+   "truth": {
+    "station": "BAG",
+    "on_date": "1963-02-17",
+    "on_time": "0026",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "BAG",
+    "component": null,
+    "period": "LP",
+    "on_date": "1963-02-17",
+    "on_time": "0026",
+    "off_date": null,
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "021763 0026 0014 04",
+    "notes": "Side label text is too small to read OFF times and component."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 36.2,
+   "usage": {
+    "input_tokens": 4483,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 3162,
+    "output_tokens_details": {
+     "reasoning_tokens": 3062
+    },
+    "total_tokens": 7645
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "BHP_66_06_30_1229_LHZ",
+   "truth": {
+    "station": "BHP",
+    "on_date": "1966-06-30",
+    "on_time": "1229",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "BHE",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1966-06-30",
+    "on_time": "1229",
+    "off_date": "1966-07-01",
+    "off_time": "1216",
+    "magnification": 750,
+    "border_digits": "063066 1229 0017 04",
+    "notes": "Off time correction is +95 ms at 12:16 GMT."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 34.6,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2758,
+    "output_tokens_details": {
+     "reasoning_tokens": 2647
+    },
+    "total_tokens": 7010
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "CMC_63_05_28_0438_LHZ",
+   "truth": {
+    "station": "CMC",
+    "on_date": "1963-05-28",
+    "on_time": "0438",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": null,
+    "period": null,
+    "on_date": "1963-05-28",
+    "on_time": "0438",
+    "off_date": null,
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "052863 0438 0027 04",
+    "notes": "Station label on left edge is illegible at this resolution."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 40.2,
+   "usage": {
+    "input_tokens": 4195,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 3354,
+    "output_tokens_details": {
+     "reasoning_tokens": 3258
+    },
+    "total_tokens": 7549
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": false,
+   "all4": false
+  },
+  {
+   "chip": "COL_66_06_01_1910_LHZ",
+   "truth": {
+    "station": "COL",
+    "on_date": "1966-06-01",
+    "on_time": "1910",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "COL",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1966-06-01",
+    "on_time": "1910",
+    "off_date": "1966-06-02",
+    "off_time": "1938",
+    "magnification": 1500,
+    "border_digits": "060166 1910 0028 04",
+    "notes": "To 15 Tg 100 indicates long-period operation with calibration pulse visible."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 50.1,
+   "usage": {
+    "input_tokens": 4451,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 4380,
+    "output_tokens_details": {
+     "reasoning_tokens": 4268
+    },
+    "total_tokens": 8831
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "COL_75_06_30_1706_LHZ",
+   "truth": {
+    "station": "COL",
+    "on_date": "1975-06-30",
+    "on_time": "1706",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "COL",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1975-06-30",
+    "on_time": "1706",
+    "off_date": "1975-07-01",
+    "off_time": "1702",
+    "magnification": 1500,
+    "border_digits": "063075 1706 0028 04",
+    "notes": "Large off-scale earthquake is recorded in the upper traces."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 18.1,
+   "usage": {
+    "input_tokens": 4540,
+    "input_tokens_details": {
+     "cached_tokens": 0
+    },
+    "output_tokens": 1540,
+    "output_tokens_details": {
+     "reasoning_tokens": 1451
+    },
+    "total_tokens": 6080
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "COR_71_11_06_0129_LHZ",
+   "truth": {
+    "station": "COR",
+    "on_date": "1971-11-06",
+    "on_time": "0129",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "GSC",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1971-11-06",
+    "on_time": "0129",
+    "off_date": "1971-11-07",
+    "off_time": "0128",
+    "magnification": 1500,
+    "border_digits": "110671 0129 0030 04",
+    "notes": "Large long-period surface-wave train is visible on the lower traces."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 53.2,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 4549,
+    "output_tokens_details": {
+     "reasoning_tokens": 4438
+    },
+    "total_tokens": 8801
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "ESK_70_03_26_0839_LHZ",
+   "truth": {
+    "station": "ESK",
+    "on_date": "1970-03-26",
+    "on_time": "0839",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "ESK",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1970-03-26",
+    "on_time": "0839",
+    "off_date": "1970-03-27",
+    "off_time": "0816",
+    "magnification": 750,
+    "border_digits": "032670 0839 0038 04",
+    "notes": "Label shows clock corrections with end time also annotated as 0816."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 33.0,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 3090,
+    "output_tokens_details": {
+     "reasoning_tokens": 2979
+    },
+    "total_tokens": 7342
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "GOL_75_10_26_1713_LHZ",
+   "truth": {
+    "station": "GOL",
+    "on_date": "1975-10-26",
+    "on_time": "1713",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "GOL",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1975-10-26",
+    "on_time": "1713",
+    "off_date": "1975-10-27",
+    "off_time": "1547",
+    "magnification": 1500,
+    "border_digits": "102675 1713 0043 04",
+    "notes": "Handwritten label confirms LP-Z with matching ON and OFF times."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 54.7,
+   "usage": {
+    "input_tokens": 4299,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 5304,
+    "output_tokens_details": {
+     "reasoning_tokens": 5193
+    },
+    "total_tokens": 9603
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "GSC_66_06_01_1549_LHZ",
+   "truth": {
+    "station": "GSC",
+    "on_date": "1966-06-01",
+    "on_time": "1549",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "GSC",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1966-06-01",
+    "on_time": "1549",
+    "off_date": "1966-06-02",
+    "off_time": "1610",
+    "magnification": 1500,
+    "border_digits": "060166 1549 0085 04",
+    "notes": "Large calibration pulses appear at start and end of trace."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 15.7,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 1306,
+    "output_tokens_details": {
+     "reasoning_tokens": 1216
+    },
+    "total_tokens": 5558
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "IST_64_02_11_0750_LHZ",
+   "truth": {
+    "station": "IST",
+    "on_date": "1964-02-11",
+    "on_time": "0750",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "QUI",
+    "component": "E",
+    "period": "LP",
+    "on_date": null,
+    "on_time": null,
+    "off_date": "1964-02-11",
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "5 0 4",
+    "notes": "Left margin reads Quito Ecuador LP-3 dated FEB 11 1964 with large pulses at start and end."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 45.3,
+   "usage": {
+    "input_tokens": 4451,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 4053,
+    "output_tokens_details": {
+     "reasoning_tokens": 3965
+    },
+    "total_tokens": 8504
+   },
+   "station": false,
+   "on_date": false,
+   "on_time": false,
+   "on_time_1min": false,
+   "component": false,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "JER_75_10_28_0815_LHZ",
+   "truth": {
+    "station": "JER",
+    "on_date": "1975-10-28",
+    "on_time": "0815",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "JER",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1975-10-28",
+    "on_time": "0815",
+    "off_date": "1975-10-29",
+    "off_time": "0730",
+    "magnification": 6000,
+    "border_digits": "102875 0815 0051 04",
+    "notes": "Handwritten TIME ON 0749 differs from border ON time 0815."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 34.2,
+   "usage": {
+    "input_tokens": 4283,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 3096,
+    "output_tokens_details": {
+     "reasoning_tokens": 2982
+    },
+    "total_tokens": 7379
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "KEV_73_06_06_0805_LHZ",
+   "truth": {
+    "station": "KEV",
+    "on_date": "1973-06-06",
+    "on_time": "0805",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "KEY",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1973-06-06",
+    "on_time": "0805",
+    "off_date": "1973-07-07",
+    "off_time": "0814",
+    "magnification": 15000,
+    "border_digits": "060673 0805 0052 04",
+    "notes": "To15 Tg100 indicates long-period operation."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 22.3,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2413,
+    "output_tokens_details": {
+     "reasoning_tokens": 2307
+    },
+    "total_tokens": 6665
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "KON_71_01_29_2033_LHZ",
+   "truth": {
+    "station": "KON",
+    "on_date": "1971-01-29",
+    "on_time": "2033",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "KON",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1971-01-29",
+    "on_time": "2033",
+    "off_date": "1971-01-30",
+    "off_time": "1944",
+    "magnification": 1500,
+    "border_digits": "012971 2033 0055 04",
+    "notes": "Daily LP record with hour marks and time corrections noted on label."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 23.5,
+   "usage": {
+    "input_tokens": 3997,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 1956,
+    "output_tokens_details": {
+     "reasoning_tokens": 1845
+    },
+    "total_tokens": 5953
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "LON_68_03_22_1616_LHZ",
+   "truth": {
+    "station": "LON",
+    "on_date": "1968-03-22",
+    "on_time": "1616",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": null,
+    "period": null,
+    "on_date": "1968-03-21",
+    "on_time": "1616",
+    "off_date": "1968-03-22",
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "032168 1616 0058 04",
+    "notes": "ON is from border digits and MAR stamps, lower station label is illegible."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 59.1,
+   "usage": {
+    "input_tokens": 4451,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 5566,
+    "output_tokens_details": {
+     "reasoning_tokens": 5460
+    },
+    "total_tokens": 10017
+   },
+   "station": false,
+   "on_date": false,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": false,
+   "all4": false
+  },
+  {
+   "chip": "LON_76_02_06_1556_LHZ",
+   "truth": {
+    "station": "LON",
+    "on_date": "1976-02-06",
+    "on_time": "1556",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": null,
+    "period": null,
+    "on_date": "1976-02-06",
+    "on_time": "1556",
+    "off_date": "1976-02-07",
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "020676 1556 0058 04",
+    "notes": "Large dark stains obscure traces on right side."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 69.1,
+   "usage": {
+    "input_tokens": 4283,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 6377,
+    "output_tokens_details": {
+     "reasoning_tokens": 6278
+    },
+    "total_tokens": 10660
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": false,
+   "all4": false
+  },
+  {
+   "chip": "LPB_66_06_30_1907_LHZ",
+   "truth": {
+    "station": "LPB",
+    "on_date": "1966-06-30",
+    "on_time": "1907",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "LPB",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1966-06-30",
+    "on_time": "1907",
+    "off_date": "1966-07-01",
+    "off_time": "0859",
+    "magnification": 1500,
+    "border_digits": "063066 1907 0060 04",
+    "notes": "Handwritten JUN 30 1966 and JUL 1 1966 labels match the border and form dates."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 15.4,
+   "usage": {
+    "input_tokens": 4483,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 1331,
+    "output_tokens_details": {
+     "reasoning_tokens": 1210
+    },
+    "total_tokens": 5814
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "LPB_67_06_02_1912_LHZ",
+   "truth": {
+    "station": "LPB",
+    "on_date": "1967-06-02",
+    "on_time": "1912",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": null,
+    "period": null,
+    "on_date": "1967-06-02",
+    "on_time": "1912",
+    "off_date": "1967-06-03",
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "060267 1912 0060 04",
+    "notes": "Bottom-left station label is too small to read reliably."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 27.5,
+   "usage": {
+    "input_tokens": 4283,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2515,
+    "output_tokens_details": {
+     "reasoning_tokens": 2414
+    },
+    "total_tokens": 6798
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": false,
+   "all4": false
+  },
+  {
+   "chip": "LUB_73_06_05_1342_LHZ",
+   "truth": {
+    "station": "LUB",
+    "on_date": "1973-06-05",
+    "on_time": "1342",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "LUB",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1973-06-05",
+    "on_time": "1342",
+    "off_date": "1973-06-06",
+    "off_time": "1330",
+    "magnification": 1500,
+    "border_digits": "06 05 73 1342 0063 04",
+    "notes": "Station label includes time corrections for on and off times."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 20.8,
+   "usage": {
+    "input_tokens": 4195,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2070,
+    "output_tokens_details": {
+     "reasoning_tokens": 1958
+    },
+    "total_tokens": 6265
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "MAL_66_06_30_0831_LHZ",
+   "truth": {
+    "station": "MAL",
+    "on_date": "1966-06-30",
+    "on_time": "0831",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "MHL",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1966-06-30",
+    "on_time": "0831",
+    "off_date": "1966-07-01",
+    "off_time": "0816",
+    "magnification": 3000,
+    "border_digits": "063066 0831 0065 04",
+    "notes": "To 15 Tg 100 confirms long-period recording."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 17.0,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 1601,
+    "output_tokens_details": {
+     "reasoning_tokens": 1492
+    },
+    "total_tokens": 5853
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "OGD_67_06_01_1347_LHZ",
+   "truth": {
+    "station": "OGD",
+    "on_date": "1967-06-01",
+    "on_time": "1347",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": null,
+    "component": null,
+    "period": null,
+    "on_date": "1967-06-01",
+    "on_time": "1347",
+    "off_date": null,
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "060167 1347 0082 04",
+    "notes": "Border ON date 060167 and ON time 1347 match handwritten JUN 1 1967 and 1347 on the trace."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 47.4,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 4057,
+    "output_tokens_details": {
+     "reasoning_tokens": 3945
+    },
+    "total_tokens": 8309
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": false,
+   "all4": false
+  },
+  {
+   "chip": "POO_75_10_28_0159_LHZ",
+   "truth": {
+    "station": "POO",
+    "on_date": "1975-10-28",
+    "on_time": "0159",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "POO",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1975-10-28",
+    "on_time": "0159",
+    "off_date": "1975-10-29",
+    "off_time": "0151",
+    "magnification": 1500,
+    "border_digits": "102875 0159 0087 04",
+    "notes": "Large off-scale event is visible on the right side of the record."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 22.3,
+   "usage": {
+    "input_tokens": 4026,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 1909,
+    "output_tokens_details": {
+     "reasoning_tokens": 1816
+    },
+    "total_tokens": 5935
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "SHL_69_05_07_0219_LHZ",
+   "truth": {
+    "station": "SHL",
+    "on_date": "1969-05-07",
+    "on_time": "0219",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "SUL",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1969-05-07",
+    "on_time": "0219",
+    "off_date": "1969-05-08",
+    "off_time": "0154",
+    "magnification": null,
+    "border_digits": "050769 0219 0105 04",
+    "notes": "Long-period vertical record spanning May 7 to May 8, 1969."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 129.4,
+   "usage": {
+    "input_tokens": 4195,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 11507,
+    "output_tokens_details": {
+     "reasoning_tokens": 11394
+    },
+    "total_tokens": 15702
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "SPA_69_05_07_0031_LHZ",
+   "truth": {
+    "station": "SPA",
+    "on_date": "1969-05-07",
+    "on_time": "0031",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "SCA",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1969-05-07",
+    "on_time": "0031",
+    "off_date": "1969-05-08",
+    "off_time": "0108",
+    "magnification": null,
+    "border_digits": "050769 0031 0108 04",
+    "notes": "Station label is faint but ON/OFF times match border digits."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 53.2,
+   "usage": {
+    "input_tokens": 4195,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 4485,
+    "output_tokens_details": {
+     "reasoning_tokens": 4376
+    },
+    "total_tokens": 8680
+   },
+   "station": false,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "TOL_75_10_26_0658_LHZ",
+   "truth": {
+    "station": "TOL",
+    "on_date": "1975-10-26",
+    "on_time": "0658",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "TOL",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1975-10-26",
+    "on_time": "0658",
+    "off_date": "1975-10-27",
+    "off_time": "0650",
+    "magnification": 1500,
+    "border_digits": "102675 0658 0115 04",
+    "notes": "Handwritten label times differ by a few minutes from the printed border time."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 28.9,
+   "usage": {
+    "input_tokens": 4540,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2723,
+    "output_tokens_details": {
+     "reasoning_tokens": 2610
+    },
+    "total_tokens": 7263
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "WEL_69_09_15_2038_LHZ",
+   "truth": {
+    "station": "WEL",
+    "on_date": "1969-09-15",
+    "on_time": "2038",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "WEL",
+    "component": "E",
+    "period": "LP",
+    "on_date": "1969-09-15",
+    "on_time": "2038",
+    "off_date": "1969-09-16",
+    "off_time": "2050",
+    "magnification": 750,
+    "border_digits": "091569 2038 0122 04",
+    "notes": "Label specifies 15-100 LP instrument with UP polarity."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 21.3,
+   "usage": {
+    "input_tokens": 4299,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 1854,
+    "output_tokens_details": {
+     "reasoning_tokens": 1745
+    },
+    "total_tokens": 6153
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": false,
+   "period": true,
+   "all4": false
+  },
+  {
+   "chip": "WES_63_02_20_1914_LHZ",
+   "truth": {
+    "station": "WES",
+    "on_date": "1963-02-20",
+    "on_time": "1914",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "WES",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1963-02-20",
+    "on_time": "1914",
+    "off_date": null,
+    "off_time": null,
+    "magnification": null,
+    "border_digits": "022063 1914 0123 04",
+    "notes": "Bottom-left marking reads WES LP-Z while handwritten label is illegible."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 33.3,
+   "usage": {
+    "input_tokens": 4483,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2701,
+    "output_tokens_details": {
+     "reasoning_tokens": 2598
+    },
+    "total_tokens": 7184
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": true,
+   "on_time_1min": true,
+   "component": true,
+   "period": true,
+   "all4": true
+  },
+  {
+   "chip": "WIN_71_01_29_0124_LHZ",
+   "truth": {
+    "station": "WIN",
+    "on_date": "1971-01-29",
+    "on_time": "0124",
+    "component": "Z",
+    "period": "LP"
+   },
+   "read": {
+    "station": "WIN",
+    "component": "Z",
+    "period": "LP",
+    "on_date": "1971-01-29",
+    "on_time": "0623",
+    "off_date": "1971-01-30",
+    "off_time": "0610",
+    "magnification": 3100,
+    "border_digits": "012971 0623 0124 04",
+    "notes": "Large high-amplitude signal in middle with calibration steps at edges."
+   },
+   "error": null,
+   "attempt": 1,
+   "secs": 30.8,
+   "usage": {
+    "input_tokens": 4252,
+    "input_tokens_details": {
+     "cached_tokens": 227
+    },
+    "output_tokens": 2830,
+    "output_tokens_details": {
+     "reasoning_tokens": 2720
+    },
+    "total_tokens": 7082
+   },
+   "station": true,
+   "on_date": true,
+   "on_time": false,
+   "on_time_1min": false,
+   "component": true,
+   "period": true,
+   "all4": false
+  }
+ ]
+}

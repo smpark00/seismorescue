@@ -1,0 +1,39 @@
+{
+ "chip": "LPB_67_06_02_1912_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1967-06-02\",\n  \"on_time\": \"1912\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"0602671912006004\",\n  \"notes\": \"Station label form text is too small/illegible in the provided scans to reliably read station code, component, period, off date/time and magnification.\"\n}",
+ "reasoning_chars": 4539,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1967-06-02",
+  "on_time": "1912",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "0602671912006004",
+  "notes": "Station label form text is too small/illegible in the provided scans to reliably read station code, component, period, off date/time and magnification."
+ },
+ "usage": {
+  "completion_tokens": 1477,
+  "prompt_tokens": 4331,
+  "total_tokens": 5808,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4282,
+  "prompt_ms": 6575.812,
+  "prompt_per_token_ms": 1.5356870621205043,
+  "prompt_per_second": 651.1743340594287,
+  "predicted_n": 1477,
+  "predicted_ms": 126474.089,
+  "predicted_per_token_ms": 85.68705216802168,
+  "predicted_per_second": 11.670374633020682
+ },
+ "secs": 133.2,
+ "error": null
+}

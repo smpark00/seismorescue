@@ -1,0 +1,39 @@
+{
+ "chip": "GSC_66_06_01_1549_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"GSC\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1966-06-01\",\n  \"on_time\": \"1549\",\n  \"off_date\": \"1966-06-02\",\n  \"off_time\": \"0610\",\n  \"magnification\": 1500,\n  \"border_digits\": \"0601661549008504\",\n  \"notes\": \"Remarks field shows 146 and calibration data is printed on the label.\"\n}",
+ "reasoning_chars": 1877,
+ "parsed": {
+  "station": "GSC",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-01",
+  "on_time": "1549",
+  "off_date": "1966-06-02",
+  "off_time": "0610",
+  "magnification": 1500,
+  "border_digits": "0601661549008504",
+  "notes": "Remarks field shows 146 and calibration data is printed on the label."
+ },
+ "usage": {
+  "completion_tokens": 710,
+  "prompt_tokens": 4300,
+  "total_tokens": 5010,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6569.12,
+  "prompt_per_token_ms": 1.5453116913667373,
+  "prompt_per_second": 647.1186399395962,
+  "predicted_n": 710,
+  "predicted_ms": 60706.609,
+  "predicted_per_token_ms": 85.62286177715092,
+  "predicted_per_second": 11.67912376723266
+ },
+ "secs": 67.4,
+ "error": null
+}

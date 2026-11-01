@@ -1,0 +1,30 @@
+{
+ "chip": "ANP_69_09_21_0022_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1969-09-21\", \"on_time\": \"0022\", \"off_date\": \"1969-09-22\", \"off_time\": \"0022\", \"magnification\": 750, \"border_digits\": \"092169 0022 0112 04\", \"notes\": \"24-hour record with calibration pulses and handwritten Sep 22 date.\"}",
+ "parsed": {
+  "station": null,
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1969-09-21",
+  "on_time": "0022",
+  "off_date": "1969-09-22",
+  "off_time": "0022",
+  "magnification": 750,
+  "border_digits": "092169 0022 0112 04",
+  "notes": "24-hour record with calibration pulses and handwritten Sep 22 date."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 6024,
+  "output_tokens_details": {
+   "reasoning_tokens": 5916
+  },
+  "total_tokens": 10276
+ },
+ "secs": 71.8,
+ "error": null
+}

@@ -1,0 +1,39 @@
+{
+ "chip": "LPB_66_06_30_1907_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"L7B\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1966-06-30\",\n  \"on_time\": \"1907\",\n  \"off_date\": \"1966-07-01\",\n  \"off_time\": null,\n  \"magnification\": 2500,\n  \"border_digits\": \"0630661907006004\",\n  \"notes\": \"Chip shows calibration pulses and a small seismic disturbance on a WWSSN long-period vertical record.\"\n}",
+ "reasoning_chars": 5768,
+ "parsed": {
+  "station": "L7B",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-30",
+  "on_time": "1907",
+  "off_date": "1966-07-01",
+  "off_time": null,
+  "magnification": 2500,
+  "border_digits": "0630661907006004",
+  "notes": "Chip shows calibration pulses and a small seismic disturbance on a WWSSN long-period vertical record."
+ },
+ "usage": {
+  "completion_tokens": 2002,
+  "prompt_tokens": 4531,
+  "total_tokens": 6533,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4482,
+  "prompt_ms": 6814.019,
+  "prompt_per_token_ms": 1.5203076751450246,
+  "prompt_per_second": 657.7615941487688,
+  "predicted_n": 2002,
+  "predicted_ms": 171736.396,
+  "predicted_per_token_ms": 85.82528535732135,
+  "predicted_per_second": 11.651577921781938
+ },
+ "secs": 178.7,
+ "error": null
+}

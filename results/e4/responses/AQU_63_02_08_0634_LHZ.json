@@ -1,0 +1,30 @@
+{
+ "chip": "AQU_63_02_08_0634_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": null, \"period\": null, \"on_date\": \"1963-02-08\", \"on_time\": \"0634\", \"off_date\": null, \"off_time\": null, \"magnification\": null, \"border_digits\": \"020863 0634 0010 04\", \"notes\": \"Station label and off-time are illegible, on date matches FEB 8 1963 stamp.\"}",
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1963-02-08",
+  "on_time": "0634",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "020863 0634 0010 04",
+  "notes": "Station label and off-time are illegible, on date matches FEB 8 1963 stamp."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 0
+  },
+  "output_tokens": 3107,
+  "output_tokens_details": {
+   "reasoning_tokens": 3003
+  },
+  "total_tokens": 7359
+ },
+ "secs": 37.6,
+ "error": null
+}

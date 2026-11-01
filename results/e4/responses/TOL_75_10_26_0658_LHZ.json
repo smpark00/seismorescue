@@ -1,0 +1,30 @@
+{
+ "chip": "TOL_75_10_26_0658_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"TOL\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1975-10-26\", \"on_time\": \"0658\", \"off_date\": \"1975-10-27\", \"off_time\": \"0650\", \"magnification\": 1500, \"border_digits\": \"102675 0658 0115 04\", \"notes\": \"Handwritten label times differ by a few minutes from the printed border time.\"}",
+ "parsed": {
+  "station": "TOL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1975-10-26",
+  "on_time": "0658",
+  "off_date": "1975-10-27",
+  "off_time": "0650",
+  "magnification": 1500,
+  "border_digits": "102675 0658 0115 04",
+  "notes": "Handwritten label times differ by a few minutes from the printed border time."
+ },
+ "usage": {
+  "input_tokens": 4540,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2723,
+  "output_tokens_details": {
+   "reasoning_tokens": 2610
+  },
+  "total_tokens": 7263
+ },
+ "secs": 28.9,
+ "error": null
+}

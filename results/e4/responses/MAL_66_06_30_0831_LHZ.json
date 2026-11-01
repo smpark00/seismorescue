@@ -1,0 +1,30 @@
+{
+ "chip": "MAL_66_06_30_0831_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"MHL\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1966-06-30\", \"on_time\": \"0831\", \"off_date\": \"1966-07-01\", \"off_time\": \"0816\", \"magnification\": 3000, \"border_digits\": \"063066 0831 0065 04\", \"notes\": \"To 15 Tg 100 confirms long-period recording.\"}",
+ "parsed": {
+  "station": "MHL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-30",
+  "on_time": "0831",
+  "off_date": "1966-07-01",
+  "off_time": "0816",
+  "magnification": 3000,
+  "border_digits": "063066 0831 0065 04",
+  "notes": "To 15 Tg 100 confirms long-period recording."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 1601,
+  "output_tokens_details": {
+   "reasoning_tokens": 1492
+  },
+  "total_tokens": 5853
+ },
+ "secs": 17.0,
+ "error": null
+}

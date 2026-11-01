@@ -1,0 +1,30 @@
+{
+ "chip": "IST_64_02_11_0750_LHZ",
+ "attempt": 1,
+ "text": "{\"station\":\"QUI\",\"component\":\"E\",\"period\":\"LP\",\"on_date\":null,\"on_time\":null,\"off_date\":\"1964-02-11\",\"off_time\":null,\"magnification\":null,\"border_digits\":\"5 0 4\",\"notes\":\"Left margin reads Quito Ecuador LP-3 dated FEB 11 1964 with large pulses at start and end.\"}",
+ "parsed": {
+  "station": "QUI",
+  "component": "E",
+  "period": "LP",
+  "on_date": null,
+  "on_time": null,
+  "off_date": "1964-02-11",
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "5 0 4",
+  "notes": "Left margin reads Quito Ecuador LP-3 dated FEB 11 1964 with large pulses at start and end."
+ },
+ "usage": {
+  "input_tokens": 4451,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 4053,
+  "output_tokens_details": {
+   "reasoning_tokens": 3965
+  },
+  "total_tokens": 8504
+ },
+ "secs": 45.3,
+ "error": null
+}

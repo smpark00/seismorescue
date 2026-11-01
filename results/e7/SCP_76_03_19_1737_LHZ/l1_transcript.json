@@ -1,0 +1,228 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 7.7,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "031976 1737 0101 04"
+   },
+   "result": {
+    "groups": [
+     "031976",
+     "1737",
+     "0101",
+     "04"
+    ],
+    "on_utc": "1976-03-19T17:37:00",
+    "station_number": "0101",
+    "station": {
+     "code": "SCP",
+     "number": "0101",
+     "lat": 40.79,
+     "lon": -77.86,
+     "elev_m": 352.0,
+     "place": "State College, Pennsylvania (USA)"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 16.2,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "null",
+    "off_time": "null"
+   },
+   "result": {
+    "lines": 28,
+    "off_used": null,
+    "off_note": "OFF not read: L0 counted the lines without it",
+    "time_model": "measured",
+    "line_period_s": 3619.7,
+    "record_utc": [
+     "1976-03-19T17:37:00",
+     "1976-03-20T20:59:34"
+    ],
+    "on_minute_ambiguous": false
+   }
+  },
+  {
+   "request": 2,
+   "secs": 14.8,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "SCP",
+    "record_utc": [
+     "1976-03-19T17:37:00",
+     "1976-03-20T20:59:34"
+    ],
+    "time_model": "measured",
+    "lines": 28,
+    "line_period_s": 3619.7,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "usp0000fha",
+      "origin_utc": "1976-03-20T01:06:58.70",
+      "mag": 5.7,
+      "mag_type": "ms",
+      "place": "39 km NNE of Hualien City, Taiwan",
+      "depth_km": 40.0,
+      "dist_deg": 112.4,
+      "P_phase": "Pdiff",
+      "P_utc": "1976-03-20T01:21:34",
+      "P_inside_record": true,
+      "P_line": 8,
+      "P_column": 1597,
+      "P_lines_pm1": [
+       7,
+       9
+      ],
+      "surface_utc": [
+       "1976-03-20T01:59:03",
+       "1976-03-20T02:16:24"
+      ],
+      "surface_lines": [
+       9,
+       9
+      ],
+      "surface_lines_pm1": [
+       8,
+       10
+      ],
+      "amp_score": 2.3,
+      "amp_rank": 1
+     },
+     {
+      "id": "usp0000fht",
+      "origin_utc": "1976-03-20T17:58:58.50",
+      "mag": 5.5,
+      "mag_type": "ms",
+      "place": "21 km WSW of Wairoa, New Zealand",
+      "depth_km": 51.0,
+      "dist_deg": 124.3,
+      "P_phase": "Pdiff",
+      "P_utc": "1976-03-20T18:14:25",
+      "P_inside_record": true,
+      "P_line": 25,
+      "P_column": 864,
+      "P_lines_pm1": [
+       24,
+       26
+      ],
+      "surface_utc": [
+       "1976-03-20T18:56:35",
+       "1976-03-20T19:15:47"
+      ],
+      "surface_lines": [
+       25,
+       26
+      ],
+      "surface_lines_pm1": [
+       24,
+       27
+      ],
+      "amp_score": 2.02,
+      "amp_rank": 2
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 17.2,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"031976 1737 0101 04\", \"label_station\": \"SCP\", \"label_component\": \"Z\", \"magnification\": null, \"off_date\": null, \"off_time\": null, \"main_event_id\": \"usp0000fha\", \"notes\": \"Border 031976 1737 0101 04 = 1976-03-19 17:37 UTC SCP LPZ. Label form at bottom too small to read magnification/OFF in this scan; OFF not used, L0 counted 28 lines. Catalog rank 1 event usp0000fha surface lines 9,9 matches large surface packet mid-record.\"}",
+   "validation_errors": []
+  }
+ ]
+}

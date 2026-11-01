@@ -1,0 +1,39 @@
+{
+ "chip": "KEV_73_06_06_0805_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"KEY\",\n  \"component\": \"Z\",\n  \"period\": null,\n  \"on_date\": \"1973-06-06\",\n  \"on_time\": \"0805\",\n  \"off_date\": \"1973-07-07\",\n  \"off_time\": \"0814\",\n  \"magnification\": 15000,\n  \"border_digits\": \"060673 0805 0052 04\",\n  \"notes\": \"Chip shows KEY station Z component with calibration pulses and minor seismic activity.\"\n}",
+ "reasoning_chars": 5634,
+ "parsed": {
+  "station": "KEY",
+  "component": "Z",
+  "period": null,
+  "on_date": "1973-06-06",
+  "on_time": "0805",
+  "off_date": "1973-07-07",
+  "off_time": "0814",
+  "magnification": 15000,
+  "border_digits": "060673 0805 0052 04",
+  "notes": "Chip shows KEY station Z component with calibration pulses and minor seismic activity."
+ },
+ "usage": {
+  "completion_tokens": 1899,
+  "prompt_tokens": 4300,
+  "total_tokens": 6199,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6602.616,
+  "prompt_per_token_ms": 1.5531912491178546,
+  "prompt_per_second": 643.8357160252845,
+  "predicted_n": 1899,
+  "predicted_ms": 162585.588,
+  "predicted_per_token_ms": 85.66153213909378,
+  "predicted_per_second": 11.673851436327801
+ },
+ "secs": 169.3,
+ "error": null
+}

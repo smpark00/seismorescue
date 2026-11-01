@@ -1,0 +1,30 @@
+{
+ "chip": "WES_63_02_20_1914_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"WES\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1963-02-20\", \"on_time\": \"1914\", \"off_date\": null, \"off_time\": null, \"magnification\": null, \"border_digits\": \"022063 1914 0123 04\", \"notes\": \"Bottom-left marking reads WES LP-Z while handwritten label is illegible.\"}",
+ "parsed": {
+  "station": "WES",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1963-02-20",
+  "on_time": "1914",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "022063 1914 0123 04",
+  "notes": "Bottom-left marking reads WES LP-Z while handwritten label is illegible."
+ },
+ "usage": {
+  "input_tokens": 4483,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2701,
+  "output_tokens_details": {
+   "reasoning_tokens": 2598
+  },
+  "total_tokens": 7184
+ },
+ "secs": 33.3,
+ "error": null
+}

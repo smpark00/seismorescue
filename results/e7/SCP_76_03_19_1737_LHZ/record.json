@@ -1,0 +1,167 @@
+{
+ "chip": "SCP_76_03_19_1737_LHZ.TIFF",
+ "status": "ok",
+ "station": {
+  "code": "SCP",
+  "number": "0101",
+  "lat": 40.79,
+  "lon": -77.86,
+  "elev_m": 352.0,
+  "place": "State College, Pennsylvania (USA)",
+  "source": "film border number + WWSSN table"
+ },
+ "component": {
+  "code": "04",
+  "name": "LPZ",
+  "source": "film border"
+ },
+ "on_utc": "1976-03-19T17:37:00",
+ "on_source": "film border (read by Muse Spark, decoded by tool)",
+ "off": {
+  "date": null,
+  "time": null,
+  "source": "label form (read by Muse Spark)",
+  "used_by_L0": null
+ },
+ "magnification": null,
+ "border_digits": "031976 1737 0101 04",
+ "label": {
+  "station": "SCP",
+  "component": "Z"
+ },
+ "record_utc": [
+  "1976-03-19T17:37:00",
+  "1976-03-20T20:59:34"
+ ],
+ "time_model": {
+  "T0": -2741.0080712630133,
+  "P": 3619.6500000000005,
+  "pps_r": 0.9612385347985398,
+  "x_on": 2637.7625822918308,
+  "minute_ambiguous": false,
+  "reason": null,
+  "P_from_off": null,
+  "n_lines": 28,
+  "xa": 3.0,
+  "x0": 3,
+  "x1": 3430,
+  "failed": null,
+  "l0_dir": "l0_0"
+ },
+ "main_event": {
+  "id": "usp0000fha",
+  "origin_utc": "1976-03-20T01:06:58.70",
+  "mag": 5.7,
+  "mag_type": "ms",
+  "place": "39 km NNE of Hualien City, Taiwan",
+  "depth_km": 40.0,
+  "dist_deg": 112.4,
+  "P_phase": "Pdiff",
+  "P_utc": "1976-03-20T01:21:34",
+  "P_inside_record": true,
+  "P_line": 8,
+  "P_column": 1597,
+  "P_lines_pm1": [
+   7,
+   9
+  ],
+  "surface_utc": [
+   "1976-03-20T01:59:03",
+   "1976-03-20T02:16:24"
+  ],
+  "surface_lines": [
+   9,
+   9
+  ],
+  "surface_lines_pm1": [
+   8,
+   10
+  ],
+  "amp_score": 2.3,
+  "amp_rank": 1,
+  "chosen_by": "Muse Spark (from the catalog tool's list)"
+ },
+ "events": [
+  {
+   "id": "usp0000fha",
+   "origin_utc": "1976-03-20T01:06:58.70",
+   "mag": 5.7,
+   "mag_type": "ms",
+   "place": "39 km NNE of Hualien City, Taiwan",
+   "depth_km": 40.0,
+   "dist_deg": 112.4,
+   "P_phase": "Pdiff",
+   "P_utc": "1976-03-20T01:21:34",
+   "P_inside_record": true,
+   "P_line": 8,
+   "P_column": 1597,
+   "P_lines_pm1": [
+    7,
+    9
+   ],
+   "surface_utc": [
+    "1976-03-20T01:59:03",
+    "1976-03-20T02:16:24"
+   ],
+   "surface_lines": [
+    9,
+    9
+   ],
+   "surface_lines_pm1": [
+    8,
+    10
+   ],
+   "amp_score": 2.3,
+   "amp_rank": 1
+  },
+  {
+   "id": "usp0000fht",
+   "origin_utc": "1976-03-20T17:58:58.50",
+   "mag": 5.5,
+   "mag_type": "ms",
+   "place": "21 km WSW of Wairoa, New Zealand",
+   "depth_km": 51.0,
+   "dist_deg": 124.3,
+   "P_phase": "Pdiff",
+   "P_utc": "1976-03-20T18:14:25",
+   "P_inside_record": true,
+   "P_line": 25,
+   "P_column": 864,
+   "P_lines_pm1": [
+    24,
+    26
+   ],
+   "surface_utc": [
+    "1976-03-20T18:56:35",
+    "1976-03-20T19:15:47"
+   ],
+   "surface_lines": [
+    25,
+    26
+   ],
+   "surface_lines_pm1": [
+    24,
+    27
+   ],
+   "amp_score": 2.02,
+   "amp_rank": 2
+  }
+ ],
+ "flags": [
+  "OFF not read: L0 counted the lines without it"
+ ],
+ "notes": "Border 031976 1737 0101 04 = 1976-03-19 17:37 UTC SCP LPZ. Label form at bottom too small to read magnification/OFF in this scan; OFF not used, L0 counted 28 lines. Catalog rank 1 event usp0000fha surface lines 9,9 matches large surface packet mid-record.",
+ "l1": {
+  "model": "muse-spark-1.3-contributor",
+  "requests": 4,
+  "tool_calls": 3,
+  "repairs": 0,
+  "validation_errors": [],
+  "input_tokens": 23174,
+  "output_tokens": 3661,
+  "cost_usd": 0.00305,
+  "seconds": 94.0,
+  "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+  "code_sha256": "63d739693f1a54a84402432126089f195d985f092158eacb655df602ce8209f4"
+ }
+}

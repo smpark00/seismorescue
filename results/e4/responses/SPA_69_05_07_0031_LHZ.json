@@ -1,0 +1,30 @@
+{
+ "chip": "SPA_69_05_07_0031_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"SCA\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1969-05-07\", \"on_time\": \"0031\", \"off_date\": \"1969-05-08\", \"off_time\": \"0108\", \"magnification\": null, \"border_digits\": \"050769 0031 0108 04\", \"notes\": \"Station label is faint but ON/OFF times match border digits.\"}",
+ "parsed": {
+  "station": "SCA",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1969-05-07",
+  "on_time": "0031",
+  "off_date": "1969-05-08",
+  "off_time": "0108",
+  "magnification": null,
+  "border_digits": "050769 0031 0108 04",
+  "notes": "Station label is faint but ON/OFF times match border digits."
+ },
+ "usage": {
+  "input_tokens": 4195,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 4485,
+  "output_tokens_details": {
+   "reasoning_tokens": 4376
+  },
+  "total_tokens": 8680
+ },
+ "secs": 53.2,
+ "error": null
+}

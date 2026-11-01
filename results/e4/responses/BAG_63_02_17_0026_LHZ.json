@@ -1,0 +1,30 @@
+{
+ "chip": "BAG_63_02_17_0026_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"BAG\", \"component\": null, \"period\": \"LP\", \"on_date\": \"1963-02-17\", \"on_time\": \"0026\", \"off_date\": null, \"off_time\": null, \"magnification\": null, \"border_digits\": \"021763 0026 0014 04\", \"notes\": \"Side label text is too small to read OFF times and component.\"}",
+ "parsed": {
+  "station": "BAG",
+  "component": null,
+  "period": "LP",
+  "on_date": "1963-02-17",
+  "on_time": "0026",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "021763 0026 0014 04",
+  "notes": "Side label text is too small to read OFF times and component."
+ },
+ "usage": {
+  "input_tokens": 4483,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 3162,
+  "output_tokens_details": {
+   "reasoning_tokens": 3062
+  },
+  "total_tokens": 7645
+ },
+ "secs": 36.2,
+ "error": null
+}

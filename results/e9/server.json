@@ -1,0 +1,32 @@
+{
+ "build_info": "b1-da6c30a",
+ "model_path": "models/muse-glimmer/Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf",
+ "n_ctx": null,
+ "modalities": {
+  "vision": true,
+  "video": true,
+  "audio": false
+ },
+ "chat_template_kwargs": null,
+ "raw_keys": [
+  "bos_token",
+  "build_info",
+  "chat_template",
+  "chat_template_caps",
+  "cors_proxy_enabled",
+  "default_generation_settings",
+  "endpoint_metrics",
+  "endpoint_props",
+  "endpoint_slots",
+  "eos_token",
+  "is_sleeping",
+  "media_marker",
+  "modalities",
+  "model_alias",
+  "model_ftype",
+  "model_path",
+  "total_slots",
+  "ui",
+  "ui_settings"
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "chip": "LON_68_03_22_1616_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": null, \"period\": null, \"on_date\": \"1968-03-21\", \"on_time\": \"1616\", \"off_date\": \"1968-03-22\", \"off_time\": null, \"magnification\": null, \"border_digits\": \"032168 1616 0058 04\", \"notes\": \"ON is from border digits and MAR stamps, lower station label is illegible.\"}",
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1968-03-21",
+  "on_time": "1616",
+  "off_date": "1968-03-22",
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "032168 1616 0058 04",
+  "notes": "ON is from border digits and MAR stamps, lower station label is illegible."
+ },
+ "usage": {
+  "input_tokens": 4451,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 5566,
+  "output_tokens_details": {
+   "reasoning_tokens": 5460
+  },
+  "total_tokens": 10017
+ },
+ "secs": 59.1,
+ "error": null
+}

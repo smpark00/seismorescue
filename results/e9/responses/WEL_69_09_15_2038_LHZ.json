@@ -1,0 +1,39 @@
+{
+ "chip": "WEL_69_09_15_2038_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"WEL\",\n  \"component\": \"E\",\n  \"period\": null,\n  \"on_date\": \"1969-09-15\",\n  \"on_time\": \"2038\",\n  \"off_date\": \"1969-09-16\",\n  \"off_time\": \"2050\",\n  \"magnification\": 750,\n  \"border_digits\": \"0915692038012204\",\n  \"notes\": \"Ground motion up indicated on the station label\"\n}",
+ "reasoning_chars": 3074,
+ "parsed": {
+  "station": "WEL",
+  "component": "E",
+  "period": null,
+  "on_date": "1969-09-15",
+  "on_time": "2038",
+  "off_date": "1969-09-16",
+  "off_time": "2050",
+  "magnification": 750,
+  "border_digits": "0915692038012204",
+  "notes": "Ground motion up indicated on the station label"
+ },
+ "usage": {
+  "completion_tokens": 1141,
+  "prompt_tokens": 4347,
+  "total_tokens": 5488,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4298,
+  "prompt_ms": 6635.48,
+  "prompt_per_token_ms": 1.5438529548627267,
+  "prompt_per_second": 647.730081320417,
+  "predicted_n": 1141,
+  "predicted_ms": 97735.207,
+  "predicted_per_token_ms": 85.73263771929824,
+  "predicted_per_second": 11.664169289578526
+ },
+ "secs": 104.5,
+ "error": null
+}

@@ -1,4 +1,4 @@
-"""SAM 2.1 (Meta, open weights, Apache-2.0) fine-tuned as a promptable helicorder trace segmenter (docs/RESULTS.md).
+"""SAM 2.1 (Meta, open weights, Apache-2.0) fine-tuned as a promptable helicorder trace segmenter (research/28).
 
 usage: python -I scripts/ml_sam.py <command> [options]
   selftest                      load the checkpoint into the re-implemented image path, zero-shot sanity masks, timing
@@ -27,6 +27,7 @@ The stitched mask probabilities are decoded into one y per column by a Viterbi p
 import argparse
 import json
 import math
+import os
 import random
 import sys
 import time
@@ -542,8 +543,13 @@ def selftest(args):
 
 
 # =============================================================================================== data
-FILM_TRAIN = ROOT / "out" / "film_train"
+FILM_TRAIN = ROOT / "out" / os.environ.get("SEISMO_FILM_TRAIN", "film_train")   # film2_train: research/37
+VAL_GROUPS = [g for g in os.environ.get("SEISMO_VAL_GROUPS", "").split(",") if g]  # pinned validation dates (default: seeded draw)
 FILM_HOLD = ROOT / "out" / "film_holdout3"
+TEST = {"holdout3": (FILM_HOLD, ROOT / "out" / "cache_film_holdout3", 95),    # test split -> (renders, shared B cache,
+        "holdout5": (ROOT / "out" / "film_holdout5", ROOT / "out" / "cache_film_holdout5", 100),  # images); research/34
+        "holdout4": (ROOT / "out" / "film2_holdout4", ROOT / "out" / "ml" / "sim2real" / "cache_holdout4", 100),  # film2, research/37 §6
+        "holdout6": (ROOT / "out" / "film2_holdout6", ROOT / "out" / "ml" / "sim2real" / "cache_holdout6", 90)}   # film2, research/41 (E3; 2 of 20 records failed to download)
 WIN_H, WIN_W, STEP = 406, 256, 192          # window = 406 rows (a whole film render) x 256 cols -> 1024 x 1024
 PROMPT_COLS = (0, 16, 32, 48)                # chained windows: points on the decoded path inside the overlap
 N_VAL_GROUPS = 5                             # of 22 event groups (~20 %)
@@ -566,7 +572,8 @@ def split_records(seed=0):
     groups = sorted({r.name[:8] for r in recs})
     g = groups[:]
     random.Random(seed).shuffle(g)
-    val = sorted(g[:N_VAL_GROUPS])
+    val = sorted(VAL_GROUPS) if VAL_GROUPS else sorted(g[:N_VAL_GROUPS])
+    assert set(val) <= set(groups), (val, FILM_TRAIN)
     return [r for r in recs if r.name[:8] not in val], [r for r in recs if r.name[:8] in val], val
 
 
@@ -719,7 +726,9 @@ def train(args):
     vrng = np.random.default_rng(123)                       # fixed validation windows (same for every check)
     vwins = [sample_window(va[i % len(va)], vrng) for i in range(0, 4 * len(va), 4)][:40]
     budget = args.minutes * 60.0
-    t0, step, hist, best = time.time(), 0, [], (1e9, -1)
+    by_steps = args.max_steps > 0           # fixed step count instead of minutes (training-amount controls, research/34)
+    val_every = max(1, args.max_steps // 12)   # = every 5 min of a 60-min run
+    t0, step, hist, best, skipped = time.time(), 0, [], (1e9, -1), []
     tag = args.tag or f"{args.variant}"
     log = open(OUT / "logs" / f"train_{tag}.log", "a")
 
@@ -742,9 +751,9 @@ def train(args):
     model.train()
     while True:
         el = time.time() - t0
-        if el > budget:
+        if (step >= args.max_steps) if by_steps else (el > budget):
             break
-        frac = el / budget
+        frac = step / args.max_steps if by_steps else el / budget
         for g, b in zip(opt.param_groups, base_lr):
             g["lr"] = b * min(1.0, (step + 1) / 50) * 0.5 * (1 + math.cos(math.pi * frac))
         batch = [sample_window(tr[int(rng.integers(len(tr)))], rng) for _ in range(args.windows)]
@@ -758,15 +767,21 @@ def train(args):
         loss, b_, d_ = seg_loss(lo[:, 0].float(), torch.from_numpy(tg).to(dev))
         opt.zero_grad(set_to_none=True)
         loss.backward()
-        torch.nn.utils.clip_grad_norm_([p for g in groups.values() for p in g], 1.0)
+        gn = torch.nn.utils.clip_grad_norm_([p for g in groups.values() for p in g], 1.0)
+        step += 1
+        if not (torch.isfinite(gn) and torch.isfinite(loss)):   # as ml_sam3.train_step: a non-finite clip writes NaN
+            opt.zero_grad(set_to_none=True)
+            skipped.append(step)
+            print(f"step {step}: non-finite loss/gradient, step skipped ({len(skipped)} so far)", flush=True)
+            if not (by_steps and step % val_every == 0):    # a skipped step must not also skip a scheduled validation
+                continue
         opt.step()
         hist.append((loss.item(), b_, d_))
-        step += 1
         if step % 50 == 0:
             h = np.mean(hist[-50:], 0)
             msg = f"step {step} t {el / 60:.1f}m loss {h[0]:.4f} (bce {h[1]:.4f} dice {h[2]:.4f}) lr {opt.param_groups[0]['lr']:.2e}"
             print(msg, flush=True); log.write(msg + "\n"); log.flush()
-        if el > next_val or time.time() - t0 > budget:
+        if (step % val_every == 0) if by_steps else (el > next_val or time.time() - t0 > budget):
             v = val_loss()
             next_val += 300.0
             msg = f"  val loss {v:.4f} at step {step}"
@@ -786,9 +801,12 @@ def train(args):
             "val_loss_before": v0, "val_loss_last": v, "best": {"val_loss": best[0], "step": best[1]},
             "train_records": [r.name for r in tr_recs], "val_records": [r.name for r in va_recs], "val_groups": val_groups,
             "trainable_params": n_tr, "lora_blocks": lora_blocks, "lora_r": args.lora_r, "windows_per_step": args.windows, "window": [WIN_H, WIN_W], "step_cols": STEP,
+            "max_steps": args.max_steps, "amp_bf16": bool(args.amp), "tf32": bool(args.tf32), "skipped_nonfinite_steps": skipped,
             "loss_curve_every50": [list(np.round(np.mean(hist[i:i + 50], 0), 4)) for i in range(0, len(hist), 50)]}
     (OUT / f"train_{tag}.json").write_text(json.dumps(summ, indent=1))
-    print(f"done: {step} steps in {summ['minutes']:.1f} min; val loss {v0:.4f} -> {v:.4f} (best {best})", flush=True)
+    print(f"done: {step} steps in {summ['minutes']:.1f} min; val loss {v0:.4f} -> {v:.4f} (best {best}); skipped {len(skipped)}", flush=True)
+    if best[1] < 0:
+        raise SystemExit(f"train {tag}: no finite val loss, no best checkpoint")
 
 
 # =============================================================================================== inference + decode
@@ -890,9 +908,9 @@ def decode_paths(probb, y0, x0, x1, lam, dev, tops=None):
 
 # =============================================================================================== evaluation
 def b_cache_path(rec_name, g, split):
-    """B for holdout3 comes from out/cache_film_holdout3 when the row-anchor experiment has written it (read only)"""
-    if split == "holdout3":
-        shared = ROOT / "out" / "cache_film_holdout3" / f"{rec_name}_film_g{g:g}.npz"
+    """B for a test split comes from its shared cache (out/cache_film_<split>, arbiter.cache_proposals; read only)"""
+    if split in TEST:
+        shared = TEST[split][1] / f"{rec_name}_film_g{g:g}.npz"
         if shared.exists():
             return shared
     return OUT / "cache_b" / f"{rec_name}_film_g{g:g}.npz"
@@ -901,9 +919,43 @@ def b_cache_path(rec_name, g, split):
 def split_items(split):
     if split == "val":
         return items_of(split_records()[1])
-    if split == "holdout3":
-        return items_of(records(FILM_HOLD))
+    if split in TEST:
+        return items_of(records(TEST[split][0]))
     raise ValueError(split)
+
+
+def check_test_complete(split):
+    """a test run sees every image and reads the shared B cache of every image; nothing is recomputed (research/34)"""
+    items = split_items(split)
+    miss = [f"{r.name}_film_g{g:g}.npz" for r, g in items if not (TEST[split][1] / f"{r.name}_film_g{g:g}.npz").exists()]
+    if len(items) != TEST[split][2] or miss:
+        raise SystemExit(f"{split}: {len(items)} images (expected {TEST[split][2]}), {len(miss)} missing B caches {miss[:3]}")
+
+
+def write_mark(mark, payload):
+    """exclusive create: a second (or concurrent) start of the same one-shot test fails here"""
+    try:
+        with open(mark, "x") as f:
+            f.write(json.dumps(payload, indent=1))
+    except FileExistsError:
+        raise SystemExit(f"{mark.name} exists: this test split was already started")
+
+
+def start_once(split, args, ck):
+    """holdout5 (research/34) and holdout4: only the frozen research/28 method (ckpt file + lam of frozen_method.json, and the
+    checkpoint's step / val loss as evaluated on holdout3), all images, once. Called after the model is loaded and
+    before the first image, so an interrupted run counts too."""
+    fz = json.loads((OUT / "frozen_method.json").read_text())
+    ref = json.loads((OUT / "eval_holdout3.json").read_text())["method"]
+    if ck is None or os.path.abspath(args.ckpt) != os.path.abspath(ROOT / fz["ckpt"]) \
+            or float(args.lam) != float(fz["lam_final"]) or (ck["step"], ck["val_loss"]) != (ref["step"], ref["val_loss"]):
+        raise SystemExit(f"{split}: only the frozen method {fz['ckpt']} (step {ref['step']}) lam {fz['lam_final']}")
+    check_test_complete(split)
+    seen = sorted(p.name for p in OUT.glob(f"eval_{split}*.json"))
+    if seen:
+        raise SystemExit(f"{split} was already evaluated {seen}")
+    write_mark(OUT / f"{split}_started.json",
+               {"started_at": time.strftime("%Y-%m-%d %H:%M:%S %Z"), "argv": sys.argv[1:], "frozen": fz, "ckpt_step": ck["step"]})
 
 
 def cache_b(args):
@@ -964,8 +1016,10 @@ def eval_split(args):
         token, desc = "best", {"model": f"SAM 2.1 {args.variant} zero-shot (no fine-tuning)", **info}
     else:
         model, ck = load_finetuned(args.ckpt, dev)
-        token, desc = "single", {"model": f"SAM 2.1 {ck['variant']} fine-tuned", "ckpt": str(Path(args.ckpt).resolve().relative_to(ROOT)),
+        token, desc = "single", {"model": f"SAM 2.1 {ck['variant']} fine-tuned", "ckpt": str(Path(os.path.abspath(args.ckpt)).relative_to(ROOT)),
                                  "step": ck["step"], "val_loss": ck["val_loss"]}
+    if base in TEST and base != "holdout3":           # holdout4 / holdout5: frozen method only, once
+        start_once(base, args, None if split.startswith("zeroshot") else ck)
     tag = split + (f"_{args.tag}" if args.tag else "")
     figs = OUT / "figs" / tag
     figs.mkdir(parents=True, exist_ok=True)
@@ -1082,7 +1136,7 @@ def eval_real(args):
     P = decode_paths(probb, y0, x0, x1, args.lam, dev, tops=tops)
     print(f"[{name}] segmented {len(bases)} lines in {time.time() - t:.0f}s", flush=True)
     summ, check, per, res = real_metrics(name, {"SAM": P})
-    out = {"scan": name, "ckpt": str(Path(args.ckpt).resolve().relative_to(ROOT)), "lam": args.lam,
+    out = {"scan": name, "ckpt": str(Path(os.path.abspath(args.ckpt)).relative_to(ROOT)), "lam": args.lam,
            "layout": "out/real_paired/<scan>_rescaled.png + _paths.npz (bases, y0), alignment chosen_dp_fit, global amplitude",
            "band_tops": tops.tolist(), "B_metric_reproduced": check, "summary": summ,
            "per_line_SAM": {str(k): v for k, v in per["SAM"].items()}}
@@ -1197,8 +1251,15 @@ def main():
     ap.add_argument("--lora", default="stages23", choices=["stages23", "all"])
     ap.add_argument("--lora-r", dest="lora_r", type=int, default=8)
     ap.add_argument("--amp", action="store_true", help="bf16 autocast (CUDA only)")
+    ap.add_argument("--tf32", action="store_true", help="train: TF32 matmuls on CUDA (as ml_sam3 --tf32)")
+    ap.add_argument("--max-steps", dest="max_steps", type=int, default=0,
+                    help="train: stop after N steps; cosine and validation follow steps instead of minutes")
     ap.add_argument("--check-only", dest="check_only", action="store_true", help="real: only re-score the stored B")
     args = ap.parse_args()
+    if args.tf32:
+        if args.cmd != "train":                 # evaluation stays fp32 matmuls, as in research/28
+            raise SystemExit("--tf32 is for train only")
+        torch.backends.cuda.matmul.allow_tf32 = torch.backends.cudnn.allow_tf32 = True
     (OUT / "logs").mkdir(parents=True, exist_ok=True)
     {"selftest": selftest, "train": train, "cache-b": cache_b, "eval": eval_split, "real": eval_real,
      "tune-lam": tune_lam, "analyze": analyze}[args.cmd](args)

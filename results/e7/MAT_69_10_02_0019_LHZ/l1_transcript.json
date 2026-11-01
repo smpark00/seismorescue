@@ -1,0 +1,279 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 10.3,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "100269 0019 0064 04"
+   },
+   "result": {
+    "groups": [
+     "100269",
+     "0019",
+     "0064",
+     "04"
+    ],
+    "on_utc": "1969-10-02T00:19:00",
+    "station_number": "0064",
+    "station": {
+     "code": "MAT",
+     "number": "0064",
+     "lat": 36.54,
+     "lon": 138.21,
+     "elev_m": 422.0,
+     "place": "Matsushiro, Japan"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 39.3,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "null",
+    "off_time": "null"
+   },
+   "result": {
+    "lines": 28,
+    "off_used": null,
+    "off_note": "OFF not read: L0 counted the lines without it",
+    "time_model": "measured",
+    "line_period_s": 3588.2,
+    "record_utc": [
+     "1969-10-02T00:19:00",
+     "1969-10-03T03:17:18"
+    ],
+    "on_minute_ambiguous": false
+   }
+  },
+  {
+   "request": 2,
+   "secs": 19.5,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {
+    "min_magnitude": 5.5
+   },
+   "result": {
+    "station": "MAT",
+    "record_utc": [
+     "1969-10-02T00:19:00",
+     "1969-10-03T03:17:18"
+    ],
+    "time_model": "measured",
+    "lines": 28,
+    "line_period_s": 3588.2,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "iscgem803028",
+      "origin_utc": "1969-10-03T01:33:20.89",
+      "mag": 5.7,
+      "mag_type": "mw",
+      "place": "south of the Kermadec Islands",
+      "depth_km": 20.0,
+      "dist_deg": 80.7,
+      "P_phase": "P",
+      "P_utc": "1969-10-03T01:45:32",
+      "P_inside_record": true,
+      "P_line": 26,
+      "P_column": 1650,
+      "P_lines_pm1": [
+       25,
+       27
+      ],
+      "surface_utc": [
+       "1969-10-03T02:10:44",
+       "1969-10-03T02:23:12"
+      ],
+      "surface_lines": [
+       26,
+       27
+      ],
+      "surface_lines_pm1": [
+       25,
+       27
+      ],
+      "amp_score": 2.53,
+      "amp_rank": 1
+     },
+     {
+      "id": "iscgem802989",
+      "origin_utc": "1969-10-01T22:56:27.02",
+      "mag": 5.5,
+      "mag_type": "mw",
+      "place": "21 km NE of Palian\u00f1u\u00f1as, Peru",
+      "depth_km": 10.0,
+      "dist_deg": 141.3,
+      "P_phase": "Pdiff",
+      "P_utc": "1969-10-01T23:13:15",
+      "P_inside_record": false,
+      "P_line": -1,
+      "P_column": 2913,
+      "P_lines_pm1": [
+       0,
+       0
+      ],
+      "surface_utc": [
+       "1969-10-02T00:01:54",
+       "1969-10-02T00:23:43"
+      ],
+      "surface_lines": [
+       0,
+       1
+      ],
+      "surface_lines_pm1": [
+       0,
+       2
+      ],
+      "amp_score": 1.93,
+      "amp_rank": 2
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 29.2,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1969-10-03",
+    "off_time": "null"
+   },
+   "result": {
+    "lines": 28,
+    "off_used": null,
+    "off_note": "OFF not read: L0 counted the lines without it",
+    "time_model": "measured",
+    "line_period_s": 3588.2,
+    "record_utc": [
+     "1969-10-02T00:19:00",
+     "1969-10-03T03:17:18"
+    ],
+    "on_minute_ambiguous": false
+   }
+  },
+  {
+   "request": 4,
+   "secs": 28.5,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1969-10-03",
+    "off_time": "0339"
+   },
+   "result": {
+    "lines": 29,
+    "off_used": "1969-10-03T03:39:00",
+    "off_note": null,
+    "time_model": "measured",
+    "line_period_s": 3588.2,
+    "record_utc": [
+     "1969-10-02T00:19:00",
+     "1969-10-03T04:16:38"
+    ],
+    "on_minute_ambiguous": false,
+    "line_period_implied_by_off_s": 3507.5
+   }
+  },
+  {
+   "request": 5,
+   "secs": 22.7,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"100269 0019 0064 04\", \"label_station\": \"MAT\", \"label_component\": \"Z\", \"magnification\": 3000, \"off_date\": \"1969-10-03\", \"off_time\": \"0339\", \"main_event_id\": \"iscgem803028\", \"notes\": \"Border ON 1969-10-02 00:19 MAT LPZ. Label MAT Z matches. Large surface-wave packet on bottom lines matches Kermadec M5.7 surface window lines 26-27.\"}",
+   "validation_errors": []
+  }
+ ]
+}

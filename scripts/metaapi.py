@@ -22,7 +22,7 @@ from PIL import Image
 import meta_sam_parser as msp
 
 BASE_URL = "https://api.meta.ai/v1/responses"
-SPARK_MODEL = "muse-spark-1.3-contributor"
+SPARK_MODEL = os.environ.get("SPARK_MODEL", "muse-spark-1.3-contributor")
 
 
 def _headers(stream: bool) -> dict:

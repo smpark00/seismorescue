@@ -1,0 +1,30 @@
+{
+ "chip": "COL_75_06_30_1706_LHZ",
+ "attempt": 1,
+ "text": "{\"station\":\"COL\",\"component\":\"Z\",\"period\":\"LP\",\"on_date\":\"1975-06-30\",\"on_time\":\"1706\",\"off_date\":\"1975-07-01\",\"off_time\":\"1702\",\"magnification\":1500,\"border_digits\":\"063075 1706 0028 04\",\"notes\":\"Large off-scale earthquake is recorded in the upper traces.\"}",
+ "parsed": {
+  "station": "COL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1975-06-30",
+  "on_time": "1706",
+  "off_date": "1975-07-01",
+  "off_time": "1702",
+  "magnification": 1500,
+  "border_digits": "063075 1706 0028 04",
+  "notes": "Large off-scale earthquake is recorded in the upper traces."
+ },
+ "usage": {
+  "input_tokens": 4540,
+  "input_tokens_details": {
+   "cached_tokens": 0
+  },
+  "output_tokens": 1540,
+  "output_tokens_details": {
+   "reasoning_tokens": 1451
+  },
+  "total_tokens": 6080
+ },
+ "secs": 18.1,
+ "error": null
+}

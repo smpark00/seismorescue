@@ -1,0 +1,39 @@
+{
+ "chip": "ANP_71_11_06_0011_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"AWP\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1971-11-06\",\n  \"on_time\": \"0011\",\n  \"off_date\": \"1971-11-06\",\n  \"off_time\": \"0112\",\n  \"magnification\": 760,\n  \"border_digits\": \"1106710011011204\",\n  \"notes\": \"Chip shows handwritten station label AWP Z MAG 760 with on 00:11 and off annotations and calibration pulses.\"\n}",
+ "reasoning_chars": 12068,
+ "parsed": {
+  "station": "AWP",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1971-11-06",
+  "on_time": "0011",
+  "off_date": "1971-11-06",
+  "off_time": "0112",
+  "magnification": 760,
+  "border_digits": "1106710011011204",
+  "notes": "Chip shows handwritten station label AWP Z MAG 760 with on 00:11 and off annotations and calibration pulses."
+ },
+ "usage": {
+  "completion_tokens": 3945,
+  "prompt_tokens": 4243,
+  "total_tokens": 8188,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4194,
+  "prompt_ms": 6457.046,
+  "prompt_per_token_ms": 1.5395913209346686,
+  "prompt_per_second": 649.5230171815409,
+  "predicted_n": 3945,
+  "predicted_ms": 339090.897,
+  "predicted_per_token_ms": 85.97639376267749,
+  "predicted_per_second": 11.631099610438671
+ },
+ "secs": 345.7,
+ "error": null
+}

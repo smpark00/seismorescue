@@ -1,0 +1,30 @@
+{
+ "chip": "LPB_66_06_30_1907_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"LPB\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1966-06-30\", \"on_time\": \"1907\", \"off_date\": \"1966-07-01\", \"off_time\": \"0859\", \"magnification\": 1500, \"border_digits\": \"063066 1907 0060 04\", \"notes\": \"Handwritten JUN 30 1966 and JUL 1 1966 labels match the border and form dates.\"}",
+ "parsed": {
+  "station": "LPB",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-30",
+  "on_time": "1907",
+  "off_date": "1966-07-01",
+  "off_time": "0859",
+  "magnification": 1500,
+  "border_digits": "063066 1907 0060 04",
+  "notes": "Handwritten JUN 30 1966 and JUL 1 1966 labels match the border and form dates."
+ },
+ "usage": {
+  "input_tokens": 4483,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 1331,
+  "output_tokens_details": {
+   "reasoning_tokens": 1210
+  },
+  "total_tokens": 5814
+ },
+ "secs": 15.4,
+ "error": null
+}

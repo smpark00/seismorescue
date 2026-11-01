@@ -1,0 +1,39 @@
+{
+ "chip": "WIN_71_01_29_0124_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"W11\",\n  \"component\": \"N\",\n  \"period\": null,\n  \"on_date\": \"1971-01-29\",\n  \"on_time\": \"0623\",\n  \"off_date\": \"1971-07-24\",\n  \"off_time\": \"0620\",\n  \"magnification\": 300,\n  \"border_digits\": \"012971 0623 0124 04\",\n  \"notes\": \"Printed border date 012971 conflicts with handwritten DATE ON 23/7 and DATE OFF 24/7 on the label.\"\n}",
+ "reasoning_chars": 9297,
+ "parsed": {
+  "station": "W11",
+  "component": "N",
+  "period": null,
+  "on_date": "1971-01-29",
+  "on_time": "0623",
+  "off_date": "1971-07-24",
+  "off_time": "0620",
+  "magnification": 300,
+  "border_digits": "012971 0623 0124 04",
+  "notes": "Printed border date 012971 conflicts with handwritten DATE ON 23/7 and DATE OFF 24/7 on the label."
+ },
+ "usage": {
+  "completion_tokens": 3151,
+  "prompt_tokens": 4300,
+  "total_tokens": 7451,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6584.335,
+  "prompt_per_token_ms": 1.5488908492119502,
+  "prompt_per_second": 645.6232861784828,
+  "predicted_n": 3151,
+  "predicted_ms": 270413.347,
+  "predicted_per_token_ms": 85.84550698412698,
+  "predicted_per_second": 11.648833295199736
+ },
+ "secs": 277.1,
+ "error": null
+}

@@ -1,0 +1,231 @@
+{
+ "chip": "GDH_76_02_12_1306_LHZ.TIFF",
+ "status": "ok",
+ "station": {
+  "code": "GDH",
+  "number": "0040",
+  "lat": 69.25,
+  "lon": -53.53,
+  "elev_m": 23.0,
+  "place": "Godhavn, Greenland",
+  "source": "film border number + WWSSN table"
+ },
+ "component": {
+  "code": "04",
+  "name": "LPZ",
+  "source": "film border"
+ },
+ "on_utc": "1976-02-12T13:06:00",
+ "on_source": "film border (read by Muse Spark, decoded by tool)",
+ "off": {
+  "date": "1976-02-13",
+  "time": "1244",
+  "source": "label form (read by Muse Spark)",
+  "used_by_L0": "1976-02-13T12:44:00"
+ },
+ "magnification": 1500,
+ "border_digits": "021276 1306 0040 04",
+ "label": {
+  "station": "GDH",
+  "component": "Z"
+ },
+ "record_utc": [
+  "1976-02-12T13:06:00",
+  "1976-02-13T12:18:52"
+ ],
+ "time_model": {
+  "T0": -2597.0942720114404,
+  "P": 3587.8500000000004,
+  "pps_r": 0.9327997353184487,
+  "x_on": 2425.5688495293307,
+  "minute_ambiguous": false,
+  "reason": null,
+  "P_from_off": 3650.6661628412016,
+  "n_lines": 25,
+  "xa": 3.0,
+  "x0": 3,
+  "x1": 3429,
+  "failed": null,
+  "l0_dir": "l0_0"
+ },
+ "main_event": {
+  "id": "usp0000f1b",
+  "origin_utc": "1976-02-12T14:45:00.20",
+  "mag": 6.3,
+  "mag_type": "mb",
+  "place": "46 km NNE of Beatty, Nevada",
+  "depth_km": 0.0,
+  "dist_deg": 46.0,
+  "P_phase": "P",
+  "P_utc": "1976-02-12T14:53:25",
+  "P_inside_record": true,
+  "P_line": 2,
+  "P_column": 1744,
+  "P_lines_pm1": [
+   1,
+   3
+  ],
+  "surface_utc": [
+   "1976-02-12T15:06:19",
+   "1976-02-12T15:13:25"
+  ],
+  "surface_lines": [
+   2,
+   2
+  ],
+  "surface_lines_pm1": [
+   1,
+   3
+  ],
+  "amp_score": 3.54,
+  "amp_rank": 1,
+  "chosen_by": "Muse Spark (from the catalog tool's list)"
+ },
+ "events": [
+  {
+   "id": "usp0000f1b",
+   "origin_utc": "1976-02-12T14:45:00.20",
+   "mag": 6.3,
+   "mag_type": "mb",
+   "place": "46 km NNE of Beatty, Nevada",
+   "depth_km": 0.0,
+   "dist_deg": 46.0,
+   "P_phase": "P",
+   "P_utc": "1976-02-12T14:53:25",
+   "P_inside_record": true,
+   "P_line": 2,
+   "P_column": 1744,
+   "P_lines_pm1": [
+    1,
+    3
+   ],
+   "surface_utc": [
+    "1976-02-12T15:06:19",
+    "1976-02-12T15:13:25"
+   ],
+   "surface_lines": [
+    2,
+    2
+   ],
+   "surface_lines_pm1": [
+    1,
+    3
+   ],
+   "amp_score": 3.54,
+   "amp_rank": 1
+  },
+  {
+   "id": "usp0000f1m",
+   "origin_utc": "1976-02-13T10:33:42.70",
+   "mag": 5.8,
+   "mag_type": "ms",
+   "place": "6 km N of Lubang, Philippines",
+   "depth_km": 29.0,
+   "dist_deg": 96.7,
+   "P_phase": "P",
+   "P_utc": "1976-02-13T10:47:10",
+   "P_inside_record": true,
+   "P_line": 22,
+   "P_column": 1621,
+   "P_lines_pm1": [
+    21,
+    23
+   ],
+   "surface_utc": [
+    "1976-02-13T11:18:31",
+    "1976-02-13T11:33:27"
+   ],
+   "surface_lines": [
+    23,
+    23
+   ],
+   "surface_lines_pm1": [
+    22,
+    24
+   ],
+   "amp_score": 2.5,
+   "amp_rank": 2
+  },
+  {
+   "id": "usp0000f1k",
+   "origin_utc": "1976-02-13T08:07:32.60",
+   "mag": 5.5,
+   "mag_type": "ms",
+   "place": "Luzon, Philippines",
+   "depth_km": 47.0,
+   "dist_deg": 95.0,
+   "P_phase": "P",
+   "P_utc": "1976-02-13T08:20:50",
+   "P_inside_record": true,
+   "P_line": 20,
+   "P_column": 124,
+   "P_lines_pm1": [
+    19,
+    21
+   ],
+   "surface_utc": [
+    "1976-02-13T08:51:33",
+    "1976-02-13T09:06:14"
+   ],
+   "surface_lines": [
+    20,
+    20
+   ],
+   "surface_lines_pm1": [
+    19,
+    21
+   ],
+   "amp_score": 2.22,
+   "amp_rank": 3
+  },
+  {
+   "id": "usp0000f1d",
+   "origin_utc": "1976-02-12T17:54:18.60",
+   "mag": 5.6,
+   "mag_type": "ms",
+   "place": "198 km SSE of Lata, Solomon Islands",
+   "depth_km": 39.0,
+   "dist_deg": 117.8,
+   "P_phase": "Pdiff",
+   "P_utc": "1976-02-12T18:09:18",
+   "P_inside_record": true,
+   "P_line": 5,
+   "P_column": 2667,
+   "P_lines_pm1": [
+    4,
+    6
+   ],
+   "surface_utc": [
+    "1976-02-12T18:48:53",
+    "1976-02-12T19:07:05"
+   ],
+   "surface_lines": [
+    6,
+    6
+   ],
+   "surface_lines_pm1": [
+    5,
+    7
+   ],
+   "amp_score": 2.16,
+   "amp_rank": 4
+  }
+ ],
+ "flags": [
+  "OFF and the last line's trace end imply a line period of 3650.7 s, the minute marks 3587.9 s: line count or OFF may be wrong"
+ ],
+ "notes": "",
+ "l1": {
+  "model": "muse-spark-1.3-contributor",
+  "requests": 4,
+  "tool_calls": 3,
+  "repairs": 0,
+  "validation_errors": [],
+  "input_tokens": 23503,
+  "output_tokens": 2901,
+  "cost_usd": 0.00293,
+  "seconds": 90.4,
+  "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+  "code_sha256": "63d739693f1a54a84402432126089f195d985f092158eacb655df602ce8209f4"
+ }
+}

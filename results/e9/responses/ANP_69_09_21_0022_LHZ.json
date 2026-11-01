@@ -1,0 +1,28 @@
+{
+ "chip": "ANP_69_09_21_0022_LHZ",
+ "attempt": 2,
+ "text": "",
+ "reasoning_chars": 11216,
+ "parsed": null,
+ "usage": {
+  "completion_tokens": 4096,
+  "prompt_tokens": 4300,
+  "total_tokens": 8396,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6593.473,
+  "prompt_per_token_ms": 1.551040461067984,
+  "prompt_per_second": 644.728506509392,
+  "predicted_n": 4096,
+  "predicted_ms": 351967.679,
+  "predicted_per_token_ms": 85.95059316239316,
+  "predicted_per_second": 11.63459102731987
+ },
+ "secs": 358.6,
+ "error": null
+}

@@ -1,0 +1,30 @@
+{
+ "chip": "WEL_69_09_15_2038_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"WEL\", \"component\": \"E\", \"period\": \"LP\", \"on_date\": \"1969-09-15\", \"on_time\": \"2038\", \"off_date\": \"1969-09-16\", \"off_time\": \"2050\", \"magnification\": 750, \"border_digits\": \"091569 2038 0122 04\", \"notes\": \"Label specifies 15-100 LP instrument with UP polarity.\"}",
+ "parsed": {
+  "station": "WEL",
+  "component": "E",
+  "period": "LP",
+  "on_date": "1969-09-15",
+  "on_time": "2038",
+  "off_date": "1969-09-16",
+  "off_time": "2050",
+  "magnification": 750,
+  "border_digits": "091569 2038 0122 04",
+  "notes": "Label specifies 15-100 LP instrument with UP polarity."
+ },
+ "usage": {
+  "input_tokens": 4299,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 1854,
+  "output_tokens_details": {
+   "reasoning_tokens": 1745
+  },
+  "total_tokens": 6153
+ },
+ "secs": 21.3,
+ "error": null
+}

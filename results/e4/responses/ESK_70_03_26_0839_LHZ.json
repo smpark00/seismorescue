@@ -1,0 +1,30 @@
+{
+ "chip": "ESK_70_03_26_0839_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"ESK\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1970-03-26\", \"on_time\": \"0839\", \"off_date\": \"1970-03-27\", \"off_time\": \"0816\", \"magnification\": 750, \"border_digits\": \"032670 0839 0038 04\", \"notes\": \"Label shows clock corrections with end time also annotated as 0816.\"}",
+ "parsed": {
+  "station": "ESK",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1970-03-26",
+  "on_time": "0839",
+  "off_date": "1970-03-27",
+  "off_time": "0816",
+  "magnification": 750,
+  "border_digits": "032670 0839 0038 04",
+  "notes": "Label shows clock corrections with end time also annotated as 0816."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 3090,
+  "output_tokens_details": {
+   "reasoning_tokens": 2979
+  },
+  "total_tokens": 7342
+ },
+ "secs": 33.0,
+ "error": null
+}

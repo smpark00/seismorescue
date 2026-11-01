@@ -1,0 +1,197 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 6.2,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "110671 1615 0085 04"
+   },
+   "result": {
+    "groups": [
+     "110671",
+     "1615",
+     "0085",
+     "04"
+    ],
+    "on_utc": "1971-11-06T16:15:00",
+    "station_number": "0085",
+    "station": {
+     "code": "GSC",
+     "number": "0085",
+     "lat": 35.3,
+     "lon": -116.81,
+     "elev_m": 990.0,
+     "place": "Goldstone, California (USA)"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 8.0,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1971-11-07",
+    "off_time": "2000"
+   },
+   "result": {
+    "lines": 26,
+    "off_used": "1971-11-07T20:00:00",
+    "off_note": null,
+    "time_model": "measured",
+    "line_period_s": 3588.9,
+    "record_utc": [
+     "1971-11-06T16:15:00",
+     "1971-11-07T17:20:12"
+    ],
+    "on_minute_ambiguous": true,
+    "line_period_implied_by_off_s": 3972.4
+   }
+  },
+  {
+   "request": 2,
+   "secs": 8.2,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "GSC",
+    "record_utc": [
+     "1971-11-06T16:15:00",
+     "1971-11-07T17:20:12"
+    ],
+    "time_model": "measured",
+    "lines": 26,
+    "line_period_s": 3588.9,
+    "on_minute_ambiguous": true,
+    "events": [
+     {
+      "id": "iscgem778373",
+      "origin_utc": "1971-11-07T14:12:27.66",
+      "mag": 5.8,
+      "mag_type": "mw",
+      "place": "central East Pacific Rise",
+      "depth_km": 10.0,
+      "dist_deg": 41.2,
+      "P_phase": "P",
+      "P_utc": "1971-11-07T14:20:12",
+      "P_inside_record": true,
+      "P_line": 22,
+      "P_column": 3467,
+      "P_lines_pm1": [
+       21,
+       23
+      ],
+      "surface_utc": [
+       "1971-11-07T14:31:32",
+       "1971-11-07T14:37:54"
+      ],
+      "surface_lines": [
+       23,
+       23
+      ],
+      "surface_lines_pm1": [
+       22,
+       24
+      ],
+      "amp_score": 3.12,
+      "amp_rank": 1
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 11.1,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"110671 1615 0085 04\", \"label_station\": \"GSC\", \"label_component\": \"Z\", \"magnification\": 1500, \"off_date\": \"1971-11-07\", \"off_time\": \"2000\", \"main_event_id\": \"iscgem778373\", \"notes\": \"Polarity reversed annotated; single catalog event.\"}",
+   "validation_errors": []
+  }
+ ]
+}

@@ -1,0 +1,260 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 11.0,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "102775 0313 0092 04"
+   },
+   "result": {
+    "groups": [
+     "102775",
+     "0313",
+     "0092",
+     "04"
+    ],
+    "on_utc": "1975-10-27T03:13:00",
+    "station_number": "0092",
+    "station": {
+     "code": "QUE",
+     "number": "0092",
+     "lat": 30.19,
+     "lon": 66.95,
+     "elev_m": 1721.0,
+     "place": "Quetta, Pakistan"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 19.1,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1975-10-28",
+    "off_time": "null"
+   },
+   "result": {
+    "lines": 30,
+    "off_used": null,
+    "off_note": "OFF not read: L0 counted the lines without it",
+    "time_model": "measured",
+    "line_period_s": 3587.9,
+    "record_utc": [
+     "1975-10-27T03:13:00",
+     "1975-10-28T08:16:14"
+    ],
+    "on_minute_ambiguous": true
+   }
+  },
+  {
+   "request": 2,
+   "secs": 21.1,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "QUE",
+    "record_utc": [
+     "1975-10-27T03:13:00",
+     "1975-10-28T08:16:14"
+    ],
+    "time_model": "measured",
+    "lines": 30,
+    "line_period_s": 3587.9,
+    "on_minute_ambiguous": true,
+    "events": [
+     {
+      "id": "usp0000dab",
+      "origin_utc": "1975-10-27T18:26:44.60",
+      "mag": 5.9,
+      "mag_type": "ms",
+      "place": "26 km ESE of Barcelona, Philippines",
+      "depth_km": 33.0,
+      "dist_deg": 59.8,
+      "P_phase": "P",
+      "P_utc": "1975-10-27T18:36:46",
+      "P_inside_record": true,
+      "P_line": 16,
+      "P_column": 1025,
+      "P_lines_pm1": [
+       15,
+       17
+      ],
+      "surface_utc": [
+       "1975-10-27T18:54:28",
+       "1975-10-27T19:03:42"
+      ],
+      "surface_lines": [
+       16,
+       16
+      ],
+      "surface_lines_pm1": [
+       15,
+       17
+      ],
+      "amp_score": 2.95,
+      "amp_rank": 1
+     },
+     {
+      "id": "usp0000da8",
+      "origin_utc": "1975-10-27T09:31:46.10",
+      "mag": 5.7,
+      "mag_type": "mb",
+      "place": "164 km SSE of Pundong, Indonesia",
+      "depth_km": 70.0,
+      "dist_deg": 57.8,
+      "P_phase": "P",
+      "P_utc": "1975-10-27T09:41:29",
+      "P_inside_record": true,
+      "P_line": 7,
+      "P_column": 1190,
+      "P_lines_pm1": [
+       6,
+       8
+      ],
+      "surface_utc": [
+       "1975-10-27T09:58:32",
+       "1975-10-27T10:07:28"
+      ],
+      "surface_lines": [
+       7,
+       7
+      ],
+      "surface_lines_pm1": [
+       6,
+       8
+      ],
+      "amp_score": 2.78,
+      "amp_rank": 2
+     },
+     {
+      "id": "usp0000daq",
+      "origin_utc": "1975-10-28T06:54:22.40",
+      "mag": 6.3,
+      "mag_type": "ms",
+      "place": "88 km N of Antofagasta, Chile",
+      "depth_km": 38.0,
+      "dist_deg": 141.5,
+      "P_phase": "Pdiff",
+      "P_utc": "1975-10-28T07:11:07",
+      "P_inside_record": true,
+      "P_line": 28,
+      "P_column": 3115,
+      "P_lines_pm1": [
+       27,
+       29
+      ],
+      "surface_utc": [
+       "1975-10-28T07:59:54",
+       "1975-10-28T08:21:45"
+      ],
+      "surface_lines": [
+       29,
+       30
+      ],
+      "surface_lines_pm1": [
+       28,
+       29
+      ],
+      "amp_score": 2.73,
+      "amp_rank": 3
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 43.5,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"102775 0313 0092 04\", \"label_station\": \"QUE\", \"label_component\": \"Z\", \"magnification\": 6000, \"off_date\": \"1975-10-28\", \"off_time\": null, \"main_event_id\": \"usp0000dab\", \"notes\": \"Border ON 1975-10-27T03:13Z QUE LPZ. Label shows QUE Z MAG 6000, ON 10-27-75, OFF 10-28-75, OFF time unreadable. 30 lines measured to 1975-10-28T08:16:14. Main event usp0000dab M5.9 Philippines has largest expected surface-wave amplitude rank 1 fully inside record at line 16.\"}",
+   "validation_errors": []
+  }
+ ]
+}

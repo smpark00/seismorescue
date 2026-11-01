@@ -1,0 +1,30 @@
+{
+ "chip": "LUB_73_06_05_1342_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"LUB\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1973-06-05\", \"on_time\": \"1342\", \"off_date\": \"1973-06-06\", \"off_time\": \"1330\", \"magnification\": 1500, \"border_digits\": \"06 05 73 1342 0063 04\", \"notes\": \"Station label includes time corrections for on and off times.\"}",
+ "parsed": {
+  "station": "LUB",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1973-06-05",
+  "on_time": "1342",
+  "off_date": "1973-06-06",
+  "off_time": "1330",
+  "magnification": 1500,
+  "border_digits": "06 05 73 1342 0063 04",
+  "notes": "Station label includes time corrections for on and off times."
+ },
+ "usage": {
+  "input_tokens": 4195,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2070,
+  "output_tokens_details": {
+   "reasoning_tokens": 1958
+  },
+  "total_tokens": 6265
+ },
+ "secs": 20.8,
+ "error": null
+}

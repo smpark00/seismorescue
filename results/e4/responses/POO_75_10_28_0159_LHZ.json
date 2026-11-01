@@ -1,0 +1,30 @@
+{
+ "chip": "POO_75_10_28_0159_LHZ",
+ "attempt": 1,
+ "text": "{\"station\":\"POO\",\"component\":\"Z\",\"period\":\"LP\",\"on_date\":\"1975-10-28\",\"on_time\":\"0159\",\"off_date\":\"1975-10-29\",\"off_time\":\"0151\",\"magnification\":1500,\"border_digits\":\"102875 0159 0087 04\",\"notes\":\"Large off-scale event is visible on the right side of the record.\"}",
+ "parsed": {
+  "station": "POO",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1975-10-28",
+  "on_time": "0159",
+  "off_date": "1975-10-29",
+  "off_time": "0151",
+  "magnification": 1500,
+  "border_digits": "102875 0159 0087 04",
+  "notes": "Large off-scale event is visible on the right side of the record."
+ },
+ "usage": {
+  "input_tokens": 4026,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 1909,
+  "output_tokens_details": {
+   "reasoning_tokens": 1816
+  },
+  "total_tokens": 5935
+ },
+ "secs": 22.3,
+ "error": null
+}

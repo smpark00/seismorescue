@@ -1,0 +1,30 @@
+{
+ "chip": "GOL_75_10_26_1713_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"GOL\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1975-10-26\", \"on_time\": \"1713\", \"off_date\": \"1975-10-27\", \"off_time\": \"1547\", \"magnification\": 1500, \"border_digits\": \"102675 1713 0043 04\", \"notes\": \"Handwritten label confirms LP-Z with matching ON and OFF times.\"}",
+ "parsed": {
+  "station": "GOL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1975-10-26",
+  "on_time": "1713",
+  "off_date": "1975-10-27",
+  "off_time": "1547",
+  "magnification": 1500,
+  "border_digits": "102675 1713 0043 04",
+  "notes": "Handwritten label confirms LP-Z with matching ON and OFF times."
+ },
+ "usage": {
+  "input_tokens": 4299,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 5304,
+  "output_tokens_details": {
+   "reasoning_tokens": 5193
+  },
+  "total_tokens": 9603
+ },
+ "secs": 54.7,
+ "error": null
+}

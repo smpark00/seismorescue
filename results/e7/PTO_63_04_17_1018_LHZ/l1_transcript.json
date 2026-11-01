@@ -1,0 +1,186 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 12.9,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "041763 1018 0091 04"
+   },
+   "result": {
+    "groups": [
+     "041763",
+     "1018",
+     "0091",
+     "04"
+    ],
+    "on_utc": "1963-04-17T10:18:00",
+    "station_number": "0091",
+    "station": {
+     "code": "PTO",
+     "number": "0091",
+     "lat": 41.14,
+     "lon": -8.6,
+     "elev_m": 88.0,
+     "place": "Porto, Portugal"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 10.4,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "null",
+    "off_time": "null"
+   },
+   "result": {
+    "lines": 31,
+    "off_used": null,
+    "off_note": "OFF not read: L0 counted the lines without it",
+    "time_model": "measured",
+    "line_period_s": 3586.4,
+    "record_utc": [
+     "1963-04-17T10:18:00",
+     "1963-04-18T17:10:44"
+    ],
+    "on_minute_ambiguous": false
+   }
+  },
+  {
+   "request": 2,
+   "secs": 11.4,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "PTO",
+    "record_utc": [
+     "1963-04-17T10:18:00",
+     "1963-04-18T17:10:44"
+    ],
+    "time_model": "measured",
+    "lines": 31,
+    "line_period_s": 3586.4,
+    "on_minute_ambiguous": false,
+    "events": []
+   }
+  },
+  {
+   "request": 3,
+   "secs": 10.9,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {
+    "min_magnitude": 5.0
+   },
+   "result": {
+    "station": "PTO",
+    "record_utc": [
+     "1963-04-17T10:18:00",
+     "1963-04-18T17:10:44"
+    ],
+    "time_model": "measured",
+    "lines": 31,
+    "line_period_s": 3586.4,
+    "on_minute_ambiguous": false,
+    "events": []
+   }
+  },
+  {
+   "request": 4,
+   "secs": 19.4,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"041763 1018 0091 04\", \"label_station\": null, \"label_component\": null, \"magnification\": null, \"off_date\": null, \"off_time\": null, \"main_event_id\": null, \"notes\": \"Border decodes to PTO LPZ ON 1963-04-17 10:18 UTC; 31 lines to 1963-04-18; label form not legible in scan; no M>=5.0 catalog events in window.\"}",
+   "validation_errors": []
+  }
+ ]
+}

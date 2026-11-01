@@ -1,0 +1,30 @@
+{
+ "chip": "LPB_67_06_02_1912_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": null, \"period\": null, \"on_date\": \"1967-06-02\", \"on_time\": \"1912\", \"off_date\": \"1967-06-03\", \"off_time\": null, \"magnification\": null, \"border_digits\": \"060267 1912 0060 04\", \"notes\": \"Bottom-left station label is too small to read reliably.\"}",
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1967-06-02",
+  "on_time": "1912",
+  "off_date": "1967-06-03",
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "060267 1912 0060 04",
+  "notes": "Bottom-left station label is too small to read reliably."
+ },
+ "usage": {
+  "input_tokens": 4283,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2515,
+  "output_tokens_details": {
+   "reasoning_tokens": 2414
+  },
+  "total_tokens": 6798
+ },
+ "secs": 27.5,
+ "error": null
+}

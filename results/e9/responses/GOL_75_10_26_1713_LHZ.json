@@ -1,0 +1,39 @@
+{
+ "chip": "GOL_75_10_26_1713_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"GOL\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1975-10-26\",\n  \"on_time\": \"1713\",\n  \"off_date\": \"1975-10-27\",\n  \"off_time\": \"1547\",\n  \"magnification\": 1500,\n  \"border_digits\": \"102675 1713 0043 04\",\n  \"notes\": \"Handwritten station label shows GOL LP Z with start 26 Oct 1713 and end 27 Oct 1547 1975.\"\n}",
+ "reasoning_chars": 5464,
+ "parsed": {
+  "station": "GOL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1975-10-26",
+  "on_time": "1713",
+  "off_date": "1975-10-27",
+  "off_time": "1547",
+  "magnification": 1500,
+  "border_digits": "102675 1713 0043 04",
+  "notes": "Handwritten station label shows GOL LP Z with start 26 Oct 1713 and end 27 Oct 1547 1975."
+ },
+ "usage": {
+  "completion_tokens": 1843,
+  "prompt_tokens": 4347,
+  "total_tokens": 6190,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4298,
+  "prompt_ms": 6640.357,
+  "prompt_per_token_ms": 1.5449876686831083,
+  "prompt_per_second": 647.254356957013,
+  "predicted_n": 1843,
+  "predicted_ms": 157942.14,
+  "predicted_per_token_ms": 85.74491856677525,
+  "predicted_per_second": 11.662498684644895
+ },
+ "secs": 164.7,
+ "error": null
+}

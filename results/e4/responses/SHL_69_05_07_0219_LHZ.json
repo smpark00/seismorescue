@@ -1,0 +1,30 @@
+{
+ "chip": "SHL_69_05_07_0219_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"SUL\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1969-05-07\", \"on_time\": \"0219\", \"off_date\": \"1969-05-08\", \"off_time\": \"0154\", \"magnification\": null, \"border_digits\": \"050769 0219 0105 04\", \"notes\": \"Long-period vertical record spanning May 7 to May 8, 1969.\"}",
+ "parsed": {
+  "station": "SUL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1969-05-07",
+  "on_time": "0219",
+  "off_date": "1969-05-08",
+  "off_time": "0154",
+  "magnification": null,
+  "border_digits": "050769 0219 0105 04",
+  "notes": "Long-period vertical record spanning May 7 to May 8, 1969."
+ },
+ "usage": {
+  "input_tokens": 4195,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 11507,
+  "output_tokens_details": {
+   "reasoning_tokens": 11394
+  },
+  "total_tokens": 15702
+ },
+ "secs": 129.4,
+ "error": null
+}

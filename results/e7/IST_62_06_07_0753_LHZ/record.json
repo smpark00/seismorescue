@@ -1,0 +1,72 @@
+{
+ "chip": "IST_62_06_07_0753_LHZ.TIFF",
+ "status": "ok",
+ "station": {
+  "code": "IST",
+  "number": "0050",
+  "lat": 41.05,
+  "lon": 29.0,
+  "elev_m": 50.0,
+  "place": "Istanbul, Turkey",
+  "source": "film border number + WWSSN table"
+ },
+ "component": {
+  "code": "04",
+  "name": "LPZ",
+  "source": "film border"
+ },
+ "on_utc": "1962-06-07T07:54:00",
+ "on_source": "film border (read by Muse Spark, decoded by tool)",
+ "off": {
+  "date": null,
+  "time": null,
+  "source": "label form (read by Muse Spark)",
+  "used_by_L0": null
+ },
+ "magnification": null,
+ "border_digits": "060762 0754 0050 04",
+ "label": {
+  "station": null,
+  "component": null
+ },
+ "record_utc": [
+  "1962-06-07T07:54:00",
+  "1962-06-08T07:54:00"
+ ],
+ "time_model": {
+  "T0": null,
+  "P": null,
+  "pps_r": null,
+  "x_on": null,
+  "minute_ambiguous": null,
+  "reason": "minute marks not found",
+  "P_from_off": null,
+  "n_lines": 25,
+  "xa": 3.0,
+  "x0": 3,
+  "x1": 3410,
+  "failed": null,
+  "l0_dir": "l0_0"
+ },
+ "main_event": null,
+ "events": [],
+ "flags": [
+  "file name says on 1962-06-07T07:53, the chip gives 1962-06-07T07:54",
+  "OFF not read: L0 counted the lines without it",
+  "no time model: minute marks not found; events listed without lines"
+ ],
+ "notes": "Border decodes to ON 1962-06-07 07:54 UTC, station 0050 IST Istanbul, component 04 LPZ. Label form/OFF not legible in provided crops. measure_record counted 25 lines but no minute-mark time model; catalog returned no events, so no main event.",
+ "l1": {
+  "model": "muse-spark-1.3-contributor",
+  "requests": 5,
+  "tool_calls": 4,
+  "repairs": 0,
+  "validation_errors": [],
+  "input_tokens": 28512,
+  "output_tokens": 4990,
+  "cost_usd": 0.00385,
+  "seconds": 172.0,
+  "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+  "code_sha256": "63d739693f1a54a84402432126089f195d985f092158eacb655df602ce8209f4"
+ }
+}

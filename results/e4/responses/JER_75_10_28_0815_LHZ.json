@@ -1,0 +1,30 @@
+{
+ "chip": "JER_75_10_28_0815_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"JER\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1975-10-28\", \"on_time\": \"0815\", \"off_date\": \"1975-10-29\", \"off_time\": \"0730\", \"magnification\": 6000, \"border_digits\": \"102875 0815 0051 04\", \"notes\": \"Handwritten TIME ON 0749 differs from border ON time 0815.\"}",
+ "parsed": {
+  "station": "JER",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1975-10-28",
+  "on_time": "0815",
+  "off_date": "1975-10-29",
+  "off_time": "0730",
+  "magnification": 6000,
+  "border_digits": "102875 0815 0051 04",
+  "notes": "Handwritten TIME ON 0749 differs from border ON time 0815."
+ },
+ "usage": {
+  "input_tokens": 4283,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 3096,
+  "output_tokens_details": {
+   "reasoning_tokens": 2982
+  },
+  "total_tokens": 7379
+ },
+ "secs": 34.2,
+ "error": null
+}

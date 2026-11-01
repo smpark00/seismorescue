@@ -1,0 +1,39 @@
+{
+ "chip": "BHP_66_06_30_1229_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"BHE\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1966-06-30\",\n  \"on_time\": \"1229\",\n  \"off_date\": \"1966-07-01\",\n  \"off_time\": \"1216\",\n  \"magnification\": 0.75,\n  \"border_digits\": \"0630661229001704\",\n  \"notes\": \"Ground motion up arrow shown on the station label form.\"\n}",
+ "reasoning_chars": 2307,
+ "parsed": {
+  "station": "BHE",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-30",
+  "on_time": "1229",
+  "off_date": "1966-07-01",
+  "off_time": "1216",
+  "magnification": 0.75,
+  "border_digits": "0630661229001704",
+  "notes": "Ground motion up arrow shown on the station label form."
+ },
+ "usage": {
+  "completion_tokens": 862,
+  "prompt_tokens": 4300,
+  "total_tokens": 5162,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6561.674,
+  "prompt_per_token_ms": 1.5435601035050577,
+  "prompt_per_second": 647.8529716654623,
+  "predicted_n": 862,
+  "predicted_ms": 73797.491,
+  "predicted_per_token_ms": 85.71137166085946,
+  "predicted_per_second": 11.667063315201327
+ },
+ "secs": 80.5,
+ "error": null
+}

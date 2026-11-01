@@ -1,8 +1,8 @@
-"""Development CV of the digitizer on film-geometry renders (docs/RESULTS.md): proposers, judge, detector + proposer C.
+"""Development CV of the digitizer on film-geometry renders (research/23): proposers, judge, detector + proposer C.
 
 usage: python -I film_dev_cv.py <film_bench> <film_cache> <out.json>
 
-Same system as docs/RESULTS.md, re-fitted to film geometry on development records only: the judge v5 features are
+Same system as research/21, re-fitted to film geometry on development records only: the judge v5 features are
 retrained per fold on the training groups, and the quiet-line count Q for the single-active regime is chosen per fold
 from Q_GRID. Reports, per gain, the whole-image fail and the earthquake-line fail of A, B, judge and system
 (GroupKFold by event date, 4 folds x 3 shuffles).

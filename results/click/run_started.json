@@ -1,0 +1,8 @@
+{
+ "started": "2026-10-29 14:22:58 KST",
+ "split": "holdout4",
+ "code_sha256": "174ac95a8603af8e80b4f2c4ca826333f008a91b8c4fba9477b80caaebff13f7",
+ "doc_sha256": "22e96471891ad6436890b814fcaf16b9ab6585334271ec106d8b40d118d7e1bc",
+ "rule_sha256": "b93999b3c7cd9e37dc508937ca4d5fe16ae74d7a120f4c1ef8ac839d4da31e14",
+ "ckpt_sha256": "b66e3d5159fb8d01b946c9291427f3e5544d5d1ef62ebdfd40a1066aaa93defe"
+}

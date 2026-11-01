@@ -1,0 +1,39 @@
+{
+ "chip": "OGD_67_06_01_1347_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1967-06-01\",\n  \"on_time\": \"1347\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"0601671347008204\",\n  \"notes\": \"Station label form and component/period/magnification/off time are illegible in the provided scans.\"\n}",
+ "reasoning_chars": 3727,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1967-06-01",
+  "on_time": "1347",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "0601671347008204",
+  "notes": "Station label form and component/period/magnification/off time are illegible in the provided scans."
+ },
+ "usage": {
+  "completion_tokens": 1169,
+  "prompt_tokens": 4300,
+  "total_tokens": 5469,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6549.612,
+  "prompt_per_token_ms": 1.5407226534932956,
+  "prompt_per_second": 649.0460808976165,
+  "predicted_n": 1169,
+  "predicted_ms": 100003.914,
+  "predicted_per_token_ms": 85.61978938356165,
+  "predicted_per_second": 11.679542862692355
+ },
+ "secs": 106.7,
+ "error": null
+}

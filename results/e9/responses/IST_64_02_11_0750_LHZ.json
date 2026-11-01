@@ -1,0 +1,39 @@
+{
+ "chip": "IST_64_02_11_0750_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1964-02-11\",\n  \"on_time\": null,\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"4 50 4\",\n  \"notes\": \"Border digit groups are partially legible in the scans; station label form and component/period/magnification details are not clearly readable. A handwritten date FEB 11 1964 is visible on the left margin.\"\n}",
+ "reasoning_chars": 6280,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1964-02-11",
+  "on_time": null,
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "4 50 4",
+  "notes": "Border digit groups are partially legible in the scans; station label form and component/period/magnification details are not clearly readable. A handwritten date FEB 11 1964 is visible on the left margin."
+ },
+ "usage": {
+  "completion_tokens": 1883,
+  "prompt_tokens": 4499,
+  "total_tokens": 6382,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4450,
+  "prompt_ms": 6860.291,
+  "prompt_per_token_ms": 1.5416384269662922,
+  "prompt_per_second": 648.6605305809913,
+  "predicted_n": 1883,
+  "predicted_ms": 161466.321,
+  "predicted_per_token_ms": 85.79506960680128,
+  "predicted_per_second": 11.655681434644194
+ },
+ "secs": 168.4,
+ "error": null
+}

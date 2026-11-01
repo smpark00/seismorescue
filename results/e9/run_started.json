@@ -1,0 +1,10 @@
+{
+ "started": "2026-10-29 16:24:14 KST",
+ "settings": {
+  "max_tokens": 4096,
+  "temperature": 0.0,
+  "chat_template_kwargs": {
+   "reasoning_strength": "medium"
+  }
+ }
+}

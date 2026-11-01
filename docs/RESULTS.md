@@ -1,5 +1,7 @@
 # Results: every experiment, its conditions and its numbers
 
+> **Earlier experiments.** This page describes the first week of work (SAM 2.1 and row-anchor v1). The current system and its numbers are in the [main README](../README.md).
+
 This page lists what we ran, under which conditions, and what came out, including the experiments that failed. All numbers come from the files in [`results/`](../results). The headline learned-model numbers were re-computed by separate scripts in [`results/ml/rescoring`](../results/ml/rescoring), with 0 per-image mismatches.
 
 **Metrics.**

@@ -1,0 +1,39 @@
+{
+ "chip": "ESK_70_03_26_0839_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"ESK\",\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1970-03-26\",\n  \"on_time\": \"0839\",\n  \"off_date\": \"1970-03-27\",\n  \"off_time\": \"0816\",\n  \"magnification\": 750,\n  \"border_digits\": \"0326700839003804\",\n  \"notes\": \"Border printed ON time 0839 differs from handwritten label 0829; handwritten UP noted on the station label form.\"\n}",
+ "reasoning_chars": 3369,
+ "parsed": {
+  "station": "ESK",
+  "component": null,
+  "period": null,
+  "on_date": "1970-03-26",
+  "on_time": "0839",
+  "off_date": "1970-03-27",
+  "off_time": "0816",
+  "magnification": 750,
+  "border_digits": "0326700839003804",
+  "notes": "Border printed ON time 0839 differs from handwritten label 0829; handwritten UP noted on the station label form."
+ },
+ "usage": {
+  "completion_tokens": 1146,
+  "prompt_tokens": 4300,
+  "total_tokens": 5446,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6580.67,
+  "prompt_per_token_ms": 1.5480286991296166,
+  "prompt_per_second": 645.9828558490245,
+  "predicted_n": 1146,
+  "predicted_ms": 98161.495,
+  "predicted_per_token_ms": 85.73056331877729,
+  "predicted_per_second": 11.66445152450052
+ },
+ "secs": 104.9,
+ "error": null
+}

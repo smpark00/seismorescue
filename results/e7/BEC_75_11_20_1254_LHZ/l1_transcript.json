@@ -1,0 +1,212 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 9.7,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "112075 1254 0015 04"
+   },
+   "result": {
+    "groups": [
+     "112075",
+     "1254",
+     "0015",
+     "04"
+    ],
+    "on_utc": "1975-11-20T12:54:00",
+    "station_number": "0015",
+    "station": {
+     "code": "BEC",
+     "number": "0015",
+     "lat": 32.38,
+     "lon": -64.68,
+     "elev_m": 41.0,
+     "place": "Bermuda"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 8.9,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1975-11-21",
+    "off_time": "1302"
+   },
+   "result": {
+    "lines": 26,
+    "off_used": "1975-11-21T13:02:00",
+    "off_note": null,
+    "time_model": "none (minute marks not found)"
+   }
+  },
+  {
+   "request": 2,
+   "secs": 12.1,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {
+    "min_magnitude": 5.5
+   },
+   "result": {
+    "station": "BEC",
+    "record_utc": [
+     "1975-11-20T12:54:00",
+     "1975-11-21T12:54:00"
+    ],
+    "time_model": "none (minute marks not found); no line positions",
+    "lines": null,
+    "line_period_s": null,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "usp0000dnx",
+      "origin_utc": "1975-11-21T01:15:00.80",
+      "mag": 5.8,
+      "mag_type": "mb",
+      "place": "49 km W of Riosucio, Colombia",
+      "depth_km": 36.0,
+      "dist_deg": 27.6,
+      "P_phase": "P",
+      "P_utc": "1975-11-21T01:20:44",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1975-11-21T01:27:48",
+       "1975-11-21T01:32:03"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 3.41,
+      "amp_rank": 1
+     },
+     {
+      "id": "usp0000dnt",
+      "origin_utc": "1975-11-20T15:00:00.10",
+      "mag": 6.0,
+      "mag_type": "mb",
+      "place": "49 km NE of Beatty, Nevada",
+      "depth_km": 0.0,
+      "dist_deg": 42.2,
+      "P_phase": "P",
+      "P_utc": "1975-11-20T15:07:54",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1975-11-20T15:19:33",
+       "1975-11-20T15:26:04"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 3.3,
+      "amp_rank": 2
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 13.2,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"112075 1254 0015 04\", \"label_station\": \"BEC\", \"label_component\": \"Z\", \"magnification\": 1500, \"off_date\": \"1975-11-21\", \"off_time\": \"1302\", \"main_event_id\": \"usp0000dnx\", \"notes\": \"\"}",
+   "validation_errors": []
+  }
+ ]
+}

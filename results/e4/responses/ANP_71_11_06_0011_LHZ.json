@@ -1,0 +1,30 @@
+{
+ "chip": "ANP_71_11_06_0011_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"ATP\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1971-11-06\", \"on_time\": \"0011\", \"off_date\": \"1971-11-07\", \"off_time\": \"0002\", \"magnification\": 750, \"border_digits\": \"110671 0011 0112 04\", \"notes\": \"Label shows T0 15-100 confirming long-period recording.\"}",
+ "parsed": {
+  "station": "ATP",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1971-11-06",
+  "on_time": "0011",
+  "off_date": "1971-11-07",
+  "off_time": "0002",
+  "magnification": 750,
+  "border_digits": "110671 0011 0112 04",
+  "notes": "Label shows T0 15-100 confirming long-period recording."
+ },
+ "usage": {
+  "input_tokens": 4195,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2626,
+  "output_tokens_details": {
+   "reasoning_tokens": 2517
+  },
+  "total_tokens": 6821
+ },
+ "secs": 31.9,
+ "error": null
+}

@@ -1,0 +1,39 @@
+{
+ "chip": "LUB_73_06_05_1342_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"LAB\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1973-06-05\",\n  \"on_time\": \"1342\",\n  \"off_date\": \"1973-06-06\",\n  \"off_time\": \"1330\",\n  \"magnification\": 1500,\n  \"border_digits\": \"0605731342006304\",\n  \"notes\": \"Station label is truncated on the left edge; station code appears as Lab and the period field is not clearly legible.\"\n}",
+ "reasoning_chars": 4566,
+ "parsed": {
+  "station": "LAB",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1973-06-05",
+  "on_time": "1342",
+  "off_date": "1973-06-06",
+  "off_time": "1330",
+  "magnification": 1500,
+  "border_digits": "0605731342006304",
+  "notes": "Station label is truncated on the left edge; station code appears as Lab and the period field is not clearly legible."
+ },
+ "usage": {
+  "completion_tokens": 1517,
+  "prompt_tokens": 4243,
+  "total_tokens": 5760,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4194,
+  "prompt_ms": 6439.651,
+  "prompt_per_token_ms": 1.5354437291368621,
+  "prompt_per_second": 651.2775304127506,
+  "predicted_n": 1517,
+  "predicted_ms": 130039.676,
+  "predicted_per_token_ms": 85.77815039577837,
+  "predicted_per_second": 11.65798044590637
+ },
+ "secs": 136.6,
+ "error": null
+}

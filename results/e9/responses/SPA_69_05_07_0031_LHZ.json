@@ -1,0 +1,39 @@
+{
+ "chip": "SPA_69_05_07_0031_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1969-05-07\",\n  \"on_time\": \"0031\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"0507690031010804\",\n  \"notes\": \"Station label text is too blurry to read reliably in the provided scans.\"\n}",
+ "reasoning_chars": 3962,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1969-05-07",
+  "on_time": "0031",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "0507690031010804",
+  "notes": "Station label text is too blurry to read reliably in the provided scans."
+ },
+ "usage": {
+  "completion_tokens": 1248,
+  "prompt_tokens": 4243,
+  "total_tokens": 5491,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4194,
+  "prompt_ms": 6470.01,
+  "prompt_per_token_ms": 1.5426824034334765,
+  "prompt_per_second": 648.2215637997468,
+  "predicted_n": 1248,
+  "predicted_ms": 106814.112,
+  "predicted_per_token_ms": 85.6568660785886,
+  "predicted_per_second": 11.674487356127626
+ },
+ "secs": 113.4,
+ "error": null
+}

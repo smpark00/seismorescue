@@ -1,0 +1,39 @@
+{
+ "chip": "WES_63_02_20_1914_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"PAS\",\n  \"component\": null,\n  \"period\": \"LP\",\n  \"on_date\": \"1963-02-20\",\n  \"on_time\": \"1914\",\n  \"off_date\": \"1963-02-21\",\n  \"off_time\": \"0123\",\n  \"magnification\": null,\n  \"border_digits\": \"0220631914012304\",\n  \"notes\": \"Station label and handwritten metadata on left margin are partially legible; off date/time inferred from border digits and handwriting.\"\n}",
+ "reasoning_chars": 6551,
+ "parsed": {
+  "station": "PAS",
+  "component": null,
+  "period": "LP",
+  "on_date": "1963-02-20",
+  "on_time": "1914",
+  "off_date": "1963-02-21",
+  "off_time": "0123",
+  "magnification": null,
+  "border_digits": "0220631914012304",
+  "notes": "Station label and handwritten metadata on left margin are partially legible; off date/time inferred from border digits and handwriting."
+ },
+ "usage": {
+  "completion_tokens": 2129,
+  "prompt_tokens": 4531,
+  "total_tokens": 6660,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4482,
+  "prompt_ms": 6811.109,
+  "prompt_per_token_ms": 1.5196584114234717,
+  "prompt_per_second": 658.0426183166354,
+  "predicted_n": 2129,
+  "predicted_ms": 182583.177,
+  "predicted_per_token_ms": 85.80036513157894,
+  "predicted_per_second": 11.65496205600585
+ },
+ "secs": 189.5,
+ "error": null
+}

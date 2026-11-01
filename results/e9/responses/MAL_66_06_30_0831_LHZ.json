@@ -1,0 +1,39 @@
+{
+ "chip": "MAL_66_06_30_0831_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"MHL\",\n  \"component\": \"Z\",\n  \"period\": null,\n  \"on_date\": \"1966-06-30\",\n  \"on_time\": \"0831\",\n  \"off_date\": \"1966-07-01\",\n  \"off_time\": \"0816\",\n  \"magnification\": 3000,\n  \"border_digits\": \"0630660831006504\",\n  \"notes\": \"Film chip shows 30 JUN 1966 to 1 JUL 1966 with station label MHL Z MAG 3000.\"\n}",
+ "reasoning_chars": 5309,
+ "parsed": {
+  "station": "MHL",
+  "component": "Z",
+  "period": null,
+  "on_date": "1966-06-30",
+  "on_time": "0831",
+  "off_date": "1966-07-01",
+  "off_time": "0816",
+  "magnification": 3000,
+  "border_digits": "0630660831006504",
+  "notes": "Film chip shows 30 JUN 1966 to 1 JUL 1966 with station label MHL Z MAG 3000."
+ },
+ "usage": {
+  "completion_tokens": 1871,
+  "prompt_tokens": 4300,
+  "total_tokens": 6171,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6605.322,
+  "prompt_per_token_ms": 1.5538278052223007,
+  "prompt_per_second": 643.5719560681523,
+  "predicted_n": 1871,
+  "predicted_ms": 160383.106,
+  "predicted_per_token_ms": 85.76636684491979,
+  "predicted_per_second": 11.65958215075346
+ },
+ "secs": 167.1,
+ "error": null
+}

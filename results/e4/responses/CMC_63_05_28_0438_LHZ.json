@@ -1,0 +1,30 @@
+{
+ "chip": "CMC_63_05_28_0438_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": null, \"period\": null, \"on_date\": \"1963-05-28\", \"on_time\": \"0438\", \"off_date\": null, \"off_time\": null, \"magnification\": null, \"border_digits\": \"052863 0438 0027 04\", \"notes\": \"Station label on left edge is illegible at this resolution.\"}",
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1963-05-28",
+  "on_time": "0438",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "052863 0438 0027 04",
+  "notes": "Station label on left edge is illegible at this resolution."
+ },
+ "usage": {
+  "input_tokens": 4195,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 3354,
+  "output_tokens_details": {
+   "reasoning_tokens": 3258
+  },
+  "total_tokens": 7549
+ },
+ "secs": 40.2,
+ "error": null
+}

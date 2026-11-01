@@ -1,0 +1,30 @@
+{
+ "chip": "COL_66_06_01_1910_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"COL\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1966-06-01\", \"on_time\": \"1910\", \"off_date\": \"1966-06-02\", \"off_time\": \"1938\", \"magnification\": 1500, \"border_digits\": \"060166 1910 0028 04\", \"notes\": \"To 15 Tg 100 indicates long-period operation with calibration pulse visible.\"}",
+ "parsed": {
+  "station": "COL",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-01",
+  "on_time": "1910",
+  "off_date": "1966-06-02",
+  "off_time": "1938",
+  "magnification": 1500,
+  "border_digits": "060166 1910 0028 04",
+  "notes": "To 15 Tg 100 indicates long-period operation with calibration pulse visible."
+ },
+ "usage": {
+  "input_tokens": 4451,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 4380,
+  "output_tokens_details": {
+   "reasoning_tokens": 4268
+  },
+  "total_tokens": 8831
+ },
+ "secs": 50.1,
+ "error": null
+}

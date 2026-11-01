@@ -1,5 +1,7 @@
 # Methods
 
+> **Earlier experiments.** This page describes the first week of work (SAM 2.1 and row-anchor v1). The current system and its numbers are in the [main README](../README.md).
+
 ## Benchmark: synthetic WWSSN films with exact ground truth
 
 [`scripts/render_helicorder.py`](../scripts/render_helicorder.py) turns a real broadband record into a helicorder image together with per-line ground truth.

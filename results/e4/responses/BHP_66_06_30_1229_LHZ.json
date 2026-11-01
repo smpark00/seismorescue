@@ -1,0 +1,30 @@
+{
+ "chip": "BHP_66_06_30_1229_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"BHE\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1966-06-30\", \"on_time\": \"1229\", \"off_date\": \"1966-07-01\", \"off_time\": \"1216\", \"magnification\": 750, \"border_digits\": \"063066 1229 0017 04\", \"notes\": \"Off time correction is +95 ms at 12:16 GMT.\"}",
+ "parsed": {
+  "station": "BHE",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-30",
+  "on_time": "1229",
+  "off_date": "1966-07-01",
+  "off_time": "1216",
+  "magnification": 750,
+  "border_digits": "063066 1229 0017 04",
+  "notes": "Off time correction is +95 ms at 12:16 GMT."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2758,
+  "output_tokens_details": {
+   "reasoning_tokens": 2647
+  },
+  "total_tokens": 7010
+ },
+ "secs": 34.6,
+ "error": null
+}

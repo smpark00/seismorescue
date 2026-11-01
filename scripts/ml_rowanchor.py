@@ -1,4 +1,4 @@
-"""Row-anchor sequence model + Viterbi decoding for target-conditioned helicorder trace extraction (docs/RESULTS.md).
+"""Row-anchor sequence model + Viterbi decoding for target-conditioned helicorder trace extraction (research/27).
 
 Input (target-conditioned): a crop centred on the target line's baseline (layout), +-10.5 line spacings, at half
 resolution (19 px per spacing, 2 s per column); channels = local ink darkness (normalised by the image's typical trace
@@ -35,10 +35,12 @@ from track_joint import score as tj_score  # noqa: E402
 OUT = ROOT / "out" / "ml" / "rowanchor"
 TRAIN_DIR, HOLD_DIR = ROOT / "out" / "film_train", ROOT / "out" / "film_holdout3"
 HOLD_CACHE = ROOT / "out" / "cache_film_holdout3"
+TESTS = {"holdout3": (HOLD_DIR, HOLD_CACHE),              # test split -> (renders, B cache); holdout5: research/34
+         "holdout5": (ROOT / "out" / "film_holdout5", ROOT / "out" / "cache_film_holdout5")}
 G_TRAIN, G_HOLD = (1, 2, 3, 4, 6, 8), (1, 2, 4, 6, 8)
 CH, NB, WIN, DSTEP = 400, 200, 1024, 64          # crop rows (half res), row bins, train window (cols), max bin step
 BATCH = 6
-DEV = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+DEV = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 torch.set_num_threads(4)
 cv2.setNumThreads(2)
 
@@ -488,21 +490,40 @@ def cmd_val():
         print(g, json.dumps(v))
 
 
-def cmd_holdout():
-    """ONE run on film_holdout3 with the frozen method (config chosen on validation in frozen.json)"""
+def cmd_holdout(split="holdout3"):
+    """ONE run on a test split with the frozen method (config chosen on validation in frozen.json). holdout5 writes
+    its start marker before the first image and refuses a second run"""
     fz = json.loads((OUT / "frozen.json").read_text())
+    hold_dir, hold_cache = TESTS[split]
+    names = sorted(p.name for p in hold_dir.iterdir() if p.is_dir())
     model, ck = load_model("best")
+    if split != "holdout3":                     # one-shot: frozen checkpoint, all images and B caches, exclusive marker
+        miss = [f"{n}_film_g{g:g}.npz" for n in names for g in G_HOLD if not (hold_cache / f"{n}_film_g{g:g}.npz").exists()]
+        if ck["step"] != fz["checkpoint_step"] or len(names) * len(G_HOLD) != 100 or miss:
+            raise SystemExit(f"{split}: ckpt step {ck['step']} (frozen {fz['checkpoint_step']}), "
+                             f"{len(names) * len(G_HOLD)} images (expected 100), missing B {miss[:3]}")
+        if (OUT / f"{split}_results.json").exists():
+            raise SystemExit(f"{split} was already evaluated")
+        try:
+            with open(OUT / f"{split}_started.json", "x") as f:
+                f.write(json.dumps({"started_at": time.strftime("%Y-%m-%d %H:%M:%S %Z"), "frozen": fz, "ckpt_step": ck["step"]}, indent=1))
+        except FileExistsError:
+            raise SystemExit(f"{split} was already started")
     logT = robust(np.load(OUT / "logT.npy"), fz.get("eps", 0.0))
-    names = sorted(p.name for p in HOLD_DIR.iterdir() if p.is_dir())
-    items = load_set(names, G_HOLD, HOLD_DIR)
+    items = load_set(names, G_HOLD, hold_dir)
 
     def B_of(it):
-        z = np.load(HOLD_CACHE / f"{it['name']}_film_g{it['gain']:g}.npz")
+        z = np.load(hold_cache / f"{it['name']}_film_g{it['gain']:g}.npz")
         return {"A": z["A"], "B": z["B"]}
     cfg = {"argmax": None, fz["method"]: (fz["alpha"], 0.0)}   # logT already made robust with fz["eps"]
-    rows = eval_items(model, items, cfg, logT, B_of)
+    keep = {}
+    rows = eval_items(model, items, cfg, logT, B_of, keep=keep)
+    pdir = OUT / "paths" / split                               # frozen-method paths, for the cross-model scorer
+    pdir.mkdir(parents=True, exist_ok=True)
+    for (name, g), ests in keep.items():
+        np.savez_compressed(pdir / f"{name}_g{g:g}.npz", RA=ests[fz["method"]].astype(np.float32))
     res = {"frozen": fz, "checkpoint": ck["rec"], "rows": rows, "summary": summarize(rows, list(cfg) + ["A", "B"])}
-    (OUT / "holdout3_results.json").write_text(json.dumps(res, indent=1))
+    (OUT / f"{split}_results.json").write_text(json.dumps(res, indent=1))
     for g, v in res["summary"].items():
         print(g, json.dumps(v))
 
@@ -562,6 +583,9 @@ def cmd_real():
 def cmd_freeze():
     """pick the decoding on validation only (before any holdout3 / real run): the Viterbi variant with the lowest
     mean(quake fail, whole fail); argmax stays as the ablation"""
+    touched = sorted(p.name for p in OUT.glob("holdout*_started.json")) + sorted(p.name for p in OUT.glob("holdout*_results.json"))
+    if touched:                                 # the decoding cannot change once a test split was looked at
+        raise SystemExit(f"freeze refused: test splits already touched {touched}")
     v = json.loads((OUT / "val_results.json").read_text())
     sm = v["summary"]["all"]
     crit = {k: (sm[k]["quake"] + sm[k]["whole"]) / 2 for k in sm if k.startswith("viterbi")}
@@ -683,7 +707,9 @@ if __name__ == "__main__":
     elif cmd == "freeze":
         cmd_freeze()
     elif cmd == "holdout":
-        cmd_holdout()
+        if len(sys.argv) < 3 or sys.argv[2] not in TESTS:   # explicit split: a bare `holdout` must not re-run holdout3
+            raise SystemExit(f"usage: ml_rowanchor.py holdout {'|'.join(TESTS)}")
+        cmd_holdout(sys.argv[2])
     elif cmd == "real":
         cmd_real()
     elif cmd == "figs":

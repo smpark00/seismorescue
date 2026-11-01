@@ -1,0 +1,39 @@
+{
+ "chip": "SHL_69_05_07_0219_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1969-05-07\",\n  \"on_time\": \"0219\",\n  \"off_date\": \"1969-05-08\",\n  \"off_time\": \"0154\",\n  \"magnification\": null,\n  \"border_digits\": \"0507690219010504\",\n  \"notes\": \"Station label form at bottom left is partially legible and shows ON 5-07-69 0219 and OFF 5-08-69 0154; station code, component, period and magnification cannot be confidently read.\"\n}",
+ "reasoning_chars": 4421,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1969-05-07",
+  "on_time": "0219",
+  "off_date": "1969-05-08",
+  "off_time": "0154",
+  "magnification": null,
+  "border_digits": "0507690219010504",
+  "notes": "Station label form at bottom left is partially legible and shows ON 5-07-69 0219 and OFF 5-08-69 0154; station code, component, period and magnification cannot be confidently read."
+ },
+ "usage": {
+  "completion_tokens": 1539,
+  "prompt_tokens": 4243,
+  "total_tokens": 5782,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4194,
+  "prompt_ms": 6443.46,
+  "prompt_per_token_ms": 1.536351931330472,
+  "prompt_per_second": 650.8925328938179,
+  "predicted_n": 1539,
+  "predicted_ms": 131736.482,
+  "predicted_per_token_ms": 85.65440962288686,
+  "predicted_per_second": 11.674822165055236
+ },
+ "secs": 138.3,
+ "error": null
+}

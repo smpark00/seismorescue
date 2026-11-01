@@ -1,0 +1,25 @@
+{
+ "frozen_at": "2026-10-28 21:50:32 KST",
+ "ckpt": "out/ml/sam3_film2_modal/ckpt_sam3_film2_best.pt",
+ "ckpt_sha256": "b66e3d5159fb8d01b946c9291427f3e5544d5d1ef62ebdfd40a1066aaa93defe",
+ "hf_id": "facebook/sam3",
+ "revision": "3c879f39826c281e95690f02c7821c4de09afae7",
+ "random_init": false,
+ "ckpt_step": 5674,
+ "ckpt_val_loss": 0.07706800526939332,
+ "lam_final": 1e-05,
+ "lam_chain": 0.0003,
+ "amp_bf16": false,
+ "window": [
+  406,
+  256
+ ],
+ "step": 192,
+ "prompt_cols": [
+  0,
+  16,
+  32,
+  48
+ ],
+ "lam_choice": "chosen on the film2 validation groups only (tune-lam, research/37 5.1): quake fail 18.7% at 1e-5 vs 18.6% at 3e-6 is a tie within 0.2 pp, whole fail ties at 5.7%, so the larger lam"
+}

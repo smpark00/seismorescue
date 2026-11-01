@@ -1,0 +1,30 @@
+{
+ "chip": "OGD_67_06_01_1347_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": null, \"component\": null, \"period\": null, \"on_date\": \"1967-06-01\", \"on_time\": \"1347\", \"off_date\": null, \"off_time\": null, \"magnification\": null, \"border_digits\": \"060167 1347 0082 04\", \"notes\": \"Border ON date 060167 and ON time 1347 match handwritten JUN 1 1967 and 1347 on the trace.\"}",
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1967-06-01",
+  "on_time": "1347",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "060167 1347 0082 04",
+  "notes": "Border ON date 060167 and ON time 1347 match handwritten JUN 1 1967 and 1347 on the trace."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 4057,
+  "output_tokens_details": {
+   "reasoning_tokens": 3945
+  },
+  "total_tokens": 8309
+ },
+ "secs": 47.4,
+ "error": null
+}

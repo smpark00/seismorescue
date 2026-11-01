@@ -1,0 +1,70 @@
+{
+ "chip": "PTO_63_04_17_1018_LHZ.TIFF",
+ "status": "ok",
+ "station": {
+  "code": "PTO",
+  "number": "0091",
+  "lat": 41.14,
+  "lon": -8.6,
+  "elev_m": 88.0,
+  "place": "Porto, Portugal",
+  "source": "film border number + WWSSN table"
+ },
+ "component": {
+  "code": "04",
+  "name": "LPZ",
+  "source": "film border"
+ },
+ "on_utc": "1963-04-17T10:18:00",
+ "on_source": "film border (read by Muse Spark, decoded by tool)",
+ "off": {
+  "date": null,
+  "time": null,
+  "source": "label form (read by Muse Spark)",
+  "used_by_L0": null
+ },
+ "magnification": null,
+ "border_digits": "041763 1018 0091 04",
+ "label": {
+  "station": null,
+  "component": null
+ },
+ "record_utc": [
+  "1963-04-17T10:18:00",
+  "1963-04-18T17:10:44"
+ ],
+ "time_model": {
+  "T0": -70.9463970224898,
+  "P": 3586.4,
+  "pps_r": 0.9521640804157113,
+  "x_on": 70.55261087972697,
+  "minute_ambiguous": false,
+  "reason": null,
+  "P_from_off": null,
+  "n_lines": 31,
+  "xa": 3.0,
+  "x0": 3,
+  "x1": 3472,
+  "failed": null,
+  "l0_dir": "l0_0"
+ },
+ "main_event": null,
+ "events": [],
+ "flags": [
+  "OFF not read: L0 counted the lines without it"
+ ],
+ "notes": "Border decodes to PTO LPZ ON 1963-04-17 10:18 UTC; 31 lines to 1963-04-18; label form not legible in scan; no M>=5.0 catalog events in window.",
+ "l1": {
+  "model": "muse-spark-1.3-contributor",
+  "requests": 5,
+  "tool_calls": 4,
+  "repairs": 0,
+  "validation_errors": [],
+  "input_tokens": 28803,
+  "output_tokens": 3946,
+  "cost_usd": 0.00367,
+  "seconds": 118.5,
+  "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+  "code_sha256": "63d739693f1a54a84402432126089f195d985f092158eacb655df602ce8209f4"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "chip": "COR_71_11_06_0129_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"GSK\",\n  \"component\": \"Z\",\n  \"period\": null,\n  \"on_date\": \"1971-11-06\",\n  \"on_time\": \"0129\",\n  \"off_date\": \"1971-11-07\",\n  \"off_time\": null,\n  \"magnification\": 1500,\n  \"border_digits\": \"1106710129003004\",\n  \"notes\": \"Calibration pulses are visible on the seismogram.\"\n}",
+ "reasoning_chars": 3381,
+ "parsed": {
+  "station": "GSK",
+  "component": "Z",
+  "period": null,
+  "on_date": "1971-11-06",
+  "on_time": "0129",
+  "off_date": "1971-11-07",
+  "off_time": null,
+  "magnification": 1500,
+  "border_digits": "1106710129003004",
+  "notes": "Calibration pulses are visible on the seismogram."
+ },
+ "usage": {
+  "completion_tokens": 1139,
+  "prompt_tokens": 4300,
+  "total_tokens": 5439,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6567.138,
+  "prompt_per_token_ms": 1.5448454481298517,
+  "prompt_per_second": 647.3139440651315,
+  "predicted_n": 1139,
+  "predicted_ms": 97441.63,
+  "predicted_per_token_ms": 85.62533391915642,
+  "predicted_per_second": 11.678786572022656
+ },
+ "secs": 104.1,
+ "error": null
+}

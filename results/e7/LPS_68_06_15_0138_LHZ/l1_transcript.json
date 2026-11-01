@@ -1,0 +1,314 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 7.8,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "061568 0138 0061 04"
+   },
+   "result": {
+    "groups": [
+     "061568",
+     "0138",
+     "0061",
+     "04"
+    ],
+    "on_utc": "1968-06-15T01:38:00",
+    "station_number": "0061",
+    "station": {
+     "code": "LPS",
+     "number": "0061",
+     "lat": 14.29,
+     "lon": -89.16,
+     "elev_m": 1000.0,
+     "place": "La Palma, El Salvador"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 8.3,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1968-06-16",
+    "off_time": "0119"
+   },
+   "result": {
+    "lines": 25,
+    "off_used": "1968-06-16T01:19:00",
+    "off_note": null,
+    "time_model": "none (unsupported line format: 121.0 min per line (60 expected))"
+   }
+  },
+  {
+   "request": 2,
+   "secs": 11.8,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "LPS",
+    "record_utc": [
+     "1968-06-15T01:38:00",
+     "1968-06-16T01:38:00"
+    ],
+    "time_model": "none (unsupported line format: 121.0 min per line (60 expected)); no line positions",
+    "lines": null,
+    "line_period_s": null,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "iscgem820397",
+      "origin_utc": "1968-06-15T05:11:20.91",
+      "mag": 5.7,
+      "mag_type": "mw",
+      "place": "64 km SW of Puerto Madero, Mexico",
+      "depth_km": 45.0,
+      "dist_deg": 3.6,
+      "P_phase": "P",
+      "P_utc": "1968-06-15T05:12:14",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1968-06-15T05:13:00",
+       "1968-06-15T05:13:34"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 4.78,
+      "amp_rank": 1
+     },
+     {
+      "id": "iscgem820399",
+      "origin_utc": "1968-06-15T07:08:51.97",
+      "mag": 6.2,
+      "mag_type": "mw",
+      "place": "274 km SSW of R\u00edo Grande, Panama",
+      "depth_km": 25.2,
+      "dist_deg": 10.9,
+      "P_phase": "P",
+      "P_utc": "1968-06-15T07:11:25",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1968-06-15T07:13:53",
+       "1968-06-15T07:15:34"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 4.48,
+      "amp_rank": 2
+     },
+     {
+      "id": "iscgem820424",
+      "origin_utc": "1968-06-15T13:34:17.29",
+      "mag": 6.2,
+      "mag_type": "mw",
+      "place": "72 km SW of Port-Vila, Vanuatu",
+      "depth_km": 20.9,
+      "dist_deg": 106.5,
+      "P_phase": "Pdiff",
+      "P_utc": "1968-06-15T13:48:29",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1968-06-15T14:23:36",
+       "1968-06-15T14:40:02"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 2.83,
+      "amp_rank": 3
+     },
+     {
+      "id": "iscgem820412",
+      "origin_utc": "1968-06-15T11:27:33.26",
+      "mag": 5.7,
+      "mag_type": "mw",
+      "place": "157 km SSE of Vilyuchinsk, Russia",
+      "depth_km": 30.0,
+      "dist_deg": 91.6,
+      "P_phase": "P",
+      "P_utc": "1968-06-15T11:40:36",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1968-06-15T12:09:58",
+       "1968-06-15T12:24:06"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 2.44,
+      "amp_rank": 4
+     },
+     {
+      "id": "iscgem820391",
+      "origin_utc": "1968-06-15T03:31:19.08",
+      "mag": 5.6,
+      "mag_type": "mw",
+      "place": "81 km E of Yamada, Japan",
+      "depth_km": 20.3,
+      "dist_deg": 107.7,
+      "P_phase": "Pdiff",
+      "P_utc": "1968-06-15T03:45:36",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1968-06-15T04:21:12",
+       "1968-06-15T04:37:49"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 2.23,
+      "amp_rank": 5
+     },
+     {
+      "id": "iscgem820398",
+      "origin_utc": "1968-06-15T05:59:05.77",
+      "mag": 5.6,
+      "mag_type": "mw",
+      "place": "137 km WNW of Naha, Japan",
+      "depth_km": 140.0,
+      "dist_deg": 126.2,
+      "P_phase": "Pdiff",
+      "P_utc": "1968-06-15T06:14:30",
+      "P_inside_record": true,
+      "P_line": null,
+      "P_column": null,
+      "P_lines_pm1": null,
+      "surface_utc": [
+       "1968-06-15T06:57:33",
+       "1968-06-15T07:17:03"
+      ],
+      "surface_lines": [
+       null,
+       null
+      ],
+      "surface_lines_pm1": null,
+      "amp_score": 2.11,
+      "amp_rank": 6
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 15.6,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"061568 0138 0061 04\", \"label_station\": \"LPS\", \"label_component\": \"Z\", \"magnification\": 3000, \"off_date\": \"1968-06-16\", \"off_time\": \"0119\", \"main_event_id\": \"iscgem820397\", \"notes\": \"Border ON 1968-06-15 01:38 station 0061 LPS LPZ. Label ON 6-15 01-38 OFF 6-16 01-19 COMP Z MAG 3000 matches. Measure 25 lines, time model unsupported. Main is amp rank 1 nearby M5.7.\"}",
+   "validation_errors": []
+  }
+ ]
+}

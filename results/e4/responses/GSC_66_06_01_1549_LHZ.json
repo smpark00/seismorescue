@@ -1,0 +1,30 @@
+{
+ "chip": "GSC_66_06_01_1549_LHZ",
+ "attempt": 1,
+ "text": "{\"station\":\"GSC\",\"component\":\"Z\",\"period\":\"LP\",\"on_date\":\"1966-06-01\",\"on_time\":\"1549\",\"off_date\":\"1966-06-02\",\"off_time\":\"1610\",\"magnification\":1500,\"border_digits\":\"060166 1549 0085 04\",\"notes\":\"Large calibration pulses appear at start and end of trace.\"}",
+ "parsed": {
+  "station": "GSC",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1966-06-01",
+  "on_time": "1549",
+  "off_date": "1966-06-02",
+  "off_time": "1610",
+  "magnification": 1500,
+  "border_digits": "060166 1549 0085 04",
+  "notes": "Large calibration pulses appear at start and end of trace."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 1306,
+  "output_tokens_details": {
+   "reasoning_tokens": 1216
+  },
+  "total_tokens": 5558
+ },
+ "secs": 15.7,
+ "error": null
+}

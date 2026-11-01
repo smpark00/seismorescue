@@ -1,0 +1,46 @@
+{
+  "file": "ALQ_75_10_27_1551_SHZ.TIFF",
+  "downloaded": "2026-10-27",
+  "source_url": "https://data.earthscope.org/archive/seismology/products/film_chip/data/ALQ/ALQ_75_10_27_1551_SHZ.TIFF",
+  "source_metadata_url": "https://data.earthscope.org/archive/seismology/products/film_chip/data/ALQ/ALQ_75_10_27_1551_SHZ.json",
+  "portal": "https://data.earthscope.org/app/products/portal/film_chip/, SPUD FilmChip id 20275",
+  "product_citation": "EarthScope DS (2011), Data Services Products: Film Chip, The USGS WWFC Pilot Scanning Project, doi:10.17611/DP/FC.1",
+  "licence": {
+    "status": "clear: CC0 1.0 / US public domain (with caveat)",
+    "basis": {
+      "title": "World-Wide Standardized Seismographic Network Film Chip Scans",
+      "authors": "Ringler, A.T., Holland, J.F., Lee, T., Kim, S. (2025), U.S. Geological Survey data release",
+      "doi": "https://doi.org/10.5066/P13PHZMA",
+      "licence_text_on_usgs_page": "This work is marked with CC0 1.0 Universal",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "usgs_page": "https://www.usgs.gov/data/world-wide-standardized-seismographic-network-film-chip-scans",
+      "coverage_note": "LSD/ASL docs list the release contents as 26,824 (3200 ppi, grayscale; = EarthScope pilot set) + ~1,000 (400 dpi bitonal) + ~150,000 (3200 ppi, grayscale; Retriever scans): https://lsd-sphinx.readthedocs.io/en/latest/_sources/find_data/organizations/wwssn.md"
+    },
+    "caveat": "EarthScope product page states no licence; this exact file was not checked file-by-file inside the USGS release."
+  },
+  "sha256": "43fe8ad976979d987e6c754f96c51d8f0d740b73680def05f4b028ccb380f02c",
+  "bytes": 26981408,
+  "station": {
+    "code": "ALQ",
+    "name": "Albuquerque, New Mexico, USA",
+    "network": "WWSSN",
+    "lat": 34.9425,
+    "lon": -106.4575
+  },
+  "instrument": "WWSSN short-period vertical (Benioff, photographic drum, 60 mm/min, 1 line = 15 min, ~96 lines)",
+  "label_on_record": "STATION ALQ COMP Z MAG 200K CAL.CUR 0.06(?) G 2.0; ON 10-27-75 1551, OFF 10-28-75 1535; CORR +/0 ms; To 1.0 Tg 0.75 (handwriting partly uncertain)",
+  "record_window_utc": [
+    "1975-10-27T15:51",
+    "1975-10-28T15:35"
+  ],
+  "image": {
+    "format": "TIFF, uncompressed",
+    "size_px": [
+      7956,
+      3391
+    ],
+    "mode": "8-bit grayscale",
+    "tiff_resolution_tag_dpi": 3200,
+    "polarity": "positive (dark trace on light)"
+  }
+}

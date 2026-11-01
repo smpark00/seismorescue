@@ -1,4 +1,4 @@
-"""Arbiter for SeismoRescue (docs/RESULTS.md-multiagent-design.md): two proposer trackers, events where they disagree,
+"""Arbiter for SeismoRescue (research/16-multiagent-design.md): two proposer trackers, events where they disagree,
 rule features per event, and assembly of the final paths.
 
 Proposer A = greedy single-line tracker (good on the large-amplitude line), proposer B = joint physics tracker

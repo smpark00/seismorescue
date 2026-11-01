@@ -1,0 +1,39 @@
+{
+ "chip": "AQU_63_02_08_0634_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1963-02-08\",\n  \"on_time\": \"0634\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"020863 0634 0010 04\",\n  \"notes\": \"Station label form and component/period/magnification are illegible on the left margin; handwritten annotation visible on the film edge.\"\n}",
+ "reasoning_chars": 4237,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1963-02-08",
+  "on_time": "0634",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "020863 0634 0010 04",
+  "notes": "Station label form and component/period/magnification are illegible on the left margin; handwritten annotation visible on the film edge."
+ },
+ "usage": {
+  "completion_tokens": 1294,
+  "prompt_tokens": 4300,
+  "total_tokens": 5594,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4251,
+  "prompt_ms": 6584.779,
+  "prompt_per_token_ms": 1.548995295224653,
+  "prompt_per_second": 645.5797529423538,
+  "predicted_n": 1294,
+  "predicted_ms": 110864.559,
+  "predicted_per_token_ms": 85.74211832946635,
+  "predicted_per_second": 11.662879568212597
+ },
+ "secs": 117.6,
+ "error": null
+}

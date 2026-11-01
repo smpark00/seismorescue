@@ -1,0 +1,453 @@
+{
+ "instructions": "You are the context agent of SeismoRescue, which digitizes WWSSN analog seismogram film chips.\nYou get two images of one film chip: image 1 is the whole chip, image 2 its top part at higher resolution with the film\nborder and the station label form.\n1. Read the printed digit groups on the film border. There are four groups, 'MMDDYY HHMM NNNN CC': the ON date, the ON\n   time (UTC), the WWSSN station number and the component code. They are the primary record metadata. Call\n   decode_border with exactly the digits you read; never guess an unreadable digit.\n2. Read the handwritten or typed label form (station code, component, magnification, OFF date and time). It is only a\n   cross-check. If decode_border cannot identify the station, call station_by_code with the label's station code.\n3. Call measure_record with the OFF date and time read from the label form (null if unreadable). It finds the record\n   lines and measures the time marks.\n4. Call catalog to get the earthquakes this record should show, with the record lines where their P waves and surface\n   waves are predicted from the measured time model.\n5. Choose the main event: the catalogue event this record most likely shows best, usually the one with the largest\n   expected surface-wave amplitude inside the record.\nNever compute dates, times, distances or line numbers yourself; the tools do that. When done, reply with ONLY this JSON\nobject (null for anything unreadable):\n{\"border_digits\": str, \"label_station\": str, \"label_component\": \"Z\" | \"N\" | \"E\", \"magnification\": number,\n \"off_date\": \"YYYY-MM-DD\", \"off_time\": \"HHMM\", \"main_event_id\": str, \"notes\": str}",
+ "tools": [
+  {
+   "type": "function",
+   "name": "decode_border",
+   "description": "Decode the printed film-border digit groups 'MMDDYY HHMM NNNN CC' (ON date, ON time UTC, WWSSN station number, component code) with the WWSSN station-number table. Returns the ON time, the station (code, coordinates) and the component, and lists any problem.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "border_digits": {
+      "type": "string",
+      "description": "the digit groups as printed, e.g. '122873 0020 0064 04'"
+     }
+    },
+    "required": [
+     "border_digits"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "station_by_code",
+   "description": "Look up a WWSSN station by its code (for example read from the label form): number, coordinates, place.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "code": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "measure_record",
+   "description": "Run the geometry and time module (L0) on this chip with the decoded ON time and the OFF date and time read from the label form: it finds the record lines (their number follows from ON and OFF), measures the line period and the minute marks, and returns the line count, the line period and the record's start and end (UTC). Call it after decode_border.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "off_date": {
+      "type": "string",
+      "description": "YYYY-MM-DD, or null"
+     },
+     "off_time": {
+      "type": "string",
+      "description": "HHMM, or null"
+     }
+    },
+    "required": [
+     "off_date",
+     "off_time"
+    ]
+   }
+  },
+  {
+   "type": "function",
+   "name": "catalog",
+   "description": "USGS catalogue earthquakes (M >= min_magnitude, default 5.5) that this record should show, for the decoded station and ON time: distance, TauP P arrival and surface-wave window (group velocity 4.0-3.0 km/s), each placed on the record lines (line 0 = first record line) by the measured time model, and the rank of the expected surface-wave amplitude.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "min_magnitude": {
+      "type": "number"
+     }
+    },
+    "required": []
+   }
+  }
+ ],
+ "user": "Public scan of a WWSSN film chip. Read the record metadata and use the tools as instructed.",
+ "log": [
+  {
+   "request": 0,
+   "secs": 6.2,
+   "function_calls": 1
+  },
+  {
+   "tool": "decode_border",
+   "args": {
+    "border_digits": "122873 0020 0064 04"
+   },
+   "result": {
+    "groups": [
+     "122873",
+     "0020",
+     "0064",
+     "04"
+    ],
+    "on_utc": "1973-12-28T00:20:00",
+    "station_number": "0064",
+    "station": {
+     "code": "MAT",
+     "number": "0064",
+     "lat": 36.54,
+     "lon": 138.21,
+     "elev_m": 422.0,
+     "place": "Matsushiro, Japan"
+    },
+    "component_code": "04",
+    "component": "LPZ",
+    "problems": []
+   }
+  },
+  {
+   "request": 1,
+   "secs": 6.1,
+   "function_calls": 1
+  },
+  {
+   "tool": "measure_record",
+   "args": {
+    "off_date": "1973-12-29",
+    "off_time": "0013"
+   },
+   "result": {
+    "lines": 25,
+    "off_used": "1973-12-29T00:13:00",
+    "off_note": null,
+    "time_model": "measured",
+    "line_period_s": 3588.1,
+    "record_utc": [
+     "1973-12-28T00:20:00",
+     "1973-12-29T00:13:22"
+    ],
+    "on_minute_ambiguous": false,
+    "line_period_implied_by_off_s": 3587.1
+   }
+  },
+  {
+   "request": 2,
+   "secs": 5.3,
+   "function_calls": 1
+  },
+  {
+   "tool": "catalog",
+   "args": {},
+   "result": {
+    "station": "MAT",
+    "record_utc": [
+     "1973-12-28T00:20:00",
+     "1973-12-29T00:13:22"
+    ],
+    "time_model": "measured",
+    "lines": 25,
+    "line_period_s": 3588.1,
+    "on_minute_ambiguous": false,
+    "events": [
+     {
+      "id": "usp00004p9",
+      "origin_utc": "1973-12-28T13:41:45.80",
+      "mag": 7.5,
+      "mag_type": "ms",
+      "place": "81 km NW of Port-Olry, Vanuatu",
+      "depth_km": 26.0,
+      "dist_deg": 57.6,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T13:51:33",
+      "P_inside_record": true,
+      "P_line": 14,
+      "P_column": 1259,
+      "P_lines_pm1": [
+       13,
+       15
+      ],
+      "surface_utc": [
+       "1973-12-28T14:08:27",
+       "1973-12-28T14:17:20"
+      ],
+      "surface_lines": [
+       14,
+       14
+      ],
+      "surface_lines_pm1": [
+       13,
+       15
+      ],
+      "amp_score": 4.58,
+      "amp_rank": 1
+     },
+     {
+      "id": "usp00004p7",
+      "origin_utc": "1973-12-28T05:31:06.40",
+      "mag": 6.4,
+      "mag_type": "mb",
+      "place": "south of the Fiji Islands",
+      "depth_km": 549.0,
+      "dist_deg": 72.1,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T05:41:35",
+      "P_inside_record": true,
+      "P_line": 6,
+      "P_column": 629,
+      "P_lines_pm1": [
+       5,
+       7
+      ],
+      "surface_utc": [
+       "1973-12-28T06:04:30",
+       "1973-12-28T06:15:39"
+      ],
+      "surface_lines": [
+       6,
+       6
+      ],
+      "surface_lines_pm1": [
+       5,
+       7
+      ],
+      "amp_score": 3.32,
+      "amp_rank": 2
+     },
+     {
+      "id": "iscgem753910",
+      "origin_utc": "1973-12-28T16:08:20.27",
+      "mag": 5.7,
+      "mag_type": "mw",
+      "place": "74 km NNW of Port-Olry, Vanuatu",
+      "depth_km": 62.3,
+      "dist_deg": 57.7,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T16:18:04",
+      "P_inside_record": true,
+      "P_line": 16,
+      "P_column": 2725,
+      "P_lines_pm1": [
+       15,
+       17
+      ],
+      "surface_utc": [
+       "1973-12-28T16:35:03",
+       "1973-12-28T16:43:57"
+      ],
+      "surface_lines": [
+       17,
+       17
+      ],
+      "surface_lines_pm1": [
+       16,
+       18
+      ],
+      "amp_score": 2.78,
+      "amp_rank": 3
+     },
+     {
+      "id": "usp00004pa",
+      "origin_utc": "1973-12-28T14:18:52.00",
+      "mag": 5.6,
+      "mag_type": "mb",
+      "place": "72 km WNW of Port-Olry, Vanuatu",
+      "depth_km": 33.0,
+      "dist_deg": 57.8,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T14:28:39",
+      "P_inside_record": true,
+      "P_line": 15,
+      "P_column": 22,
+      "P_lines_pm1": [
+       14,
+       16
+      ],
+      "surface_utc": [
+       "1973-12-28T14:45:38",
+       "1973-12-28T14:54:34"
+      ],
+      "surface_lines": [
+       15,
+       15
+      ],
+      "surface_lines_pm1": [
+       14,
+       16
+      ],
+      "amp_score": 2.68,
+      "amp_rank": 4
+     },
+     {
+      "id": "usp00004pt",
+      "origin_utc": "1973-12-28T21:05:36.70",
+      "mag": 5.6,
+      "mag_type": "mb",
+      "place": "76 km NNW of Port-Olry, Vanuatu",
+      "depth_km": 50.0,
+      "dist_deg": 57.6,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T21:15:21",
+      "P_inside_record": true,
+      "P_line": 21,
+      "P_column": 2631,
+      "P_lines_pm1": [
+       20,
+       22
+      ],
+      "surface_utc": [
+       "1973-12-28T21:32:18",
+       "1973-12-28T21:41:12"
+      ],
+      "surface_lines": [
+       22,
+       22
+      ],
+      "surface_lines_pm1": [
+       21,
+       23
+      ],
+      "amp_score": 2.68,
+      "amp_rank": 5
+     },
+     {
+      "id": "usp00004pb",
+      "origin_utc": "1973-12-28T14:46:33.60",
+      "mag": 5.6,
+      "mag_type": "mb",
+      "place": "47 km NNW of Port-Olry, Vanuatu",
+      "depth_km": 33.0,
+      "dist_deg": 57.9,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T14:56:22",
+      "P_inside_record": true,
+      "P_line": 15,
+      "P_column": 1532,
+      "P_lines_pm1": [
+       14,
+       16
+      ],
+      "surface_utc": [
+       "1973-12-28T15:13:23",
+       "1973-12-28T15:22:19"
+      ],
+      "surface_lines": [
+       15,
+       15
+      ],
+      "surface_lines_pm1": [
+       14,
+       16
+      ],
+      "amp_score": 2.67,
+      "amp_rank": 6
+     },
+     {
+      "id": "usp00004pp",
+      "origin_utc": "1973-12-28T17:50:15.40",
+      "mag": 5.6,
+      "mag_type": "mb",
+      "place": "35 km WNW of Port-Olry, Vanuatu",
+      "depth_km": 33.0,
+      "dist_deg": 58.1,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T18:00:05",
+      "P_inside_record": true,
+      "P_line": 18,
+      "P_column": 1767,
+      "P_lines_pm1": [
+       17,
+       19
+      ],
+      "surface_utc": [
+       "1973-12-28T18:17:10",
+       "1973-12-28T18:26:08"
+      ],
+      "surface_lines": [
+       18,
+       18
+      ],
+      "surface_lines_pm1": [
+       17,
+       19
+      ],
+      "amp_score": 2.67,
+      "amp_rank": 7
+     },
+     {
+      "id": "usp00004pc",
+      "origin_utc": "1973-12-28T15:08:12.60",
+      "mag": 5.5,
+      "mag_type": "mb",
+      "place": "88 km NW of Port-Olry, Vanuatu",
+      "depth_km": 33.0,
+      "dist_deg": 57.6,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T15:17:58",
+      "P_inside_record": true,
+      "P_line": 15,
+      "P_column": 2709,
+      "P_lines_pm1": [
+       14,
+       16
+      ],
+      "surface_utc": [
+       "1973-12-28T15:34:53",
+       "1973-12-28T15:43:46"
+      ],
+      "surface_lines": [
+       16,
+       16
+      ],
+      "surface_lines_pm1": [
+       15,
+       17
+      ],
+      "amp_score": 2.58,
+      "amp_rank": 8
+     },
+     {
+      "id": "usp00004pq",
+      "origin_utc": "1973-12-28T18:19:30.40",
+      "mag": 5.5,
+      "mag_type": "mb",
+      "place": "62 km W of Port-Olry, Vanuatu",
+      "depth_km": 43.0,
+      "dist_deg": 58.0,
+      "P_phase": "P",
+      "P_utc": "1973-12-28T18:29:18",
+      "P_inside_record": true,
+      "P_line": 19,
+      "P_column": 101,
+      "P_lines_pm1": [
+       18,
+       20
+      ],
+      "surface_utc": [
+       "1973-12-28T18:46:22",
+       "1973-12-28T18:55:20"
+      ],
+      "surface_lines": [
+       19,
+       19
+      ],
+      "surface_lines_pm1": [
+       18,
+       20
+      ],
+      "amp_score": 2.57,
+      "amp_rank": 9
+     }
+    ]
+   }
+  },
+  {
+   "request": 3,
+   "secs": 15.4,
+   "function_calls": 0
+  },
+  {
+   "final": "{\"border_digits\": \"122873 0020 0064 04\", \"label_station\": \"MAT\", \"label_component\": \"Z\", \"magnification\": 3000, \"off_date\": \"1973-12-29\", \"off_time\": \"0013\", \"main_event_id\": \"usp00004p9\", \"notes\": \"Border 12-28-73 00:20 stn 0064 MAT LPZ matches label MAT Z; label ON 12-28-73 00:20 OFF 12-29-73 00:13 used for measure; 25 lines 00:20 to 00:13+1d; main M7.5 Vanuatu rank 1 surface line 14.\"}",
+   "validation_errors": []
+  }
+ ]
+}

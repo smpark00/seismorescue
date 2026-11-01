@@ -1,0 +1,39 @@
+{
+ "chip": "KON_71_01_29_2033_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": \"EON\",\n  \"component\": \"Z\",\n  \"period\": \"LP\",\n  \"on_date\": \"1971-01-29\",\n  \"on_time\": \"2033\",\n  \"off_date\": \"1971-01-30\",\n  \"off_time\": \"1944\",\n  \"magnification\": 1500,\n  \"border_digits\": \"012971 2033 0055 04\",\n  \"notes\": \"Label shows DATE ON 1-29-71 TIME ON 2033 CORR +3? MS @ 20 GMT and DATE OF 1-30-71 TIME OFF 1944 CORR 8/0 MS @ 20 GMT.\"\n}",
+ "reasoning_chars": 2436,
+ "parsed": {
+  "station": "EON",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1971-01-29",
+  "on_time": "2033",
+  "off_date": "1971-01-30",
+  "off_time": "1944",
+  "magnification": 1500,
+  "border_digits": "012971 2033 0055 04",
+  "notes": "Label shows DATE ON 1-29-71 TIME ON 2033 CORR +3? MS @ 20 GMT and DATE OF 1-30-71 TIME OFF 1944 CORR 8/0 MS @ 20 GMT."
+ },
+ "usage": {
+  "completion_tokens": 980,
+  "prompt_tokens": 4045,
+  "total_tokens": 5025,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 3996,
+  "prompt_ms": 6182.018,
+  "prompt_per_token_ms": 1.5470515515515515,
+  "prompt_per_second": 646.3908710715498,
+  "predicted_n": 980,
+  "predicted_ms": 83831.953,
+  "predicted_per_token_ms": 85.63018692543412,
+  "predicted_per_second": 11.678124688327374
+ },
+ "secs": 90.1,
+ "error": null
+}

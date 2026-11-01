@@ -1,0 +1,1084 @@
+{
+ "what": "research/48 E9: Muse Glimmer (local llama.cpp) on the 30 E4 chips, E4 question and images",
+ "n": 30,
+ "label_fields": {
+  "station": {
+   "correct": 9,
+   "n": 30,
+   "wilson95": [
+    0.167,
+    0.479
+   ]
+  },
+  "on_date": {
+   "correct": 28,
+   "n": 30,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time": {
+   "correct": 27,
+   "n": 30,
+   "wilson95": [
+    0.744,
+    0.965
+   ]
+  },
+  "component": {
+   "correct": 14,
+   "n": 30,
+   "wilson95": [
+    0.302,
+    0.639
+   ]
+  },
+  "all4": {
+   "correct": 6,
+   "n": 30,
+   "wilson95": [
+    0.095,
+    0.373
+   ]
+  }
+ },
+ "table_path": {
+  "station": {
+   "correct": 26,
+   "n": 30,
+   "wilson95": [
+    0.703,
+    0.947
+   ]
+  },
+  "on_date": {
+   "correct": 27,
+   "n": 30,
+   "wilson95": [
+    0.744,
+    0.965
+   ]
+  },
+  "on_time": {
+   "correct": 27,
+   "n": 30,
+   "wilson95": [
+    0.744,
+    0.965
+   ]
+  },
+  "component": {
+   "correct": 28,
+   "n": 30,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "all4": {
+   "correct": 24,
+   "n": 30,
+   "wilson95": [
+    0.627,
+    0.905
+   ]
+  }
+ },
+ "table_path_chip_truth": {
+  "station": {
+   "correct": 26,
+   "n": 30,
+   "wilson95": [
+    0.703,
+    0.947
+   ]
+  },
+  "on_date": {
+   "correct": 28,
+   "n": 30,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time": {
+   "correct": 28,
+   "n": 30,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "component": {
+   "correct": 28,
+   "n": 30,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "all4": {
+   "correct": 26,
+   "n": 30,
+   "wilson95": [
+    0.703,
+    0.947
+   ]
+  }
+ },
+ "border_16_digits": 28,
+ "secs_median": 134.5,
+ "errors": 0,
+ "spark_e4": {
+  "station": {
+   "correct": 15,
+   "n": 30,
+   "rate": 0.5,
+   "wilson95": [
+    0.332,
+    0.668
+   ]
+  },
+  "on_date": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "on_time": {
+   "correct": 28,
+   "n": 30,
+   "rate": 0.933,
+   "wilson95": [
+    0.787,
+    0.982
+   ]
+  },
+  "component": {
+   "correct": 21,
+   "n": 30,
+   "rate": 0.7,
+   "wilson95": [
+    0.521,
+    0.833
+   ]
+  },
+  "all4": {
+   "correct": 12,
+   "n": 30,
+   "rate": 0.4,
+   "wilson95": [
+    0.246,
+    0.577
+   ]
+  }
+ },
+ "server": {
+  "build_info": "b1-da6c30a",
+  "model_path": "models/muse-glimmer/Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf",
+  "n_ctx": null,
+  "modalities": {
+   "vision": true,
+   "video": true,
+   "audio": false
+  },
+  "chat_template_kwargs": null,
+  "raw_keys": [
+   "bos_token",
+   "build_info",
+   "chat_template",
+   "chat_template_caps",
+   "cors_proxy_enabled",
+   "default_generation_settings",
+   "endpoint_metrics",
+   "endpoint_props",
+   "endpoint_slots",
+   "eos_token",
+   "is_sleeping",
+   "media_marker",
+   "modalities",
+   "model_alias",
+   "model_ftype",
+   "model_path",
+   "total_slots",
+   "ui",
+   "ui_settings"
+  ]
+ },
+ "rows": [
+  {
+   "chip": "ANP_69_09_21_0022_LHZ",
+   "secs": 358.6,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "on_time_1min": false,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "component": false,
+    "all4": false
+   },
+   "table_chip": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "component": false,
+    "all4": false
+   },
+   "border_16_digits": false
+  },
+  {
+   "chip": "ANP_71_11_06_0011_LHZ",
+   "secs": 345.7,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "AQU_63_02_08_0634_LHZ",
+   "secs": 117.6,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "table_chip": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "BAG_63_02_17_0026_LHZ",
+   "secs": 173.2,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "BHP_66_06_30_1229_LHZ",
+   "secs": 80.5,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "CMC_63_05_28_0438_LHZ",
+   "secs": 124.8,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "table_chip": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "COL_66_06_01_1910_LHZ",
+   "secs": 132.5,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "COL_75_06_30_1706_LHZ",
+   "secs": 87.1,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": false,
+    "all4": true
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "COR_71_11_06_0129_LHZ",
+   "secs": 104.1,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "ESK_70_03_26_0839_LHZ",
+   "secs": 104.9,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "GOL_75_10_26_1713_LHZ",
+   "secs": 164.7,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": true
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "GSC_66_06_01_1549_LHZ",
+   "secs": 67.4,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": true
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "IST_64_02_11_0750_LHZ",
+   "secs": 168.4,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": false,
+    "on_time_1min": false,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "component": false,
+    "all4": false
+   },
+   "table_chip": {
+    "station": false,
+    "on_date": false,
+    "on_time": false,
+    "component": false,
+    "all4": false
+   },
+   "border_16_digits": false
+  },
+  {
+   "chip": "JER_75_10_28_0815_LHZ",
+   "secs": 134.5,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": true
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "KEV_73_06_06_0805_LHZ",
+   "secs": 169.3,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "KON_71_01_29_2033_LHZ",
+   "secs": 90.1,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "LON_68_03_22_1616_LHZ",
+   "secs": 117.0,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": false,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": false,
+    "on_time": true,
+    "component": true,
+    "all4": false
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "LON_76_02_06_1556_LHZ",
+   "secs": 136.6,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "LPB_66_06_30_1907_LHZ",
+   "secs": 178.7,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "LPB_67_06_02_1912_LHZ",
+   "secs": 133.2,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "LUB_73_06_05_1342_LHZ",
+   "secs": 136.6,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "MAL_66_06_30_0831_LHZ",
+   "secs": 167.1,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "OGD_67_06_01_1347_LHZ",
+   "secs": 106.7,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "POO_75_10_28_0159_LHZ",
+   "secs": 81.5,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": false,
+    "all4": true
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "SHL_69_05_07_0219_LHZ",
+   "secs": 138.3,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "SPA_69_05_07_0031_LHZ",
+   "secs": 113.4,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "TOL_75_10_26_0658_LHZ",
+   "secs": 135.7,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": true,
+    "period": true,
+    "all4": true
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "WEL_69_09_15_2038_LHZ",
+   "secs": 104.5,
+   "error": null,
+   "label": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "WES_63_02_20_1914_LHZ",
+   "secs": 189.5,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": true,
+    "on_time_1min": true,
+    "component": false,
+    "period": true,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  },
+  {
+   "chip": "WIN_71_01_29_0124_LHZ",
+   "secs": 277.1,
+   "error": null,
+   "label": {
+    "station": false,
+    "on_date": true,
+    "on_time": false,
+    "on_time_1min": false,
+    "component": false,
+    "period": false,
+    "all4": false
+   },
+   "table": {
+    "station": true,
+    "on_date": true,
+    "on_time": false,
+    "component": true,
+    "all4": false
+   },
+   "table_chip": {
+    "station": true,
+    "on_date": true,
+    "on_time": true,
+    "component": true,
+    "all4": true
+   },
+   "border_16_digits": true
+  }
+ ]
+}

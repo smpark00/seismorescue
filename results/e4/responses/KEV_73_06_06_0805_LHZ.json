@@ -1,0 +1,30 @@
+{
+ "chip": "KEV_73_06_06_0805_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"KEY\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1973-06-06\", \"on_time\": \"0805\", \"off_date\": \"1973-07-07\", \"off_time\": \"0814\", \"magnification\": 15000, \"border_digits\": \"060673 0805 0052 04\", \"notes\": \"To15 Tg100 indicates long-period operation.\"}",
+ "parsed": {
+  "station": "KEY",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1973-06-06",
+  "on_time": "0805",
+  "off_date": "1973-07-07",
+  "off_time": "0814",
+  "magnification": 15000,
+  "border_digits": "060673 0805 0052 04",
+  "notes": "To15 Tg100 indicates long-period operation."
+ },
+ "usage": {
+  "input_tokens": 4252,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 2413,
+  "output_tokens_details": {
+   "reasoning_tokens": 2307
+  },
+  "total_tokens": 6665
+ },
+ "secs": 22.3,
+ "error": null
+}

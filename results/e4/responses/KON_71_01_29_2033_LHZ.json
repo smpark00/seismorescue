@@ -1,0 +1,30 @@
+{
+ "chip": "KON_71_01_29_2033_LHZ",
+ "attempt": 1,
+ "text": "{\"station\": \"KON\", \"component\": \"Z\", \"period\": \"LP\", \"on_date\": \"1971-01-29\", \"on_time\": \"2033\", \"off_date\": \"1971-01-30\", \"off_time\": \"1944\", \"magnification\": 1500, \"border_digits\": \"012971 2033 0055 04\", \"notes\": \"Daily LP record with hour marks and time corrections noted on label.\"}",
+ "parsed": {
+  "station": "KON",
+  "component": "Z",
+  "period": "LP",
+  "on_date": "1971-01-29",
+  "on_time": "2033",
+  "off_date": "1971-01-30",
+  "off_time": "1944",
+  "magnification": 1500,
+  "border_digits": "012971 2033 0055 04",
+  "notes": "Daily LP record with hour marks and time corrections noted on label."
+ },
+ "usage": {
+  "input_tokens": 3997,
+  "input_tokens_details": {
+   "cached_tokens": 227
+  },
+  "output_tokens": 1956,
+  "output_tokens_details": {
+   "reasoning_tokens": 1845
+  },
+  "total_tokens": 5953
+ },
+ "secs": 23.5,
+ "error": null
+}

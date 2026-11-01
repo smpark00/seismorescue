@@ -1,0 +1,71 @@
+{
+ "chip": "TRN_68_08_28_1308_LHZ.TIFF",
+ "status": "ok",
+ "station": {
+  "code": "TRN",
+  "number": "0118",
+  "lat": 10.65,
+  "lon": -61.4,
+  "elev_m": 24.0,
+  "place": "Trinidad, Port of Spain",
+  "source": "film border number + WWSSN table"
+ },
+ "component": {
+  "code": "04",
+  "name": "LPZ",
+  "source": "film border"
+ },
+ "on_utc": "1968-06-28T13:08:00",
+ "on_source": "film border (read by Muse Spark, decoded by tool)",
+ "off": {
+  "date": "1968-06-29",
+  "time": "1356",
+  "source": "label form (read by Muse Spark)",
+  "used_by_L0": "1968-06-29T13:56:00"
+ },
+ "magnification": 1500,
+ "border_digits": "062868 1308 0118 04",
+ "label": {
+  "station": "TRN",
+  "component": "Z"
+ },
+ "record_utc": [
+  "1968-06-28T13:08:00",
+  "1968-06-29T14:25:29"
+ ],
+ "time_model": {
+  "T0": -2351.999405336857,
+  "P": 3588.9500000000003,
+  "pps_r": 0.9131683028083087,
+  "x_on": 2150.771305177609,
+  "minute_ambiguous": false,
+  "reason": null,
+  "P_from_off": 3518.1877046279196,
+  "n_lines": 26,
+  "xa": 3.0,
+  "x0": 3,
+  "x1": 3362,
+  "failed": null,
+  "l0_dir": "l0_0"
+ },
+ "main_event": null,
+ "events": [],
+ "flags": [
+  "file name says on 1968-08-28T13:08, the chip gives 1968-06-28T13:08",
+  "OFF and the last line's trace end imply a line period of 3518.2 s, the minute marks 3589.0 s: line count or OFF may be wrong"
+ ],
+ "notes": "Border ON 1968-06-28 13:08 TRN LPZ; label TRN Z mag 1500 cross-checks; default M>=5.5 catalog empty so no main event.",
+ "l1": {
+  "model": "muse-spark-1.3-contributor",
+  "requests": 6,
+  "tool_calls": 4,
+  "repairs": 1,
+  "validation_errors": [],
+  "input_tokens": 37305,
+  "output_tokens": 7020,
+  "cost_usd": 0.00513,
+  "seconds": 130.1,
+  "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+  "code_sha256": "63d739693f1a54a84402432126089f195d985f092158eacb655df602ce8209f4"
+ }
+}

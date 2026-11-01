@@ -1,0 +1,39 @@
+{
+ "chip": "CMC_63_05_28_0438_LHZ",
+ "attempt": 1,
+ "text": "{\n  \"station\": null,\n  \"component\": null,\n  \"period\": null,\n  \"on_date\": \"1963-05-28\",\n  \"on_time\": \"0438\",\n  \"off_date\": null,\n  \"off_time\": null,\n  \"magnification\": null,\n  \"border_digits\": \"052863 0438 0027 04\",\n  \"notes\": \"Station label and component information on the left margin is not legible in the provided scans.\"\n}",
+ "reasoning_chars": 4499,
+ "parsed": {
+  "station": null,
+  "component": null,
+  "period": null,
+  "on_date": "1963-05-28",
+  "on_time": "0438",
+  "off_date": null,
+  "off_time": null,
+  "magnification": null,
+  "border_digits": "052863 0438 0027 04",
+  "notes": "Station label and component information on the left margin is not legible in the provided scans."
+ },
+ "usage": {
+  "completion_tokens": 1380,
+  "prompt_tokens": 4243,
+  "total_tokens": 5623,
+  "prompt_tokens_details": {
+   "cached_tokens": 49
+  }
+ },
+ "timings": {
+  "cache_n": 49,
+  "prompt_n": 4194,
+  "prompt_ms": 6457.407,
+  "prompt_per_token_ms": 1.5396773962804007,
+  "prompt_per_second": 649.4867057318827,
+  "predicted_n": 1380,
+  "predicted_ms": 118240.695,
+  "predicted_per_token_ms": 85.74379622915157,
+  "predicted_per_second": 11.662651340132937
+ },
+ "secs": 124.8,
+ "error": null
+}
