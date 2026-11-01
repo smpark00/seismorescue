@@ -5,6 +5,7 @@ from pathlib import Path
 import numpy as np
 ROOT = Path(__file__).resolve().parents[3]   # repository root
 sys.path.insert(0, str(ROOT / "scripts"))
+sys.path.insert(0, str(ROOT / "archive" / "offline_baselines"))   # needs the removed row-anchor weights to run again
 import ml_rowanchor as ra
 from track_joint import score
 fz = json.loads((ra.OUT / "frozen.json").read_text())

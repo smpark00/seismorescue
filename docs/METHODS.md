@@ -1,6 +1,8 @@
 # Methods
 
 > **Earlier experiments.** This page describes the first week of work (SAM 2.1 and row-anchor v1). The current system and its numbers are in the [main README](../README.md).
+>
+> The row-anchor networks were offline baselines. They are not part of what runs, and their weights were removed from this repository after the organizers' ruling on custom models ([why](../archive/offline_baselines/README.md)).
 
 ## Benchmark: synthetic WWSSN films with exact ground truth
 
@@ -42,7 +44,7 @@
 
 ## Learned extraction
 
-### Row-anchor sequence model ([`scripts/ml_rowanchor.py`](../scripts/ml_rowanchor.py))
+### Row-anchor sequence model ([`archive/offline_baselines/ml_rowanchor.py`](../archive/offline_baselines/ml_rowanchor.py))
 - **Target-conditioned input.**
   - A crop of ±10.5 line spacings centred on the target line's layout baseline, at half resolution (19 px per spacing, 2 s per column).
   - Channel 1: local ink darkness, normalised by the image's typical trace darkness.
