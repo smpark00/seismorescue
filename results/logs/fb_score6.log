@@ -1,0 +1,24 @@
+holdout6: 90 images, 10 events, rule tau 0.25 L 20
+ as registered (minute marks scored):
+  g1    quake acc 100.0%  prec 98.64%  capt   1.0% | all acc  99.3%  prec 98.72%  capt  35.3%
+  g2    quake acc  98.7%  prec 96.53%  capt  11.4% | all acc  98.3%  prec 98.39%  capt  48.0%
+  g4    quake acc  74.1%  prec 94.60%  capt  80.1% | all acc  92.6%  prec 97.92%  capt  71.8%
+  g6    quake acc  64.4%  prec 89.53%  capt  73.6% | all acc  91.9%  prec 97.34%  capt  68.4%
+  g8    quake acc  55.1%  prec 92.71%  capt  86.6% | all acc  87.7%  prec 97.33%  capt  75.9%
+  gall  quake acc  78.4%  prec 95.02%  capt  75.8% | all acc  94.0%  prec 97.96%  capt  67.4%
+quake {"accepted_share": 78.45, "accepted_within_S4": {"sam3": 95.02, "flat": 76.65}, "all_columns_within_S4": {"sam3": 83.81, "flat": 66.37}, "disputed_within_S4": {"sam3": 43.03, "flat": 28.92}, "pen_moved": {"share_of_columns": 33.63, "sam3_alone_within_S4": 61.02, "share_accepted": 54.45, "accepted_within_S4": 79.88}}
+quake ci {"accepted_share": [68.13, 86.81], "accepted_sam3": [93.87, 96.17], "accepted_flat": [72.02, 80.58], "accepted_sam3_minus_flat": [15.02, 22.53], "pen_moved_sam3_alone": [54.85, 68.02], "pen_moved_share_accepted": [42.54, 67.4], "pen_moved_accepted": [75.4, 84.02], "pen_moved_accepted_minus_alone": [10.82, 27.3]}
+all {"accepted_share": 93.97, "accepted_within_S4": {"sam3": 97.96, "flat": 93.53}, "all_columns_within_S4": {"sam3": 94.14, "flat": 90.95}, "disputed_within_S4": {"sam3": 34.53, "flat": 50.75}, "pen_moved": {"share_of_columns": 9.05, "sam3_alone_within_S4": 59.9, "share_accepted": 67.17, "accepted_within_S4": 69.6}}
+all ci {"accepted_share": [91.27, 96.47], "accepted_sam3": [97.67, 98.23], "accepted_flat": [92.63, 94.4], "accepted_sam3_minus_flat": [3.59, 5.39], "pen_moved_sam3_alone": [56.72, 63.89], "pen_moved_share_accepted": [58.63, 76.6], "pen_moved_accepted": [63.65, 75.35], "pen_moved_accepted_minus_alone": [4.79, 15.44]}
+ without the minute marks:
+  g1    quake acc 100.0%  prec 99.73%  capt   2.3% | all acc  99.3%  prec 99.96%  capt  94.4%
+  g2    quake acc  98.8%  prec 97.43%  capt  14.1% | all acc  98.4%  prec 99.59%  capt  78.0%
+  g4    quake acc  74.2%  prec 95.61%  capt  83.2% | all acc  92.7%  prec 99.31%  capt  88.4%
+  g6    quake acc  64.4%  prec 90.61%  capt  75.6% | all acc  91.9%  prec 98.60%  capt  80.4%
+  g8    quake acc  55.3%  prec 93.67%  capt  88.0% | all acc  87.8%  prec 99.01%  capt  89.3%
+  gall  quake acc  78.5%  prec 96.03%  capt  79.7% | all acc  94.0%  prec 99.31%  capt  85.8%
+quake {"accepted_share": 78.52, "accepted_within_S4": {"sam3": 96.03, "flat": 77.97}, "all_columns_within_S4": {"sam3": 84.66, "flat": 67.5}, "disputed_within_S4": {"sam3": 43.14, "flat": 29.25}, "pen_moved": {"share_of_columns": 32.5, "sam3_alone_within_S4": 62.3, "share_accepted": 53.23, "accepted_within_S4": 83.09}}
+quake ci {"accepted_share": [68.2, 86.88], "accepted_sam3": [94.85, 97.22], "accepted_flat": [73.16, 81.98], "accepted_sam3_minus_flat": [14.66, 22.33], "pen_moved_sam3_alone": [55.67, 70.16], "pen_moved_share_accepted": [41.49, 66.18], "pen_moved_accepted": [78.4, 87.3], "pen_moved_accepted_minus_alone": [12.39, 29.51]}
+all {"accepted_share": 94.01, "accepted_within_S4": {"sam3": 99.31, "flat": 95.34}, "all_columns_within_S4": {"sam3": 95.44, "flat": 92.73}, "disputed_within_S4": {"sam3": 34.64, "flat": 51.75}, "pen_moved": {"share_of_columns": 7.27, "sam3_alone_within_S4": 68.22, "share_accepted": 60.24, "accepted_within_S4": 86.3}}
+all ci {"accepted_share": [91.31, 96.52], "accepted_sam3": [99.19, 99.45], "accepted_flat": [94.32, 96.27], "accepted_sam3_minus_flat": [3.11, 4.95], "pen_moved_sam3_alone": [63.44, 73.72], "pen_moved_share_accepted": [52.16, 69.99], "pen_moved_accepted": [82.97, 89.0], "pen_moved_accepted_minus_alone": [11.74, 24.33]}
+r alone {"forward": 0.8208716479913385, "backward": 0.8239282131968501} r on accepted 0.9518312533573607 (n=81), forward alone on those images 0.865095819559804

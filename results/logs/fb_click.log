@@ -1,0 +1,31 @@
+warning: could not resolve the facebook/sam3 commit (OfflineModeIsEnabled); using revision=3c879f39826c281e95690f02c7821c4de09afae7
+[transformers] You are using a model of type `sam3_video` to instantiate a model of type `sam3_tracker`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+Loading weights:   0%|          | 0/685 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 685/685 [00:00<00:00, 67830.54it/s]
+[oracle] 10/100 images, 18 s
+[oracle] 20/100 images, 33 s
+[oracle] 30/100 images, 60 s
+[oracle] 40/100 images, 85 s
+[oracle] 50/100 images, 162 s
+[oracle] 60/100 images, 196 s
+[oracle] 70/100 images, 231 s
+[oracle] 80/100 images, 247 s
+[oracle] 90/100 images, 320 s
+[oracle] 100/100 images, 359 s
+[noisy] 10/100 images, 18 s
+[noisy] 20/100 images, 33 s
+[noisy] 30/100 images, 59 s
+[noisy] 40/100 images, 84 s
+[noisy] 50/100 images, 160 s
+[noisy] 60/100 images, 196 s
+[noisy] 70/100 images, 232 s
+[noisy] 80/100 images, 248 s
+[noisy] 90/100 images, 321 s
+[noisy] 100/100 images, 361 s
+[oracle quake] windows 229 cols 53261: re-track 0.4802 [0.3691, 0.5957] vs SAM 3 before 0.3832, backward 0.4715 | fixed 12070 broken 6901 | warn 0.7467 (prec 0.3638 vs 0.634) | unreached 680
+[oracle all] windows 363 cols 86512: re-track 0.5579 [0.4638, 0.6436] vs SAM 3 before 0.4276, backward 0.4771 | fixed 21234 broken 9964 | warn 0.686 (prec 0.3951 vs 0.6933) | unreached 1269
+[oracle] after review: {'quake': {'ok_cols': 360000, 'auto_accepted': 0.8485, 'auto_precision_S4': 0.9421, 'disputed_cols': 54523, 'reviewed_cols': 53261, 'reviewed_share_of_disputed': 0.9769, 'after_review_coverage': 0.9965, 'after_review_precision_S4': 0.8735}, 'all': {'ok_cols': 2880000, 'auto_accepted': 0.969, 'auto_precision_S4': 0.9775, 'disputed_cols': 89212, 'reviewed_cols': 86512, 'reviewed_share_of_disputed': 0.9697, 'after_review_coverage': 0.9991, 'after_review_precision_S4': 0.9649}}
+[noisy quake] windows 229 cols 53261: re-track 0.4793 [0.3697, 0.5945] vs SAM 3 before 0.3832, backward 0.4715 | fixed 12093 broken 6974 | warn 0.7467 (prec 0.3619 vs 0.6342) | unreached 680
+[noisy all] windows 363 cols 86512: re-track 0.5534 [0.4616, 0.6344] vs SAM 3 before 0.4276, backward 0.4771 | fixed 21247 broken 10366 | warn 0.686 (prec 0.3922 vs 0.6875) | unreached 1269
+[noisy] after review: {'quake': {'ok_cols': 360000, 'auto_accepted': 0.8485, 'auto_precision_S4': 0.9421, 'disputed_cols': 54523, 'reviewed_cols': 53261, 'reviewed_share_of_disputed': 0.9769, 'after_review_coverage': 0.9965, 'after_review_precision_S4': 0.8734}, 'all': {'ok_cols': 2880000, 'auto_accepted': 0.969, 'auto_precision_S4': 0.9775, 'disputed_cols': 89212, 'reviewed_cols': 86512, 'reviewed_share_of_disputed': 0.9697, 'after_review_coverage': 0.9991, 'after_review_precision_S4': 0.9648}}

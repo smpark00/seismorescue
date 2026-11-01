@@ -1,0 +1,4 @@
+warning: could not resolve the facebook/sam3 commit (OfflineModeIsEnabled); using revision=3c879f39826c281e95690f02c7821c4de09afae7
+[transformers] You are using a model of type `sam3_video` to instantiate a model of type `sam3_tracker`. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+
+[review] stored 66 re-tracks in out/rescue_fb/MAT_73_12_28_0020_LHZ/review/recorded_retracks.json (skipped 7)

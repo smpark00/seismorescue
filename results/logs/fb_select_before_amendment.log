@@ -1,0 +1,31 @@
+reference (forward alone): quake acc 100.0%  prec 85.74%  capt   0.0% | all acc 100.0%  prec 96.06%  capt   0.0%
+tau 0.05 L  1 | quake acc  71.5%  prec 95.25%  capt  76.2% | all acc  91.8%  prec 97.99%  capt  53.2% | --
+tau 0.05 L 20 | quake acc  47.8%  prec 98.47%  capt  94.9% | all acc  83.5%  prec 98.43%  capt  66.7% | --
+tau 0.05 L 60 | quake acc  25.5%  prec 98.52%  capt  97.4% | all acc  71.1%  prec 98.36%  capt  70.4% | --
+tau 0.10 L  1 | quake acc  83.6%  prec 93.72%  capt  63.2% | all acc  96.4%  prec 97.71%  capt  43.9% | --
+tau 0.10 L 20 | quake acc  71.7%  prec 97.12%  capt  85.5% | all acc  93.8%  prec 98.22%  capt  57.7% | --
+tau 0.10 L 60 | quake acc  61.7%  prec 97.91%  capt  91.0% | all acc  90.8%  prec 98.32%  capt  61.4% | --
+tau 0.15 L  1 | quake acc  87.5%  prec 92.73%  capt  55.4% | all acc  97.3%  prec 97.54%  capt  39.3% | --
+tau 0.15 L 20 | quake acc  78.6%  prec 96.00%  capt  77.9% | all acc  95.6%  prec 98.04%  capt  52.6% | --
+tau 0.15 L 60 | quake acc  71.3%  prec 97.15%  capt  85.7% | all acc  93.9%  prec 98.22%  capt  57.6% | --
+tau 0.20 L  1 | quake acc  89.5%  prec 92.04%  capt  50.0% | all acc  97.7%  prec 97.42%  capt  36.1% | --
+tau 0.20 L 20 | quake acc  82.5%  prec 94.96%  capt  70.8% | all acc  96.5%  prec 97.88%  capt  48.0% | --
+tau 0.20 L 60 | quake acc  76.5%  prec 96.22%  capt  79.7% | all acc  95.2%  prec 98.08%  capt  53.7% | --
+tau 0.25 L  1 | quake acc  90.7%  prec 91.58%  capt  46.4% | all acc  97.9%  prec 97.34%  capt  33.9% | --
+tau 0.25 L 20 | quake acc  84.9%  prec 94.21%  capt  65.5% | all acc  96.9%  prec 97.75%  capt  44.8% | --
+tau 0.25 L 60 | quake acc  79.8%  prec 95.44%  capt  74.5% | all acc  95.9%  prec 97.96%  capt  50.4% | --
+tau 0.30 L  1 | quake acc  91.6%  prec 91.17%  capt  43.3% | all acc  98.1%  prec 97.27%  capt  32.1% | --
+tau 0.30 L 20 | quake acc  86.7%  prec 93.54%  capt  60.7% | all acc  97.2%  prec 97.65%  capt  42.0% | --
+tau 0.30 L 60 | quake acc  82.3%  prec 94.77%  capt  69.8% | all acc  96.5%  prec 97.85%  capt  47.3% | --
+tau 0.40 L  1 | quake acc  92.6%  prec 90.63%  capt  39.1% | all acc  98.3%  prec 97.17%  capt  29.5% | --
+tau 0.40 L 20 | quake acc  88.6%  prec 92.71%  capt  54.7% | all acc  97.6%  prec 97.51%  capt  38.3% | --
+tau 0.40 L 60 | quake acc  85.3%  prec 93.73%  capt  62.5% | all acc  97.0%  prec 97.68%  capt  42.9% | --
+tau 0.50 L  1 | quake acc  93.3%  prec 90.23%  capt  36.1% | all acc  98.4%  prec 97.10%  capt  27.6% | --
+tau 0.50 L 20 | quake acc  89.7%  prec 92.18%  capt  50.8% | all acc  97.7%  prec 97.42%  capt  36.1% | --
+tau 0.50 L 60 | quake acc  87.0%  prec 93.15%  capt  58.2% | all acc  97.3%  prec 97.58%  capt  40.2% | --
+SELECTED tau 0.05 L 60 (feasible: False)
+  quake     acc  25.5%  prec 98.52%  capt  97.4%
+  neighbour acc  59.7%  prec 98.39%  capt  77.8%
+  other     acc  84.8%  prec 98.34%  capt  18.5%
+  all       acc  71.1%  prec 98.36%  capt  70.4%
+  by gain (quake): g1 acc  59.0%  prec 98.68%  capt  57.7% | g2 acc  35.1%  prec 98.36%  capt  86.5% | g4 acc  16.9%  prec 98.66%  capt  98.6% | g6 acc  10.3%  prec 98.44%  capt  99.2% | g8 acc   6.3%

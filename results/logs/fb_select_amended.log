@@ -1,0 +1,40 @@
+minute-mark columns left out of the score: 3.69%
+reference (forward alone): quake acc 100.0%  prec 86.69%  capt   0.0% | all acc 100.0%  prec 97.55%  capt   0.0%
+  the same with the marks: quake acc 100.0%  prec 85.74%  capt   0.0% | all acc 100.0%  prec 96.06%  capt   0.0%
+tau 0.05 L  1 | quake acc  71.8%  prec 96.30%  capt  80.0% | all acc  92.0%  prec 99.50%  capt  81.2% | OK | with marks: quake prec 95.25% all prec 97.99%
+tau 0.05 L 20 | quake acc  48.2%  prec 99.61%  capt  98.6% | all acc  83.8%  prec 99.96%  capt  98.7% | OK | with marks: quake prec 98.47% all prec 98.43%
+tau 0.05 L 60 | quake acc  25.6%  prec 99.92%  capt  99.9% | all acc  71.3%  prec 100.00%  capt  99.9% | OK | with marks: quake prec 98.52% all prec 98.36%
+tau 0.10 L  1 | quake acc  83.8%  prec 94.75%  capt  66.9% | all acc  96.5%  prec 99.22%  capt  69.2% | -- | with marks: quake prec 93.72% all prec 97.71%
+tau 0.10 L 20 | quake acc  71.9%  prec 98.24%  capt  90.5% | all acc  93.9%  prec 99.76%  capt  90.7% | OK | with marks: quake prec 97.12% all prec 98.22%
+tau 0.10 L 60 | quake acc  61.8%  prec 99.16%  capt  96.1% | all acc  90.9%  prec 99.89%  capt  96.1% | OK | with marks: quake prec 97.91% all prec 98.32%
+tau 0.15 L  1 | quake acc  87.6%  prec 93.75%  capt  58.8% | all acc  97.3%  prec 99.04%  capt  62.1% | -- | with marks: quake prec 92.73% all prec 97.54%
+tau 0.15 L 20 | quake acc  78.7%  prec 97.09%  capt  82.8% | all acc  95.6%  prec 99.57%  capt  83.2% | OK | with marks: quake prec 96.00% all prec 98.04%
+tau 0.15 L 60 | quake acc  71.4%  prec 98.32%  capt  91.0% | all acc  93.9%  prec 99.77%  capt  91.1% | OK | with marks: quake prec 97.15% all prec 98.22%
+tau 0.20 L  1 | quake acc  89.6%  prec 93.05%  capt  53.2% | all acc  97.7%  prec 98.93%  capt  57.2% | -- | with marks: quake prec 92.04% all prec 97.42%
+tau 0.20 L 20 | quake acc  82.6%  prec 96.02%  capt  75.3% | all acc  96.5%  prec 99.39%  capt  76.1% | OK | with marks: quake prec 94.96% all prec 97.88%
+tau 0.20 L 60 | quake acc  76.5%  prec 97.36%  capt  84.8% | all acc  95.3%  prec 99.62%  capt  85.2% | OK | with marks: quake prec 96.22% all prec 98.08%
+tau 0.25 L  1 | quake acc  90.8%  prec 92.59%  capt  49.5% | all acc  97.9%  prec 98.84%  capt  53.9% | -- | with marks: quake prec 91.58% all prec 97.34%
+tau 0.25 L 20 | quake acc  84.9%  prec 95.26%  capt  69.7% | all acc  96.9%  prec 99.27%  capt  71.1% | OK | with marks: quake prec 94.21% all prec 97.75%
+tau 0.25 L 60 | quake acc  79.9%  prec 96.55%  capt  79.3% | all acc  96.0%  prec 99.49%  capt  80.1% | OK | with marks: quake prec 95.44% all prec 97.96%
+tau 0.30 L  1 | quake acc  91.6%  prec 92.18%  capt  46.1% | all acc  98.1%  prec 98.77%  capt  51.0% | -- | with marks: quake prec 91.17% all prec 97.27%
+tau 0.30 L 20 | quake acc  86.7%  prec 94.59%  capt  64.7% | all acc  97.2%  prec 99.16%  capt  66.8% | -- | with marks: quake prec 93.54% all prec 97.65%
+tau 0.30 L 60 | quake acc  82.4%  prec 95.86%  capt  74.4% | all acc  96.5%  prec 99.37%  capt  75.3% | OK | with marks: quake prec 94.77% all prec 97.85%
+tau 0.40 L  1 | quake acc  92.6%  prec 91.64%  capt  41.8% | all acc  98.3%  prec 98.68%  capt  47.0% | -- | with marks: quake prec 90.63% all prec 97.17%
+tau 0.40 L 20 | quake acc  88.7%  prec 93.75%  capt  58.3% | all acc  97.6%  prec 99.02%  capt  61.1% | -- | with marks: quake prec 92.71% all prec 97.51%
+tau 0.40 L 60 | quake acc  85.3%  prec 94.80%  capt  66.7% | all acc  97.0%  prec 99.20%  capt  68.3% | -- | with marks: quake prec 93.73% all prec 97.68%
+tau 0.50 L  1 | quake acc  93.3%  prec 91.24%  capt  38.6% | all acc  98.4%  prec 98.60%  capt  44.0% | -- | with marks: quake prec 90.23% all prec 97.10%
+tau 0.50 L 20 | quake acc  89.7%  prec 93.22%  capt  54.3% | all acc  97.8%  prec 98.93%  capt  57.6% | -- | with marks: quake prec 92.18% all prec 97.42%
+tau 0.50 L 60 | quake acc  87.0%  prec 94.21%  capt  62.1% | all acc  97.3%  prec 99.09%  capt  64.1% | -- | with marks: quake prec 93.15% all prec 97.58%
+SELECTED tau 0.25 L 20 (feasible: True)
+ without marks:
+  quake     acc  84.9%  prec 95.26%  capt  69.7%
+  neighbour acc  95.5%  prec 99.25%  capt  75.3%
+  other     acc  99.9%  prec 99.96%  capt  58.3%
+  all       acc  96.9%  prec 99.27%  capt  71.1%
+  by gain (quake): g1 acc 100.0%  prec 99.44%  capt   1.3% | g2 acc  98.2%  prec 97.52%  capt  22.5% | g4 acc  82.6%  prec 95.47%  capt  76.3% | g6 acc  78.5%  prec 91.44%  capt  67.6% | g8 acc  65.2%  prec 89.72%  capt  74.6%
+ with marks:
+  quake     acc  84.9%  prec 94.21%  capt  65.5%
+  neighbour acc  95.5%  prec 97.79%  capt  51.3%
+  other     acc  99.9%  prec 98.34%  capt   3.9%
+  all       acc  96.9%  prec 97.75%  capt  44.8%
+  by gain (quake): g1 acc 100.0%  prec 98.17%  capt   0.5% | g2 acc  98.2%  prec 96.38%  capt  16.8% | g4 acc  82.5%  prec 94.52%  capt  72.8% | g6 acc  78.6%  prec 90.67%  capt  65.6% | g8 acc  65.0%  prec 88.70%  capt  73.0%

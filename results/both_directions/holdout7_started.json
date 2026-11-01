@@ -1,0 +1,13 @@
+{
+ "started_at": "2026-11-01 23:03:04 KST",
+ "n_images": 95,
+ "hashes": {
+  "ml_fb": "de7da2e65ab4590f5c42bbca87994e4febf4319cb37b399cba9f8503f39f3953",
+  "ml_sam": "2172964a5ae675061b141d02345878d93582011b772874b15e56aef7e7627ad6",
+  "ml_sam3": "44b6ab849a3eddbaecddf2fd4de044af199da3a5d6e3a8a6a481dcc2e4773a11",
+  "real_paired_eval": "d026c6fa3b6758d19871e8af9bf6f2fc3e92c5093bf8a4d22ccaa7241e691793",
+  "ckpt": "b66e3d5159fb8d01b946c9291427f3e5544d5d1ef62ebdfd40a1066aaa93defe",
+  "lam": 1e-05,
+  "rule": "5e95ef5b67da82c382072abf967075438b1ee50ec5032e2f2759cbf5df188260"
+ }
+}

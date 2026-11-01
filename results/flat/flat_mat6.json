@@ -1,0 +1,97 @@
+{
+ "what": "research/54: MAT line 6, the r quoted for the M6.4 event; line chosen after the fact on a development chip",
+ "n_samples": 3633,
+ "n_accepted": 2638,
+ "accept_frac": 0.7261216625378475,
+ "r_accepted": 0.825,
+ "r_whole_line": 0.683,
+ "lag": {
+  "range": [
+   -600,
+   600
+  ],
+  "best_lag_s": 1,
+  "best_r": 0.851,
+  "max_r_beyond_30s": 0.311,
+  "max_abs_r_beyond_30s": 0.311
+ },
+ "circular_shift": {
+  "n": 1500,
+  "max_abs_r_accepted": 0.19,
+  "max_abs_r_whole": 0.18
+ },
+ "phase_scramble": {
+  "n": 2000,
+  "max_abs_r_accepted": 0.232,
+  "max_abs_r_whole": 0.212
+ },
+ "other_lines_reference": {
+  "n": 23,
+  "max_abs_r_accepted": 0.061
+ },
+ "windows_600s": [
+  {
+   "start_s": 18625,
+   "n": 600,
+   "r": -0.272
+  },
+  {
+   "start_s": 19225,
+   "n": 518,
+   "r": 0.419
+  },
+  {
+   "start_s": 21025,
+   "n": 566,
+   "r": 0.937
+  },
+  {
+   "start_s": 21625,
+   "n": 561,
+   "r": 0.894
+  }
+ ],
+ "amplitude_slope_vs_global": 0.92,
+ "accepted_r_all_lines_ranked": [
+  [
+   18,
+   0.83
+  ],
+  [
+   6,
+   0.825
+  ],
+  [
+   17,
+   0.787
+  ],
+  [
+   23,
+   0.737
+  ],
+  [
+   22,
+   0.718
+  ],
+  [
+   19,
+   0.657
+  ],
+  [
+   21,
+   0.631
+  ],
+  [
+   7,
+   0.611
+  ]
+ ],
+ "n_lines_with_accepted_part": 21,
+ "pass": {
+  "lag_peak_at_0": true,
+  "beats_circular": true,
+  "beats_scramble": true,
+  "beats_other_lines": true,
+  "all": true
+ }
+}
