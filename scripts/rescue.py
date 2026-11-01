@@ -28,8 +28,9 @@ import time
 import warnings
 from pathlib import Path
 
-import cv2
-import numpy as np
+os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")              # numpy's small solves: 13 s here, 3.5 min with a thread per core on a busy 16-core Linux box
+import cv2                                                       # noqa: E402
+import numpy as np                                               # noqa: E402
 
 os.environ.setdefault("SEISMO_SAM3_OUT", "sam3_film2")
 os.environ.setdefault("HF_HUB_OFFLINE", "1")                     # never resolve model revisions online (research/45 §5)

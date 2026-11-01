@@ -15,7 +15,7 @@ Fine-tuned from Meta's SAM 3 during the hackathon, for tracing WWSSN film lines.
 
 ```bash
 .venv/bin/hf auth login
-HF_HUB_OFFLINE=0 .venv/bin/hf download facebook/sam3 --revision 3c879f39826c281e95690f02c7821c4de09afae7 --include config.json model.safetensors
+HF_HUB_OFFLINE=0 .venv/bin/hf download facebook/sam3 config.json model.safetensors --revision 3c879f39826c281e95690f02c7821c4de09afae7
 ```
 
 **Use restrictions.** The SAM License section 1.b.v applies to this adapter and to anything made from it, including the limits on military use and on nuclear applications. Read the licence before use. Provided as is, without warranty.

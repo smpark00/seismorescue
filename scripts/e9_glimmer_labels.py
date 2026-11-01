@@ -61,11 +61,15 @@ def server_props(url):
         return {"error": str(e)[:200]}
 
 
-def run(url, chips, out):
+def run(url, chips, out, retry_errors=False):
+    """a reply is kept and not asked again; with retry_errors (dev runs) a failed one is asked again"""
     out.mkdir(parents=True, exist_ok=True)
     for p in chips:
         f = out / f"{p.stem}.json"
-        if f.exists():
+        if f.exists() and not (retry_errors and json.loads(f.read_text()).get("error")):
+            continue
+        if not p.exists():
+            print(f"[{p.stem}] not downloaded, skipped (see data/README.md)", flush=True)
             continue
         rec = ask(url, p)
         f.write_text(json.dumps(rec, indent=1))
@@ -113,15 +117,18 @@ if __name__ == "__main__":
     if a.cmd == "dev":
         OUT.mkdir(parents=True, exist_ok=True)
         (OUT / "dev_server.json").write_text(json.dumps(server_props(a.url), indent=1))
-        run(a.url, DEV, OUT / "dev")
+        run(a.url, DEV, OUT / "dev", retry_errors=True)
     elif a.cmd == "run":
         marker = OUT / "run_started.json"
         if marker.exists():
             raise SystemExit("E9 already started: one run only (research/48)")
+        chips = sorted(CHIPS.glob("*.TIFF"))
+        if len(chips) != 30:
+            raise SystemExit(f"E9 runs on the 30 E4 chips, found {len(chips)} under {CHIPS}: fetch them first (data/README.md)")
         OUT.mkdir(parents=True, exist_ok=True)
         marker.write_text(json.dumps({"started": time.strftime("%Y-%m-%d %H:%M:%S %Z"), "settings": SETTINGS}, indent=1))
         (OUT / "server.json").write_text(json.dumps(server_props(a.url), indent=1))
-        run(a.url, sorted(CHIPS.glob("*.TIFF")), OUT / "responses")
+        run(a.url, chips, OUT / "responses")
         score()
     else:
         score()

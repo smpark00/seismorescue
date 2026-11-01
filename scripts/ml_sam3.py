@@ -163,7 +163,7 @@ They are gated by Meta, so this repository does not include them. Reason given: 
 To get them:
   1. Request access with a Hugging Face account: https://huggingface.co/{hf_id}
   2. .venv/bin/hf auth login
-  3. HF_HUB_OFFLINE=0 .venv/bin/hf download {hf_id} --revision {revision} --include config.json model.safetensors
+  3. HF_HUB_OFFLINE=0 .venv/bin/hf download {hf_id} config.json model.safetensors --revision {revision}
 To run without them, use the recorded paths and clicks: rescue.py --reuse, review_server.py --replay (see the README)."""
 
 
