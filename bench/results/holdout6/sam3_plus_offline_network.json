@@ -1,0 +1,235 @@
+{
+ "name": "sam3_plus_offline_network",
+ "split": "holdout6",
+ "submission_sha256": "e02dc24855a8e5b0147f50a46885134215511fd390c5696139b271fabce6fe0f",
+ "n_images": 90,
+ "n_earthquakes": 10,
+ "r_quake_line": 0.8191,
+ "r_accepted": 0.9043,
+ "r_accepted_images": 85,
+ "r_same_images_all_columns": 0.8638,
+ "with_marks": {
+  "quake": {
+   "rates": {
+    "accepted_share": 75.7275,
+    "accepted_right": 97.5122,
+    "accepted_flat_line": 80.4848,
+    "all_right": 83.0361,
+    "all_flat_line": 66.3676,
+    "moved_share": 33.6324,
+    "moved_right": 60.3557,
+    "moved_accepted_share": 43.9409,
+    "moved_accepted_right": 88.0895
+   },
+   "ci95": {
+    "accepted_share": [
+     67.15,
+     82.68
+    ],
+    "accepted_right": [
+     96.46,
+     98.22
+    ],
+    "accepted_flat_line": [
+     74.97,
+     84.4
+    ],
+    "accepted_right_minus_flat_line": [
+     13.7,
+     21.62
+    ],
+    "all_right": [
+     75.31,
+     89.07
+    ],
+    "moved_right": [
+     54.7,
+     66.49
+    ],
+    "moved_accepted_right": [
+     86.1,
+     90.09
+    ]
+   },
+   "columns": {
+    "cols": 324000,
+    "acc": 245357,
+    "acc_right": 239253,
+    "acc_flat": 197475,
+    "right": 269037,
+    "flat": 215031,
+    "moved": 108969,
+    "moved_right": 65769,
+    "moved_acc": 47882,
+    "moved_acc_right": 42179
+   }
+  },
+  "all": {
+   "rates": {
+    "accepted_share": 92.6316,
+    "accepted_right": 99.2282,
+    "accepted_flat_line": 95.426,
+    "all_right": 94.4857,
+    "all_flat_line": 90.9505,
+    "moved_share": 9.0495,
+    "moved_right": 56.5884,
+    "moved_accepted_share": 46.8196,
+    "moved_accepted_right": 83.9357
+   },
+   "ci95": {
+    "accepted_share": [
+     90.78,
+     94.33
+    ],
+    "accepted_right": [
+     99.11,
+     99.33
+    ],
+    "accepted_flat_line": [
+     94.46,
+     96.23
+    ],
+    "accepted_right_minus_flat_line": [
+     3.09,
+     4.67
+    ],
+    "all_right": [
+     92.96,
+     95.9
+    ],
+    "moved_right": [
+     54.92,
+     58.69
+    ],
+    "moved_accepted_right": [
+     81.67,
+     85.81
+    ]
+   },
+   "columns": {
+    "cols": 2592000,
+    "acc": 2401010,
+    "acc_right": 2382478,
+    "acc_flat": 2291189,
+    "right": 2449069,
+    "flat": 2357438,
+    "moved": 234562,
+    "moved_right": 132735,
+    "moved_acc": 109821,
+    "moved_acc_right": 92179
+   }
+  }
+ },
+ "without_marks": {
+  "quake": {
+   "rates": {
+    "accepted_share": 76.5646,
+    "accepted_right": 97.9996,
+    "accepted_flat_line": 81.3378,
+    "all_right": 83.9078,
+    "all_flat_line": 67.5013,
+    "moved_share": 32.4987,
+    "moved_right": 61.6559,
+    "moved_accepted_share": 43.9668,
+    "moved_accepted_right": 89.9906
+   },
+   "ci95": {
+    "accepted_share": [
+     67.86,
+     83.68
+    ],
+    "accepted_right": [
+     96.89,
+     98.75
+    ],
+    "accepted_flat_line": [
+     75.68,
+     85.33
+    ],
+    "accepted_right_minus_flat_line": [
+     13.3,
+     21.34
+    ],
+    "all_right": [
+     76.06,
+     90.08
+    ],
+    "moved_right": [
+     55.68,
+     68.44
+    ],
+    "moved_accepted_right": [
+     87.5,
+     92.59
+    ]
+   },
+   "columns": {
+    "cols": 311772,
+    "acc": 238707,
+    "acc_right": 233932,
+    "acc_flat": 194159,
+    "right": 261601,
+    "flat": 210450,
+    "moved": 101322,
+    "moved_right": 62471,
+    "moved_acc": 44548,
+    "moved_acc_right": 40089
+   }
+  },
+  "all": {
+   "rates": {
+    "accepted_share": 94.1519,
+    "accepted_right": 99.6791,
+    "accepted_flat_line": 96.2488,
+    "all_right": 95.7834,
+    "all_flat_line": 92.7311,
+    "moved_share": 7.2689,
+    "moved_right": 63.9031,
+    "moved_accepted_share": 48.5891,
+    "moved_accepted_right": 92.1161
+   },
+   "ci95": {
+    "accepted_share": [
+     92.09,
+     96.0
+    ],
+    "accepted_right": [
+     99.54,
+     99.78
+    ],
+    "accepted_flat_line": [
+     95.25,
+     97.05
+    ],
+    "accepted_right_minus_flat_line": [
+     2.73,
+     4.29
+    ],
+    "all_right": [
+     94.07,
+     97.35
+    ],
+    "moved_right": [
+     60.05,
+     69.31
+    ],
+    "moved_accepted_right": [
+     90.92,
+     93.51
+    ]
+   },
+   "columns": {
+    "cols": 2494176,
+    "acc": 2348315,
+    "acc_right": 2340780,
+    "acc_flat": 2260224,
+    "right": 2389007,
+    "flat": 2312878,
+    "moved": 181298,
+    "moved_right": 115855,
+    "moved_acc": 88091,
+    "moved_acc_right": 81146
+   }
+  }
+ }
+}

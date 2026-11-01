@@ -21,3 +21,4 @@ models/
 # local tool state
 .omc/
 .claude/
+bench_data/
