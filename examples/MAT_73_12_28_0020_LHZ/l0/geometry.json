@@ -141,5 +141,5 @@
   "P_from_off": 3587.1051352784193
  },
  "model": "t(x, k) = ON + T0 + P k + (x - xa) / pps_r, rescaled frame, line 0 = first record line",
- "seconds": 13.6
+ "seconds": 204.7
 }

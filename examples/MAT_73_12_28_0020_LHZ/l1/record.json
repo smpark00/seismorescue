@@ -372,7 +372,7 @@
   }
  ],
  "flags": [],
- "notes": "Border 12-28-73 00:20 stn 0064 MAT LPZ matches label MAT Z; label ON 12-28-73 00:20 OFF 12-29-73 00:13 used for measure; 25 lines 00:20 to 00:13+1d; main M7.5 Vanuatu rank 1 surface line 14.",
+ "notes": "Border 0064=MAT LPZ matches label MAT Z; ON 1973-12-28 00:20 OFF 1973-12-29 00:13; main M7.5 Vanuatu amp_rank 1",
  "l1": {
   "model": "muse-spark-1.3-contributor",
   "requests": 4,
@@ -380,10 +380,10 @@
   "repairs": 0,
   "validation_errors": [],
   "input_tokens": 24328,
-  "output_tokens": 2101,
-  "cost_usd": 0.00285,
-  "seconds": 46.9,
+  "output_tokens": 1631,
+  "cost_usd": 0.00276,
+  "seconds": 42.4,
   "table_sha256": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
-  "code_sha256": "63d739693f1a54a84402432126089f195d985f092158eacb655df602ce8209f4"
+  "code_sha256": "d86f8c857c78dadfad7365d712e51e9b76113183faee42894f32d55a6bb39c70"
  }
 }

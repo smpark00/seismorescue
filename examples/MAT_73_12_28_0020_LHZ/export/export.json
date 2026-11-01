@@ -1,6 +1,6 @@
 {
  "chip": "MAT_73_12_28_0020_LHZ",
- "made": "2026-10-29 14:07:20 KST",
+ "made": "2026-11-02 00:13:39 KST",
  "file": "XX.MAT..LHZ.mseed",
  "nslc": "XX.MAT..LHZ",
  "network_note": "XX: WWSSN film digitizations have no FDSN network code (WW is the Idaho Seismic Network)",
@@ -12,16 +12,16 @@
   "1973-12-29T00:13:22"
  ],
  "samples_in_record": 86050,
- "samples_exported": 65596,
- "fraction_exported": 0.7623,
+ "samples_exported": 65401,
+ "fraction_exported": 0.76,
  "by_source": {
-  "auto_accepted": 65596,
+  "auto_accepted": 65401,
   "human_reviewed": 0
  },
- "segments": 121,
- "gaps": 120,
- "minute_mark_samples_bridged": 5477,
- "minute_mark_samples_dropped_at_run_edges": 214,
+ "segments": 76,
+ "gaps": 75,
+ "minute_mark_samples_bridged": 5488,
+ "minute_mark_samples_dropped_at_run_edges": 42,
  "component_source": "L1 record (film border)",
  "min_segment_samples": 10,
  "time_model": {
@@ -61,29 +61,29 @@
   ]
  },
  "inputs": {
-  "paths_npz_sha256": "c7b738f9aaa5129f4dc5055270beef54034ac6f548213b4c8523496621e45058",
+  "paths_npz_sha256": "0e9448cf18830019accfcacb2f2aa6bfd5c206bea2fd91e9d1b9452cffea6e68",
   "review_decisions": 0,
-  "consensus_rule": "b93999b3c7cd9e37dc508937ca4d5fe16ae74d7a120f4c1ef8ac839d4da31e14",
+  "agreement_rule": "5e95ef5b67da82c382072abf967075438b1ee50ec5032e2f2759cbf5df188260",
   "sam3_ckpt_sha256": "b66e3d5159fb8d01b946c9291427f3e5544d5d1ef62ebdfd40a1066aaa93defe"
  },
  "readback": {
-  "traces": 121,
-  "samples": 65596,
+  "traces": 76,
+  "samples": 65401,
   "max_abs_diff": 0.0,
   "same_start_times_and_lengths": true
  },
- "seconds": 0.3,
+ "seconds": 0.4,
  "pair_check": {
   "pair": "MAT",
-  "segments_used": 7,
-  "samples_used": 57443,
+  "segments_used": 4,
+  "samples_used": 60300,
   "band_hz": [
    0.0025,
    0.08
   ],
-  "r_at_zero_lag": 0.368,
-  "best_lag_s": 1,
-  "r_at_best_lag": 0.388,
+  "r_at_zero_lag": 0.477,
+  "best_lag_s": 2,
+  "r_at_best_lag": 0.531,
   "max_lag_s": 90,
   "note": "the film sample at time t is paired with the digital sample at t + lag; best lag > 0 means the film's time labels are early by that many seconds"
  }

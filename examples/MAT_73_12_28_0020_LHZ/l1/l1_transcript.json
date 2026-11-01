@@ -75,7 +75,7 @@
  "log": [
   {
    "request": 0,
-   "secs": 6.2,
+   "secs": 12.0,
    "function_calls": 1
   },
   {
@@ -107,7 +107,7 @@
   },
   {
    "request": 1,
-   "secs": 6.1,
+   "secs": 4.9,
    "function_calls": 1
   },
   {
@@ -132,7 +132,7 @@
   },
   {
    "request": 2,
-   "secs": 5.3,
+   "secs": 4.7,
    "function_calls": 1
   },
   {
@@ -442,11 +442,11 @@
   },
   {
    "request": 3,
-   "secs": 15.4,
+   "secs": 6.5,
    "function_calls": 0
   },
   {
-   "final": "{\"border_digits\": \"122873 0020 0064 04\", \"label_station\": \"MAT\", \"label_component\": \"Z\", \"magnification\": 3000, \"off_date\": \"1973-12-29\", \"off_time\": \"0013\", \"main_event_id\": \"usp00004p9\", \"notes\": \"Border 12-28-73 00:20 stn 0064 MAT LPZ matches label MAT Z; label ON 12-28-73 00:20 OFF 12-29-73 00:13 used for measure; 25 lines 00:20 to 00:13+1d; main M7.5 Vanuatu rank 1 surface line 14.\"}",
+   "final": "{\"border_digits\": \"122873 0020 0064 04\", \"label_station\": \"MAT\", \"label_component\": \"Z\", \"magnification\": 3000, \"off_date\": \"1973-12-29\", \"off_time\": \"0013\", \"main_event_id\": \"usp00004p9\", \"notes\": \"Border 0064=MAT LPZ matches label MAT Z; ON 1973-12-28 00:20 OFF 1973-12-29 00:13; main M7.5 Vanuatu amp_rank 1\"}",
    "validation_errors": []
   }
  ]
