@@ -4,7 +4,7 @@ One run, unattended, on chips we had not seen. There were no pass or fail thresh
 
 **Sample.** `scripts/fetch_e4_chips.py data/a1_chips --seed 20261101 --n 300 --per-station 4 --max-gb 14`, excluding the E4 and E7 chips, the MAT 1973-12-28 chip and the KIP station. It walks the public EarthScope LHZ chips in a seeded random order and takes at most 4 per station, without looking at the images. So this is a random sample with a cap per station, not a simple random sample of the archive. 300 chips, 105 stations. The list is in `index.json`.
 
-**Run.** `scripts/a1_batch.py run`, 4 at a time, on a CPU. Muse Spark 1.3 (contributor tier) saw public CC0 chips only. `started.json` holds the hashes of the code that ran. An API or network failure may be retried and reported; no other result was changed.
+**Run.** `scripts/a1_batch.py run`, 4 at a time, on a CPU. Muse Spark 1.3 (contributor tier) saw public CC0 chips only. `started.json` holds the hashes of the code that ran. An API or network failure may be retried and reported; no other result was changed. The one retry was `BOG_63_04_07_1314`, the damaged file described below, and it failed the same way.
 
 | Result | Value | Interval (Wilson 95%) |
 |---|---|---|
@@ -25,6 +25,8 @@ One run, unattended, on chips we had not seen. There were no pass or fail thresh
 | Widest-swing line within ±1 of the predicted surface-wave line (a weak check) | 40/123 (32.5%) | [24.9, 41.2] |
 | Cost, median time per chip | $1.06, 113.5 s | |
 
+The L0 rows count the chips where L0 ran, which are not quite the agent's 297: `DUG_76_03_09_0001` (no valid answer) is among them and `ADE_64_02_11_0017` (valid answer, L0 not run) is not. On chips with both, the counts are 166 and 163 of 296, 151/166 and 78/163.
+
 ## Checking the 45 mismatches
 
 Spark read each of the 45 chips a second time (`a1_reread.json`). None of the second reads matched the file name in all four fields; 35 repeated the first read exactly.
@@ -34,13 +36,13 @@ Then two Claude sessions read all 45 chips, each without seeing the file name, S
 | Verdict | All 45 | Pre-registered sample of 30 |
 |---|---|---|
 | The file name differs from the prints | **32** | **23** |
-| The chip matches the file name: Spark misread it | 8 | 6 |
+| The chip supports the name on every field Spark flagged: Spark misread it | 8 | 6 |
 | Unclear | 5 | 1 |
 
 - The pre-registered plan was a seeded sample of 30 (`check_sample.json`), which gives an estimate of 34.5 chips of 297 (11.6%). We decided before seeing any reading to read the other 15 as well. The 32 is a count of chips seen, not an estimate.
-- **We fixed one bug after seeing the results.** The first version of the script sent chips with an ambiguous day-month border to "unclear" even when a date stamp settled it, against the rule we had written down. Fixing it moved 4 chips to "differs" (first result 28 / 8 / 9). The readings did not change.
+- **We fixed one bug after seeing the results.** The first version of the script sent chips with an ambiguous day-month border to "unclear" even when a date stamp settled it, against the rule we had written down. Fixing it moved 4 chips to "differs" (first result 28 / 8 / 9). Three of the 4 were in the sample, which went from 20 / 6 / 4 to 23 / 6 / 1 and from an estimate of 30.0 chips to 34.5. The readings did not change.
 - Of the 32: date 22, time 10, station 2, component 2 (some chips have two). Four look like a swapped month and day: chips filed as `63_01_05` are stamped May 1 1963, and chips filed as `63_02_04` are stamped Apr 2 1963.
-- "Differs" means the name differs from what the chip prints. We do not say which side is right. The list is in `name_checks.json`.
+- "Differs" means the name differs from what the chip prints. We do not say which side is right. The list is in `name_checks.json`, whose `name_wrong` and `estimate_name_wrong` mean this and nothing more.
 - **The agent is wrong too:** at least 8 of the 45 flags are Spark's own misreads, mostly handwritten station codes. On one chip with an underexposed border (`NUR_64_02_11_0548`) it reported digits that are not visible.
 
 ## What else this run showed
@@ -51,4 +53,4 @@ Then two Claude sessions read all 45 chips, each without seeing the file name, S
 
 ## Changes after this run
 
-The run was not repeated after these. The catalogue query now asks USGS for earthquakes only, and an unreadable image now gives a clear error. The results here come from the code hashed in `started.json`; the scripts in this repository differ from it by those changes and by path handling. The raw per-chip records stay out of this repository.
+The run was not repeated after these. The catalogue query now asks USGS for earthquakes only, and an unreadable image now gives a clear error. The results here come from the code hashed in `started.json`. The scripts in this repository differ from it by those changes, by path handling, by a `SPARK_MODEL` environment override in `metaapi.py` and by a named constant in `real_paired_eval.py`. `index.json` differs from its hash in one field: `script`, shortened to remove a home folder. `doc_sha256` is the hash of our internal plan, which is not published. The raw per-chip records stay out of this repository.
