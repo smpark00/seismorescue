@@ -1,0 +1,52 @@
+{
+ "what": "The 4 of 20 E7 chips where the agent's reading differs from the archive's file name. All are public CC0 chips, so anyone can open them and look.",
+ "checked_by": "Claude (our AI assistant), looking at the border and label after the test. Not an independent person.",
+ "result": "On these 4 the agent matches the chip on all four fields. The other 16 chips agree with their file names and were not checked separately. So the pre-registered score stays 16/20; against the chip it is 20/20.",
+ "wording": "These are file names that differ from what is printed on the chip. We do not claim to know which is right in every case.",
+ "chips": [
+  {
+   "chip": "QUI_76_03_02_0843_LHZ",
+   "fields_differing_from_file_name": "station, ON date",
+   "agent_read": {
+    "border_digits": "010376 0843 0091 04",
+    "station": "PTO",
+    "on_utc": "1976-01-03T08:43:00",
+    "component": "LPZ"
+   },
+   "what_the_chip_shows": "Border 010376 0843 0091 04; the label form says PTO, 1-03-76. A Porto record dated 1976-01-03 filed under QUI."
+  },
+  {
+   "chip": "TRN_68_08_28_1308_LHZ",
+   "fields_differing_from_file_name": "ON date",
+   "agent_read": {
+    "border_digits": "062868 1308 0118 04",
+    "station": "TRN",
+    "on_utc": "1968-06-28T13:08:00",
+    "component": "LPZ"
+   },
+   "what_the_chip_shows": "Border 062868 1308 0118 04; the handwritten date and the label form also say June 28. The file name says 08-28."
+  },
+  {
+   "chip": "BLA_76_02_12_1525_LHZ",
+   "fields_differing_from_file_name": "ON date",
+   "agent_read": {
+    "border_digits": "021176 1525 0019 04",
+    "station": "BLA",
+    "on_utc": "1976-02-11T15:25:00",
+    "component": "LPZ"
+   },
+   "what_the_chip_shows": "Border 021176 1525 0019 04; the label has ON 2-11-76 and OFF 2-12-76. The date in the file name is the OFF date."
+  },
+  {
+   "chip": "IST_62_06_07_0753_LHZ",
+   "fields_differing_from_file_name": "ON time",
+   "agent_read": {
+    "border_digits": "060762 0754 0050 04",
+    "station": "IST",
+    "on_utc": "1962-06-07T07:54:00",
+    "component": "LPZ"
+   },
+   "what_the_chip_shows": "Border 060762 0754 0050 04. The file name says 0753, one minute earlier."
+  }
+ ]
+}

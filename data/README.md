@@ -10,7 +10,7 @@
 | `bench_catalog/` | Event catalogue per record (USGS ComCat) for the seismologist agent | USGS |
 | `tohoku_IU_ANMO_LHZ.mseed` | 2011 Tohoku M9.1 recorded at IU.ANMO, used by the first experiments | IRIS/EarthScope |
 
-Rendered films (`out/film_train`, `out/film_holdout3`) are not shipped. They are generated deterministically by `scripts/render_helicorder.py`; see the README's Reproduce section.
+Rendered films (`out/film_train`, `out/film_holdout3`) are not shipped. They are generated deterministically by `scripts/render_helicorder.py` (commands in its docstring). The film2 holdouts are in the GitHub Release; see the README's Reproduce section.
 
 Waveform citations:
 - IU: Albuquerque Seismological Laboratory/USGS (1988), Global Seismograph Network (GSN – IRIS/USGS), [doi:10.7914/SN/IU](https://doi.org/10.7914/SN/IU).

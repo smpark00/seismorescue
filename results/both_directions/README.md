@@ -16,6 +16,8 @@ SAM 3, fine-tuned by us, traces every line twice: forward from the left edge, an
 
 Logs of these runs are in [`../logs/`](../logs).
 
+Three definitions the files do not state. `true_motion_S_median` over several lines is the mean of the per-line medians. `clicks_per_image` divides by the 72 images that have review windows. The circular-shift control for MAT line 6 skips shifts under 600 s, which would come close to the true alignment (with them the largest |r| is 0.85).
+
 ## The change to the scoring
 
 We changed how the targets are scored after seeing the development set and before running the test. This is the record.
@@ -24,7 +26,7 @@ We changed how the targets are scored after seeing the development set and befor
 2. **What happened:** none qualified. All-lines precision never passed 98.5%. The fallback accepted 25.5% of earthquake-line columns and 71.1% of all columns, which would send most quiet lines to a person.
 3. **Why:** of the 33,562 wrongly accepted columns at τ 0.05, L 60, 33,483 (99.76%) were minute marks, where the pen jumps up for a few seconds. Neither pass follows these ticks. Only 12 of 2,048,557 accepted columns were off by more than S/2. So the limit was the ticks, not slips onto other lines.
 4. **The change:** the targets are measured without the columns where the pen is more than 0.1 S from the signal (3.69% of the columns). The grid, the targets, the order of choice and the fallback stayed the same. Thresholds of 0.05 S and 0.02 S pick the same rule.
-5. **Why that is fair to the output:** the export bridges these seconds with a straight line anyway. On the development set 98.07% of the columns left out fall in bridged seconds. On real film this depends on L0's clock.
+5. **Why that is fair to the output:** the export bridges these seconds with a straight line anyway. On the development set 99.87% of the columns left out fall in bridged seconds (seconds :58–:02 of each minute and :58–:06 at the hour; 106,088 of 106,224). On real film this depends on L0's clock.
 6. **What it picked:** τ 0.25, L 20.
 7. **What did not change:** the test numbers and the judgement written down in advance are scored with the minute marks, as first registered. The numbers without them are reported beside them.
 
