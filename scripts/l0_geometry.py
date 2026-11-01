@@ -301,6 +301,8 @@ def _run(path, on, off, area, negative, out, verbose):
     meta = parse_name(name)
     on = on or (meta or {}).get("on")
     img = cv2.imread(str(path), 0)
+    if img is None:
+        raise ValueError(f"cannot read {path}: damaged file or not an image")
     img, negative, area, how = polarity_and_area(img, area, negative)
     n_expect = int(np.ceil((UTCDateTime(off) - UTCDateTime(on)) / 3600.0)) + 1 if on and off else None
     try:

@@ -42,6 +42,8 @@ Use null for anything you cannot read."""
 def images(path):
     """the whole chip at 2048 px wide and its top 35 % at 3072 px wide (never upscaled)"""
     img = cv2.imread(str(path), 0)
+    if img is None:
+        raise ValueError(f"cannot read {path}: damaged file or not an image")
     h, w = img.shape
     out = []
     for part, width in ((img, 2048), (img[:int(0.35 * h)], 3072)):

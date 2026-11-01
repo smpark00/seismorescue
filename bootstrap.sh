@@ -14,6 +14,8 @@ copy checkpoints/sam3_film2/ckpt_sam3_film2_best.pt out/ml/sam3_film2_modal
 copy checkpoints/sam3_film2/frozen_method.json      out/ml/sam3_film2
 copy checkpoints/both_directions/frozen_rule.json out/ml/fb
 copy results/e4/e4_results.json             out/e4
+copy results/a1/a1_results.json             out/a1
+copy results/a1/check_sample.json           out/a1
 copy examples/MAT_73_12_28_0020_LHZ         out/rescue
 
 for f in out/ml/sam3_film2_modal/ckpt_sam3_film2_best.pt out/ml/fb/frozen_rule.json out/e4/e4_results.json \

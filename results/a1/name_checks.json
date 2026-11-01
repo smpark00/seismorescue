@@ -1,0 +1,5067 @@
+{
+ "what": "A1 visual check of the mismatch chips: two blind readers, Claude, not independent people",
+ "n_checked": 45,
+ "all": {
+  "name_wrong": 32,
+  "l1_wrong": 8,
+  "unclear": 5
+ },
+ "sample30": {
+  "name_wrong": 23,
+  "l1_wrong": 6,
+  "unclear": 1
+ },
+ "estimate_name_wrong": 34.5,
+ "rows": [
+  {
+   "chip": "LON_63_02_17_0112_LHZ",
+   "id": "01",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "LON",
+    "on_date": "1963-02-17",
+    "on_time": "0114",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "LON",
+     "agreed": {
+      "number": "LON",
+      "same_number": "LON"
+     },
+     "supports_name": [
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "LUN",
+      "number": "LON",
+      "same_number": "LON"
+     },
+     "reader_b": {
+      "label": "LON",
+      "number": "LON",
+      "same_number": "LON"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "021763",
+     "agreed": {
+      "border": "021763",
+      "stamp": "021763"
+     },
+     "supports_name": [
+      "border",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "021763",
+      "label": "021763",
+      "stamp": "021763"
+     },
+     "reader_b": {
+      "border": "021763",
+      "label": null,
+      "stamp": "021763"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0112",
+     "agreed": {
+      "border": "0114",
+      "label": "0114"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0114",
+      "label": "0114"
+     },
+     "reader_b": {
+      "border": "0114",
+      "label": "0114"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "WIN_69_05_07_0612_LHZ",
+   "id": "02",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "component"
+   ],
+   "spark_flagged": [
+    "component"
+   ],
+   "spark_first": {
+    "station": "WIN",
+    "on_date": "1969-05-07",
+    "on_time": "0612",
+    "component": "N"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "WIN",
+     "agreed": {
+      "number": "WIN",
+      "same_number": "WIN"
+     },
+     "supports_name": [
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": null,
+      "number": "WIN",
+      "same_number": "WIN"
+     },
+     "reader_b": {
+      "label": null,
+      "number": "WIN",
+      "same_number": "WIN"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "050769",
+     "agreed": {
+      "border": "050769",
+      "label": "050769",
+      "stamp": "050769"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "050769",
+      "label": "050769",
+      "stamp": "050769"
+     },
+     "reader_b": {
+      "border": "050769",
+      "label": "050769",
+      "stamp": "050769"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0612",
+     "agreed": {
+      "border": "0612",
+      "label": "0612"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0612",
+      "label": "0612"
+     },
+     "reader_b": {
+      "border": "0612",
+      "label": "0612"
+     }
+    },
+    "component": {
+     "status": "differs",
+     "name": "Z",
+     "agreed": {
+      "border": "N",
+      "label": "N"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "N",
+      "label": "N"
+     },
+     "reader_b": {
+      "border": "N",
+      "label": "N"
+     }
+    }
+   }
+  },
+  {
+   "chip": "MSH_76_03_13_0607_LHZ",
+   "id": "03",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "MSH",
+    "on_date": "1976-03-14",
+    "on_time": "0607",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "MSH",
+     "agreed": {
+      "label": "MSH",
+      "number": "MSH",
+      "same_number": "MSH"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "MSH",
+      "number": "MSH",
+      "same_number": "MSH"
+     },
+     "reader_b": {
+      "label": "MSH",
+      "number": "MSH",
+      "same_number": "MSH"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "031376",
+     "agreed": {
+      "border": "031476",
+      "label": "031476",
+      "stamp": "031576"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "031476",
+      "label": "031476",
+      "stamp": "031576"
+     },
+     "reader_b": {
+      "border": "031476",
+      "label": "031476",
+      "stamp": "031576"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0607",
+     "agreed": {
+      "border": "0607",
+      "label": "0607"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0607",
+      "label": "0607"
+     },
+     "reader_b": {
+      "border": "0607",
+      "label": "0607"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "SHG_75_11_20_0300_LHZ",
+   "id": "04",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "station"
+   ],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "SNG",
+    "on_date": "1975-11-20",
+    "on_time": "0300",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "differs",
+     "name": "SHG",
+     "agreed": {
+      "label": "SNG",
+      "number": "SNG"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "label",
+      "number"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "SNG",
+      "number": "SNG",
+      "same_number": null
+     },
+     "reader_b": {
+      "label": "SNG",
+      "number": "SNG",
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "112075",
+     "agreed": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": "112075"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": "112075"
+     },
+     "reader_b": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": "112075"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0300",
+     "agreed": {
+      "border": "0300",
+      "label": "0300"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0300",
+      "label": "0300"
+     },
+     "reader_b": {
+      "border": "0300",
+      "label": "0300"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "KBL_69_10_02_0558_LHZ",
+   "id": "05",
+   "in_sample30": true,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "WEL",
+    "on_date": "1969-10-02",
+    "on_time": "0558",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "KBL",
+     "agreed": {
+      "label": "KBL",
+      "same_number": "KBL"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "KBL",
+      "number": null,
+      "same_number": "KBL"
+     },
+     "reader_b": {
+      "label": "KBL",
+      "number": null,
+      "same_number": "KBL"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "100269",
+     "agreed": {
+      "border": "100269",
+      "label": "100269",
+      "stamp": "100269"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "100269",
+      "label": "100269",
+      "stamp": "100269"
+     },
+     "reader_b": {
+      "border": "100269",
+      "label": "100269",
+      "stamp": "100269"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0558",
+     "agreed": {
+      "border": "0558",
+      "label": "0558"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0558",
+      "label": "0558"
+     },
+     "reader_b": {
+      "border": "0558",
+      "label": "0558"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "GRM_68_03_22_1532_LHZ",
+   "id": "06",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "station",
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": null,
+    "on_date": "1968-04-26",
+    "on_time": "1532",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "differs",
+     "name": "GRM",
+     "agreed": {
+      "label": "GRH"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "GRH",
+      "number": null,
+      "same_number": null
+     },
+     "reader_b": {
+      "label": "GRH",
+      "number": null,
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "032268",
+     "agreed": {
+      "border": "042668",
+      "label": "042668"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "042668",
+      "label": "042668",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "042668",
+      "label": "042668",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1532",
+     "agreed": {
+      "border": "1532",
+      "label": "1532"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1532",
+      "label": "1532"
+     },
+     "reader_b": {
+      "border": "1532",
+      "label": "1532"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "HLW_64_07_08_0756_LHZ",
+   "id": "07",
+   "in_sample30": true,
+   "verdict": "unclear",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "COL",
+    "on_date": "1964-07-08",
+    "on_time": "0756",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "unread",
+     "name": "HLW",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": null,
+      "number": null,
+      "same_number": null
+     },
+     "reader_b": {
+      "label": null,
+      "number": null,
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "070864",
+     "agreed": {
+      "border": "070864",
+      "stamp": "070864"
+     },
+     "supports_name": [
+      "border",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "070864",
+      "label": null,
+      "stamp": "070864"
+     },
+     "reader_b": {
+      "border": "070864",
+      "label": null,
+      "stamp": "070864"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0756",
+     "agreed": {
+      "border": "0756"
+     },
+     "supports_name": [
+      "border"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0756",
+      "label": null
+     },
+     "reader_b": {
+      "border": "0756",
+      "label": null
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z"
+     },
+     "supports_name": [
+      "border"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": null
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": null
+     }
+    }
+   }
+  },
+  {
+   "chip": "LAH_75_06_03_0109_LHZ",
+   "id": "08",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "LAH",
+    "on_date": "1975-06-03",
+    "on_time": "0114",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "conflict",
+     "name": "LAH",
+     "agreed": {
+      "label": "NIL",
+      "number": "LAH",
+      "same_number": "LAH"
+     },
+     "supports_name": [
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "NIL",
+      "number": "LAH",
+      "same_number": "LAH"
+     },
+     "reader_b": {
+      "label": "NIL",
+      "number": "LAH",
+      "same_number": "LAH"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "060375",
+     "agreed": {
+      "border": "060375",
+      "label": "060375",
+      "stamp": "060375"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "060375",
+      "label": "060375",
+      "stamp": "060375"
+     },
+     "reader_b": {
+      "border": "060375",
+      "label": "060375",
+      "stamp": "060375"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0109",
+     "agreed": {
+      "border": "0114",
+      "label": "0114"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0114",
+      "label": "0114"
+     },
+     "reader_b": {
+      "border": "0114",
+      "label": "0114"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "MNN_63_01_05_0215_LHZ",
+   "id": "09",
+   "in_sample30": false,
+   "verdict": "unclear",
+   "differs": [],
+   "spark_flagged": [
+    "station",
+    "date"
+   ],
+   "spark_first": {
+    "station": "TUC",
+    "on_date": "1963-05-01",
+    "on_time": "0215",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "MNN",
+     "agreed": {
+      "same_number": "MNN"
+     },
+     "supports_name": [
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": null,
+      "number": null,
+      "same_number": "MNN"
+     },
+     "reader_b": {
+      "label": null,
+      "number": null,
+      "same_number": "MNN"
+     }
+    },
+    "date": {
+     "status": "ambiguous",
+     "name": "010563",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [
+      "border"
+     ],
+     "reader_a": {
+      "border": "050163",
+      "label": null,
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "050163",
+      "label": null,
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0215",
+     "agreed": {
+      "border": "0215",
+      "label": "0215"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0215",
+      "label": "0215"
+     },
+     "reader_b": {
+      "border": "0215",
+      "label": "0215"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "NAI_68_08_28_0509_LHZ",
+   "id": "10",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "NAI",
+    "on_date": "1968-06-28",
+    "on_time": "0509",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "NAI",
+     "agreed": {
+      "label": "NAI",
+      "number": "NAI",
+      "same_number": "NAI"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "NAI",
+      "number": "NAI",
+      "same_number": "NAI"
+     },
+     "reader_b": {
+      "label": "NAI",
+      "number": "NAI",
+      "same_number": "NAI"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "082868",
+     "agreed": {
+      "border": "062868",
+      "label": "062868",
+      "stamp": "062868"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "062868",
+      "label": "062868",
+      "stamp": "062868"
+     },
+     "reader_b": {
+      "border": "062868",
+      "label": "062868",
+      "stamp": "062868"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0509",
+     "agreed": {
+      "border": "0509",
+      "label": "0509"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0509",
+      "label": "0509"
+     },
+     "reader_b": {
+      "border": "0509",
+      "label": "0509"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "MDS_63_04_07_2353_LHZ",
+   "id": "11",
+   "in_sample30": true,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "QUI",
+    "on_date": "1963-04-07",
+    "on_time": "2353",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "MDS",
+     "agreed": {
+      "label": "MDS"
+     },
+     "supports_name": [
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "MDS",
+      "number": null,
+      "same_number": null
+     },
+     "reader_b": {
+      "label": "MDS",
+      "number": null,
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "conflict",
+     "name": "040763",
+     "agreed": {
+      "border": "040763",
+      "label": "040863",
+      "stamp": "040763"
+     },
+     "supports_name": [
+      "border",
+      "stamp"
+     ],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "040763",
+      "label": "040863",
+      "stamp": "040763"
+     },
+     "reader_b": {
+      "border": "040763",
+      "label": "040863",
+      "stamp": "040763"
+     }
+    },
+    "time": {
+     "status": "conflict",
+     "name": "2353",
+     "agreed": {
+      "border": "2353",
+      "label": "2253"
+     },
+     "supports_name": [
+      "border"
+     ],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2353",
+      "label": "2253"
+     },
+     "reader_b": {
+      "border": "2353",
+      "label": "2253"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "ALQ_70_03_02_1525_LHZ",
+   "id": "12",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "ALQ",
+    "on_date": "1970-03-23",
+    "on_time": "1525",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "ALQ",
+     "agreed": {
+      "label": "ALQ",
+      "number": "ALQ",
+      "same_number": "ALQ"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "ALQ",
+      "number": "ALQ",
+      "same_number": "ALQ"
+     },
+     "reader_b": {
+      "label": "ALQ",
+      "number": "ALQ",
+      "same_number": "ALQ"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "030270",
+     "agreed": {
+      "border": "032370",
+      "stamp": "032370"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "032370",
+      "label": "032370",
+      "stamp": "032370"
+     },
+     "reader_b": {
+      "border": "032370",
+      "label": null,
+      "stamp": "032370"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1525",
+     "agreed": {
+      "border": "1525",
+      "label": "1525"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1525",
+      "label": "1525"
+     },
+     "reader_b": {
+      "border": "1525",
+      "label": "1525"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "AKU_77_05_17_1411_LHZ",
+   "id": "13",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "AKU",
+    "on_date": "1977-05-16",
+    "on_time": "1411",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "AKU",
+     "agreed": {
+      "label": "AKU",
+      "number": "AKU",
+      "same_number": "AKU"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "AKU",
+      "number": "AKU",
+      "same_number": "AKU"
+     },
+     "reader_b": {
+      "label": "AKU",
+      "number": "AKU",
+      "same_number": "AKU"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "051777",
+     "agreed": {
+      "border": "051677",
+      "label": "051677",
+      "stamp": "051677"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "051677",
+      "label": "051677",
+      "stamp": "051677"
+     },
+     "reader_b": {
+      "border": "051677",
+      "label": "051677",
+      "stamp": "051677"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1411",
+     "agreed": {
+      "border": "1411",
+      "label": "1411"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1411",
+      "label": "1411"
+     },
+     "reader_b": {
+      "border": "1411",
+      "label": "1411"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "DAL_63_04_07_2151_LHZ",
+   "id": "14",
+   "in_sample30": true,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "COR",
+    "on_date": "1963-04-07",
+    "on_time": "2151",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "DAL",
+     "agreed": {
+      "label": "DAL",
+      "same_number": "DAL"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "DAL",
+      "number": null,
+      "same_number": "DAL"
+     },
+     "reader_b": {
+      "label": "DAL",
+      "number": null,
+      "same_number": "DAL"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "040763",
+     "agreed": {
+      "border": "040763",
+      "label": "040763",
+      "stamp": "040763"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "040763",
+      "label": "040763",
+      "stamp": "040763"
+     },
+     "reader_b": {
+      "border": "040763",
+      "label": "040763",
+      "stamp": "040763"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "2151",
+     "agreed": {
+      "border": "2151",
+      "label": "2151"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2151",
+      "label": "2151"
+     },
+     "reader_b": {
+      "border": "2151",
+      "label": "2151"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "TUC_76_03_09_1516_LHZ",
+   "id": "15",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "TUC",
+    "on_date": "1976-03-08",
+    "on_time": "1516",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "TUC",
+     "agreed": {
+      "label": "TUC",
+      "number": "TUC",
+      "same_number": "TUC"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "TUC",
+      "number": "TUC",
+      "same_number": "TUC"
+     },
+     "reader_b": {
+      "label": "TUC",
+      "number": "TUC",
+      "same_number": "TUC"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "030976",
+     "agreed": {
+      "border": "030876",
+      "label": "030876",
+      "stamp": "030876"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "030876",
+      "label": "030876",
+      "stamp": "030876"
+     },
+     "reader_b": {
+      "border": "030876",
+      "label": "030876",
+      "stamp": "030876"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1516",
+     "agreed": {
+      "border": "1516",
+      "label": "1516"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1516",
+      "label": "1516"
+     },
+     "reader_b": {
+      "border": "1516",
+      "label": "1516"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "DAL_70_03_02_0218_LHZ",
+   "id": "16",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": null,
+    "on_date": "1970-03-23",
+    "on_time": "0218",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "DAL",
+     "agreed": {
+      "label": "DAL",
+      "same_number": "DAL"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "DAL",
+      "number": null,
+      "same_number": "DAL"
+     },
+     "reader_b": {
+      "label": "DAL",
+      "number": null,
+      "same_number": "DAL"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "030270",
+     "agreed": {
+      "border": "032370",
+      "label": "032370",
+      "stamp": "032370"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "032370",
+      "label": "032370",
+      "stamp": "032370"
+     },
+     "reader_b": {
+      "border": "032370",
+      "label": "032370",
+      "stamp": "032370"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0218",
+     "agreed": {
+      "border": "0218",
+      "label": "0218"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0218",
+      "label": "0218"
+     },
+     "reader_b": {
+      "border": "0218",
+      "label": "0218"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "GIE_68_04_26_1442_LHZ",
+   "id": "17",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "GIE",
+    "on_date": "1968-06-27",
+    "on_time": "1442",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "conflict",
+     "name": "GIE",
+     "agreed": {
+      "label": "FIE",
+      "number": "GIE",
+      "same_number": "GIE"
+     },
+     "supports_name": [
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "FIE",
+      "number": "GIE",
+      "same_number": "GIE"
+     },
+     "reader_b": {
+      "label": "FIE",
+      "number": "GIE",
+      "same_number": "GIE"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "042668",
+     "agreed": {
+      "border": "062768",
+      "label": "062768",
+      "stamp": "062768"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "062768",
+      "label": "062768",
+      "stamp": "062768"
+     },
+     "reader_b": {
+      "border": "062768",
+      "label": "062768",
+      "stamp": "062768"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1442",
+     "agreed": {
+      "border": "1442",
+      "label": "1442"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1442",
+      "label": "1442"
+     },
+     "reader_b": {
+      "border": "1442",
+      "label": "1442"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "HNR_63_02_26_2328_LHZ",
+   "id": "18",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "HNR",
+    "on_date": "1963-02-26",
+    "on_time": "2332",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "HNR",
+     "agreed": {
+      "label": "HNR",
+      "number": "HNR",
+      "same_number": "HNR"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "HNR",
+      "number": "HNR",
+      "same_number": "HNR"
+     },
+     "reader_b": {
+      "label": "HNR",
+      "number": "HNR",
+      "same_number": "HNR"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "022663",
+     "agreed": {
+      "border": "022663",
+      "label": "022663",
+      "stamp": "022663"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "022663",
+      "label": "022663",
+      "stamp": "022663"
+     },
+     "reader_b": {
+      "border": "022663",
+      "label": "022663",
+      "stamp": "022663"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "2328",
+     "agreed": {
+      "border": "2332",
+      "label": "2332"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2332",
+      "label": "2332"
+     },
+     "reader_b": {
+      "border": "2332",
+      "label": "2332"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "GEO_69_09_10_1455_LHZ",
+   "id": "19",
+   "in_sample30": false,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "GSC",
+    "on_date": "1969-09-10",
+    "on_time": "1455",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "GEO",
+     "agreed": {
+      "label": "GEO",
+      "same_number": "GEO"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "GEO",
+      "number": null,
+      "same_number": "GEO"
+     },
+     "reader_b": {
+      "label": "GEO",
+      "number": null,
+      "same_number": "GEO"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "091069",
+     "agreed": {
+      "border": "091069",
+      "label": "091069",
+      "stamp": "091069"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "091069",
+      "label": "091069",
+      "stamp": "091069"
+     },
+     "reader_b": {
+      "border": "091069",
+      "label": "091069",
+      "stamp": "091069"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1455",
+     "agreed": {
+      "border": "1455",
+      "label": "1455"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1455",
+      "label": "1455"
+     },
+     "reader_b": {
+      "border": "1455",
+      "label": "1455"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "CAR_76_03_20_0912_LHZ",
+   "id": "20",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "CAR",
+    "on_date": "1976-03-20",
+    "on_time": "0942",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "CAR",
+     "agreed": {
+      "label": "CAR",
+      "number": "CAR",
+      "same_number": "CAR"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "CAR",
+      "number": "CAR",
+      "same_number": "CAR"
+     },
+     "reader_b": {
+      "label": "CAR",
+      "number": "CAR",
+      "same_number": "CAR"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "032076",
+     "agreed": {
+      "border": "032076",
+      "label": "032076",
+      "stamp": "032076"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "032076",
+      "label": "032076",
+      "stamp": "032076"
+     },
+     "reader_b": {
+      "border": "032076",
+      "label": "032076",
+      "stamp": "032076"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0912",
+     "agreed": {
+      "border": "0942",
+      "label": "0942"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0942",
+      "label": "0942"
+     },
+     "reader_b": {
+      "border": "0942",
+      "label": "0942"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "AQU_68_03_22_0654_LHZ",
+   "id": "21",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": null,
+    "on_date": "1968-04-26",
+    "on_time": "0654",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "AQU",
+     "agreed": {
+      "label": "AQU",
+      "same_number": "AQU"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "AQU",
+      "number": null,
+      "same_number": "AQU"
+     },
+     "reader_b": {
+      "label": "AQU",
+      "number": null,
+      "same_number": "AQU"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "032268",
+     "agreed": {
+      "border": "042668",
+      "stamp": "042768"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "042668",
+      "label": null,
+      "stamp": "042768"
+     },
+     "reader_b": {
+      "border": "042668",
+      "label": null,
+      "stamp": "042768"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0654",
+     "agreed": {
+      "border": "0654",
+      "label": "0654"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0654",
+      "label": "0654"
+     },
+     "reader_b": {
+      "border": "0654",
+      "label": "0654"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "IST_76_03_08_0700_LHZ",
+   "id": "22",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date",
+    "time"
+   ],
+   "spark_flagged": [
+    "date",
+    "time"
+   ],
+   "spark_first": {
+    "station": "IST",
+    "on_date": "1976-03-09",
+    "on_time": "0701",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "IST",
+     "agreed": {
+      "label": "IST",
+      "number": "IST",
+      "same_number": "IST"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "IST",
+      "number": "IST",
+      "same_number": "IST"
+     },
+     "reader_b": {
+      "label": "IST",
+      "number": "IST",
+      "same_number": "IST"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "030876",
+     "agreed": {
+      "border": "030976",
+      "label": "030976",
+      "stamp": "030976"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "030976",
+      "label": "030976",
+      "stamp": "030976"
+     },
+     "reader_b": {
+      "border": "030976",
+      "label": "030976",
+      "stamp": "030976"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0700",
+     "agreed": {
+      "border": "0701",
+      "label": "0701"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0701",
+      "label": "0701"
+     },
+     "reader_b": {
+      "border": "0701",
+      "label": "0701"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "TUC_63_01_05_1616_LHZ",
+   "id": "23",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "TUC",
+    "on_date": "1963-05-01",
+    "on_time": "1616",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "TUC",
+     "agreed": {
+      "number": "TUC",
+      "same_number": "TUC"
+     },
+     "supports_name": [
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": null,
+      "number": "TUC",
+      "same_number": "TUC"
+     },
+     "reader_b": {
+      "label": null,
+      "number": "TUC",
+      "same_number": "TUC"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "010563",
+     "agreed": {
+      "stamp": "050163"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "stamp"
+     ],
+     "ambiguous": [
+      "border"
+     ],
+     "reader_a": {
+      "border": "050163",
+      "label": null,
+      "stamp": "050163"
+     },
+     "reader_b": {
+      "border": "050163",
+      "label": null,
+      "stamp": "050163"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1616",
+     "agreed": {
+      "border": "1616",
+      "label": "1616"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1616",
+      "label": "1616"
+     },
+     "reader_b": {
+      "border": "1616",
+      "label": "1616"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z"
+     },
+     "supports_name": [
+      "border"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": null
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": null
+     }
+    }
+   }
+  },
+  {
+   "chip": "HKC_68_04_26_0358_LHZ",
+   "id": "24",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": null,
+    "on_date": "1968-06-28",
+    "on_time": "0358",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "HKC",
+     "agreed": {
+      "label": "HKC",
+      "same_number": "HKC"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "HKC",
+      "number": null,
+      "same_number": "HKC"
+     },
+     "reader_b": {
+      "label": "HKC",
+      "number": null,
+      "same_number": "HKC"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "042668",
+     "agreed": {
+      "border": "062868",
+      "label": "062868",
+      "stamp": "062968"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "062868",
+      "label": "062868",
+      "stamp": "062968"
+     },
+     "reader_b": {
+      "border": "062868",
+      "label": "062868",
+      "stamp": "062968"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0358",
+     "agreed": {
+      "border": "0358",
+      "label": "0358"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0358",
+      "label": "0358"
+     },
+     "reader_b": {
+      "border": "0358",
+      "label": "0358"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "EIL_75_11_20_0900_LHZ",
+   "id": "25",
+   "in_sample30": true,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "ESK",
+    "on_date": "1975-11-20",
+    "on_time": "0900",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "EIL",
+     "agreed": {
+      "label": "EIL",
+      "same_number": "EIL"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "EIL",
+      "number": null,
+      "same_number": "EIL"
+     },
+     "reader_b": {
+      "label": "EIL",
+      "number": null,
+      "same_number": "EIL"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "112075",
+     "agreed": {
+      "border": "112075",
+      "label": "112075"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0900",
+     "agreed": {
+      "border": "0900",
+      "label": "0900"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0900",
+      "label": "0900"
+     },
+     "reader_b": {
+      "border": "0900",
+      "label": "0900"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "DUG_73_09_10_2300_LHZ",
+   "id": "26",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "component"
+   ],
+   "spark_flagged": [
+    "component"
+   ],
+   "spark_first": {
+    "station": "DUG",
+    "on_date": "1973-09-10",
+    "on_time": "2300",
+    "component": "E"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "DUG",
+     "agreed": {
+      "label": "DUG",
+      "number": "DUG",
+      "same_number": "DUG"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "DUG",
+      "number": "DUG",
+      "same_number": "DUG"
+     },
+     "reader_b": {
+      "label": "DUG",
+      "number": "DUG",
+      "same_number": "DUG"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "091073",
+     "agreed": {
+      "border": "091073",
+      "label": "091073"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "091073",
+      "label": "091073",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "091073",
+      "label": "091073",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "2300",
+     "agreed": {
+      "border": "2300",
+      "label": "2300"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2300",
+      "label": "2300"
+     },
+     "reader_b": {
+      "border": "2300",
+      "label": "2300"
+     }
+    },
+    "component": {
+     "status": "differs",
+     "name": "Z",
+     "agreed": {
+      "border": "E",
+      "label": "W"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "E",
+      "label": "W"
+     },
+     "reader_b": {
+      "border": "E",
+      "label": "W"
+     }
+    }
+   }
+  },
+  {
+   "chip": "SHA_63_02_04_2329_LHZ",
+   "id": "27",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "SHA",
+    "on_date": "1963-04-02",
+    "on_time": "2329",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "SHA",
+     "agreed": {
+      "number": "SHA",
+      "same_number": "SHA"
+     },
+     "supports_name": [
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "SHK",
+      "number": "SHA",
+      "same_number": "SHA"
+     },
+     "reader_b": {
+      "label": "SHKV",
+      "number": "SHA",
+      "same_number": "SHA"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "020463",
+     "agreed": {
+      "stamp": "040263"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "stamp"
+     ],
+     "ambiguous": [
+      "border"
+     ],
+     "reader_a": {
+      "border": "040263",
+      "label": "040263",
+      "stamp": "040263"
+     },
+     "reader_b": {
+      "border": "040263",
+      "label": "090263",
+      "stamp": "040263"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "2329",
+     "agreed": {
+      "border": "2329",
+      "label": "2329"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2329",
+      "label": "2329"
+     },
+     "reader_b": {
+      "border": "2329",
+      "label": "2329"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "UNM_68_08_27_1445_LHZ",
+   "id": "28",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": null,
+    "on_date": "1968-06-27",
+    "on_time": "1445",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "UNM",
+     "agreed": {
+      "label": "UNM",
+      "same_number": "UNM"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "UNM",
+      "number": null,
+      "same_number": "UNM"
+     },
+     "reader_b": {
+      "label": "UNM",
+      "number": null,
+      "same_number": "UNM"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "082768",
+     "agreed": {
+      "border": "062768"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "062768",
+      "label": null,
+      "stamp": "062768"
+     },
+     "reader_b": {
+      "border": "062768",
+      "label": null,
+      "stamp": "062868"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1445",
+     "agreed": {
+      "border": "1445",
+      "label": "1445"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1445",
+      "label": "1445"
+     },
+     "reader_b": {
+      "border": "1445",
+      "label": "1445"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z"
+     },
+     "supports_name": [
+      "border"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "R"
+     }
+    }
+   }
+  },
+  {
+   "chip": "IST_63_01_05_0718_LHZ",
+   "id": "29",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "IST",
+    "on_date": "1963-05-01",
+    "on_time": "0718",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "IST",
+     "agreed": {
+      "label": "IST",
+      "number": "IST",
+      "same_number": "IST"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "IST",
+      "number": "IST",
+      "same_number": "IST"
+     },
+     "reader_b": {
+      "label": "IST",
+      "number": "IST",
+      "same_number": "IST"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "010563",
+     "agreed": {
+      "stamp": "050163"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "stamp"
+     ],
+     "ambiguous": [
+      "border",
+      "label"
+     ],
+     "reader_a": {
+      "border": "050163",
+      "label": "050163",
+      "stamp": "050163"
+     },
+     "reader_b": {
+      "border": "050163",
+      "label": "050163",
+      "stamp": "050163"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0718",
+     "agreed": {
+      "border": "0718"
+     },
+     "supports_name": [
+      "border"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0718",
+      "label": null
+     },
+     "reader_b": {
+      "border": "0718",
+      "label": null
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "BOZ_76_02_06_1853_LHZ",
+   "id": "30",
+   "in_sample30": false,
+   "verdict": "unclear",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "MAN",
+    "on_date": "1976-02-06",
+    "on_time": "1853",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "conflict",
+     "name": "BOZ",
+     "agreed": {
+      "label": "MSO",
+      "same_number": "BOZ"
+     },
+     "supports_name": [
+      "same_number"
+     ],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "MSO",
+      "number": null,
+      "same_number": "BOZ"
+     },
+     "reader_b": {
+      "label": "MSO",
+      "number": null,
+      "same_number": "BOZ"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "020676",
+     "agreed": {
+      "border": "020676",
+      "label": "020676"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "020676",
+      "label": "020676",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "020676",
+      "label": "020676",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1853",
+     "agreed": {
+      "border": "1853",
+      "label": "1853"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1853",
+      "label": "1853"
+     },
+     "reader_b": {
+      "border": "1853",
+      "label": "1853"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "CTA_67_06_02_0007_LHZ",
+   "id": "31",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "CTA",
+    "on_date": "1967-06-02",
+    "on_time": "0009",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "CTA",
+     "agreed": {
+      "label": "CTA",
+      "number": "CTA",
+      "same_number": "CTA"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "CTA",
+      "number": "CTA",
+      "same_number": "CTA"
+     },
+     "reader_b": {
+      "label": "CTA",
+      "number": "CTA",
+      "same_number": "CTA"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "060267",
+     "agreed": {
+      "border": "060267",
+      "label": "060267"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "060267",
+      "label": "060267",
+      "stamp": "061367"
+     },
+     "reader_b": {
+      "border": "060267",
+      "label": "060267",
+      "stamp": "060367"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0007",
+     "agreed": {
+      "border": "0009",
+      "label": "0009"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0009",
+      "label": "0009"
+     },
+     "reader_b": {
+      "border": "0009",
+      "label": "0009"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "AFI_68_01_19_0139_LHZ",
+   "id": "32",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "AFI",
+    "on_date": "1968-01-19",
+    "on_time": "0144",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "AFI",
+     "agreed": {
+      "label": "AFI",
+      "number": "AFI",
+      "same_number": "AFI"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "AFI",
+      "number": "AFI",
+      "same_number": "AFI"
+     },
+     "reader_b": {
+      "label": "AFI",
+      "number": "AFI",
+      "same_number": "AFI"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "011968",
+     "agreed": {
+      "border": "011968",
+      "label": "011968",
+      "stamp": "011968"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "011968",
+      "label": "011968",
+      "stamp": "011968"
+     },
+     "reader_b": {
+      "border": "011968",
+      "label": "011968",
+      "stamp": "011968"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0139",
+     "agreed": {
+      "border": "0144",
+      "label": "0144"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0144",
+      "label": "0144"
+     },
+     "reader_b": {
+      "border": "0144",
+      "label": "0144"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "KOD_75_11_20_0221_LHZ",
+   "id": "33",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "time"
+   ],
+   "spark_flagged": [
+    "time"
+   ],
+   "spark_first": {
+    "station": "KOD",
+    "on_date": "1975-11-20",
+    "on_time": "0220",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "KOD",
+     "agreed": {
+      "label": "KOD",
+      "number": "KOD",
+      "same_number": "KOD"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "KOD",
+      "number": "KOD",
+      "same_number": "KOD"
+     },
+     "reader_b": {
+      "label": "KOD",
+      "number": "KOD",
+      "same_number": "KOD"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "112075",
+     "agreed": {
+      "border": "112075",
+      "label": "112075"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "112075",
+      "label": "112075",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0221",
+     "agreed": {
+      "border": "0220",
+      "label": "0220"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0220",
+      "label": "0220"
+     },
+     "reader_b": {
+      "border": "0220",
+      "label": "0220"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "PMG_68_01_19_1220_LHZ",
+   "id": "34",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date",
+    "time"
+   ],
+   "spark_flagged": [
+    "date",
+    "time"
+   ],
+   "spark_first": {
+    "station": "PMG",
+    "on_date": "1968-01-18",
+    "on_time": "2320",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "PMG",
+     "agreed": {
+      "label": "PMG",
+      "number": "PMG",
+      "same_number": "PMG"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "PMG",
+      "number": "PMG",
+      "same_number": "PMG"
+     },
+     "reader_b": {
+      "label": "PMG",
+      "number": "PMG",
+      "same_number": "PMG"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "011968",
+     "agreed": {
+      "border": "011868",
+      "label": "011868",
+      "stamp": "011868"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "011868",
+      "label": "011868",
+      "stamp": "011868"
+     },
+     "reader_b": {
+      "border": "011868",
+      "label": "011868",
+      "stamp": "011868"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "1220",
+     "agreed": {
+      "border": "2320",
+      "label": "2320"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2320",
+      "label": "2320"
+     },
+     "reader_b": {
+      "border": "2320",
+      "label": "2320"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "SHA_68_12_19_2205_LHZ",
+   "id": "35",
+   "in_sample30": false,
+   "verdict": "unclear",
+   "differs": [],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "SHA",
+    "on_date": "1968-12-18",
+    "on_time": "2205",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "SHA",
+     "agreed": {
+      "label": "SHA",
+      "number": "SHA",
+      "same_number": "SHA"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "SHA",
+      "number": "SHA",
+      "same_number": "SHA"
+     },
+     "reader_b": {
+      "label": "SHA",
+      "number": "SHA",
+      "same_number": "SHA"
+     }
+    },
+    "date": {
+     "status": "conflict",
+     "name": "121968",
+     "agreed": {
+      "border": "121868",
+      "label": "121868"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "121868",
+      "label": "121868",
+      "stamp": "121868"
+     },
+     "reader_b": {
+      "border": "121868",
+      "label": "121868",
+      "stamp": "121968"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "2205",
+     "agreed": {
+      "border": "2205",
+      "label": "2205"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2205",
+      "label": "2205"
+     },
+     "reader_b": {
+      "border": "2205",
+      "label": "2205"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "MNN_63_02_08_0048_LHZ",
+   "id": "36",
+   "in_sample30": false,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "MAT",
+    "on_date": "1963-02-08",
+    "on_time": "0048",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "MNN",
+     "agreed": {
+      "label": "MNN",
+      "same_number": "MNN"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "MNN",
+      "number": null,
+      "same_number": "MNN"
+     },
+     "reader_b": {
+      "label": "MNN",
+      "number": null,
+      "same_number": "MNN"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "020863",
+     "agreed": {
+      "border": "020863",
+      "label": "020863",
+      "stamp": "020863"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "020863",
+      "label": "020863",
+      "stamp": "020863"
+     },
+     "reader_b": {
+      "border": "020863",
+      "label": "020863",
+      "stamp": "020863"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0048",
+     "agreed": {
+      "border": "0048",
+      "label": "0048"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0048",
+      "label": "0048"
+     },
+     "reader_b": {
+      "border": "0048",
+      "label": "0048"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "ANP_63_02_04_0101_LHZ",
+   "id": "37",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "ANP",
+    "on_date": "1963-04-02",
+    "on_time": "0101",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "ANP",
+     "agreed": {
+      "label": "ANP",
+      "number": "ANP",
+      "same_number": "ANP"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "ANP",
+      "number": "ANP",
+      "same_number": "ANP"
+     },
+     "reader_b": {
+      "label": "ANP",
+      "number": "ANP",
+      "same_number": "ANP"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "020463",
+     "agreed": {
+      "stamp": "040263"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "stamp"
+     ],
+     "ambiguous": [
+      "border",
+      "label"
+     ],
+     "reader_a": {
+      "border": "040263",
+      "label": "040263",
+      "stamp": "040263"
+     },
+     "reader_b": {
+      "border": "040263",
+      "label": "040263",
+      "stamp": "040263"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0101",
+     "agreed": {
+      "border": "0101",
+      "label": "0101"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "0101",
+      "label": "0101"
+     },
+     "reader_b": {
+      "border": "0101",
+      "label": "0101"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "NUR_64_02_11_0548_LHZ",
+   "id": "38",
+   "in_sample30": true,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station",
+    "time"
+   ],
+   "spark_first": {
+    "station": "PDA",
+    "on_date": "1964-02-11",
+    "on_time": "0544",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "NUR",
+     "agreed": {
+      "label": "NUR"
+     },
+     "supports_name": [
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "NUR",
+      "number": null,
+      "same_number": null
+     },
+     "reader_b": {
+      "label": "NUR",
+      "number": null,
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "unread",
+     "name": "021164",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": null,
+      "stamp": null
+     },
+     "reader_b": {
+      "border": null,
+      "label": null,
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "0548",
+     "agreed": {
+      "label": "0548"
+     },
+     "supports_name": [
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": "0548"
+     },
+     "reader_b": {
+      "border": null,
+      "label": "0548"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "label": "Z"
+     },
+     "supports_name": [
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": null,
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "TAU_68_08_29_2359_LHZ",
+   "id": "39",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "TAU",
+    "on_date": "1968-08-28",
+    "on_time": "2359",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "TAU",
+     "agreed": {
+      "label": "TAU",
+      "number": "TAU",
+      "same_number": "TAU"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "TAU",
+      "number": "TAU",
+      "same_number": "TAU"
+     },
+     "reader_b": {
+      "label": "TAU",
+      "number": "TAU",
+      "same_number": "TAU"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "082968",
+     "agreed": {
+      "border": "082868",
+      "label": "082868",
+      "stamp": "082868"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "082868",
+      "label": "082868",
+      "stamp": "082868"
+     },
+     "reader_b": {
+      "border": "082868",
+      "label": "082868",
+      "stamp": "082868"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "2359",
+     "agreed": {
+      "border": "2359",
+      "label": "2359"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2359",
+      "label": "2359"
+     },
+     "reader_b": {
+      "border": "2359",
+      "label": "2359"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "FLO_64_02_11_1435_LHZ",
+   "id": "40",
+   "in_sample30": false,
+   "verdict": "unclear",
+   "differs": [],
+   "spark_flagged": [
+    "station",
+    "time"
+   ],
+   "spark_first": {
+    "station": "RIV",
+    "on_date": "1964-02-11",
+    "on_time": "1500",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "unread",
+     "name": "FLO",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": null,
+      "number": null,
+      "same_number": null
+     },
+     "reader_b": {
+      "label": null,
+      "number": null,
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "unread",
+     "name": "021164",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": null,
+      "stamp": null
+     },
+     "reader_b": {
+      "border": null,
+      "label": null,
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "unread",
+     "name": "1435",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": null
+     },
+     "reader_b": {
+      "border": null,
+      "label": null
+     }
+    },
+    "component": {
+     "status": "unread",
+     "name": "Z",
+     "agreed": {},
+     "supports_name": [],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": null
+     },
+     "reader_b": {
+      "border": null,
+      "label": null
+     }
+    }
+   }
+  },
+  {
+   "chip": "LPA_63_04_17_0135_LHZ",
+   "id": "41",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "date",
+    "time"
+   ],
+   "spark_flagged": [
+    "station",
+    "date",
+    "time"
+   ],
+   "spark_first": {
+    "station": "AAE",
+    "on_date": "1969-04-19",
+    "on_time": "0000",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "LPA",
+     "agreed": {
+      "label": "LPA"
+     },
+     "supports_name": [
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "LPA",
+      "number": null,
+      "same_number": null
+     },
+     "reader_b": {
+      "label": "LPA",
+      "number": null,
+      "same_number": null
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "041763",
+     "agreed": {
+      "label": "041363",
+      "stamp": "041363"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "label",
+      "stamp"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": "041363",
+      "stamp": "041363"
+     },
+     "reader_b": {
+      "border": null,
+      "label": "041363",
+      "stamp": "041363"
+     }
+    },
+    "time": {
+     "status": "differs",
+     "name": "0135",
+     "agreed": {
+      "label": "0035"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": "0035"
+     },
+     "reader_b": {
+      "border": null,
+      "label": "0035"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "label": "Z"
+     },
+     "supports_name": [
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": null,
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": null,
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "WEL_66_12_20_2121_LHZ",
+   "id": "42",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "WEL",
+    "on_date": "1966-12-19",
+    "on_time": "2121",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "WEL",
+     "agreed": {
+      "label": "WEL",
+      "number": "WEL",
+      "same_number": "WEL"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "WEL",
+      "number": "WEL",
+      "same_number": "WEL"
+     },
+     "reader_b": {
+      "label": "WEL",
+      "number": "WEL",
+      "same_number": "WEL"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "122066",
+     "agreed": {
+      "border": "121966",
+      "label": "121966"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "121966",
+      "label": "121966",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "121966",
+      "label": "121966",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "2121",
+     "agreed": {
+      "border": "2121",
+      "label": "2121"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "2121",
+      "label": "2121"
+     },
+     "reader_b": {
+      "border": "2121",
+      "label": "2121"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "LUB_76_03_13_1525_LHZ",
+   "id": "43",
+   "in_sample30": true,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "LUB",
+    "on_date": "1976-03-14",
+    "on_time": "1525",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "LUB",
+     "agreed": {
+      "label": "LUB",
+      "number": "LUB",
+      "same_number": "LUB"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "LUB",
+      "number": "LUB",
+      "same_number": "LUB"
+     },
+     "reader_b": {
+      "label": "LUB",
+      "number": "LUB",
+      "same_number": "LUB"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "031376",
+     "agreed": {
+      "border": "031476",
+      "label": "031476"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "031476",
+      "label": "031476",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "031476",
+      "label": "031476",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1525",
+     "agreed": {
+      "border": "1525",
+      "label": "1525"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1525",
+      "label": "1525"
+     },
+     "reader_b": {
+      "border": "1525",
+      "label": "1525"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "COL_70_11_21_1904_LHZ",
+   "id": "44",
+   "in_sample30": false,
+   "verdict": "name_wrong",
+   "differs": [
+    "date"
+   ],
+   "spark_flagged": [
+    "date"
+   ],
+   "spark_first": {
+    "station": "COL",
+    "on_date": "1970-11-20",
+    "on_time": "1904",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "COL",
+     "agreed": {
+      "label": "COL",
+      "number": "COL",
+      "same_number": "COL"
+     },
+     "supports_name": [
+      "label",
+      "number",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "COL",
+      "number": "COL",
+      "same_number": "COL"
+     },
+     "reader_b": {
+      "label": "COL",
+      "number": "COL",
+      "same_number": "COL"
+     }
+    },
+    "date": {
+     "status": "differs",
+     "name": "112170",
+     "agreed": {
+      "border": "112070",
+      "label": "112070"
+     },
+     "supports_name": [],
+     "contradicts_name": [
+      "border",
+      "label"
+     ],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "112070",
+      "label": "112070",
+      "stamp": null
+     },
+     "reader_b": {
+      "border": "112070",
+      "label": "112070",
+      "stamp": null
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1904",
+     "agreed": {
+      "border": "1904",
+      "label": "1904"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1904",
+      "label": "1904"
+     },
+     "reader_b": {
+      "border": "1904",
+      "label": "1904"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  },
+  {
+   "chip": "DAL_75_11_19_1823_LHZ",
+   "id": "45",
+   "in_sample30": true,
+   "verdict": "l1_wrong",
+   "differs": [],
+   "spark_flagged": [
+    "station"
+   ],
+   "spark_first": {
+    "station": "COL",
+    "on_date": "1975-11-19",
+    "on_time": "1823",
+    "component": "Z"
+   },
+   "fields": {
+    "station": {
+     "status": "ok",
+     "name": "DAL",
+     "agreed": {
+      "label": "DAL",
+      "same_number": "DAL"
+     },
+     "supports_name": [
+      "label",
+      "same_number"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "label": "DAL",
+      "number": null,
+      "same_number": "DAL"
+     },
+     "reader_b": {
+      "label": "DAL",
+      "number": null,
+      "same_number": "DAL"
+     }
+    },
+    "date": {
+     "status": "ok",
+     "name": "111975",
+     "agreed": {
+      "border": "111975",
+      "label": "111975",
+      "stamp": "111975"
+     },
+     "supports_name": [
+      "border",
+      "label",
+      "stamp"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "111975",
+      "label": "111975",
+      "stamp": "111975"
+     },
+     "reader_b": {
+      "border": "111975",
+      "label": "111975",
+      "stamp": "111975"
+     }
+    },
+    "time": {
+     "status": "ok",
+     "name": "1823",
+     "agreed": {
+      "border": "1823",
+      "label": "1823"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "1823",
+      "label": "1823"
+     },
+     "reader_b": {
+      "border": "1823",
+      "label": "1823"
+     }
+    },
+    "component": {
+     "status": "ok",
+     "name": "Z",
+     "agreed": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "supports_name": [
+      "border",
+      "label"
+     ],
+     "contradicts_name": [],
+     "ambiguous": [],
+     "reader_a": {
+      "border": "Z",
+      "label": "Z"
+     },
+     "reader_b": {
+      "border": "Z",
+      "label": "Z"
+     }
+    }
+   }
+  }
+ ]
+}

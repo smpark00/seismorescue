@@ -1,0 +1,17 @@
+{
+ "started": "2026-11-01 22:24:40 KST",
+ "n": 300,
+ "workers": 4,
+ "hashes": {
+  "l0_geometry": "0fc08e64e636453d299573d44ae558028b02f1de8e8a4add8ba0b1a794e76964",
+  "l1_context": "d86f8c857c78dadfad7365d712e51e9b76113183faee42894f32d55a6bb39c70",
+  "real_paired_eval": "d026c6fa3b6758d19871e8af9bf6f2fc3e92c5093bf8a4d22ccaa7241e691793",
+  "table": "8a6028d4ac285e676f81ddc2c29634fef0bce7bce02e4cd4ff7ca311d65a149b",
+  "index": "9fcac7d20d72597f24b989cc2124b6999abaf70906cc8205fcb30895ed453b7a",
+  "a1_batch": "768d4556dcd1fd4c78109caf4eeb365de27af5ffa8a5b3b6704c033d5cac5e35",
+  "e4_spark_labels": "d9fdf053de4ced8df67f87999db8967a75cf07f08e9ecbc522de83d8dd722031",
+  "metaapi": "fe2f4b87cd258ea0e105c3ae0077bf7b539f823d8e499a6285f1510eadb0494a",
+  "track_joint": "e75038b3aa526450fd0ff4622d25d79fbaa10157f21eecc23f1d70e0d8617318"
+ },
+ "doc_sha256": "526866949068e063852d0777a086d9f3b6447d4c7de5d5e2a88a5d1ecec38ea4"
+}

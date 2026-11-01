@@ -1,0 +1,1099 @@
+[
+{
+"id": "01",
+"border": {
+"date": "021763",
+"time": "0114",
+"station_number": "0058",
+"component_code": "04"
+},
+"label": {
+"station": "LUN",
+"component": "Z",
+"on_date": "2-17-63",
+"on_time": "0114",
+"off_date": null,
+"off_time": "0127"
+},
+"date_stamps": [
+"FEB 17 1963"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "02",
+"border": {
+"date": "050769",
+"time": "0612",
+"station_number": "0124",
+"component_code": "05"
+},
+"label": {
+"station": null,
+"component": "N",
+"on_date": "5-7-69",
+"on_time": "0612",
+"off_date": "5-8-69",
+"off_time": "0609"
+},
+"date_stamps": [
+"7 MAY 1969",
+"8 MAY 1969"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "03",
+"border": {
+"date": "031476",
+"time": "0607",
+"station_number": "0071",
+"component_code": "04"
+},
+"label": {
+"station": "MSH",
+"component": "Z",
+"on_date": "3.14.76",
+"on_time": "0607",
+"off_date": "3.15.76",
+"off_time": "0611"
+},
+"date_stamps": [
+"MAR 1? 1976",
+"MAR 15 1976"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "04",
+"border": {
+"date": "112075",
+"time": "0300",
+"station_number": "0068",
+"component_code": "04"
+},
+"label": {
+"station": "SNG",
+"component": "Z",
+"on_date": "11-20-75",
+"on_time": "0300",
+"off_date": "11-21-75",
+"off_time": "0227"
+},
+"date_stamps": [
+"NOV 20 1975",
+"NOV 21 1975"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "05",
+"border": {
+"date": "100269",
+"time": "0558",
+"station_number": "0057",
+"component_code": "04"
+},
+"label": {
+"station": "KBL",
+"component": "LPZ",
+"on_date": "10-2-69",
+"on_time": "05:58",
+"off_date": "10-3-69",
+"off_time": "04:28"
+},
+"date_stamps": [
+"OCT 2 1969",
+"OCT 3 1969"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "06",
+"border": {
+"date": "042668",
+"time": "1532",
+"station_number": "0037",
+"component_code": "04"
+},
+"label": {
+"station": "GRH",
+"component": "Z",
+"on_date": "4-26-68",
+"on_time": "1532",
+"off_date": "4-27-68",
+"off_time": "1515"
+},
+"date_stamps": [],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "07",
+"border": {
+"date": "070864",
+"time": "0756",
+"station_number": "0047",
+"component_code": "04"
+},
+"label": {
+"station": null,
+"component": null,
+"on_date": null,
+"on_time": "756",
+"off_date": null,
+"off_time": "740"
+},
+"date_stamps": [
+"JUL 8 1964",
+"JUL 9 1964"
+],
+"confidence": {
+"border": "clear",
+"label": "poor"
+}
+},
+{
+"id": "08",
+"border": {
+"date": "060375",
+"time": "0114",
+"station_number": "0056",
+"component_code": "04"
+},
+"label": {
+"station": "NIL",
+"component": "Z",
+"on_date": "6-3-75",
+"on_time": "0114Z",
+"off_date": "6-4-75",
+"off_time": "0112Z"
+},
+"date_stamps": [
+"JUN 03 1975",
+"?? 0? 1975"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "09",
+"border": {
+"date": "050163",
+"time": "0215",
+"station_number": "0069",
+"component_code": "04"
+},
+"label": {
+"station": "?NN",
+"component": "Z",
+"on_date": "1 MA? 63",
+"on_time": "0215",
+"off_date": null,
+"off_time": "0349"
+},
+"date_stamps": [
+"MAY ? 1963"
+],
+"confidence": {
+"border": "partly",
+"label": "partly"
+}
+},
+{
+"id": "10",
+"border": {
+"date": "062868",
+"time": "0509",
+"station_number": "0074",
+"component_code": "04"
+},
+"label": {
+"station": "NAI",
+"component": "Z",
+"on_date": "6-28-68",
+"on_time": "0509",
+"off_date": "6-29-68",
+"off_time": "0504"
+},
+"date_stamps": [
+"JUN 28 1968",
+"JUN 29 1968"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "11",
+"border": {
+"date": "040763",
+"time": "2353",
+"station_number": "0067",
+"component_code": "04"
+},
+"label": {
+"station": "MDS",
+"component": "Z",
+"on_date": "4/8/63",
+"on_time": "2253",
+"off_date": null,
+"off_time": "2216"
+},
+"date_stamps": [
+"APR 7 1963",
+"APR 8 1963"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "12",
+"border": {
+"date": "032370",
+"time": "1525",
+"station_number": "0007",
+"component_code": "04"
+},
+"label": {
+"station": "ALQ",
+"component": "Z",
+"on_date": "3-23-70",
+"on_time": "1525",
+"off_date": "3-24-70",
+"off_time": "1533"
+},
+"date_stamps": [
+"MAR 23 1970",
+"MAR 24 1970"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "13",
+"border": {
+"date": "051677",
+"time": "1411",
+"station_number": "0006",
+"component_code": "04"
+},
+"label": {
+"station": "AKU",
+"component": "LPZ",
+"on_date": "MAY.16.77",
+"on_time": "1411",
+"off_date": "MAY.17.77",
+"off_time": "1521"
+},
+"date_stamps": [
+"MAY 16 1977",
+"MAY 17 1977"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "14",
+"border": {
+"date": "040763",
+"time": "2151",
+"station_number": "0032",
+"component_code": "04"
+},
+"label": {
+"station": "DAL",
+"component": "LPZ",
+"on_date": "4-7-63",
+"on_time": "2151",
+"off_date": null,
+"off_time": "2005"
+},
+"date_stamps": [
+"APR 7 1963"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "15",
+"border": {
+"date": "030876",
+"time": "1516",
+"station_number": "0119",
+"component_code": "04"
+},
+"label": {
+"station": "TUC",
+"component": "Z",
+"on_date": "3-8-76",
+"on_time": "1516",
+"off_date": "3-9-76",
+"off_time": "1530"
+},
+"date_stamps": [
+"MAR 08 1976",
+"MAR 09 1976"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "16",
+"border": {
+"date": "032370",
+"time": "0218",
+"station_number": "0032",
+"component_code": "04"
+},
+"label": {
+"station": "DAL",
+"component": "L Z",
+"on_date": "3/23/70",
+"on_time": "0218",
+"off_date": "3/24/70",
+"off_time": "0053"
+},
+"date_stamps": [
+"MAR 23 1970",
+"MAR 24 1970"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "17",
+"border": {
+"date": "062768",
+"time": "1442",
+"station_number": "0042",
+"component_code": "04"
+},
+"label": {
+"station": "FIE",
+"component": "Z",
+"on_date": "27.6.68",
+"on_time": "14:42",
+"off_date": "28.6.68",
+"off_time": "14:56"
+},
+"date_stamps": [
+"JUN 27 1968",
+"JUN 28 1968"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "18",
+"border": {
+"date": "022663",
+"time": "2332",
+"station_number": "0048",
+"component_code": "04"
+},
+"label": {
+"station": "HNR",
+"component": "Z",
+"on_date": "2-26-63",
+"on_time": "2332",
+"off_date": null,
+"off_time": "0022"
+},
+"date_stamps": [
+"FEB 26 1963",
+"FEB 27 1963"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "19",
+"border": {
+"date": "091069",
+"time": "1455",
+"station_number": "0041",
+"component_code": "04"
+},
+"label": {
+"station": "GEO",
+"component": "Z",
+"on_date": "9-10-69",
+"on_time": "1455",
+"off_date": "9-11-69",
+"off_time": "1911"
+},
+"date_stamps": [
+"SEP 10 1969",
+"?EP 11 1969"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "20",
+"border": {
+"date": "032076",
+"time": "0942",
+"station_number": "0024",
+"component_code": "04"
+},
+"label": {
+"station": "CAR",
+"component": "Z",
+"on_date": "20-3-76",
+"on_time": "09:42",
+"off_date": "21-3-76",
+"off_time": "10:03"
+},
+"date_stamps": [
+"MAR 20 1976"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "21",
+"border": {
+"date": "042668",
+"time": "0654",
+"station_number": "0010",
+"component_code": "04"
+},
+"label": {
+"station": "AQU",
+"component": "Z",
+"on_date": "AVR 26",
+"on_time": "0654",
+"off_date": "27",
+"off_time": "0709"
+},
+"date_stamps": [
+"?? A?? 19??",
+"APR 27 1968"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "22",
+"border": {
+"date": "030976",
+"time": "0701",
+"station_number": "0050",
+"component_code": "04"
+},
+"label": {
+"station": "IST",
+"component": "Z",
+"on_date": "3.9.76",
+"on_time": "0701",
+"off_date": "3.10.76",
+"off_time": "0659"
+},
+"date_stamps": [
+"MAR 9 1976",
+"MAR 10 1976"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "23",
+"border": {
+"date": "050163",
+"time": "1616",
+"station_number": "0119",
+"component_code": "04"
+},
+"label": {
+"station": null,
+"component": null,
+"on_date": null,
+"on_time": "1616",
+"off_date": null,
+"off_time": "1602"
+},
+"date_stamps": [
+"MAY 1 - 1963"
+],
+"confidence": {
+"border": "clear",
+"label": "poor"
+}
+},
+{
+"id": "24",
+"border": {
+"date": "062868",
+"time": "0358",
+"station_number": "0045",
+"component_code": "04"
+},
+"label": {
+"station": "HKC",
+"component": "Z",
+"on_date": "28.6.68",
+"on_time": "0358",
+"off_date": "29.6.68",
+"off_time": "0132"
+},
+"date_stamps": [
+"JUN 2? 1968",
+"JUN 29 1968"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "25",
+"border": {
+"date": "112075",
+"time": "0900",
+"station_number": "0034",
+"component_code": "04"
+},
+"label": {
+"station": "EIL",
+"component": "Z",
+"on_date": "11-20-75",
+"on_time": "09:00",
+"off_date": "11-21-75",
+"off_time": "10:16"
+},
+"date_stamps": [],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "26",
+"border": {
+"date": "091073",
+"time": "2300",
+"station_number": "0036",
+"component_code": "06"
+},
+"label": {
+"station": "DUG",
+"component": "EW",
+"on_date": "10 SEP 1973",
+"on_time": "2300",
+"off_date": "11 SEP 197?",
+"off_time": "2258"
+},
+"date_stamps": [],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "27",
+"border": {
+"date": "040263",
+"time": "2329",
+"station_number": "0103",
+"component_code": "04"
+},
+"label": {
+"station": "SHK",
+"component": "Z",
+"on_date": "4-2-63",
+"on_time": "2329",
+"off_date": null,
+"off_time": "2305"
+},
+"date_stamps": [
+"APR 2 1963"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "28",
+"border": {
+"date": "062768",
+"time": "1445",
+"station_number": "0125",
+"component_code": "04"
+},
+"label": {
+"station": "UNM",
+"component": "Z",
+"on_date": "VI-27-68",
+"on_time": "14:45",
+"off_date": "VI-28-68",
+"off_time": "14:45"
+},
+"date_stamps": [
+"JUN 27 1968",
+"JUN 28 1968"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "29",
+"border": {
+"date": "050163",
+"time": "0718",
+"station_number": "0050",
+"component_code": "04"
+},
+"label": {
+"station": "IST",
+"component": "Z",
+"on_date": "5.1.63",
+"on_time": "7,18",
+"off_date": null,
+"off_time": "6.51"
+},
+"date_stamps": [
+"MAY 1 1963"
+],
+"confidence": {
+"border": "partly",
+"label": "partly"
+}
+},
+{
+"id": "30",
+"border": {
+"date": "020676",
+"time": "1853",
+"station_number": "0022",
+"component_code": "04"
+},
+"label": {
+"station": "MSO",
+"component": "Z",
+"on_date": "2-6-76",
+"on_time": "1853",
+"off_date": "2-7-76",
+"off_time": "1815"
+},
+"date_stamps": [
+"FEB 06 ?976",
+"?EB 07 1976"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "31",
+"border": {
+"date": "060267",
+"time": "0009",
+"station_number": "0031",
+"component_code": "04"
+},
+"label": {
+"station": "CTA",
+"component": "Z",
+"on_date": "6-2-67",
+"on_time": "0009",
+"off_date": "6-3-67",
+"off_time": "0003"
+},
+"date_stamps": [
+"13 JUN 1967"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "32",
+"border": {
+"date": "011968",
+"time": "0144",
+"station_number": "0005",
+"component_code": "04"
+},
+"label": {
+"station": "AFI",
+"component": "Z",
+"on_date": "1-19-68",
+"on_time": "01:44",
+"off_date": "1-20-68",
+"off_time": "01:29"
+},
+"date_stamps": [
+"JAN 19 1968",
+"JAN 20 1968"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "33",
+"border": {
+"date": "112075",
+"time": "0220",
+"station_number": "0054",
+"component_code": "04"
+},
+"label": {
+"station": "KOD",
+"component": "Z",
+"on_date": "11-20.75",
+"on_time": "0220",
+"off_date": "11.21.75",
+"off_time": "0201"
+},
+"date_stamps": [],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "34",
+"border": {
+"date": "011868",
+"time": "2320",
+"station_number": "0086",
+"component_code": "04"
+},
+"label": {
+"station": "PMG",
+"component": "Z",
+"on_date": "Jan.18/68",
+"on_time": "2320",
+"off_date": "Jan.19/68",
+"off_time": "2311"
+},
+"date_stamps": [
+"JAN 18 1968"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "35",
+"border": {
+"date": "121868",
+"time": "2205",
+"station_number": "0103",
+"component_code": "04"
+},
+"label": {
+"station": "SHA",
+"component": "LPZ",
+"on_date": "12.18.68",
+"on_time": "2205",
+"off_date": "12.19",
+"off_time": "2206"
+},
+"date_stamps": [
+"DEC 18 1968",
+"DEC 19 1968"
+],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "36",
+"border": {
+"date": "020863",
+"time": "0048",
+"station_number": "0069",
+"component_code": "04"
+},
+"label": {
+"station": "MNN",
+"component": "Z",
+"on_date": "8 Feb 63",
+"on_time": "0048",
+"off_date": null,
+"off_time": "2312"
+},
+"date_stamps": [
+"FEB 8 1963"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "37",
+"border": {
+"date": "040263",
+"time": "0101",
+"station_number": "0112",
+"component_code": "04"
+},
+"label": {
+"station": "ANP",
+"component": "Z",
+"on_date": "4/02/63",
+"on_time": "0101",
+"off_date": null,
+"off_time": "0045"
+},
+"date_stamps": [
+"APR 2 1963"
+],
+"confidence": {
+"border": "partly",
+"label": "partly"
+}
+},
+{
+"id": "38",
+"border": {
+"date": "02?1?4",
+"time": "?54?",
+"station_number": "??8?",
+"component_code": "?4"
+},
+"label": {
+"station": "NUR",
+"component": "Z",
+"on_date": "II.11.64",
+"on_time": "0548",
+"off_date": null,
+"off_time": "0540"
+},
+"date_stamps": [
+"FEB 11 19?4"
+],
+"confidence": {
+"border": "poor",
+"label": "partly"
+}
+},
+{
+"id": "39",
+"border": {
+"date": "082868",
+"time": "2359",
+"station_number": "0113",
+"component_code": "04"
+},
+"label": {
+"station": "TAU",
+"component": "Z",
+"on_date": "28 AUG 68",
+"on_time": "2359",
+"off_date": "29 AUG 68",
+"off_time": "2358"
+},
+"date_stamps": [
+"AUG 28 1968",
+"AUG 29 1968"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "40",
+"border": {
+"date": "?21164",
+"time": "?4??",
+"station_number": "??39",
+"component_code": "??"
+},
+"label": {
+"station": null,
+"component": null,
+"on_date": null,
+"on_time": null,
+"off_date": null,
+"off_time": null
+},
+"date_stamps": [
+"?EB 11 19?4"
+],
+"confidence": {
+"border": "poor",
+"label": "poor"
+}
+},
+{
+"id": "41",
+"border": {
+"date": "?41???",
+"time": "???5",
+"station_number": "???9",
+"component_code": "?4"
+},
+"label": {
+"station": "LPA",
+"component": "LPZ",
+"on_date": "4/13/63",
+"on_time": "00:35",
+"off_date": null,
+"off_time": "23:07"
+},
+"date_stamps": [
+"APR 13 1???",
+"APR 13 1963"
+],
+"confidence": {
+"border": "poor",
+"label": "clear"
+}
+},
+{
+"id": "42",
+"border": {
+"date": "121966",
+"time": "2121",
+"station_number": "0122",
+"component_code": "04"
+},
+"label": {
+"station": "WEL",
+"component": "Z",
+"on_date": "DEC.19.66",
+"on_time": "2121",
+"off_date": "DEC.20.66",
+"off_time": "2100"
+},
+"date_stamps": [],
+"confidence": {
+"border": "clear",
+"label": "clear"
+}
+},
+{
+"id": "43",
+"border": {
+"date": "031476",
+"time": "1525",
+"station_number": "0063",
+"component_code": "04"
+},
+"label": {
+"station": "Lub",
+"component": "Z",
+"on_date": "14Mar76",
+"on_time": "1525",
+"off_date": "15Mar76",
+"off_time": "1439"
+},
+"date_stamps": [
+"MAR 14 ?9?6",
+"MAR 15 19??"
+],
+"confidence": {
+"border": "clear",
+"label": "partly"
+}
+},
+{
+"id": "44",
+"border": {
+"date": "112070",
+"time": "1904",
+"station_number": "0028",
+"component_code": "04"
+},
+"label": {
+"station": "COL",
+"component": "Z",
+"on_date": "11/20/70",
+"on_time": "1904",
+"off_date": "11/21/70",
+"off_time": "1901"
+},
+"date_stamps": [
+"?0 NOV 1970",
+"?1 NOV 1970"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+},
+{
+"id": "45",
+"border": {
+"date": "111975",
+"time": "1823",
+"station_number": "0032",
+"component_code": "04"
+},
+"label": {
+"station": "Dal",
+"component": "LZ",
+"on_date": "19NOV75",
+"on_time": "1823",
+"off_date": "20NOV75",
+"off_time": "1806"
+},
+"date_stamps": [
+"NOV 19 1975",
+"??? 20 1975"
+],
+"confidence": {
+"border": "partly",
+"label": "clear"
+}
+}
+]

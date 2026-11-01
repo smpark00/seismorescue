@@ -1,0 +1,1397 @@
+[
+ {
+  "chip": "DAL_70_03_02_0218_LHZ",
+  "first": {
+   "station": null,
+   "on_date": "1970-03-23",
+   "on_time": "0218",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1970-03-23",
+   "on_time": "0218",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "DAL",
+   "on_date": "1970-03-02",
+   "on_time": "0218",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "032370 0218 0032 04",
+  "border_second": "032370 0218 0032 04",
+  "label_second": {
+   "station": "BAL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00503
+ },
+ {
+  "chip": "CAR_76_03_20_0912_LHZ",
+  "first": {
+   "station": "CAR",
+   "on_date": "1976-03-20",
+   "on_time": "0942",
+   "component": "Z"
+  },
+  "second": {
+   "station": "CAR",
+   "on_date": "1976-03-20",
+   "on_time": "0942",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "CAR",
+   "on_date": "1976-03-20",
+   "on_time": "0912",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "032076 0942 0024 04",
+  "border_second": "032076 0942 0024 04",
+  "label_second": {
+   "station": "CAR",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00284
+ },
+ {
+  "chip": "NUR_64_02_11_0548_LHZ",
+  "first": {
+   "station": "PDA",
+   "on_date": "1964-02-11",
+   "on_time": "0544",
+   "component": "Z"
+  },
+  "second": {
+   "station": "PDA",
+   "on_date": "1964-02-11",
+   "on_time": "0500",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "NUR",
+   "on_date": "1964-02-11",
+   "on_time": "0548",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "021164 0544 0084 04",
+  "border_second": "021164 0500 0084 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "ok",
+  "cost_usd": 0.00485
+ },
+ {
+  "chip": "HNR_63_02_26_2328_LHZ",
+  "first": {
+   "station": "HNR",
+   "on_date": "1963-02-26",
+   "on_time": "2332",
+   "component": "Z"
+  },
+  "second": {
+   "station": "HNR",
+   "on_date": "1963-02-26",
+   "on_time": "2332",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "HNR",
+   "on_date": "1963-02-26",
+   "on_time": "2328",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "022663 2332 0048 04",
+  "border_second": "022663 2332 0048 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "ok",
+  "cost_usd": 0.00426
+ },
+ {
+  "chip": "COL_70_11_21_1904_LHZ",
+  "first": {
+   "station": "COL",
+   "on_date": "1970-11-20",
+   "on_time": "1904",
+   "component": "Z"
+  },
+  "second": {
+   "station": "COL",
+   "on_date": "1970-11-20",
+   "on_time": "1904",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "COL",
+   "on_date": "1970-11-21",
+   "on_time": "1904",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "112070 1904 0028 04",
+  "border_second": "112070 1904 0028 04",
+  "label_second": {
+   "station": "COL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00274
+ },
+ {
+  "chip": "AKU_77_05_17_1411_LHZ",
+  "first": {
+   "station": "AKU",
+   "on_date": "1977-05-16",
+   "on_time": "1411",
+   "component": "Z"
+  },
+  "second": {
+   "station": "AKU",
+   "on_date": "1977-05-16",
+   "on_time": "1411",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "AKU",
+   "on_date": "1977-05-17",
+   "on_time": "1411",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "051677 1411 0006 04",
+  "border_second": "051677 1411 0006 04",
+  "label_second": {
+   "station": "AKU",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00466
+ },
+ {
+  "chip": "TUC_63_01_05_1616_LHZ",
+  "first": {
+   "station": "TUC",
+   "on_date": "1963-05-01",
+   "on_time": "1616",
+   "component": "Z"
+  },
+  "second": {
+   "station": "TUC",
+   "on_date": "1963-05-01",
+   "on_time": "1616",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "TUC",
+   "on_date": "1963-01-05",
+   "on_time": "1616",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "050163 1616 0119 04",
+  "border_second": "050163 1616 0119 04",
+  "label_second": {
+   "station": "TUC",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00293
+ },
+ {
+  "chip": "FLO_64_02_11_1435_LHZ",
+  "first": {
+   "station": "RIV",
+   "on_date": "1964-02-11",
+   "on_time": "1500",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": null,
+   "on_time": null,
+   "component": null
+  },
+  "truth": {
+   "station": "FLO",
+   "on_date": "1964-02-11",
+   "on_time": "1435",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "021164 1500 0097 04",
+  "border_second": "2116 39",
+  "label_second": {
+   "station": "PU",
+   "component": "Z"
+  },
+  "status": "agent_invalid",
+  "cost_usd": 0.01102
+ },
+ {
+  "chip": "MDS_63_04_07_2353_LHZ",
+  "first": {
+   "station": "QUI",
+   "on_date": "1963-04-07",
+   "on_time": "2353",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1963-04-07",
+   "on_time": "2353",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "MDS",
+   "on_date": "1963-04-07",
+   "on_time": "2353",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "040763 2353 0067 04",
+  "border_second": "040763 2353 0067 04",
+  "label_second": {
+   "station": "MDS",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00613
+ },
+ {
+  "chip": "ALQ_70_03_02_1525_LHZ",
+  "first": {
+   "station": "ALQ",
+   "on_date": "1970-03-23",
+   "on_time": "1525",
+   "component": "Z"
+  },
+  "second": {
+   "station": "ALQ",
+   "on_date": "1970-03-23",
+   "on_time": "1525",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "ALQ",
+   "on_date": "1970-03-02",
+   "on_time": "1525",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "032370 1525 0007 04",
+  "border_second": "032370 1525 0007 04",
+  "label_second": {
+   "station": "ALQ",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00303
+ },
+ {
+  "chip": "LPA_63_04_17_0135_LHZ",
+  "first": {
+   "station": "AAE",
+   "on_date": "1969-04-19",
+   "on_time": "0000",
+   "component": "Z"
+  },
+  "second": {
+   "station": "COR",
+   "on_date": "1969-04-13",
+   "on_time": "0000",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "LPA",
+   "on_date": "1963-04-17",
+   "on_time": "0135",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "041969 0000 0001 04",
+  "border_second": "041369 0000 0030 04",
+  "label_second": {
+   "station": "COR",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00616
+ },
+ {
+  "chip": "AFI_68_01_19_0139_LHZ",
+  "first": {
+   "station": "AFI",
+   "on_date": "1968-01-19",
+   "on_time": "0144",
+   "component": "Z"
+  },
+  "second": {
+   "station": "AFI",
+   "on_date": "1968-01-19",
+   "on_time": "0144",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "AFI",
+   "on_date": "1968-01-19",
+   "on_time": "0139",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "011968 0144 0005 04",
+  "border_second": "011968 0144 0005 04",
+  "label_second": {
+   "station": "AFI",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00296
+ },
+ {
+  "chip": "ANP_63_02_04_0101_LHZ",
+  "first": {
+   "station": "ANP",
+   "on_date": "1963-04-02",
+   "on_time": "0101",
+   "component": "Z"
+  },
+  "second": {
+   "station": "ANP",
+   "on_date": "1963-04-02",
+   "on_time": "0101",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "ANP",
+   "on_date": "1963-02-04",
+   "on_time": "0101",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "040263 0101 0112 04",
+  "border_second": "040263 0101 0112 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "agent_invalid",
+  "cost_usd": 0.00473
+ },
+ {
+  "chip": "IST_63_01_05_0718_LHZ",
+  "first": {
+   "station": "IST",
+   "on_date": "1963-05-01",
+   "on_time": "0718",
+   "component": "Z"
+  },
+  "second": {
+   "station": "IST",
+   "on_date": "1963-05-01",
+   "on_time": "0718",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "IST",
+   "on_date": "1963-01-05",
+   "on_time": "0718",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "050163 0718 0050 04",
+  "border_second": "050163 0718 0050 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "ok",
+  "cost_usd": 0.0031
+ },
+ {
+  "chip": "DUG_73_09_10_2300_LHZ",
+  "first": {
+   "station": "DUG",
+   "on_date": "1973-09-10",
+   "on_time": "2300",
+   "component": "E"
+  },
+  "second": {
+   "station": "DUG",
+   "on_date": "1973-09-10",
+   "on_time": "2300",
+   "component": "E"
+  },
+  "truth": {
+   "station": "DUG",
+   "on_date": "1973-09-10",
+   "on_time": "2300",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "091073 2300 0036 06",
+  "border_second": "091073 2300 0036 06",
+  "label_second": {
+   "station": "DUG",
+   "component": "E"
+  },
+  "status": "ok",
+  "cost_usd": 0.00288
+ },
+ {
+  "chip": "TUC_76_03_09_1516_LHZ",
+  "first": {
+   "station": "TUC",
+   "on_date": "1976-03-08",
+   "on_time": "1516",
+   "component": "Z"
+  },
+  "second": {
+   "station": "TUC",
+   "on_date": "1976-03-08",
+   "on_time": "1516",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "TUC",
+   "on_date": "1976-03-09",
+   "on_time": "1516",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "030876 1516 0119 04",
+  "border_second": "030876 1516 0119 04",
+  "label_second": {
+   "station": "TUC",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00268
+ },
+ {
+  "chip": "AQU_68_03_22_0654_LHZ",
+  "first": {
+   "station": null,
+   "on_date": "1968-04-26",
+   "on_time": "0654",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1968-04-26",
+   "on_time": "0654",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "AQU",
+   "on_date": "1968-03-22",
+   "on_time": "0654",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "042668 0654 0010 04",
+  "border_second": "042668 0654 0010 04",
+  "label_second": {
+   "station": "AQU",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00478
+ },
+ {
+  "chip": "BOZ_76_02_06_1853_LHZ",
+  "first": {
+   "station": "MAN",
+   "on_date": "1976-02-06",
+   "on_time": "1853",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1976-02-06",
+   "on_time": "1853",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "BOZ",
+   "on_date": "1976-02-06",
+   "on_time": "1853",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "020676 1853 0022 04",
+  "border_second": "020676 1853 0022 04",
+  "label_second": {
+   "station": "MBC",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00561
+ },
+ {
+  "chip": "UNM_68_08_27_1445_LHZ",
+  "first": {
+   "station": null,
+   "on_date": "1968-06-27",
+   "on_time": "1445",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1968-06-27",
+   "on_time": "1445",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "UNM",
+   "on_date": "1968-08-27",
+   "on_time": "1445",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "062768 1445 0125 04",
+  "border_second": "062768 1445 0125 04",
+  "label_second": {
+   "station": "UNM",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00395
+ },
+ {
+  "chip": "NAI_68_08_28_0509_LHZ",
+  "first": {
+   "station": "NAI",
+   "on_date": "1968-06-28",
+   "on_time": "0509",
+   "component": "Z"
+  },
+  "second": {
+   "station": "NAI",
+   "on_date": "1968-06-28",
+   "on_time": "0509",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "NAI",
+   "on_date": "1968-08-28",
+   "on_time": "0509",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "062868 0509 0074 04",
+  "border_second": "062868 0509 0074 04",
+  "label_second": {
+   "station": "NAI",
+   "component": "Z"
+  },
+  "status": "agent_invalid",
+  "cost_usd": 0.00508
+ },
+ {
+  "chip": "WIN_69_05_07_0612_LHZ",
+  "first": {
+   "station": "WIN",
+   "on_date": "1969-05-07",
+   "on_time": "0612",
+   "component": "N"
+  },
+  "second": {
+   "station": "WIN",
+   "on_date": "1969-05-07",
+   "on_time": "0612",
+   "component": "N"
+  },
+  "truth": {
+   "station": "WIN",
+   "on_date": "1969-05-07",
+   "on_time": "0612",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "050769 0612 0124 05",
+  "border_second": "050769 0612 0124 05",
+  "label_second": {
+   "station": "WIN",
+   "component": "N"
+  },
+  "status": "ok",
+  "cost_usd": 0.0048
+ },
+ {
+  "chip": "LON_63_02_17_0112_LHZ",
+  "first": {
+   "station": "LON",
+   "on_date": "1963-02-17",
+   "on_time": "0114",
+   "component": "Z"
+  },
+  "second": {
+   "station": "LON",
+   "on_date": "1963-02-17",
+   "on_time": "0114",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "LON",
+   "on_date": "1963-02-17",
+   "on_time": "0112",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "021763 0114 0058 04",
+  "border_second": "021763 0114 0058 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "ok",
+  "cost_usd": 0.00421
+ },
+ {
+  "chip": "CTA_67_06_02_0007_LHZ",
+  "first": {
+   "station": "CTA",
+   "on_date": "1967-06-02",
+   "on_time": "0009",
+   "component": "Z"
+  },
+  "second": {
+   "station": "CTA",
+   "on_date": "1967-06-02",
+   "on_time": "0009",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "CTA",
+   "on_date": "1967-06-02",
+   "on_time": "0007",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "060267 0009 0031 04",
+  "border_second": "060267 0009 0031 04",
+  "label_second": {
+   "station": "CTA",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00343
+ },
+ {
+  "chip": "MSH_76_03_13_0607_LHZ",
+  "first": {
+   "station": "MSH",
+   "on_date": "1976-03-14",
+   "on_time": "0607",
+   "component": "Z"
+  },
+  "second": {
+   "station": "MSH",
+   "on_date": "1976-03-14",
+   "on_time": "0607",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "MSH",
+   "on_date": "1976-03-13",
+   "on_time": "0607",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "031476 0607 0071 04",
+  "border_second": "031476 0607 0071 04",
+  "label_second": {
+   "station": "MSH",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00268
+ },
+ {
+  "chip": "LUB_76_03_13_1525_LHZ",
+  "first": {
+   "station": "LUB",
+   "on_date": "1976-03-14",
+   "on_time": "1525",
+   "component": "Z"
+  },
+  "second": {
+   "station": "LUB",
+   "on_date": "1976-03-14",
+   "on_time": "1525",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "LUB",
+   "on_date": "1976-03-13",
+   "on_time": "1525",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "031476 1525 0063 04",
+  "border_second": "031476 1525 0063 04",
+  "label_second": {
+   "station": "LUB",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00481
+ },
+ {
+  "chip": "MNN_63_02_08_0048_LHZ",
+  "first": {
+   "station": "MAT",
+   "on_date": "1963-02-08",
+   "on_time": "0048",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1963-02-08",
+   "on_time": "0048",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "MNN",
+   "on_date": "1963-02-08",
+   "on_time": "0048",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "020863 0048 0069 04",
+  "border_second": "020863 0048 0069 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "ok",
+  "cost_usd": 0.00579
+ },
+ {
+  "chip": "TAU_68_08_29_2359_LHZ",
+  "first": {
+   "station": "TAU",
+   "on_date": "1968-08-28",
+   "on_time": "2359",
+   "component": "Z"
+  },
+  "second": {
+   "station": "TAU",
+   "on_date": "1968-08-28",
+   "on_time": "2359",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "TAU",
+   "on_date": "1968-08-29",
+   "on_time": "2359",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "082868 2359 0113 04",
+  "border_second": "082868 2359 0113 04",
+  "label_second": {
+   "station": "TAU",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00265
+ },
+ {
+  "chip": "EIL_75_11_20_0900_LHZ",
+  "first": {
+   "station": "ESK",
+   "on_date": "1975-11-20",
+   "on_time": "0900",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1975-11-20",
+   "on_time": "0900",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "EIL",
+   "on_date": "1975-11-20",
+   "on_time": "0900",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "112075 0900 0034 04",
+  "border_second": "112075 0900 0034 04",
+  "label_second": {
+   "station": "ESL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.005
+ },
+ {
+  "chip": "GRM_68_03_22_1532_LHZ",
+  "first": {
+   "station": null,
+   "on_date": "1968-04-26",
+   "on_time": "1532",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1968-04-26",
+   "on_time": "1532",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "GRM",
+   "on_date": "1968-03-22",
+   "on_time": "1532",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "042668 1532 0037 04",
+  "border_second": "042668 1532 0037 04",
+  "label_second": {
+   "station": "GUM",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00388
+ },
+ {
+  "chip": "PMG_68_01_19_1220_LHZ",
+  "first": {
+   "station": "PMG",
+   "on_date": "1968-01-18",
+   "on_time": "2320",
+   "component": "Z"
+  },
+  "second": {
+   "station": "PMG",
+   "on_date": "1968-01-18",
+   "on_time": "2320",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "PMG",
+   "on_date": "1968-01-19",
+   "on_time": "1220",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "011868 2320 0086 04",
+  "border_second": "011868 2320 0086 04",
+  "label_second": {
+   "station": "PMG",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00334
+ },
+ {
+  "chip": "MNN_63_01_05_0215_LHZ",
+  "first": {
+   "station": "TUC",
+   "on_date": "1963-05-01",
+   "on_time": "0215",
+   "component": "Z"
+  },
+  "second": {
+   "station": "COL",
+   "on_date": "1963-05-01",
+   "on_time": "0215",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "MNN",
+   "on_date": "1963-01-05",
+   "on_time": "0215",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "050163 0215 0069 04",
+  "border_second": "050163 0215 0069 04",
+  "label_second": {
+   "station": "COL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00489
+ },
+ {
+  "chip": "LAH_75_06_03_0109_LHZ",
+  "first": {
+   "station": "LAH",
+   "on_date": "1975-06-03",
+   "on_time": "0114",
+   "component": "Z"
+  },
+  "second": {
+   "station": "LAH",
+   "on_date": "1975-06-03",
+   "on_time": "0114",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "LAH",
+   "on_date": "1975-06-03",
+   "on_time": "0109",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "060375 0114 0056 04",
+  "border_second": "060375 0114 0056 04",
+  "label_second": {
+   "station": null,
+   "component": null
+  },
+  "status": "ok",
+  "cost_usd": 0.00322
+ },
+ {
+  "chip": "HLW_64_07_08_0756_LHZ",
+  "first": {
+   "station": "COL",
+   "on_date": "1964-07-08",
+   "on_time": "0756",
+   "component": "Z"
+  },
+  "second": {
+   "station": "COL",
+   "on_date": "1964-07-08",
+   "on_time": "0756",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "HLW",
+   "on_date": "1964-07-08",
+   "on_time": "0756",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "070864 0756 0047 04",
+  "border_second": "070864 0756 0047 04",
+  "label_second": {
+   "station": "COL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00401
+ },
+ {
+  "chip": "SHA_68_12_19_2205_LHZ",
+  "first": {
+   "station": "SHA",
+   "on_date": "1968-12-18",
+   "on_time": "2205",
+   "component": "Z"
+  },
+  "second": {
+   "station": "SHA",
+   "on_date": "1968-12-18",
+   "on_time": "2205",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "SHA",
+   "on_date": "1968-12-19",
+   "on_time": "2205",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "121868 2205 0103 04",
+  "border_second": "121868 2205 0103 04",
+  "label_second": {
+   "station": "SHA",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.003
+ },
+ {
+  "chip": "IST_76_03_08_0700_LHZ",
+  "first": {
+   "station": "IST",
+   "on_date": "1976-03-09",
+   "on_time": "0701",
+   "component": "Z"
+  },
+  "second": {
+   "station": "IST",
+   "on_date": "1976-03-09",
+   "on_time": "0701",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "IST",
+   "on_date": "1976-03-08",
+   "on_time": "0700",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "030976 0701 0050 04",
+  "border_second": "030976 0701 0050 04",
+  "label_second": {
+   "station": "IST",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00321
+ },
+ {
+  "chip": "SHA_63_02_04_2329_LHZ",
+  "first": {
+   "station": "SHA",
+   "on_date": "1963-04-02",
+   "on_time": "2329",
+   "component": "Z"
+  },
+  "second": {
+   "station": "SHA",
+   "on_date": "1963-04-02",
+   "on_time": "2329",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "SHA",
+   "on_date": "1963-02-04",
+   "on_time": "2329",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "040263 2329 0103 04",
+  "border_second": "040263 2329 0103 04",
+  "label_second": {
+   "station": "SHA",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00306
+ },
+ {
+  "chip": "DAL_75_11_19_1823_LHZ",
+  "first": {
+   "station": "COL",
+   "on_date": "1975-11-19",
+   "on_time": "1823",
+   "component": "Z"
+  },
+  "second": {
+   "station": "OXF",
+   "on_date": "1975-11-19",
+   "on_time": "1823",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "DAL",
+   "on_date": "1975-11-19",
+   "on_time": "1823",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "111975 1823 0032 04",
+  "border_second": "111975 1823 0032 04",
+  "label_second": {
+   "station": "OXF",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00416
+ },
+ {
+  "chip": "GEO_69_09_10_1455_LHZ",
+  "first": {
+   "station": "GSC",
+   "on_date": "1969-09-10",
+   "on_time": "1455",
+   "component": "Z"
+  },
+  "second": {
+   "station": "GSC",
+   "on_date": "1969-09-10",
+   "on_time": "1455",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "GEO",
+   "on_date": "1969-09-10",
+   "on_time": "1455",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "091069 1455 0041 04",
+  "border_second": "091069 1455 0041 04",
+  "label_second": {
+   "station": "GSC",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00371
+ },
+ {
+  "chip": "SHG_75_11_20_0300_LHZ",
+  "first": {
+   "station": "SNG",
+   "on_date": "1975-11-20",
+   "on_time": "0300",
+   "component": "Z"
+  },
+  "second": {
+   "station": "SNG",
+   "on_date": "1975-11-20",
+   "on_time": "0300",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "SHG",
+   "on_date": "1975-11-20",
+   "on_time": "0300",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "112075 0300 0068 04",
+  "border_second": "112075 0300 0068 04",
+  "label_second": {
+   "station": "SNG",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00295
+ },
+ {
+  "chip": "DAL_63_04_07_2151_LHZ",
+  "first": {
+   "station": "COR",
+   "on_date": "1963-04-07",
+   "on_time": "2151",
+   "component": "Z"
+  },
+  "second": {
+   "station": "COR",
+   "on_date": "1963-04-07",
+   "on_time": "2151",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "DAL",
+   "on_date": "1963-04-07",
+   "on_time": "2151",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "040763 2151 0032 04",
+  "border_second": "040763 2151 0032 04",
+  "label_second": {
+   "station": "COR",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00464
+ },
+ {
+  "chip": "WEL_66_12_20_2121_LHZ",
+  "first": {
+   "station": "WEL",
+   "on_date": "1966-12-19",
+   "on_time": "2121",
+   "component": "Z"
+  },
+  "second": {
+   "station": "WEL",
+   "on_date": "1966-12-19",
+   "on_time": "2121",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "WEL",
+   "on_date": "1966-12-20",
+   "on_time": "2121",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "121966 2121 0122 04",
+  "border_second": "121966 2121 0122 04",
+  "label_second": {
+   "station": "WEL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00274
+ },
+ {
+  "chip": "HKC_68_04_26_0358_LHZ",
+  "first": {
+   "station": null,
+   "on_date": "1968-06-28",
+   "on_time": "0358",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1968-06-28",
+   "on_time": "0358",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "HKC",
+   "on_date": "1968-04-26",
+   "on_time": "0358",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "062868 0358 0045 04",
+  "border_second": "062868 0358 0045 04",
+  "label_second": {
+   "station": "MHCC",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00499
+ },
+ {
+  "chip": "GIE_68_04_26_1442_LHZ",
+  "first": {
+   "station": "GIE",
+   "on_date": "1968-06-27",
+   "on_time": "1442",
+   "component": "Z"
+  },
+  "second": {
+   "station": "GIE",
+   "on_date": "1968-06-27",
+   "on_time": "1442",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "GIE",
+   "on_date": "1968-04-26",
+   "on_time": "1442",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "062768 1442 0042 04",
+  "border_second": "062768 1442 0042 04",
+  "label_second": {
+   "station": "GIE",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00455
+ },
+ {
+  "chip": "KBL_69_10_02_0558_LHZ",
+  "first": {
+   "station": "WEL",
+   "on_date": "1969-10-02",
+   "on_time": "0558",
+   "component": "Z"
+  },
+  "second": {
+   "station": null,
+   "on_date": "1969-10-02",
+   "on_time": "0558",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "KBL",
+   "on_date": "1969-10-02",
+   "on_time": "0558",
+   "component": "Z"
+  },
+  "reads_agree": false,
+  "second_matches_name": false,
+  "border_first": "100269 0558 0057 04",
+  "border_second": "100269 0558 0057 04",
+  "label_second": {
+   "station": "KBL",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.00487
+ },
+ {
+  "chip": "KOD_75_11_20_0221_LHZ",
+  "first": {
+   "station": "KOD",
+   "on_date": "1975-11-20",
+   "on_time": "0220",
+   "component": "Z"
+  },
+  "second": {
+   "station": "KOD",
+   "on_date": "1975-11-20",
+   "on_time": "0220",
+   "component": "Z"
+  },
+  "truth": {
+   "station": "KOD",
+   "on_date": "1975-11-20",
+   "on_time": "0221",
+   "component": "Z"
+  },
+  "reads_agree": true,
+  "second_matches_name": false,
+  "border_first": "112075 0220 0054 04",
+  "border_second": "112075 0220 0054 04",
+  "label_second": {
+   "station": "KOD",
+   "component": "Z"
+  },
+  "status": "ok",
+  "cost_usd": 0.003
+ }
+]

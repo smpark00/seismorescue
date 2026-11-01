@@ -198,7 +198,7 @@ class Clock:
 
 
 def events_near(t0, t1, min_mag):
-    """USGS FDSN events in [t0, t1] with M >= min_mag, cached as JSON (the demo replays the cache)"""
+    """USGS FDSN earthquakes in [t0, t1] with M >= min_mag, cached as JSON (the demo replays the cache)"""
     CACHE.mkdir(parents=True, exist_ok=True)
     f = CACHE / f"usgs_{t0.strftime('%Y%m%dT%H%M%S')}_{t1.strftime('%Y%m%dT%H%M%S')}_M{min_mag:g}.json"
     if f.exists():
@@ -206,7 +206,7 @@ def events_near(t0, t1, min_mag):
     from obspy.clients.fdsn import Client
     from obspy.clients.fdsn.header import FDSNNoDataException
     try:
-        cat = Client("USGS").get_events(starttime=t0, endtime=t1, minmagnitude=min_mag, orderby="time-asc")
+        cat = Client("USGS").get_events(starttime=t0, endtime=t1, minmagnitude=min_mag, orderby="time-asc", eventtype="earthquake")
     except FDSNNoDataException:
         cat = []
     rows = []

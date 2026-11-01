@@ -20,7 +20,8 @@ Most numbers in the README can be traced to a file under `results/`, `examples/`
 | 0.56 → 0.98, 0.985 without ink | Glimmer QLoRA pilot on 200 validation crops | Modal run |
 | About $15, about $0.60 | Modal cost of all SAM 3 runs, and of the QLoRA pilot | `modal billing summary` before and after |
 | 143 s, 9.5 min | An earlier version of step 1, one SAM 3 pass, on the RTX 5070 Ti and on an Apple-silicon laptop (567 s) | Timed runs |
-| About 4 s | One re-track on the laptop's Apple GPU, on the review page | Timed clicks, not an evaluation |
+| About 4–5 s | One re-track on the laptop's Apple GPU, on the review page | Timed clicks, not an evaluation |
 | About 189,000 | Chips in the CC0 release, as its USGS page states | Not counted by us |
+| All 4 are positives | The 4 of 300 new chips that L0 read as negatives | Looked at by eye, not scripted |
 
 Two stored medians differ from the README. `seconds_median` in `results/e7/e7_results.json` is 118.5 and `secs_median` in the Glimmer results is 134.5, because those fields take the upper of the two middle rows. The README gives the true medians, 117 s (116.7) and 134 s (133.85).
