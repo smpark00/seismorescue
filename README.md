@@ -81,6 +81,26 @@ From 1962 to 1978 the World-Wide Standardized Seismograph Network (WWSSN) record
 </p>
 <p align="center"><sub>Synthetic crop at 2× amplitude with 56 trace contacts. SAM 3.1 through the Meta Model API, zero-shot, returns <b>0 instances</b> here.<br>A classical tracker fails on 58% of columns (first film geometry, no flat line computed for it). This is why we fine-tune SAM 3 and trace each line from both ends.</sub></p>
 
+## Prior work
+
+People digitized these records by hand for decades ([Okal 2015](https://www.earth.northwestern.edu/people/emile/PDF/EAO234.pdf)); digitizing the 1964 Alaska data set took two years ([Eos 2016](https://eos.org/articles/adam-m-dziewonski-1936-2016)). Software has helped since at least 2003, but a person still checks its work where lines cross:
+
+| Work | What it does | Where lines cross |
+|---|---|---|
+| SeisDig ([user manual, 2003](https://www.ncedc.org/ftp/pub/assembled/BSL_Scanned_Seismogram/software/UsersManual.pdf)) | Digitizes scanned seismograms | Its tracker follows many intersections; errors there are found by visual inspection and edited by hand |
+| Teseo / Teseo2 (Pintore et al., C&G 2005; [poster](https://teseo.rm.ingv.it/docs/posters/poster_ssa.pdf)) | Semi-automatic tracing, a GIMP plug-in | The user steers the tracer by clicking |
+| DigitSeis (Bogiatzis & Ishii, SRL 2016; [Ishii & Ishii, PEPS 2022](https://doi.org/10.1186/s40645-022-00508-0)) | Digitizer; the USGS release page points to it | Separated through user intervention |
+| SKATE ([User Manual v1.0, 2023](https://docs.google.com/document/d/1kB97u-sA2uIJpcT2G10AjCUcVVNj6AMdwsitGrD8akw/export?format=pdf)) | Pipeline built for WWSSN chips | Tracks across crossings automatically "when there is significant seismic activity"; a person still removes spurious features; the manual gives no accuracy |
+| SEISMOSTORM ([BELSPO final report, 2024](https://www.belspo.be/Belspo/brain2-be/projects/FinalReports/SEISMOSTORM_FinRep.pdf)) | Digitizes a Belgian archive to MiniSEED | Crossing lines are ignored |
+| U-Net ([Zhao, Ishii et al., EGU 2020](https://meetingorganizer.copernicus.org/EGU2020/EGU2020-4294.html)); CNN at JMA ([Furumura et al., SRL 2023](https://doi.org/10.1785/0220230008)) | Learned trace extraction | U-Net reports no results at crossings; the CNN does not cover long-period large amplitudes |
+| Wang et al., SRL, online 2024 ([doi:10.1785/0220240220](https://doi.org/10.1785/0220240220)) | Automatic digitizer; YOLOv9s removes the time marks | Not checked by us |
+| [Walker & Soto-Cordero, CTBT SnT 2025](https://conferences.ctbto.org/event/30/contributions/5760/attachments/3245/6512/P2.4-066_Walker.pdf) | Synthetic helicorder generator; tested Teseo, DigitSeis and SKATE on a 12-minute trace | Crossings not part of that test; current options "require careful user oversight"; paired real truth does not exist for historic records |
+| SARNet ([Nagle-McNaughton et al., SRL 2022](https://pubs.usgs.gov/publication/70231381)) | A CNN that ranks 34,000 WWSSN chip scans for review | Not a digitizer |
+| [Agrawal et al., SRL 2026](https://pubs.usgs.gov/publication/70277088) | A language model extracts data from legacy text reports of shaking | Text, not film images |
+| Kalal et al., ICPR 2010 | Forward-backward error to flag tracker failures | Our two-pass agreement uses the same idea |
+
+**What is new here, as far as we could find:** Segment Anything fine-tuned for film seismograms (on simulated film), and language models (Muse Spark, Muse Glimmer) reading the chips' printed borders. A project upgrading SKATE is applying other machine learning to the chips' dogtag and metadata ([Díaz et al., CTBT SnT 2025](https://conferences.ctbto.org/event/30/contributions/5759/attachments/3011/5825/P2.4-427_Hwang%20FINAL.pdf)). We have not run any of these tools on our data, so we claim no gain over them. Our comparisons are against baselines we ran: zero-shot SAM 3.1, one pass, and a flat line.
+
 ## What it does
 
 ```mermaid

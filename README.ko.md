@@ -81,6 +81,26 @@ git clone https://github.com/smpark00/seismorescue && cd seismorescue
 </p>
 <p align="center"><sub>진폭 2배 합성 크롭, 선 접촉 56곳. Meta Model API의 SAM 3.1을 제로샷으로 돌리면 여기서 <b>인스턴스 0개</b>를 낸다.<br>고전 추적기는 열의 58%에서 실패한다(첫 필름 기하, 평평한 직선은 계산하지 않음). 그래서 SAM 3를 미세조정하고 줄마다 양쪽 끝에서 추적한다.</sub></p>
 
+## 선행 작업
+
+사람들은 수십 년 동안 이 기록을 손으로 디지털화했다([Okal 2015](https://www.earth.northwestern.edu/people/emile/PDF/EAO234.pdf)). 1964년 알래스카 데이터를 디지털화하는 데 2년이 걸렸다([Eos 2016](https://eos.org/articles/adam-m-dziewonski-1936-2016)). 적어도 2003년부터 소프트웨어가 도왔지만, 선이 겹치는 곳은 여전히 사람이 확인한다.
+
+| 작업 | 하는 일 | 선이 겹치는 곳 |
+|---|---|---|
+| SeisDig ([사용 설명서, 2003](https://www.ncedc.org/ftp/pub/assembled/BSL_Scanned_Seismogram/software/UsersManual.pdf)) | 스캔한 지진기록을 디지털화 | 추적기가 교차점을 많이 따라가고, 그곳의 오류는 눈으로 찾아 손으로 고친다 |
+| Teseo / Teseo2 (Pintore 외, C&G 2005; [포스터](https://teseo.rm.ingv.it/docs/posters/poster_ssa.pdf)) | 반자동 추적, GIMP 플러그인 | 사용자가 클릭해 추적 방향을 잡아 준다 |
+| DigitSeis (Bogiatzis & Ishii, SRL 2016; [Ishii & Ishii, PEPS 2022](https://doi.org/10.1186/s40645-022-00508-0)) | 디지털화 프로그램, USGS 공개 페이지가 안내한다 | 사용자가 개입해 가른다 |
+| SKATE ([User Manual v1.0, 2023](https://docs.google.com/document/d/1kB97u-sA2uIJpcT2G10AjCUcVVNj6AMdwsitGrD8akw/export?format=pdf)) | WWSSN 칩용 파이프라인 | 지진 활동이 클 때 교차점을 자동으로 따라간다고 한다. 가짜 특징은 여전히 사람이 지운다. 설명서에 정확도는 없다 |
+| SEISMOSTORM ([BELSPO 최종 보고서, 2024](https://www.belspo.be/Belspo/brain2-be/projects/FinalReports/SEISMOSTORM_FinRep.pdf)) | 벨기에 기록을 MiniSEED로 디지털화 | 선이 겹치는 큰 신호는 무시한다 |
+| U-Net ([Zhao, Ishii 외, EGU 2020](https://meetingorganizer.copernicus.org/EGU2020/EGU2020-4294.html)); JMA의 CNN ([Furumura 외, SRL 2023](https://doi.org/10.1785/0220230008)) | 학습으로 선 추출 | U-Net은 교차점에서의 결과를 보고하지 않는다. CNN은 장주기 큰 진폭을 다루지 않는다 |
+| Wang 외, SRL, 2024 온라인 ([doi:10.1785/0220240220](https://doi.org/10.1785/0220240220)) | 자동 디지털화, YOLOv9s로 시각 표시 제거 | 우리가 확인하지 않았다 |
+| [Walker & Soto-Cordero, CTBT SnT 2025](https://conferences.ctbto.org/event/30/contributions/5760/attachments/3245/6512/P2.4-066_Walker.pdf) | 합성 헬리코더 생성기. Teseo, DigitSeis, SKATE를 12분짜리 기록 하나로 시험 | 교차점은 시험하지 않았다. 지금의 도구는 "careful user oversight"가 필요하고, 옛 기록에는 짝지은 실제 정답이 없다고 한다 |
+| SARNet ([Nagle-McNaughton 외, SRL 2022](https://pubs.usgs.gov/publication/70231381)) | WWSSN 칩 스캔 34,000장을 검토 우선순위로 매기는 CNN | 디지털화 도구가 아니다 |
+| [Agrawal 외, SRL 2026](https://pubs.usgs.gov/publication/70277088) | 언어 모델로 옛 진동 보고서 글에서 자료를 뽑는다 | 글이고 필름 이미지가 아니다 |
+| Kalal 외, ICPR 2010 | 앞뒤 추적 오차로 추적 실패를 찾는다 | 우리의 두 패스 합의도 같은 생각이다 |
+
+**찾아본 한에서 새로운 것:** 지진기록 필름을 위해(합성 필름으로) 미세조정한 Segment Anything, 그리고 칩의 인쇄된 테두리를 읽는 언어 모델(Muse Spark, Muse Glimmer). SKATE를 고도화하는 프로젝트가 칩의 표식과 메타데이터에 다른 기계학습을 적용하고 있다([Díaz 외, CTBT SnT 2025](https://conferences.ctbto.org/event/30/contributions/5759/attachments/3011/5825/P2.4-427_Hwang%20FINAL.pdf)). 우리는 이 도구들을 우리 데이터에 돌려 보지 않았으므로 더 낫다고 주장하지 않는다. 우리의 비교 대상은 직접 돌린 기준선이다: 제로샷 SAM 3.1, 한 패스, 평평한 직선.
+
 ## 하는 일
 
 ```mermaid
