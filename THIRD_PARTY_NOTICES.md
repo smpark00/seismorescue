@@ -8,6 +8,7 @@
 
 ## Muse Glimmer (Meta)
 - `Muse-Glimmer-30B` GGUF files from `meta-models/Muse-Glimmer-30B-GGUF` on Hugging Face, Apache License 2.0. Not included: you download them.
+- Our QLoRA test adapter for `meta-models/Muse-Glimmer-30B` (not used at runtime) is a release asset (`glimmer-qlora-test`), Apache License 2.0.
 - Run with llama.cpp (https://github.com/ggml-org/llama.cpp, MIT). Not included.
 
 ## SAM 2.1 (Meta)

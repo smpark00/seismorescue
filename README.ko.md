@@ -160,7 +160,7 @@ flowchart LR
 - **제로샷 SAM 3.1**(Meta Model API)은 선이 56–212번 닿는 크롭에서 인스턴스를 내지 않는다.
 - **교차 판정자로 쓴 Spark**는 34건을 고치고 60건을 망쳤다. **지진학자 에이전트로 쓴 Spark**는 단순 규칙을 넘지 못했다(P 10초 안: 0.67 대 0.71). 그래서 Spark는 읽고 고르며, 재는 일은 도구가 한다.
 - 처음 미세조정한 모델은 **SAM 2.1**(tiny, 노트북)이었다. 처음 보는 지진에서 SAM 3가 더 나았고(r 0.848 대 0.802, +0.045 [+0.015, +0.079], 이전 렌더러), 대조 실행으로 이 차이가 학습 길이 때문이 아님을 확인했다. 지금 핵심 모델은 SAM 3다.
-- **줄 식별 판정자로 Muse Glimmer 미세조정.** QLoRA 자체는 됐다. Modal H100 한 장에서 4비트, 20스텝, 약 $0.60이었고, 저장한 어댑터를 다시 불러도 로짓이 같았다. 합성 A/B 과제(교차점에서 어느 빨간 경로가 지진 줄에 머무는가)에서 검증 크롭 200장의 정확도가 0.56에서 0.98로 올랐다. 그런데 같은 크롭에서 필름 잉크를 지워도 0.985였다. 모델은 필름이 아니라 빨간 경로의 모양을 배웠다. 이 어댑터는 쓰지 않는다. 잉크 없는 대조군이 잡아냈다.
+- **줄 식별 판정자로 Muse Glimmer 미세조정.** QLoRA 자체는 됐다. Modal H100 한 장에서 4비트, 20스텝, 약 $0.60이었고, 저장한 어댑터를 다시 불러도 로짓이 같았다. 합성 A/B 과제(교차점에서 어느 빨간 경로가 지진 줄에 머무는가)에서 검증 크롭 200장의 정확도가 0.56에서 0.98로 올랐다. 그런데 같은 크롭에서 필름 잉크를 지워도 0.985였다. 모델은 필름이 아니라 빨간 경로의 모양을 배웠다. 이 어댑터는 쓰지 않는다. 잉크 없는 대조군이 잡아냈다. 투명성을 위해 어댑터를 릴리스 [glimmer-qlora-test](https://github.com/smpark00/seismorescue/releases/tag/glimmer-qlora-test)에 공개했다(Muse Glimmer와 같은 Apache 2.0).
 
 ## 결과
 
@@ -438,7 +438,7 @@ llama.cpp/build/bin/llama-server -m models/muse-glimmer/Muse-Glimmer-30B-KQuant-
 - **코드:** MIT ([LICENSE](LICENSE)).
 - **필름칩:** USGS WWSSN 필름칩 스캔, [doi:10.5066/P13PHZMA](https://doi.org/10.5066/P13PHZMA), CC0 1.0. EarthScope 필름칩 제품([doi:10.17611/DP/FC.1](https://doi.org/10.17611/DP/FC.1))으로 받는다. 그 공개의 일부라고 문서에 적혀 있고, 파일별로 확인하지는 않았다. Meta API로 보낸 실제 스캔은 한 가지 예외를 빼면 이것뿐이고, 에이전트는 코드에서 다른 것을 거부한다. 예외는 첫 스파이크다. 공개 GitHub 저장소 `retrievertech/seismogram-pipeline`(라이선스 표기 없음)의 샘플 스캔 한 장의 크롭과 절반 크기 사본을 SAM 3.1과 Spark로 보냈다. 재배포하지 않는다. KIP 스캔과 다른 로컬 사본은 보내지 않았다.
 - **SAM 3:** Meta의 SAM License. `checkpoints/sam3_film2/`의 우리 어댑터(LoRA 가중치와 미세조정한 FPN 넥, 마스크 디코더. 백본 32블록의 기본 가중치는 없다)는 파생물이며 그 라이선스로 배포하고, 사본을 옆에 두었다. 저장소의 MIT 라이선스는 여기에 적용되지 않는다. 라이선스의 사용 제한(1.b.v절)이 적용된다. 돌리려면 `facebook/sam3` 접근 승인도 직접 받아야 한다. 기본 가중치는 재배포하지 않는다.
-- **Muse Glimmer:** Apache 2.0. 가중치를 재배포하지 않는다.
+- **Muse Glimmer:** Apache 2.0. 기본 가중치는 재배포하지 않는다. 쓰지 않는 QLoRA 시험 어댑터는 같은 라이선스로 릴리스 `glimmer-qlora-test`에 있다.
 - **Muse Spark:** Meta Model API의 contributor 등급으로 부른다. Meta가 입력을 학습에 쓸 수 있는 등급이다. 그래서 에이전트는 CC0 칩만 보낸다.
 - **WWSSN 관측소 번호표:** IRIS Seismo-Archives 보관 페이지 23개("Seismograms of the … Earthquake", 1962–1972, USGS/ICSU 스캔 사업)를 Wayback Machine으로 모았다. 표에 페이지별 출처 주소가 있다. 페이지는 재배포하지 않는다.
 - **합성 필름용 파형:** IRIS/EarthScope FDSN, IU([doi:10.7914/SN/IU](https://doi.org/10.7914/SN/IU))와 II([doi:10.7914/SN/II](https://doi.org/10.7914/SN/II)) 망. 목록: USGS. 주시: ObsPy의 TauP(iasp91). miniSEED는 ObsPy로 쓰고 읽는다.
