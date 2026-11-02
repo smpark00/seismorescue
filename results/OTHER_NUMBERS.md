@@ -1,6 +1,6 @@
 # Numbers without a result file
 
-Most numbers in the README can be traced to a file under `results/`, `examples/` or `bench/results/`. These cannot. They were measured during the work and written down in our notes, which are not published. KIP and ALQ long-period records stay local, so their numbers can only be listed here.
+Most numbers in the README can be traced to a file under `results/`, `examples/` or `bench/results/`. These cannot. They were measured during the work and written down in our notes, which are not published. KIP and ALQ long-period records stay local, so some of their numbers can only be listed here.
 
 | Number | What it is | How it was measured |
 |---|---|---|

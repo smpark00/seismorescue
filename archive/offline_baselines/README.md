@@ -4,7 +4,7 @@ Earlier in the event we trained small row-anchor networks of our own (row-anchor
 
 We removed it so that every model called at runtime is a Meta model:
 
-- The pipeline does not import from this folder or load these networks. Only the `dump` and `e3` commands of `scripts/ml_consensus.py`, which belong to the earlier evaluation, import from it. The second opinion is now SAM 3 itself, tracing each line from both ends (see the [main README](../../README.md)).
+- The pipeline does not import from this folder or load these networks. Only code for the earlier evaluations does: the `dump` and `e3` commands of `scripts/ml_consensus.py`, and `results/ml/rescoring/verify_ra.py`. The second opinion is now SAM 3 itself, tracing each line from both ends (see the [main README](../../README.md)).
 - Their weights are no longer in the current files; older commits still hold them. Without them these scripts cannot be rerun as they stand.
 
 ## How the earlier rule compared
