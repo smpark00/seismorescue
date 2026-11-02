@@ -6,11 +6,17 @@ The truth is public, so scores rest on trust. There are no outside participants 
 
 ## Quick start
 
-Needs NumPy and Python 3.12, 3.11.4+ or 3.10.12+ (the fetcher's safe unpacking needs them). The data is about 240 MB for the three splits, plus the baselines, in this repository's GitHub Release. `SEISMOBENCH_URL` points the fetcher at a mirror; the hashes are checked either way.
+Needs NumPy and Python 3.12, 3.11.4+ or 3.10.12+ (the fetcher's safe unpacking needs them). The data is about 240 MB for the three splits, plus the baselines, in this repository's GitHub Release, with the same files on Hugging Face ([seungminpark/seismobench](https://huggingface.co/datasets/seungminpark/seismobench)). `SEISMOBENCH_URL` points the fetcher at a mirror; the hashes are checked either way.
 
 ```bash
 python -I bench/fetch_bench.py holdout7 baselines
 python -I bench/score.py bench_data/holdout7 bench_data/baselines/holdout7/sam3_both_directions --name sam3_both_directions
+```
+
+From the Hugging Face mirror:
+
+```bash
+SEISMOBENCH_URL=https://huggingface.co/datasets/seungminpark/seismobench/resolve/main python -I bench/fetch_bench.py holdout7 baselines
 ```
 
 ## Data
@@ -49,4 +55,8 @@ Rebuilding on an Apple laptop gave the same arrays for 1,294 of the 1,330 submis
 
 ## Licence
 
-The code is MIT. The film images and truth files are our renderings, released under the same licence; please also cite the networks above. The SAM 3 baseline paths are outputs of a model under Meta's SAM License.
+The code is MIT. The film images and truth files are our renderings, released under the same licence.
+
+We found no licence declared by either source network (DataCite and the FDSN network pages, checked 2026-11-03). EarthScope states that it distributes such data under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) ([registry entry](https://registry.opendata.aws/earthscope-geophysical-data/)). The CC BY 4.0 attribution still applies: if you use or share the films, cite the two networks above and say that the films were rendered from their records. The same EarthScope statement asks users to cite the facility as well.
+
+The SAM 3 baseline paths are outputs of a model under Meta's SAM License.

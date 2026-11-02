@@ -437,11 +437,11 @@ llama.cpp/build/bin/llama-server -m models/muse-glimmer/Muse-Glimmer-30B-KQuant-
 
 - **코드:** MIT ([LICENSE](LICENSE)).
 - **필름칩:** USGS WWSSN 필름칩 스캔, [doi:10.5066/P13PHZMA](https://doi.org/10.5066/P13PHZMA), CC0 1.0. EarthScope 필름칩 제품([doi:10.17611/DP/FC.1](https://doi.org/10.17611/DP/FC.1))으로 받는다. 그 공개의 일부라고 문서에 적혀 있고, 파일별로 확인하지는 않았다. Meta API로 보낸 실제 스캔은 한 가지 예외를 빼면 이것뿐이고, 에이전트는 코드에서 다른 것을 거부한다. 예외는 첫 스파이크다. 공개 GitHub 저장소 `retrievertech/seismogram-pipeline`(라이선스 표기 없음)의 샘플 스캔 한 장의 크롭과 절반 크기 사본을 SAM 3.1과 Spark로 보냈다. 재배포하지 않는다. KIP 스캔과 다른 로컬 사본은 보내지 않았다.
-- **SAM 3:** Meta의 SAM License. `checkpoints/sam3_film2/`의 우리 어댑터(LoRA 가중치와 미세조정한 FPN 넥, 마스크 디코더. 백본 32블록의 기본 가중치는 없다)는 파생물이며 그 라이선스로 배포하고, 사본을 옆에 두었다. 저장소의 MIT 라이선스는 여기에 적용되지 않는다. 라이선스의 사용 제한(1.b.v절)이 적용된다. 돌리려면 `facebook/sam3` 접근 승인도 직접 받아야 한다. 기본 가중치는 재배포하지 않는다.
-- **Muse Glimmer:** Apache 2.0. 기본 가중치는 재배포하지 않는다. 쓰지 않는 QLoRA 시험 어댑터는 같은 라이선스로 릴리스 `glimmer-qlora-test`에 있다.
+- **SAM 3:** Meta의 SAM License. `checkpoints/sam3_film2/`의 우리 어댑터(LoRA 가중치와 미세조정한 FPN 넥, 마스크 디코더. 백본 32블록의 기본 가중치는 없다)는 파생물이며 그 라이선스로 배포하고, 사본을 옆에 두었다. 저장소의 MIT 라이선스는 여기에 적용되지 않는다. 라이선스의 사용 제한(1.b.v절)이 적용된다. 돌리려면 `facebook/sam3` 접근 승인도 직접 받아야 한다. 기본 가중치는 재배포하지 않는다. 어댑터는 Hugging Face에도 있다: [seungminpark/seismorescue-sam3-film](https://huggingface.co/seungminpark/seismorescue-sam3-film).
+- **Muse Glimmer:** Apache 2.0. 기본 가중치는 재배포하지 않는다. 쓰지 않는 QLoRA 시험 어댑터는 같은 라이선스로 릴리스 `glimmer-qlora-test`와 Hugging Face([seungminpark/seismorescue-glimmer-qlora-test](https://huggingface.co/seungminpark/seismorescue-glimmer-qlora-test))에 있다.
 - **Muse Spark:** Meta Model API의 contributor 등급으로 부른다. Meta가 입력을 학습에 쓸 수 있는 등급이다. 그래서 에이전트는 CC0 칩만 보낸다.
 - **WWSSN 관측소 번호표:** IRIS Seismo-Archives 보관 페이지 23개("Seismograms of the … Earthquake", 1962–1972, USGS/ICSU 스캔 사업)를 Wayback Machine으로 모았다. 표에 페이지별 출처 주소가 있다. 페이지는 재배포하지 않는다.
-- **합성 필름용 파형:** IRIS/EarthScope FDSN, IU([doi:10.7914/SN/IU](https://doi.org/10.7914/SN/IU))와 II([doi:10.7914/SN/II](https://doi.org/10.7914/SN/II)) 망. 목록: USGS. 주시: ObsPy의 TauP(iasp91). miniSEED는 ObsPy로 쓰고 읽는다.
+- **합성 필름용 파형:** IRIS/EarthScope FDSN, IU([doi:10.7914/SN/IU](https://doi.org/10.7914/SN/IU))와 II([doi:10.7914/SN/II](https://doi.org/10.7914/SN/II)) 망. 두 망이 선언한 라이선스는 찾지 못했다(DataCite와 FDSN 망 페이지, 2026-11-03 확인). EarthScope는 그런 자료를 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)으로 배포한다고 밝히므로([레지스트리 항목](https://registry.opendata.aws/earthscope-geophysical-data/)), SeismoBench 필름을 쓰거나 공유할 때는 두 망과 EarthScope 시설을 인용해야 한다. 목록: USGS. 주시: ObsPy의 TauP(iasp91). miniSEED는 ObsPy로 쓰고 읽는다.
 - **망 코드:** 우리 miniSEED는 `XX`를 쓴다. WWSSN에는 FDSN 코드가 없고, `WW`는 Idaho Seismic Network의 코드다.
 - **이 저장소에 없는 것:** KIP 스캔과 다른 로컬 사본(숫자만), 디지털 비교 기록(링크만), API 키.
 - [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 참고.

@@ -3,12 +3,13 @@
 ## SAM 3 (Meta)
 - `checkpoints/sam3_film2/ckpt_sam3_film2_best.pt` is a derivative of Meta's SAM 3 (LoRA weights plus the fine-tuned FPN neck and mask decoder).
   - Licence: SAM License, copied unchanged in `checkpoints/sam3_film2/LICENSE`. **The repository's MIT licence does not cover this folder.**
+  - The same file is on Hugging Face as `seungminpark/seismorescue-sam3-film`, with the same licence copy.
   - Base weights: `facebook/sam3` on Hugging Face (gated). Not included. Source code: https://github.com/facebookresearch/sam3
   - SAM 3 is loaded through the Hugging Face `transformers` library (`Sam3TrackerModel`).
 
 ## Muse Glimmer (Meta)
 - `Muse-Glimmer-30B` GGUF files from `meta-models/Muse-Glimmer-30B-GGUF` on Hugging Face, Apache License 2.0. Not included: you download them.
-- Our QLoRA test adapter for `meta-models/Muse-Glimmer-30B` (not used at runtime) is a release asset (`glimmer-qlora-test`), Apache License 2.0.
+- Our QLoRA test adapter for `meta-models/Muse-Glimmer-30B` (not used at runtime) is a release asset (`glimmer-qlora-test`) and is on Hugging Face as `seungminpark/seismorescue-glimmer-qlora-test`, Apache License 2.0.
 - Run with llama.cpp (https://github.com/ggml-org/llama.cpp, MIT). Not included.
 
 ## SAM 2.1 (Meta)
@@ -27,6 +28,8 @@
 ## Data
 - Seismic waveforms: IRIS/EarthScope FDSN web services.
   - Networks IU ([doi:10.7914/SN/IU](https://doi.org/10.7914/SN/IU)) and II ([doi:10.7914/SN/II](https://doi.org/10.7914/SN/II)).
+  - We found no licence declared by either network (DataCite and the FDSN network pages, checked 2026-11-03). EarthScope states that it distributes such data under CC BY 4.0 (https://registry.opendata.aws/earthscope-geophysical-data/). Cite both networks and the EarthScope facility when you use or share the SeismoBench films rendered from them.
+  - SeismoBench files: GitHub release `bench-v1`, with the same files on Hugging Face as the dataset `seungminpark/seismobench`.
   - The 1970s HGLP pairs (network HG) are fetched by the user and not redistributed.
 - WWSSN film-chip scans: U.S. Geological Survey, "World-Wide Standardized Seismographic Network Film Chip Scans".
   - USGS data release, [doi:10.5066/P13PHZMA](https://doi.org/10.5066/P13PHZMA), CC0 1.0.
