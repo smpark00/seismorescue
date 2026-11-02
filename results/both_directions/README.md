@@ -9,7 +9,7 @@ SAM 3, fine-tuned by us, traces every line twice: forward from the left edge, an
 | `select_holdout4_before_amendment.json`, `frozen_rule_fallback.json` | The first selection, kept as it came out: no candidate met the targets, so the fallback written down in advance (τ 0.05, L 60) was chosen |
 | `holdout7_started.json` | Start marker of the test, written before its first image: time, number of images, hashes of the code, the rule and the checkpoint |
 | `score_holdout7.json` | **The test:** 10 earthquakes on days not used before, 95 images, run once |
-| `score_holdout6.json` | The same rule on the images of an earlier test. These images had been seen before, so this is only a comparison with the earlier rule |
+| `score_holdout6.json` | The same rule on the images of an earlier test. These images had been seen before, so this is only a comparison with [the earlier rule](../../archive/offline_baselines/README.md) |
 | `score_holdout4.json` | The same rule on the development set |
 | `real_results.json` | The three real chips with a digital record. ALQ is by line type only |
 | `click/` | The click experiment on the development set |

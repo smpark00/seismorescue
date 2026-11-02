@@ -1,4 +1,4 @@
-# Numbers in the README without a result file
+# Numbers without a result file
 
 Most numbers in the README can be traced to a file under `results/`, `examples/` or `bench/results/`. These cannot. They were measured during the work and written down in our notes, which are not published. KIP and ALQ long-period records stay local, so their numbers can only be listed here.
 
@@ -7,7 +7,7 @@ Most numbers in the README can be traced to a file under `results/`, `examples/`
 | ALQ 1975 amplitude slope 0.55 | Earthquake line, SAM 3 against the digital record | Real-film evaluation, forward pass |
 | ALQ 1975 r +0.76 | The same line with the earthquake line and the lines next to it left out of the time fit | Refit of the stored alignment, separate review |
 | ALQ 1975 at most 0.30, side peak 0.47 | Controls for r +0.75: 1,500 circular shifts at most 0.262, 2,000 phase scrambles at most 0.299; outside the peak of a ±600 s lag scan at most 0.47 | Same review |
-| RA2 r 0.15, 0.48, +0.50 | The retired network on the MAT, KIP and ALQ earthquake lines | Real-film evaluations of the earlier rule |
+| RA2 r 0.15, 0.48, +0.50 | The retired network on the MAT, KIP and ALQ earthquake lines. Given in [archive/offline_baselines](../archive/offline_baselines/README.md), not in the README | Real-film evaluations of the earlier rule |
 | ALQ 1973 within 3.03 s, median −1.6 s, +0.05%, 3588.05 s vs 3588.0 s | L0 timing on the held-out chip | L0 test against the co-located digital record |
 | MAT within 4 s | L0 timing on the development chip (3.99 s) | Same check |
 | ALQ 1975 within 4.0 s, median −1.4 s, 25 lines | L0 automatic mode after the polarity fix (4.00 s, −1.38 s) | Regression check |

@@ -2,7 +2,7 @@
 
 > **Earlier experiments.** This page describes the first week of work (SAM 2.1 and row-anchor v1). The current system and its numbers are in the [main README](../README.md).
 >
-> The row-anchor networks were offline baselines. They are not part of what runs, and their weights were removed from this repository after the organizers' ruling on custom models ([why](../archive/offline_baselines/README.md)).
+> The row-anchor networks were offline baselines. They are not part of what runs: every model called at runtime is a Meta model. Their weights are no longer in the current files ([why](../archive/offline_baselines/README.md)).
 
 ## Benchmark: synthetic WWSSN films with exact ground truth
 
