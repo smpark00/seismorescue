@@ -170,7 +170,7 @@ r_band / in / lost for each method:
 - **The real earthquake line is not recovered yet.** On the quake line both learned models have a lower "in" fraction than a flat line.
 - **Lines with moderate amplitude are read well on MAT.** On KIP the DP alignment tool is still better on those lines.
 - **Quiet lines** carry 6–8 s microseism that the HGLP reference does not contain, so r cannot score them.
-- **The figures show no KIP imagery** because of its licence status; MAT figures are in the [README](../README.md#real-film-where-we-are).
+- **The figures show no KIP imagery** because of its licence status; MAT figures are in the [README](../README.md#3-real-film-shape-against-the-digital-record-descriptive).
 
 ---
 

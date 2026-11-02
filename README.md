@@ -155,7 +155,7 @@ Fresh holdout: 10 earthquakes (M7.5–8.8) on days not used anywhere before, 19 
 | Earthquake line | **87.9%** [78.9, 93.1] | **94.2%** [92.8, 95.3] | **72.5%** [68.2, 76.2] | 87.5% (flat line 65.8%) | 58.9% [42.8, 74.4] |
 | All lines | **93.9%** [84.6, 98.8] | **97.9%** [97.5, 98.3] | **93.6%** [91.8, 94.7] | 94.1% (flat line 89.5%) | 67.2% [21.7, 84.7] |
 
-Agreement between the passes adds real skill: on the earthquake line the accepted columns beat the flat line by 21.7 points [18.6, 25.0].
+Agreement between the passes has real skill: on the earthquake line the accepted columns beat the flat line by 21.7 points [18.6, 25.0].
 
 **Minute marks.** The pen jumps up for a few seconds every minute. Neither pass follows these ticks, so they are most of the remaining error on quiet lines. Our export bridges those seconds anyway (99.8% of these columns on this test set; on real film it depends on L0's clock). Leaving out the columns where the pen is more than 0.1 S from the signal (3.8% of them), precision is **95.1%** [93.6, 96.3] on the earthquake line and **99.2%** [98.8, 99.5] on all lines, against 73.6% and 95.3% for the flat line.
 
