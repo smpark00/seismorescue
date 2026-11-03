@@ -5,6 +5,17 @@
   <a href="README.ko.md"><img src="https://img.shields.io/badge/README-%ED%95%9C%EA%B5%AD%EC%96%B4-eb6834?style=for-the-badge" alt="한국어"></a>
 </p>
 
+> **Submission to the Meta Global AI Developer Hackathon** (October 26 – November 4, 2026), Indie Developer Track. Built solo.
+
+<p align="center">
+  <a href="https://youtu.be/Xfc1CPcxSFc"><img src="https://img.shields.io/badge/Demo_video-YouTube_%C2%B7_2%3A57-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Demo video on YouTube (2:57)"></a>
+  <a href="https://x.com/sm_park00/status/2117298690234953984"><img src="https://img.shields.io/badge/Post-X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Post on X"></a>
+  <br>
+  <a href="https://huggingface.co/seungminpark/seismorescue-sam3-film"><img src="https://img.shields.io/badge/Model-SAM_3_film_adapter-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face model: SAM 3 film adapter"></a>
+  <a href="https://huggingface.co/seungminpark/seismorescue-glimmer-qlora-test"><img src="https://img.shields.io/badge/Model-Glimmer_QLoRA_test_%28unused%29-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face model: Glimmer QLoRA test adapter (unused)"></a>
+  <a href="https://huggingface.co/datasets/seungminpark/seismobench"><img src="https://img.shields.io/badge/Dataset-SeismoBench-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face dataset: SeismoBench"></a>
+</p>
+
 **Reading 1970s earthquake film with Meta's SAM 3 and Muse models. Where two passes of the tracer disagree, a person decides.**
 
 <p align="center">

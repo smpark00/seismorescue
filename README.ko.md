@@ -5,6 +5,17 @@
   <a href="README.ko.md"><img src="https://img.shields.io/badge/README-%ED%95%9C%EA%B5%AD%EC%96%B4-eb6834?style=for-the-badge" alt="한국어"></a>
 </p>
 
+> **Meta Global AI Developer Hackathon 제출작**(2026년 10월 26일 – 11월 4일, Indie Developer Track). 혼자 만들었다.
+
+<p align="center">
+  <a href="https://youtu.be/Xfc1CPcxSFc"><img src="https://img.shields.io/badge/%EB%8D%B0%EB%AA%A8_%EC%98%81%EC%83%81-YouTube_%C2%B7_2%3A57-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube 데모 영상 (2:57)"></a>
+  <a href="https://x.com/sm_park00/status/2117298690234953984"><img src="https://img.shields.io/badge/%EA%B2%8C%EC%8B%9C%EA%B8%80-X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X 게시글"></a>
+  <br>
+  <a href="https://huggingface.co/seungminpark/seismorescue-sam3-film"><img src="https://img.shields.io/badge/%EB%AA%A8%EB%8D%B8-SAM_3_%ED%95%84%EB%A6%84_%EC%96%B4%EB%8C%91%ED%84%B0-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face 모델: SAM 3 필름 어댑터"></a>
+  <a href="https://huggingface.co/seungminpark/seismorescue-glimmer-qlora-test"><img src="https://img.shields.io/badge/%EB%AA%A8%EB%8D%B8-Glimmer_QLoRA_%EC%8B%9C%ED%97%98_%28%EB%AF%B8%EC%82%AC%EC%9A%A9%29-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face 모델: Glimmer QLoRA 시험 어댑터 (미사용)"></a>
+  <a href="https://huggingface.co/datasets/seungminpark/seismobench"><img src="https://img.shields.io/badge/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B-SeismoBench-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face 데이터셋: SeismoBench"></a>
+</p>
+
 **1970년대 지진 필름을 Meta SAM 3와 Muse 모델로 읽는다. 추적기의 두 패스가 어긋나는 곳은 사람이 결정한다.**
 
 <p align="center">
